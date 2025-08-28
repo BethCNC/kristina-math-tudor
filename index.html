@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAT 143 Math Tutor - Kristina's Success Journey</title>
-    <meta name="description" content="Your personal MAT 143 tutor that breaks down complex math into simple, digestible lessons you can actually understand and enjoy.">
+    <title>Kristina's Academic Success Dashboard - Fall 2025</title>
+    <meta name="description" content="Your personal executive function dashboard for MAT 143 and ENG 111 - never miss a deadline, stay organized, and succeed in both classes.">
     
     <!-- Open Graph for social sharing -->
     <meta property="og:title" content="MAT 143 Math Tutor - Make Math Make Sense">
@@ -21,34 +21,38 @@
         
         /* Design System - Modern Minimal */
         :root {
-            /* Colors - Modern minimal with black/white emphasis */
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
+            /* Colors - ADHD-friendly high contrast system */
+            --color-primary-50: #ffffff;
+            --color-primary-100: #f8f9fa;
+            --color-primary-200: #e9ecef;
+            --color-primary-300: #dee2e6;
+            --color-primary-400: #ced4da;
+            --color-primary-500: #6c757d;
+            --color-primary-600: #495057;
+            --color-primary-700: #343a40;
+            --color-primary-800: #212529;
             --color-primary-900: #000000;
             
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
+            /* ADHD-friendly accent colors - high contrast, calming */
+            --color-math-light: #e3f2fd;
+            --color-math-base: #1976d2;
+            --color-math-dark: #0d47a1;
             
-            --color-success-50: #f0fdf4;
-            --color-success-500: #64A365;
-            --color-success-600: #4E864F;
+            --color-english-light: #f3e5f5;
+            --color-english-base: #7b1fa2;
+            --color-english-dark: #4a148c;
             
-            --color-warning-50: #fffbeb;
-            --color-warning-500: #eb7754;
-            --color-warning-600: #E44B1D;
+            --color-success-light: #e8f5e8;
+            --color-success-base: #2e7d32;
+            --color-success-dark: #1b5e20;
+            
+            --color-warning-light: #fff3e0;
+            --color-warning-base: #f57c00;
+            --color-warning-dark: #e65100;
+            
+            --color-urgent-light: #ffebee;
+            --color-urgent-base: #d32f2f;
+            --color-urgent-dark: #b71c1c;
             
             --color-neutral-50: #fafafa;
             --color-neutral-100: #f5f5f5;
@@ -328,27 +332,45 @@
             padding: var(--space-4);
             border-radius: var(--radius-md);
             border-left: 4px solid;
-            background: var(--color-primary-800);
+            background: var(--color-primary-900);
             color: var(--color-primary-50);
-            border-left-color: var(--color-primary-600);
+            border-left-color: var(--color-primary-700);
         }
 
         .task-item.urgent {
-            background: var(--color-error-500) !important;
+            background: var(--color-urgent-base) !important;
             color: var(--color-primary-50) !important;
-            border-left-color: var(--color-error-600) !important;
+            border-left-color: var(--color-urgent-dark) !important;
         }
 
         .task-item.important {
-            background: var(--color-warning-500) !important;
+            background: var(--color-warning-base) !important;
             color: var(--color-primary-50) !important;
-            border-left-color: var(--color-warning-600) !important;
+            border-left-color: var(--color-warning-dark) !important;
         }
 
         .task-item.upcoming {
-            background: var(--color-accent-blue-base) !important;
-            color: var(--color-primary-900) !important;
-            border-left-color: var(--color-accent-blue-dark) !important;
+            background: var(--color-math-base) !important;
+            color: var(--color-primary-50) !important;
+            border-left-color: var(--color-math-dark) !important;
+        }
+
+        .task-item.math {
+            background: var(--color-math-light) !important;
+            color: var(--color-math-dark) !important;
+            border-left-color: var(--color-math-base) !important;
+        }
+
+        .task-item.english {
+            background: var(--color-english-light) !important;
+            color: var(--color-english-dark) !important;
+            border-left-color: var(--color-english-base) !important;
+        }
+
+        .task-item.completed {
+            background: var(--color-success-light) !important;
+            color: var(--color-success-dark) !important;
+            border-left-color: var(--color-success-base) !important;
         }
 
         .task-checkbox {
@@ -804,8 +826,8 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1 class="page-title">MAT 143 Math Tutor</h1>
-            <p class="page-subtitle">Kristina's Success Journey - Fall 2025</p>
+            <h1 class="page-title">📚 Your Academic Command Center</h1>
+            <p class="page-subtitle">MAT 143 & ENG 111 - Fall 2025 Success Dashboard</p>
         </div>
     </header>
 
@@ -816,86 +838,104 @@
             <div class="deadline-alert">
                 <div class="alert-icon"><i data-lucide="alert-triangle"></i></div>
                 <div class="alert-content">
-                    <h2>URGENT: Attendance Due Friday</h2>
-                    <p>Submit your BrightSpace attendance before Friday to avoid penalties</p>
-                    <div class="countdown">3 days remaining</div>
+                    <h2>⚠️ URGENT: Multiple Deadlines This Week</h2>
+                    <p>ENG 111 Critical Reading Discussion due Thu 8/22 | MAT 143 EVA due Fri 8/29</p>
+                    <div class="countdown">Today is Wednesday 8/28 - Act NOW!</div>
                 </div>
-                <a href="calendar.html" class="alert-btn">View Details</a>
+                <a href="#class-nav" class="alert-btn">Choose Class</a>
             </div>
 
             <!-- Today's Must-Do -->
             <div class="todays-focus">
-                                    <h2><i data-lucide="target" style="display: inline; margin-right: 8px;"></i>TODAY'S MUST-DO</h2>
+                <h2><i data-lucide="target" style="display: inline; margin-right: 8px;"></i>BRAIN DUMP - WHAT'S DUE NOW?</h2>
                 <div class="task-list">
                     <div class="task-item urgent">
                         <div class="task-checkbox">
-                            <input type="checkbox" id="task1">
-                            <label for="task1"></label>
+                            <input type="checkbox" id="eng-critical">
+                            <label for="eng-critical"></label>
                         </div>
                         <div class="task-content">
-                            <h3>Complete Hawkes Learning: Section 1.1-1.3</h3>
-                            <p>Due: Today | Priority: HIGH</p>
+                            <h3>📝 ENG 111: Critical Reading Discussion</h3>
+                            <p>Due: TOMORROW 8/22 | Read Adam Grant article + post response</p>
                         </div>
-                        <div class="task-status">NOT STARTED</div>
+                        <div class="task-status">⏰ 1 DAY</div>
                     </div>
                     
                     <div class="task-item important">
                         <div class="task-checkbox">
-                            <input type="checkbox" id="task2">
-                            <label for="task2"></label>
+                            <input type="checkbox" id="math-eva">
+                            <label for="math-eva"></label>
                         </div>
                         <div class="task-content">
-                            <h3>Review Chapter 1: Thinking Mathematically</h3>
-                            <p>Due: This Week | Priority: MEDIUM</p>
+                            <h3>🧮 MAT 143: EVA (Enrollment Verification)</h3>
+                            <p>Due: Friday 8/29 | REQUIRED or you'll be dropped!</p>
                         </div>
-                        <div class="task-status">NOT STARTED</div>
+                        <div class="task-status">⏰ 2 DAYS</div>
                     </div>
                     
-                    <div class="task-item upcoming">
+                    <div class="task-item math">
                         <div class="task-checkbox">
-                            <input type="checkbox" id="task3">
-                            <label for="task3"></label>
+                            <input type="checkbox" id="math-attendance">
+                            <label for="math-attendance"></label>
                         </div>
                         <div class="task-content">
-                            <h3>Submit BrightSpace Attendance</h3>
-                            <p>Due: Friday | Priority: CRITICAL</p>
+                            <h3>🧮 MAT 143: Weekly Attendance</h3>
+                            <p>Due: Friday 8/29 | Submit on BrightSpace</p>
                         </div>
-                        <div class="task-status">PENDING</div>
+                        <div class="task-status">⏰ 2 DAYS</div>
+                    </div>
+
+                    <div class="task-item english">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="eng-syllabus">
+                            <label for="eng-syllabus"></label>
+                        </div>
+                        <div class="task-content">
+                            <h3>📝 ENG 111: EVA Syllabus Quiz</h3>
+                            <p>Due: This week | Check BrightSpace for exact date</p>
+                        </div>
+                        <div class="task-status">CHECK</div>
                     </div>
                 </div>
             </div>
 
             <!-- This Week's Focus -->
             <div class="week-focus">
-                                    <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>THIS WEEK'S FOCUS</h2>
+                <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>WEEK 1 SURVIVAL GUIDE</h2>
                 <div class="focus-grid">
-                    <div class="focus-card study">
-                        <h3><i data-lucide="book-open" style="display: inline; margin-right: 8px;"></i>STUDY TOPICS</h3>
+                    <div class="focus-card study" style="background: var(--color-math-light); color: var(--color-math-dark);">
+                        <h3><i data-lucide="calculator" style="display: inline; margin-right: 8px;"></i>🧮 MAT 143 FOCUS</h3>
                         <ul>
-                            <li>Deductive vs Inductive Reasoning</li>
-                            <li>Pattern Recognition</li>
-                            <li>Estimation Strategies</li>
+                            <li><strong>EVA</strong> - Complete by Fri 8/29 OR GET DROPPED</li>
+                            <li><strong>Sections 1.1-1.2</strong> - Basic math thinking</li>
+                            <li><strong>BrightSpace Attendance</strong> - Submit weekly</li>
+                            <li><strong>Get familiar</strong> - Explore Hawkes Learning</li>
                         </ul>
                     </div>
                     
-                    <div class="focus-card dates">
-                        <h3><i data-lucide="clock" style="display: inline; margin-right: 8px;"></i>IMPORTANT DATES</h3>
+                    <div class="focus-card dates" style="background: var(--color-english-light); color: var(--color-english-dark);">
+                        <h3><i data-lucide="pen-tool" style="display: inline; margin-right: 8px;"></i>📝 ENG 111 FOCUS</h3>
                         <ul>
-                            <li class="urgent-date">Friday: Attendance Due</li>
-                            <li class="important-date">Sunday: Hawkes Certification</li>
-                            <li class="upcoming-date">Next Week: Test 1 Prep</li>
+                            <li><strong>Adam Grant Article</strong> - Read & understand main point</li>
+                            <li><strong>Discussion Post</strong> - Agree/disagree with reasoning</li>
+                            <li><strong>Reply to Classmate</strong> - Meaningful response</li>
+                            <li><strong>Works Cited</strong> - Try your best, won't be graded harshly</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Help -->
-            <div class="quick-help">
-                                    <h2><i data-lucide="lightbulb" style="display: inline; margin-right: 8px;"></i>NEED HELP?</h2>
+            <!-- Class Navigation -->
+            <div class="quick-help" id="class-nav">
+                <h2><i data-lucide="graduation-cap" style="display: inline; margin-right: 8px;"></i>CHOOSE YOUR CLASS</h2>
                 <div class="help-buttons">
-                    <a href="tutor.html" class="help-btn primary">Ask AI Tutor</a>
-                    <a href="reference.html" class="help-btn secondary">Formula Reference</a>
-                    <a href="web_study_helper.html" class="help-btn secondary">Study Tips</a>
+                    <a href="tutor.html" class="help-btn" style="background: var(--color-math-base); color: white; border-color: var(--color-math-base);">
+                        🧮 MAT 143 Tutor
+                    </a>
+                    <a href="english_tutor.html" class="help-btn" style="background: var(--color-english-base); color: white; border-color: var(--color-english-base);">
+                        📝 ENG 111 Tutor
+                    </a>
+                    <a href="calendar.html" class="help-btn secondary">📅 All Deadlines</a>
                 </div>
             </div>
         </div>

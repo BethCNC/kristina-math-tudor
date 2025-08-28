@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENG 111 Writing Coach - Your Personal Writing Assistant</title>
+    <meta name="description" content="Get personalized help with ENG 111 writing assignments, essays, and academic success. Designed for ADHD-friendly learning.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
+        
+        :root {
+            /* ADHD-friendly colors */
+            --color-primary-50: #ffffff;
+            --color-primary-100: #f8f9fa;
+            --color-primary-200: #e9ecef;
+            --color-primary-300: #dee2e6;
+            --color-primary-500: #6c757d;
+            --color-primary-700: #343a40;
+            --color-primary-800: #212529;
+            --color-primary-900: #000000;
+            
+            --color-english-light: #f3e5f5;
+            --color-english-base: #7b1fa2;
+            --color-english-dark: #4a148c;
+            
+            --color-urgent-base: #d32f2f;
+            --color-warning-base: #f57c00;
+            
+            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-base);
+            line-height: 1.5;
+            color: var(--color-primary-900);
+            background: var(--color-primary-100);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-4);
+        }
+        
+        .header {
+            background: var(--color-english-base);
+            color: white;
+            padding: var(--space-8) 0;
+            text-align: center;
+            margin-bottom: var(--space-8);
+        }
+        
+        .header h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-2);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: var(--space-4);
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: white;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-8);
+        }
+        
+        .sidebar {
+            background: white;
+            border-radius: var(--radius-xl);
+            padding: var(--space-6);
+            box-shadow: var(--shadow-lg);
+            height: fit-content;
+            border: 2px solid var(--color-english-light);
+        }
+        
+        .sidebar h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            color: var(--color-english-dark);
+            margin-bottom: var(--space-4);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .quick-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-3);
+            margin-bottom: var(--space-8);
+        }
+        
+        .action-btn {
+            background: var(--color-english-light);
+            color: var(--color-english-dark);
+            border: 2px solid var(--color-english-base);
+            padding: var(--space-3) var(--space-4);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+        
+        .action-btn:hover {
+            background: var(--color-english-base);
+            color: white;
+            transform: translateY(-1px);
+        }
+        
+        .assignment-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+        
+        .assignment-item {
+            background: var(--color-primary-100);
+            padding: var(--space-3) var(--space-4);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--color-primary-200);
+            border-left: 4px solid var(--color-english-base);
+        }
+        
+        .assignment-item:hover {
+            background: var(--color-english-light);
+            border-left-color: var(--color-english-dark);
+        }
+        
+        .assignment-item.urgent {
+            border-left-color: var(--color-urgent-base);
+            background: #ffebee;
+        }
+        
+        .assignment-item.due-soon {
+            border-left-color: var(--color-warning-base);
+            background: #fff3e0;
+        }
+        
+        .chat-container {
+            background: white;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            flex-direction: column;
+            height: 70vh;
+            border: 2px solid var(--color-english-light);
+        }
+        
+        .chat-header {
+            padding: var(--space-6);
+            border-bottom: 2px solid var(--color-english-light);
+            background: var(--color-english-light);
+            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+        }
+        
+        .chat-header h2 {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            color: var(--color-english-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: var(--space-6);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+        
+        .welcome-message {
+            text-align: center;
+            color: var(--color-primary-700);
+            padding: var(--space-8);
+        }
+        
+        .welcome-message h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--space-3);
+            color: var(--color-english-dark);
+        }
+        
+        .example-questions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+            margin-top: var(--space-4);
+        }
+        
+        .example-question {
+            background: var(--color-english-light);
+            color: var(--color-english-dark);
+            padding: var(--space-3) var(--space-4);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid var(--color-english-base);
+            text-align: left;
+        }
+        
+        .example-question:hover {
+            background: var(--color-english-base);
+            color: white;
+            transform: translateY(-1px);
+        }
+        
+        .chat-input {
+            padding: var(--space-6);
+            border-top: 2px solid var(--color-english-light);
+            background: var(--color-primary-100);
+            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+        }
+        
+        .input-group {
+            display: flex;
+            gap: var(--space-3);
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: var(--space-4);
+            border: 2px solid var(--color-english-base);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            transition: border-color 0.2s ease;
+            background: white;
+        }
+        
+        .chat-input input:focus {
+            outline: none;
+            border-color: var(--color-english-dark);
+            box-shadow: 0 0 0 3px rgba(123, 31, 162, 0.1);
+        }
+        
+        .send-btn {
+            background: var(--color-english-base);
+            color: white;
+            border: none;
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .send-btn:hover {
+            background: var(--color-english-dark);
+            transform: translateY(-1px);
+        }
+        
+        .send-btn:disabled {
+            background: var(--color-primary-300);
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        /* Message styling */
+        .message {
+            display: flex;
+            gap: var(--space-3);
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .message.user {
+            flex-direction: row-reverse;
+        }
+        
+        .message-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-lg);
+            flex-shrink: 0;
+        }
+        
+        .message.user .message-avatar {
+            background: var(--color-english-base);
+            color: white;
+        }
+        
+        .message.assistant .message-avatar {
+            background: var(--color-primary-200);
+            color: var(--color-primary-700);
+        }
+        
+        .message-content {
+            background: var(--color-primary-100);
+            padding: var(--space-4);
+            border-radius: var(--radius-lg);
+            max-width: 80%;
+            line-height: 1.6;
+        }
+        
+        .message.user .message-content {
+            background: var(--color-english-base);
+            color: white;
+        }
+        
+        .message.assistant .message-content {
+            background: white;
+            border: 2px solid var(--color-english-light);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .loading {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            color: var(--color-primary-500);
+            font-style: italic;
+        }
+        
+        .loading-dots {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .loading-dots span {
+            width: 4px;
+            height: 4px;
+            background: var(--color-english-base);
+            border-radius: 50%;
+            animation: loading 1.4s infinite ease-in-out;
+        }
+        
+        .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+        
+        @keyframes loading {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: var(--space-6);
+            }
+            
+            .chat-container {
+                height: 60vh;
+            }
+            
+            .container {
+                padding: var(--space-3);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="back-link">← Back to Dashboard</a>
+            <h1>📝 ENG 111 Writing Coach</h1>
+            <p>Your ADHD-friendly writing assistant for essays, discussions, and academic success</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Quick Actions</h2>
+                <div class="quick-actions">
+                    <button class="action-btn" onclick="askQuestion('help with critical reading discussion')">📖 Discussion Help</button>
+                    <button class="action-btn" onclick="askQuestion('how to write compare contrast essay')">📝 Essay Writing</button>
+                    <button class="action-btn" onclick="askQuestion('plagiarism help')">🔍 Citation Help</button>
+                    <button class="action-btn" onclick="askQuestion('understanding assignment')">❓ Assignment Help</button>
+                </div>
+                
+                <h2>Current Assignments</h2>
+                <div class="assignment-list">
+                    <div class="assignment-item urgent" onclick="askQuestion('critical reading discussion adam grant')">
+                        <strong>Week 1: Critical Reading Discussion</strong>
+                        <div style="font-size: 0.9em; color: var(--color-urgent-base); font-weight: 600;">DUE: Tomorrow (8/22)</div>
+                    </div>
+                    <div class="assignment-item due-soon" onclick="askQuestion('eva syllabus quiz')">
+                        <strong>EVA Syllabus Quiz</strong>
+                        <div style="font-size: 0.9em; color: var(--color-warning-base); font-weight: 600;">DUE: This Week</div>
+                    </div>
+                    <div class="assignment-item" onclick="askQuestion('week 2 plagiarism citations')">
+                        <strong>Week 2: Plagiarism & Citations</strong>
+                        <div style="font-size: 0.9em; color: var(--color-primary-700);">Coming Up</div>
+                    </div>
+                    <div class="assignment-item" onclick="askQuestion('compare contrast essay')">
+                        <strong>Week 3: Compare/Contrast Essay</strong>
+                        <div style="font-size: 0.9em; color: var(--color-primary-700);">Future Assignment</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Chat with Your Writing Coach</h2>
+                </div>
+                
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <h3>👋 Welcome to your ENG 111 Writing Coach!</h3>
+                        <p>I'm here to help you succeed in writing! I break down complex assignments into simple steps, help you understand what your professor wants, and guide you through each part of the writing process.</p>
+                        <div class="example-questions">
+                            <div class="example-question" onclick="askQuestion('What is the main point of Adam Grant article?')">
+                                💡 "What is the main point of the Adam Grant article?"
+                            </div>
+                            <div class="example-question" onclick="askQuestion('How do I structure my discussion post?')">
+                                💡 "How do I structure my discussion post?"
+                            </div>
+                            <div class="example-question" onclick="askQuestion('What does a works cited look like?')">
+                                💡 "What does a Works Cited look like?"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input">
+                    <div class="input-group">
+                        <input type="text" id="messageInput" placeholder="Ask me anything about ENG 111..." onkeypress="handleKeyPress(event)">
+                        <button class="send-btn" onclick="sendMessage()" id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isProcessing = false;
+        
+        function askQuestion(question) {
+            document.getElementById('messageInput').value = question;
+            sendMessage();
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !isProcessing) {
+                sendMessage();
+            }
+        }
+        
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            
+            if (!message || isProcessing) return;
+            
+            // Add user message
+            addMessage(message, 'user');
+            input.value = '';
+            
+            // Show loading
+            isProcessing = true;
+            document.getElementById('sendBtn').disabled = true;
+            showLoading();
+            
+            try {
+                // Get response
+                const response = await generateResponse(message);
+                hideLoading();
+                addMessage(response, 'assistant');
+            } catch (error) {
+                hideLoading();
+                addMessage('Sorry, I encountered an error. Please try again.', 'assistant');
+                console.error('Error:', error);
+            } finally {
+                isProcessing = false;
+                document.getElementById('sendBtn').disabled = false;
+            }
+        }
+        
+        function addMessage(content, sender) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = sender === 'user' ? '👤' : '📝';
+            
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            messageContent.innerHTML = content;
+            
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(messageContent);
+            
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function showLoading() {
+            const messagesContainer = document.getElementById('chatMessages');
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message assistant';
+            loadingDiv.id = 'loadingMessage';
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = '📝';
+            
+            const loadingContent = document.createElement('div');
+            loadingContent.className = 'message-content';
+            loadingContent.innerHTML = `
+                <div class="loading">
+                    <span>Thinking about your writing...</span>
+                    <div class="loading-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            `;
+            
+            loadingDiv.appendChild(avatar);
+            loadingDiv.appendChild(loadingContent);
+            messagesContainer.appendChild(loadingDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function hideLoading() {
+            const loadingMessage = document.getElementById('loadingMessage');
+            if (loadingMessage) {
+                loadingMessage.remove();
+            }
+        }
+        
+        async function generateResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            // Critical Reading Discussion Help
+            if (lowerMessage.includes('critical reading') || lowerMessage.includes('adam grant') || lowerMessage.includes('discussion')) {
+                return `
+                    <strong>📖 Critical Reading Discussion - Step by Step</strong><br><br>
+                    
+                    <strong>🎯 Your Goal:</strong> Show you understand Adam Grant's article AND share your own thoughts<br><br>
+                    
+                    <strong>📝 Structure for Success:</strong><br>
+                    <strong>1. Main Point (2-3 sentences):</strong><br>
+                    • What is Grant trying to convince you of?<br>
+                    • Don't just repeat the title - dig deeper!<br><br>
+                    
+                    <strong>2. Your Response (3-4 sentences):</strong><br>
+                    • Do you agree or disagree? Why?<br>
+                    • Include ONE quote from the article<br>
+                    • Be specific about which parts you agree/disagree with<br><br>
+                    
+                    <strong>3. Works Cited (try your best):</strong><br>
+                    • Grant, Adam. "Does Trying to Be Happy Make Us Unhappy?" [Publication], [Date].<br>
+                    • Don't stress - the professor said it won't hurt your grade<br><br>
+                    
+                    <strong>🎯 Remember:</strong> Read the article twice! You can't have an opinion if you don't understand it first.
+                `;
+            }
+            
+            // Essay Writing Help
+            else if (lowerMessage.includes('essay') || lowerMessage.includes('compare') || lowerMessage.includes('contrast')) {
+                return `
+                    <strong>📝 Compare/Contrast Essay - ADHD-Friendly Guide</strong><br><br>
+                    
+                    <strong>🧠 Break It Down:</strong><br>
+                    <strong>Week 3:</strong> Rough Draft (first 3 paragraphs only)<br>
+                    <strong>Week 4:</strong> Final Draft (complete essay)<br><br>
+                    
+                    <strong>📖 Structure Made Simple:</strong><br>
+                    <strong>Paragraph 1:</strong> Introduction + Thesis<br>
+                    <strong>Paragraph 2:</strong> Similarities<br>
+                    <strong>Paragraph 3:</strong> Differences<br>
+                    <strong>Paragraph 4:</strong> More differences OR your conclusion<br>
+                    <strong>Paragraph 5:</strong> Conclusion<br><br>
+                    
+                    <strong>💡 Pro Tips:</strong><br>
+                    • Pick two things you actually know about<br>
+                    • Use transition words: "Similarly," "However," "In contrast"<br>
+                    • Don't just list - explain WHY the similarities/differences matter<br><br>
+                    
+                    <strong>🎯 Remember:</strong> You only need 3 paragraphs for the rough draft!
+                `;
+            }
+            
+            // Citation and Plagiarism Help
+            else if (lowerMessage.includes('citation') || lowerMessage.includes('plagiarism') || lowerMessage.includes('works cited')) {
+                return `
+                    <strong>🔍 Citations & Plagiarism - Keep It Simple</strong><br><br>
+                    
+                    <strong>⚠️ What IS Plagiarism:</strong><br>
+                    • Copying someone's words without quotes<br>
+                    • Using someone's ideas without saying where you got them<br>
+                    • Letting AI write your paper<br>
+                    • Turning in work you wrote for another class<br><br>
+                    
+                    <strong>✅ How to Avoid It:</strong><br>
+                    • Put quotes around copied words: "like this"<br>
+                    • Say where ideas came from: "According to Smith..."<br>
+                    • Write your own thoughts in your own words<br><br>
+                    
+                    <strong>📚 Basic MLA Format:</strong><br>
+                    <strong>In your paper:</strong> Grant argues that "happiness is complicated" (Grant 15).<br>
+                    <strong>Works Cited:</strong> Grant, Adam. "Article Title." Website Name, Date.<br><br>
+                    
+                    <strong>💡 Remember:</strong> Your professor wants to see YOUR thinking!
+                `;
+            }
+            
+            // Assignment Understanding
+            else if (lowerMessage.includes('assignment') || lowerMessage.includes('understand') || lowerMessage.includes('confused')) {
+                return `
+                    <strong>❓ Assignment Breakdown - Let's Make This Clear</strong><br><br>
+                    
+                    <strong>🧠 ADHD Strategy:</strong><br>
+                    1. <strong>Read the assignment twice</strong><br>
+                    2. <strong>Highlight key words:</strong> "analyze," "compare," "argue"<br>
+                    3. <strong>Look for requirements:</strong> length, format, due date<br>
+                    4. <strong>Break it into steps</strong><br><br>
+                    
+                    <strong>🔍 Key Words to Watch For:</strong><br>
+                    • <strong>Analyze:</strong> Break it down, explain why<br>
+                    • <strong>Compare:</strong> Show similarities<br>
+                    • <strong>Contrast:</strong> Show differences<br>
+                    • <strong>Argue:</strong> Take a side, defend it<br>
+                    • <strong>Discuss:</strong> Talk about different aspects<br><br>
+                    
+                    <strong>💡 Still Confused?</strong><br>
+                    • Email Professor Meggett: Emmanuel.Meggett@cpcc.edu<br>
+                    • Ask specific questions: "Do you want me to...?"<br>
+                    • Check the rubric if there is one<br><br>
+                    
+                    <strong>🎯 Remember:</strong> It's better to ask than to guess wrong!
+                `;
+            }
+            
+            // General Writing Process
+            else if (lowerMessage.includes('writing process') || lowerMessage.includes('how to write')) {
+                return `
+                    <strong>✍️ Writing Process - ADHD-Friendly Steps</strong><br><br>
+                    
+                    <strong>🧠 Break It Down (Don't Do It All at Once!):</strong><br><br>
+                    
+                    <strong>Day 1: Brainstorm</strong><br>
+                    • Write down everything you know about the topic<br>
+                    • Don't worry about organization yet<br><br>
+                    
+                    <strong>Day 2: Organize</strong><br>
+                    • Group similar ideas together<br>
+                    • Decide what order makes sense<br><br>
+                    
+                    <strong>Day 3: Write Rough Draft</strong><br>
+                    • Just get words on paper<br>
+                    • Don't worry about perfect sentences<br><br>
+                    
+                    <strong>Day 4: Take a Break</strong><br>
+                    • Let your brain rest<br>
+                    • Come back with fresh eyes<br><br>
+                    
+                    <strong>Day 5: Revise</strong><br>
+                    • Fix big problems: missing ideas, confusing parts<br>
+                    • Check: Does this make sense?<br><br>
+                    
+                    <strong>Day 6: Edit</strong><br>
+                    • Fix small problems: spelling, grammar<br>
+                    • Read out loud - your ears catch what your eyes miss<br><br>
+                    
+                    <strong>💡 ADHD Tip:</strong> Set a timer for 25 minutes, work, then take a 5-minute break!
+                `;
+            }
+            
+            // Default response
+            else {
+                return `
+                    <strong>I'm here to help with your ENG 111 success! 📝</strong><br><br>
+                    
+                    <strong>🎯 I can help you with:</strong><br>
+                    • Understanding assignments (break them down step-by-step)<br>
+                    • Writing essays (structure, organization, ideas)<br>
+                    • Discussion posts (what to say, how to say it)<br>
+                    • Citations and plagiarism (keep it simple and honest)<br>
+                    • Reading comprehension (get the main points)<br><br>
+                    
+                    <strong>💡 Try asking:</strong><br>
+                    • "Help me understand the Adam Grant article"<br>
+                    • "How do I start my compare/contrast essay?"<br>
+                    • "What should I include in my discussion post?"<br>
+                    • "How do I cite sources without plagiarizing?"<br><br>
+                    
+                    <strong>🧠 ADHD-Friendly Promise:</strong><br>
+                    I'll break everything down into simple steps, use clear language, and help you succeed one piece at a time!
+                `;
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('messageInput').focus();
+            console.log('📝 ENG 111 Writing Coach ready to help!');
+        });
+    </script>
+</body>
+</html>
