@@ -19,7 +19,7 @@ All 8 course chapters with detailed section breakdowns:
 - **Chapter 13**: Voting & Apportionment (3 sections)
 
 ### 🎨 **Modern Minimal Design System**
-- **M Sans Font**: Rubik font family for clean, modern typography
+- **Vend Sans Font**: Vend Sans font family for clean, modern typography
 - **Black & White Emphasis**: Primary color palette with #30302f and #f2f2f2
 - **Accent Colors**: Soft pastels (#c3dde9, #e4e67b, #e5ccd0, #eb7754)
 - **Clean Layout**: Minimal borders, ample whitespace, modern aesthetics
@@ -156,7 +156,7 @@ kristina_math_tutor/
 - **Accent Orange**: #eb7754 (energetic, motivating)
 
 ### **Typography**
-- **Primary Font**: Rubik (M sans font family)
+- **Primary Font**: Vend Sans (modern sans-serif font family)
 - **Weights**: 400 (normal), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold), 900 (black)
 - **Uppercase Headings**: Modern, clean aesthetic
 - **Letter Spacing**: 0.05em for enhanced readability
@@ -354,6 +354,6 @@ Start with the web-based system to get oriented, then use the other tools as nee
 
 ## 📝 **Version History**
 
-- **v2.0.0**: Modern minimal design system with M sans font
+- **v2.0.0**: Modern minimal design system with Vend Sans font
 - **v1.5.0**: Production deployment on Vercel with API integration
 - **v1.0.0**: Complete tutoring system with calendar integration
