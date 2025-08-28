@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Semantic color system (light) === */
+:root{
+  /* Base surfaces */
+  --bg: theme(colors.white);
+  --bg-muted: theme(colors.neutral.50);
+  --panel: theme(colors.white);
+  --panel-muted: theme(colors.neutral.100);
+  --border: theme(colors.neutral.200);
+
+  /* Text */
+  --text: theme(colors.black);
+  --text-muted: theme(colors.neutral.700);
+  --text-inverse: theme(colors.white);
+
+  /* Brand + accents (class categories) */
+  --brand: theme(colors.blue.500);     /* default accent */
+  --class-math: theme(colors.blue.500);
+  --class-writing: theme(colors.pink.500);
+  --class-general: theme(colors.neutral.400); /* misc */
+
+  /* Status & urgency */
+  --info: theme(colors.blue.400);
+  --warn: theme(colors.yellow.500);
+  --urgent: theme(colors.coral.500);
+  --urgent-weak: theme(colors.coral.100);
+  --urgent-strong: theme(colors.coral.700);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: theme(colors.neutral.900);
+    --bg-muted: theme(colors.neutral.800);
+    --panel: theme(colors.neutral.900);
+    --panel-muted: theme(colors.neutral.800);
+    --border: theme(colors.neutral.700);
+    --text: theme(colors.white);
+    --text-muted: theme(colors.neutral.300);
+    --text-inverse: theme(colors.black);
+    --brand: theme(colors.blue.300);
+    --class-math: theme(colors.blue.300);
+    --class-writing: theme(colors.pink.300);
+    --class-general: theme(colors.neutral.500);
+    --info: theme(colors.blue.300);
+    --warn: theme(colors.yellow.400);
+    --urgent: theme(colors.coral.400);
+    --urgent-weak: theme(colors.coral.800);
+    --urgent-strong: theme(colors.coral.300);
+  }
+}
+
+@layer base{
+  html,body{background:var(--bg); color:var(--text);}
+}
+
+@layer components{
+  .card{
+    @apply rounded-2xl shadow-card border border-[var(--border)] bg-[var(--panel)];
+  }
+  .chip{
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium;
+  }
+  .btn{
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition;
+  }
+  .btn-primary{
+    background:var(--brand); color:var(--text-inverse);
+  }
+  .btn-primary:hover{filter:brightness(0.95);}
+  .btn-ghost{
+    @apply border border-[var(--border)] bg-[var(--panel)]; color:var(--text);
+  }
+  .badge-urgent{
+    background:var(--urgent); color:var(--text-inverse);
+  }
+  .banner-urgent{
+    background:var(--urgent-weak); color:var(--urgent-strong);
+    @apply rounded-xl px-4 py-3 border border-[var(--urgent)];
+  }
+  .is-math{ --brand: theme(colors.blue.500); }
+  .is-writing{ --brand: theme(colors.pink.500); }
+  .is-critical{ --brand: theme(colors.coral.500); }
+  .is-neutral{ --brand: theme(colors.neutral.500); }
+}

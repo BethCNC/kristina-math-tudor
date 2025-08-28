@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Mathematical Thinking - MAT 143 Study Guide</title>
+    <meta name="description" content="Master Chapter 1 of MAT 143: Learn deductive and inductive reasoning, pattern recognition, and problem-solving strategies.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-[var(--panel)] border-b border-[var(--border)] sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="btn btn-ghost">← Back to Home</a>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold text-[var(--text)] is-math">Chapter 1: Mathematical Thinking</h1>
+                    <p class="text-sm text-[var(--text-muted)]">Deductive & Inductive Reasoning</p>
+                </div>
+                <a href="tutor.html" class="btn btn-primary is-math">Get Help</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+        <!-- Chapter Overview -->
+        <section class="card p-6 is-math">
+            <div class="flex items-start gap-4">
+                <div class="w-16 h-16 rounded-xl bg-[var(--class-math)] text-white flex items-center justify-center text-2xl font-bold">1</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-[var(--text)] mb-2">Mathematical Thinking</h2>
+                    <p class="text-[var(--text-muted)] text-lg leading-relaxed">
+                        Learn to think like a mathematician! This chapter builds your foundation for logical reasoning, 
+                        pattern recognition, and systematic problem-solving that you'll use throughout the course.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Objectives -->
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🎯 What You'll Learn</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Deductive Reasoning</h4>
+                    <p class="text-[var(--text-muted)]">Start with general rules and apply them to specific situations</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Inductive Reasoning</h4>
+                    <p class="text-[var(--text-muted)]">Observe patterns to make generalizations and predictions</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Pattern Recognition</h4>
+                    <p class="text-[var(--text-muted)]">Identify sequences, relationships, and recurring structures</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem Solving</h4>
+                    <p class="text-[var(--text-muted)]">Apply systematic approaches to mathematical challenges</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Concepts -->
+        <section class="space-y-6">
+            <h3 class="text-2xl font-bold text-[var(--text)]">📚 Key Concepts</h3>
+            
+            <!-- Deductive Reasoning -->
+            <div class="card p-6">
+                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">🔍 Deductive Reasoning</h4>
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
+                        <h5 class="font-semibold text-blue-900 mb-2">Definition</h5>
+                        <p class="text-blue-800">Reasoning from general principles to specific conclusions. If the premises are true, the conclusion must be true.</p>
+                    </div>
+                    
+                    <div class="p-4 rounded-xl bg-[var(--bg-muted)] border border-[var(--border)]">
+                        <h5 class="font-semibold text-[var(--text)] mb-2">Example</h5>
+                        <div class="space-y-2 text-[var(--text-muted)]">
+                            <p><strong>General Rule:</strong> All students must attend class to pass.</p>
+                            <p><strong>Specific Case:</strong> Kristina is a student.</p>
+                            <p><strong>Conclusion:</strong> Therefore, Kristina must attend class to pass.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inductive Reasoning -->
+            <div class="card p-6">
+                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">🔄 Inductive Reasoning</h4>
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
+                        <h5 class="font-semibold text-yellow-900 mb-2">Definition</h5>
+                        <p class="text-yellow-800">Reasoning from specific observations to general conclusions. The conclusion is probable but not guaranteed.</p>
+                    </div>
+                    
+                    <div class="p-4 rounded-xl bg-[var(--bg-muted)] border border-[var(--border)]">
+                        <h5 class="font-semibold text-[var(--text)] mb-2">Example</h5>
+                        <div class="space-y-2 text-[var(--text-muted)]">
+                            <p><strong>Observations:</strong> It rained Monday, Tuesday, and Wednesday this week.</p>
+                            <p><strong>Pattern:</strong> It has rained every day so far.</p>
+                            <p><strong>Conclusion:</strong> It will probably rain tomorrow too.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pattern Recognition -->
+            <div class="card p-6">
+                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">🎯 Pattern Recognition</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h5 class="font-semibold text-[var(--text)] mb-3">Number Patterns</h5>
+                        <div class="space-y-2 p-4 rounded-xl bg-[var(--bg-muted)]">
+                            <p class="text-[var(--text-muted)]"><strong>Arithmetic:</strong> 2, 5, 8, 11, 14... (+3)</p>
+                            <p class="text-[var(--text-muted)]"><strong>Geometric:</strong> 3, 6, 12, 24, 48... (×2)</p>
+                            <p class="text-[var(--text-muted)]"><strong>Fibonacci:</strong> 1, 1, 2, 3, 5, 8, 13...</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h5 class="font-semibold text-[var(--text)] mb-3">Visual Patterns</h5>
+                        <div class="space-y-2 p-4 rounded-xl bg-[var(--bg-muted)]">
+                            <p class="text-[var(--text-muted)]">• Shape sequences</p>
+                            <p class="text-[var(--text-muted)]">• Color progressions</p>
+                            <p class="text-[var(--text-muted)]">• Size relationships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Problems -->
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🧠 Practice Problems</h3>
+            <div class="space-y-6">
+                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 1: Pattern Recognition</h4>
+                    <p class="text-[var(--text-muted)] mb-3">Find the next number in the sequence: 1, 4, 9, 16, 25, ___</p>
+                    <details class="mt-2">
+                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
+                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
+                            <p class="text-green-800"><strong>Answer:</strong> 36</p>
+                            <p class="text-green-700"><strong>Explanation:</strong> These are perfect squares: 1², 2², 3², 4², 5², 6² = 36</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 2: Deductive Reasoning</h4>
+                    <p class="text-[var(--text-muted)] mb-3">
+                        If all math students use calculators, and Sarah is a math student, what can we conclude about Sarah?
+                    </p>
+                    <details class="mt-2">
+                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
+                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
+                            <p class="text-green-800"><strong>Answer:</strong> Sarah uses a calculator</p>
+                            <p class="text-green-700"><strong>Explanation:</strong> This follows deductive reasoning - from the general rule to a specific case</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Tips -->
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">💡 Study Tips for ADHD Success</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">🧠 Pattern Practice</h4>
+                    <p class="text-[var(--text-muted)]">Practice 15 minutes daily with number sequences. Start simple, build complexity gradually.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">📝 Reasoning Journal</h4>
+                    <p class="text-[var(--text-muted)]">Write out your thinking process. "I think this because..." helps solidify understanding.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">🔍 Real-World Examples</h4>
+                    <p class="text-[var(--text-muted)]">Find patterns in daily life: bus schedules, price trends, weather patterns.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">⏰ Break It Down</h4>
+                    <p class="text-[var(--text-muted)]">25-minute study sessions with 5-minute breaks. Focus on one concept at a time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🚀 Ready to Practice?</h3>
+            <div class="flex flex-wrap gap-4">
+                <a href="tutor.html" class="btn btn-primary is-math">Ask AI Tutor</a>
+                <a href="calendar.html" class="btn btn-ghost">Study Schedule</a>
+                <a href="index.html#chapters" class="btn btn-ghost">All Chapters</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-[var(--border)] bg-[var(--panel)] py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-[var(--text-muted)]">Chapter 1 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
+            <p class="text-sm text-[var(--text-muted)] mt-2">
+                <a href="index.html" class="text-[var(--class-math)] hover:underline">← Back to Dashboard</a> • 
+                <a href="chapter-4.html" class="text-[var(--class-math)] hover:underline">Next: Chapter 4 →</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Personal Finance - MAT 143 Study Guide</title>
+    <meta name="description" content="Master Chapter 6 of MAT 143: Learn simple and compound interest, loans, investments, and financial calculations.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808", white: "#fafafa",
+                        neutral: {50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"},
+                        coral: {50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"},
+                        pink: {50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"},
+                        yellow: {50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"},
+                        blue: {50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"}
+                    },
+                    fontFamily: {sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]},
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"}
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen">
+    <header class="bg-[var(--panel)] border-b border-[var(--border)] sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="btn btn-ghost">← Back to Home</a>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold text-[var(--text)] is-math">Chapter 6: Personal Finance</h1>
+                    <p class="text-sm text-[var(--text-muted)]">Interest, Loans & Smart Money Decisions</p>
+                </div>
+                <a href="tutor.html" class="btn btn-primary is-math">Get Help</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+        <section class="card p-6 is-math">
+            <div class="flex items-start gap-4">
+                <div class="w-16 h-16 rounded-xl bg-[var(--class-math)] text-white flex items-center justify-center text-2xl font-bold">6</div>
+                <div>
+                    <h2 class="text-2xl font-bold text-[var(--text)] mb-2">Personal Finance</h2>
+                    <p class="text-[var(--text-muted)] text-lg leading-relaxed">
+                        Make smart money decisions! Learn compound interest, understand loans, and master financial calculations that will benefit you for life.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-6">💰 Essential Formulas</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-xl bg-green-50 border border-green-200">
+                    <h4 class="font-bold text-green-900 text-lg mb-3">Simple Interest</h4>
+                    <div class="space-y-2">
+                        <p class="text-green-800 font-mono text-xl">I = Prt</p>
+                        <div class="text-green-700 text-sm space-y-1">
+                            <p>I = Interest earned</p>
+                            <p>P = Principal (starting amount)</p>
+                            <p>r = Rate (as decimal)</p>
+                            <p>t = Time (in years)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 rounded-xl bg-blue-50 border border-blue-200">
+                    <h4 class="font-bold text-blue-900 text-lg mb-3">Compound Interest</h4>
+                    <div class="space-y-2">
+                        <p class="text-blue-800 font-mono text-lg">A = P(1 + r/n)^(nt)</p>
+                        <div class="text-blue-700 text-sm space-y-1">
+                            <p>A = Final amount</p>
+                            <p>n = Times compounded per year</p>
+                            <p>Other variables same as simple interest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h3 class="text-2xl font-bold text-[var(--text)]">📚 Key Concepts</h3>
+            
+            <div class="card p-6">
+                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">🏦 Simple vs Compound Interest</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
+                        <h5 class="font-semibold text-yellow-900 mb-3">Simple Interest</h5>
+                        <div class="space-y-2 text-yellow-800">
+                            <p>Interest calculated only on principal</p>
+                            <p><strong>Example:</strong> $1000 at 5% for 3 years</p>
+                            <p>I = 1000 × 0.05 × 3 = $150</p>
+                            <p><strong>Total:</strong> $1000 + $150 = $1150</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
+                        <h5 class="font-semibold text-blue-900 mb-3">Compound Interest</h5>
+                        <div class="space-y-2 text-blue-800">
+                            <p>Interest calculated on principal + previous interest</p>
+                            <p><strong>Example:</strong> $1000 at 5% for 3 years</p>
+                            <p>A = 1000(1 + 0.05)³ = $1157.63</p>
+                            <p><strong>Difference:</strong> $7.63 more!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-6">
+                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">📈 Real-World Applications</h4>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                        <h5 class="font-semibold text-[var(--text)] mb-2">💳 Credit Cards</h5>
+                        <p class="text-[var(--text-muted)] text-sm">High interest rates compound daily. Pay off balances quickly!</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                        <h5 class="font-semibold text-[var(--text)] mb-2">🏠 Mortgages</h5>
+                        <p class="text-[var(--text-muted)] text-sm">Long-term loans where early payments save thousands.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                        <h5 class="font-semibold text-[var(--text)] mb-2">💼 Investments</h5>
+                        <p class="text-[var(--text-muted)] text-sm">Compound growth over time builds wealth.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🧠 Practice Problems</h3>
+            <div class="space-y-6">
+                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 1: Savings Account</h4>
+                    <p class="text-[var(--text-muted)] mb-3">
+                        You deposit $2000 in a savings account that pays 3% simple interest annually. How much interest will you earn in 4 years?
+                    </p>
+                    <details class="mt-2">
+                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
+                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
+                            <div class="text-green-800 space-y-1">
+                                <p><strong>Given:</strong> P = $2000, r = 3% = 0.03, t = 4 years</p>
+                                <p><strong>Formula:</strong> I = Prt</p>
+                                <p><strong>Calculate:</strong> I = 2000 × 0.03 × 4 = $240</p>
+                                <p><strong>Answer:</strong> You'll earn $240 in interest</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
+                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 2: Investment Growth</h4>
+                    <p class="text-[var(--text-muted)] mb-3">
+                        You invest $5000 at 6% annual interest compounded annually. What will it be worth after 5 years?
+                    </p>
+                    <details class="mt-2">
+                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
+                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
+                            <div class="text-green-800 space-y-1">
+                                <p><strong>Given:</strong> P = $5000, r = 6% = 0.06, n = 1, t = 5</p>
+                                <p><strong>Formula:</strong> A = P(1 + r/n)^(nt)</p>
+                                <p><strong>Calculate:</strong> A = 5000(1 + 0.06/1)^(1×5)</p>
+                                <p><strong>Simplify:</strong> A = 5000(1.06)^5 = 5000(1.3382) ≈ $6,691</p>
+                                <p><strong>Answer:</strong> Your investment will be worth $6,691</p>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">💡 Money-Smart Tips</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 rounded-xl bg-green-50 border border-green-200">
+                    <h4 class="font-semibold text-green-900 mb-2">✅ Smart Moves</h4>
+                    <ul class="text-green-800 text-sm space-y-1">
+                        <li>• Start investing early - time is your friend</li>
+                        <li>• Pay more than minimum on loans</li>
+                        <li>• Compare APRs, not just interest rates</li>
+                        <li>• Automate savings to build discipline</li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-red-50 border border-red-200">
+                    <h4 class="font-semibold text-red-900 mb-2">❌ Avoid These</h4>
+                    <ul class="text-red-800 text-sm space-y-1">
+                        <li>• Carrying credit card balances</li>
+                        <li>• Payday loans (extremely high rates)</li>
+                        <li>• Only making minimum payments</li>
+                        <li>• Not reading the fine print</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="card p-6">
+            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🚀 Ready to Practice?</h3>
+            <div class="flex flex-wrap gap-4">
+                <a href="tutor.html" class="btn btn-primary is-math">Ask AI Tutor</a>
+                <a href="calendar.html" class="btn btn-ghost">Study Schedule</a>
+                <a href="index.html#chapters" class="btn btn-ghost">All Chapters</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-[var(--border)] bg-[var(--panel)] py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-[var(--text-muted)]">Chapter 6 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
+            <p class="text-sm text-[var(--text-muted)] mt-2">
+                <a href="chapter-4.html" class="text-[var(--class-math)] hover:underline">← Previous: Chapter 4</a> • 
+                <a href="index.html" class="text-[var(--class-math)] hover:underline">Back to Dashboard</a> • 
+                <a href="chapter-10.html" class="text-[var(--class-math)] hover:underline">Next: Chapter 10 →</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
