@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 143 Math Tutor - Kristina's Success Journey</title>
+    <meta name="description" content="Your personal MAT 143 tutor that breaks down complex math into simple, digestible lessons you can actually understand and enjoy.">
+    
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="MAT 143 Math Tutor - Make Math Make Sense">
+    <meta property="og:description" content="Transform math anxiety into math confidence with step-by-step explanations designed for real understanding.">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+        
+        /* Design System - Modern Minimal */
+        :root {
+            /* Colors - Modern minimal with black/white emphasis */
+            --color-primary-50: #f2f2f2;
+            --color-primary-100: #e5e5e5;
+            --color-primary-200: #d4d4d4;
+            --color-primary-300: #a3a3a3;
+            --color-primary-400: #737373;
+            --color-primary-500: #30302f;
+            --color-primary-600: #262626;
+            --color-primary-700: #1a1a1a;
+            --color-primary-800: #0f0f0f;
+            --color-primary-900: #000000;
+            
+            --color-accent-blue: #c3dde9;
+            --color-accent-yellow: #e4e67b;
+            --color-accent-pink: #e5ccd0;
+            --color-accent-orange: #eb7754;
+            
+            --color-success-50: #f0fdf4;
+            --color-success-500: #22c55e;
+            --color-success-600: #16a34a;
+            
+            --color-warning-50: #fffbeb;
+            --color-warning-500: #f59e0b;
+            --color-warning-600: #d97706;
+            
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            
+            /* Typography - M sans font (Rubik) */
+            --font-family-primary: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
+            --font-family-serif: 'Plantin', Georgia, serif;
+            
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.625;
+            
+            /* Spacing - Update from your tokens.json */
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-20: 5rem;
+            
+            /* Border radius */
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-primary-900);
+            background-color: var(--color-primary-50);
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Layout Components */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-4);
+        }
+        
+        .hero {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+            padding: var(--space-16) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='white' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E") repeat;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(180deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            line-height: var(--line-height-tight);
+            margin-bottom: var(--space-4);
+        }
+        
+        .hero p {
+            font-size: var(--font-size-lg);
+            line-height: var(--line-height-relaxed);
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto var(--space-8);
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-lg);
+            border: 2px solid var(--color-primary-50);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+            border-color: var(--color-primary-900);
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            padding: var(--space-16) 0;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-8);
+            margin-bottom: var(--space-16);
+        }
+        
+        .feature-card {
+            background: var(--color-primary-50);
+            padding: var(--space-8);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-primary-200);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-primary-400);
+            background: white;
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--color-accent-blue);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-2xl);
+            margin: 0 auto var(--space-4);
+            color: var(--color-primary-900);
+        }
+        
+        .feature-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin-bottom: var(--space-3);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .feature-card p {
+            color: var(--color-primary-600);
+            line-height: var(--line-height-relaxed);
+        }
+        
+        .tools-section {
+            background: var(--color-primary-100);
+            padding: var(--space-16) 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-12);
+        }
+        
+        .section-header h2 {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-neutral-900);
+            margin-bottom: var(--space-4);
+        }
+        
+        .section-header p {
+            font-size: var(--font-size-lg);
+            color: var(--color-neutral-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+        }
+        
+        .tool-card {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            transition: all 0.3s ease;
+        }
+        
+        .tool-card:hover {
+            border-color: var(--color-primary-300);
+            background: white;
+        }
+        
+        .tool-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-4);
+        }
+        
+        .tool-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-primary-500);
+            color: white;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+        }
+        
+        .tool-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-neutral-900);
+        }
+        
+        .tool-card p {
+            color: var(--color-neutral-600);
+            margin-bottom: var(--space-6);
+            line-height: var(--line-height-relaxed);
+        }
+        
+        .tool-button {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            background: var(--color-primary-500);
+            color: white;
+            padding: var(--space-3) var(--space-5);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-sm);
+            transition: all 0.2s ease;
+        }
+        
+        .tool-button:hover {
+            background: var(--color-primary-600);
+        }
+        
+        .chapter-preview {
+            padding: var(--space-16) 0;
+        }
+        
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .chapter-card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            transition: all 0.2s ease;
+        }
+        
+        .chapter-card:hover {
+            border-color: var(--color-primary-300);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .chapter-number {
+            background: var(--color-primary-100);
+            color: var(--color-primary-700);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--radius-sm);
+            display: inline-block;
+            margin-bottom: var(--space-3);
+        }
+        
+        .chapter-card h4 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-neutral-900);
+            margin-bottom: var(--space-2);
+            line-height: var(--line-height-tight);
+        }
+        
+        .chapter-card p {
+            color: var(--color-neutral-600);
+            font-size: var(--font-size-sm);
+            line-height: var(--line-height-relaxed);
+        }
+        
+        .footer {
+            background: var(--color-neutral-900);
+            color: var(--color-neutral-300);
+            padding: var(--space-12) 0;
+            text-align: center;
+        }
+        
+        .success-stats {
+            background: var(--color-success-50);
+            padding: var(--space-12) 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-8);
+            text-align: center;
+        }
+        
+        .stat-card h4 {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-success-600);
+            margin-bottom: var(--space-2);
+        }
+        
+        .stat-card p {
+            color: var(--color-neutral-600);
+            font-weight: var(--font-weight-medium);
+        }
+        
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .hero p {
+                font-size: var(--font-size-base);
+            }
+            
+            .hero {
+                padding: var(--space-12) 0;
+            }
+            
+            .features, .tools-section, .chapter-preview {
+                padding: var(--space-12) 0;
+            }
+            
+            .container {
+                padding: 0 var(--space-3);
+            }
+        }
+        
+        /* Utility Classes */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Math That Actually Makes Sense 🎯</h1>
+                <p>Transform MAT 143 from overwhelming to "Oh, I get it!" with explanations designed for real understanding, not memorization.</p>
+                <a href="calendar.html" class="cta-button">
+                    <span>Start Your Success Journey</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Break It Down Simply</h3>
+                    <p>Complex math concepts explained in bite-sized pieces that build on each other. No more "I don't get it" moments.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Real Understanding</h3>
+                    <p>Focus on why math works, not just how. When you understand the logic, everything clicks into place.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Build Confidence</h3>
+                    <p>Start with what you know and gradually build up. Every small win creates momentum for bigger successes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stats -->
+    <section class="success-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>8</h4>
+                    <p>Chapters Simplified</p>
+                </div>
+                <div class="stat-card">
+                    <h4>27</h4>
+                    <p>Sections Explained</p>
+                </div>
+                <div class="stat-card">
+                    <h4>4</h4>
+                    <p>Tests Mastered</p>
+                </div>
+                <div class="stat-card">
+                    <h4>100%</h4>
+                    <p>Success Focused</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Tools -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Learning Toolkit</h2>
+                <p>Three powerful tools that work together to make math learning actually enjoyable and effective.</p>
+            </div>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">📅</div>
+                        <h3>Smart Calendar</h3>
+                    </div>
+                    <p>Never miss a deadline again. See exactly what to study when, with built-in progress tracking and test countdowns that keep you prepared, not panicked.</p>
+                    <a href="calendar.html" class="tool-button">
+                        <span>Open Calendar</span>
+                        <span>→</span>
+                    </a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">🤖</div>
+                        <h3>AI Study Buddy</h3>
+                    </div>
+                    <p>Get personalized explanations that break down complex problems step-by-step. Like having a patient tutor available 24/7 who never judges, only helps.</p>
+                    <a href="tutor.html" class="tool-button">
+                        <span>Start Tutoring</span>
+                        <span>→</span>
+                    </a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon">📚</div>
+                        <h3>Quick Reference</h3>
+                    </div>
+                    <p>All formulas, concepts, and study strategies in one place. When you need a quick answer or reminder, it's right at your fingertips.</p>
+                    <a href="reference.html" class="tool-button">
+                        <span>Browse Reference</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter Preview -->
+    <section class="chapter-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>What You'll Master</h2>
+                <p>Every chapter broken down into digestible concepts that build your mathematical confidence.</p>
+            </div>
+            
+            <div class="chapter-grid">
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 1</span>
+                    <h4>Mathematical Thinking</h4>
+                    <p>Learn to think like a mathematician - recognize patterns, make logical connections, and solve problems systematically.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 4</span>
+                    <h4>Proportions & Percentages</h4>
+                    <p>Master the art of comparing quantities and calculating percentages that you'll use in everyday life and future courses.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 5</span>
+                    <h4>Functions & Growth</h4>
+                    <p>Understand how things change over time - from linear growth to exponential patterns that appear everywhere.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 6</span>
+                    <h4>Personal Finance</h4>
+                    <p>Make smart money decisions with compound interest, loans, and budgeting - math that pays off for life.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 7</span>
+                    <h4>Measurements & Conversions</h4>
+                    <p>Navigate between different units and measurement systems with confidence and accuracy.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 10</span>
+                    <h4>Probability</h4>
+                    <p>Understand chance and uncertainty - make better decisions when outcomes aren't guaranteed.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 11</span>
+                    <h4>Statistics</h4>
+                    <p>Make sense of data and numbers you see in news, research, and everyday life - become data literate.</p>
+                </div>
+                
+                <div class="chapter-card">
+                    <span class="chapter-number">Chapter 13</span>
+                    <h4>Voting & Fairness</h4>
+                    <p>Explore how math shapes democracy and fair representation - mathematics for citizenship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Built with ❤️ for math success at CPCC • Fall 2025</p>
+            <p>You've got this! Every expert was once a beginner. 🌟</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Simple analytics and user experience enhancements
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add smooth scroll behavior
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Add loading states for external links
+            document.querySelectorAll('a[href$=".html"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.hostname === window.location.hostname) {
+                        this.style.opacity = '0.7';
+                        this.style.pointerEvents = 'none';
+                        
+                        // Re-enable after a short delay (in case navigation fails)
+                        setTimeout(() => {
+                            this.style.opacity = '';
+                            this.style.pointerEvents = '';
+                        }, 2000);
+                    }
+                });
+            });
+
+            // Simple success tracking (could integrate with analytics)
+            const trackEngagement = (action) => {
+                console.log(`User engagement: ${action}`, {
+                    timestamp: new Date().toISOString(),
+                    page: window.location.pathname
+                });
+            };
+
+            // Track when users interact with key elements
+            document.querySelectorAll('.cta-button, .tool-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    trackEngagement(`clicked_${button.textContent.trim().toLowerCase().replace(/\s+/g, '_')}`);
+                });
+            });
+
+            // Show motivational messages
+            const motivationalMessages = [
+                "You're capable of more than you know! 🌟",
+                "Every expert was once a beginner. Keep going! 💪",
+                "Math is a language - and you're learning to speak it fluently! 🗣️",
+                "Progress over perfection. You're doing great! 📈",
+                "Each problem you solve makes you stronger! 🧠"
+            ];
+
+            // Show a motivational message occasionally
+            setTimeout(() => {
+                const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
+                console.log(`💡 ${randomMessage}`);
+            }, 10000);
+        });
+    </script>
+</body>
+</html>
