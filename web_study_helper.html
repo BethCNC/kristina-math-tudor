@@ -4,140 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAT 143 Study Helper for Kristina</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: var(--color-primary-50);
-            color: var(--color-primary-900);
-            min-height: 100vh;
-            padding: 20px;
-            font-weight: 400;
-        }
-        
-        :root {
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
-            --color-primary-900: #000000;
-            
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
-            
-            --color-success-500: #64A365;
-            --color-success-600: #4E864F;
-            --color-warning-500: #eb7754;
-            --color-warning-600: #E44B1D;
-            --color-error-500: #EB5B5B;
-            --color-error-600: #E42121;
-            
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 600;
-            --font-weight-bold: 700;
-            
-            --space-4: 1rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: var(--color-primary-50);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--color-primary-200);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: var(--color-primary-900);
-            padding: var(--space-12);
-            text-align: center;
-            color: var(--color-primary-50);
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        
-        .main-content {
-            padding: 30px;
-        }
-        
-        .nav-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .nav-btn {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            border: 2px solid var(--color-primary-900);
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-md);
-            font-size: var(--font-size-base);
-            font-weight: var(--font-weight-semibold);
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.2s ease;
-        }
-        
-        .nav-btn:hover {
-            background: var(--color-primary-50);
-            color: var(--color-primary-900);
-            transform: translateY(-2px);
-        }
-        
         .content-area {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            min-height: 400px;
             display: none;
         }
         
@@ -145,90 +61,13 @@
             display: block;
         }
         
-        .formula-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .formula-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-left: 5px solid #667eea;
-        }
-        
-        .formula-card h3 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
         .formula {
             font-family: 'Courier New', monospace;
-            background: #f8f9fa;
+            background: var(--bg-muted);
             padding: 10px;
-            border-radius: 5px;
-            margin: 5px 0;
-        }
-        
-        .chapter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 20px;
-        }
-        
-        .chapter-card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            border-top: 5px solid #4facfe;
-        }
-        
-        .chapter-card h3 {
-            color: #4facfe;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-        
-        .test-info {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .test-info h3 {
-            color: #e74c3c;
-            margin-bottom: 10px;
-        }
-        
-        .tip-box {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        
-        .tip-box h4 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        
-        .back-btn {
-            background: #6c757d;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-        
-        .back-btn:hover {
-            background: #5a6268;
+            border-radius: 6px;
+            margin: 8px 0;
+            color: var(--text-dark);
         }
         
         .study-checklist {
@@ -237,7 +76,11 @@
         
         .study-checklist li {
             padding: 8px 0;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .study-checklist li:last-child {
+            border-bottom: none;
         }
         
         .study-checklist li::before {
@@ -248,150 +91,153 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>🎓 MAT 143 Study Helper</h1>
-            <p>Your personal guide to mastering Quantitative Literacy</p>
+<body class="bg-[var(--surface-light)] text-[var(--text-dark)] math-card min-h-screen p-5">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="card mb-8 bg-[var(--surface-dark)] text-[var(--text-light)] p-8 md:p-12 text-center">
+            <a href="index.html" class="inline-flex items-center gap-2 text-[var(--text-light)] opacity-80 hover:opacity-100 font-medium mb-4">← Back to Home</a>
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">🎓 MAT 143 Study Helper</h1>
+            <p class="text-lg opacity-90">Your personal guide to mastering Quantitative Literacy</p>
         </div>
         
-        <div class="main-content">
+        <!-- Main Content -->
+        <div class="p-6 md:p-8">
             <!-- Main Menu -->
             <div id="main-menu" class="content-area active">
-                <h2>What would you like to study today, Kristina? 📚</h2>
-                <div class="nav-buttons">
-                    <button class="nav-btn" onclick="showSection('chapters')">📖 Chapter Guide</button>
-                    <button class="nav-btn" onclick="showSection('formulas')">📐 Formula Reference</button>
-                    <button class="nav-btn" onclick="showSection('tests')">📊 Test Preparation</button>
-                    <button class="nav-btn" onclick="showSection('tips')">💡 Study Tips</button>
+                <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">What would you like to study today, Kristina? 📚</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('chapters')">📖 Chapter Guide</button>
+                    <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('formulas')">📐 Formula Reference</button>
+                    <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('tests')">📊 Test Preparation</button>
+                    <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('tips')">💡 Study Tips</button>
                 </div>
                 
-                <div class="tip-box">
-                    <h4>🌟 Remember: You've got this!</h4>
-                    <p>Math can feel challenging, but every expert was once a beginner. Take it one step at a time, practice regularly, and don't hesitate to review concepts multiple times. Success comes from consistent effort, not perfection.</p>
+                <div class="card p-6 bg-gradient-to-br from-[var(--math-accent)] to-[var(--english-accent)] text-[var(--text-dark)]">
+                    <h4 class="text-lg font-bold mb-3">🌟 Remember: You've got this!</h4>
+                    <p class="leading-relaxed">Math can feel challenging, but every expert was once a beginner. Take it one step at a time, practice regularly, and don't hesitate to review concepts multiple times. Success comes from consistent effort, not perfection.</p>
                 </div>
             </div>
             
             <!-- Chapters Section -->
             <div id="chapters" class="content-area">
-                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
-                <h2>📖 Chapter Guide</h2>
+                <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📖 Chapter Guide</h2>
                 
-                <div class="chapter-grid">
-                    <div class="chapter-card">
-                        <h3>Chapter 1: Thinking Mathematically</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Deductive vs Inductive Reasoning</li>
-                            <li>Pattern Recognition</li>
-                            <li>Estimation and Problem Solving</li>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 1: Thinking Mathematically</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Deductive vs Inductive Reasoning</li>
+                            <li>• Pattern Recognition</li>
+                            <li>• Estimation and Problem Solving</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Practice identifying patterns in sequences and distinguishing between logical reasoning types.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Practice identifying patterns in sequences and distinguishing between logical reasoning types.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 4: Proportions & Percentages</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Ratios and Proportions</li>
-                            <li>Percentage Calculations</li>
-                            <li>Unit Rates and Conversions</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 4: Proportions & Percentages</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Ratios and Proportions</li>
+                            <li>• Percentage Calculations</li>
+                            <li>• Unit Rates and Conversions</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Master cross-multiplication and percentage change calculations.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Master cross-multiplication and percentage change calculations.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 5: Linear & Exponential Functions</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Linear Equations and Modeling</li>
-                            <li>Exponential Growth and Decay</li>
-                            <li>Function Interpretation</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 5: Linear & Exponential Functions</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Linear Equations and Modeling</li>
+                            <li>• Exponential Growth and Decay</li>
+                            <li>• Function Interpretation</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Understand the difference between linear (constant rate) and exponential (multiplicative rate) growth.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Understand the difference between linear (constant rate) and exponential (multiplicative rate) growth.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 6: Personal Finance</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Simple and Compound Interest</li>
-                            <li>Saving and Investment Strategies</li>
-                            <li>Loan Calculations</li>
-                            <li>Budgeting</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 6: Personal Finance</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Simple and Compound Interest</li>
+                            <li>• Saving and Investment Strategies</li>
+                            <li>• Loan Calculations</li>
+                            <li>• Budgeting</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Memorize interest formulas and understand when to use each type.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Memorize interest formulas and understand when to use each type.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 7: Measurement & Conversions</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>US Customary vs Metric Systems</li>
-                            <li>Dimensional Analysis</li>
-                            <li>Temperature Conversions</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 7: Measurement & Conversions</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• US Customary vs Metric Systems</li>
+                            <li>• Dimensional Analysis</li>
+                            <li>• Temperature Conversions</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Practice unit conversions using the factor-label method.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Practice unit conversions using the factor-label method.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 10: Probability</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Basic Probability Concepts</li>
-                            <li>Single Event Probability</li>
-                            <li>Expected Value</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 10: Probability</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Basic Probability Concepts</li>
+                            <li>• Single Event Probability</li>
+                            <li>• Expected Value</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Understand probability as favorable outcomes over total outcomes.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Understand probability as favorable outcomes over total outcomes.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 11: Statistics</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Statistical Studies</li>
-                            <li>Data Display and Analysis</li>
-                            <li>Normal Distribution and Z-scores</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 11: Statistics</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Statistical Studies</li>
+                            <li>• Data Display and Analysis</li>
+                            <li>• Normal Distribution and Z-scores</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Practice calculating and interpreting z-scores.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Practice calculating and interpreting z-scores.</p>
                     </div>
                     
-                    <div class="chapter-card">
-                        <h3>Chapter 13: Voting & Apportionment</h3>
-                        <p><strong>Key Topics:</strong></p>
-                        <ul>
-                            <li>Election Methods (Majority, Plurality, Borda)</li>
-                            <li>Voting Method Flaws</li>
-                            <li>Apportionment Methods</li>
+                    <div class="card p-6 border-t-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">Chapter 13: Voting & Apportionment</h3>
+                        <p class="mb-3"><strong>Key Topics:</strong></p>
+                        <ul class="text-sm text-[var(--text-muted)] space-y-1 mb-4">
+                            <li>• Election Methods (Majority, Plurality, Borda)</li>
+                            <li>• Voting Method Flaws</li>
+                            <li>• Apportionment Methods</li>
                         </ul>
-                        <p><strong>Study Focus:</strong> Understand the difference between voting methods and their fairness criteria.</p>
+                        <p class="text-sm"><strong>Study Focus:</strong> Understand the difference between voting methods and their fairness criteria.</p>
                     </div>
                 </div>
             </div>
             
             <!-- Formulas Section -->
             <div id="formulas" class="content-area">
-                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
-                <h2>📐 Formula Reference</h2>
+                <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📐 Formula Reference</h2>
                 
-                <div class="formula-grid">
-                    <div class="formula-card">
-                        <h3>💰 Personal Finance</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">💰 Personal Finance</h3>
                         <div class="formula">Simple Interest: I = Prt</div>
                         <div class="formula">Compound Interest: A = P(1 + r/n)^(nt)</div>
                         <div class="formula">Continuous Compound: A = Pe^(rt)</div>
                         <div class="formula">APY: APY = ((1 + r/n)^n - 1) × 100%</div>
-                        <p><small>P = Principal, r = rate, t = time, n = compounding periods</small></p>
+                        <p class="text-xs text-[var(--text-muted)] mt-3">P = Principal, r = rate, t = time, n = compounding periods</p>
                     </div>
                     
-                    <div class="formula-card">
-                        <h3>🌡️ Temperature Conversions</h3>
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">🌡️ Temperature Conversions</h3>
                         <div class="formula">Celsius to Fahrenheit: F = 9C/5 + 32</div>
                         <div class="formula">Fahrenheit to Celsius: C = 5(F-32)/9</div>
                     </div>
                     
-                    <div class="formula-card">
-                        <h3>📏 Common Conversions</h3>
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">📏 Common Conversions</h3>
                         <div class="formula">1 inch = 2.54 cm</div>
                         <div class="formula">1 foot ≈ 0.305 m</div>
                         <div class="formula">1 yard ≈ 0.914 m</div>
@@ -400,21 +246,21 @@
                         <div class="formula">1 gallon ≈ 3.785 L</div>
                     </div>
                     
-                    <div class="formula-card">
-                        <h3>📊 Statistics</h3>
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">📊 Statistics</h3>
                         <div class="formula">Z-score: z = (x - μ) / σ</div>
                         <div class="formula">Sample Z-score: z = (x - x̄) / s</div>
-                        <p><small>μ = population mean, σ = population std dev<br>x̄ = sample mean, s = sample std dev</small></p>
+                        <p class="text-xs text-[var(--text-muted)] mt-3">μ = population mean, σ = population std dev<br>x̄ = sample mean, s = sample std dev</p>
                     </div>
                     
-                    <div class="formula-card">
-                        <h3>🎲 Probability</h3>
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">🎲 Probability</h3>
                         <div class="formula">P(event) = favorable outcomes / total outcomes</div>
                         <div class="formula">Expected Value: E(X) = Σ(x × P(x))</div>
                     </div>
                     
-                    <div class="formula-card">
-                        <h3>🗳️ Apportionment</h3>
+                    <div class="card p-6 border-l-4 border-[var(--math-accent)]">
+                        <h3 class="text-lg font-bold text-[var(--math-accent)] mb-4">🗳️ Apportionment</h3>
                         <div class="formula">Standard Divisor: SD = total population / total items</div>
                         <div class="formula">Standard Quota: SQ = subgroup population / SD</div>
                     </div>
@@ -423,116 +269,122 @@
             
             <!-- Tests Section -->
             <div id="tests" class="content-area">
-                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
-                <h2>📊 Test Preparation</h2>
+                <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📊 Test Preparation</h2>
                 
-                <div class="test-info">
-                    <h3>📝 Test 1: Chapters 1 & 13</h3>
-                    <p><strong>Topics to Review:</strong></p>
-                    <ul class="study-checklist">
-                        <li>Mathematical reasoning (deductive vs inductive)</li>
-                        <li>Pattern recognition in sequences</li>
-                        <li>Voting methods: majority, plurality, Borda count</li>
-                        <li>Apportionment methods: Hamilton, Jefferson, Webster</li>
-                        <li>Fairness criteria and voting flaws</li>
-                    </ul>
-                </div>
-                
-                <div class="test-info">
-                    <h3>📈 Test 2: Chapters 4 & 5</h3>
-                    <p><strong>Topics to Review:</strong></p>
-                    <ul class="study-checklist">
-                        <li>Proportions and cross-multiplication</li>
-                        <li>Percentage calculations and percentage change</li>
-                        <li>Unit rates and dimensional analysis</li>
-                        <li>Linear vs exponential growth patterns</li>
-                        <li>Function interpretation and modeling</li>
-                    </ul>
-                </div>
-                
-                <div class="test-info">
-                    <h3>💰 Test 3: Chapters 6 & 7</h3>
-                    <p><strong>Topics to Review:</strong></p>
-                    <ul class="study-checklist">
-                        <li>Simple interest formula: I = Prt</li>
-                        <li>Compound interest formula: A = P(1 + r/n)^(nt)</li>
-                        <li>APY calculations</li>
-                        <li>Loan and payment calculations</li>
-                        <li>Metric system conversions</li>
-                        <li>Temperature conversions</li>
-                    </ul>
-                </div>
-                
-                <div class="test-info">
-                    <h3>🎲 Test 4: Chapters 10 & 11</h3>
-                    <p><strong>Topics to Review:</strong></p>
-                    <ul class="study-checklist">
-                        <li>Basic probability calculations</li>
-                        <li>Expected value problems</li>
-                        <li>Statistical study design</li>
-                        <li>Data interpretation from graphs</li>
-                        <li>Normal distribution and empirical rule</li>
-                        <li>Z-score calculations and interpretation</li>
-                    </ul>
-                </div>
-                
-                <div class="tip-box">
-                    <h4>🎯 Test-Taking Strategy</h4>
-                    <p><strong>Before the Test:</strong> Review formulas, practice similar problems, get good sleep<br>
-                    <strong>During the Test:</strong> Read questions carefully, show your work, check units in answers<br>
-                    <strong>Remember:</strong> You use Respondus Lockdown Browser - test your setup beforehand!</p>
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">📝 Test 1: Chapters 1 & 13</h3>
+                        <p class="mb-4"><strong>Topics to Review:</strong></p>
+                        <ul class="study-checklist text-sm">
+                            <li>Mathematical reasoning (deductive vs inductive)</li>
+                            <li>Pattern recognition in sequences</li>
+                            <li>Voting methods: majority, plurality, Borda count</li>
+                            <li>Apportionment methods: Hamilton, Jefferson, Webster</li>
+                            <li>Fairness criteria and voting flaws</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">📈 Test 2: Chapters 4 & 5</h3>
+                        <p class="mb-4"><strong>Topics to Review:</strong></p>
+                        <ul class="study-checklist text-sm">
+                            <li>Proportions and cross-multiplication</li>
+                            <li>Percentage calculations and percentage change</li>
+                            <li>Unit rates and dimensional analysis</li>
+                            <li>Linear vs exponential growth patterns</li>
+                            <li>Function interpretation and modeling</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">💰 Test 3: Chapters 6 & 7</h3>
+                        <p class="mb-4"><strong>Topics to Review:</strong></p>
+                        <ul class="study-checklist text-sm">
+                            <li>Simple interest formula: I = Prt</li>
+                            <li>Compound interest formula: A = P(1 + r/n)^(nt)</li>
+                            <li>APY calculations</li>
+                            <li>Loan and payment calculations</li>
+                            <li>Metric system conversions</li>
+                            <li>Temperature conversions</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">🎲 Test 4: Chapters 10 & 11</h3>
+                        <p class="mb-4"><strong>Topics to Review:</strong></p>
+                        <ul class="study-checklist text-sm">
+                            <li>Basic probability calculations</li>
+                            <li>Expected value problems</li>
+                            <li>Statistical study design</li>
+                            <li>Data interpretation from graphs</li>
+                            <li>Normal distribution and empirical rule</li>
+                            <li>Z-score calculations and interpretation</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6 bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200">
+                        <h4 class="text-lg font-bold text-[var(--text-dark)] mb-3">🎯 Test-Taking Strategy</h4>
+                        <div class="space-y-2 text-sm">
+                            <p><strong>Before the Test:</strong> Review formulas, practice similar problems, get good sleep</p>
+                            <p><strong>During the Test:</strong> Read questions carefully, show your work, check units in answers</p>
+                            <p><strong>Remember:</strong> You use Respondus Lockdown Browser - test your setup beforehand!</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             
             <!-- Tips Section -->
             <div id="tips" class="content-area">
-                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
-                <h2>💡 Study Tips for Success</h2>
+                <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">💡 Study Tips for Success</h2>
                 
-                <div class="tip-box">
-                    <h4>📅 Study Schedule</h4>
-                    <ul>
-                        <li>Study math for 30-45 minutes daily rather than cramming</li>
-                        <li>Review previous concepts before learning new ones</li>
-                        <li>Use the Hawkes Learning system regularly for practice</li>
-                        <li>Start test preparation at least one week before each test</li>
-                    </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card p-6 bg-gradient-to-br from-green-50 to-blue-50 border border-green-200">
+                        <h4 class="text-lg font-bold text-[var(--text-dark)] mb-4">📅 Study Schedule</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Study math for 30-45 minutes daily rather than cramming</li>
+                            <li>• Review previous concepts before learning new ones</li>
+                            <li>• Use the Hawkes Learning system regularly for practice</li>
+                            <li>• Start test preparation at least one week before each test</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6 bg-gradient-to-br from-purple-50 to-pink-50 border border-purple-200">
+                        <h4 class="text-lg font-bold text-[var(--text-dark)] mb-4">🧮 Problem-Solving Strategy</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Read the problem carefully and identify what you're solving for</li>
+                            <li>• Write down the given information and what you need to find</li>
+                            <li>• Choose the appropriate formula or method</li>
+                            <li>• Substitute values and solve step by step</li>
+                            <li>• Check if your answer makes sense in context</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6 bg-gradient-to-br from-orange-50 to-yellow-50 border border-orange-200">
+                        <h4 class="text-lg font-bold text-[var(--text-dark)] mb-4">📝 For Hawkes Learning</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Complete problems until you see "Congratulations! You've Mastered this lesson"</li>
+                            <li>• Don't rush - understanding is more important than speed</li>
+                            <li>• Use the hint system when you're stuck</li>
+                            <li>• Review incorrect answers to understand your mistakes</li>
+                        </ul>
+                    </div>
+
+                    <div class="card p-6 bg-gradient-to-br from-red-50 to-pink-50 border border-red-200">
+                        <h4 class="text-lg font-bold text-[var(--text-dark)] mb-4">🎯 Test Preparation</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• Make sure Respondus Lockdown Browser works on your device</li>
+                            <li>• Review all formula sheets thoroughly</li>
+                            <li>• Practice timed problems to build confidence</li>
+                            <li>• Get help early if you're struggling - don't wait</li>
+                        </ul>
+                    </div>
                 </div>
                 
-                <div class="tip-box">
-                    <h4>🧮 Problem-Solving Strategy</h4>
-                    <ul>
-                        <li>Read the problem carefully and identify what you're solving for</li>
-                        <li>Write down the given information and what you need to find</li>
-                        <li>Choose the appropriate formula or method</li>
-                        <li>Substitute values and solve step by step</li>
-                        <li>Check if your answer makes sense in context</li>
-                    </ul>
-                </div>
-                
-                <div class="tip-box">
-                    <h4>📝 For Hawkes Learning</h4>
-                    <ul>
-                        <li>Complete problems until you see "Congratulations! You've Mastered this lesson"</li>
-                        <li>Don't rush - understanding is more important than speed</li>
-                        <li>Use the hint system when you're stuck</li>
-                        <li>Review incorrect answers to understand your mistakes</li>
-                    </ul>
-                </div>
-                
-                <div class="tip-box">
-                    <h4>🎯 Test Preparation</h4>
-                    <ul>
-                        <li>Make sure Respondus Lockdown Browser works on your device</li>
-                        <li>Review all formula sheets thoroughly</li>
-                        <li>Practice timed problems to build confidence</li>
-                        <li>Get help early if you're struggling - don't wait</li>
-                    </ul>
-                </div>
-                
-                <div class="tip-box">
-                    <h4>🌟 Mindset for Success</h4>
-                    <p>Remember: Math anxiety is normal and manageable. You're not alone in finding math challenging. Every small step forward is progress. Focus on understanding concepts rather than memorizing procedures. Celebrate your improvements, no matter how small they seem!</p>
+                <div class="card p-6 mt-6 bg-gradient-to-br from-[var(--math-accent)] to-[var(--english-accent)] text-[var(--text-dark)]">
+                    <h4 class="text-lg font-bold mb-4">🌟 Mindset for Success</h4>
+                    <p class="leading-relaxed">Remember: Math anxiety is normal and manageable. You're not alone in finding math challenging. Every small step forward is progress. Focus on understanding concepts rather than memorizing procedures. Celebrate your improvements, no matter how small they seem!</p>
                 </div>
             </div>
         </div>

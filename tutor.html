@@ -8,244 +8,56 @@
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
-        
-        :root {
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
-            --color-primary-900: #000000;
-            
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
-            
-            --color-success-50: #f0fdf4;
-            --color-success-500: #22c55e;
-            --color-success-600: #16a34a;
-            
-            --color-warning-50: #fffbeb;
-            --color-warning-500: #f59e0b;
-            --color-warning-600: #d97706;
-            
-            --color-neutral-50: #fafafa;
-            --color-neutral-100: #f5f5f5;
-            --color-neutral-200: #e5e5e5;
-            --color-neutral-300: #d4d4d4;
-            --color-neutral-400: #a3a3a3;
-            --color-neutral-500: #737373;
-            --color-neutral-600: #525252;
-            --color-neutral-700: #404040;
-            --color-neutral-800: #262626;
-            --color-neutral-900: #171717;
-            
-            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
-            
-            --font-size-xs: 0.75rem;
-            --font-size-sm: 0.875rem;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 600;
-            --font-weight-bold: 700;
-            
-            --line-height-tight: 1.25;
-            --line-height-normal: 1.5;
-            --line-height-relaxed: 1.625;
-            
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-family-primary);
-            font-size: var(--font-size-base);
-            line-height: var(--line-height-normal);
-            color: var(--color-primary-900);
-            background: var(--color-primary-50);
-            min-height: 100vh;
-            font-weight: 400;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: var(--space-4);
-        }
-        
-        .header {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-8);
-            margin-bottom: var(--space-8);
-            box-shadow: var(--shadow-lg);
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-700);
-            margin-bottom: var(--space-2);
-        }
-        
-        .header p {
-            color: var(--color-neutral-600);
-            font-size: var(--font-size-lg);
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: var(--space-8);
-            min-height: 70vh;
-        }
-        
-        .sidebar {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-6);
-            box-shadow: var(--shadow-lg);
-            height: fit-content;
-        }
-        
-        .sidebar h2 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-neutral-900);
-            margin-bottom: var(--space-4);
-        }
-        
-        .quick-actions {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-3);
-            margin-bottom: var(--space-8);
-        }
-        
-        .action-btn {
-            background: var(--color-primary-50);
-            color: var(--color-primary-700);
-            border: 2px solid var(--color-primary-200);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-medium);
-            text-align: center;
-            transition: all 0.2s ease;
-        }
-        
-        .action-btn:hover {
-            background: var(--color-primary-100);
-            border-color: var(--color-primary-300);
-            transform: translateY(-1px);
-        }
-        
-        .chapter-list {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-        }
-        
-        .chapter-item {
-            background: var(--color-neutral-50);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: 1px solid var(--color-neutral-200);
-        }
-        
-        .chapter-item:hover {
-            background: var(--color-primary-50);
-            border-color: var(--color-primary-200);
-        }
-        
-        .chapter-item.active {
-            background: var(--color-primary-100);
-            border-color: var(--color-primary-300);
-            color: var(--color-primary-700);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        .chat-container {
-            background: white;
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            flex-direction: column;
-            height: 70vh;
-        }
-        
-        .chat-header {
-            padding: var(--space-6);
-            border-bottom: 1px solid var(--color-neutral-200);
-            background: var(--color-primary-50);
-            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-        }
-        
-        .chat-header h2 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-primary-700);
-        }
-        
-        .chat-messages {
-            flex: 1;
-            padding: var(--space-6);
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-        
         .message {
             display: flex;
-            gap: var(--space-3);
+            gap: 12px;
             animation: fadeIn 0.3s ease-in;
         }
         
@@ -265,91 +77,39 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: var(--font-size-lg);
+            font-size: 18px;
             flex-shrink: 0;
         }
         
         .message.user .message-avatar {
-            background: var(--color-primary-500);
-            color: white;
+            background: var(--accent);
+            color: var(--text-dark);
         }
         
         .message.assistant .message-avatar {
-            background: var(--color-neutral-200);
-            color: var(--color-neutral-700);
+            background: var(--bg-muted);
+            color: var(--text-muted);
         }
         
         .message-content {
-            background: var(--color-neutral-100);
-            padding: var(--space-4);
-            border-radius: var(--radius-lg);
+            background: var(--panel);
+            padding: 16px;
+            border-radius: 12px;
             max-width: 80%;
-            line-height: var(--line-height-relaxed);
+            line-height: 1.6;
+            border: 1px solid var(--border);
         }
         
         .message.user .message-content {
-            background: var(--color-primary-500);
-            color: white;
-        }
-        
-        .message.assistant .message-content {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-        }
-        
-        .chat-input {
-            padding: var(--space-6);
-            border-top: 1px solid var(--color-neutral-200);
-            background: var(--color-neutral-50);
-            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-        }
-        
-        .input-group {
-            display: flex;
-            gap: var(--space-3);
-        }
-        
-        .chat-input input {
-            flex: 1;
-            padding: var(--space-4);
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            font-size: var(--font-size-base);
-            transition: border-color 0.2s ease;
-        }
-        
-        .chat-input input:focus {
-            outline: none;
-            border-color: var(--color-primary-300);
-        }
-        
-        .send-btn {
-            background: var(--color-primary-500);
-            color: white;
-            border: none;
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-lg);
-            font-weight: var(--font-weight-medium);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .send-btn:hover {
-            background: var(--color-primary-600);
-            transform: translateY(-1px);
-        }
-        
-        .send-btn:disabled {
-            background: var(--color-neutral-300);
-            cursor: not-allowed;
-            transform: none;
+            background: var(--accent);
+            color: var(--text-dark);
         }
         
         .loading {
             display: flex;
             align-items: center;
-            gap: var(--space-2);
-            color: var(--color-neutral-500);
+            gap: 8px;
+            color: var(--text-muted);
             font-style: italic;
         }
         
@@ -361,7 +121,7 @@
         .loading-dots span {
             width: 4px;
             height: 4px;
-            background: var(--color-neutral-400);
+            background: var(--text-muted);
             border-radius: 50%;
             animation: loading 1.4s infinite ease-in-out;
         }
@@ -373,141 +133,96 @@
             0%, 80%, 100% { transform: scale(0); }
             40% { transform: scale(1); }
         }
-        
-        .welcome-message {
-            text-align: center;
-            color: var(--color-neutral-600);
-            padding: var(--space-8);
-        }
-        
-        .welcome-message h3 {
-            font-size: var(--font-size-xl);
-            margin-bottom: var(--space-3);
-            color: var(--color-neutral-800);
-        }
-        
-        .welcome-message p {
-            margin-bottom: var(--space-4);
-        }
-        
-        .example-questions {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-        }
-        
-        .example-question {
-            background: var(--color-primary-50);
-            color: var(--color-primary-700);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: 1px solid var(--color-primary-200);
-        }
-        
-        .example-question:hover {
-            background: var(--color-primary-100);
-            transform: translateY(-1px);
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            color: var(--color-primary-600);
-            text-decoration: none;
-            font-weight: var(--font-weight-medium);
-            margin-bottom: var(--space-4);
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-                gap: var(--space-6);
-            }
-            
-            .chat-container {
-                height: 60vh;
-            }
-            
-            .container {
-                padding: var(--space-3);
-            }
-            
-            .header {
-                padding: var(--space-6);
-            }
-            
-            .header h1 {
-                font-size: var(--font-size-2xl);
-            }
-        }
     </style>
+    
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>🤖 Your AI Math Tutor</h1>
-            <p>Ask me anything about MAT 143 - I'm here to help make math make sense!</p>
+<body class="bg-[var(--surface-light)] text-[var(--text-dark)]">
+    <div class="max-w-7xl mx-auto p-4">
+        <div class="card p-8 mb-8 text-center math-card">
+            <a href="index.html" class="inline-flex items-center gap-2 text-[var(--accent)] font-medium mb-4 hover:underline">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Back to Home
+            </a>
+            <h1 class="text-3xl font-bold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                <i data-lucide="bot" class="w-8 h-8"></i>
+                Your AI Math Tutor
+            </h1>
+            <p class="text-[var(--text-muted)] text-lg">Ask me anything about MAT 143 - I'm here to help make math make sense!</p>
         </div>
         
-        <div class="main-content">
-            <div class="sidebar">
-                <h2>Quick Actions</h2>
-                <div class="quick-actions">
-                    <button class="action-btn" onclick="askQuestion('chapter help')">📖 Chapter Help</button>
-                    <button class="action-btn" onclick="askQuestion('homework help')">📝 Homework Help</button>
-                    <button class="action-btn" onclick="askQuestion('test prep')">📊 Test Preparation</button>
-                    <button class="action-btn" onclick="askQuestion('formula lookup')">📐 Formula Lookup</button>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 min-h-[70vh]">
+            <div class="card p-6 h-fit">
+                <h2 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Quick Actions</h2>
+                <div class="flex flex-col gap-3 mb-8">
+                    <button class="btn btn-ghost flex items-center gap-2" onclick="askQuestion('chapter help')">
+                        <i data-lucide="book" class="w-4 h-4"></i>
+                        Chapter Help
+                    </button>
+                    <button class="btn btn-ghost flex items-center gap-2" onclick="askQuestion('homework help')">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        Homework Help
+                    </button>
+                    <button class="btn btn-ghost flex items-center gap-2" onclick="askQuestion('test prep')">
+                        <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                        Test Preparation
+                    </button>
+                    <button class="btn btn-ghost flex items-center gap-2" onclick="askQuestion('formula lookup')">
+                        <i data-lucide="function" class="w-4 h-4"></i>
+                        Formula Lookup
+                    </button>
                 </div>
                 
-                <h2>Chapters</h2>
-                <div class="chapter-list">
-                    <div class="chapter-item" onclick="askQuestion('chapter 1')">Chapter 1: Thinking Mathematically</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 4')">Chapter 4: Proportions & Percentages</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 5')">Chapter 5: Linear & Exponential Functions</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 6')">Chapter 6: Personal Finance</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 7')">Chapter 7: Measurement & Conversions</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 10')">Chapter 10: Probability</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 11')">Chapter 11: Statistics</div>
-                    <div class="chapter-item" onclick="askQuestion('chapter 13')">Chapter 13: Voting & Apportionment</div>
+                <h2 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Chapters</h2>
+                <div class="flex flex-col gap-2">
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 1')">Chapter 1: Thinking Mathematically</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 4')">Chapter 4: Proportions & Percentages</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 5')">Chapter 5: Linear & Exponential Functions</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 6')">Chapter 6: Personal Finance</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 7')">Chapter 7: Measurement & Conversions</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 10')">Chapter 10: Probability</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 11')">Chapter 11: Statistics</div>
+                    <div class="chip bg-[var(--bg-muted)] border border-[var(--border)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('chapter 13')">Chapter 13: Voting & Apportionment</div>
                 </div>
             </div>
             
-            <div class="chat-container">
-                <div class="chat-header">
-                    <h2>Chat with Your Tutor</h2>
-                </div>
-                
-                <div class="chat-messages" id="chatMessages">
-                    <div class="welcome-message">
-                        <h3>👋 Welcome to your MAT 143 tutor!</h3>
-                        <p>I'm here to help you understand math concepts, solve problems, and prepare for tests. Just ask me anything!</p>
-                        <div class="example-questions">
-                            <div class="example-question" onclick="askQuestion('How do I calculate compound interest?')">
-                                💡 "How do I calculate compound interest?"
-                            </div>
-                            <div class="example-question" onclick="askQuestion('Help me understand proportions')">
-                                💡 "Help me understand proportions"
-                            </div>
-                            <div class="example-question" onclick="askQuestion('What formulas do I need for Test 3?')">
-                                💡 "What formulas do I need for Test 3?"
+            <div class="lg:col-span-2">
+                <div class="card flex flex-col h-[70vh]">
+                    <div class="p-6 border-b border-[var(--border)] bg-[var(--bg-muted)] rounded-t-2xl">
+                        <h2 class="text-xl font-semibold text-[var(--text-dark)]">Chat with Your Tutor</h2>
+                    </div>
+                    
+                    <div class="flex-1 p-6 overflow-y-auto flex flex-col gap-4" id="chatMessages">
+                        <div class="text-center text-[var(--text-muted)] p-8">
+                            <h3 class="text-xl mb-3 text-[var(--text-dark)]">👋 Welcome to your MAT 143 tutor!</h3>
+                            <p class="mb-4">I'm here to help you understand math concepts, solve problems, and prepare for tests. Just ask me anything!</p>
+                            <div class="flex flex-col gap-2">
+                                <div class="chip bg-[var(--bg-muted)] border border-[var(--accent)] text-[var(--accent)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('How do I calculate compound interest?')">
+                                    💡 "How do I calculate compound interest?"
+                                </div>
+                                <div class="chip bg-[var(--bg-muted)] border border-[var(--accent)] text-[var(--accent)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('Help me understand proportions')">
+                                    💡 "Help me understand proportions"
+                                </div>
+                                <div class="chip bg-[var(--bg-muted)] border border-[var(--accent)] text-[var(--accent)] cursor-pointer hover:bg-[var(--accent)] hover:text-[var(--text-dark)] transition" onclick="askQuestion('What formulas do I need for Test 3?')">
+                                    💡 "What formulas do I need for Test 3?"
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="chat-input">
-                    <div class="input-group">
-                        <input type="text" id="messageInput" placeholder="Ask me anything about MAT 143..." onkeypress="handleKeyPress(event)">
-                        <button class="send-btn" onclick="sendMessage()" id="sendBtn">Send</button>
+                    
+                    <div class="p-6 border-t border-[var(--border)] bg-[var(--bg-muted)] rounded-b-2xl">
+                        <div class="flex gap-3">
+                            <input type="text" id="messageInput" placeholder="Ask me anything about MAT 143..." onkeypress="handleKeyPress(event)" class="flex-1 p-4 border-2 border-[var(--border)] rounded-lg text-[var(--text-dark)] bg-[var(--panel)] focus:outline-none focus:border-[var(--accent)]">
+                            <button class="btn btn-primary" onclick="sendMessage()" id="sendBtn">Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -967,9 +682,9 @@
                     • "Homework help with Hawkes Learning"<br><br>
                     
                     <strong>🔗 Quick Resources:</strong><br>
-                    • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
-                    • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br>
-                    • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br><br>
+                    • <a href="reference.html" style="color: var(--accent);">Formula Reference Guide</a><br>
+• <a href="calendar.html" style="color: var(--accent);">Study Calendar</a><br>
+• <a href="web_study_helper.html" style="color: var(--accent);">Study Helper</a><br><br>
                     
                     <em>💡 Tip: Be specific about what you're working on for better help!</em>
                 `;
@@ -1014,13 +729,13 @@
                     I'd love to help you with that! For the most accurate and personalized help, you can:<br><br>
                     
                     1. <strong>Check the reference guide</strong> for formulas and concepts:<br>
-                    <a href="reference.html" style="color: var(--color-primary-600);">Open Reference</a><br><br>
+                    <a href="reference.html" style="color: var(--accent);">Open Reference</a><br><br>
                     
                     2. <strong>Use the calendar system</strong> for current topics:<br>
-                    <a href="calendar_study_system.html" style="color: var(--color-primary-600);">Open Calendar</a><br><br>
+                    <a href="calendar_study_system.html" style="color: var(--accent);">Open Calendar</a><br><br>
                     
                     3. <strong>Try the study helper</strong> for quick tips:<br>
-                    <a href="web_study_helper.html" style="color: var(--color-primary-600);">Open Study Helper</a><br><br>
+                    <a href="web_study_helper.html" style="color: var(--accent);">Open Study Helper</a><br><br>
                     
                     <em>💡 In production, I'll have full AI capabilities to answer any question!</em>
                 `;

@@ -7,495 +7,80 @@
     <meta name="description" content="Complete academic calendar showing deadlines, assignments, and schedules for both MAT 143 and ENG 111 classes.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
-        
-        /* Import the same design system */
-        :root {
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
-            --color-primary-900: #000000;
-            
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
-            
-            --color-success-500: #64A365;
-            --color-success-600: #4E864F;
-            --color-warning-500: #eb7754;
-            --color-warning-600: #E44B1D;
-            --color-error-500: #EB5B5B;
-            --color-error-600: #E42121;
-            
-            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
-            
-            --font-size-xs: 0.75rem;
-            --font-size-sm: 0.875rem;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 600;
-            --font-weight-bold: 700;
-            
-            --line-height-tight: 1.25;
-            --line-height-normal: 1.5;
-            --line-height-relaxed: 1.625;
-            
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-family-primary);
-            font-size: var(--font-size-base);
-            line-height: var(--line-height-normal);
-            color: var(--color-primary-900);
-            background-color: var(--color-primary-50);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            font-weight: 400;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 var(--space-4);
-        }
-        
-        .header {
-            background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600));
-            color: white;
-            padding: var(--space-10) 0;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-3);
-        }
-        
-        .header p {
-            font-size: var(--font-size-lg);
-            opacity: 0.9;
-            margin-bottom: var(--space-6);
-        }
-        
-        .current-status {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: var(--space-4);
-            border-radius: var(--radius-lg);
-            display: inline-block;
-            font-weight: var(--font-weight-medium);
-        }
-        
-        .nav-header {
-            background: white;
-            border-bottom: 1px solid var(--color-neutral-200);
-            padding: var(--space-4) 0;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        
-        .nav-buttons {
-            display: flex;
-            gap: var(--space-2);
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .nav-btn {
-            background: var(--color-neutral-100);
-            color: var(--color-neutral-700);
-            border: none;
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-medium);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .nav-btn:hover,
-        .nav-btn.active {
-            background: var(--color-primary-500);
-            color: white;
-        }
-        
-        .back-btn {
-            background: var(--color-neutral-600);
-            color: white;
-            border: none;
-            padding: var(--space-2) var(--space-4);
-            border-radius: var(--radius-md);
-            font-size: var(--font-size-sm);
-            cursor: pointer;
-            margin-bottom: var(--space-6);
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-        
-        .back-btn:hover {
-            background: var(--color-neutral-700);
-        }
-        
-        .content-area {
-            padding: var(--space-8) 0;
-            display: none;
-        }
-        
-        .content-area.active {
-            display: block;
-        }
-        
-        .week-card {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-4);
-            transition: all 0.2s ease;
-        }
-        
-        .week-card:hover {
-            box-shadow: var(--shadow-md);
-        }
-        
-        .week-card.current {
-            border-color: var(--color-success-500);
-            background: var(--color-success-50);
-        }
-        
-        .week-card.test-week {
-            border-color: var(--color-warning-500);
-            background: var(--color-warning-50);
-        }
-        
-        .week-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: var(--space-4);
-        }
-        
-        .week-number {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-neutral-900);
-        }
-        
-        .week-dates {
-            color: var(--color-neutral-500);
-            font-size: var(--font-size-sm);
-        }
-        
-        .week-focus {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-primary-600);
-            margin-bottom: var(--space-4);
-        }
-        
-        .sections {
-            margin-bottom: var(--space-4);
-        }
-        
-        .sections strong {
-            color: var(--color-neutral-700);
-        }
-        
-        .assignments {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-4);
-        }
-        
-        .assignment-group {
-            background: var(--color-neutral-50);
-            padding: var(--space-4);
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-neutral-200);
-        }
-        
-        .assignment-group h4 {
-            color: var(--color-primary-600);
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--space-3);
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-        
-        .assignment-item {
-            padding: var(--space-2) 0;
-            border-bottom: 1px solid var(--color-neutral-200);
-            font-size: var(--font-size-sm);
-        }
-        
-        .assignment-item:last-child {
-            border-bottom: none;
-        }
-        
-        .due-date {
-            color: var(--color-error-600);
-            font-weight: var(--font-weight-medium);
-            font-size: var(--font-size-xs);
-        }
-        
-        .important-note {
-            background: var(--color-error-500);
-            color: white;
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            margin: var(--space-3) 0;
-            font-weight: var(--font-weight-medium);
-        }
-        
-        .break-notice {
-            background: var(--color-success-50);
-            border: 2px solid var(--color-success-200);
-            color: var(--color-success-700);
-            padding: var(--space-6);
-            border-radius: var(--radius-lg);
-            text-align: center;
-            margin: var(--space-6) 0;
-        }
-        
-        .break-notice h3 {
-            font-size: var(--font-size-xl);
-            margin-bottom: var(--space-2);
-        }
-        
-        .progress-section {
-            background: white;
-            padding: var(--space-6);
-            border-radius: var(--radius-lg);
-            border: 1px solid var(--color-neutral-200);
-            margin-bottom: var(--space-6);
-        }
-        
-        .progress-bar {
-            width: 100%;
-            height: var(--space-6);
-            background: var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            margin: var(--space-4) 0;
-        }
-        
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, var(--color-success-500), var(--color-success-600));
-            border-radius: var(--radius-lg);
-            transition: width 0.3s ease;
-        }
-        
-        .test-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-6);
-        }
-        
-        .test-card {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            transition: all 0.2s ease;
-        }
-        
-        .test-card:hover {
-            box-shadow: var(--shadow-lg);
-        }
-        
-        .test-card h3 {
-            color: var(--color-error-600);
-            font-size: var(--font-size-xl);
-            margin-bottom: var(--space-4);
-        }
-        
-        .countdown {
-            background: linear-gradient(135deg, var(--color-primary-500), var(--color-primary-600));
-            color: white;
-            padding: var(--space-3);
-            border-radius: var(--radius-md);
-            text-align: center;
-            margin: var(--space-4) 0;
-            font-weight: var(--font-weight-semibold);
-        }
-        
-        .countdown.urgent {
-            background: linear-gradient(135deg, var(--color-warning-500), var(--color-warning-600));
-        }
-        
-        .countdown.completed {
-            background: linear-gradient(135deg, var(--color-success-500), var(--color-success-600));
-        }
-        
-        /* English Schedule Styles */
-        .english-schedule {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .course-info {
-            margin-bottom: var(--space-8);
-        }
-
-        .info-card {
-            padding: var(--space-6);
-            border-radius: var(--radius-lg);
-            margin-bottom: var(--space-4);
-        }
-
-        .info-card h3 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-4);
-            color: var(--color-primary-900);
-        }
-
-        .info-card p {
-            margin-bottom: var(--space-2);
-            font-size: var(--font-size-base);
-        }
-
-        .week-status {
-            background: var(--color-accent-pink-base);
-            color: var(--color-primary-900);
-            padding: var(--space-2) var(--space-3);
-            border-radius: var(--radius-md);
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-medium);
-        }
-
-        .week-card.urgent .week-status {
-            background: var(--color-error-500);
-            color: white;
-        }
-
-        .week-content ul {
-            list-style: none;
-            margin-top: var(--space-3);
-        }
-
-        .week-content li {
-            padding: var(--space-2) 0;
-            border-bottom: 1px solid var(--color-neutral-200);
-        }
-
-        .week-content li:last-child {
-            border-bottom: none;
-        }
-
-        .week-content li.urgent {
-            color: var(--color-error-600);
-            font-weight: var(--font-weight-semibold);
-        }
-
-        .week-content li.important {
-            color: var(--color-warning-600);
-            font-weight: var(--font-weight-semibold);
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .assignments {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-buttons {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding-bottom: var(--space-2);
-            }
-            
-            .week-header {
-                flex-direction: column;
-                gap: var(--space-2);
-            }
-            
-            .test-grid {
-                grid-template-columns: 1fr;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
             }
         }
-    </style>
+    </script>
 </head>
 
-<body>
+<body class="bg-[var(--surface-light)] text-[var(--text-dark)]">
     <!-- Header -->
-    <div class="header">
-        <div class="container">
-            <h1>📅 Your Fall 2025 Academic Calendar</h1>
-            <p>Complete schedule for MAT 143 Math & ENG 111 Writing - Never miss a deadline!</p>
-            <div class="current-status" id="current-status">
+    <div class="header-dark">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-3xl font-bold text-[var(--text-light)] mb-2">📅 Your Fall 2025 Academic Calendar</h1>
+            <p class="text-[var(--text-light)] opacity-90 mb-4">Complete schedule for MAT 143 Math & ENG 111 Writing - Never miss a deadline!</p>
+            <div class="inline-block bg-[var(--surface-light)] bg-opacity-10 backdrop-blur-sm p-4 rounded-lg text-[var(--text-light)] font-medium" id="current-status">
                 Loading your current week...
             </div>
         </div>
     </div>
 
     <!-- Navigation -->
-    <div class="nav-header">
-        <div class="container">
-            <div class="nav-buttons">
-                <a href="index.html" class="nav-btn" style="background: var(--color-primary-900); color: var(--color-primary-50);">← Back to Home</a>
-                <button class="nav-btn active" onclick="showSection('overview')">📍 This Week</button>
-                <button class="nav-btn" onclick="showSection('math')">🧮 MAT 143 Schedule</button>
-                <button class="nav-btn" onclick="showSection('english')">📝 ENG 111 Schedule</button>
-                <button class="nav-btn" onclick="showSection('tests')">📊 All Tests</button>
+    <div class="bg-[var(--surface-light)] border-b border-[var(--border)] sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex gap-2 justify-center flex-wrap">
+                <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+                <button class="btn btn-primary" onclick="showSection('overview')">📍 This Week</button>
+                <button class="btn btn-ghost" onclick="showSection('math')">🧮 MAT 143 Schedule</button>
+                <button class="btn btn-ghost" onclick="showSection('english')">📝 ENG 111 Schedule</button>
+                <button class="btn btn-ghost" onclick="showSection('tests')">📊 All Tests</button>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="max-w-6xl mx-auto px-4 py-8">
         <!-- Week Overview -->
         <div id="overview" class="content-area active">
             <div id="current-week-content">
@@ -508,7 +93,7 @@
             <button class="back-btn" onclick="showSection('overview')">
                 <span>←</span> Back to This Week
             </button>
-            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">🧮 MAT 143 Complete Schedule</h2>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">🧮 MAT 143 Complete Schedule</h2>
             <div id="semester-timeline">
                 <!-- Populated by JavaScript -->
             </div>
@@ -519,10 +104,10 @@
             <button class="back-btn" onclick="showSection('overview')">
                 <span>←</span> Back to This Week
             </button>
-            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">📝 ENG 111 Complete Schedule</h2>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📝 ENG 111 Complete Schedule</h2>
             <div class="english-schedule">
                 <div class="course-info">
-                    <div class="info-card" style="background: var(--color-accent-pink-base); border: 2px solid var(--color-accent-pink-dark);">
+                    <div class="info-card bg-[var(--pink-500)] border-2 border-[var(--pink-600)]">
                         <h3>📚 Course Info</h3>
                         <p><strong>Duration:</strong> 8 weeks (Aug 18 - Oct 10, 2025)</p>
                         <p><strong>Instructor:</strong> Emmanuel Meggett</p>
@@ -695,7 +280,7 @@
             <button class="back-btn" onclick="showSection('overview')">
                 <span>←</span> Back to Overview
             </button>
-            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">Test Schedule & Countdown</h2>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">Test Schedule & Countdown</h2>
             <div class="test-grid">
                 <div class="test-card">
                     <h3>📝 Test 1</h3>
@@ -756,33 +341,33 @@
             <button class="back-btn" onclick="showSection('overview')">
                 <span>←</span> Back to Overview
             </button>
-            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">Your Progress Tracker</h2>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">Your Progress Tracker</h2>
             
             <div class="progress-section">
-                <h3 style="font-size: var(--font-size-xl); margin-bottom: var(--space-4); color: var(--color-neutral-900);">📊 Semester Progress</h3>
+                <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">📊 Semester Progress</h3>
                 <div class="progress-bar">
                     <div class="progress-fill" id="semester-progress" style="width: 0%"></div>
                 </div>
-                <p id="progress-text" style="text-align: center; font-weight: var(--font-weight-medium); color: var(--color-neutral-600);">Calculating progress...</p>
+                <p id="progress-text" class="text-center font-medium text-[var(--text-muted)]">Calculating progress...</p>
             </div>
 
             <div class="test-grid">
                 <div class="test-card">
-                    <h3 style="color: var(--color-success-600);">✅ Completed</h3>
+                    <h3 class="text-[var(--success-accent)]">✅ Completed</h3>
                     <div id="completed-items">
                         <p>Your completed work will appear here as you progress through the semester.</p>
                     </div>
                 </div>
                 
                 <div class="test-card">
-                    <h3 style="color: var(--color-primary-600);">⏳ Current Focus</h3>
+                    <h3 class="text-[var(--accent)]">⏳ Current Focus</h3>
                     <div id="current-focus">
                         <p>Loading your current focus areas...</p>
                     </div>
                 </div>
                 
                 <div class="test-card">
-                    <h3 style="color: var(--color-warning-600);">🔮 Coming Up</h3>
+                    <h3 class="text-[var(--yellow-500)]">🔮 Coming Up</h3>
                     <div id="upcoming-items">
                         <p>Your upcoming deadlines will appear here.</p>
                     </div>
@@ -1043,7 +628,7 @@
                             </div>
                         </div>
                         
-                        <div style="background: var(--color-success-50); padding: var(--space-4); border-radius: var(--radius-md); margin-top: var(--space-4); border-left: 4px solid var(--color-success-500);">
+                        <div class="bg-[var(--success-weak)] p-4 rounded-lg mt-4 border-l-4 border-[var(--success-accent)]">
                             <strong>💡 This Week's Success Strategy:</strong><br>
                             Focus on truly understanding each concept rather than memorizing. Take your time with each section and don't hesitate to review previous material if needed. You're building a foundation that will support everything that comes next!
                         </div>
@@ -1135,7 +720,7 @@
                     <h3>🏖️ Fall Break: October 13-19, 2025</h3>
                     <p>No classes - Use this time to catch up and recharge!</p>
                 </div>
-                <p style="text-align: center; color: var(--color-neutral-500); margin: var(--space-8) 0;">
+                <p class="text-center text-[var(--text-muted)] my-8">
                     <em>Remaining weeks (9-16) continue with Chapters 6, 10, 11 and Tests 3 & 4</em>
                 </p>
             `;

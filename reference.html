@@ -8,578 +8,293 @@
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
+            }
+        }
+    </script>
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
-        
-        :root {
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
-            --color-primary-900: #000000;
-            
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
-            
-            --color-success-500: #64A365;
-            --color-success-600: #4E864F;
-            --color-warning-500: #eb7754;
-            --color-warning-600: #E44B1D;
-            --color-error-500: #EB5B5B;
-            --color-error-600: #E42121;
-            
-            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
-            
-            --font-size-xs: 0.75rem;
-            --font-size-sm: 0.875rem;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 600;
-            --font-weight-bold: 700;
-            
-            --line-height-tight: 1.25;
-            --line-height-normal: 1.5;
-            --line-height-relaxed: 1.625;
-            
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-family-primary);
-            font-size: var(--font-size-base);
-            line-height: var(--line-height-normal);
-            color: var(--color-primary-900);
-            background: var(--color-primary-50);
-            min-height: 100vh;
-            font-weight: 400;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: var(--space-4);
-        }
-        
-        .header {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-8);
-            margin-bottom: var(--space-8);
-            box-shadow: var(--shadow-lg);
+        .formula-display {
+            background: var(--bg-muted);
+            border: 1px solid var(--border);
+            padding: 16px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 18px;
             text-align: center;
+            margin: 12px 0;
+            color: var(--text-dark);
         }
         
-        .header h1 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-700);
-            margin-bottom: var(--space-2);
+        .formula-variables {
+            background: var(--panel-muted);
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+            font-size: 14px;
+            line-height: 1.6;
         }
         
-        .header p {
-            color: var(--color-neutral-600);
-            font-size: var(--font-size-lg);
+        .example {
+            background: var(--panel-muted);
+            border-left: 4px solid var(--accent);
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 0 8px 8px 0;
         }
         
-        .nav-tabs {
-            display: flex;
-            gap: var(--space-2);
-            margin-bottom: var(--space-8);
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .nav-tab {
-            background: white;
-            color: var(--color-neutral-600);
-            border: 2px solid var(--color-neutral-200);
-            padding: var(--space-3) var(--space-6);
-            border-radius: var(--radius-lg);
-            cursor: pointer;
-            font-weight: var(--font-weight-medium);
-            transition: all 0.2s ease;
-        }
-        
-        .nav-tab:hover {
-            border-color: var(--color-primary-300);
-            color: var(--color-primary-700);
+        .key-points {
+            background: var(--urgent-weak);
+            border: 1px solid var(--urgent);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
         }
         
         .nav-tab.active {
-            background: var(--color-primary-500);
-            color: white;
-            border-color: var(--color-primary-500);
+            background: var(--accent) !important;
+            color: var(--text-dark) !important;
+            border-color: var(--accent) !important;
         }
         
         .content-section {
             display: none;
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-8);
-            box-shadow: var(--shadow-lg);
         }
         
         .content-section.active {
             display: block;
         }
-        
-        .section-header {
-            margin-bottom: var(--space-8);
-            text-align: center;
-        }
-        
-        .section-header h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-neutral-900);
-            margin-bottom: var(--space-2);
-        }
-        
-        .section-header p {
-            color: var(--color-neutral-600);
-            font-size: var(--font-size-lg);
-        }
-        
-        .formula-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--space-6);
-        }
-        
-        .formula-card {
-            background: var(--color-neutral-50);
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            transition: all 0.2s ease;
-        }
-        
-        .formula-card:hover {
-            border-color: var(--color-primary-300);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .formula-card h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-primary-700);
-            margin-bottom: var(--space-3);
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-        }
-        
-        .formula-display {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-            border-radius: var(--radius-md);
-            padding: var(--space-4);
-            margin: var(--space-3) 0;
-            font-family: var(--font-family-mono);
-            font-size: var(--font-size-sm);
-            color: var(--color-neutral-800);
-            text-align: center;
-        }
-        
-        .formula-variables {
-            margin: var(--space-3) 0;
-        }
-        
-        .formula-variables h4 {
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-neutral-700);
-            margin-bottom: var(--space-2);
-        }
-        
-        .variable-list {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .variable-list li {
-            padding: var(--space-1) 0;
-            font-size: var(--font-size-sm);
-            color: var(--color-neutral-600);
-        }
-        
-        .example {
-            background: var(--color-success-50);
-            border: 1px solid var(--color-success-200);
-            border-radius: var(--radius-md);
-            padding: var(--space-4);
-            margin-top: var(--space-3);
-        }
-        
-        .example h4 {
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-success-700);
-            margin-bottom: var(--space-2);
-        }
-        
-        .example p {
-            font-size: var(--font-size-sm);
-            color: var(--color-success-800);
-            line-height: var(--line-height-relaxed);
-        }
-        
-        .concept-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-6);
-        }
-        
-        .concept-card {
-            background: var(--color-neutral-50);
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            transition: all 0.2s ease;
-        }
-        
-        .concept-card:hover {
-            border-color: var(--color-primary-300);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .concept-card h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-primary-700);
-            margin-bottom: var(--space-3);
-        }
-        
-        .concept-card p {
-            color: var(--color-neutral-600);
-            line-height: var(--line-height-relaxed);
-            margin-bottom: var(--space-3);
-        }
-        
-        .key-points {
-            background: var(--color-warning-50);
-            border: 1px solid var(--color-warning-200);
-            border-radius: var(--radius-md);
-            padding: var(--space-3);
-        }
-        
-        .key-points h4 {
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-warning-700);
-            margin-bottom: var(--space-2);
-        }
-        
-        .key-points ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .key-points li {
-            font-size: var(--font-size-sm);
-            color: var(--color-warning-800);
-            padding: var(--space-1) 0;
-            position: relative;
-            padding-left: var(--space-4);
-        }
-        
-        .key-points li::before {
-            content: "💡";
-            position: absolute;
-            left: 0;
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            color: var(--color-primary-600);
-            text-decoration: none;
-            font-weight: var(--font-weight-medium);
-            margin-bottom: var(--space-4);
-        }
-        
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        
-        .search-box {
-            background: white;
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-4);
-            margin-bottom: var(--space-6);
-            display: flex;
-            gap: var(--space-3);
-        }
-        
-        .search-box input {
-            flex: 1;
-            border: none;
-            outline: none;
-            font-size: var(--font-size-base);
-        }
-        
-        .search-box input::placeholder {
-            color: var(--color-neutral-400);
-        }
-        
-        @media (max-width: 768px) {
-            .nav-tabs {
-                flex-direction: column;
-            }
-            
-            .formula-grid,
-            .concept-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .container {
-                padding: var(--space-3);
-            }
-            
-            .header {
-                padding: var(--space-6);
-            }
-            
-            .header h1 {
-                font-size: var(--font-size-2xl);
-            }
-        }
     </style>
 </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>📚 MAT 143 Quick Reference</h1>
-            <p>All formulas, concepts, and study strategies in one place</p>
+<body class="bg-[var(--surface-light)] text-[var(--text-dark)] math-card">
+    <div class="max-w-7xl mx-auto p-4">
+        <div class="card p-8 mb-8 text-center math-card">
+            <a href="index.html" class="inline-flex items-center gap-2 text-[var(--accent)] font-medium mb-4 hover:underline">← Back to Home</a>
+            <h1 class="text-3xl font-bold text-[var(--text-dark)] mb-2">📚 MAT 143 Quick Reference</h1>
+            <p class="text-[var(--text-muted)] text-lg">All formulas, concepts, and study strategies in one place</p>
         </div>
         
-        <div class="search-box">
-            <span>🔍</span>
-            <input type="text" id="searchInput" placeholder="Search formulas, concepts, or topics..." onkeyup="filterContent()">
+        <div class="card p-4 mb-6 flex gap-3 items-center">
+            <span class="text-xl">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search formulas, concepts, or topics..." onkeyup="filterContent()" class="flex-1 border-none outline-none bg-transparent text-[var(--text-dark)] placeholder-[var(--text-muted)]">
         </div>
         
-        <div class="nav-tabs">
-            <div class="nav-tab active" onclick="showSection('formulas')">📐 Formulas</div>
-            <div class="nav-tab" onclick="showSection('concepts')">🧠 Concepts</div>
-            <div class="nav-tab" onclick="showSection('strategies')">📖 Study Strategies</div>
-            <div class="nav-tab" onclick="showSection('tests')">📊 Test Prep</div>
+        <div class="flex flex-wrap gap-2 mb-8 justify-center">
+            <div class="nav-tab chip bg-[var(--panel)] border border-[var(--border)] text-[var(--text-muted)] cursor-pointer hover:border-[var(--accent)] hover:text-[var(--accent)] transition active" onclick="showSection('formulas')">📐 Formulas</div>
+            <div class="nav-tab chip bg-[var(--panel)] border border-[var(--border)] text-[var(--text-muted)] cursor-pointer hover:border-[var(--accent)] hover:text-[var(--accent)] transition" onclick="showSection('concepts')">🧠 Concepts</div>
+            <div class="nav-tab chip bg-[var(--panel)] border border-[var(--border)] text-[var(--text-muted)] cursor-pointer hover:border-[var(--accent)] hover:text-[var(--accent)] transition" onclick="showSection('strategies')">📖 Study Strategies</div>
+            <div class="nav-tab chip bg-[var(--panel)] border border-[var(--border)] text-[var(--text-muted)] cursor-pointer hover:border-[var(--accent)] hover:text-[var(--accent)] transition" onclick="showSection('tests')">📊 Test Prep</div>
         </div>
         
         <!-- Formulas Section -->
         <div id="formulas" class="content-section active">
-            <div class="section-header">
-                <h2>Essential Formulas</h2>
-                <p>All the formulas you need for MAT 143, organized by topic</p>
-            </div>
-            
-            <div class="formula-grid">
-                <!-- Interest Formulas -->
-                <div class="formula-card" data-category="finance interest">
-                    <h3>💰 Simple Interest</h3>
-                    <div class="formula-display">I = Prt</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>I = Interest earned</li>
-                            <li>P = Principal (starting amount)</li>
-                            <li>r = Rate (as decimal)</li>
-                            <li>t = Time (in years)</li>
-                        </ul>
-                    </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>$1000 at 5% for 2 years: I = 1000 × 0.05 × 2 = $100</p>
-                    </div>
+            <div class="card p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Essential Formulas</h2>
+                    <p class="text-[var(--text-muted)] text-lg">All the formulas you need for MAT 143, organized by topic</p>
                 </div>
                 
-                <div class="formula-card" data-category="finance interest">
-                    <h3>💰 Compound Interest</h3>
-                    <div class="formula-display">A = P(1 + r/n)^(nt)</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>A = Final amount</li>
-                            <li>P = Principal</li>
-                            <li>r = Rate (as decimal)</li>
-                            <li>n = Compounds per year</li>
-                            <li>t = Time (years)</li>
-                        </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <!-- Interest Formulas -->
+                    <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 Simple Interest</h3>
+                        <div class="formula-display">I = Prt</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>I = Interest earned</li>
+                                <li>P = Principal (starting amount)</li>
+                                <li>r = Rate (as decimal)</li>
+                                <li>t = Time (in years)</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">$1000 at 5% for 2 years: I = 1000 × 0.05 × 2 = $100</p>
+                        </div>
                     </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>$1000 at 5% annually for 2 years: A = 1000(1.05)² = $1102.50</p>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 Compound Interest</h3>
+                        <div class="formula-display">A = P(1 + r/n)^(nt)</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>A = Final amount</li>
+                                <li>P = Principal</li>
+                                <li>r = Rate (as decimal)</li>
+                                <li>n = Compounds per year</li>
+                                <li>t = Time (years)</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">$1000 at 5% annually for 2 years: A = 1000(1.05)² = $1102.50</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="formula-card" data-category="finance interest">
-                    <h3>💰 APY (Annual Percentage Yield)</h3>
-                    <div class="formula-display">APY = ((1 + r/n)^n - 1) × 100%</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>APY = Annual Percentage Yield</li>
-                            <li>r = Nominal rate (as decimal)</li>
-                            <li>n = Compounds per year</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 APY (Annual Percentage Yield)</h3>
+                        <div class="formula-display">APY = ((1 + r/n)^n - 1) × 100%</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>APY = Annual Percentage Yield</li>
+                                <li>r = Nominal rate (as decimal)</li>
+                                <li>n = Compounds per year</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">5% compounded monthly: APY = ((1 + 0.05/12)^12 - 1) × 100% = 5.12%</p>
+                        </div>
                     </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>5% compounded monthly: APY = ((1 + 0.05/12)^12 - 1) × 100% = 5.12%</p>
+                    
+                    <!-- Conversion Formulas -->
+                    <div class="card p-6 hover:shadow-lg transition" data-category="conversions">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📏 Length Conversions</h3>
+                        <div class="formula-display">1 inch = 2.54 cm<br>1 foot ≈ 0.305 m</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Key Conversions:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>1 yard = 3 feet = 0.914 m</li>
+                                <li>1 mile = 5280 feet = 1.609 km</li>
+                                <li>1 km = 1000 m = 0.621 miles</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">Convert 5 feet to meters: 5 × 0.305 = 1.525 m</p>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Conversion Formulas -->
-                <div class="formula-card" data-category="conversions">
-                    <h3>📏 Length Conversions</h3>
-                    <div class="formula-display">1 inch = 2.54 cm<br>1 foot ≈ 0.305 m</div>
-                    <div class="formula-variables">
-                        <h4>Key Conversions:</h4>
-                        <ul class="variable-list">
-                            <li>1 yard = 3 feet = 0.914 m</li>
-                            <li>1 mile = 5280 feet = 1.609 km</li>
-                            <li>1 km = 1000 m = 0.621 miles</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="conversions">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">🌡️ Temperature Conversion</h3>
+                        <div class="formula-display">F = 9C/5 + 32</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>F = Fahrenheit</li>
+                                <li>C = Celsius</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">Convert 20°C to Fahrenheit: F = 9(20)/5 + 32 = 68°F</p>
+                        </div>
                     </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>Convert 5 feet to meters: 5 × 0.305 = 1.525 m</p>
+                    
+                    <!-- Statistics Formulas -->
+                    <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📊 Z-Score</h3>
+                        <div class="formula-display">z = (x - μ)/σ</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>z = Z-score</li>
+                                <li>x = Data point</li>
+                                <li>μ = Mean</li>
+                                <li>σ = Standard deviation</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">If x=85, μ=80, σ=5: z = (85-80)/5 = 1</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="formula-card" data-category="conversions">
-                    <h3>🌡️ Temperature Conversion</h3>
-                    <div class="formula-display">F = 9C/5 + 32</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>F = Fahrenheit</li>
-                            <li>C = Celsius</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📊 Mean (Average)</h3>
+                        <div class="formula-display">μ = Σx/n</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>μ = Mean</li>
+                                <li>Σx = Sum of all values</li>
+                                <li>n = Number of values</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">Values: 85, 90, 75, 95<br>Mean = (85+90+75+95)/4 = 86.25</p>
+                        </div>
                     </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>Convert 20°C to Fahrenheit: F = 9(20)/5 + 32 = 68°F</p>
+                    
+                    <!-- Proportions -->
+                    <div class="card p-6 hover:shadow-lg transition" data-category="proportions">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">⚖️ Proportions</h3>
+                        <div class="formula-display">a/b = c/d</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Cross Multiplication:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>ad = bc</li>
+                                <li>a is to b as c is to d</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">If 3/2 = 9/x, then 3x = 18, so x = 6</p>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Statistics Formulas -->
-                <div class="formula-card" data-category="statistics">
-                    <h3>📊 Z-Score</h3>
-                    <div class="formula-display">z = (x - μ)/σ</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>z = Z-score</li>
-                            <li>x = Data point</li>
-                            <li>μ = Mean</li>
-                            <li>σ = Standard deviation</li>
-                        </ul>
-                    </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>If x=85, μ=80, σ=5: z = (85-80)/5 = 1</p>
-                    </div>
-                </div>
-                
-                <div class="formula-card" data-category="statistics">
-                    <h3>📊 Mean (Average)</h3>
-                    <div class="formula-display">μ = Σx/n</div>
-                    <div class="formula-variables">
-                        <h4>Variables:</h4>
-                        <ul class="variable-list">
-                            <li>μ = Mean</li>
-                            <li>Σx = Sum of all values</li>
-                            <li>n = Number of values</li>
-                        </ul>
-                    </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>Values: 85, 90, 75, 95<br>Mean = (85+90+75+95)/4 = 86.25</p>
-                    </div>
-                </div>
-                
-                <!-- Proportions -->
-                <div class="formula-card" data-category="proportions">
-                    <h3>⚖️ Proportions</h3>
-                    <div class="formula-display">a/b = c/d</div>
-                    <div class="formula-variables">
-                        <h4>Cross Multiplication:</h4>
-                        <ul class="variable-list">
-                            <li>ad = bc</li>
-                            <li>a is to b as c is to d</li>
-                        </ul>
-                    </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>If 3/2 = 9/x, then 3x = 18, so x = 6</p>
-                    </div>
-                </div>
-                
-                <!-- Percentages -->
-                <div class="formula-card" data-category="percentages">
-                    <h3>💯 Percentages</h3>
-                    <div class="formula-display">Part = Whole × Rate<br>Rate = Part/Whole</div>
-                    <div class="formula-variables">
-                        <h4>Key Concepts:</h4>
-                        <ul class="variable-list">
-                            <li>Rate as decimal: 5% = 0.05</li>
-                            <li>Rate as fraction: 5% = 5/100</li>
-                        </ul>
-                    </div>
-                    <div class="example">
-                        <h4>Example:</h4>
-                        <p>15% of 200: Part = 200 × 0.15 = 30</p>
+                    
+                    <!-- Percentages -->
+                    <div class="card p-6 hover:shadow-lg transition" data-category="percentages">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💯 Percentages</h3>
+                        <div class="formula-display">Part = Whole × Rate<br>Rate = Part/Whole</div>
+                        <div class="formula-variables">
+                            <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Key Concepts:</h4>
+                            <ul class="text-sm text-[var(--text-muted)] space-y-1">
+                                <li>Rate as decimal: 5% = 0.05</li>
+                                <li>Rate as fraction: 5% = 5/100</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4 class="text-sm font-semibold text-[var(--text-dark)] mb-2">Example:</h4>
+                            <p class="text-sm text-[var(--text-dark)]">15% of 200: Part = 200 × 0.15 = 30</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -587,121 +302,123 @@
         
         <!-- Concepts Section -->
         <div id="concepts" class="content-section">
-            <div class="section-header">
-                <h2>Key Concepts</h2>
-                <p>Understanding the big ideas behind the math</p>
-            </div>
-            
-            <div class="concept-grid">
-                <div class="concept-card" data-category="thinking">
-                    <h3>🧠 Mathematical Thinking</h3>
-                    <p>Learn to think like a mathematician - recognize patterns, make logical connections, and solve problems systematically.</p>
-                    <div class="key-points">
-                        <h4>Key Skills:</h4>
-                        <ul>
-                            <li>Pattern recognition</li>
-                            <li>Logical reasoning</li>
-                            <li>Problem decomposition</li>
-                            <li>Estimation skills</li>
-                        </ul>
-                    </div>
+            <div class="card p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Key Concepts</h2>
+                    <p class="text-[var(--text-muted)] text-lg">Understanding the big ideas behind the math</p>
                 </div>
                 
-                <div class="concept-card" data-category="proportions">
-                    <h3>⚖️ Proportions & Ratios</h3>
-                    <p>Understanding how quantities relate to each other - essential for real-world problem solving.</p>
-                    <div class="key-points">
-                        <h4>Key Ideas:</h4>
-                        <ul>
-                            <li>Ratios compare quantities</li>
-                            <li>Proportions show equality</li>
-                            <li>Cross multiplication solves</li>
-                            <li>Units must match</li>
-                        </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div class="card p-6 hover:shadow-lg transition" data-category="thinking">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🧠 Mathematical Thinking</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Learn to think like a mathematician - recognize patterns, make logical connections, and solve problems systematically.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Skills:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Pattern recognition</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Logical reasoning</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Problem decomposition</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Estimation skills</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="functions">
-                    <h3>📈 Functions & Growth</h3>
-                    <p>How things change over time - from linear patterns to exponential growth.</p>
-                    <div class="key-points">
-                        <h4>Key Types:</h4>
-                        <ul>
-                            <li>Linear: constant rate of change</li>
-                            <li>Exponential: percentage growth</li>
-                            <li>Graph interpretation</li>
-                            <li>Real-world modeling</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="proportions">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">⚖️ Proportions & Ratios</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Understanding how quantities relate to each other - essential for real-world problem solving.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Ideas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Ratios compare quantities</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Proportions show equality</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Cross multiplication solves</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Units must match</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="finance">
-                    <h3>💰 Personal Finance</h3>
-                    <p>Making smart money decisions with mathematical tools.</p>
-                    <div class="key-points">
-                        <h4>Key Areas:</h4>
-                        <ul>
-                            <li>Interest calculations</li>
-                            <li>Saving strategies</li>
-                            <li>Loan understanding</li>
-                            <li>Budget planning</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="functions">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📈 Functions & Growth</h3>
+                        <p class="text-[var(--text-muted)] mb-3">How things change over time - from linear patterns to exponential growth.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Types:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Linear: constant rate of change</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Exponential: percentage growth</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Graph interpretation</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Real-world modeling</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="measurement">
-                    <h3>📏 Measurement & Conversions</h3>
-                    <p>Navigating between different units and measurement systems.</p>
-                    <div class="key-points">
-                        <h4>Key Skills:</h4>
-                        <ul>
-                            <li>Dimensional analysis</li>
-                            <li>Unit conversion</li>
-                            <li>Metric vs US customary</li>
-                            <li>Temperature scales</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="finance">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">💰 Personal Finance</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Making smart money decisions with mathematical tools.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Interest calculations</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Saving strategies</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Loan understanding</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Budget planning</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="probability">
-                    <h3>🎲 Probability</h3>
-                    <p>Understanding chance and uncertainty in decision making.</p>
-                    <div class="key-points">
-                        <h4>Key Concepts:</h4>
-                        <ul>
-                            <li>Basic probability</li>
-                            <li>Counting outcomes</li>
-                            <li>Expected value</li>
-                            <li>Risk assessment</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="measurement">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📏 Measurement & Conversions</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Navigating between different units and measurement systems.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Skills:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Dimensional analysis</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Unit conversion</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Metric vs US customary</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Temperature scales</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="statistics">
-                    <h3>📊 Statistics</h3>
-                    <p>Making sense of data and numbers in the real world.</p>
-                    <div class="key-points">
-                        <h4>Key Areas:</h4>
-                        <ul>
-                            <li>Data interpretation</li>
-                            <li>Descriptive statistics</li>
-                            <li>Normal distribution</li>
-                            <li>Statistical studies</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="probability">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎲 Probability</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Understanding chance and uncertainty in decision making.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Concepts:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Basic probability</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Counting outcomes</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Expected value</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Risk assessment</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card" data-category="voting">
-                    <h3>🗳️ Voting & Fairness</h3>
-                    <p>How mathematics shapes democracy and fair representation.</p>
-                    <div class="key-points">
-                        <h4>Key Topics:</h4>
-                        <ul>
-                            <li>Voting methods</li>
-                            <li>Apportionment</li>
-                            <li>Fairness criteria</li>
-                            <li>Mathematical citizenship</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Statistics</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Making sense of data and numbers in the real world.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Data interpretation</li>
+                                <li class="flex items-start gap-2"><span>��</span> Descriptive statistics</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Normal distribution</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Statistical studies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-6 hover:shadow-lg transition" data-category="voting">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🗳️ Voting & Fairness</h3>
+                        <p class="text-[var(--text-muted)] mb-3">How mathematics shapes democracy and fair representation.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Topics:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Voting methods</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Apportionment</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Fairness criteria</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Mathematical citizenship</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -709,93 +426,95 @@
         
         <!-- Study Strategies Section -->
         <div id="strategies" class="content-section">
-            <div class="section-header">
-                <h2>Study Strategies</h2>
-                <p>Proven techniques to master MAT 143 concepts</p>
-            </div>
-            
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <h3>📝 Active Learning</h3>
-                    <p>Don't just read - engage with the material actively.</p>
-                    <div class="key-points">
-                        <h4>Techniques:</h4>
-                        <ul>
-                            <li>Work problems step-by-step</li>
-                            <li>Explain concepts to others</li>
-                            <li>Create your own examples</li>
-                            <li>Use the Feynman technique</li>
-                        </ul>
-                    </div>
+            <div class="card p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Study Strategies</h2>
+                    <p class="text-[var(--text-muted)] text-lg">Proven techniques to master MAT 143 concepts</p>
                 </div>
                 
-                <div class="concept-card">
-                    <h3>🔄 Spaced Repetition</h3>
-                    <p>Review material over time, not just before tests.</p>
-                    <div class="key-points">
-                        <h4>Schedule:</h4>
-                        <ul>
-                            <li>Review same day</li>
-                            <li>Review after 1 day</li>
-                            <li>Review after 1 week</li>
-                            <li>Review before tests</li>
-                        </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📝 Active Learning</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Don't just read - engage with the material actively.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Techniques:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Work problems step-by-step</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Explain concepts to others</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Create your own examples</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Use the Feynman technique</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>🎯 Problem-Solving Framework</h3>
-                    <p>Systematic approach to tackle any math problem.</p>
-                    <div class="key-points">
-                        <h4>Steps:</h4>
-                        <ul>
-                            <li>Understand the problem</li>
-                            <li>Identify what you know</li>
-                            <li>Choose a strategy</li>
-                            <li>Solve and check</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🔄 Spaced Repetition</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Review material over time, not just before tests.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Schedule:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Review same day</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Review after 1 day</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Review after 1 week</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Review before tests</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>📊 Formula Mastery</h3>
-                    <p>Don't just memorize - understand when and why to use each formula.</p>
-                    <div class="key-points">
-                        <h4>Approach:</h4>
-                        <ul>
-                            <li>Understand the variables</li>
-                            <li>Practice with real examples</li>
-                            <li>Know when to apply</li>
-                            <li>Check units and reasonableness</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎯 Problem-Solving Framework</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Systematic approach to tackle any math problem.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Steps:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Understand the problem</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Identify what you know</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Choose a strategy</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Solve and check</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>🧠 Concept Connections</h3>
-                    <p>See how different topics relate to each other.</p>
-                    <div class="key-points">
-                        <h4>Connections:</h4>
-                        <ul>
-                            <li>Proportions → Functions</li>
-                            <li>Functions → Finance</li>
-                            <li>Statistics → Probability</li>
-                            <li>All → Real-world applications</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Formula Mastery</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Don't just memorize - understand when and why to use each formula.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Approach:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Understand the variables</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Practice with real examples</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Know when to apply</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Check units and reasonableness</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>💪 Confidence Building</h3>
-                    <p>Build mathematical confidence through small wins.</p>
-                    <div class="key-points">
-                        <h4>Strategies:</h4>
-                        <ul>
-                            <li>Start with what you know</li>
-                            <li>Celebrate small progress</li>
-                            <li>Learn from mistakes</li>
-                            <li>Practice regularly</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🧠 Concept Connections</h3>
+                        <p class="text-[var(--text-muted)] mb-3">See how different topics relate to each other.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Connections:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Proportions → Functions</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Functions → Finance</li>
+                                <li class="flex items-start gap-2"><span>��</span> Statistics → Probability</li>
+                                <li class="flex items-start gap-2"><span>💡</span> All → Real-world applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">💪 Confidence Building</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Build mathematical confidence through small wins.</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Strategies:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Start with what you know</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Celebrate small progress</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Learn from mistakes</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Practice regularly</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -803,93 +522,95 @@
         
         <!-- Test Prep Section -->
         <div id="tests" class="content-section">
-            <div class="section-header">
-                <h2>Test Preparation</h2>
-                <p>Strategic preparation for each test</p>
-            </div>
-            
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <h3>📊 Test 1: Chapters 1 & 13</h3>
-                    <p>Thinking Mathematically & Voting Methods</p>
-                    <div class="key-points">
-                        <h4>Focus Areas:</h4>
-                        <ul>
-                            <li>Pattern recognition</li>
-                            <li>Logical reasoning</li>
-                            <li>Voting method flaws</li>
-                            <li>Apportionment methods</li>
-                        </ul>
-                    </div>
+            <div class="card p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Test Preparation</h2>
+                    <p class="text-[var(--text-muted)] text-lg">Strategic preparation for each test</p>
                 </div>
                 
-                <div class="concept-card">
-                    <h3>📊 Test 2: Chapters 4 & 5</h3>
-                    <p>Proportions & Linear/Exponential Functions</p>
-                    <div class="key-points">
-                        <h4>Focus Areas:</h4>
-                        <ul>
-                            <li>Proportion solving</li>
-                            <li>Percentage calculations</li>
-                            <li>Linear equations</li>
-                            <li>Exponential growth</li>
-                        </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 1: Chapters 1 & 13</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Thinking Mathematically & Voting Methods</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Pattern recognition</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Logical reasoning</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Voting method flaws</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Apportionment methods</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>📊 Test 3: Chapters 6 & 7</h3>
-                    <p>Personal Finance & Conversions</p>
-                    <div class="key-points">
-                        <h4>Focus Areas:</h4>
-                        <ul>
-                            <li>Interest formulas</li>
-                            <li>Unit conversions</li>
-                            <li>Temperature scales</li>
-                            <li>Dimensional analysis</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 2: Chapters 4 & 5</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Proportions & Linear/Exponential Functions</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Proportion solving</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Percentage calculations</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Linear equations</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Exponential growth</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>📊 Test 4: Chapters 10 & 11</h3>
-                    <p>Probability & Statistics</p>
-                    <div class="key-points">
-                        <h4>Focus Areas:</h4>
-                        <ul>
-                            <li>Basic probability</li>
-                            <li>Expected value</li>
-                            <li>Descriptive statistics</li>
-                            <li>Z-scores</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 3: Chapters 6 & 7</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Personal Finance & Conversions</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Interest formulas</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Unit conversions</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Temperature scales</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Dimensional analysis</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>🎯 Test Strategy</h3>
-                    <p>General approach for all tests</p>
-                    <div class="key-points">
-                        <h4>Tips:</h4>
-                        <ul>
-                            <li>Read problems carefully</li>
-                            <li>Show all work</li>
-                            <li>Check units</li>
-                            <li>Verify answers make sense</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 4: Chapters 10 & 11</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Probability & Statistics</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Basic probability</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Expected value</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Descriptive statistics</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Z-scores</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="concept-card">
-                    <h3>⏰ Time Management</h3>
-                    <p>Make the most of your test time</p>
-                    <div class="key-points">
-                        <h4>Strategy:</h4>
-                        <ul>
-                            <li>Scan all problems first</li>
-                            <li>Start with easiest</li>
-                            <li>Budget time per problem</li>
-                            <li>Leave time to review</li>
-                        </ul>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎯 Test Strategy</h3>
+                        <p class="text-[var(--text-muted)] mb-3">General approach for all tests</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Tips:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Read problems carefully</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Show all work</li>
+                                <li class="flex items-start gap-2"><span>��</span> Check units</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Verify answers make sense</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-6 hover:shadow-lg transition">
+                        <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">⏰ Time Management</h3>
+                        <p class="text-[var(--text-muted)] mb-3">Make the most of your test time</p>
+                        <div class="key-points">
+                            <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Strategy:</h4>
+                            <ul class="text-sm text-[var(--urgent-strong)] space-y-1">
+                                <li class="flex items-start gap-2"><span>💡</span> Scan all problems first</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Start with easiest</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Budget time per problem</li>
+                                <li class="flex items-start gap-2"><span>💡</span> Leave time to review</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -917,7 +638,7 @@
         
         function filterContent() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.formula-card, .concept-card');
+            const cards = document.querySelectorAll('.card[data-category], .card');
             
             cards.forEach(card => {
                 const text = card.textContent.toLowerCase();

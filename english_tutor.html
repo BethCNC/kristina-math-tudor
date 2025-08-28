@@ -8,471 +8,169 @@
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
-        
-        :root {
-            /* ADHD-friendly colors */
-            --color-primary-50: #ffffff;
-            --color-primary-100: #f8f9fa;
-            --color-primary-200: #e9ecef;
-            --color-primary-300: #dee2e6;
-            --color-primary-500: #6c757d;
-            --color-primary-700: #343a40;
-            --color-primary-800: #212529;
-            --color-primary-900: #000000;
-            
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            
-            --color-error-500: #EB5B5B;
-            --color-warning-500: #eb7754;
-            
-            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-family-primary);
-            font-size: var(--font-size-base);
-            line-height: 1.5;
-            color: var(--color-primary-900);
-            background: var(--color-primary-100);
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: var(--space-4);
-        }
-        
-        .header {
-            background: var(--color-accent-pink-dark);
-            color: white;
-            padding: var(--space-8) 0;
-            text-align: center;
-            margin-bottom: var(--space-8);
-        }
-        
-        .header h1 {
-            font-size: var(--font-size-3xl);
-            font-weight: 700;
-            margin-bottom: var(--space-2);
-        }
-        
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            color: rgba(255,255,255,0.9);
-            text-decoration: none;
-            font-weight: 500;
-            margin-bottom: var(--space-4);
-            transition: color 0.2s ease;
-        }
-        
-        .back-link:hover {
-            color: white;
-        }
-        
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: var(--space-8);
-        }
-        
-        .sidebar {
-            background: white;
-            border-radius: var(--radius-xl);
-            padding: var(--space-6);
-            box-shadow: var(--shadow-lg);
-            height: fit-content;
-            border: 2px solid var(--color-accent-pink-base);
-        }
-        
-        .sidebar h2 {
-            font-size: var(--font-size-xl);
-            font-weight: 600;
-            color: var(--color-accent-pink-dark);
-            margin-bottom: var(--space-4);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .quick-actions {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-3);
-            margin-bottom: var(--space-8);
-        }
-        
-        .action-btn {
-            background: var(--color-accent-pink-base);
-            color: var(--color-primary-900);
-            border: 2px solid var(--color-accent-pink-dark);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: 500;
-            text-align: center;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
-        }
-        
-        .action-btn:hover {
-            background: var(--color-accent-pink-dark);
-            color: var(--color-primary-50);
-            transform: translateY(-1px);
-        }
-        
-        .assignment-list {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-        }
-        
-        .assignment-item {
-            background: var(--color-primary-100);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: 1px solid var(--color-primary-200);
-            border-left: 4px solid var(--color-accent-pink-dark);
-        }
-        
-        .assignment-item:hover {
-            background: var(--color-accent-pink-base);
-            border-left-color: var(--color-accent-pink-dark);
-        }
-        
-        .assignment-item.urgent {
-            border-left-color: var(--color-urgent-base);
-            background: #ffebee;
-        }
-        
-        .assignment-item.due-soon {
-            border-left-color: var(--color-warning-base);
-            background: #fff3e0;
-        }
-        
-        .chat-container {
-            background: white;
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-lg);
-            display: flex;
-            flex-direction: column;
-            height: 70vh;
-            border: 2px solid var(--color-accent-pink-base);
-        }
-        
-        .chat-header {
-            padding: var(--space-6);
-            border-bottom: 2px solid var(--color-accent-pink-base);
-            background: var(--color-accent-pink-base);
-            border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-        }
-        
-        .chat-header h2 {
-            font-size: var(--font-size-xl);
-            font-weight: 600;
-            color: var(--color-accent-pink-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .chat-messages {
-            flex: 1;
-            padding: var(--space-6);
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-        
-        .welcome-message {
-            text-align: center;
-            color: var(--color-primary-700);
-            padding: var(--space-8);
-        }
-        
-        .welcome-message h3 {
-            font-size: var(--font-size-xl);
-            margin-bottom: var(--space-3);
-            color: var(--color-accent-pink-dark);
-        }
-        
-        .example-questions {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-2);
-            margin-top: var(--space-4);
-        }
-        
-        .example-question {
-            background: var(--color-accent-pink-base);
-            color: var(--color-accent-pink-dark);
-            padding: var(--space-3) var(--space-4);
-            border-radius: var(--radius-md);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: 1px solid var(--color-accent-pink-dark);
-            text-align: left;
-        }
-        
-        .example-question:hover {
-            background: var(--color-accent-pink-dark);
-            color: white;
-            transform: translateY(-1px);
-        }
-        
-        .chat-input {
-            padding: var(--space-6);
-            border-top: 2px solid var(--color-accent-pink-base);
-            background: var(--color-primary-100);
-            border-radius: 0 0 var(--radius-xl) var(--radius-xl);
-        }
-        
-        .input-group {
-            display: flex;
-            gap: var(--space-3);
-        }
-        
-        .chat-input input {
-            flex: 1;
-            padding: var(--space-4);
-            border: 2px solid var(--color-accent-pink-dark);
-            border-radius: var(--radius-lg);
-            font-size: var(--font-size-base);
-            transition: border-color 0.2s ease;
-            background: white;
-        }
-        
-        .chat-input input:focus {
-            outline: none;
-            border-color: var(--color-accent-pink-dark);
-            box-shadow: 0 0 0 3px rgba(123, 31, 162, 0.1);
-        }
-        
-        .send-btn {
-            background: var(--color-accent-pink-dark);
-            color: white;
-            border: none;
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-lg);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .send-btn:hover {
-            background: var(--color-accent-pink-dark);
-            transform: translateY(-1px);
-        }
-        
-        .send-btn:disabled {
-            background: var(--color-primary-300);
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        /* Message styling */
-        .message {
-            display: flex;
-            gap: var(--space-3);
-            animation: fadeIn 0.3s ease-in;
-        }
-        
-        .message.user {
-            flex-direction: row-reverse;
-        }
-        
-        .message-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--font-size-lg);
-            flex-shrink: 0;
-        }
-        
-        .message.user .message-avatar {
-            background: var(--color-accent-pink-dark);
-            color: white;
-        }
-        
-        .message.assistant .message-avatar {
-            background: var(--color-primary-200);
-            color: var(--color-primary-700);
-        }
-        
-        .message-content {
-            background: var(--color-primary-100);
-            padding: var(--space-4);
-            border-radius: var(--radius-lg);
-            max-width: 80%;
-            line-height: 1.6;
-        }
-        
-        .message.user .message-content {
-            background: var(--color-accent-pink-dark);
-            color: white;
-        }
-        
-        .message.assistant .message-content {
-            background: white;
-            border: 2px solid var(--color-accent-pink-base);
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .loading {
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-            color: var(--color-primary-500);
-            font-style: italic;
-        }
-        
-        .loading-dots {
-            display: flex;
-            gap: 2px;
-        }
-        
-        .loading-dots span {
-            width: 4px;
-            height: 4px;
-            background: var(--color-accent-pink-dark);
-            border-radius: 50%;
-            animation: loading 1.4s infinite ease-in-out;
-        }
-        
-        .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
-        .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
-        
-        @keyframes loading {
-            0%, 80%, 100% { transform: scale(0); }
-            40% { transform: scale(1); }
-        }
-        
-        @media (max-width: 768px) {
-            .main-content {
-                grid-template-columns: 1fr;
-                gap: var(--space-6);
-            }
-            
-            .chat-container {
-                height: 60vh;
-            }
-            
-            .container {
-                padding: var(--space-3);
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
             }
         }
-    </style>
+    </script>
 </head>
 
-<body>
-    <div class="header">
-        <div class="container">
-            <a href="index.html" class="back-link">← Back to Dashboard</a>
-            <h1>📝 ENG 111 Writing Coach</h1>
-            <p>Your ADHD-friendly writing assistant for essays, discussions, and academic success</p>
+<body class="bg-[var(--surface-light)] text-[var(--text-dark)]">
+    <div class="header-dark">
+        <div class="max-w-6xl mx-auto px-4">
+            <a href="index.html" class="inline-flex items-center gap-2 text-[var(--text-light)] font-medium mb-4 hover:underline opacity-90">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Back to Dashboard
+            </a>
+            <h1 class="text-3xl font-bold text-[var(--text-light)] mb-2 flex items-center gap-2">
+                <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                ENG 111 Writing Coach
+            </h1>
+            <p class="text-[var(--text-light)] opacity-90">Your ADHD-friendly writing assistant for essays, discussions, and academic success</p>
         </div>
     </div>
     
-    <div class="container">
-        <div class="main-content">
-            <div class="sidebar">
-                <h2>Quick Actions</h2>
-                <div class="quick-actions">
-                    <button class="action-btn" onclick="askQuestion('help with critical reading discussion')">📖 Discussion Help</button>
-                    <button class="action-btn" onclick="askQuestion('how to write compare contrast essay')">📝 Essay Writing</button>
-                    <button class="action-btn" onclick="askQuestion('plagiarism help')">🔍 Citation Help</button>
-                    <button class="action-btn" onclick="askQuestion('understanding assignment')">❓ Assignment Help</button>
+    <div class="max-w-6xl mx-auto p-4">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card english-card">
+                <div class="card-title-dark english mb-4 flex items-center gap-2">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                    Quick Actions
+                </div>
+                <div class="space-y-3 mb-8">
+                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('help with critical reading discussion')">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        Discussion Help
+                    </button>
+                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('how to write compare contrast essay')">
+                        <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                        Essay Writing
+                    </button>
+                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('plagiarism help')">
+                        <i data-lucide="search" class="w-4 h-4"></i>
+                        Citation Help
+                    </button>
+                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('understanding assignment')">
+                        <i data-lucide="help-circle" class="w-4 h-4"></i>
+                        Assignment Help
+                    </button>
                 </div>
                 
-                <h2>Current Assignments</h2>
-                <div class="assignment-list">
-                    <div class="assignment-item urgent" onclick="askQuestion('critical reading discussion adam grant')">
-                        <strong>Week 1: Critical Reading Discussion</strong>
-                        <div style="font-size: 0.9em; color: var(--color-error-500); font-weight: 600;">DUE: Tomorrow (8/22)</div>
+                <div class="card-title-dark english mb-4 flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                    Current Assignments
+                </div>
+                <div class="space-y-3">
+                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--urgent-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('critical reading discussion adam grant')">
+                        <strong class="block mb-1 flex items-center gap-2">
+                            <i data-lucide="alert-circle" class="w-4 h-4 text-[var(--urgent-accent)]"></i>
+                            Week 1: Critical Reading Discussion
+                        </strong>
+                        <div class="text-sm text-[var(--urgent-accent)] font-semibold">DUE: Tomorrow (8/22)</div>
                     </div>
-                    <div class="assignment-item due-soon" onclick="askQuestion('eva syllabus quiz')">
-                        <strong>EVA Syllabus Quiz</strong>
-                        <div style="font-size: 0.9em; color: var(--color-warning-500); font-weight: 600;">DUE: This Week</div>
+                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--yellow-500)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('eva syllabus quiz')">
+                        <strong class="block mb-1 flex items-center gap-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-[var(--yellow-500)]"></i>
+                            EVA Syllabus Quiz
+                        </strong>
+                        <div class="text-sm text-[var(--yellow-500)] font-semibold">DUE: This Week</div>
                     </div>
-                    <div class="assignment-item" onclick="askQuestion('week 2 plagiarism citations')">
-                        <strong>Week 2: Plagiarism & Citations</strong>
-                        <div style="font-size: 0.9em; color: var(--color-primary-700);">Coming Up</div>
+                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--english-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('week 2 plagiarism citations')">
+                        <strong class="block mb-1 flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4 text-[var(--english-accent)]"></i>
+                            Week 2: Plagiarism & Citations
+                        </strong>
+                        <div class="text-sm text-[var(--text-muted)]">Coming Up</div>
                     </div>
-                    <div class="assignment-item" onclick="askQuestion('compare contrast essay')">
-                        <strong>Week 3: Compare/Contrast Essay</strong>
-                        <div style="font-size: 0.9em; color: var(--color-primary-700);">Future Assignment</div>
+                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--english-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('compare contrast essay')">
+                        <strong class="block mb-1 flex items-center gap-2">
+                            <i data-lucide="file-text" class="w-4 h-4 text-[var(--english-accent)]"></i>
+                            Week 3: Compare/Contrast Essay
+                        </strong>
+                        <div class="text-sm text-[var(--text-muted)]">Future Assignment</div>
                     </div>
                 </div>
             </div>
             
-            <div class="chat-container">
-                <div class="chat-header">
-                    <h2>Chat with Your Writing Coach</h2>
+            <div class="md:col-span-2 card english-card">
+                <div class="card-title-dark english mb-4 flex items-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Chat with Your Writing Coach
                 </div>
                 
-                <div class="chat-messages" id="chatMessages">
-                    <div class="welcome-message">
-                        <h3>👋 Welcome to your ENG 111 Writing Coach!</h3>
-                        <p>I'm here to help you succeed in writing! I break down complex assignments into simple steps, help you understand what your professor wants, and guide you through each part of the writing process.</p>
-                        <div class="example-questions">
-                            <div class="example-question" onclick="askQuestion('What is the main point of Adam Grant article?')">
-                                💡 "What is the main point of the Adam Grant article?"
+                <div class="h-96 overflow-y-auto p-4" id="chatMessages">
+                    <div class="text-center text-[var(--text-muted)] p-8">
+                        <h3 class="text-xl font-semibold mb-3 text-[var(--english-accent)] flex items-center justify-center gap-2">
+                            <i data-lucide="heart" class="w-6 h-6"></i>
+                            Welcome to your ENG 111 Writing Coach!
+                        </h3>
+                        <p class="mb-6">I'm here to help you succeed in writing! I break down complex assignments into simple steps, help you understand what your professor wants, and guide you through each part of the writing process.</p>
+                        <div class="space-y-2">
+                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('What is the main point of Adam Grant article?')">
+                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                "What is the main point of the Adam Grant article?"
                             </div>
-                            <div class="example-question" onclick="askQuestion('How do I structure my discussion post?')">
-                                💡 "How do I structure my discussion post?"
+                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('How do I structure my discussion post?')">
+                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                "How do I structure my discussion post?"
                             </div>
-                            <div class="example-question" onclick="askQuestion('What does a works cited look like?')">
-                                💡 "What does a Works Cited look like?"
+                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('What does a works cited look like?')">
+                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                "What does a Works Cited look like?"
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="chat-input">
-                    <div class="input-group">
-                        <input type="text" id="messageInput" placeholder="Ask me anything about ENG 111..." onkeypress="handleKeyPress(event)">
-                        <button class="send-btn" onclick="sendMessage()" id="sendBtn">Send</button>
+                <div class="p-4 border-t border-[var(--border)] bg-[var(--surface-muted)]">
+                    <div class="flex gap-3">
+                        <input type="text" id="messageInput" placeholder="Ask me anything about ENG 111..." onkeypress="handleKeyPress(event)" class="flex-1 p-3 border-2 border-[var(--english-accent)] rounded-lg focus:outline-none focus:border-[var(--surface-dark)] bg-white">
+                        <button class="btn btn-primary flex items-center gap-2" onclick="sendMessage()" id="sendBtn">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            Send
+                        </button>
                     </div>
                 </div>
             </div>
@@ -480,6 +178,9 @@
     </div>
 
     <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
         let isProcessing = false;
         
         function askQuestion(question) {
@@ -535,14 +236,14 @@
             }
             
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${sender}`;
+            messageDiv.className = `flex gap-3 ${sender === 'user' ? 'flex-row-reverse' : ''} mb-4`;
             
             const avatar = document.createElement('div');
-            avatar.className = 'message-avatar';
-            avatar.textContent = sender === 'user' ? '👤' : '📝';
+            avatar.className = `w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${sender === 'user' ? 'bg-[var(--english-accent)] text-[var(--text-dark)]' : 'bg-[var(--surface-muted)] text-[var(--text-dark)]'}`;
+            avatar.innerHTML = sender === 'user' ? '<i data-lucide="user" class="w-5 h-5"></i>' : '<i data-lucide="pen-tool" class="w-5 h-5"></i>';
             
             const messageContent = document.createElement('div');
-            messageContent.className = 'message-content';
+            messageContent.className = `p-3 rounded-lg max-w-[80%] ${sender === 'user' ? 'bg-[var(--english-accent)] text-[var(--text-dark)]' : 'bg-white border-2 border-[var(--english-accent)]'}`;
             messageContent.innerHTML = content;
             
             messageDiv.appendChild(avatar);
@@ -550,27 +251,30 @@
             
             messagesContainer.appendChild(messageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            
+            // Reinitialize icons for new content
+            lucide.createIcons();
         }
         
         function showLoading() {
             const messagesContainer = document.getElementById('chatMessages');
             const loadingDiv = document.createElement('div');
-            loadingDiv.className = 'message assistant';
+            loadingDiv.className = 'flex gap-3 mb-4';
             loadingDiv.id = 'loadingMessage';
             
             const avatar = document.createElement('div');
-            avatar.className = 'message-avatar';
-            avatar.textContent = '📝';
+            avatar.className = 'w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-[var(--surface-muted)] text-[var(--text-dark)]';
+            avatar.innerHTML = '<i data-lucide="pen-tool" class="w-5 h-5"></i>';
             
             const loadingContent = document.createElement('div');
-            loadingContent.className = 'message-content';
+            loadingContent.className = 'p-3 rounded-lg bg-white border-2 border-[var(--english-accent)]';
             loadingContent.innerHTML = `
-                <div class="loading">
+                <div class="flex items-center gap-2 text-[var(--text-muted)] italic">
                     <span>Thinking about your writing...</span>
-                    <div class="loading-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="flex gap-1">
+                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce"></div>
+                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
+                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
                     </div>
                 </div>
             `;
@@ -579,6 +283,8 @@
             loadingDiv.appendChild(loadingContent);
             messagesContainer.appendChild(loadingDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            
+            lucide.createIcons();
         }
         
         function hideLoading() {

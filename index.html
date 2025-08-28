@@ -60,6 +60,15 @@
             }
         }
     </script>
+    
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
 </head>
 
 <body class="min-h-screen">
@@ -71,8 +80,14 @@
                 Executive function support for MAT 143 Math & ENG 111 Writing. Never miss a deadline, stay organized, and succeed in both classes.
             </p>
             <div class="flex justify-center gap-4">
-                <a href="tutor.html" class="btn btn-primary is-math text-lg px-8 py-3">🧮 Math Tutor</a>
-                <a href="english_tutor.html" class="btn btn-primary is-writing text-lg px-8 py-3">📝 Writing Coach</a>
+                <a href="tutor.html" class="btn btn-primary is-math text-lg px-8 py-3 flex items-center gap-2">
+                    <i data-lucide="calculator" class="w-5 h-5"></i>
+                    Math Tutor
+                </a>
+                <a href="english_tutor.html" class="btn btn-primary is-writing text-lg px-8 py-3 flex items-center gap-2">
+                    <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                    Writing Coach
+                </a>
             </div>
         </div>
     </section>
@@ -81,7 +96,7 @@
     <section class="py-16 bg-[var(--bg)]">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-[var(--text)] mb-4">Your Fall 2025 Classes</h2>
+                <h2 class="text-3xl font-bold text-[var(--text-dark)] mb-4">Your Fall 2025 Classes</h2>
                 <p class="text-[var(--text-muted)] text-lg">Designed specifically for ADHD-friendly learning and executive function success</p>
             </div>
             
@@ -89,7 +104,9 @@
                 <!-- Math Class Card -->
                 <div class="card p-8 is-math card-hover">
                     <div class="flex items-start gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-math)] text-white flex items-center justify-center text-2xl">🧮</div>
+                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-math)] text-white flex items-center justify-center">
+                            <i data-lucide="calculator" class="w-8 h-8"></i>
+                        </div>
                         <div>
                             <h3 class="text-2xl font-bold text-[var(--text)] mb-2">MAT 143 - Quantitative Literacy</h3>
                             <p class="text-[var(--text-muted)]">16 weeks • Aug 18 - Dec 19 • Online</p>
@@ -98,13 +115,19 @@
                     
                     <div class="space-y-4 mb-6">
                         <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                            <h4 class="font-semibold text-[var(--text)] mb-2">📍 Coming Up</h4>
+                            <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                Coming Up
+                            </h4>
                             <p class="text-[var(--text-muted)]">Chapter 4: Proportions & Percentages</p>
                             <p class="text-sm text-[var(--text-muted)]">Test 1 - September 15th</p>
                         </div>
                         
                         <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-                            <h4 class="font-semibold text-blue-900 mb-2">✅ Recent Progress</h4>
+                            <h4 class="font-semibold text-blue-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                Recent Progress
+                            </h4>
                             <p class="text-blue-800 text-sm">Chapter 1 completed • 85% homework average</p>
                         </div>
                     </div>
@@ -118,7 +141,9 @@
                 <!-- English Class Card -->
                 <div class="card p-8 is-writing card-hover">
                     <div class="flex items-start gap-4 mb-6">
-                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-writing)] text-white flex items-center justify-center text-2xl">📝</div>
+                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-english)] text-white flex items-center justify-center">
+                            <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                        </div>
                         <div>
                             <h3 class="text-2xl font-bold text-[var(--text)] mb-2">ENG 111 - Writing & Inquiry</h3>
                             <p class="text-[var(--text-muted)]">8 weeks • Aug 18 - Oct 13 • Online</p>
@@ -127,12 +152,18 @@
                     
                     <div class="space-y-4 mb-6">
                         <div class="banner-urgent">
-                            <h4 class="font-semibold mb-2">⚠️ Due Tomorrow</h4>
+                            <h4 class="font-semibold mb-2 flex items-center gap-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                                Due Tomorrow
+                            </h4>
                             <p>Critical Reading Discussion - Adam Grant Article</p>
                         </div>
                         
                         <div class="p-4 rounded-xl bg-pink-50 border border-pink-200">
-                            <h4 class="font-semibold text-pink-900 mb-2">📋 This Week</h4>
+                            <h4 class="font-semibold text-pink-900 mb-2 flex items-center gap-2">
+                                <i data-lucide="clipboard-list" class="w-4 h-4"></i>
+                                This Week
+                            </h4>
                             <p class="text-pink-800 text-sm">Syllabus Quiz • Plagiarism Module</p>
                         </div>
                     </div>
