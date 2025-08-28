@@ -560,6 +560,15 @@
         
         function addMessage(content, sender) {
             const messagesContainer = document.getElementById('chatMessages');
+            
+            // Clear welcome message on first user interaction
+            if (sender === 'user') {
+                const welcomeMessage = messagesContainer.querySelector('.welcome-message');
+                if (welcomeMessage) {
+                    welcomeMessage.remove();
+                }
+            }
+            
             const messageDiv = document.createElement('div');
             messageDiv.className = `message ${sender}`;
             
