@@ -21,38 +21,59 @@
         
         /* Design System - Modern Minimal */
         :root {
-            /* Colors - ADHD-friendly high contrast system */
-            --color-primary-50: #ffffff;
-            --color-primary-100: #f8f9fa;
-            --color-primary-200: #e9ecef;
-            --color-primary-300: #dee2e6;
-            --color-primary-400: #ced4da;
-            --color-primary-500: #6c757d;
-            --color-primary-600: #495057;
-            --color-primary-700: #343a40;
-            --color-primary-800: #212529;
+            /* Colors from tokens.json */
+            --color-primary-50: #f2f2f2;
+            --color-primary-100: #e5e5e5;
+            --color-primary-200: #d4d4d4;
+            --color-primary-300: #a3a3a3;
+            --color-primary-400: #737373;
+            --color-primary-500: #30302f;
+            --color-primary-600: #262626;
+            --color-primary-700: #1a1a1a;
+            --color-primary-800: #0f0f0f;
             --color-primary-900: #000000;
             
-            /* ADHD-friendly accent colors - high contrast, calming */
-            --color-math-light: #e3f2fd;
-            --color-math-base: #1976d2;
-            --color-math-dark: #0d47a1;
+            --color-accent-blue-base: #c3dde9;
+            --color-accent-blue-dark: #85B9D2;
+            --color-accent-yellow-base: #e4e67b;
+            --color-accent-yellow-dark: #D8DA3F;
+            --color-accent-pink-base: #e5ccd0;
+            --color-accent-pink-dark: #C8939C;
+            --color-accent-orange-base: #eb7754;
+            --color-accent-orange-dark: #E44B1D;
             
-            --color-english-light: #f3e5f5;
-            --color-english-base: #7b1fa2;
-            --color-english-dark: #4a148c;
+            --color-success-50: #f0fdf4;
+            --color-success-100: #dcfce7;
+            --color-success-200: #bbf7d0;
+            --color-success-300: #86efac;
+            --color-success-400: #4ade80;
+            --color-success-500: #64A365;
+            --color-success-600: #4E864F;
+            --color-success-700: #15803d;
+            --color-success-800: #166534;
+            --color-success-900: #14532d;
             
-            --color-success-light: #e8f5e8;
-            --color-success-base: #2e7d32;
-            --color-success-dark: #1b5e20;
+            --color-warning-50: #fffbeb;
+            --color-warning-100: #fef3c7;
+            --color-warning-200: #fde68a;
+            --color-warning-300: #fcd34d;
+            --color-warning-400: #fbbf24;
+            --color-warning-500: #eb7754;
+            --color-warning-600: #E44B1D;
+            --color-warning-700: #b45309;
+            --color-warning-800: #92400e;
+            --color-warning-900: #78350f;
             
-            --color-warning-light: #fff3e0;
-            --color-warning-base: #f57c00;
-            --color-warning-dark: #e65100;
-            
-            --color-urgent-light: #ffebee;
-            --color-urgent-base: #d32f2f;
-            --color-urgent-dark: #b71c1c;
+            --color-error-50: #fef2f2;
+            --color-error-100: #fee2e2;
+            --color-error-200: #fecaca;
+            --color-error-300: #fca5a5;
+            --color-error-400: #f87171;
+            --color-error-500: #EB5B5B;
+            --color-error-600: #E42121;
+            --color-error-700: #b91c1c;
+            --color-error-800: #991b1b;
+            --color-error-900: #7f1d1d;
             
             --color-neutral-50: #fafafa;
             --color-neutral-100: #f5f5f5;
@@ -65,7 +86,18 @@
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
             
-            /* Typography - Vend Sans font */
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            
+            /* Typography from tokens.json */
             --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
             --font-family-serif: 'Plantin', Georgia, serif;
@@ -78,15 +110,57 @@
             --font-size-2xl: 1.5rem;
             --font-size-3xl: 1.875rem;
             --font-size-4xl: 2.25rem;
+            --font-size-5xl: 3rem;
+            --font-size-6xl: 3.75rem;
             
             --font-weight-normal: 400;
             --font-weight-medium: 500;
             --font-weight-semibold: 600;
             --font-weight-bold: 700;
+            --font-weight-extrabold: 800;
+            --font-weight-black: 900;
             
             --line-height-tight: 1.25;
             --line-height-normal: 1.5;
             --line-height-relaxed: 1.625;
+            --line-height-loose: 2;
+            
+            /* Spacing from tokens.json */
+            --space-0: 0;
+            --space-1: 0.25rem;
+            --space-2: 0.5rem;
+            --space-3: 0.75rem;
+            --space-4: 1rem;
+            --space-5: 1.25rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-10: 2.5rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            --space-20: 5rem;
+            --space-24: 6rem;
+            --space-32: 8rem;
+            --space-40: 10rem;
+            --space-48: 12rem;
+            --space-56: 14rem;
+            --space-64: 16rem;
+            
+            /* Border Radius from tokens.json */
+            --radius-none: 0;
+            --radius-sm: 0.125rem;
+            --radius-md: 0.375rem;
+            --radius-lg: 0.5rem;
+            --radius-xl: 0.75rem;
+            --radius-2xl: 1rem;
+            --radius-3xl: 1.5rem;
+            --radius-full: 9999px;
+            
+            /* Shadows from tokens.json */
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             
             /* Spacing - Update from your tokens.json */
             --space-1: 0.25rem;
@@ -121,12 +195,12 @@
         }
         
         body {
-            font-family: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            font-family: var(--font-family-primary);
             font-size: var(--font-size-base);
             line-height: var(--line-height-normal);
             color: var(--color-primary-900);
             background-color: var(--color-primary-50);
-            font-weight: 400;
+            font-weight: var(--font-weight-normal);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -214,7 +288,7 @@
             color: var(--color-primary-50);
             padding: var(--space-8) 0;
             text-align: center;
-            border-bottom: 3px solid var(--color-error-500);
+            border-bottom: 3px solid var(--color-accent-orange-base);
         }
 
         .page-title {
@@ -338,39 +412,33 @@
         }
 
         .task-item.urgent {
-            background: var(--color-urgent-base) !important;
+            background: var(--color-error-500) !important;
             color: var(--color-primary-50) !important;
-            border-left-color: var(--color-urgent-dark) !important;
+            border-left-color: var(--color-error-700) !important;
         }
 
         .task-item.important {
-            background: var(--color-warning-base) !important;
-            color: var(--color-primary-50) !important;
-            border-left-color: var(--color-warning-dark) !important;
-        }
-
-        .task-item.upcoming {
-            background: var(--color-math-base) !important;
-            color: var(--color-primary-50) !important;
-            border-left-color: var(--color-math-dark) !important;
+            background: var(--color-warning-300) !important;
+            color: var(--color-primary-900) !important;
+            border-left-color: var(--color-warning-600) !important;
         }
 
         .task-item.math {
-            background: var(--color-math-light) !important;
-            color: var(--color-math-dark) !important;
-            border-left-color: var(--color-math-base) !important;
+            background: var(--color-accent-blue-base) !important;
+            color: var(--color-primary-900) !important;
+            border-left-color: var(--color-accent-blue-dark) !important;
         }
 
         .task-item.english {
-            background: var(--color-english-light) !important;
-            color: var(--color-english-dark) !important;
-            border-left-color: var(--color-english-base) !important;
+            background: var(--color-accent-pink-base) !important;
+            color: var(--color-primary-900) !important;
+            border-left-color: var(--color-accent-pink-dark) !important;
         }
 
-        .task-item.completed {
-            background: var(--color-success-light) !important;
-            color: var(--color-success-dark) !important;
-            border-left-color: var(--color-success-base) !important;
+        .task-item.upcoming {
+            background: var(--color-accent-yellow-base) !important;
+            color: var(--color-primary-900) !important;
+            border-left-color: var(--color-accent-yellow-dark) !important;
         }
 
         .task-checkbox {
@@ -498,6 +566,113 @@
             font-weight: var(--font-weight-medium);
         }
 
+        /* Class Cards */
+        .class-cards {
+            background: white;
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
+        }
+
+        .class-cards h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin-bottom: var(--space-6);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .class-card {
+            background: white;
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-4);
+        }
+
+        .class-card.math-card {
+            border-color: var(--color-accent-blue-dark);
+            background: var(--color-accent-blue-base);
+        }
+
+        .class-card.english-card {
+            border-color: var(--color-accent-pink-dark);
+            background: var(--color-accent-pink-base);
+        }
+
+        .class-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-4);
+            padding-bottom: var(--space-3);
+            border-bottom: 2px solid var(--color-neutral-100);
+        }
+
+        .class-header h3 {
+            font-size: var(--font-size-5);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-black);
+            margin: 0;
+        }
+
+        .class-duration {
+            font-size: var(--font-size-8);
+            color: var(--color-neutral-600);
+            font-weight: var(--font-weight-medium);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .next-tasks h4 {
+            font-size: var(--font-size-6);
+            font-weight: var(--font-weight-medium);
+            color: var(--color-black);
+            margin-bottom: var(--space-3);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .class-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: var(--font-weight-medium);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: var(--space-4);
+            transition: all 0.2s ease;
+            border: 2px solid;
+        }
+
+        .math-btn {
+            background: var(--color-accent-blue-dark);
+            color: var(--color-primary-900);
+            border-color: var(--color-accent-blue-dark);
+        }
+
+        .math-btn:hover {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+        }
+
+        .english-btn {
+            background: var(--color-accent-pink-dark);
+            color: var(--color-primary-900);
+            border-color: var(--color-accent-pink-dark);
+        }
+
+        .english-btn:hover {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+        }
+
         /* Quick Help */
         .quick-help {
             background: white;
@@ -558,6 +733,17 @@
         .help-btn.secondary:hover {
             background: var(--color-primary-900);
             color: var(--color-primary-50);
+        }
+
+        .calendar-btn {
+            background: var(--color-accent-yellow-base);
+            color: var(--color-primary-900);
+            border: 2px solid var(--color-accent-yellow-dark);
+        }
+
+        .calendar-btn:hover {
+            background: var(--color-accent-yellow-dark);
+            color: var(--color-primary-900);
         }
         
         .feature-card {
@@ -899,43 +1085,87 @@
                 </div>
             </div>
 
-            <!-- This Week's Focus -->
-            <div class="week-focus">
-                <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>WEEK 1 SURVIVAL GUIDE</h2>
+            <!-- Class Cards -->
+            <div class="class-cards">
+                <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>YOUR CLASSES</h2>
                 <div class="focus-grid">
-                    <div class="focus-card study" style="background: var(--color-math-light); color: var(--color-math-dark);">
-                        <h3><i data-lucide="calculator" style="display: inline; margin-right: 8px;"></i>🧮 MAT 143 FOCUS</h3>
-                        <ul>
-                            <li><strong>EVA</strong> - Complete by Fri 8/29 OR GET DROPPED</li>
-                            <li><strong>Sections 1.1-1.2</strong> - Basic math thinking</li>
-                            <li><strong>BrightSpace Attendance</strong> - Submit weekly</li>
-                            <li><strong>Get familiar</strong> - Explore Hawkes Learning</li>
-                        </ul>
+                    <!-- Math Class Card -->
+                    <div class="class-card math-card">
+                        <div class="class-header">
+                            <h3>🧮 MAT 143 - Math</h3>
+                            <span class="class-duration">16 weeks | Aug 18 - Dec 19</span>
+                        </div>
+                        <div class="next-tasks">
+                            <h4>Next Up:</h4>
+                            <div class="task-list">
+                                <div class="task-item important">
+                                    <div class="task-content">
+                                        <h5>EVA - Enrollment Verification</h5>
+                                        <p>Due: Friday 8/29 | CRITICAL</p>
+                                    </div>
+                                    <div class="task-status">⏰ 2 DAYS</div>
+                                </div>
+                                <div class="task-item math">
+                                    <div class="task-content">
+                                        <h5>Weekly Attendance</h5>
+                                        <p>Due: Friday 8/29</p>
+                                    </div>
+                                    <div class="task-status">SUBMIT</div>
+                                </div>
+                                <div class="task-item upcoming">
+                                    <div class="task-content">
+                                        <h5>Sections 1.1-1.2 Practice</h5>
+                                        <p>This week | Hawkes Learning</p>
+                                    </div>
+                                    <div class="task-status">STUDY</div>
+                                </div>
+                            </div>
+                            <a href="tutor.html" class="class-btn math-btn">Enter Math Tutor</a>
+                        </div>
                     </div>
-                    
-                    <div class="focus-card dates" style="background: var(--color-english-light); color: var(--color-english-dark);">
-                        <h3><i data-lucide="pen-tool" style="display: inline; margin-right: 8px;"></i>📝 ENG 111 FOCUS</h3>
-                        <ul>
-                            <li><strong>Adam Grant Article</strong> - Read & understand main point</li>
-                            <li><strong>Discussion Post</strong> - Agree/disagree with reasoning</li>
-                            <li><strong>Reply to Classmate</strong> - Meaningful response</li>
-                            <li><strong>Works Cited</strong> - Try your best, won't be graded harshly</li>
-                        </ul>
+
+                    <!-- English Class Card -->
+                    <div class="class-card english-card">
+                        <div class="class-header">
+                            <h3>📝 ENG 111 - Writing</h3>
+                            <span class="class-duration">8 weeks | Ends Oct 10</span>
+                        </div>
+                        <div class="next-tasks">
+                            <h4>Next Up:</h4>
+                            <div class="task-list">
+                                <div class="task-item urgent">
+                                    <div class="task-content">
+                                        <h5>Critical Reading Discussion</h5>
+                                        <p>Due: TOMORROW 8/22</p>
+                                    </div>
+                                    <div class="task-status">⚠️ 1 DAY</div>
+                                </div>
+                                <div class="task-item english">
+                                    <div class="task-content">
+                                        <h5>EVA Syllabus Quiz</h5>
+                                        <p>Due: This week</p>
+                                    </div>
+                                    <div class="task-status">CHECK</div>
+                                </div>
+                                <div class="task-item upcoming">
+                                    <div class="task-content">
+                                        <h5>Week 2: Plagiarism Tutorial</h5>
+                                        <p>Coming next week</p>
+                                    </div>
+                                    <div class="task-status">PREP</div>
+                                </div>
+                            </div>
+                            <a href="english_tutor.html" class="class-btn english-btn">Enter Writing Coach</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Class Navigation -->
+            <!-- Quick Navigation -->
             <div class="quick-help" id="class-nav">
-                <h2><i data-lucide="graduation-cap" style="display: inline; margin-right: 8px;"></i>CHOOSE YOUR CLASS</h2>
+                <h2><i data-lucide="graduation-cap" style="display: inline; margin-right: 8px;"></i>QUICK ACCESS</h2>
                 <div class="help-buttons">
-                    <a href="tutor.html" class="help-btn" style="background: var(--color-math-base); color: white; border-color: var(--color-math-base);">
-                        🧮 MAT 143 Tutor
-                    </a>
-                    <a href="english_tutor.html" class="help-btn" style="background: var(--color-english-base); color: white; border-color: var(--color-english-base);">
-                        📝 ENG 111 Tutor
-                    </a>
-                    <a href="calendar.html" class="help-btn secondary">📅 All Deadlines</a>
+                    <a href="calendar.html" class="help-btn calendar-btn">📅 All Deadlines</a>
                 </div>
             </div>
         </div>
