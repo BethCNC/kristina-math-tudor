@@ -8,39 +8,38 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
+        
         /* Import the same design system */
         :root {
-            --color-primary-50: #f0f9ff;
-            --color-primary-100: #e0f2fe;
-            --color-primary-200: #bae6fd;
-            --color-primary-500: #0ea5e9;
-            --color-primary-600: #0284c7;
-            --color-primary-700: #0369a1;
-            --color-primary-900: #0c4a6e;
+            --color-primary-50: #f2f2f2;
+            --color-primary-100: #e5e5e5;
+            --color-primary-200: #d4d4d4;
+            --color-primary-300: #a3a3a3;
+            --color-primary-400: #737373;
+            --color-primary-500: #30302f;
+            --color-primary-600: #262626;
+            --color-primary-700: #1a1a1a;
+            --color-primary-800: #0f0f0f;
+            --color-primary-900: #000000;
             
-            --color-success-50: #f0fdf4;
-            --color-success-500: #22c55e;
-            --color-success-600: #16a34a;
+            --color-accent-blue-base: #c3dde9;
+            --color-accent-blue-dark: #85B9D2;
+            --color-accent-yellow-base: #e4e67b;
+            --color-accent-yellow-dark: #D8DA3F;
+            --color-accent-pink-base: #e5ccd0;
+            --color-accent-pink-dark: #C8939C;
+            --color-accent-orange-base: #eb7754;
+            --color-accent-orange-dark: #E44B1D;
             
-            --color-warning-50: #fffbeb;
-            --color-warning-500: #f59e0b;
-            --color-warning-600: #d97706;
+            --color-success-500: #64A365;
+            --color-success-600: #4E864F;
+            --color-warning-500: #eb7754;
+            --color-warning-600: #E44B1D;
+            --color-error-500: #EB5B5B;
+            --color-error-600: #E42121;
             
-            --color-error-50: #fef2f2;
-            --color-error-500: #ef4444;
-            --color-error-600: #dc2626;
-            
-            --color-neutral-50: #f8fafc;
-            --color-neutral-100: #f1f5f9;
-            --color-neutral-200: #e2e8f0;
-            --color-neutral-300: #cbd5e1;
-            --color-neutral-500: #64748b;
-            --color-neutral-600: #475569;
-            --color-neutral-700: #334155;
-            --color-neutral-800: #1e293b;
-            --color-neutral-900: #0f172a;
-            
-            --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
             
             --font-size-xs: 0.75rem;
@@ -94,10 +93,11 @@
             font-family: var(--font-family-primary);
             font-size: var(--font-size-base);
             line-height: var(--line-height-normal);
-            color: var(--color-neutral-800);
-            background-color: var(--color-neutral-50);
+            color: var(--color-primary-900);
+            background-color: var(--color-primary-50);
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            font-weight: 400;
         }
         
         .container {

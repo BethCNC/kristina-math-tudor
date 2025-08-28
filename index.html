@@ -201,15 +201,176 @@
             transform: translateY(-2px);
         }
         
-        .features {
+        .current-week-focus {
+            padding: var(--space-16) 0;
+            background: var(--color-primary-100);
+        }
+        
+        .focus-card {
+            background: var(--color-primary-50);
+            border: 1px solid var(--color-primary-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .focus-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-6);
+            padding-bottom: var(--space-4);
+            border-bottom: 1px solid var(--color-primary-200);
+        }
+        
+        .focus-header h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin: 0;
+        }
+        
+        .week-indicator {
+            background: var(--color-accent-orange-base);
+            color: var(--color-primary-900);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .focus-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin-bottom: var(--space-6);
+        }
+        
+        .focus-item h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin-bottom: var(--space-3);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .focus-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .focus-item li {
+            padding: var(--space-2) 0;
+            color: var(--color-primary-600);
+            border-bottom: 1px solid var(--color-primary-100);
+        }
+        
+        .focus-item li:last-child {
+            border-bottom: none;
+        }
+        
+        .focus-actions {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+        }
+        
+        .focus-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: var(--font-weight-semibold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
+        }
+        
+        .focus-btn.primary {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+            border: 2px solid var(--color-primary-900);
+        }
+        
+        .focus-btn.primary:hover {
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
+        }
+        
+        .focus-btn.secondary {
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
+            border: 2px solid var(--color-primary-900);
+        }
+        
+        .focus-btn.secondary:hover {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+        }
+        
+        .quick-actions {
             padding: var(--space-16) 0;
         }
         
-        .features-grid {
+        .actions-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-8);
-            margin-bottom: var(--space-16);
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .action-card {
+            background: var(--color-primary-50);
+            border: 1px solid var(--color-primary-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .action-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--color-primary-400);
+            background: white;
+        }
+        
+        .action-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-accent-blue-base);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xl);
+            margin: 0 auto var(--space-4);
+            color: var(--color-primary-900);
+            transition: all 0.2s ease;
+        }
+        
+        .action-card:hover .action-icon {
+            background: var(--color-accent-blue-dark);
+        }
+        
+        .action-card h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin-bottom: var(--space-3);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .action-card p {
+            color: var(--color-primary-600);
+            line-height: var(--line-height-relaxed);
         }
         
         .feature-card {
@@ -475,35 +636,79 @@
             <div class="hero-content">
                 <h1>Math That Actually Makes Sense 🎯</h1>
                 <p>Transform MAT 143 from overwhelming to "Oh, I get it!" with explanations designed for real understanding, not memorization.</p>
-                <a href="calendar.html" class="cta-button">
-                    <span>Start Your Success Journey</span>
-                    <span>→</span>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Key Features -->
-    <section class="features">
+    <!-- Current Week Focus -->
+    <section class="current-week-focus">
         <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🧠</div>
-                    <h3>Break It Down Simply</h3>
-                    <p>Complex math concepts explained in bite-sized pieces that build on each other. No more "I don't get it" moments.</p>
+            <div class="focus-card">
+                <div class="focus-header">
+                    <h2>📅 This Week's Focus</h2>
+                    <div class="week-indicator">Week 1</div>
                 </div>
+                <div class="focus-content">
+                    <div class="focus-item">
+                        <h3>🎯 Priority Tasks</h3>
+                        <ul>
+                            <li>Complete Hawkes Learning: Section 1.1-1.3</li>
+                            <li>Submit BrightSpace Attendance</li>
+                            <li>Review Chapter 1: Thinking Mathematically</li>
+                        </ul>
+                    </div>
+                    <div class="focus-item">
+                        <h3>📚 Study Focus</h3>
+                        <ul>
+                            <li>Deductive vs Inductive Reasoning</li>
+                            <li>Pattern Recognition</li>
+                            <li>Estimation Strategies</li>
+                        </ul>
+                    </div>
+                    <div class="focus-item">
+                        <h3>⏰ Important Dates</h3>
+                        <ul>
+                            <li>Friday: Attendance Due</li>
+                            <li>Sunday: Hawkes Certification</li>
+                            <li>Next Week: Test 1 Prep Begins</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="focus-actions">
+                    <a href="calendar.html" class="focus-btn primary">View Full Calendar</a>
+                    <a href="tutor.html" class="focus-btn secondary">Get Help Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="actions-grid">
+                <a href="calendar.html" class="action-card">
+                    <div class="action-icon">📅</div>
+                    <h3>Smart Calendar</h3>
+                    <p>Never miss a deadline again. See exactly what to study when.</p>
+                </a>
                 
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Real Understanding</h3>
-                    <p>Focus on why math works, not just how. When you understand the logic, everything clicks into place.</p>
-                </div>
+                <a href="tutor.html" class="action-card">
+                    <div class="action-icon">🤖</div>
+                    <h3>AI Study Buddy</h3>
+                    <p>Get personalized explanations that break down complex problems.</p>
+                </a>
                 
-                <div class="feature-card">
-                    <div class="feature-icon">💪</div>
-                    <h3>Build Confidence</h3>
-                    <p>Start with what you know and gradually build up. Every small win creates momentum for bigger successes.</p>
-                </div>
+                <a href="reference.html" class="action-card">
+                    <div class="action-icon">📚</div>
+                    <h3>Formula Reference</h3>
+                    <p>Quick access to all formulas and key concepts organized by topic.</p>
+                </a>
+                
+                <a href="web_study_helper.html" class="action-card">
+                    <div class="action-icon">💡</div>
+                    <h3>Study Helper</h3>
+                    <p>Tips, strategies, and quick study guides for each chapter.</p>
+                </a>
             </div>
         </div>
     </section>

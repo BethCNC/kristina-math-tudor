@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAT 143 Calendar & Study System - Kristina</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,26 +14,82 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
             min-height: 100vh;
             padding: 20px;
+            font-weight: 400;
+        }
+        
+        :root {
+            --color-primary-50: #f2f2f2;
+            --color-primary-100: #e5e5e5;
+            --color-primary-200: #d4d4d4;
+            --color-primary-300: #a3a3a3;
+            --color-primary-400: #737373;
+            --color-primary-500: #30302f;
+            --color-primary-600: #262626;
+            --color-primary-700: #1a1a1a;
+            --color-primary-800: #0f0f0f;
+            --color-primary-900: #000000;
+            
+            --color-accent-blue-base: #c3dde9;
+            --color-accent-blue-dark: #85B9D2;
+            --color-accent-yellow-base: #e4e67b;
+            --color-accent-yellow-dark: #D8DA3F;
+            --color-accent-pink-base: #e5ccd0;
+            --color-accent-pink-dark: #C8939C;
+            --color-accent-orange-base: #eb7754;
+            --color-accent-orange-dark: #E44B1D;
+            
+            --color-success-500: #64A365;
+            --color-success-600: #4E864F;
+            --color-warning-500: #eb7754;
+            --color-warning-600: #E44B1D;
+            --color-error-500: #EB5B5B;
+            --color-error-600: #E42121;
+            
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 1.875rem;
+            --font-size-4xl: 2.25rem;
+            
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            
+            --space-4: 1rem;
+            --space-6: 1.5rem;
+            --space-8: 2rem;
+            --space-12: 3rem;
+            --space-16: 4rem;
+            
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
         
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: var(--color-primary-50);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-primary-200);
             overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            padding: 30px;
+            background: var(--color-primary-900);
+            padding: var(--space-12);
             text-align: center;
-            color: white;
+            color: var(--color-primary-50);
         }
         
         .header h1 {
@@ -58,19 +116,23 @@
         }
         
         .nav-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 10px;
-            font-size: 1em;
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+            border: 2px solid var(--color-primary-900);
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
         }
         
         .nav-btn:hover {
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         .content-area {
