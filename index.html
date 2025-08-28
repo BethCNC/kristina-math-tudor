@@ -13,6 +13,7 @@
     
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
     
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap');
         
@@ -208,7 +209,7 @@
 
         /* Critical Deadline Alert */
         .deadline-alert {
-            background: var(--color-primary-900);
+            background: var(--color-error-500);
             color: var(--color-primary-50);
             border-radius: var(--radius-lg);
             padding: var(--space-6);
@@ -222,6 +223,12 @@
         .alert-icon {
             font-size: 2rem;
             flex-shrink: 0;
+        }
+        
+        .alert-icon i {
+            width: 2rem;
+            height: 2rem;
+            color: var(--color-primary-50);
         }
 
         .alert-content {
@@ -244,12 +251,12 @@
         .countdown {
             font-weight: var(--font-weight-bold);
             font-size: var(--font-size-lg);
-            color: var(--color-accent-yellow-dark);
+            color: var(--color-accent-yellow-base);
         }
 
         .alert-btn {
             background: var(--color-primary-50);
-            color: var(--color-primary-900);
+            color: var(--color-error-500);
             padding: var(--space-3) var(--space-6);
             border-radius: var(--radius-md);
             text-decoration: none;
@@ -299,21 +306,21 @@
         }
 
         .task-item.urgent {
-            background: var(--color-primary-900);
+            background: var(--color-error-500);
             color: var(--color-primary-50);
-            border-left-color: var(--color-error-500);
+            border-left-color: var(--color-error-600);
         }
 
         .task-item.important {
-            background: var(--color-primary-800);
+            background: var(--color-warning-500);
             color: var(--color-primary-50);
-            border-left-color: var(--color-warning-500);
+            border-left-color: var(--color-warning-600);
         }
 
         .task-item.upcoming {
-            background: var(--color-primary-700);
-            color: var(--color-primary-50);
-            border-left-color: var(--color-accent-blue-base);
+            background: var(--color-accent-blue-base);
+            color: var(--color-primary-900);
+            border-left-color: var(--color-accent-blue-dark);
         }
 
         .task-checkbox {
@@ -379,13 +386,13 @@
         }
 
         .focus-card.study {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
+            background: var(--color-accent-yellow-base);
+            color: var(--color-primary-900);
         }
 
         .focus-card.dates {
-            background: var(--color-primary-800);
-            color: var(--color-primary-50);
+            background: var(--color-accent-pink-base);
+            color: var(--color-primary-900);
         }
 
         .focus-card h3 {
@@ -595,6 +602,12 @@
             font-size: var(--font-size-xl);
         }
         
+        .tool-icon i {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+        }
+        
         .tool-card h3 {
             font-size: var(--font-size-xl);
             font-weight: var(--font-weight-semibold);
@@ -748,7 +761,7 @@
         <div class="container">
             <!-- Critical Deadline Alert -->
             <div class="deadline-alert">
-                <div class="alert-icon">🚨</div>
+                <div class="alert-icon"><i data-lucide="alert-triangle"></i></div>
                 <div class="alert-content">
                     <h2>URGENT: Attendance Due Friday</h2>
                     <p>Submit your BrightSpace attendance before Friday to avoid penalties</p>
@@ -759,7 +772,7 @@
 
             <!-- Today's Must-Do -->
             <div class="todays-focus">
-                <h2>🎯 TODAY'S MUST-DO</h2>
+                                    <h2><i data-lucide="target" style="display: inline; margin-right: 8px;"></i>TODAY'S MUST-DO</h2>
                 <div class="task-list">
                     <div class="task-item urgent">
                         <div class="task-checkbox">
@@ -801,10 +814,10 @@
 
             <!-- This Week's Focus -->
             <div class="week-focus">
-                <h2>📅 THIS WEEK'S FOCUS</h2>
+                                    <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>THIS WEEK'S FOCUS</h2>
                 <div class="focus-grid">
                     <div class="focus-card study">
-                        <h3>📚 STUDY TOPICS</h3>
+                        <h3><i data-lucide="book-open" style="display: inline; margin-right: 8px;"></i>STUDY TOPICS</h3>
                         <ul>
                             <li>Deductive vs Inductive Reasoning</li>
                             <li>Pattern Recognition</li>
@@ -825,7 +838,7 @@
 
             <!-- Quick Help -->
             <div class="quick-help">
-                <h2>💡 NEED HELP?</h2>
+                                    <h2><i data-lucide="lightbulb" style="display: inline; margin-right: 8px;"></i>NEED HELP?</h2>
                 <div class="help-buttons">
                     <a href="tutor.html" class="help-btn primary">Ask AI Tutor</a>
                     <a href="reference.html" class="help-btn secondary">Formula Reference</a>
@@ -870,7 +883,7 @@
             <div class="tools-grid">
                 <div class="tool-card">
                     <div class="tool-header">
-                        <div class="tool-icon">📅</div>
+                        <div class="tool-icon"><i data-lucide="calendar"></i></div>
                         <h3>Smart Calendar</h3>
                     </div>
                     <p>Never miss a deadline again. See exactly what to study when, with built-in progress tracking and test countdowns that keep you prepared, not panicked.</p>
@@ -894,7 +907,7 @@
                 
                 <div class="tool-card">
                     <div class="tool-header">
-                        <div class="tool-icon">📚</div>
+                        <div class="tool-icon"><i data-lucide="book-open"></i></div>
                         <h3>Quick Reference</h3>
                     </div>
                     <p>All formulas, concepts, and study strategies in one place. When you need a quick answer or reminder, it's right at your fingertips.</p>
@@ -1033,6 +1046,9 @@
                 const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
                 console.log(`💡 ${randomMessage}`);
             }, 10000);
+            
+            // Initialize Lucide icons
+            lucide.createIcons();
         });
     </script>
 </body>
