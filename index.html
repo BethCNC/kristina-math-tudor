@@ -17,1362 +17,295 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <style>
-        
-        /* Design System - Modern Minimal */
-        :root {
-            /* Colors from tokens.json */
-            --color-primary-50: #f2f2f2;
-            --color-primary-100: #e5e5e5;
-            --color-primary-200: #d4d4d4;
-            --color-primary-300: #a3a3a3;
-            --color-primary-400: #737373;
-            --color-primary-500: #30302f;
-            --color-primary-600: #262626;
-            --color-primary-700: #1a1a1a;
-            --color-primary-800: #0f0f0f;
-            --color-primary-900: #000000;
-            
-            --color-accent-blue-base: #c3dde9;
-            --color-accent-blue-dark: #85B9D2;
-            --color-accent-yellow-base: #e4e67b;
-            --color-accent-yellow-dark: #D8DA3F;
-            --color-accent-pink-base: #e5ccd0;
-            --color-accent-pink-dark: #C8939C;
-            --color-accent-orange-base: #eb7754;
-            --color-accent-orange-dark: #E44B1D;
-            
-            --color-success-50: #f0fdf4;
-            --color-success-100: #dcfce7;
-            --color-success-200: #bbf7d0;
-            --color-success-300: #86efac;
-            --color-success-400: #4ade80;
-            --color-success-500: #64A365;
-            --color-success-600: #4E864F;
-            --color-success-700: #15803d;
-            --color-success-800: #166534;
-            --color-success-900: #14532d;
-            
-            --color-warning-50: #fffbeb;
-            --color-warning-100: #fef3c7;
-            --color-warning-200: #fde68a;
-            --color-warning-300: #fcd34d;
-            --color-warning-400: #fbbf24;
-            --color-warning-500: #eb7754;
-            --color-warning-600: #E44B1D;
-            --color-warning-700: #b45309;
-            --color-warning-800: #92400e;
-            --color-warning-900: #78350f;
-            
-            --color-error-50: #fef2f2;
-            --color-error-100: #fee2e2;
-            --color-error-200: #fecaca;
-            --color-error-300: #fca5a5;
-            --color-error-400: #f87171;
-            --color-error-500: #EB5B5B;
-            --color-error-600: #E42121;
-            --color-error-700: #b91c1c;
-            --color-error-800: #991b1b;
-            --color-error-900: #7f1d1d;
-            
-            --color-neutral-50: #fafafa;
-            --color-neutral-100: #f5f5f5;
-            --color-neutral-200: #e5e5e5;
-            --color-neutral-300: #d4d4d4;
-            --color-neutral-400: #a3a3a3;
-            --color-neutral-500: #737373;
-            --color-neutral-600: #525252;
-            --color-neutral-700: #404040;
-            --color-neutral-800: #262626;
-            --color-neutral-900: #171717;
-            
-            --color-neutral-50: #fafafa;
-            --color-neutral-100: #f5f5f5;
-            --color-neutral-200: #e5e5e5;
-            --color-neutral-300: #d4d4d4;
-            --color-neutral-400: #a3a3a3;
-            --color-neutral-500: #737373;
-            --color-neutral-600: #525252;
-            --color-neutral-700: #404040;
-            --color-neutral-800: #262626;
-            --color-neutral-900: #171717;
-            
-            /* Typography from tokens.json */
-            --font-family-primary: 'Vend Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            --font-family-mono: 'SF Mono', Consolas, 'Liberation Mono', monospace;
-            --font-family-serif: 'Plantin', Georgia, serif;
-            
-            --font-size-xs: 0.75rem;
-            --font-size-sm: 0.875rem;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            --font-size-5xl: 3rem;
-            --font-size-6xl: 3.75rem;
-            
-            --font-weight-normal: 400;
-            --font-weight-medium: 500;
-            --font-weight-semibold: 600;
-            --font-weight-bold: 700;
-            --font-weight-extrabold: 800;
-            --font-weight-black: 900;
-            
-            --line-height-tight: 1.25;
-            --line-height-normal: 1.5;
-            --line-height-relaxed: 1.625;
-            --line-height-loose: 2;
-            
-            /* Spacing from tokens.json */
-            --space-0: 0;
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            --space-24: 6rem;
-            --space-32: 8rem;
-            --space-40: 10rem;
-            --space-48: 12rem;
-            --space-56: 14rem;
-            --space-64: 16rem;
-            
-            /* Border Radius from tokens.json */
-            --radius-none: 0;
-            --radius-sm: 0.125rem;
-            --radius-md: 0.375rem;
-            --radius-lg: 0.5rem;
-            --radius-xl: 0.75rem;
-            --radius-2xl: 1rem;
-            --radius-3xl: 1.5rem;
-            --radius-full: 9999px;
-            
-            /* Shadows from tokens.json */
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-            
-            /* Spacing - Update from your tokens.json */
-            --space-1: 0.25rem;
-            --space-2: 0.5rem;
-            --space-3: 0.75rem;
-            --space-4: 1rem;
-            --space-5: 1.25rem;
-            --space-6: 1.5rem;
-            --space-8: 2rem;
-            --space-10: 2.5rem;
-            --space-12: 3rem;
-            --space-16: 4rem;
-            --space-20: 5rem;
-            
-            /* Border radius */
-            --radius-sm: 0.375rem;
-            --radius-md: 0.5rem;
-            --radius-lg: 0.75rem;
-            --radius-xl: 1rem;
-            
-            /* Shadows */
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-family-primary);
-            font-size: var(--font-size-base);
-            line-height: var(--line-height-normal);
-            color: var(--color-primary-900);
-            background-color: var(--color-primary-50);
-            font-weight: var(--font-weight-normal);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        /* Layout Components */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--space-4);
-        }
-        
-        .hero {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            padding: var(--space-16) 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='white' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E") repeat;
-            animation: float 20s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(180deg); }
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero h1 {
-            font-size: var(--font-size-4xl);
-            font-weight: var(--font-weight-bold);
-            line-height: var(--line-height-tight);
-            margin-bottom: var(--space-4);
-        }
-        
-        .hero p {
-            font-size: var(--font-size-lg);
-            line-height: var(--line-height-relaxed);
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto var(--space-8);
-        }
-        
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            background: var(--color-primary-50);
-            color: var(--color-primary-900);
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-lg);
-            border: 2px solid var(--color-primary-50);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.2s ease;
-        }
-        
-        .cta-button:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            border-color: var(--color-primary-900);
-            transform: translateY(-2px);
-        }
-        
-        /* Page Header */
-        .page-header {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            padding: var(--space-8) 0;
-            text-align: center;
-            border-bottom: 3px solid var(--color-accent-orange-base);
-        }
-
-        .page-title {
-            font-size: var(--font-size-4xl);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-2);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .page-subtitle {
-            font-size: var(--font-size-lg);
-            opacity: 0.9;
-            margin: 0;
-        }
-
-        .urgent-center {
-            padding: var(--space-8) 0;
-            background: var(--color-primary-50);
-        }
-
-        /* Critical Deadline Alert */
-        .deadline-alert {
-            background: var(--color-error-500);
-            color: var(--color-primary-50);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-8);
-            display: flex;
-            align-items: center;
-            gap: var(--space-4);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .alert-icon {
-            font-size: 2rem;
-            flex-shrink: 0;
-        }
-        
-        .alert-icon i {
-            width: 2rem;
-            height: 2rem;
-            color: var(--color-primary-50);
-        }
-
-        .alert-content {
-            flex: 1;
-        }
-
-        .alert-content h2 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-2);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .alert-content p {
-            margin-bottom: var(--space-2);
-            opacity: 0.9;
-        }
-
-        .countdown {
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-lg);
-            color: var(--color-primary-50);
-        }
-
-        .alert-btn {
-            background: var(--color-primary-50);
-            color: var(--color-error-500);
-            padding: var(--space-3) var(--space-6);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-bold);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.2s ease;
-        }
-
-        .alert-btn:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-        }
-
-        /* Today's Must-Do */
-        .todays-focus {
-            background: white;
-            border: 2px solid var(--color-primary-900);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-8);
-        }
-
-        .todays-focus h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-6);
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .task-list {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-4);
-        }
-
-        .task-item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-4);
-            padding: var(--space-4);
-            border-radius: var(--radius-md);
-            border-left: 4px solid;
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            border-left-color: var(--color-primary-700);
-        }
-
-        .task-item.urgent {
-            background: var(--color-error-500) !important;
-            color: var(--color-primary-50) !important;
-            border-left-color: var(--color-error-700) !important;
-        }
-
-        .task-item.important {
-            background: var(--color-warning-300) !important;
-            color: var(--color-primary-900) !important;
-            border-left-color: var(--color-warning-600) !important;
-        }
-
-        .task-item.math {
-            background: var(--color-accent-blue-base) !important;
-            color: var(--color-primary-900) !important;
-            border-left-color: var(--color-accent-blue-dark) !important;
-        }
-
-        .task-item.english {
-            background: var(--color-accent-pink-base) !important;
-            color: var(--color-primary-900) !important;
-            border-left-color: var(--color-accent-pink-dark) !important;
-        }
-
-        .task-item.upcoming {
-            background: var(--color-accent-yellow-base) !important;
-            color: var(--color-primary-900) !important;
-            border-left-color: var(--color-accent-yellow-dark) !important;
-        }
-
-        .task-checkbox {
-            flex-shrink: 0;
-        }
-
-        .task-checkbox input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            accent-color: var(--color-primary-50);
-        }
-
-        .task-content {
-            flex: 1;
-        }
-
-        .task-content h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-1);
-        }
-
-        .task-content p {
-            font-size: var(--font-size-sm);
-            opacity: 0.9;
-        }
-
-        .task-status {
-            font-weight: var(--font-weight-bold);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-size: var(--font-size-sm);
-        }
-
-        /* This Week's Focus */
-        .week-focus {
-            background: white;
-            border: 1px solid var(--color-primary-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-8);
-        }
-
-        .week-focus h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-6);
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .focus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-6);
-        }
-
-        .focus-card {
-            padding: var(--space-4);
-            border-radius: var(--radius-md);
-        }
-
-        .focus-card.study {
-            background: var(--color-accent-yellow-base);
-            color: var(--color-primary-900);
-        }
-
-        .focus-card.dates {
-            background: var(--color-accent-pink-base);
-            color: var(--color-primary-900);
-        }
-
-        .focus-card ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .focus-card li {
-            padding: var(--space-2) 0;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            font-weight: var(--font-weight-medium);
-        }
-
-        .focus-card li:last-child {
-            border-bottom: none;
-        }
-
-        .focus-card h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--space-4);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .focus-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .focus-card li {
-            padding: var(--space-2) 0;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .focus-card li:last-child {
-            border-bottom: none;
-        }
-
-        .urgent-date {
-            font-weight: var(--font-weight-bold);
-            color: var(--color-error-600);
-        }
-
-        .important-date {
-            font-weight: var(--font-weight-bold);
-            color: var(--color-warning-600);
-        }
-
-        .upcoming-date {
-            color: var(--color-primary-700);
-            font-weight: var(--font-weight-medium);
-        }
-
-        /* Class Cards */
-        .class-cards {
-            background: white;
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-8);
-        }
-
-        .class-cards h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-6);
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .class-card {
-            background: white;
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-4);
-        }
-
-        .class-card.math-card {
-            border-color: var(--color-accent-blue-dark);
-            background: var(--color-accent-blue-base);
-        }
-
-        .class-card.english-card {
-            border-color: var(--color-accent-pink-dark);
-            background: var(--color-accent-pink-base);
-        }
-
-        .class-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--space-4);
-            padding-bottom: var(--space-3);
-            border-bottom: 2px solid var(--color-neutral-100);
-        }
-
-        .class-header h3 {
-            font-size: var(--font-size-5);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-black);
-            margin: 0;
-        }
-
-        .class-duration {
-            font-size: var(--font-size-8);
-            color: var(--color-neutral-600);
-            font-weight: var(--font-weight-medium);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .next-tasks h4 {
-            font-size: var(--font-size-6);
-            font-weight: var(--font-weight-medium);
-            color: var(--color-black);
-            margin-bottom: var(--space-3);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .class-btn {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: var(--space-4);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-medium);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: var(--space-4);
-            transition: all 0.2s ease;
-            border: 2px solid;
-        }
-
-        .math-btn {
-            background: var(--color-accent-blue-dark);
-            color: var(--color-primary-900);
-            border-color: var(--color-accent-blue-dark);
-        }
-
-        .math-btn:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-        }
-
-        .english-btn {
-            background: var(--color-accent-pink-dark);
-            color: var(--color-primary-900);
-            border-color: var(--color-accent-pink-dark);
-        }
-
-        .english-btn:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-        }
-
-        /* Quick Help */
-        .quick-help {
-            background: white;
-            border: 1px solid var(--color-primary-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            text-align: center;
-        }
-
-        .quick-help h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-6);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .help-buttons {
-            display: flex;
-            gap: var(--space-4);
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .help-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            padding: var(--space-4) var(--space-6);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-bold);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.2s ease;
-            min-width: 150px;
-            justify-content: center;
-        }
-
-        .help-btn.primary {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-            border: 2px solid var(--color-primary-900);
-        }
-
-        .help-btn.primary:hover {
-            background: var(--color-primary-50);
-            color: var(--color-primary-900);
-        }
-
-        .help-btn.secondary {
-            background: var(--color-primary-50);
-            color: var(--color-primary-900);
-            border: 2px solid var(--color-primary-900);
-        }
-
-        .help-btn.secondary:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
-        }
-
-        .calendar-btn {
-            background: var(--color-accent-yellow-base);
-            color: var(--color-primary-900);
-            border: 2px solid var(--color-accent-yellow-dark);
-        }
-
-        .calendar-btn:hover {
-            background: var(--color-accent-yellow-dark);
-            color: var(--color-primary-900);
-        }
-        
-        .feature-card {
-            background: var(--color-primary-50);
-            padding: var(--space-8);
-            border-radius: var(--radius-md);
-            border: 1px solid var(--color-primary-200);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--color-primary-400);
-            background: white;
-        }
-        
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: var(--color-accent-blue-base);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--font-size-2xl);
-            margin: 0 auto var(--space-4);
-            color: var(--color-primary-900);
-            transition: all 0.2s ease;
-        }
-        
-        .feature-icon:hover {
-            background: var(--color-accent-blue-dark);
-        }
-        
-        .feature-card h3 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-3);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .feature-card p {
-            color: var(--color-primary-600);
-            line-height: var(--line-height-relaxed);
-        }
-        
-        .tools-section {
-            background: var(--color-primary-100);
-            padding: var(--space-16) 0;
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--space-12);
-        }
-        
-        .section-header h2 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-neutral-900);
-            margin-bottom: var(--space-4);
-        }
-        
-        .section-header p {
-            font-size: var(--font-size-lg);
-            color: var(--color-neutral-600);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--space-8);
-        }
-        
-        .tool-card {
-            background: var(--color-neutral-50);
-            border: 2px solid var(--color-neutral-200);
-            border-radius: var(--radius-xl);
-            padding: var(--space-8);
-            transition: all 0.3s ease;
-        }
-        
-        .tool-card:hover {
-            border-color: var(--color-primary-300);
-            background: white;
-        }
-        
-        .tool-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-3);
-            margin-bottom: var(--space-4);
-        }
-        
-        .tool-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--color-primary-500);
-            color: white;
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--font-size-xl);
-        }
-        
-        .tool-icon i {
-            width: 1.5rem;
-            height: 1.5rem;
-            color: white;
-        }
-        
-        .tool-card h3 {
-            font-size: var(--font-size-xl);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-neutral-900);
-        }
-        
-        .tool-card p {
-            color: var(--color-neutral-600);
-            margin-bottom: var(--space-6);
-            line-height: var(--line-height-relaxed);
-        }
-        
-        .tool-button {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
-            background: var(--color-primary-500);
-            color: white;
-            padding: var(--space-3) var(--space-5);
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: var(--font-weight-medium);
-            font-size: var(--font-size-sm);
-            transition: all 0.2s ease;
-        }
-        
-        .tool-button:hover {
-            background: var(--color-primary-600);
-        }
-        
-        .chapter-preview {
-            padding: var(--space-16) 0;
-        }
-        
-        .chapter-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: var(--space-6);
-        }
-        
-        .chapter-card {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-            border-radius: var(--radius-lg);
-            padding: var(--space-6);
-            transition: all 0.2s ease;
-        }
-        
-        .chapter-card:hover {
-            border-color: var(--color-primary-300);
-            box-shadow: var(--shadow-md);
-        }
-        
-        .chapter-number {
-            background: var(--color-primary-100);
-            color: var(--color-primary-700);
-            font-size: var(--font-size-sm);
-            font-weight: var(--font-weight-semibold);
-            padding: var(--space-1) var(--space-3);
-            border-radius: var(--radius-sm);
-            display: inline-block;
-            margin-bottom: var(--space-3);
-        }
-        
-        .chapter-card h4 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--color-neutral-900);
-            margin-bottom: var(--space-2);
-            line-height: var(--line-height-tight);
-        }
-        
-        .chapter-card p {
-            color: var(--color-neutral-600);
-            font-size: var(--font-size-sm);
-            line-height: var(--line-height-relaxed);
-        }
-        
-        .footer {
-            background: var(--color-neutral-900);
-            color: var(--color-neutral-300);
-            padding: var(--space-12) 0;
-            text-align: center;
-        }
-        
-        .success-stats {
-            background: var(--color-success-50);
-            padding: var(--space-12) 0;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-8);
-            text-align: center;
-        }
-        
-        .stat-card h4 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-success-600);
-            margin-bottom: var(--space-2);
-        }
-        
-        .stat-card p {
-            color: var(--color-neutral-600);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: var(--font-size-3xl);
-            }
-            
-            .hero p {
-                font-size: var(--font-size-base);
-            }
-            
-            .hero {
-                padding: var(--space-12) 0;
-            }
-            
-            .features, .tools-section, .chapter-preview {
-                padding: var(--space-12) 0;
-            }
-            
-            .container {
-                padding: 0 var(--space-3);
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
             }
         }
-        
-        /* Utility Classes */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
+    </script>
 </head>
 
-<body>
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <h1 class="page-title">📚 Your Academic Command Center</h1>
-            <p class="page-subtitle">MAT 143 & ENG 111 - Fall 2025 Success Dashboard</p>
-        </div>
-    </header>
-
-    <!-- Urgent Action Center -->
-    <section class="urgent-center">
-        <div class="container">
-            <!-- Critical Deadline Alert -->
-            <div class="deadline-alert">
-                <div class="alert-icon"><i data-lucide="alert-triangle"></i></div>
-                <div class="alert-content">
-                    <h2>⚠️ URGENT: Multiple Deadlines This Week</h2>
-                    <p>ENG 111 Critical Reading Discussion due Thu 8/22 | MAT 143 EVA due Fri 8/29</p>
-                    <div class="countdown">Today is Wednesday 8/28 - Act NOW!</div>
-                </div>
-                <a href="#class-nav" class="alert-btn">Choose Class</a>
-            </div>
-
-            <!-- Today's Must-Do -->
-            <div class="todays-focus">
-                <h2><i data-lucide="target" style="display: inline; margin-right: 8px;"></i>BRAIN DUMP - WHAT'S DUE NOW?</h2>
-                <div class="task-list">
-                    <div class="task-item urgent">
-                        <div class="task-checkbox">
-                            <input type="checkbox" id="eng-critical">
-                            <label for="eng-critical"></label>
-                        </div>
-                        <div class="task-content">
-                            <h3>📝 ENG 111: Critical Reading Discussion</h3>
-                            <p>Due: TOMORROW 8/22 | Read Adam Grant article + post response</p>
-                        </div>
-                        <div class="task-status">⏰ 1 DAY</div>
-                    </div>
-                    
-                    <div class="task-item important">
-                        <div class="task-checkbox">
-                            <input type="checkbox" id="math-eva">
-                            <label for="math-eva"></label>
-                        </div>
-                        <div class="task-content">
-                            <h3>🧮 MAT 143: EVA (Enrollment Verification)</h3>
-                            <p>Due: Friday 8/29 | REQUIRED or you'll be dropped!</p>
-                        </div>
-                        <div class="task-status">⏰ 2 DAYS</div>
-                    </div>
-                    
-                    <div class="task-item math">
-                        <div class="task-checkbox">
-                            <input type="checkbox" id="math-attendance">
-                            <label for="math-attendance"></label>
-                        </div>
-                        <div class="task-content">
-                            <h3>🧮 MAT 143: Weekly Attendance</h3>
-                            <p>Due: Friday 8/29 | Submit on BrightSpace</p>
-                        </div>
-                        <div class="task-status">⏰ 2 DAYS</div>
-                    </div>
-
-                    <div class="task-item english">
-                        <div class="task-checkbox">
-                            <input type="checkbox" id="eng-syllabus">
-                            <label for="eng-syllabus"></label>
-                        </div>
-                        <div class="task-content">
-                            <h3>📝 ENG 111: EVA Syllabus Quiz</h3>
-                            <p>Due: This week | Check BrightSpace for exact date</p>
-                        </div>
-                        <div class="task-status">CHECK</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Class Cards -->
-            <div class="class-cards">
-                <h2><i data-lucide="calendar" style="display: inline; margin-right: 8px;"></i>YOUR CLASSES</h2>
-                <div class="focus-grid">
-                    <!-- Math Class Card -->
-                    <div class="class-card math-card">
-                        <div class="class-header">
-                            <h3>🧮 MAT 143 - Math</h3>
-                            <span class="class-duration">16 weeks | Aug 18 - Dec 19</span>
-                        </div>
-                        <div class="next-tasks">
-                            <h4>Next Up:</h4>
-                            <div class="task-list">
-                                <div class="task-item important">
-                                    <div class="task-content">
-                                        <h5>EVA - Enrollment Verification</h5>
-                                        <p>Due: Friday 8/29 | CRITICAL</p>
-                                    </div>
-                                    <div class="task-status">⏰ 2 DAYS</div>
-                                </div>
-                                <div class="task-item math">
-                                    <div class="task-content">
-                                        <h5>Weekly Attendance</h5>
-                                        <p>Due: Friday 8/29</p>
-                                    </div>
-                                    <div class="task-status">SUBMIT</div>
-                                </div>
-                                <div class="task-item upcoming">
-                                    <div class="task-content">
-                                        <h5>Sections 1.1-1.2 Practice</h5>
-                                        <p>This week | Hawkes Learning</p>
-                                    </div>
-                                    <div class="task-status">STUDY</div>
-                                </div>
-                            </div>
-                            <a href="tutor.html" class="class-btn math-btn">Enter Math Tutor</a>
-                        </div>
-                    </div>
-
-                    <!-- English Class Card -->
-                    <div class="class-card english-card">
-                        <div class="class-header">
-                            <h3>📝 ENG 111 - Writing</h3>
-                            <span class="class-duration">8 weeks | Ends Oct 10</span>
-                        </div>
-                        <div class="next-tasks">
-                            <h4>Next Up:</h4>
-                            <div class="task-list">
-                                <div class="task-item urgent">
-                                    <div class="task-content">
-                                        <h5>Critical Reading Discussion</h5>
-                                        <p>Due: TOMORROW 8/22</p>
-                                    </div>
-                                    <div class="task-status">⚠️ 1 DAY</div>
-                                </div>
-                                <div class="task-item english">
-                                    <div class="task-content">
-                                        <h5>EVA Syllabus Quiz</h5>
-                                        <p>Due: This week</p>
-                                    </div>
-                                    <div class="task-status">CHECK</div>
-                                </div>
-                                <div class="task-item upcoming">
-                                    <div class="task-content">
-                                        <h5>Week 2: Plagiarism Tutorial</h5>
-                                        <p>Coming next week</p>
-                                    </div>
-                                    <div class="task-status">PREP</div>
-                                </div>
-                            </div>
-                            <a href="english_tutor.html" class="class-btn english-btn">Enter Writing Coach</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Quick Navigation -->
-            <div class="quick-help" id="class-nav">
-                <h2><i data-lucide="graduation-cap" style="display: inline; margin-right: 8px;"></i>QUICK ACCESS</h2>
-                <div class="help-buttons">
-                    <a href="calendar.html" class="help-btn calendar-btn">📅 All Deadlines</a>
-                </div>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">Your Academic Success Dashboard</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+                Executive function support for MAT 143 Math & ENG 111 Writing. Never miss a deadline, stay organized, and succeed in both classes.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="tutor.html" class="btn btn-primary is-math text-lg px-8 py-3">🧮 Math Tutor</a>
+                <a href="english_tutor.html" class="btn btn-primary is-writing text-lg px-8 py-3">📝 Writing Coach</a>
             </div>
         </div>
     </section>
 
-    <!-- Success Stats -->
-    <section class="success-stats">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <h4>8</h4>
-                    <p>Chapters Simplified</p>
-                </div>
-                <div class="stat-card">
-                    <h4>27</h4>
-                    <p>Sections Explained</p>
-                </div>
-                <div class="stat-card">
-                    <h4>4</h4>
-                    <p>Tests Mastered</p>
-                </div>
-                <div class="stat-card">
-                    <h4>100%</h4>
-                    <p>Success Focused</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning Tools -->
-    <section class="tools-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Your Learning Toolkit</h2>
-                <p>Three powerful tools that work together to make math learning actually enjoyable and effective.</p>
+    <!-- Class Cards -->
+    <section class="py-16 bg-[var(--bg)]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[var(--text)] mb-4">Your Fall 2025 Classes</h2>
+                <p class="text-[var(--text-muted)] text-lg">Designed specifically for ADHD-friendly learning and executive function success</p>
             </div>
             
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <div class="tool-icon"><i data-lucide="calendar"></i></div>
-                        <h3>Smart Calendar</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Math Class Card -->
+                <div class="card p-8 is-math card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-math)] text-white flex items-center justify-center text-2xl">🧮</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[var(--text)] mb-2">MAT 143 - Quantitative Literacy</h3>
+                            <p class="text-[var(--text-muted)]">16 weeks • Aug 18 - Dec 19 • Online</p>
+                        </div>
                     </div>
-                    <p>Never miss a deadline again. See exactly what to study when, with built-in progress tracking and test countdowns that keep you prepared, not panicked.</p>
-                    <a href="calendar.html" class="tool-button">
-                        <span>Open Calendar</span>
-                        <span>→</span>
-                    </a>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
+                            <h4 class="font-semibold text-[var(--text)] mb-2">📍 Coming Up</h4>
+                            <p class="text-[var(--text-muted)]">Chapter 4: Proportions & Percentages</p>
+                            <p class="text-sm text-[var(--text-muted)]">Test 1 - September 15th</p>
+                        </div>
+                        
+                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
+                            <h4 class="font-semibold text-blue-900 mb-2">✅ Recent Progress</h4>
+                            <p class="text-blue-800 text-sm">Chapter 1 completed • 85% homework average</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-3">
+                        <a href="tutor.html" class="btn btn-primary is-math flex-1">Enter Math Tutor</a>
+                        <a href="calendar.html" class="btn btn-ghost">View Schedule</a>
+                    </div>
                 </div>
-                
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <div class="tool-icon">🤖</div>
-                        <h3>AI Study Buddy</h3>
+
+                <!-- English Class Card -->
+                <div class="card p-8 is-writing card-hover">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-16 h-16 rounded-2xl bg-[var(--class-writing)] text-white flex items-center justify-center text-2xl">📝</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-[var(--text)] mb-2">ENG 111 - Writing & Inquiry</h3>
+                            <p class="text-[var(--text-muted)]">8 weeks • Aug 18 - Oct 13 • Online</p>
+                        </div>
                     </div>
-                    <p>Get personalized explanations that break down complex problems step-by-step. Like having a patient tutor available 24/7 who never judges, only helps.</p>
-                    <a href="tutor.html" class="tool-button">
-                        <span>Start Tutoring</span>
-                        <span>→</span>
-                    </a>
-                </div>
-                
-                <div class="tool-card">
-                    <div class="tool-header">
-                        <div class="tool-icon"><i data-lucide="book-open"></i></div>
-                        <h3>Quick Reference</h3>
+                    
+                    <div class="space-y-4 mb-6">
+                        <div class="banner-urgent">
+                            <h4 class="font-semibold mb-2">⚠️ Due Tomorrow</h4>
+                            <p>Critical Reading Discussion - Adam Grant Article</p>
+                        </div>
+                        
+                        <div class="p-4 rounded-xl bg-pink-50 border border-pink-200">
+                            <h4 class="font-semibold text-pink-900 mb-2">📋 This Week</h4>
+                            <p class="text-pink-800 text-sm">Syllabus Quiz • Plagiarism Module</p>
+                        </div>
                     </div>
-                    <p>All formulas, concepts, and study strategies in one place. When you need a quick answer or reminder, it's right at your fingertips.</p>
-                    <a href="reference.html" class="tool-button">
-                        <span>Browse Reference</span>
-                        <span>→</span>
-                    </a>
+                    
+                    <div class="flex gap-3">
+                        <a href="english_tutor.html" class="btn btn-primary is-writing flex-1">Enter Writing Coach</a>
+                        <a href="calendar.html" class="btn btn-ghost">View Schedule</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Chapter Preview -->
-    <section class="chapter-preview">
-        <div class="container">
-            <div class="section-header">
-                <h2>What You'll Master</h2>
-                <p>Every chapter broken down into digestible concepts that build your mathematical confidence.</p>
+    <!-- Quick Stats -->
+    <section class="py-12 bg-[var(--bg-muted)]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="card p-6 text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-1">85%</div>
+                    <div class="text-sm text-[var(--text-muted)]">Math Average</div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-2xl font-bold text-pink-600 mb-1">3/4</div>
+                    <div class="text-sm text-[var(--text-muted)]">Essays Complete</div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-2xl font-bold text-green-600 mb-1">12</div>
+                    <div class="text-sm text-[var(--text-muted)]">Days Ahead</div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-2xl font-bold text-coral-500 mb-1">2</div>
+                    <div class="text-sm text-[var(--text-muted)]">Upcoming Tests</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[var(--text)] mb-4">Executive Function Tools</h2>
+                <p class="text-[var(--text-muted)] text-lg">ADHD-friendly tools designed to keep you organized and on track</p>
             </div>
             
-            <div class="chapter-grid">
-                <a href="chapter-1.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 1</span>
-                    <h4>Mathematical Thinking</h4>
-                    <p>Learn to think like a mathematician - recognize patterns, make logical connections, and solve problems systematically.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl mx-auto mb-4">📅</div>
+                    <h3 class="text-xl font-semibold text-[var(--text)] mb-2">Smart Calendar</h3>
+                    <p class="text-[var(--text-muted)] mb-4">Visual timeline with ADHD-friendly alerts and deadline tracking</p>
+                    <a href="calendar.html" class="btn btn-primary">View Calendar</a>
+                </div>
+                
+                <div class="card p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-2xl bg-green-100 text-green-600 flex items-center justify-center text-2xl mx-auto mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold text-[var(--text)] mb-2">Focus Sessions</h3>
+                    <p class="text-[var(--text-muted)] mb-4">25-minute Pomodoro timers with break reminders</p>
+                    <button class="btn btn-primary" onclick="startFocusSession()">Start Session</button>
+                </div>
+                
+                <div class="card p-6 text-center card-hover">
+                    <div class="w-16 h-16 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mx-auto mb-4">🧠</div>
+                    <h3 class="text-xl font-semibold text-[var(--text)] mb-2">Study Guides</h3>
+                    <p class="text-[var(--text-muted)] mb-4">Bite-sized concepts with visual aids and examples</p>
+                    <a href="#chapters" class="btn btn-primary">Browse Chapters</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters -->
+    <section id="chapters" class="py-16 bg-[var(--bg-muted)]">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[var(--text)] mb-4">What You'll Master</h2>
+                <p class="text-[var(--text-muted)] text-lg">Every chapter broken down into digestible concepts with detailed study guides</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="chapter-1.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-blue-100 text-blue-800 text-sm font-medium">Chapter 1</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-blue-600">Mathematical Thinking</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Pattern recognition, logical reasoning, and problem-solving strategies</p>
                 </a>
                 
-                <a href="chapter-4.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 4</span>
-                    <h4>Proportions & Percentages</h4>
-                    <p>Master the art of comparing quantities and calculating percentages that you'll use in everyday life and future courses.</p>
+                <a href="chapter-4.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-green-100 text-green-800 text-sm font-medium">Chapter 4</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-green-600">Proportions & Percentages</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Real-world ratios, cross multiplication, and percentage calculations</p>
                 </a>
                 
-                <a href="tutor.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 5</span>
-                    <h4>Functions & Growth</h4>
-                    <p>Understand how things change over time - from linear growth to exponential patterns that appear everywhere.</p>
+                <a href="tutor.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-purple-100 text-purple-800 text-sm font-medium">Chapter 5</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-purple-600">Functions & Growth</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Linear and exponential patterns in everyday situations</p>
                 </a>
                 
-                <a href="chapter-6.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 6</span>
-                    <h4>Personal Finance</h4>
-                    <p>Make smart money decisions with compound interest, loans, and budgeting - math that pays off for life.</p>
+                <a href="chapter-6.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-yellow-100 text-yellow-800 text-sm font-medium">Chapter 6</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-yellow-600">Personal Finance</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Interest, loans, and smart money decisions</p>
                 </a>
                 
-                <a href="tutor.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 7</span>
-                    <h4>Measurements & Conversions</h4>
-                    <p>Navigate between different units and measurement systems with confidence and accuracy.</p>
+                <a href="tutor.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-orange-100 text-orange-800 text-sm font-medium">Chapter 7</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-orange-600">Measurements & Conversions</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Unit conversions and measurement systems</p>
                 </a>
                 
-                <a href="tutor.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 10</span>
-                    <h4>Probability</h4>
-                    <p>Understand chance and uncertainty - make better decisions when outcomes aren't guaranteed.</p>
+                <a href="tutor.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-indigo-100 text-indigo-800 text-sm font-medium">Chapter 10</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-indigo-600">Probability</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Understanding chance and making better decisions</p>
                 </a>
                 
-                <a href="tutor.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 11</span>
-                    <h4>Statistics</h4>
-                    <p>Make sense of data and numbers you see in news, research, and everyday life - become data literate.</p>
+                <a href="tutor.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-rose-100 text-rose-800 text-sm font-medium">Chapter 11</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-rose-600">Statistics</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Data analysis and making sense of numbers</p>
                 </a>
                 
-                <a href="tutor.html" class="chapter-card">
-                    <span class="chapter-number">Chapter 13</span>
-                    <h4>Voting & Fairness</h4>
-                    <p>Explore how math shapes democracy and fair representation - mathematics for citizenship.</p>
+                <a href="tutor.html" class="card p-6 card-hover group">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="chip bg-teal-100 text-teal-800 text-sm font-medium">Chapter 13</span>
+                    </div>
+                    <h4 class="text-lg font-semibold text-[var(--text)] mb-2 group-hover:text-teal-600">Voting & Fairness</h4>
+                    <p class="text-[var(--text-muted)] text-sm">Mathematics of democracy and representation</p>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>Built with ❤️ for math success at CPCC • Fall 2025</p>
-            <p>You've got this! Every expert was once a beginner. 🌟</p>
+    <footer class="bg-[var(--panel)] border-t border-[var(--border)] py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-[var(--text)] mb-2">Academic Success Dashboard</h3>
+                <p class="text-[var(--text-muted)]">Designed for ADHD-friendly executive function success</p>
+            </div>
+            
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="tutor.html" class="text-[var(--class-math)] hover:underline">Math Tutor</a>
+                <a href="english_tutor.html" class="text-[var(--class-writing)] hover:underline">Writing Coach</a>
+                <a href="calendar.html" class="text-[var(--text-muted)] hover:underline">Calendar</a>
+            </div>
+            
+            <p class="text-sm text-[var(--text-muted)]">Fall 2025 • MAT 143 & ENG 111 • CPCC</p>
         </div>
     </footer>
 
-    <script type="module">
-        // Simple analytics and user experience enhancements
-        document.addEventListener('DOMContentLoaded', () => {
-            // Add smooth scroll behavior
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-
-            // Add loading states for external links
-            document.querySelectorAll('a[href$=".html"]').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    if (this.hostname === window.location.hostname) {
-                        this.style.opacity = '0.7';
-                        this.style.pointerEvents = 'none';
-                        
-                        // Re-enable after a short delay (in case navigation fails)
-                        setTimeout(() => {
-                            this.style.opacity = '';
-                            this.style.pointerEvents = '';
-                        }, 2000);
-                    }
-                });
-            });
-
-            // Simple success tracking (could integrate with analytics)
-            const trackEngagement = (action) => {
-                console.log(`User engagement: ${action}`, {
-                    timestamp: new Date().toISOString(),
-                    page: window.location.pathname
-                });
-            };
-
-            // Track when users interact with key elements
-            document.querySelectorAll('.cta-button, .tool-button').forEach(button => {
-                button.addEventListener('click', () => {
-                    trackEngagement(`clicked_${button.textContent.trim().toLowerCase().replace(/\s+/g, '_')}`);
-                });
-            });
-
-            // Show motivational messages
-            const motivationalMessages = [
-                "You're capable of more than you know! 🌟",
-                "Every expert was once a beginner. Keep going! 💪",
-                "Math is a language - and you're learning to speak it fluently! 🗣️",
-                "Progress over perfection. You're doing great! 📈",
-                "Each problem you solve makes you stronger! 🧠"
-            ];
-
-            // Show a motivational message occasionally
-            setTimeout(() => {
-                const randomMessage = motivationalMessages[Math.floor(Math.random() * motivationalMessages.length)];
-                console.log(`💡 ${randomMessage}`);
-            }, 10000);
-            
-            // Initialize Lucide icons
+    <script>
+        function startFocusSession() {
+            alert('Focus session feature coming soon! ⏰');
+        }
+        
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
             lucide.createIcons();
-        });
+        }
     </script>
 </body>
 </html>
