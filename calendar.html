@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAT 143 Study Calendar - Your Success Timeline</title>
-    <meta name="description" content="Interactive calendar showing exactly what to study when, with progress tracking and test countdowns.">
+    <title>Fall 2025 Academic Calendar - MAT 143 & ENG 111</title>
+    <meta name="description" content="Complete academic calendar showing deadlines, assignments, and schedules for both MAT 143 and ENG 111 classes.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
     
     <style>
@@ -380,6 +380,72 @@
             background: linear-gradient(135deg, var(--color-success-500), var(--color-success-600));
         }
         
+        /* English Schedule Styles */
+        .english-schedule {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .course-info {
+            margin-bottom: var(--space-8);
+        }
+
+        .info-card {
+            padding: var(--space-6);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-4);
+        }
+
+        .info-card h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-4);
+            color: var(--color-primary-900);
+        }
+
+        .info-card p {
+            margin-bottom: var(--space-2);
+            font-size: var(--font-size-base);
+        }
+
+        .week-status {
+            background: var(--color-accent-pink-base);
+            color: var(--color-primary-900);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+        }
+
+        .week-card.urgent .week-status {
+            background: var(--color-error-500);
+            color: white;
+        }
+
+        .week-content ul {
+            list-style: none;
+            margin-top: var(--space-3);
+        }
+
+        .week-content li {
+            padding: var(--space-2) 0;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .week-content li:last-child {
+            border-bottom: none;
+        }
+
+        .week-content li.urgent {
+            color: var(--color-error-600);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        .week-content li.important {
+            color: var(--color-warning-600);
+            font-weight: var(--font-weight-semibold);
+        }
+
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .assignments {
@@ -408,8 +474,8 @@
     <!-- Header -->
     <div class="header">
         <div class="container">
-            <h1>📅 Your MAT 143 Success Timeline</h1>
-            <p>Stay on track with smart scheduling and never miss a deadline</p>
+            <h1>📅 Your Fall 2025 Academic Calendar</h1>
+            <p>Complete schedule for MAT 143 Math & ENG 111 Writing - Never miss a deadline!</p>
             <div class="current-status" id="current-status">
                 Loading your current week...
             </div>
@@ -420,10 +486,10 @@
     <div class="nav-header">
         <div class="container">
             <div class="nav-buttons">
-                <button class="nav-btn active" onclick="showSection('overview')">📍 Week Overview</button>
-                <button class="nav-btn" onclick="showSection('schedule')">📅 Full Schedule</button>
-                <button class="nav-btn" onclick="showSection('tests')">📊 Test Calendar</button>
-                <button class="nav-btn" onclick="showSection('progress')">📈 Progress</button>
+                <button class="nav-btn active" onclick="showSection('overview')">📍 This Week</button>
+                <button class="nav-btn" onclick="showSection('math')">🧮 MAT 143 Schedule</button>
+                <button class="nav-btn" onclick="showSection('english')">📝 ENG 111 Schedule</button>
+                <button class="nav-btn" onclick="showSection('tests')">📊 All Tests</button>
             </div>
         </div>
     </div>
@@ -436,14 +502,190 @@
             </div>
         </div>
 
-        <!-- Full Schedule -->
-        <div id="schedule" class="content-area">
+        <!-- MAT 143 Schedule -->
+        <div id="math" class="content-area">
             <button class="back-btn" onclick="showSection('overview')">
-                <span>←</span> Back to Overview
+                <span>←</span> Back to This Week
             </button>
-            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">Complete Semester Schedule</h2>
+            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">🧮 MAT 143 Complete Schedule</h2>
             <div id="semester-timeline">
                 <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- ENG 111 Schedule -->
+        <div id="english" class="content-area">
+            <button class="back-btn" onclick="showSection('overview')">
+                <span>←</span> Back to This Week
+            </button>
+            <h2 style="margin-bottom: var(--space-6); font-size: var(--font-size-2xl); color: var(--color-neutral-900);">📝 ENG 111 Complete Schedule</h2>
+            <div class="english-schedule">
+                <div class="course-info">
+                    <div class="info-card" style="background: var(--color-accent-pink-base); border: 2px solid var(--color-accent-pink-dark);">
+                        <h3>📚 Course Info</h3>
+                        <p><strong>Duration:</strong> 8 weeks (Aug 18 - Oct 10, 2025)</p>
+                        <p><strong>Instructor:</strong> Emmanuel Meggett</p>
+                        <p><strong>Format:</strong> Online</p>
+                        <p><strong>Withdrawal Deadline:</strong> September 8, 2025</p>
+                    </div>
+                </div>
+
+                <div class="weekly-schedule">
+                    <h3>📅 Week-by-Week Schedule</h3>
+                    
+                    <div class="week-card urgent">
+                        <div class="week-header">
+                            <h4>Week 1: August 18-22, 2025</h4>
+                            <span class="week-status">📖 Critical Reading</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li class="urgent">📝 Critical Reading Discussion (Due: Thu 8/22)</li>
+                                    <li class="important">📚 EVA Syllabus Quiz (Due: This week)</li>
+                                    <li>📖 Read "Does Trying to Be Happy Make Us Unhappy" by Adam Grant</li>
+                                    <li>📖 Read "10 Strategies to Improve Reading Comprehension"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 2: August 25-29, 2025</h4>
+                            <span class="week-status">🔍 Plagiarism & Citations</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>📚 Read "Documenting Sources" and "MLA Documentation" (pp. 602-618)</li>
+                                    <li>✅ Complete Tutorial: Plagiarism</li>
+                                    <li>✅ Complete Tutorial: MLA Citations</li>
+                                    <li>📝 Submit: Quiz: Plagiarism Tutorial</li>
+                                    <li>📝 Submit: Quiz: MLA Citations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 3: September 1-5, 2025</h4>
+                            <span class="week-status">📝 Compare/Contrast Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>📖 Read Chapter 20 "Comparison and Contrast" (pp. 467-471)</li>
+                                    <li>📖 Read Compare/Contrast Essay Instructions</li>
+                                    <li>🎥 Watch: Comparison/Contrast Essays videos</li>
+                                    <li>📖 Read Sample Essay: Love Hate</li>
+                                    <li>📝 Submit: Compare/Contrast Rough Draft (first 3 paragraphs)</li>
+                                    <li>✅ Submit: Checklist for Compare/Contrast Essay</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 4: September 8-12, 2025</h4>
+                            <span class="week-status">📝 Compare/Contrast Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>✏️ Revise your draft</li>
+                                    <li>✏️ Edit/proofread your draft</li>
+                                    <li>🎥 Watch: Video: Revising and Editing</li>
+                                    <li>📖 Website: Revising & Editing Process</li>
+                                    <li>📝 Submit: Compare/Contrast Final Draft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 5: September 15-19, 2025</h4>
+                            <span class="week-status">📝 Cause & Effect Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>📖 Read Chapter 21 Cause and Effect (pp. 495-97)</li>
+                                    <li>📖 Read Cause and Effect Essay Guidelines</li>
+                                    <li>💡 View: Cause & Effect Essay Introduction</li>
+                                    <li>✅ Complete: Cause & Effect Essay Tutorial</li>
+                                    <li>📖 Read Sample Student Essay</li>
+                                    <li>📝 Submit: Cause & Effect Rough Draft (first 3 paragraphs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 6: September 22-26, 2025</h4>
+                            <span class="week-status">📝 Cause & Effect Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>📖 Read Revising, Editing, and Proofreading (pp. 24-26)</li>
+                                    <li>✏️ Revise your draft</li>
+                                    <li>✏️ Edit/proofread your draft</li>
+                                    <li>🎥 Watch Video: Revising and Editing</li>
+                                    <li>📝 Submit: Cause & Effect Essay Final Draft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 7: September 29 - October 3, 2025</h4>
+                            <span class="week-status">📝 Argument Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>📖 Read Argument in Models for Writers (pp. 521-30)</li>
+                                    <li>📖 Read Argument Essay Instructions</li>
+                                    <li>💡 Read and explore: Topic Ideas</li>
+                                    <li>📖 Read: Parts of an Argument</li>
+                                    <li>📖 Read: Claims</li>
+                                    <li>📝 Submit: Argument Essay Rough Draft (first 3 paragraphs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card">
+                        <div class="week-header">
+                            <h4>Week 8: October 6-10, 2025</h4>
+                            <span class="week-status">📝 Argument Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5>📋 Assignments</h5>
+                                <ul>
+                                    <li>🎥 Watch: Video: Incorporating Information from Sources</li>
+                                    <li>🎥 Watch: Video: Incorporating Opposing Viewpoints</li>
+                                    <li>📝 Submit: Argument Essay Final Draft</li>
+                                    <li>🎉 <strong>COURSE COMPLETION!</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
