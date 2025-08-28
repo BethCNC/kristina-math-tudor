@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 143 Calendar & Study System - Kristina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .current-week {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            padding: 30px;
+        }
+        
+        .nav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .content-area {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            min-height: 500px;
+            display: none;
+        }
+        
+        .content-area.active {
+            display: block;
+        }
+        
+        .week-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #4facfe;
+        }
+        
+        .week-card.current {
+            border-left-color: #e74c3c;
+            background: #fff5f5;
+        }
+        
+        .week-card.test-week {
+            border-left-color: #f39c12;
+            background: #fffbf0;
+        }
+        
+        .week-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .week-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .week-dates {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .sections {
+            margin-bottom: 10px;
+        }
+        
+        .sections strong {
+            color: #4facfe;
+        }
+        
+        .assignments {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .assignment-group {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .assignment-group h4 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .assignment-item {
+            padding: 5px 0;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.9em;
+        }
+        
+        .assignment-item:last-child {
+            border-bottom: none;
+        }
+        
+        .due-date {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .important-note {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .back-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .back-btn:hover {
+            background: #5a6268;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .test-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #e74c3c;
+        }
+        
+        .test-card h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+        }
+        
+        .countdown {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 MAT 143 Study Calendar</h1>
+            <p>Your complete semester timeline and study guide</p>
+            
+            <div class="current-week" id="current-week-info">
+                <strong>📍 Current Status:</strong> <span id="current-status">Loading...</span>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <!-- Main Menu -->
+            <div id="main-menu" class="content-area active">
+                <h2>What would you like to see today? 📚</h2>
+                <div class="nav-buttons">
+                    <button class="nav-btn" onclick="showSection('schedule')">📅 Full Semester Schedule</button>
+                    <button class="nav-btn" onclick="showSection('current-week')">📍 This Week's Focus</button>
+                    <button class="nav-btn" onclick="showSection('tests')">📊 Test Calendar</button>
+                    <button class="nav-btn" onclick="showSection('progress')">📈 Progress Tracker</button>
+                    <button class="nav-btn" onclick="showSection('formulas')">📐 Quick Formulas</button>
+                    <button class="nav-btn" onclick="showSection('study-tips')">💡 Study Strategy</button>
+                </div>
+            </div>
+            
+            <!-- Full Schedule -->
+            <div id="schedule" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>📅 Complete Semester Schedule - Fall 2025</h2>
+                
+                <div id="semester-timeline">
+                    <!-- Week cards will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Current Week Focus -->
+            <div id="current-week" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>📍 This Week's Focus</h2>
+                
+                <div id="current-week-detail">
+                    <!-- Current week info populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Test Calendar -->
+            <div id="tests" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>📊 Test Schedule & Preparation</h2>
+                
+                <div class="calendar-grid">
+                    <div class="test-card">
+                        <h3>📝 Test 1</h3>
+                        <p><strong>Date:</strong> September 8-12, 2025</p>
+                        <p><strong>Chapters:</strong> 1 & 13</p>
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Mathematical reasoning (deductive vs inductive)</li>
+                            <li>Pattern recognition</li>
+                            <li>Voting methods</li>
+                            <li>Apportionment</li>
+                        </ul>
+                        <div class="countdown" id="test1-countdown"></div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>📈 Test 2</h3>
+                        <p><strong>Date:</strong> September 29 - October 3, 2025</p>
+                        <p><strong>Chapters:</strong> 4 & 5</p>
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Proportions and ratios</li>
+                            <li>Percentage calculations</li>
+                            <li>Linear functions</li>
+                            <li>Exponential functions</li>
+                        </ul>
+                        <div class="countdown" id="test2-countdown"></div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>💰 Test 3</h3>
+                        <p><strong>Date:</strong> November 3-7, 2025</p>
+                        <p><strong>Chapters:</strong> 6 & 7</p>
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Simple and compound interest</li>
+                            <li>Loan calculations</li>
+                            <li>Metric conversions</li>
+                            <li>Temperature conversions</li>
+                        </ul>
+                        <div class="countdown" id="test3-countdown"></div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>🎲 Test 4</h3>
+                        <p><strong>Date:</strong> December 8-12, 2025</p>
+                        <p><strong>Chapters:</strong> 10 & 11</p>
+                        <p><strong>Topics:</strong></p>
+                        <ul>
+                            <li>Probability calculations</li>
+                            <li>Expected value</li>
+                            <li>Statistical analysis</li>
+                            <li>Z-scores and normal distribution</li>
+                        </ul>
+                        <div class="countdown" id="test4-countdown"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Progress Tracker -->
+            <div id="progress" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>📈 Progress Tracker</h2>
+                
+                <div class="progress-section">
+                    <h3>📊 Semester Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="semester-progress" style="width: 0%"></div>
+                    </div>
+                    <p id="progress-text">Calculating progress...</p>
+                </div>
+                
+                <div class="calendar-grid" style="margin-top: 30px;">
+                    <div class="test-card">
+                        <h3>✅ Completed</h3>
+                        <div id="completed-items">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>⏳ Current Focus</h3>
+                        <div id="current-focus">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>🔮 Coming Up</h3>
+                        <div id="upcoming-items">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Formulas -->
+            <div id="formulas" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>📐 Quick Formula Reference</h2>
+                
+                <div class="calendar-grid">
+                    <div class="test-card">
+                        <h3>💰 Personal Finance (Chapter 6)</h3>
+                        <div style="font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                            Simple Interest: I = Prt<br>
+                            Compound Interest: A = P(1 + r/n)^(nt)<br>
+                            Continuous: A = Pe^(rt)<br>
+                            APY: ((1 + r/n)^n - 1) × 100%
+                        </div>
+                        <p><small>P=principal, r=rate (decimal), t=time, n=compounds per year</small></p>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>📏 Conversions (Chapter 7)</h3>
+                        <div style="font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                            1 inch = 2.54 cm<br>
+                            1 foot ≈ 0.305 m<br>
+                            1 mile ≈ 1.61 km<br>
+                            1 pound ≈ 0.454 kg<br>
+                            F = 9C/5 + 32<br>
+                            C = 5(F-32)/9
+                        </div>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>📊 Statistics (Chapter 11)</h3>
+                        <div style="font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                            Z-score: z = (x - μ) / σ<br>
+                            Sample z: z = (x - x̄) / s
+                        </div>
+                        <p><small>μ=population mean, σ=population std dev<br>x̄=sample mean, s=sample std dev</small></p>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>🗳️ Apportionment (Chapter 13)</h3>
+                        <div style="font-family: monospace; background: #f8f9fa; padding: 10px; border-radius: 5px; margin: 10px 0;">
+                            Standard Divisor:<br>
+                            SD = total pop / total items<br><br>
+                            Standard Quota:<br>
+                            SQ = subgroup pop / SD
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Study Tips -->
+            <div id="study-tips" class="content-area">
+                <button class="back-btn" onclick="showSection('main-menu')">← Back to Menu</button>
+                <h2>💡 Weekly Study Strategy</h2>
+                
+                <div class="calendar-grid">
+                    <div class="test-card">
+                        <h3>📅 Daily Study Plan</h3>
+                        <ul style="line-height: 1.6;">
+                            <li><strong>Monday:</strong> Review weekend Hawkes assignments</li>
+                            <li><strong>Tuesday:</strong> Work on current week's sections</li>
+                            <li><strong>Wednesday:</strong> Practice problems and formulas</li>
+                            <li><strong>Thursday:</strong> Complete lab assignments</li>
+                            <li><strong>Friday:</strong> Submit attendance assignments</li>
+                            <li><strong>Saturday:</strong> Review and catch up</li>
+                            <li><strong>Sunday:</strong> Complete and certify Hawkes Learning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>🎯 Hawkes Learning Success</h3>
+                        <ul style="line-height: 1.6;">
+                            <li>Work on assignments throughout the week</li>
+                            <li>Don't wait until Sunday to start</li>
+                            <li>Click "Certify" and work until you see:</li>
+                            <li style="color: #28a745; font-weight: bold;">"Congratulations! You've Mastered this lesson"</li>
+                            <li>Use hints when stuck, but focus on understanding</li>
+                            <li>Review incorrect answers before moving on</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>📚 Test Preparation Timeline</h3>
+                        <ul style="line-height: 1.6;">
+                            <li><strong>2 weeks before:</strong> Start reviewing covered chapters</li>
+                            <li><strong>1 week before:</strong> Focus on weak areas</li>
+                            <li><strong>3 days before:</strong> Practice test problems</li>
+                            <li><strong>1 day before:</strong> Light review, good sleep</li>
+                            <li><strong>Test day:</strong> Test Respondus browser early</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="test-card">
+                        <h3>🌟 Mindset & Motivation</h3>
+                        <p style="line-height: 1.6;">Remember: You're not behind, you're exactly where you need to be. Every expert was once a beginner. Focus on progress, not perfection. Celebrate small wins - they add up to big success!</p>
+                        
+                        <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin-top: 15px;">
+                            <strong>🎯 Weekly Goal:</strong> Complete all assignments and understand the concepts. Quality over quantity!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Complete semester schedule data
+        const semesterSchedule = {
+            1: {
+                dates: "August 18-22, 2025",
+                sections: ["1.1", "1.2"],
+                focus: "Getting started, mathematical reasoning",
+                assignments: {
+                    brightspace: [
+                        {name: "Syllabus Review", due: "Friday 8/22 11:59 PM"},
+                        {name: "Attendance Week 1", due: "Friday 8/22 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "1.1 Thinking Mathematically", due: "Sunday 8/24 11:59 PM"},
+                        {name: "1.2 Estimating and Evaluating", due: "Sunday 8/24 11:59 PM"}
+                    ]
+                }
+            },
+            2: {
+                dates: "August 25-29, 2025",
+                sections: ["1.3", "13.1"], 
+                focus: "Problem solving, voting methods intro",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 2", due: "Friday 8/29 11:59 PM"},
+                        {name: "Lab #1 (Chapter 1)", due: "Friday 8/29 11:59 PM"},
+                        {name: "EVA (FINAL DEADLINE)", due: "Friday 8/29 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "1.3 Problem Solving", due: "Sunday 8/31 11:59 PM"},
+                        {name: "13.1 How to Determine a Winner", due: "Sunday 8/31 11:59 PM"}
+                    ]
+                },
+                important: "EVA must be completed by Friday 8/29 or automatic withdrawal!"
+            },
+            3: {
+                dates: "September 1-5, 2025",
+                sections: ["13.2", "13.3"],
+                focus: "Voting flaws, apportionment methods",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 3", due: "Friday 9/5 11:59 PM"},
+                        {name: "Lab #2 (Chapter 13)", due: "Friday 9/5 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "13.2 Flaws in Voting Methods", due: "Sunday 9/7 11:59 PM"},
+                        {name: "13.3 Apportionment", due: "Sunday 9/7 11:59 PM"}
+                    ]
+                }
+            },
+            4: {
+                dates: "September 8-12, 2025",
+                sections: ["Review", "TEST 1"],
+                focus: "TEST 1: Chapters 1 & 13", 
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 4", due: "Friday 9/12 11:59 PM"},
+                        {name: "TEST 1 (BrightSpace)", due: "During week"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 1 (Hawkes)", due: "During week"}
+                    ]
+                }
+            },
+            5: {
+                dates: "September 15-19, 2025",
+                sections: ["4.1", "4.2", "4.3"],
+                focus: "Proportions, percentages, rates",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 5", due: "Friday 9/19 11:59 PM"},
+                        {name: "Lab #3 (Chapter 4)", due: "Friday 9/19 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "4.1 Proportions, Percentages, & Ratios", due: "Sunday 9/21 11:59 PM"},
+                        {name: "4.2 Using Percentages", due: "Sunday 9/21 11:59 PM"},
+                        {name: "4.3 Rates, Unit Rates, & Rates of Changes", due: "Sunday 9/21 11:59 PM"}
+                    ]
+                }
+            },
+            6: {
+                dates: "September 22-26, 2025",
+                sections: ["5.1", "5.2", "5.7"],
+                focus: "Linear and exponential functions",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 6", due: "Friday 9/26 11:59 PM"},
+                        {name: "Lab #4 (Chapter 5)", due: "Friday 9/26 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "5.1 Linear Equations & Functions", due: "Sunday 9/28 11:59 PM"},
+                        {name: "5.2 Linear Modeling", due: "Sunday 9/28 11:59 PM"},
+                        {name: "5.7 Exponential Functions", due: "Sunday 9/28 11:59 PM"}
+                    ]
+                },
+                important: "LAST DAY TO WITHDRAW: Friday 9/26/2025"
+            },
+            7: {
+                dates: "September 29 - October 3, 2025", 
+                sections: ["Review", "TEST 2"],
+                focus: "TEST 2: Chapters 4 & 5",
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 7", due: "Friday 10/3 11:59 PM"},
+                        {name: "TEST 2 (BrightSpace)", due: "During week"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 2 (Hawkes)", due: "During week"}
+                    ]
+                }
+            },
+            8: {
+                dates: "October 6-10, 2025",
+                sections: ["7.4", "7.5"],
+                focus: "Metric system, conversions",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 8", due: "Friday 10/10 11:59 PM"},
+                        {name: "Lab #5 (Chapter 7)", due: "Friday 10/10 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "7.4 The Metric System", due: "Sunday 10/12 11:59 PM"},
+                        {name: "7.5 Converting Between Metric and US", due: "Sunday 10/12 11:59 PM"}
+                    ]
+                }
+            },
+            9: {
+                dates: "October 20-24, 2025",
+                sections: ["6.1", "6.2"],
+                focus: "Understanding interest, saving and investing",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 9", due: "Friday 10/24 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "6.1 Understanding Interest", due: "Sunday 10/26 11:59 PM"},
+                        {name: "6.2 Saving and Investing", due: "Sunday 10/26 11:59 PM"}
+                    ]
+                },
+                note: "Fall Break was October 13-19"
+            },
+            10: {
+                dates: "October 27-31, 2025",
+                sections: ["6.3", "6.4", "6.5"],
+                focus: "Borrowing, federal revenue, budgeting",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 10", due: "Friday 10/31 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "6.3 Borrowing Money", due: "Sunday 11/2 11:59 PM"},
+                        {name: "6.4 Federal Revenue", due: "Sunday 11/2 11:59 PM"},
+                        {name: "6.5 Budgeting", due: "Sunday 11/2 11:59 PM"},
+                        {name: "Lab #6 (Chapter 6)", due: "Sunday 11/2 11:59 PM"}
+                    ]
+                }
+            },
+            11: {
+                dates: "November 3-7, 2025",
+                sections: ["Review", "TEST 3"],
+                focus: "TEST 3: Chapters 6 & 7",
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 11", due: "Friday 11/7 11:59 PM"},
+                        {name: "TEST 3 (BrightSpace)", due: "During week"},
+                        {name: "Signature Assignment Available", due: "Available"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 3 (Hawkes)", due: "During week"}
+                    ]
+                }
+            },
+            12: {
+                dates: "November 10-14, 2025",
+                sections: ["10.1", "10.3", "10.6"],
+                focus: "Introduction to probability, expected value",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 12", due: "Friday 11/14 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "10.1 Intro to Probability", due: "Sunday 11/16 11:59 PM"},
+                        {name: "10.3 Probability of Single Events", due: "Sunday 11/16 11:59 PM"},
+                        {name: "10.6 Expected Value", due: "Sunday 11/16 11:59 PM"},
+                        {name: "Lab #7 (Chapter 10)", due: "Sunday 11/16 11:59 PM"}
+                    ]
+                }
+            },
+            13: {
+                dates: "November 17-21, 2025",
+                sections: ["Signature Assignment"],
+                focus: "Complete Signature Assignment (5% of grade)",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 13", due: "Friday 11/21 11:59 PM"},
+                        {name: "SIGNATURE ASSIGNMENT", due: "Friday 11/21 11:59 PM"}
+                    ],
+                    hawkes: []
+                },
+                important: "Signature Assignment due - no extensions allowed!"
+            },
+            14: {
+                dates: "November 24-28, 2025",
+                sections: ["11.1", "11.2"],
+                focus: "Statistical studies, displaying data",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 14", due: "Friday 11/28 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "11.1 Statistical Studies", due: "Sunday 11/30 11:59 PM"},
+                        {name: "11.2 Displaying Data", due: "Sunday 11/30 11:59 PM"}
+                    ]
+                }
+            },
+            15: {
+                dates: "December 1-5, 2025", 
+                sections: ["11.3", "11.4"],
+                focus: "Analyzing data, z-scores, normal distribution",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 15", due: "Friday 12/5 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "11.3 Describing and Analyzing Data", due: "Sunday 12/7 11:59 PM"},
+                        {name: "11.4 Empirical Rule and Z-scores", due: "Sunday 12/7 11:59 PM"},
+                        {name: "Lab #8 (Chapter 11)", due: "Sunday 12/7 11:59 PM"}
+                    ]
+                }
+            },
+            16: {
+                dates: "December 8-12, 2025",
+                sections: ["Review", "TEST 4", "Final"],
+                focus: "TEST 4: Chapters 10 & 11, Optional Final",
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 16", due: "Friday 12/12 11:59 PM"},
+                        {name: "TEST 4 (BrightSpace)", due: "During week"},
+                        {name: "Optional Final Exam", due: "During week"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 4 (Hawkes)", due: "During week"},
+                        {name: "Optional Final Exam", due: "During week"}
+                    ]
+                },
+                important: "Final week! Optional comprehensive final can replace lowest test score."
+            }
+        };
+        
+        function getCurrentWeek() {
+            const now = new Date();
+            const semesterStart = new Date('2025-08-18');
+            const semesterEnd = new Date('2025-12-12');
+            
+            if (now < semesterStart) {
+                const daysUntil = Math.ceil((semesterStart - now) / (1000 * 60 * 60 * 24));
+                return {
+                    status: 'not_started',
+                    message: `Semester starts August 18, 2025`,
+                    daysUntil: daysUntil
+                };
+            }
+            
+            if (now > semesterEnd) {
+                return {
+                    status: 'completed',
+                    message: 'Semester completed! Great job! 🎉'
+                };
+            }
+            
+            const daysSinceStart = Math.ceil((now - semesterStart) / (1000 * 60 * 60 * 24));
+            const weekNumber = Math.ceil(daysSinceStart / 7);
+            
+            // Account for fall break (week between 8 and 9)
+            let adjustedWeek = weekNumber;
+            if (weekNumber > 8) {
+                const fallBreakStart = new Date('2025-10-13');
+                const fallBreakEnd = new Date('2025-10-19');
+                
+                if (now >= fallBreakStart && now <= fallBreakEnd) {
+                    return {
+                        status: 'break',
+                        message: 'Fall Break - No classes this week! 🏖️'
+                    };
+                } else if (now > fallBreakEnd) {
+                    adjustedWeek = weekNumber - 1;
+                }
+            }
+            
+            if (adjustedWeek <= 16 && semesterSchedule[adjustedWeek]) {
+                return {
+                    status: 'in_progress',
+                    week: adjustedWeek,
+                    info: semesterSchedule[adjustedWeek]
+                };
+            }
+            
+            return {
+                status: 'unknown',
+                message: 'Unable to determine current week'
+            };
+        }
+        
+        function updateCurrentWeekInfo() {
+            const currentWeek = getCurrentWeek();
+            const statusElement = document.getElementById('current-status');
+            
+            if (currentWeek.status === 'not_started') {
+                statusElement.innerHTML = `${currentWeek.message} (${currentWeek.daysUntil} days to go!)`;
+            } else if (currentWeek.status === 'break') {
+                statusElement.innerHTML = currentWeek.message;
+            } else if (currentWeek.status === 'in_progress') {
+                const weekInfo = currentWeek.info;
+                statusElement.innerHTML = `Week ${currentWeek.week}: ${weekInfo.focus}`;
+            } else {
+                statusElement.innerHTML = currentWeek.message;
+            }
+        }
+        
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-area');
+            sections.forEach(section => section.classList.remove('active'));
+            
+            document.getElementById(sectionId).classList.add('active');
+            
+            if (sectionId === 'schedule') {
+                populateFullSchedule();
+            } else if (sectionId === 'current-week') {
+                populateCurrentWeekDetail();
+            } else if (sectionId === 'progress') {
+                updateProgressTracker();
+            } else if (sectionId === 'tests') {
+                updateTestCountdowns();
+            }
+            
+            window.scrollTo(0, 0);
+        }
+        
+        function populateFullSchedule() {
+            const timeline = document.getElementById('semester-timeline');
+            const currentWeek = getCurrentWeek();
+            let html = '';
+            
+            for (let weekNum = 1; weekNum <= 16; weekNum++) {
+                if (!semesterSchedule[weekNum]) continue;
+                
+                const week = semesterSchedule[weekNum];
+                const isCurrent = currentWeek.status === 'in_progress' && currentWeek.week === weekNum;
+                const isTest = week.isTest;
+                
+                let cardClass = 'week-card';
+                if (isCurrent) cardClass += ' current';
+                if (isTest) cardClass += ' test-week';
+                
+                html += `
+                    <div class="${cardClass}">
+                        <div class="week-header">
+                            <span class="week-number">Week ${weekNum}</span>
+                            <span class="week-dates">${week.dates}</span>
+                        </div>
+                        
+                        <div class="sections">
+                            <strong>📚 Sections:</strong> ${week.sections.join(', ')}
+                        </div>
+                        
+                        <div style="margin: 10px 0; color: #2c3e50;">
+                            🎯 <strong>${week.focus}</strong>
+                        </div>
+                        
+                        ${week.important ? `<div class="important-note">⚠️ ${week.important}</div>` : ''}
+                        ${week.note ? `<div style="background: #e3f2fd; padding: 10px; border-radius: 5px; margin: 10px 0;">${week.note}</div>` : ''}
+                        
+                        <div class="assignments">
+                            <div class="assignment-group">
+                                <h4>📝 BrightSpace</h4>
+                                ${week.assignments.brightspace.map(a => 
+                                    `<div class="assignment-item">
+                                        ${a.name}<br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>`
+                                ).join('')}
+                            </div>
+                            
+                            <div class="assignment-group">
+                                <h4>🎯 Hawkes Learning</h4>
+                                ${week.assignments.hawkes.length > 0 ? 
+                                    week.assignments.hawkes.map(a => 
+                                        `<div class="assignment-item">
+                                            ${a.name}<br>
+                                            <span class="due-date">Due: ${a.due}</span>
+                                        </div>`
+                                    ).join('') : 
+                                    '<div class="assignment-item">No Hawkes assignments this week</div>'
+                                }
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Add Fall Break
+            html = html.replace(
+                '<div class="week-card">',
+                `<div style="background: #e8f5e8; padding: 20px; margin: 20px 0; border-radius: 10px; text-align: center;">
+                    <h3>🏖️ Fall Break: October 13-19, 2025</h3>
+                    <p>No classes - Use this time to catch up and recharge!</p>
+                </div>
+                <div class="week-card">`
+            );
+            
+            timeline.innerHTML = html;
+        }
+        
+        function populateCurrentWeekDetail() {
+            const currentWeek = getCurrentWeek();
+            const detailElement = document.getElementById('current-week-detail');
+            
+            if (currentWeek.status === 'in_progress') {
+                const week = currentWeek.info;
+                detailElement.innerHTML = `
+                    <div class="week-card current">
+                        <div class="week-header">
+                            <span class="week-number">Week ${currentWeek.week}</span>
+                            <span class="week-dates">${week.dates}</span>
+                        </div>
+                        
+                        <div style="font-size: 1.2em; margin: 20px 0; color: #2c3e50;">
+                            🎯 <strong>This Week's Focus: ${week.focus}</strong>
+                        </div>
+                        
+                        <div style="margin: 15px 0;">
+                            <strong>📚 Sections to Study:</strong> ${week.sections.join(', ')}
+                        </div>
+                        
+                        ${week.important ? `<div class="important-note">⚠️ ${week.important}</div>` : ''}
+                        
+                        <div class="assignments">
+                            <div class="assignment-group">
+                                <h4>📝 BrightSpace Assignments</h4>
+                                ${week.assignments.brightspace.map(a => 
+                                    `<div class="assignment-item">
+                                        <strong>${a.name}</strong><br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>`
+                                ).join('')}
+                            </div>
+                            
+                            <div class="assignment-group">
+                                <h4>🎯 Hawkes Learning</h4>
+                                ${week.assignments.hawkes.length > 0 ?
+                                    week.assignments.hawkes.map(a => 
+                                        `<div class="assignment-item">
+                                            <strong>${a.name}</strong><br>
+                                            <span class="due-date">Due: ${a.due}</span>
+                                        </div>`
+                                    ).join('') :
+                                    '<div class="assignment-item">No Hawkes assignments this week</div>'
+                                }
+                            </div>
+                        </div>
+                        
+                        <div style="background: #e8f5e8; padding: 15px; border-radius: 8px; margin-top: 20px;">
+                            <strong>💡 Study Tip for This Week:</strong><br>
+                            Focus on understanding the concepts behind each section. Don't just memorize - 
+                            practice applying the methods to different problems!
+                        </div>
+                    </div>
+                `;
+            } else if (currentWeek.status === 'not_started') {
+                detailElement.innerHTML = `
+                    <div class="week-card">
+                        <h3>${currentWeek.message}</h3>
+                        <p>Get ready! In ${currentWeek.daysUntil} days you'll start with:</p>
+                        <ul>
+                            <li>Setting up Hawkes Learning</li>
+                            <li>Completing the EVA (Enrollment Verification Activity)</li>
+                            <li>Beginning Section 1.1: Thinking Mathematically</li>
+                        </ul>
+                    </div>
+                `;
+            } else {
+                detailElement.innerHTML = `
+                    <div class="week-card">
+                        <h3>${currentWeek.message}</h3>
+                    </div>
+                `;
+            }
+        }
+        
+        function updateProgressTracker() {
+            const currentWeek = getCurrentWeek();
+            const progressElement = document.getElementById('semester-progress');
+            const progressText = document.getElementById('progress-text');
+            
+            if (currentWeek.status === 'in_progress') {
+                const progressPercent = (currentWeek.week / 16) * 100;
+                progressElement.style.width = progressPercent + '%';
+                progressText.textContent = `Week ${currentWeek.week} of 16 (${Math.round(progressPercent)}% complete)`;
+            } else if (currentWeek.status === 'not_started') {
+                progressElement.style.width = '0%';
+                progressText.textContent = 'Semester has not started yet';
+            } else {
+                progressElement.style.width = '100%';
+                progressText.textContent = 'Semester completed! 🎉';
+            }
+        }
+        
+        function updateTestCountdowns() {
+            const testDates = {
+                'test1-countdown': new Date('2025-09-08'),
+                'test2-countdown': new Date('2025-09-29'),  
+                'test3-countdown': new Date('2025-11-03'),
+                'test4-countdown': new Date('2025-12-08')
+            };
+            
+            const now = new Date();
+            
+            for (const [elementId, testDate] of Object.entries(testDates)) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    const daysUntil = Math.ceil((testDate - now) / (1000 * 60 * 60 * 24));
+                    
+                    if (daysUntil > 7) {
+                        element.textContent = `${daysUntil} days until test`;
+                        element.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                    } else if (daysUntil > 0) {
+                        element.textContent = `${daysUntil} days - Start studying now!`;
+                        element.style.background = 'linear-gradient(135deg, #ffa500, #ff6347)';
+                    } else if (daysUntil > -7) {
+                        element.textContent = 'Test week!';
+                        element.style.background = 'linear-gradient(135deg, #ff6b6b, #ffa500)';
+                    } else {
+                        element.textContent = 'Test completed ✓';
+                        element.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                    }
+                }
+            }
+        }
+        
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCurrentWeekInfo();
+            updateTestCountdowns();
+            
+            // Update every hour
+            setInterval(() => {
+                updateCurrentWeekInfo();
+                updateTestCountdowns();
+            }, 3600000);
+        });
+    </script>
+</body>
+</html>
