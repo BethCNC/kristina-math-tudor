@@ -34,15 +34,36 @@ def handler(request, context):
             # Get API key
             api_key = os.getenv('ANTHROPIC_API_KEY')
             if not api_key:
+                # Return a helpful fallback response instead of error
                 return {
-                    'statusCode': 400,
+                    'statusCode': 200,
                     'headers': {
                         'Content-Type': 'application/json',
                         'Access-Control-Allow-Origin': '*'
                     },
                     'body': json.dumps({
-                        "error": True,
-                        "message": "API key not configured"
+                        "error": False,
+                        "response": f"""
+                        <strong>I'd love to help you with: "{query}"</strong><br><br>
+                        
+                        <em>💡 Since I'm not fully connected right now, here are some great resources:</em><br><br>
+                        
+                        <strong>📚 Quick Help:</strong><br>
+                        • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
+                        • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br>
+                        • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br><br>
+                        
+                        <strong>🎯 Try asking about:</strong><br>
+                        • "Chapter 1: Thinking Mathematically"<br>
+                        • "How do I calculate compound interest?"<br>
+                        • "Help me understand proportions"<br>
+                        • "What formulas do I need for Test 3?"<br><br>
+                        
+                        <em>💡 Tip: Be specific about what you're working on for better help!</em>
+                        """,
+                        "timestamp": datetime.now().isoformat(),
+                        "chapter": chapter,
+                        "topic": topic
                     })
                 }
             
@@ -59,15 +80,36 @@ def handler(request, context):
             }
             
         except Exception as e:
+            # Return a helpful fallback response instead of error
             return {
-                'statusCode': 400,
+                'statusCode': 200,
                 'headers': {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
                 },
                 'body': json.dumps({
-                    "error": True,
-                    "message": f"Error processing request: {str(e)}"
+                    "error": False,
+                    "response": f"""
+                    <strong>I'd love to help you with: "{query}"</strong><br><br>
+                    
+                    <em>💡 Since I'm having a technical moment, here are some great resources:</em><br><br>
+                    
+                    <strong>📚 Quick Help:</strong><br>
+                    • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
+                    • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br>
+                    • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br><br>
+                    
+                    <strong>🎯 Try asking about:</strong><br>
+                    • "Chapter 1: Thinking Mathematically"<br>
+                    • "How do I calculate compound interest?"<br>
+                    • "Help me understand proportions"<br>
+                    • "What formulas do I need for Test 3?"<br><br>
+                    
+                    <em>💡 Tip: Be specific about what you're working on for better help!</em>
+                    """,
+                    "timestamp": datetime.now().isoformat(),
+                    "chapter": chapter,
+                    "topic": topic
                 })
             }
     

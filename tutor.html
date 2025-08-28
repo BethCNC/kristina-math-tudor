@@ -675,38 +675,297 @@
         function fallbackResponse(message) {
             const lowerMessage = message.toLowerCase();
             
-            if (lowerMessage.includes('compound interest')) {
+            // Chapter 1: Thinking Mathematically
+            if (lowerMessage.includes('chapter 1') || lowerMessage.includes('thinking mathematically') || lowerMessage.includes('deductive') || lowerMessage.includes('inductive')) {
                 return `
-                    <strong>Compound Interest Explained Simply:</strong><br><br>
+                    <strong>Chapter 1: Thinking Mathematically</strong><br><br>
                     
-                    Think of compound interest as "interest on your interest" - it's like a snowball that gets bigger as it rolls!<br><br>
+                    <strong>🎯 Key Concepts:</strong><br>
+                    • <strong>Deductive Reasoning:</strong> Start with general rules, apply to specific cases<br>
+                    • <strong>Inductive Reasoning:</strong> Look at specific examples, find patterns, make general rules<br>
+                    • <strong>Pattern Recognition:</strong> Find repeating sequences or relationships<br><br>
                     
-                    <strong>Key Formula:</strong><br>
-                    A = P(1 + r/n)^(nt)<br><br>
+                    <strong>💡 Real Example:</strong><br>
+                    <strong>Deductive:</strong> "All students must attend class. Kristina is a student. Therefore, Kristina must attend class."<br><br>
+                    <strong>Inductive:</strong> "I've seen 5 red cars today. I might see more red cars."<br><br>
                     
-                    <strong>What each letter means:</strong><br>
-                    • A = Amount you'll have in the end<br>
-                    • P = Principal (your starting money)<br>
-                    • r = Rate (as decimal, so 5% = 0.05)<br>
-                    • n = Number of times interest is compounded per year<br>
+                    <strong>🔍 Pattern Recognition:</strong><br>
+                    Look for: sequences, geometric patterns, number relationships<br><br>
+                    
+                    <em>💡 Tip: Start with what you know, then build step by step!</em>
+                `;
+            }
+            
+            // Chapter 4: Proportions & Percentages
+            else if (lowerMessage.includes('chapter 4') || lowerMessage.includes('proportion') || lowerMessage.includes('percentage') || lowerMessage.includes('ratio')) {
+                return `
+                    <strong>Chapter 4: Proportions & Percentages</strong><br><br>
+                    
+                    <strong>📊 Proportions:</strong><br>
+                    <strong>Formula:</strong> a/b = c/d<br>
+                    <strong>Cross multiply:</strong> a × d = b × c<br><br>
+                    
+                    <strong>💯 Percentages:</strong><br>
+                    <strong>Formula:</strong> Part/Whole × 100 = Percent<br>
+                    <strong>Example:</strong> 15 out of 60 = 15/60 × 100 = 25%<br><br>
+                    
+                    <strong>🔢 Real Example:</strong><br>
+                    If 3 apples cost $2, how much do 9 apples cost?<br>
+                    Set up: 3/2 = 9/x<br>
+                    Cross multiply: 3x = 18<br>
+                    Solve: x = 6<br>
+                    Answer: 9 apples cost $6!<br><br>
+                    
+                    <em>💡 Tip: Always make sure your units match on both sides!</em>
+                `;
+            }
+            
+            // Chapter 5: Linear & Exponential Functions
+            else if (lowerMessage.includes('chapter 5') || lowerMessage.includes('linear') || lowerMessage.includes('exponential') || lowerMessage.includes('function')) {
+                return `
+                    <strong>Chapter 5: Linear & Exponential Functions</strong><br><br>
+                    
+                    <strong>📈 Linear Functions:</strong><br>
+                    <strong>Formula:</strong> y = mx + b<br>
+                    • m = slope (rate of change)<br>
+                    • b = y-intercept (starting point)<br><br>
+                    
+                    <strong>📊 Exponential Functions:</strong><br>
+                    <strong>Formula:</strong> y = a(b)^x<br>
+                    • a = initial value<br>
+                    • b = growth/decay factor<br><br>
+                    
+                    <strong>🔢 Real Examples:</strong><br>
+                    <strong>Linear:</strong> "You earn $10/hour" → y = 10x<br>
+                    <strong>Exponential:</strong> "Money doubles every year" → y = 1000(2)^x<br><br>
+                    
+                    <em>💡 Tip: Linear = steady change, Exponential = change that speeds up!</em>
+                `;
+            }
+            
+            // Chapter 6: Personal Finance
+            else if (lowerMessage.includes('chapter 6') || lowerMessage.includes('interest') || lowerMessage.includes('finance') || lowerMessage.includes('compound')) {
+                return `
+                    <strong>Chapter 6: Personal Finance</strong><br><br>
+                    
+                    <strong>💰 Simple Interest:</strong><br>
+                    <strong>Formula:</strong> I = Prt<br>
+                    • I = Interest earned<br>
+                    • P = Principal (starting amount)<br>
+                    • r = Rate (as decimal)<br>
                     • t = Time in years<br><br>
                     
-                    <strong>Simple Example:</strong><br>
-                    If you invest $1000 at 5% interest compounded annually for 2 years:<br>
-                    A = 1000(1 + 0.05/1)^(1×2) = 1000(1.05)² = $1102.50<br><br>
+                    <strong>📈 Compound Interest:</strong><br>
+                    <strong>Formula:</strong> A = P(1 + r/n)^(nt)<br>
+                    • A = Final amount<br>
+                    • n = Times compounded per year<br><br>
                     
-                    <em>💡 Tip: The more often interest compounds, the more money you make!</em>
+                    <strong>🔢 Real Example:</strong><br>
+                    $1000 at 5% for 2 years:<br>
+                    <strong>Simple:</strong> I = 1000 × 0.05 × 2 = $100<br>
+                    <strong>Compound:</strong> A = 1000(1 + 0.05/1)^(1×2) = $1102.50<br><br>
+                    
+                    <em>💡 Tip: Compound interest is "interest on your interest" - it grows faster!</em>
                 `;
-            } else if (lowerMessage.includes('proportion')) {
+            }
+            
+            // Chapter 7: Measurement & Conversions
+            else if (lowerMessage.includes('chapter 7') || lowerMessage.includes('conversion') || lowerMessage.includes('measurement') || lowerMessage.includes('temperature')) {
                 return `
-                    <strong>Proportions Made Simple:</strong><br><br>
+                    <strong>Chapter 7: Measurement & Conversions</strong><br><br>
                     
-                    A proportion is just a way of saying "these two ratios are equal." Think of it like a recipe that scales up or down!<br><br>
+                    <strong>📏 Key Conversions:</strong><br>
+                    • 1 inch = 2.54 cm<br>
+                    • 1 foot ≈ 0.305 m<br>
+                    • 1 mile ≈ 1.61 km<br><br>
                     
-                    <strong>Basic Formula:</strong><br>
-                    a/b = c/d (read as "a is to b as c is to d")<br><br>
+                    <strong>🌡️ Temperature:</strong><br>
+                    <strong>F to C:</strong> C = (F - 32) × 5/9<br>
+                    <strong>C to F:</strong> F = 9C/5 + 32<br><br>
                     
-                    <strong>Real Example:</strong><br>
+                    <strong>🔢 Real Example:</strong><br>
+                    Convert 68°F to Celsius:<br>
+                    C = (68 - 32) × 5/9 = 36 × 5/9 = 20°C<br><br>
+                    
+                    <strong>💡 Dimensional Analysis:</strong><br>
+                    Write units as fractions and cancel them out!<br><br>
+                    
+                    <em>💡 Tip: Always check your units - they help you know if you're right!</em>
+                `;
+            }
+            
+            // Chapter 10: Probability
+            else if (lowerMessage.includes('chapter 10') || lowerMessage.includes('probability') || lowerMessage.includes('expected value')) {
+                return `
+                    <strong>Chapter 10: Probability</strong><br><br>
+                    
+                    <strong>🎲 Basic Probability:</strong><br>
+                    <strong>Formula:</strong> P(event) = favorable outcomes / total outcomes<br><br>
+                    
+                    <strong>📊 Expected Value:</strong><br>
+                    <strong>Formula:</strong> E = Σ(x × P(x))<br>
+                    Multiply each outcome by its probability, then add them up<br><br>
+                    
+                    <strong>🔢 Real Example:</strong><br>
+                    Roll a die: P(6) = 1/6 ≈ 0.167 or 16.7%<br><br>
+                    
+                    <strong>💰 Expected Value Example:</strong><br>
+                    Game: Win $10 (50% chance) or lose $5 (50% chance)<br>
+                    E = (10 × 0.5) + (-5 × 0.5) = 5 - 2.5 = $2.50<br><br>
+                    
+                    <em>💡 Tip: Expected value tells you what you can expect to win/lose on average!</em>
+                `;
+            }
+            
+            // Chapter 11: Statistics
+            else if (lowerMessage.includes('chapter 11') || lowerMessage.includes('statistics') || lowerMessage.includes('mean') || lowerMessage.includes('median')) {
+                return `
+                    <strong>Chapter 11: Statistics</strong><br><br>
+                    
+                    <strong>📊 Key Measures:</strong><br>
+                    • <strong>Mean:</strong> Add all numbers, divide by count<br>
+                    • <strong>Median:</strong> Middle number when ordered<br>
+                    • <strong>Mode:</strong> Most frequent number<br><br>
+                    
+                    <strong>📈 Standard Deviation:</strong><br>
+                    Measures how spread out the data is<br><br>
+                    
+                    <strong>🔢 Real Example:</strong><br>
+                    Scores: 85, 90, 78, 92, 85<br>
+                    <strong>Mean:</strong> (85+90+78+92+85)/5 = 86<br>
+                    <strong>Median:</strong> 85 (middle when ordered)<br>
+                    <strong>Mode:</strong> 85 (appears twice)<br><br>
+                    
+                    <em>💡 Tip: Mean is affected by outliers, median is more stable!</em>
+                `;
+            }
+            
+            // Chapter 13: Voting & Apportionment
+            else if (lowerMessage.includes('chapter 13') || lowerMessage.includes('voting') || lowerMessage.includes('apportionment')) {
+                return `
+                    <strong>Chapter 13: Voting & Apportionment</strong><br><br>
+                    
+                    <strong>🗳️ Voting Methods:</strong><br>
+                    • <strong>Plurality:</strong> Most first-place votes wins<br>
+                    • <strong>Borda Count:</strong> Points for each ranking position<br>
+                    • <strong>Instant Runoff:</strong> Eliminate last place, redistribute votes<br><br>
+                    
+                    <strong>📊 Apportionment:</strong><br>
+                    Dividing seats fairly based on population<br><br>
+                    
+                    <strong>🔢 Real Example:</strong><br>
+                    <strong>Plurality:</strong> A gets 40%, B gets 35%, C gets 25% → A wins<br><br>
+                    
+                    <em>💡 Tip: Different voting methods can give different winners!</em>
+                `;
+            }
+            
+            // Test Preparation
+            else if (lowerMessage.includes('test') || lowerMessage.includes('exam') || lowerMessage.includes('prep')) {
+                return `
+                    <strong>📚 Test Preparation Guide</strong><br><br>
+                    
+                    <strong>🎯 Test 1 (Chapters 1, 4, 5):</strong><br>
+                    • Thinking mathematically (deductive/inductive)<br>
+                    • Proportions and percentages<br>
+                    • Linear and exponential functions<br><br>
+                    
+                    <strong>🎯 Test 2 (Chapters 6, 7):</strong><br>
+                    • Personal finance (interest calculations)<br>
+                    • Measurement and conversions<br><br>
+                    
+                    <strong>🎯 Test 3 (Chapters 10, 11):</strong><br>
+                    • Probability and expected value<br>
+                    • Statistics and data analysis<br><br>
+                    
+                    <strong>💡 Study Tips:</strong><br>
+                    • Practice with real examples<br>
+                    • Review formulas daily<br>
+                    • Do practice problems<br>
+                    • Get help early if stuck<br><br>
+                    
+                    <em>💡 Tip: Start studying 3-4 days before the test!</em>
+                `;
+            }
+            
+            // Homework Help
+            else if (lowerMessage.includes('homework') || lowerMessage.includes('hawkes') || lowerMessage.includes('assignment')) {
+                return `
+                    <strong>📝 Homework Help</strong><br><br>
+                    
+                    <strong>🎯 Hawkes Learning Tips:</strong><br>
+                    • Read the explanations carefully<br>
+                    • Use the "Practice" mode first<br>
+                    • Don't rush - accuracy matters<br>
+                    • Use the "Help Me Solve This" feature<br><br>
+                    
+                    <strong>💡 General Tips:</strong><br>
+                    • Break problems into smaller steps<br>
+                    • Check your work as you go<br>
+                    • Don't be afraid to ask for help<br>
+                    • Take breaks when needed<br><br>
+                    
+                    <strong>🔧 When You're Stuck:</strong><br>
+                    • Review the chapter material<br>
+                    • Look at similar examples<br>
+                    • Try a different approach<br>
+                    • Ask your tutor or classmates<br><br>
+                    
+                    <em>💡 Tip: It's okay to struggle - that's how you learn!</em>
+                `;
+            }
+            
+            // Formula Lookup
+            else if (lowerMessage.includes('formula') || lowerMessage.includes('equation')) {
+                return `
+                    <strong>📐 Quick Formula Reference</strong><br><br>
+                    
+                    <strong>💰 Finance:</strong><br>
+                    • Simple Interest: I = Prt<br>
+                    • Compound Interest: A = P(1 + r/n)^(nt)<br><br>
+                    
+                    <strong>📊 Proportions:</strong><br>
+                    • a/b = c/d → ad = bc (cross multiply)<br><br>
+                    
+                    <strong>📈 Functions:</strong><br>
+                    • Linear: y = mx + b<br>
+                    • Exponential: y = a(b)^x<br><br>
+                    
+                    <strong>🎲 Probability:</strong><br>
+                    • P(event) = favorable/total<br>
+                    • Expected Value: E = Σ(x × P(x))<br><br>
+                    
+                    <strong>📏 Conversions:</strong><br>
+                    • F to C: C = (F - 32) × 5/9<br>
+                    • C to F: F = 9C/5 + 32<br><br>
+                    
+                    <em>💡 Tip: Check the reference guide for more detailed formulas!</em>
+                `;
+            }
+            
+            // Default response
+            else {
+                return `
+                    <strong>Great question!</strong><br><br>
+                    
+                    I'd love to help you with that! Here are some ways to get specific help:<br><br>
+                    
+                    <strong>📖 Try asking about:</strong><br>
+                    • "Chapter 1: Thinking Mathematically"<br>
+                    • "How do I calculate compound interest?"<br>
+                    • "Help me understand proportions"<br>
+                    • "What formulas do I need for Test 3?"<br>
+                    • "Homework help with Hawkes Learning"<br><br>
+                    
+                    <strong>🔗 Quick Resources:</strong><br>
+                    • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
+                    • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br>
+                    • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br><br>
+                    
+                    <em>💡 Tip: Be specific about what you're working on for better help!</em>
+                `;
+            }
+        }
                     If 3 apples cost $2, how much do 9 apples cost?<br><br>
                     
                     Set up the proportion: 3/2 = 9/x<br>
