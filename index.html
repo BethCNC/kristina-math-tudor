@@ -201,176 +201,289 @@
             transform: translateY(-2px);
         }
         
-        .current-week-focus {
-            padding: var(--space-16) 0;
-            background: var(--color-primary-100);
-        }
-        
-        .focus-card {
+        .urgent-center {
+            padding: var(--space-8) 0;
             background: var(--color-primary-50);
-            border: 1px solid var(--color-primary-200);
+        }
+
+        /* Critical Deadline Alert */
+        .deadline-alert {
+            background: var(--color-error-500);
+            color: white;
             border-radius: var(--radius-lg);
-            padding: var(--space-8);
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .focus-header {
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: var(--space-6);
-            padding-bottom: var(--space-4);
-            border-bottom: 1px solid var(--color-primary-200);
-        }
-        
-        .focus-header h2 {
-            font-size: var(--font-size-2xl);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin: 0;
-        }
-        
-        .week-indicator {
-            background: var(--color-accent-orange-base);
-            color: var(--color-primary-900);
-            padding: var(--space-2) var(--space-4);
-            border-radius: var(--radius-md);
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-sm);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .focus-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-6);
-            margin-bottom: var(--space-6);
-        }
-        
-        .focus-item h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-bold);
-            color: var(--color-primary-900);
-            margin-bottom: var(--space-3);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .focus-item ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .focus-item li {
-            padding: var(--space-2) 0;
-            color: var(--color-primary-600);
-            border-bottom: 1px solid var(--color-primary-100);
-        }
-        
-        .focus-item li:last-child {
-            border-bottom: none;
-        }
-        
-        .focus-actions {
-            display: flex;
             gap: var(--space-4);
-            justify-content: center;
+            box-shadow: var(--shadow-lg);
         }
-        
-        .focus-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-2);
+
+        .alert-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .alert-content {
+            flex: 1;
+        }
+
+        .alert-content h2 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-2);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .alert-content p {
+            margin-bottom: var(--space-2);
+            opacity: 0.9;
+        }
+
+        .countdown {
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-lg);
+            color: var(--color-accent-yellow-base);
+        }
+
+        .alert-btn {
+            background: white;
+            color: var(--color-error-500);
             padding: var(--space-3) var(--space-6);
             border-radius: var(--radius-md);
             text-decoration: none;
-            font-weight: var(--font-weight-semibold);
+            font-weight: var(--font-weight-bold);
             text-transform: uppercase;
             letter-spacing: 0.05em;
             transition: all 0.2s ease;
         }
-        
-        .focus-btn.primary {
+
+        .alert-btn:hover {
             background: var(--color-primary-900);
-            color: var(--color-primary-50);
+            color: white;
+        }
+
+        /* Today's Must-Do */
+        .todays-focus {
+            background: white;
             border: 2px solid var(--color-primary-900);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
         }
-        
-        .focus-btn.primary:hover {
-            background: var(--color-primary-50);
+
+        .todays-focus h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
             color: var(--color-primary-900);
+            margin-bottom: var(--space-6);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
-        
-        .focus-btn.secondary {
-            background: var(--color-primary-50);
+
+        .task-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            border-left: 4px solid;
+        }
+
+        .task-item.urgent {
+            background: var(--color-error-500);
+            color: white;
+            border-left-color: var(--color-error-600);
+        }
+
+        .task-item.important {
+            background: var(--color-warning-500);
+            color: white;
+            border-left-color: var(--color-warning-600);
+        }
+
+        .task-item.upcoming {
+            background: var(--color-accent-blue-base);
             color: var(--color-primary-900);
-            border: 2px solid var(--color-primary-900);
+            border-left-color: var(--color-accent-blue-dark);
         }
-        
-        .focus-btn.secondary:hover {
-            background: var(--color-primary-900);
-            color: var(--color-primary-50);
+
+        .task-checkbox {
+            flex-shrink: 0;
         }
-        
-        .quick-actions {
-            padding: var(--space-16) 0;
+
+        .task-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--color-primary-900);
         }
-        
-        .actions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-6);
+
+        .task-content {
+            flex: 1;
         }
-        
-        .action-card {
-            background: var(--color-primary-50);
+
+        .task-content h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-1);
+        }
+
+        .task-content p {
+            font-size: var(--font-size-sm);
+            opacity: 0.8;
+        }
+
+        .task-status {
+            font-weight: var(--font-weight-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: var(--font-size-sm);
+        }
+
+        /* This Week's Focus */
+        .week-focus {
+            background: white;
             border: 1px solid var(--color-primary-200);
             border-radius: var(--radius-lg);
             padding: var(--space-6);
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.3s ease;
-            text-align: center;
+            margin-bottom: var(--space-8);
         }
-        
-        .action-card:hover {
-            transform: translateY(-4px);
-            border-color: var(--color-primary-400);
-            background: white;
-        }
-        
-        .action-icon {
-            width: 48px;
-            height: 48px;
-            background: var(--color-accent-blue-base);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: var(--font-size-xl);
-            margin: 0 auto var(--space-4);
-            color: var(--color-primary-900);
-            transition: all 0.2s ease;
-        }
-        
-        .action-card:hover .action-icon {
-            background: var(--color-accent-blue-dark);
-        }
-        
-        .action-card h3 {
-            font-size: var(--font-size-lg);
+
+        .week-focus h2 {
+            font-size: var(--font-size-2xl);
             font-weight: var(--font-weight-bold);
             color: var(--color-primary-900);
-            margin-bottom: var(--space-3);
+            margin-bottom: var(--space-6);
+            text-align: center;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
-        
-        .action-card p {
+
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .focus-card {
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+        }
+
+        .focus-card.study {
+            background: var(--color-accent-yellow-base);
+            color: var(--color-primary-900);
+        }
+
+        .focus-card.dates {
+            background: var(--color-accent-pink-base);
+            color: var(--color-primary-900);
+        }
+
+        .focus-card h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--space-4);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .focus-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .focus-card li {
+            padding: var(--space-2) 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .focus-card li:last-child {
+            border-bottom: none;
+        }
+
+        .urgent-date {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-error-600);
+        }
+
+        .important-date {
+            font-weight: var(--font-weight-bold);
+            color: var(--color-warning-600);
+        }
+
+        .upcoming-date {
             color: var(--color-primary-600);
-            line-height: var(--line-height-relaxed);
+        }
+
+        /* Quick Help */
+        .quick-help {
+            background: white;
+            border: 1px solid var(--color-primary-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            text-align: center;
+        }
+
+        .quick-help h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary-900);
+            margin-bottom: var(--space-6);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .help-buttons {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .help-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-4) var(--space-6);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: var(--font-weight-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s ease;
+            min-width: 150px;
+            justify-content: center;
+        }
+
+        .help-btn.primary {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
+            border: 2px solid var(--color-primary-900);
+        }
+
+        .help-btn.primary:hover {
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
+        }
+
+        .help-btn.secondary {
+            background: var(--color-primary-50);
+            color: var(--color-primary-900);
+            border: 2px solid var(--color-primary-900);
+        }
+
+        .help-btn.secondary:hover {
+            background: var(--color-primary-900);
+            color: var(--color-primary-50);
         }
         
         .feature-card {
@@ -630,85 +743,94 @@
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Urgent Action Center -->
+    <section class="urgent-center">
         <div class="container">
-            <div class="hero-content">
-                <h1>Math That Actually Makes Sense 🎯</h1>
-                <p>Transform MAT 143 from overwhelming to "Oh, I get it!" with explanations designed for real understanding, not memorization.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Week Focus -->
-    <section class="current-week-focus">
-        <div class="container">
-            <div class="focus-card">
-                <div class="focus-header">
-                    <h2>📅 This Week's Focus</h2>
-                    <div class="week-indicator">Week 1</div>
+            <!-- Critical Deadline Alert -->
+            <div class="deadline-alert">
+                <div class="alert-icon">🚨</div>
+                <div class="alert-content">
+                    <h2>URGENT: Attendance Due Friday</h2>
+                    <p>Submit your BrightSpace attendance before Friday to avoid penalties</p>
+                    <div class="countdown">3 days remaining</div>
                 </div>
-                <div class="focus-content">
-                    <div class="focus-item">
-                        <h3>🎯 Priority Tasks</h3>
-                        <ul>
-                            <li>Complete Hawkes Learning: Section 1.1-1.3</li>
-                            <li>Submit BrightSpace Attendance</li>
-                            <li>Review Chapter 1: Thinking Mathematically</li>
-                        </ul>
+                <a href="calendar.html" class="alert-btn">View Details</a>
+            </div>
+
+            <!-- Today's Must-Do -->
+            <div class="todays-focus">
+                <h2>🎯 TODAY'S MUST-DO</h2>
+                <div class="task-list">
+                    <div class="task-item urgent">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task1">
+                            <label for="task1"></label>
+                        </div>
+                        <div class="task-content">
+                            <h3>Complete Hawkes Learning: Section 1.1-1.3</h3>
+                            <p>Due: Today | Priority: HIGH</p>
+                        </div>
+                        <div class="task-status">NOT STARTED</div>
                     </div>
-                    <div class="focus-item">
-                        <h3>📚 Study Focus</h3>
+                    
+                    <div class="task-item important">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task2">
+                            <label for="task2"></label>
+                        </div>
+                        <div class="task-content">
+                            <h3>Review Chapter 1: Thinking Mathematically</h3>
+                            <p>Due: This Week | Priority: MEDIUM</p>
+                        </div>
+                        <div class="task-status">NOT STARTED</div>
+                    </div>
+                    
+                    <div class="task-item upcoming">
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task3">
+                            <label for="task3"></label>
+                        </div>
+                        <div class="task-content">
+                            <h3>Submit BrightSpace Attendance</h3>
+                            <p>Due: Friday | Priority: CRITICAL</p>
+                        </div>
+                        <div class="task-status">PENDING</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- This Week's Focus -->
+            <div class="week-focus">
+                <h2>📅 THIS WEEK'S FOCUS</h2>
+                <div class="focus-grid">
+                    <div class="focus-card study">
+                        <h3>📚 STUDY TOPICS</h3>
                         <ul>
                             <li>Deductive vs Inductive Reasoning</li>
                             <li>Pattern Recognition</li>
                             <li>Estimation Strategies</li>
                         </ul>
                     </div>
-                    <div class="focus-item">
-                        <h3>⏰ Important Dates</h3>
+                    
+                    <div class="focus-card dates">
+                        <h3>⏰ IMPORTANT DATES</h3>
                         <ul>
-                            <li>Friday: Attendance Due</li>
-                            <li>Sunday: Hawkes Certification</li>
-                            <li>Next Week: Test 1 Prep Begins</li>
+                            <li class="urgent-date">Friday: Attendance Due</li>
+                            <li class="important-date">Sunday: Hawkes Certification</li>
+                            <li class="upcoming-date">Next Week: Test 1 Prep</li>
                         </ul>
                     </div>
                 </div>
-                <div class="focus-actions">
-                    <a href="calendar.html" class="focus-btn primary">View Full Calendar</a>
-                    <a href="tutor.html" class="focus-btn secondary">Get Help Now</a>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Quick Actions -->
-    <section class="quick-actions">
-        <div class="container">
-            <div class="actions-grid">
-                <a href="calendar.html" class="action-card">
-                    <div class="action-icon">📅</div>
-                    <h3>Smart Calendar</h3>
-                    <p>Never miss a deadline again. See exactly what to study when.</p>
-                </a>
-                
-                <a href="tutor.html" class="action-card">
-                    <div class="action-icon">🤖</div>
-                    <h3>AI Study Buddy</h3>
-                    <p>Get personalized explanations that break down complex problems.</p>
-                </a>
-                
-                <a href="reference.html" class="action-card">
-                    <div class="action-icon">📚</div>
-                    <h3>Formula Reference</h3>
-                    <p>Quick access to all formulas and key concepts organized by topic.</p>
-                </a>
-                
-                <a href="web_study_helper.html" class="action-card">
-                    <div class="action-icon">💡</div>
-                    <h3>Study Helper</h3>
-                    <p>Tips, strategies, and quick study guides for each chapter.</p>
-                </a>
+            <!-- Quick Help -->
+            <div class="quick-help">
+                <h2>💡 NEED HELP?</h2>
+                <div class="help-buttons">
+                    <a href="tutor.html" class="help-btn primary">Ask AI Tutor</a>
+                    <a href="reference.html" class="help-btn secondary">Formula Reference</a>
+                    <a href="web_study_helper.html" class="help-btn secondary">Study Tips</a>
+                </div>
             </div>
         </div>
     </section>
