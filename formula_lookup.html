@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 143 Formula Lookup - All Formulas & Reference Sheets</title>
+    <meta name="description" content="Complete formula reference for MAT 143 - proportions, percentages, finance, probability, statistics, and more. Quick lookup for all mathematical concepts.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+    
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#eb7754">
+    <meta name="msapplication-TileImage" content="/mstile-70x70.png">
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808",
+                        white: "#fafafa",
+                        neutral: {
+                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
+                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
+                        },
+                        coral: {
+                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
+                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
+                        },
+                        pink: {
+                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
+                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
+                        },
+                        yellow: {
+                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
+                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
+                        },
+                        blue: {
+                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
+                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
+                        }
+                    },
+                    fontFamily: {
+                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
+                    },
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {
+                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="hero-gradient text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center gap-4 mb-4">
+                <a href="index.html" class="btn btn-ghost text-white hover:bg-white/20">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                    Back to Dashboard
+                </a>
+            </div>
+            <div class="text-center">
+                <h1 class="text-4xl font-bold mb-4 flex items-center justify-center gap-3">
+                    <i data-lucide="function" class="w-8 h-8"></i>
+                    MAT 143 Formula Lookup
+                </h1>
+                <p class="text-xl opacity-90">Complete reference for all formulas, equations, and mathematical concepts</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto p-4">
+        <!-- Quick Navigation -->
+        <div class="mb-8">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <a href="#proportions" class="chip bg-[var(--yellow-500)] text-[var(--black)] hover:bg-[var(--yellow-600)]">Proportions & Percentages</a>
+                <a href="#finance" class="chip bg-[var(--yellow-500)] text-[var(--black)] hover:bg-[var(--yellow-600)]">Personal Finance</a>
+                <a href="#probability" class="chip bg-[var(--yellow-500)] text-[var(--black)] hover:bg-[var(--yellow-600)]">Probability</a>
+                <a href="#statistics" class="chip bg-[var(--yellow-500)] text-[var(--black)] hover:bg-[var(--yellow-600)]">Statistics</a>
+                <a href="#measurement" class="chip bg-[var(--yellow-500)] text-[var(--black)] hover:bg-[var(--yellow-600)]">Measurement</a>
+            </div>
+        </div>
+
+        <!-- Chapter 4: Proportions & Percentages -->
+        <section id="proportions" class="mb-12">
+            <div class="card p-8">
+                <div class="card-title-dark math mb-6">
+                    <i data-lucide="percent" class="w-5 h-5 mr-2"></i>
+                    Chapter 4: Proportions & Percentages
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Proportions</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Cross-Multiplication</h4>
+                                <p class="text-[var(--text-muted)] mb-2">If a/b = c/d, then ad = bc</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    a/b = c/d → ad = bc
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Percentage of a Number</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P% of N = (P/100) × N</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P% of N = (P/100) × N
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Percentage Increase</h4>
+                                <p class="text-[var(--text-muted)] mb-2">New = Original × (1 + rate)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    New = Original × (1 + rate)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Percentage Decrease</h4>
+                                <p class="text-[var(--text-muted)] mb-2">New = Original × (1 - rate)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    New = Original × (1 - rate)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Unit Rates</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Unit Rate Formula</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Unit Rate = Total Amount ÷ Total Units</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Unit Rate = Total ÷ Units
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Rate of Change</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Rate = Change in Y ÷ Change in X</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Rate = Δy/Δx = (y₂-y₁)/(x₂-x₁)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Dimensional Analysis</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Set up conversions so units cancel</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Given × (Conversion Factor) = Result
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 6: Personal Finance -->
+        <section id="finance" class="mb-12">
+            <div class="card p-8">
+                <div class="card-title-dark math mb-6">
+                    <i data-lucide="dollar-sign" class="w-5 h-5 mr-2"></i>
+                    Chapter 6: Personal Finance
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Simple Interest</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Simple Interest Formula</h4>
+                                <p class="text-[var(--text-muted)] mb-2">I = P × r × t</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    I = P × r × t<br>
+                                    I = Interest, P = Principal, r = rate, t = time
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Future Value (Simple)</h4>
+                                <p class="text-[var(--text-muted)] mb-2">A = P + I = P(1 + rt)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    A = P(1 + rt)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Compound Interest</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Compound Interest Formula</h4>
+                                <p class="text-[var(--text-muted)] mb-2">A = P(1 + r/n)^(nt)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    A = P(1 + r/n)^(nt)<br>
+                                    n = compounding periods per year
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Continuous Compounding</h4>
+                                <p class="text-[var(--text-muted)] mb-2">A = Pe^(rt)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    A = Pe^(rt)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Rule of 72</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Years to double = 72 ÷ interest rate</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Years to double = 72 ÷ r
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 10: Probability -->
+        <section id="probability" class="mb-12">
+            <div class="card p-8">
+                <div class="card-title-dark math mb-6">
+                    <i data-lucide="dice-6" class="w-5 h-5 mr-2"></i>
+                    Chapter 10: Probability
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Basic Probability</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Probability Formula</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P(event) = favorable outcomes ÷ total outcomes</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P(A) = n(A)/n(S)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Complement Rule</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P(not A) = 1 - P(A)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P(A') = 1 - P(A)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Addition Rule</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P(A or B) = P(A) + P(B) - P(A and B)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P(A∪B) = P(A) + P(B) - P(A∩B)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Conditional Probability</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Conditional Probability</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P(A|B) = P(A and B) ÷ P(B)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P(A|B) = P(A∩B)/P(B)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Multiplication Rule</h4>
+                                <p class="text-[var(--text-muted)] mb-2">P(A and B) = P(A) × P(B|A)</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    P(A∩B) = P(A) × P(B|A)
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Expected Value</h4>
+                                <p class="text-[var(--text-muted)] mb-2">E(X) = Σ(x × P(x))</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    E(X) = Σ(x × P(x))
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 11: Statistics -->
+        <section id="statistics" class="mb-12">
+            <div class="card p-8">
+                <div class="card-title-dark math mb-6">
+                    <i data-lucide="bar-chart-3" class="w-5 h-5 mr-2"></i>
+                    Chapter 11: Statistics
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Measures of Center</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Mean (Average)</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Sum of all values ÷ number of values</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    x̄ = Σx/n
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Median</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Middle value when data is ordered</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Middle value of ordered data
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Mode</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Most frequent value</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Most common value
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Measures of Spread</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Range</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Maximum - Minimum</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    Range = Max - Min
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Standard Deviation</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Square root of variance</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    s = √(Σ(x-x̄)²/(n-1))
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Variance</h4>
+                                <p class="text-[var(--text-muted)] mb-2">Average squared deviation</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    s² = Σ(x-x̄)²/(n-1)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 7: Measurement -->
+        <section id="measurement" class="mb-12">
+            <div class="card p-8">
+                <div class="card-title-dark math mb-6">
+                    <i data-lucide="ruler" class="w-5 h-5 mr-2"></i>
+                    Chapter 7: Measurement & Conversions
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Length Conversions</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Metric Length</h4>
+                                <p class="text-[var(--text-muted)] mb-2">1 km = 1000 m = 100,000 cm</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    1 km = 1000 m<br>
+                                    1 m = 100 cm<br>
+                                    1 cm = 10 mm
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">US Length</h4>
+                                <p class="text-[var(--text-muted)] mb-2">1 mile = 5280 feet = 63,360 inches</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    1 mile = 5280 ft<br>
+                                    1 ft = 12 in<br>
+                                    1 yd = 3 ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4">Area & Volume</h3>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Area Conversions</h4>
+                                <p class="text-[var(--text-muted)] mb-2">1 acre = 43,560 square feet</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    1 acre = 43,560 ft²<br>
+                                    1 ft² = 144 in²
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 bg-[var(--bg-muted)] rounded-lg">
+                                <h4 class="font-semibold text-[var(--text-dark)] mb-2">Volume Conversions</h4>
+                                <p class="text-[var(--text-muted)] mb-2">1 gallon = 4 quarts = 8 pints</p>
+                                <div class="bg-white p-3 rounded border font-mono text-sm">
+                                    1 gal = 4 qt<br>
+                                    1 qt = 2 pt<br>
+                                    1 pt = 2 cups
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Top -->
+        <div class="text-center mb-8">
+            <a href="#top" class="btn btn-primary is-math">
+                <i data-lucide="arrow-up" class="w-4 h-4 mr-2"></i>
+                Back to Top
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--panel)] border-t border-[var(--border)] py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-[var(--text-muted)]">Complete MAT 143 Formula Reference • Fall 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
