@@ -3,507 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 1: Mathematical Thinking - Math Tutor</title>
-    <link rel="stylesheet" href="design-system.css">
-</head>
-<body class="bg-lightest-neutral">
-
-<header class="header-dark">
-    <div class="max-w-6xl mx-auto px-4 py-6">
-        <div class="flex items-center justify-between">
-            <h1 class="text-2xl font-bold text-white flex items-center gap-2">
-                <i data-lucide="brain" class="w-8 h-8"></i>
-                Chapter 1: Mathematical Thinking
-            </h1>
-            <nav>
-                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Chapters</a>
-            </nav>
-        </div>
-    </div>
-</header>
-
-<main class="max-w-6xl mx-auto px-4 py-8">
-
-    <!-- Navigation -->
-    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <nav class="flex flex-wrap gap-4 text-sm">
-            <a href="#overview" class="btn-secondary">Chapter Overview</a>
-            <a href="#tutorials" class="btn-secondary">Step-by-Step Tutorials</a>
-            <a href="#formulas" class="btn-secondary">Formula Sheet</a>
-            <a href="#practice" class="btn-secondary">Practice Problems</a>
-            <a href="#ai-help" class="btn-secondary">Ask AI Tutor</a>
-            <a href="#study-tips" class="btn-secondary">ADHD Study Tips</a>
-        </nav>
-    </div>
-
-    <!-- Chapter Overview -->
-    <div id="overview" class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold">Chapter Overview</span>
-        </div>
-        <div class="space-y-4">
-            <p>Logical reasoning and problem-solving strategies</p>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
-                    <h4 class="font-semibold text-gray-800 mb-2">What You'll Learn</h4>
-                    <div id="learning-objectives">
-                        <ul class="text-sm space-y-1">
-                            <li>• Distinguish between deductive and inductive reasoning</li>
-                            <li>• Use estimation strategies for quick approximations</li>
-                            <li>• Apply Polya's 4-step problem solving method</li>
-                            <li>• Evaluate the reasonableness of mathematical answers</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
-                    <h4 class="font-semibold text-gray-800 mb-2">Real-World Applications</h4>
-                    <div id="applications">
-                        <ul class="text-sm space-y-1">
-                            <li>• Detecting fraud and logical fallacies</li>
-                            <li>• Making informed financial decisions</li>
-                            <li>• Analyzing data and drawing conclusions</li>
-                            <li>• Problem-solving in work and daily life</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tutorials Section -->
-    <div id="tutorials" class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold flex items-center gap-2">
-                <i data-lucide="play-circle" class="w-5 h-5"></i>
-                Step-by-Step Tutorials
-            </span>
-        </div>
-        <div id="tutorial-content" class="space-y-8">
-            
-            <!-- Tutorial 1: Deductive vs Inductive Reasoning -->
-            <div class="border-l-4 border-blue-500 pl-4">
-                <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                    <i data-lucide="lightbulb" class="w-5 h-5 text-blue-500"></i>
-                    1. Deductive vs Inductive Reasoning
-                </h4>
-                
-                <div class="grid md:grid-cols-2 gap-6 mb-4">
-                    <div class="bg-green-50 p-4 rounded">
-                        <h5 class="font-semibold text-green-800 mb-2">Deductive Reasoning</h5>
-                        <p class="text-sm text-green-700 mb-3">Drawing conclusions from general principles → specific cases</p>
-                        <div class="bg-white p-3 rounded border border-green-200">
-                            <p class="text-sm"><strong>Example:</strong></p>
-                            <p class="text-sm mt-1">• All birds have feathers (general rule)</p>
-                            <p class="text-sm">• A robin is a bird (specific case)</p>
-                            <p class="text-sm font-semibold text-green-800">• Therefore, robins have feathers ✓</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-orange-50 p-4 rounded">
-                        <h5 class="font-semibold text-orange-800 mb-2">Inductive Reasoning</h5>
-                        <p class="text-sm text-orange-700 mb-3">Making predictions from observations → general patterns</p>
-                        <div class="bg-white p-3 rounded border border-orange-200">
-                            <p class="text-sm"><strong>Example:</strong></p>
-                            <p class="text-sm mt-1">• I've seen 10 swans and they're all white</p>
-                            <p class="text-sm">• Pattern: All observed swans are white</p>
-                            <p class="text-sm font-semibold text-orange-800">• Prediction: All swans are white (but this could be wrong!)</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <details class="bg-gray-50 p-4 rounded mt-4">
-                    <summary class="font-semibold cursor-pointer">Practice: Identify the Reasoning Type</summary>
-                    <div class="mt-3 space-y-3 text-sm">
-                        <div class="p-3 bg-white rounded border">
-                            <p><strong>1.</strong> "Every math test this semester has had 20 questions. Today's test will probably have 20 questions too."</p>
-                            <details class="mt-2">
-                                <summary class="text-blue-600 cursor-pointer">Show Answer</summary>
-                                <p class="mt-1 text-green-600"><strong>Inductive</strong> - Using past observations to predict future events.</p>
-                            </details>
-                        </div>
-                        
-                        <div class="p-3 bg-white rounded border">
-                            <p><strong>2.</strong> "All students with IDs ending in even numbers go to lunch first. My ID ends in 4, so I go to lunch first."</p>
-                            <details class="mt-2">
-                                <summary class="text-blue-600 cursor-pointer">Show Answer</summary>
-                                <p class="mt-1 text-green-600"><strong>Deductive</strong> - Applying a general rule to a specific case.</p>
-                            </details>
-                        </div>
-                    </div>
-                </details>
-            </div>
-
-            <!-- Tutorial 2: Estimation Strategies -->
-            <div class="border-l-4 border-yellow-500 pl-4">
-                <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                    <i data-lucide="calculator" class="w-5 h-5 text-yellow-500"></i>
-                    2. Estimation Strategies
-                </h4>
-                
-                <p class="text-gray-600 mb-4">Learn to quickly approximate answers and check if your calculations make sense.</p>
-                
-                <div class="space-y-4">
-                    <div class="bg-blue-50 p-4 rounded">
-                        <h5 class="font-semibold text-blue-800 mb-2">Strategy 1: Round to Friendly Numbers</h5>
-                        <div class="bg-white p-3 rounded border border-blue-200">
-                            <p class="text-sm mb-2"><strong>Example:</strong> Estimate 287 × 19</p>
-                            <p class="text-sm">• Round 287 → 300 (friendly number)</p>
-                            <p class="text-sm">• Round 19 → 20 (friendly number)</p>
-                            <p class="text-sm font-semibold text-blue-800">• Estimate: 300 × 20 = 6,000</p>
-                            <p class="text-sm text-gray-600">• Actual: 5,453 (our estimate is very close!)</p>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-green-50 p-4 rounded">
-                        <h5 class="font-semibold text-green-800 mb-2">Strategy 2: Use Benchmark Numbers</h5>
-                        <div class="bg-white p-3 rounded border border-green-200">
-                            <p class="text-sm mb-2"><strong>Example:</strong> Is $47 a good price for a shirt?</p>
-                            <p class="text-sm">• Compare to benchmarks: $20 (cheap), $50 (moderate), $100 (expensive)</p>
-                            <p class="text-sm font-semibold text-green-800">• $47 is close to $50, so it's moderate pricing</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <details class="bg-gray-50 p-4 rounded mt-4">
-                    <summary class="font-semibold cursor-pointer">Practice: Estimation Challenge</summary>
-                    <div class="mt-3 space-y-3 text-sm">
-                        <div class="p-3 bg-white rounded border">
-                            <p><strong>Estimate:</strong> 48 × 73</p>
-                            <details class="mt-2">
-                                <summary class="text-blue-600 cursor-pointer">Show Strategy</summary>
-                                <p class="mt-1">Round to: 50 × 70 = 3,500</p>
-                                <p class="text-green-600">Actual: 3,504 (Amazing estimate!)</p>
-                            </details>
-                        </div>
-                        
-                        <div class="p-3 bg-white rounded border">
-                            <p><strong>Check Reasonableness:</strong> A calculator shows 6.7 × 8.9 = 596.3. Does this make sense?</p>
-                            <details class="mt-2">
-                                <summary class="text-blue-600 cursor-pointer">Show Analysis</summary>
-                                <p class="mt-1">Estimate: 7 × 9 = 63</p>
-                                <p class="text-red-600">The answer 596.3 is way too big - there's likely a decimal point error!</p>
-                                <p class="text-green-600">Correct: 59.63</p>
-                            </details>
-                        </div>
-                    </div>
-                </details>
-            </div>
-
-            <!-- Tutorial 3: Polya's Problem Solving Method -->
-            <div class="border-l-4 border-purple-500 pl-4">
-                <h4 class="font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                    <i data-lucide="target" class="w-5 h-5 text-purple-500"></i>
-                    3. Polya's 4-Step Problem Solving Method
-                </h4>
-                
-                <p class="text-gray-600 mb-4">A systematic approach to tackle any math problem with confidence.</p>
-                
-                <div class="grid md:grid-cols-2 gap-4 mb-4">
-                    <div class="space-y-3">
-                        <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
-                            <h5 class="font-semibold text-red-800">Step 1: Understand</h5>
-                            <p class="text-sm text-red-700">What are you solving for? What information do you have?</p>
-                        </div>
-                        
-                        <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
-                            <h5 class="font-semibold text-blue-800">Step 2: Plan</h5>
-                            <p class="text-sm text-blue-700">What method will you use? Draw a picture? Make a table?</p>
-                        </div>
-                    </div>
-                    
-                    <div class="space-y-3">
-                        <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
-                            <h5 class="font-semibold text-green-800">Step 3: Execute</h5>
-                            <p class="text-sm text-green-700">Carry out your plan. Do the math carefully.</p>
-                        </div>
-                        
-                        <div class="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
-                            <h5 class="font-semibold text-yellow-800">Step 4: Check</h5>
-                            <p class="text-sm text-yellow-700">Does your answer make sense? Did you answer the right question?</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-50 p-4 rounded">
-                    <h5 class="font-semibold text-gray-800 mb-3">Complete Example: Party Planning</h5>
-                    <p class="text-sm mb-3"><strong>Problem:</strong> You're planning a party for 24 people. Pizza costs $12 per large pizza and feeds 6 people. Sodas cost $4 per 12-pack and serve 12 people. What's the total cost for food and drinks?</p>
-                    
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <details class="mb-2">
-                                <summary class="font-semibold text-red-600 cursor-pointer">Step 1: Understand</summary>
-                                <div class="text-sm mt-2 bg-white p-2 rounded">
-                                    <p>• 24 people total</p>
-                                    <p>• Need: Pizza + Sodas</p>
-                                    <p>• Find: Total cost</p>
-                                </div>
-                            </details>
-                            
-                            <details class="mb-2">
-                                <summary class="font-semibold text-blue-600 cursor-pointer">Step 2: Plan</summary>
-                                <div class="text-sm mt-2 bg-white p-2 rounded">
-                                    <p>• Calculate pizzas needed</p>
-                                    <p>• Calculate sodas needed</p>
-                                    <p>• Add up total costs</p>
-                                </div>
-                            </details>
-                        </div>
-                        
-                        <div>
-                            <details class="mb-2">
-                                <summary class="font-semibold text-green-600 cursor-pointer">Step 3: Execute</summary>
-                                <div class="text-sm mt-2 bg-white p-2 rounded">
-                                    <p>• Pizzas: 24 ÷ 6 = 4 pizzas</p>
-                                    <p>• Cost: 4 × $12 = $48</p>
-                                    <p>• Sodas: 24 ÷ 12 = 2 twelve-packs</p>
-                                    <p>• Cost: 2 × $4 = $8</p>
-                                    <p>• Total: $48 + $8 = $56</p>
-                                </div>
-                            </details>
-                            
-                            <details>
-                                <summary class="font-semibold text-yellow-600 cursor-pointer">Step 4: Check</summary>
-                                <div class="text-sm mt-2 bg-white p-2 rounded">
-                                    <p>• Does $56 seem reasonable for 24 people? ✓</p>
-                                    <p>• About $2.33 per person - makes sense ✓</p>
-                                    <p>• Did I answer the question asked? ✓</p>
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- AI Tutor Integration -->
-    <div id="ai-help" class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold flex items-center gap-2">
-                <i data-lucide="bot" class="w-5 h-5"></i>
-                Ask Your AI Tutor
-            </span>
-        </div>
-        <div class="space-y-4">
-            <p class="text-gray-600">Stuck on something? Get personalized help right now!</p>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <textarea 
-                    id="ai-question" 
-                    placeholder="Ask me anything about Chapter 1... For example: 'I don't understand how to solve proportions' or 'Can you explain this step by step?'"
-                    class="w-full h-24 p-3 border border-gray-300 rounded resize-none focus:border-yellow-500 focus:outline-none"
-                ></textarea>
-                <div class="flex gap-3 mt-3">
-                    <button onclick="askAITutor(1)" class="btn btn-primary is-math">
-                        <i data-lucide="send" class="w-4 h-4 mr-2"></i>
-                        Get Help Now
-                    </button>
-                    <button onclick="getHint(1)" class="btn btn-secondary">
-                        <i data-lucide="lightbulb" class="w-4 h-4 mr-2"></i>
-                        Just Give Me a Hint
-                    </button>
-                </div>
-            </div>
-            <div id="ai-response" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <h5 class="font-semibold text-green-800 mb-2 flex items-center gap-2">
-                    <i data-lucide="check-circle" class="w-4 h-4"></i>
-                    Your AI Tutor Says:
-                </h5>
-                <div id="ai-answer" class="text-green-700"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Formula Sheet -->
-    <div id="formulas" class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold flex items-center gap-2">
-                <i data-lucide="book-open" class="w-5 h-5"></i>
-                Chapter 1 Quick Reference
-            </span>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-6">
-            <div>
-                <h4 class="font-semibold text-gray-800 mb-3">Key Concepts</h4>
-                <div class="space-y-3 text-sm">
-                    <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
-                        <strong>Deductive Reasoning:</strong><br>
-                        General rule → Specific case<br>
-                        <em>Always gives certain conclusions</em>
-                    </div>
-                    <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
-                        <strong>Inductive Reasoning:</strong><br>
-                        Observations → General pattern<br>
-                        <em>Conclusions may be wrong</em>
-                    </div>
-                </div>
-            </div>
-            
-            <div>
-                <h4 class="font-semibold text-gray-800 mb-3">Problem Solving Steps</h4>
-                <div class="space-y-2 text-sm">
-                    <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-red-100 text-red-800 rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                        <span><strong>Understand:</strong> What am I solving for?</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center text-xs font-bold">2</div>
-                        <span><strong>Plan:</strong> What method will work?</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-green-100 text-green-800 rounded-full flex items-center justify-center text-xs font-bold">3</div>
-                        <span><strong>Execute:</strong> Do the math</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-yellow-100 text-yellow-800 rounded-full flex items-center justify-center text-xs font-bold">4</div>
-                        <span><strong>Check:</strong> Does it make sense?</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ADHD Study Tips -->
-    <div id="study-tips" class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold flex items-center gap-2">
-                <i data-lucide="heart" class="w-5 h-5"></i>
-                ADHD-Friendly Study Tips
-            </span>
-        </div>
-        
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="space-y-4">
-                <div class="bg-blue-50 p-4 rounded border-l-4 border-blue-500">
-                    <h4 class="font-semibold text-blue-800 mb-2">Memory Strategies</h4>
-                    <ul class="text-sm text-blue-700 space-y-1">
-                        <li>🧠 <strong>DIGS:</strong> Deductive = Definite, Inductive = Guessing</li>
-                        <li>📝 Make reasoning type flashcards with examples</li>
-                        <li>🎯 Practice one concept at a time, then mix</li>
-                        <li>🗣️ Explain reasoning types out loud to yourself</li>
-                    </ul>
-                </div>
-                
-                <div class="bg-green-50 p-4 rounded border-l-4 border-green-500">
-                    <h4 class="font-semibold text-green-800 mb-2">Focus Techniques</h4>
-                    <ul class="text-sm text-green-700 space-y-1">
-                        <li>⏰ Use 15-minute study chunks for reasoning practice</li>
-                        <li>✋ Cover up answer choices until you've thought through the problem</li>
-                        <li>🎵 Find background music that helps you focus</li>
-                        <li>🚶 Take movement breaks between problem sets</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="space-y-4">
-                <div class="bg-yellow-50 p-4 rounded border-l-4 border-yellow-500">
-                    <h4 class="font-semibold text-yellow-800 mb-2">Problem-Solving Aids</h4>
-                    <ul class="text-sm text-yellow-700 space-y-1">
-                        <li>📋 Print out Polya's 4 steps as a checklist</li>
-                        <li>✏️ Always write down what you're solving for first</li>
-                        <li>🎨 Use different colored pens for different steps</li>
-                        <li>📐 Draw pictures or diagrams whenever possible</li>
-                    </ul>
-                </div>
-                
-                <div class="bg-purple-50 p-4 rounded border-l-4 border-purple-500">
-                    <h4 class="font-semibold text-purple-800 mb-2">Test Success</h4>
-                    <ul class="text-sm text-purple-700 space-y-1">
-                        <li>🔍 Read problems twice before starting</li>
-                        <li>⭐ Mark key words (all, some, always, never)</li>
-                        <li>🤔 If stuck, ask "Is this deductive or inductive?"</li>
-                        <li>✅ Always double-check your final answer makes sense</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div class="mt-6 p-4 bg-coral-50 border border-coral-200 rounded">
-            <h4 class="font-semibold text-coral-800 mb-2 flex items-center gap-2">
-                <i data-lucide="star" class="w-4 h-4"></i>
-                Confidence Booster
-            </h4>
-            <p class="text-sm text-coral-700">Remember: Mathematical thinking is a skill you're building, not something you either "get" or don't. Every problem you work through makes you stronger. You've got this! 💪</p>
-        </div>
-    </div>
-
-    <!-- Progress Tracking -->
-    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
-        <div class="card-title-dark math mb-4">
-            <span class="text-white font-semibold flex items-center gap-2">
-                <i data-lucide="target" class="w-5 h-5"></i>
-                Your Progress
-            </span>
-        </div>
-        <div class="space-y-4">
-            <div class="flex items-center justify-between">
-                <span>Chapter 1 Completion</span>
-                <div class="flex items-center gap-2">
-                    <div class="w-32 h-2 bg-gray-200 rounded-full">
-                        <div id="progress-bar-1" class="h-2 bg-yellow-500 rounded-full transition-all duration-300" style="width: 0%"></div>
-                    </div>
-                    <span id="progress-text-1" class="text-sm text-gray-600">0%</span>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="progress-checklist-1">
-                <!-- Progress items will be added dynamically -->
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-<script>
-    // Initialize chapter content
-    document.addEventListener('DOMContentLoaded', function() {
-        loadChapterContent(1);
-        loadProgress(1);
-        lucide.createIcons();
-    });
+    <title>Chapter 1: Mathematical Thinking - Kristina's Math Tutor</title>
+    <meta name="description" content="Learn mathematical thinking skills for MAT 143 - clear explanations, step-by-step tutorials, and practice questions.">
     
-    // AI Tutor Functions
-    async function askAITutor(chapter) {
-        const question = document.getElementById('ai-question').value;
-        if (!question.trim()) return;
-        
-        const responseDiv = document.getElementById('ai-response');
-        const answerDiv = document.getElementById('ai-answer');
-        
-        responseDiv.classList.remove('hidden');
-        answerDiv.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin inline mr-2"></i>Thinking...';
-        
-        try {
-            const response = await fetch('/api/ai-tutor', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ 
-                    question: question,
-                    chapter: chapter,
-                    context: 'math-tutorial'
-                })
-            });
-            
-            const data = await response.json();
-            answerDiv.innerHTML = data.answer;
-            lucide.createIcons();
-            
-            // Track engagement
-            updateProgress(chapter, 'ai-help-used');
-        } catch (error) {
-            answerDiv.innerHTML = 'Sorry, I had trouble connecting. Please try again in a moment.';
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#faf7f0',
+                        sage: '#9ca986',
+                        coral: '#eb7754',
+                        navy: '#2d3748',
+                        dusty: '#a0aec0',
+                        mathGreen: '#68d391',
+                        englishBlue: '#63b3ed',
+                        warning: '#f56565',
+                        success: '#48bb78'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
         }
-    }
+    </script>
     
-    // Progress tracking
-    function updateProgress(chapter, action) {
-        const progress = getProgress(chapter);
-        progress[action] = true;
-        saveProgress(chapter, progress);
-        updateProgressDisplay(chapter);
-    }
-</script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-cream text-navy font-sans leading-relaxed">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-dusty/20">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-navy">Chapter 1: Mathematical Thinking</h1>
+                        <p class="text-dusty text-sm">MAT 143 - Weeks 1-2</p>
+                    </div>
+                </div>
+                <nav class="flex items-center space-x-4">
+                    <a href="index.html" class="text-coral hover:text-coral/80 font-medium flex items-center">
+                        <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                        Back to Dashboard
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Progress Indicator -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-navy">Chapter Progress</span>
+                    <span class="text-xs bg-mathGreen/20 text-mathGreen px-2 py-1 rounded">Current</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-mathGreen h-2 rounded-full" style="width: 25%"></div>
+                </div>
+                <p class="text-xs text-dusty mt-1">Keep going! You're making great progress.</p>
+            </div>
+        </div>
+
+        <!-- Chapter Overview -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+                <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
+                    <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                    Chapter Overview
+                </h2>
+                <div class="prose prose-sm max-w-none text-dusty">
+                    <p class="mb-4">
+                        This chapter introduces you to mathematical thinking - the foundation for success in quantitative literacy. 
+                        You'll learn how to approach problems systematically, recognize patterns, and think logically about mathematical situations.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Problem-solving strategies</li>
+                                <li>• Pattern recognition</li>
+                                <li>• Logical reasoning</li>
+                                <li>• Mathematical communication</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-coral/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Test Info</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Test 1: Sept 8-12</li>
+                                <li>• Combined with Chapter 13</li>
+                                <li>• Focus on applications</li>
+                                <li>• Use formulas provided</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-sage/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Work through examples step-by-step</li>
+                                <li>• Practice explaining your reasoning</li>
+                                <li>• Connect to real-world situations</li>
+                                <li>• Review regularly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Sections -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                <i data-lucide="book-open" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                Learning Materials
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Problem Solving Strategies -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">1.1 Problem Solving Strategies</h3>
+                        <p class="text-dusty">Learn systematic approaches to tackling mathematical problems</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">The Four-Step Problem Solving Process</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
+                                        <div>
+                                            <h5 class="font-medium text-navy">Understand the Problem</h5>
+                                            <p class="text-sm text-dusty">Read carefully, identify what you know and what you need to find</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
+                                        <div>
+                                            <h5 class="font-medium text-navy">Devise a Plan</h5>
+                                            <p class="text-sm text-dusty">Choose a strategy: draw a picture, make a table, look for patterns</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
+                                        <div>
+                                            <h5 class="font-medium text-navy">Carry Out the Plan</h5>
+                                            <p class="text-sm text-dusty">Execute your strategy step by step, show your work</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
+                                        <div>
+                                            <h5 class="font-medium text-navy">Look Back</h5>
+                                            <p class="text-sm text-dusty">Check your answer, does it make sense?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Example Problem -->
+                        <div class="bg-cream/50 rounded-lg p-4 mb-4">
+                            <h5 class="font-semibold text-navy mb-3 flex items-center">
+                                <i data-lucide="lightbulb" class="w-4 h-4 mr-2 text-coral"></i>
+                                Example: The Parking Lot Problem
+                            </h5>
+                            <p class="text-sm text-dusty mb-3">
+                                "A parking lot has 5 rows with 12 spaces in each row. If 3/4 of the spaces are filled, how many cars are in the parking lot?"
+                            </p>
+                            
+                            <div class="space-y-3 text-sm">
+                                <div class="flex items-start space-x-3">
+                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                                    <div>
+                                        <strong>Understand:</strong> 5 rows, 12 spaces each, 3/4 filled. Find: number of cars.
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                                    <div>
+                                        <strong>Plan:</strong> Find total spaces, then find 3/4 of that number.
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                                    <div>
+                                        <strong>Solve:</strong> 5 × 12 = 60 total spaces. 60 × 3/4 = 60 × 0.75 = 45 cars.
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">4</span>
+                                    <div>
+                                        <strong>Check:</strong> 45 is 3/4 of 60 ✓. Answer makes sense.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Practice Problems -->
+                        <div class="border-t border-dusty/10 pt-6">
+                            <h5 class="font-semibold text-navy mb-4 flex items-center">
+                                <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
+                                Practice Problems
+                            </h5>
+                            
+                            <div class="space-y-4">
+                                <!-- Problem 1 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 1:</p>
+                                    <p class="text-sm text-dusty mb-3">A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour do you need to make 30 cookies?</p>
+                                    
+                                    <button onclick="toggleAnswer('answer1')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer1" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Setup:</strong> 2 cups / 12 cookies = x cups / 30 cookies</p>
+                                            <p><strong>Cross multiply:</strong> 2 × 30 = 12 × x</p>
+                                            <p><strong>Solve:</strong> 60 = 12x, so x = 5</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 5 cups of flour</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Problem 2 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 2:</p>
+                                    <p class="text-sm text-dusty mb-3">Look at this pattern: 2, 4, 8, 16, ___. What comes next and why?</p>
+                                    
+                                    <button onclick="toggleAnswer('answer2')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer2" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Pattern:</strong> Each number doubles the previous number</p>
+                                            <p><strong>Reasoning:</strong> 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 32 (because 16 × 2 = 32)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Reference -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
+                            <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
+                            Quick Reference & Formulas
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Problem Solving Strategies</h4>
+                                <ul class="text-sm text-dusty space-y-1">
+                                    <li>• Work backwards</li>
+                                    <li>• Make an organized list</li>
+                                    <li>• Draw a diagram</li>
+                                    <li>• Look for patterns</li>
+                                    <li>• Guess and check</li>
+                                    <li>• Solve a simpler problem</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Key Concepts</h4>
+                                <ul class="text-sm text-dusty space-y-1">
+                                    <li>• Inductive reasoning (patterns → conclusions)</li>
+                                    <li>• Deductive reasoning (facts → conclusions)</li>
+                                    <li>• Estimation and approximation</li>
+                                    <li>• Mathematical communication</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-dusty/20">
+            <a href="index.html" class="flex items-center text-coral hover:text-coral/80 font-medium">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to Dashboard
+            </a>
+            
+            <div class="flex space-x-4">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                    Formula Sheet
+                </a>
+                <a href="chapter-13.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
+                    Next: Chapter 13
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-8 px-4 bg-navy/5 border-t border-dusty/20">
+        <div class="max-w-6xl mx-auto text-center text-dusty text-sm">
+            <p>Chapter 1: Mathematical Thinking • MAT 143</p>
+            <p class="mt-2">Focus on understanding, not just memorizing</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Toggle answer visibility
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            const button = event.target;
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                button.textContent = 'Hide Solution';
+                button.classList.remove('bg-mathGreen/20', 'text-mathGreen');
+                button.classList.add('bg-dusty/20', 'text-dusty');
+            } else {
+                answer.classList.add('hidden');
+                button.textContent = 'Show Solution';
+                button.classList.remove('bg-dusty/20', 'text-dusty');
+                button.classList.add('bg-mathGreen/20', 'text-mathGreen');
+            }
+        }
+
+        // Enhanced focus management for ADHD
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+            focusableElements.forEach(element => {
+                element.classList.add('focus:ring-2', 'focus:ring-coral/50', 'focus:outline-none');
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

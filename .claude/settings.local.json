@@ -4,7 +4,13 @@
       "Bash(git add:*)",
       "Bash(git push:*)",
       "Bash(git commit:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(for:*)",
+      "Bash(do if [ -f \"$chapter\" ])",
+      "Bash(then echo \"✓ $chapter exists\")",
+      "Bash(else echo \"✗ $chapter missing\")",
+      "Bash(fi)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []

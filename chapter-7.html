@@ -3,456 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 7: Measurement & Conversions - MAT 143 Study Guide</title>
-    <meta name="description" content="Master Chapter 7 of MAT 143: Learn metric system, unit conversions, temperature formulas, and dimensional analysis.">
+    <title>Chapter 7: Conversions - Kristina's Math Tutor</title>
+    <meta name="description" content="Learn unit conversions for MAT 143 - metric system, temperature formulas, and dimensional analysis with clear explanations and step-by-step tutorials.">
     
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="globals.css">
     <script>
         tailwind.config = {
-            content: ["*.html"],
             theme: {
                 extend: {
                     colors: {
-                        black: "#080808", white: "#fafafa",
-                        neutral: {50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"},
-                        coral: {50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"},
-                        pink: {50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"},
-                        yellow: {50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"},
-                        blue: {50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"}
+                        cream: '#faf7f0',
+                        sage: '#9ca986',
+                        coral: '#eb7754',
+                        navy: '#2d3748',
+                        dusty: '#a0aec0',
+                        mathGreen: '#68d391',
+                        englishBlue: '#63b3ed',
+                        warning: '#f56565',
+                        success: '#48bb78'
                     },
-                    fontFamily: {sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]},
-                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
-                    boxShadow: {card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"}
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
     </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-
-<body class="min-h-screen bg-[var(--surface-light)]">
+<body class="bg-cream text-navy font-sans leading-relaxed">
     <!-- Header -->
-    <header class="header-dark">
+    <header class="bg-white shadow-sm border-b border-dusty/20">
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="btn btn-secondary text-[var(--text-light)]">
-                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
-                    Back to Home
-                </a>
-                <div class="text-center">
-                    <h1 class="text-xl font-bold text-[var(--text-light)]">Chapter 7: Measurement & Conversions</h1>
-                    <p class="text-sm text-[var(--text-light)] opacity-90">Metric System & Unit Conversions</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-lg flex items-center justify-center">
+                        <i data-lucide="ruler" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-navy">Chapter 7: Conversions</h1>
+                        <p class="text-dusty text-sm">MAT 143 - Weeks 8-10</p>
+                    </div>
                 </div>
-                <a href="tutor.html" class="btn btn-primary is-math">
-                    <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
-                    Get Help
-                </a>
+                <nav class="flex items-center space-x-4">
+                    <a href="index.html" class="text-coral hover:text-coral/80 font-medium flex items-center">
+                        <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                        Back to Dashboard
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Progress Indicator -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-navy">Chapter Progress</span>
+                    <span class="text-xs bg-dusty/20 text-dusty px-2 py-1 rounded">Upcoming</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-dusty h-2 rounded-full" style="width: 0%"></div>
+                </div>
+                <p class="text-xs text-dusty mt-1">Available Week 8-10</p>
+            </div>
+        </div>
+
         <!-- Chapter Overview -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="ruler" class="w-5 h-5 mr-2"></i>
-                Measurement & Conversions
-            </div>
-            <div class="p-6">
-                <div class="flex items-start gap-4">
-                    <div class="w-16 h-16 rounded-xl bg-[var(--yellow-500)] text-black flex items-center justify-center text-2xl font-bold">7</div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Measurement Systems & Unit Conversions</h2>
-                        <p class="text-[var(--text-muted)] text-lg leading-relaxed">
-                            Navigate between measurement systems with confidence! Master metric conversions, US customary units, and temperature formulas for real-world problem solving.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Essential Formulas -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="calculator" class="w-5 h-5 mr-2"></i>
-                Essential Conversion Formulas
-            </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-6 rounded-xl bg-blue-50 border-2 border-blue-200">
-                        <h4 class="font-bold text-blue-900 text-lg mb-4 flex items-center gap-2">
-                            <i data-lucide="thermometer" class="w-5 h-5"></i>
-                            Temperature Conversions
-                        </h4>
-                        <div class="space-y-3">
-                            <div class="p-3 rounded bg-white">
-                                <p class="text-blue-800 font-mono text-lg">F = (9C/5) + 32</p>
-                                <p class="text-blue-700 text-sm">Celsius to Fahrenheit</p>
-                            </div>
-                            <div class="p-3 rounded bg-white">
-                                <p class="text-blue-800 font-mono text-lg">C = 5(F-32)/9</p>
-                                <p class="text-blue-700 text-sm">Fahrenheit to Celsius</p>
-                            </div>
+        <section class="mb-12">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+                <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
+                    <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                    Chapter Overview
+                </h2>
+                <div class="prose prose-sm max-w-none text-dusty">
+                    <p class="mb-4">
+                        This chapter covers unit conversions between different measurement systems. You'll learn the metric system, dimensional analysis, temperature conversions, and how to convert between US customary and metric units.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Metric system prefixes</li>
+                                <li>• Dimensional analysis</li>
+                                <li>• Temperature conversions</li>
+                                <li>• US to metric conversions</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="p-6 rounded-xl bg-green-50 border-2 border-green-200">
-                        <h4 class="font-bold text-green-900 text-lg mb-4 flex items-center gap-2">
-                            <i data-lucide="ruler" class="w-5 h-5"></i>
-                            Key Unit Conversions
-                        </h4>
-                        <div class="space-y-2 text-green-700 text-sm">
-                            <p><strong>1 inch = 2.54 cm</strong></p>
-                            <p>1 foot ≈ 0.305 m</p>
-                            <p>1 mile ≈ 1.61 km</p>
-                            <p>1 pound ≈ 0.454 kg</p>
-                            <p>1 quart ≈ 0.946 L</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Metric System Tutorial -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="layers" class="w-5 h-5 mr-2"></i>
-                Tutorial: Understanding the Metric System
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="lightbulb" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            Metric Prefixes (Memory Aid: King Henry Died By Drinking Chocolate Milk)
-                        </h5>
-                        <div class="grid md:grid-cols-4 gap-3">
-                            <div class="p-3 rounded bg-red-50 text-center">
-                                <p class="font-bold text-red-900">King</p>
-                                <p class="text-red-700 text-sm">Kilo (k)</p>
-                                <p class="text-red-600 text-xs">1,000</p>
-                            </div>
-                            <div class="p-3 rounded bg-orange-50 text-center">
-                                <p class="font-bold text-orange-900">Henry</p>
-                                <p class="text-orange-700 text-sm">Hecto (h)</p>
-                                <p class="text-orange-600 text-xs">100</p>
-                            </div>
-                            <div class="p-3 rounded bg-yellow-50 text-center">
-                                <p class="font-bold text-yellow-900">Died</p>
-                                <p class="text-yellow-700 text-sm">Deka (da)</p>
-                                <p class="text-yellow-600 text-xs">10</p>
-                            </div>
-                            <div class="p-3 rounded bg-green-50 text-center">
-                                <p class="font-bold text-green-900">By</p>
-                                <p class="text-green-700 text-sm">Base Unit</p>
-                                <p class="text-green-600 text-xs">1</p>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-3 gap-3 mt-3">
-                            <div class="p-3 rounded bg-blue-50 text-center">
-                                <p class="font-bold text-blue-900">Drinking</p>
-                                <p class="text-blue-700 text-sm">Deci (d)</p>
-                                <p class="text-blue-600 text-xs">0.1</p>
-                            </div>
-                            <div class="p-3 rounded bg-purple-50 text-center">
-                                <p class="font-bold text-purple-900">Chocolate</p>
-                                <p class="text-purple-700 text-sm">Centi (c)</p>
-                                <p class="text-purple-600 text-xs">0.01</p>
-                            </div>
-                            <div class="p-3 rounded bg-pink-50 text-center">
-                                <p class="font-bold text-pink-900">Milk</p>
-                                <p class="text-pink-700 text-sm">Milli (m)</p>
-                                <p class="text-pink-600 text-xs">0.001</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-                        <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                            Moving the Decimal Point
-                        </h5>
-                        <div class="space-y-3">
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-green-600">Going to Smaller Units</p>
-                                    <p class="text-green-700 text-sm">Move decimal RIGHT</p>
-                                    <p class="text-green-700 text-sm">5 meters → ? centimeters</p>
-                                    <p class="text-green-700 text-sm">5.00 → 500 cm</p>
-                                </div>
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-red-600">Going to Larger Units</p>
-                                    <p class="text-red-700 text-sm">Move decimal LEFT</p>
-                                    <p class="text-red-700 text-sm">2500 grams → ? kilograms</p>
-                                    <p class="text-red-700 text-sm">2500 → 2.5 kg</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dimensional Analysis Tutorial -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="git-branch" class="w-5 h-5 mr-2"></i>
-                Tutorial: Dimensional Analysis (Unit Cancellation)
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
-                        <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="target" class="w-4 h-4"></i>
-                            The Goal: Make Units Cancel
-                        </h5>
-                        <p class="text-green-800 mb-4">Set up your conversions as fractions so unwanted units cancel out, leaving only the units you want.</p>
                         
-                        <div class="p-4 rounded bg-white border border-green-300">
-                            <h6 class="font-semibold text-green-900 mb-2">Step-by-Step Example: Convert 5 feet to inches</h6>
-                            <div class="space-y-2 text-green-700">
-                                <p><strong>Step 1:</strong> Write what you have: 5 feet</p>
-                                <p><strong>Step 2:</strong> Set up conversion factor: 12 inches/1 foot</p>
-                                <p><strong>Step 3:</strong> Multiply: 5 feet × (12 inches/1 foot)</p>
-                                <p><strong>Step 4:</strong> Cancel units: 5 ~~feet~~ × (12 inches/1 ~~foot~~)</p>
-                                <p><strong>Step 5:</strong> Calculate: 5 × 12 = 60 inches</p>
-                            </div>
+                        <div class="bg-coral/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Test Info</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Test 3: Oct 20-24</li>
+                                <li>• Combined with Chapter 6</li>
+                                <li>• Focus on conversions</li>
+                                <li>• Conversion charts provided</li>
+                            </ul>
                         </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
-                        <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="link" class="w-4 h-4"></i>
-                            Chain Conversions for Complex Problems
-                        </h5>
-                        <div class="p-4 rounded bg-white border border-yellow-300">
-                            <h6 class="font-semibold text-yellow-900 mb-2">Example: Convert 3 miles to centimeters</h6>
-                            <div class="space-y-2 text-yellow-700 text-sm">
-                                <p>3 miles × (1.61 km/1 mile) × (1000 m/1 km) × (100 cm/1 m)</p>
-                                <p>= 3 × 1.61 × 1000 × 100 cm</p>
-                                <p>= 483,000 cm</p>
-                            </div>
+                        
+                        <div class="bg-sage/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Memorize key conversion factors</li>
+                                <li>• Practice unit cancellation</li>
+                                <li>• Use dimensional analysis method</li>
+                                <li>• Check final units make sense</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Temperature Conversion Tutorial -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="thermometer" class="w-5 h-5 mr-2"></i>
-                Tutorial: Temperature Conversions
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="p-4 rounded-xl bg-red-50 border border-red-200">
-                            <h5 class="font-semibold text-red-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                                Celsius to Fahrenheit
+        <!-- Learning Sections -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                <i data-lucide="book-open" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                Learning Materials
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Metric System -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">7.1 The Metric System</h3>
+                        <p class="text-dusty">Understanding metric prefixes and basic units</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">Metric Prefixes (Memory Aid: King Henry Died By Drinking Chocolate Milk)</h4>
+                            <div class="bg-mathGreen/10 rounded-lg p-4 mb-4">
+                                <div class="grid grid-cols-7 gap-2 text-xs text-center">
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">King</p>
+                                        <p class="text-dusty">Kilo (k)</p>
+                                        <p class="text-mathGreen">1,000</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">Henry</p>
+                                        <p class="text-dusty">Hecto (h)</p>
+                                        <p class="text-mathGreen">100</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">Died</p>
+                                        <p class="text-dusty">Deka (da)</p>
+                                        <p class="text-mathGreen">10</p>
+                                    </div>
+                                    <div class="bg-cream p-2 rounded border-2 border-mathGreen">
+                                        <p class="font-bold text-navy">By</p>
+                                        <p class="text-dusty">Base</p>
+                                        <p class="text-mathGreen">1</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">Drinking</p>
+                                        <p class="text-dusty">Deci (d)</p>
+                                        <p class="text-mathGreen">0.1</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">Chocolate</p>
+                                        <p class="text-dusty">Centi (c)</p>
+                                        <p class="text-mathGreen">0.01</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-navy">Milk</p>
+                                        <p class="text-dusty">Milli (m)</p>
+                                        <p class="text-mathGreen">0.001</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Base Units</h5>
+                                    <div class="text-sm space-y-1">
+                                        <p><strong>Length:</strong> meter (m)</p>
+                                        <p><strong>Mass:</strong> gram (g)</p>
+                                        <p><strong>Volume:</strong> liter (L)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Example Conversions</h5>
+                                    <div class="bg-cream/50 rounded p-3 text-sm">
+                                        <div class="space-y-1 text-xs">
+                                            <p>2.5 km = 2,500 m</p>
+                                            <p>750 cm = 7.5 m</p>
+                                            <p>3,000 mg = 3 g</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Practice Problems -->
+                        <div class="border-t border-dusty/10 pt-6">
+                            <h5 class="font-semibold text-navy mb-4 flex items-center">
+                                <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
+                                Practice Problems
                             </h5>
-                            <div class="space-y-3">
-                                <p class="text-red-800 font-mono text-lg">F = (9C/5) + 32</p>
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-red-900">Example: Convert 25°C to °F</p>
-                                    <div class="text-red-700 text-sm space-y-1">
+                            
+                            <div class="space-y-4">
+                                <!-- Problem 1 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 1:</p>
+                                    <p class="text-sm text-dusty mb-3">Convert 2.5 kilometers to meters.</p>
+                                    
+                                    <button onclick="toggleAnswer('answer7')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer7" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Conversion factor:</strong> 1 km = 1,000 m</p>
+                                            <p><strong>Setup:</strong> 2.5 km × (1,000 m / 1 km)</p>
+                                            <p><strong>Calculate:</strong> 2.5 × 1,000 = 2,500</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 2,500 meters</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Problem 2 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 2:</p>
+                                    <p class="text-sm text-dusty mb-3">A recipe calls for 2 cups of milk, but you only have a 500 mL measuring cup. How many times do you need to fill the cup? (1 cup = 237 mL)</p>
+                                    
+                                    <button onclick="toggleAnswer('answer8')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer8" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Convert cups to mL:</strong> 2 cups × 237 mL/cup = 474 mL</p>
+                                            <p><strong>Divide by cup size:</strong> 474 mL ÷ 500 mL = 0.948</p>
+                                            <p><strong>Round up:</strong> Since you can't fill less than a full cup</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> Fill the cup once (you'll have extra)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dimensional Analysis -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">7.2 Dimensional Analysis</h3>
+                        <p class="text-dusty">The unit cancellation method for conversions</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">The Goal: Make Units Cancel</h4>
+                            <div class="bg-coral/10 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-navy mb-2">
+                                    <strong>Set up conversion factors as fractions so unwanted units cancel out</strong>
+                                </p>
+                                <p class="text-xs text-dusty">
+                                    The key is putting the unit you want to cancel in both numerator and denominator
+                                </p>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Step-by-Step Process</h5>
+                                    <div class="text-sm space-y-2">
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">1</span>
+                                            <span>Write what you have</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">2</span>
+                                            <span>Set up conversion factor</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">3</span>
+                                            <span>Cancel matching units</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">4</span>
+                                            <span>Calculate the answer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Example: 5 feet to inches</h5>
+                                    <div class="bg-cream/50 rounded p-3 text-sm">
+                                        <div class="space-y-1 text-xs">
+                                            <p><strong>Setup:</strong> 5 feet × (12 inches/1 foot)</p>
+                                            <p><strong>Cancel:</strong> 5 ~~feet~~ × (12 inches/1 ~~foot~~)</p>
+                                            <p><strong>Calculate:</strong> 5 × 12 = 60 inches</p>
+                                            <p class="text-mathGreen"><strong>Answer:</strong> 60 inches</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Temperature Conversions -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">7.3 Temperature Conversions</h3>
+                        <p class="text-dusty">Converting between Celsius and Fahrenheit</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">Temperature Formulas</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-warning/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Celsius to Fahrenheit</h5>
+                                    <p class="text-lg font-mono text-center mb-2">F = (9C/5) + 32</p>
+                                    <div class="text-sm bg-white p-3 rounded">
+                                        <p><strong>Example:</strong> 25°C to °F</p>
                                         <p>F = (9 × 25)/5 + 32</p>
-                                        <p>F = 225/5 + 32</p>
-                                        <p>F = 45 + 32 = 77°F</p>
+                                        <p>F = 225/5 + 32 = 45 + 32</p>
+                                        <p class="text-mathGreen"><strong>Answer:</strong> 77°F</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-                            <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="arrow-left" class="w-4 h-4"></i>
-                                Fahrenheit to Celsius
-                            </h5>
-                            <div class="space-y-3">
-                                <p class="text-blue-800 font-mono text-lg">C = 5(F-32)/9</p>
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-blue-900">Example: Convert 86°F to °C</p>
-                                    <div class="text-blue-700 text-sm space-y-1">
+                                
+                                <div class="bg-englishBlue/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Fahrenheit to Celsius</h5>
+                                    <p class="text-lg font-mono text-center mb-2">C = 5(F-32)/9</p>
+                                    <div class="text-sm bg-white p-3 rounded">
+                                        <p><strong>Example:</strong> 86°F to °C</p>
                                         <p>C = 5(86-32)/9</p>
-                                        <p>C = 5(54)/9</p>
-                                        <p>C = 270/9 = 30°C</p>
+                                        <p>C = 5(54)/9 = 270/9</p>
+                                        <p class="text-mathGreen"><strong>Answer:</strong> 30°C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 bg-sage/10 rounded-lg p-4">
+                                <h5 class="font-medium text-navy mb-2">Temperature Reference Points</h5>
+                                <div class="grid md:grid-cols-3 gap-3 text-center text-sm">
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-englishBlue">Water Freezes</p>
+                                        <p>0°C = 32°F</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-success">Room Temperature</p>
+                                        <p>20°C = 68°F</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-bold text-warning">Water Boils</p>
+                                        <p>100°C = 212°F</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="brain" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Temperature Reference Points
-                        </h5>
-                        <div class="grid md:grid-cols-3 gap-3">
-                            <div class="p-3 rounded bg-blue-100 text-center">
-                                <p class="font-bold text-blue-900">Water Freezes</p>
-                                <p class="text-blue-700">0°C = 32°F</p>
-                            </div>
-                            <div class="p-3 rounded bg-green-100 text-center">
-                                <p class="font-bold text-green-900">Room Temperature</p>
-                                <p class="text-green-700">20°C = 68°F</p>
-                            </div>
-                            <div class="p-3 rounded bg-red-100 text-center">
-                                <p class="font-bold text-red-900">Water Boils</p>
-                                <p class="text-red-700">100°C = 212°F</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Practice Problems -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
-                Practice Problems
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="ruler" class="w-4 h-4 text-blue-600"></i>
-                            Problem 1: Metric Conversion
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            Convert 2.5 kilometers to meters using dimensional analysis.
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Set up the conversion:</strong> 2.5 km × (1000 m/1 km)</p>
-                                    <p><strong>Cancel units:</strong> 2.5 ~~km~~ × (1000 m/1 ~~km~~)</p>
-                                    <p><strong>Calculate:</strong> 2.5 × 1000 = 2,500 m</p>
-                                    <p><strong>Answer:</strong> 2,500 meters</p>
+                <!-- US to Metric -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">7.4 US to Metric Conversions</h3>
+                        <p class="text-dusty">Converting between measurement systems</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">Key Conversion Factors</h4>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="bg-success/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Length</h5>
+                                    <div class="text-sm space-y-1">
+                                        <p><strong>1 inch = 2.54 cm</strong></p>
+                                        <p>1 foot ≈ 0.305 m</p>
+                                        <p>1 mile ≈ 1.61 km</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-coral/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Weight/Mass</h5>
+                                    <div class="text-sm space-y-1">
+                                        <p><strong>1 pound ≈ 0.454 kg</strong></p>
+                                        <p>1 ounce ≈ 28.35 g</p>
+                                        <p>1 ton = 907 kg</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-sage/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Volume</h5>
+                                    <div class="text-sm space-y-1">
+                                        <p><strong>1 quart ≈ 0.946 L</strong></p>
+                                        <p>1 gallon ≈ 3.78 L</p>
+                                        <p>1 fluid oz ≈ 29.6 mL</p>
+                                    </div>
                                 </div>
                             </div>
-                        </details>
-                    </div>
-
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="thermometer" class="w-4 h-4 text-red-600"></i>
-                            Problem 2: Temperature Conversion
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            The temperature outside is 15°C. What is this temperature in Fahrenheit?
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Use formula:</strong> F = (9C/5) + 32</p>
-                                    <p><strong>Substitute:</strong> F = (9 × 15)/5 + 32</p>
-                                    <p><strong>Calculate:</strong> F = 135/5 + 32 = 27 + 32</p>
-                                    <p><strong>Answer:</strong> 59°F</p>
+                            
+                            <div class="mt-4 bg-cream/50 rounded-lg p-4">
+                                <h5 class="font-medium text-navy mb-2">Chain Conversion Example</h5>
+                                <div class="text-sm">
+                                    <p><strong>Convert 3 miles to centimeters:</strong></p>
+                                    <p class="font-mono text-xs mt-2">3 miles × (1.61 km/1 mile) × (1000 m/1 km) × (100 cm/1 m)</p>
+                                    <p class="font-mono text-xs">= 3 × 1.61 × 1000 × 100 = 483,000 cm</p>
                                 </div>
                             </div>
-                        </details>
-                    </div>
-
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="git-branch" class="w-4 h-4 text-purple-600"></i>
-                            Problem 3: Chain Conversion
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            Convert 50 inches to centimeters. (Use: 1 inch = 2.54 cm)
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Set up conversion:</strong> 50 inches × (2.54 cm/1 inch)</p>
-                                    <p><strong>Cancel units:</strong> 50 ~~inches~~ × (2.54 cm/1 ~~inch~~)</p>
-                                    <p><strong>Calculate:</strong> 50 × 2.54 = 127 cm</p>
-                                    <p><strong>Answer:</strong> 127 centimeters</p>
-                                </div>
-                            </div>
-                        </details>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Common Conversions Reference -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="bookmark" class="w-5 h-5 mr-2"></i>
-                Quick Reference: Common Conversions
-            </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-blue-50">
-                            <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="ruler" class="w-4 h-4"></i>
-                                Length
-                            </h5>
-                            <div class="text-blue-700 text-sm space-y-1">
-                                <p><strong>1 inch = 2.54 cm</strong></p>
-                                <p>1 foot = 12 inches</p>
-                                <p>1 yard = 3 feet = 36 inches</p>
-                                <p>1 mile = 5,280 feet</p>
-                                <p>1 kilometer = 1,000 meters</p>
-                                <p>1 meter = 100 centimeters</p>
+                <!-- Quick Reference -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
+                            <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
+                            Quick Reference & Formulas
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Temperature Formulas</h4>
+                                <ul class="text-sm text-dusty space-y-2">
+                                    <li class="flex items-center space-x-2">
+                                        <span class="font-mono bg-warning/10 text-warning px-2 py-1 rounded text-xs">F = (9C/5) + 32</span>
+                                        <span>C to F</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <span class="font-mono bg-englishBlue/10 text-englishBlue px-2 py-1 rounded text-xs">C = 5(F-32)/9</span>
+                                        <span>F to C</span>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-
-                        <div class="p-4 rounded-xl bg-green-50">
-                            <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="scale" class="w-4 h-4"></i>
-                                Weight/Mass
-                            </h5>
-                            <div class="text-green-700 text-sm space-y-1">
-                                <p><strong>1 pound ≈ 0.454 kg</strong></p>
-                                <p>1 ounce = 1/16 pound</p>
-                                <p>1 ton = 2,000 pounds</p>
-                                <p>1 kilogram = 1,000 grams</p>
-                                <p>1 gram = 1,000 milligrams</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-yellow-50">
-                            <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="droplet" class="w-4 h-4"></i>
-                                Volume
-                            </h5>
-                            <div class="text-yellow-700 text-sm space-y-1">
-                                <p>1 gallon = 4 quarts</p>
-                                <p>1 quart = 2 pints</p>
-                                <p>1 pint = 2 cups</p>
-                                <p>1 cup = 8 fluid ounces</p>
-                                <p>1 liter = 1,000 milliliters</p>
-                                <p><strong>1 quart ≈ 0.946 L</strong></p>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-xl bg-red-50">
-                            <h5 class="font-semibold text-red-900 mb-3 flex items-center gap-2">
-                                <i data-lucide="thermometer" class="w-4 h-4"></i>
-                                Temperature
-                            </h5>
-                            <div class="text-red-700 text-sm space-y-1">
-                                <p>Water freezes: 0°C = 32°F</p>
-                                <p>Room temp: 20°C = 68°F</p>
-                                <p>Body temp: 37°C = 98.6°F</p>
-                                <p>Water boils: 100°C = 212°F</p>
+                            
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Key Conversions</h4>
+                                <ul class="text-sm text-dusty space-y-1">
+                                    <li>• 1 inch = 2.54 cm (exact)</li>
+                                    <li>• 1 pound ≈ 0.454 kg</li>
+                                    <li>• 1 quart ≈ 0.946 L</li>
+                                    <li>• Metric prefixes: K-H-D-B-D-C-M</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -460,111 +461,70 @@
             </div>
         </section>
 
-        <!-- ADHD Study Tips -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
-                ADHD-Friendly Study Tips
+        <!-- Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-dusty/20">
+            <a href="chapter-6.html" class="flex items-center text-coral hover:text-coral/80 font-medium">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Previous: Chapter 6
+            </a>
+            
+            <div class="flex space-x-4">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                    Formula Sheet
+                </a>
+                <a href="chapter-10.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
+                    Next: Chapter 10
+                </a>
             </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="repeat" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            Memory Strategies
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Remember: "King Henry Died By Drinking Chocolate Milk"</li>
-                            <li>• Use the key conversion: 1 inch = 2.54 cm (memorize this!)</li>
-                            <li>• Temperature: Celsius water freezes at 0, boils at 100</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="target" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Problem-Solving Steps
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Write what you have and what you want</li>
-                            <li>• Set up fractions so units cancel</li>
-                            <li>• Double-check your final units</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="eye" class="w-4 h-4 text-[var(--blue-500)]"></i>
-                            Visual Learning
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Draw arrows showing unit cancellation</li>
-                            <li>• Use different colors for different units</li>
-                            <li>• Make conversion factor cards for practice</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="clock" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Practice Routine
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Start with metric-only conversions</li>
-                            <li>• Then practice temperature conversions</li>
-                            <li>• Finally, try US-metric conversions</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Actions -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="rocket" class="w-5 h-5 mr-2"></i>
-                Ready to Practice?
-            </div>
-            <div class="p-6">
-                <div class="flex flex-wrap gap-4">
-                    <a href="tutor.html" class="btn btn-primary is-math">
-                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
-                        Ask AI Tutor
-                    </a>
-                    <a href="calendar.html" class="btn btn-secondary">
-                        <i data-lucide="calendar" class="w-4 h-4 mr-2 text-black"></i>
-                        Study Schedule
-                    </a>
-                    <a href="index.html#chapters" class="btn btn-secondary">
-                        <i data-lucide="layers" class="w-4 h-4 mr-2 text-black"></i>
-                        All Chapters
-                    </a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer-dark mt-12">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
-            <p class="text-[var(--text-light)] mb-2">Chapter 7 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
-            <div class="flex justify-center gap-4 text-sm">
-                <a href="chapter-6.html" class="text-[var(--yellow-500)] hover:underline">
-                    <i data-lucide="arrow-left" class="w-4 h-4 inline mr-1"></i>
-                    Previous: Chapter 6
-                </a>
-                <a href="index.html" class="text-[var(--yellow-500)] hover:underline">Back to Dashboard</a>
-                <a href="chapter-10.html" class="text-[var(--yellow-500)] hover:underline">
-                    Next: Chapter 10
-                    <i data-lucide="arrow-right" class="w-4 h-4 inline ml-1"></i>
-                </a>
-            </div>
+    <footer class="mt-16 py-8 px-4 bg-navy/5 border-t border-dusty/20">
+        <div class="max-w-6xl mx-auto text-center text-dusty text-sm">
+            <p>Chapter 7: Conversions • MAT 143</p>
+            <p class="mt-2">Converting between measurement systems</p>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide icons
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
+        lucide.createIcons();
+        
+        // Toggle answer visibility
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            const button = event.target;
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                button.textContent = 'Hide Solution';
+                button.classList.remove('bg-mathGreen/20', 'text-mathGreen');
+                button.classList.add('bg-dusty/20', 'text-dusty');
+            } else {
+                answer.classList.add('hidden');
+                button.textContent = 'Show Solution';
+                button.classList.remove('bg-dusty/20', 'text-dusty');
+                button.classList.add('bg-mathGreen/20', 'text-mathGreen');
             }
+        }
+
+        // Enhanced focus management for ADHD
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+            focusableElements.forEach(element => {
+                element.classList.add('focus:ring-2', 'focus:ring-coral/50', 'focus:outline-none');
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
         });
     </script>
 </body>

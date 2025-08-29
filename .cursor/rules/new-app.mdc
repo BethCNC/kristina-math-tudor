@@ -1,0 +1,109 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+Cursor AI Rules to Redesign Kristina's Academic Success Dashboard
+Objectives
+
+Rebuild the website from scratch focusing solely on the course syllabus and pacing guide for MAT 143 (Quantitative Literacy) and ENG 111 (Writing & Inquiry).
+
+Simplify by removing all outdated or unused code, links and scripts. The new app should be lean, accessible and aligned with the new retro color palette.
+
+Ensure the app provides clear deadlines and study guidance using the course pacing information.
+
+Steps
+
+Explore and Identify Relevant Materials
+
+Use the GitHub connector to fetch and read all course-related HTML files in BethCNC/kristina-math-tudor. Pay special attention to:
+
+chapter-*.html files for math chapters.
+
+english_materials.html and other english/*.html files for writing course content.
+
+calendar.html or calendar_study_system.html for existing pacing information.
+
+Any *_syllabus* or pacing files if they exist.
+
+Extract key information:
+
+Course start/end dates and durations.
+
+Weekly pacing (e.g., “Week 1: Chapter 1, Essay 1 drafts”, etc.).
+
+Assignment names, due dates and test dates.
+
+Remove Irrelevant Code
+
+Delete or ignore any files that do not contribute to the core functions (e.g., outdated prototypes, unused scripts, placeholder pages).
+
+Consolidate duplicated components; e.g., multiple calendar implementations or multiple math page templates. Choose the most complete version and discard the rest.
+
+Define the New Information Architecture
+
+Home/Dashboard: Overview of both courses, upcoming deadlines, progress bars.
+
+Calendar: A calendar view showing due dates and pacing derived from the syllabus. Allow filtering by course and urgency.
+
+Math Tutor: A section for each chapter with:
+
+Concise overview.
+
+Step-by-step tutorials.
+
+Formula sheet and practice questions.
+
+Writing Coach: A section for each essay assignment with:
+
+Requirements and rubric.
+
+Writing guides and checklists.
+
+Resources: Central location for formula lookup, writing resources and external links if needed.
+
+Implement New Design System
+
+Replace the old Tailwind config with a new one based on the retro color palette provided. Define semantic colors for surfaces, text, math accent (green), English accent (blue), warning (red) and success (green).
+
+Define font weights (regular, medium, semi-bold, bold) and ensure clear hierarchy.
+
+Use CSS custom properties or Tailwind’s extend section to manage colors and shadows.
+
+Ensure high contrast for text against background surfaces.
+
+Create the Calendar & Pacing Guide
+
+Build a simplified calendar using plain HTML and minimal JavaScript or frameworks.
+
+Populate it with due dates and weekly topics extracted from the syllabus.
+
+Use color coding: red for urgent deadlines (within 48 hours), orange/yellow for upcoming tasks, green for completed items.
+
+Provide toggles for week and month views and filters for each class.
+
+Enhance Usability for ADHD
+
+Break content into digestible sections with headings, lists and collapsible panels.
+
+Avoid unnecessary animations; if any dynamic content is used, ensure the user can pause or hide it.
+
+Keep navigation consistent across pages with persistent menus or breadcrumbs.
+
+Use reminders or notifications to highlight imminent deadlines.
+
+Testing and Validation
+
+After implementing the new layout and design, verify that all links and interactive elements work.
+
+Use accessibility checkers (e.g., WebAIM contrast checker) to ensure color combinations meet WCAG 2.1 AA contrast ratios.
+
+Test the user flow from home page to specific content pages and ensure that the pacing guide and deadlines align with the course syllabus.
+
+Notes
+
+Avoid adding features that are not directly related to course content or pacing until the core functionality is fully working.
+
+If the syllabus or pacing information is missing or incomplete, prompt the user to upload it or provide details so the calendar can be accurately generated.
+
+Write clear commit messages when modifying the repository to maintain traceability.

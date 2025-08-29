@@ -3,510 +3,452 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 5: Linear & Exponential Functions - MAT 143 Study Guide</title>
-    <meta name="description" content="Master Chapter 5 of MAT 143: Learn linear and exponential functions, slopes, growth patterns, and real-world modeling.">
+    <title>Chapter 5: Functions - Kristina's Math Tutor</title>
+    <meta name="description" content="Learn functions and graphing for MAT 143 - clear explanations, step-by-step tutorials, and practice questions.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
-    
-    <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    
-    <!-- Microsoft Tiles -->
-    <meta name="msapplication-TileColor" content="#eb7754">
-    <meta name="msapplication-TileImage" content="/mstile-70x70.png">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
-    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="globals.css">
     <script>
         tailwind.config = {
-            content: ["*.html"],
             theme: {
                 extend: {
                     colors: {
-                        black: "#080808", white: "#fafafa",
-                        neutral: {50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"},
-                        coral: {50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"},
-                        pink: {50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"},
-                        yellow: {50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"},
-                        blue: {50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"}
+                        cream: '#faf7f0',
+                        sage: '#9ca986',
+                        coral: '#eb7754',
+                        navy: '#2d3748',
+                        dusty: '#a0aec0',
+                        mathGreen: '#68d391',
+                        englishBlue: '#63b3ed',
+                        warning: '#f56565',
+                        success: '#48bb78'
                     },
-                    fontFamily: {sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]},
-                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
-                    boxShadow: {card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"}
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
     </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-
-<body class="min-h-screen bg-[var(--surface-light)]">
+<body class="bg-cream text-navy font-sans leading-relaxed">
     <!-- Header -->
-    <header class="header-dark">
+    <header class="bg-white shadow-sm border-b border-dusty/20">
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="btn btn-secondary text-[var(--text-light)]">
-                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
-                    Back to Home
-                </a>
-                <div class="text-center">
-                    <h1 class="text-xl font-bold text-[var(--text-light)]">Chapter 5: Linear & Exponential Functions</h1>
-                    <p class="text-sm text-[var(--text-light)] opacity-90">Growth Patterns & Mathematical Modeling</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-lg flex items-center justify-center">
+                        <i data-lucide="function-square" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-navy">Chapter 5: Functions</h1>
+                        <p class="text-dusty text-sm">MAT 143 - Weeks 5-6</p>
+                    </div>
                 </div>
-                <a href="tutor.html" class="btn btn-primary is-math">
-                    <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
-                    Get Help
-                </a>
+                <nav class="flex items-center space-x-4">
+                    <a href="index.html" class="text-coral hover:text-coral/80 font-medium flex items-center">
+                        <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                        Back to Dashboard
+                    </a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Progress Indicator -->
+        <div class="mb-8">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-navy">Chapter Progress</span>
+                    <span class="text-xs bg-dusty/20 text-dusty px-2 py-1 rounded">Upcoming</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div class="bg-dusty h-2 rounded-full" style="width: 0%"></div>
+                </div>
+                <p class="text-xs text-dusty mt-1">Available Week 5-6</p>
+            </div>
+        </div>
+
         <!-- Chapter Overview -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
-                Linear & Exponential Functions
-            </div>
-            <div class="p-6">
-                <div class="flex items-start gap-4">
-                    <div class="w-16 h-16 rounded-xl bg-[var(--yellow-500)] text-black flex items-center justify-center text-2xl font-bold">5</div>
-                    <div>
-                        <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Functions & Growth Patterns</h2>
-                        <p class="text-[var(--text-muted)] text-lg leading-relaxed">
-                            Discover the power of mathematical modeling! Learn how linear and exponential functions help us understand and predict real-world patterns from business growth to population changes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Essential Formulas -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="calculator" class="w-5 h-5 mr-2"></i>
-                Essential Formulas
-            </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-6 rounded-xl bg-blue-50 border-2 border-blue-200">
-                        <h4 class="font-bold text-blue-900 text-lg mb-3 flex items-center gap-2">
-                            <i data-lucide="trending-up" class="w-5 h-5"></i>
-                            Linear Functions
-                        </h4>
-                        <div class="space-y-3">
-                            <p class="text-blue-800 font-mono text-xl">y = mx + b</p>
-                            <div class="text-blue-700 text-sm space-y-1">
-                                <p><strong>m</strong> = slope (rate of change)</p>
-                                <p><strong>b</strong> = y-intercept (starting value)</p>
-                                <p><strong>Slope formula:</strong> m = (y₂-y₁)/(x₂-x₁)</p>
-                            </div>
+        <section class="mb-12">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+                <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
+                    <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                    Chapter Overview
+                </h2>
+                <div class="prose prose-sm max-w-none text-dusty">
+                    <p class="mb-4">
+                        This chapter introduces functions, function notation, and graphing. You'll learn to understand relationships between variables, interpret graphs, and work with linear and exponential functions in real-world contexts.
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Function notation f(x)</li>
+                                <li>• Graphing functions</li>
+                                <li>• Linear functions</li>
+                                <li>• Exponential functions</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="p-6 rounded-xl bg-green-50 border-2 border-green-200">
-                        <h4 class="font-bold text-green-900 text-lg mb-3 flex items-center gap-2">
-                            <i data-lucide="zap" class="w-5 h-5"></i>
-                            Exponential Functions
-                        </h4>
-                        <div class="space-y-3">
-                            <p class="text-green-800 font-mono text-xl">y = a(b)ˣ</p>
-                            <div class="text-green-700 text-sm space-y-1">
-                                <p><strong>a</strong> = initial value</p>
-                                <p><strong>b</strong> = growth/decay factor</p>
-                                <p><strong>Growth:</strong> b > 1, <strong>Decay:</strong> 0 < b < 1</p>
-                            </div>
+                        
+                        <div class="bg-coral/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Test Info</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Test 2: Sept 29-Oct 3</li>
+                                <li>• Combined with Chapter 4</li>
+                                <li>• Focus on graphing</li>
+                                <li>• Calculator allowed</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-sage/10 rounded-lg p-4">
+                            <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
+                            <ul class="text-sm space-y-1">
+                                <li>• Practice reading graphs</li>
+                                <li>• Understand function notation</li>
+                                <li>• Connect to real situations</li>
+                                <li>• Draw your own graphs</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Interactive Tutorial: Linear Functions -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
-                Tutorial: Linear Functions
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="lightbulb" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            What Makes a Function Linear?
-                        </h5>
-                        <p class="text-[var(--text-muted)] mb-3">Linear functions have a <strong>constant rate of change</strong>. This means for every step right, you move the same amount up or down.</p>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div class="p-3 rounded bg-blue-50">
-                                <p class="text-blue-800 font-semibold">Example: Your Job</p>
-                                <p class="text-blue-700 text-sm">You earn $15/hour → y = 15x</p>
-                                <p class="text-blue-700 text-sm">Every hour, you earn exactly $15 more</p>
-                            </div>
-                            <div class="p-3 rounded bg-green-50">
-                                <p class="text-green-800 font-semibold">Visual Pattern</p>
-                                <p class="text-green-700 text-sm">Points on a line: (1,15), (2,30), (3,45)</p>
-                                <p class="text-green-700 text-sm">Always goes up by 15 for each +1 in x</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
-                        <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="target" class="w-4 h-4"></i>
-                            Understanding Slope (m)
-                        </h5>
-                        <div class="space-y-3">
-                            <p class="text-yellow-800"><strong>Slope = Rise/Run = Change in y / Change in x</strong></p>
-                            <div class="grid md:grid-cols-3 gap-3">
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-green-600">Positive Slope</p>
-                                    <p class="text-sm text-green-700">Line goes up → m > 0</p>
-                                </div>
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-red-600">Negative Slope</p>
-                                    <p class="text-sm text-red-700">Line goes down → m < 0</p>
-                                </div>
-                                <div class="p-3 rounded bg-white">
-                                    <p class="font-semibold text-[var(--text-muted)]">Zero Slope</p>
-                                    <p class="text-sm text-[var(--text-muted)]">Flat line → m = 0</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Understanding Y-Intercept (b)
-                        </h5>
-                        <p class="text-[var(--text-muted)] mb-3">The y-intercept is where your line crosses the y-axis (when x = 0). It's your <strong>starting value</strong>.</p>
-                        <div class="p-3 rounded bg-blue-50">
-                            <p class="text-blue-800 font-semibold">Real Example: Cell Phone Plan</p>
-                            <p class="text-blue-700">y = 0.10x + 25</p>
-                            <p class="text-blue-700 text-sm">• $25 base fee (b = 25) - what you pay even with 0 minutes</p>
-                            <p class="text-blue-700 text-sm">• $0.10 per minute (m = 0.10) - how much each minute costs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Tutorial: Exponential Functions -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="zap" class="w-5 h-5 mr-2"></i>
-                Tutorial: Exponential Functions
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
-                        <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="trending-up" class="w-4 h-4"></i>
-                            What Makes a Function Exponential?
-                        </h5>
-                        <p class="text-green-800 mb-3">Exponential functions have a <strong>constant percent change</strong>. The amount of change gets bigger as the values get bigger.</p>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div class="p-3 rounded bg-white">
-                                <p class="text-green-800 font-semibold">Example: Population Growth</p>
-                                <p class="text-green-700 text-sm">Population doubles every year</p>
-                                <p class="text-green-700 text-sm">100 → 200 → 400 → 800</p>
-                            </div>
-                            <div class="p-3 rounded bg-white">
-                                <p class="text-green-800 font-semibold">Growth Factor</p>
-                                <p class="text-green-700 text-sm">Doubling = multiply by 2</p>
-                                <p class="text-green-700 text-sm">So b = 2 in y = a(2)ˣ</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="calculator" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            Converting Percent to Growth Factor
-                        </h5>
-                        <div class="space-y-3">
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="p-3 rounded bg-green-50">
-                                    <p class="font-semibold text-green-900">Growth (Increase)</p>
-                                    <p class="text-green-700">5% growth → b = 1 + 0.05 = 1.05</p>
-                                    <p class="text-green-700">20% growth → b = 1 + 0.20 = 1.20</p>
-                                </div>
-                                <div class="p-3 rounded bg-red-50">
-                                    <p class="font-semibold text-red-900">Decay (Decrease)</p>
-                                    <p class="text-red-700">3% decay → b = 1 - 0.03 = 0.97</p>
-                                    <p class="text-red-700">15% decay → b = 1 - 0.15 = 0.85</p>
-                                </div>
-                            </div>
-                            <div class="p-3 rounded bg-blue-50 border border-blue-200">
-                                <p class="text-blue-800 font-semibold">Memory Trick:</p>
-                                <p class="text-blue-700">Growth factors > 1 make things bigger, factors < 1 make things smaller!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Practice Problems -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
-                Practice Problems
-            </div>
-            <div class="p-6">
-                <div class="space-y-6">
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="trending-up" class="w-4 h-4 text-blue-600"></i>
-                            Problem 1: Linear Function
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            A gym membership costs $30 per month plus a $50 enrollment fee. Write a linear function for total cost after x months.
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Identify the parts:</strong></p>
-                                    <p>• Monthly cost = $30 per month (this is the slope, m = 30)</p>
-                                    <p>• Enrollment fee = $50 one-time (this is the y-intercept, b = 50)</p>
-                                    <p><strong>Formula:</strong> y = mx + b</p>
-                                    <p><strong>Answer:</strong> y = 30x + 50</p>
-                                    <p class="text-sm italic">After 6 months: y = 30(6) + 50 = $230 total</p>
-                                </div>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="zap" class="w-4 h-4 text-green-600"></i>
-                            Problem 2: Exponential Function
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            A bacteria population starts at 100 and triples every hour. Write an exponential function for population after x hours.
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Identify the parts:</strong></p>
-                                    <p>• Starting population = 100 (this is a = 100)</p>
-                                    <p>• Triples every hour = multiply by 3 (this is b = 3)</p>
-                                    <p><strong>Formula:</strong> y = a(b)ˣ</p>
-                                    <p><strong>Answer:</strong> y = 100(3)ˣ</p>
-                                    <p class="text-sm italic">After 3 hours: y = 100(3)³ = 100(27) = 2,700 bacteria</p>
-                                </div>
-                            </div>
-                        </details>
-                    </div>
-
-                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
-                            <i data-lucide="calculator" class="w-4 h-4 text-purple-600"></i>
-                            Problem 3: Finding Slope
-                        </h4>
-                        <p class="text-[var(--text-muted)] mb-3">
-                            Find the slope of the line passing through points (2, 5) and (6, 17).
-                        </p>
-                        <details class="mt-2">
-                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
-                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
-                                <div class="text-green-800 space-y-2">
-                                    <p><strong>Use slope formula:</strong> m = (y₂ - y₁)/(x₂ - x₁)</p>
-                                    <p><strong>Points:</strong> (x₁, y₁) = (2, 5) and (x₂, y₂) = (6, 17)</p>
-                                    <p><strong>Substitute:</strong> m = (17 - 5)/(6 - 2) = 12/4 = 3</p>
-                                    <p><strong>Answer:</strong> The slope is 3</p>
-                                    <p class="text-sm italic">This means for every 1 unit right, the line goes up 3 units</p>
-                                </div>
-                            </div>
-                        </details>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Differences -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="git-compare" class="w-5 h-5 mr-2"></i>
-                Linear vs Exponential: Key Differences
-            </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-                        <h4 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="trending-up" class="w-4 h-4"></i>
-                            Linear Functions
-                        </h4>
-                        <ul class="text-blue-800 text-sm space-y-2">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Constant rate of change (same amount each step)</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Forms a straight line when graphed</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Examples: hourly pay, phone bills, distance over time</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Growth by addition: +5, +5, +5...</span>
-                            </li>
-                        </ul>
+        <!-- Learning Sections -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                <i data-lucide="book-open" class="w-6 h-6 mr-3 text-mathGreen"></i>
+                Learning Materials
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Function Basics -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">5.1 Function Basics</h3>
+                        <p class="text-dusty">Understanding functions and function notation</p>
                     </div>
                     
-                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
-                        <h4 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
-                            <i data-lucide="zap" class="w-4 h-4"></i>
-                            Exponential Functions
-                        </h4>
-                        <ul class="text-green-800 text-sm space-y-2">
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Constant percent change (same ratio each step)</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Forms a curved line when graphed</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Examples: population growth, compound interest, viral spread</span>
-                            </li>
-                            <li class="flex items-start gap-2">
-                                <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
-                                <span>Growth by multiplication: ×2, ×2, ×2...</span>
-                            </li>
-                        </ul>
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">What is a Function?</h4>
+                            <div class="bg-mathGreen/10 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-navy mb-2">
+                                    <strong>A function is a relationship where each input has exactly one output.</strong>
+                                </p>
+                                <p class="text-xs text-dusty">
+                                    Think of it like a machine: you put something in, and you get exactly one thing out.
+                                </p>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Function Notation</h5>
+                                    <div class="text-sm space-y-2">
+                                        <div class="bg-cream/50 rounded p-3">
+                                            <p class="font-mono text-lg">f(x) = 2x + 3</p>
+                                            <p class="text-xs text-dusty mt-1">
+                                                "f of x equals 2x plus 3"
+                                            </p>
+                                        </div>
+                                        <div class="space-y-1 text-xs">
+                                            <p><strong>f</strong> = name of the function</p>
+                                            <p><strong>x</strong> = input value</p>
+                                            <p><strong>f(x)</strong> = output value</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Example</h5>
+                                    <div class="bg-cream/50 rounded p-3 text-sm">
+                                        <p class="mb-2"><strong>If f(x) = 2x + 3, find f(5)</strong></p>
+                                        <div class="space-y-1 text-xs">
+                                            <p><strong>Step 1:</strong> Replace x with 5</p>
+                                            <p><strong>Step 2:</strong> f(5) = 2(5) + 3</p>
+                                            <p><strong>Step 3:</strong> f(5) = 10 + 3 = 13</p>
+                                            <p class="text-mathGreen"><strong>Answer:</strong> f(5) = 13</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Practice Problems -->
+                        <div class="border-t border-dusty/10 pt-6">
+                            <h5 class="font-semibold text-navy mb-4 flex items-center">
+                                <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
+                                Practice Problems
+                            </h5>
+                            
+                            <div class="space-y-4">
+                                <!-- Problem 1 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 1:</p>
+                                    <p class="text-sm text-dusty mb-3">If f(x) = 3x - 7, find f(4).</p>
+                                    
+                                    <button onclick="toggleAnswer('answer3')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer3" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Replace x with 4:</strong> f(4) = 3(4) - 7</p>
+                                            <p><strong>Calculate:</strong> f(4) = 12 - 7</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> f(4) = 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Problem 2 -->
+                                <div class="bg-cream/30 rounded-lg p-4">
+                                    <p class="text-sm font-medium text-navy mb-2">Problem 2:</p>
+                                    <p class="text-sm text-dusty mb-3">A rental car company charges $30 per day plus $0.25 per mile. Write a linear function C(m) for the total cost based on miles driven m.</p>
+                                    
+                                    <button onclick="toggleAnswer('answer4')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
+                                        Show Solution
+                                    </button>
+                                    
+                                    <div id="answer4" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                        <div class="text-xs space-y-1">
+                                            <p><strong>Identify parts:</strong> Base cost = $30, Cost per mile = $0.25</p>
+                                            <p><strong>Linear function form:</strong> f(x) = mx + b</p>
+                                            <p><strong>Set up function:</strong> C(m) = 0.25m + 30</p>
+                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> C(m) = 0.25m + 30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linear Functions -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">5.2 Linear Functions</h3>
+                        <p class="text-dusty">Understanding linear relationships and graphing lines</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">Linear Function Form</h4>
+                            <div class="bg-coral/10 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-navy mb-2">
+                                    <strong>f(x) = mx + b</strong>
+                                </p>
+                                <div class="text-xs text-dusty space-y-1">
+                                    <p><strong>m</strong> = slope (how steep the line is)</p>
+                                    <p><strong>b</strong> = y-intercept (where line crosses y-axis)</p>
+                                    <p><strong>f(x)</strong> = y-value (output)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Understanding Slope</h5>
+                                    <div class="space-y-2 text-sm">
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-success/20 text-success rounded flex items-center justify-center text-xs font-bold">+</span>
+                                            <span>Positive slope: line goes up</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-warning/20 text-warning rounded flex items-center justify-center text-xs font-bold">−</span>
+                                            <span>Negative slope: line goes down</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="w-6 h-6 bg-dusty/20 text-dusty rounded flex items-center justify-center text-xs font-bold">0</span>
+                                            <span>Zero slope: horizontal line</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-3">
+                                    <h5 class="font-medium text-navy">Real-World Example</h5>
+                                    <div class="bg-cream/50 rounded p-3 text-sm">
+                                        <p class="mb-2"><strong>Phone Bill:</strong> f(x) = 0.10x + 25</p>
+                                        <div class="text-xs space-y-1">
+                                            <p>x = minutes used</p>
+                                            <p>0.10 = cost per minute (slope)</p>
+                                            <p>25 = base monthly fee (y-intercept)</p>
+                                            <p class="text-mathGreen">If you use 100 minutes: f(100) = $35</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exponential Functions -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6 border-b border-dusty/10">
+                        <h3 class="text-xl font-semibold text-navy mb-2">5.3 Exponential Functions</h3>
+                        <p class="text-dusty">Understanding rapid growth and decay patterns</p>
+                    </div>
+                    
+                    <div class="p-6">
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-navy mb-3">Exponential Function Form</h4>
+                            <div class="bg-sage/10 rounded-lg p-4 mb-4">
+                                <p class="text-sm text-navy mb-2">
+                                    <strong>f(x) = a(b)^x</strong>
+                                </p>
+                                <div class="text-xs text-dusty space-y-1">
+                                    <p><strong>a</strong> = initial value (starting amount)</p>
+                                    <p><strong>b</strong> = growth factor</p>
+                                    <p><strong>x</strong> = time periods</p>
+                                    <p>If b > 1: growth, if 0 < b < 1: decay</p>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-success/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Growth Example</h5>
+                                    <p class="text-sm mb-2">Population doubles every year</p>
+                                    <p class="text-xs font-mono bg-white p-2 rounded">f(x) = 100(2)^x</p>
+                                    <div class="text-xs text-dusty mt-2 space-y-1">
+                                        <p>Year 0: f(0) = 100</p>
+                                        <p>Year 1: f(1) = 200</p>
+                                        <p>Year 2: f(2) = 400</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-warning/10 rounded-lg p-4">
+                                    <h5 class="font-medium text-navy mb-2">Decay Example</h5>
+                                    <p class="text-sm mb-2">Car value loses 20% per year</p>
+                                    <p class="text-xs font-mono bg-white p-2 rounded">f(x) = 20000(0.8)^x</p>
+                                    <div class="text-xs text-dusty mt-2 space-y-1">
+                                        <p>Year 0: f(0) = $20,000</p>
+                                        <p>Year 1: f(1) = $16,000</p>
+                                        <p>Year 2: f(2) = $12,800</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Reference -->
+                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
+                            <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
+                            Quick Reference & Formulas
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Key Formulas</h4>
+                                <ul class="text-sm text-dusty space-y-2">
+                                    <li class="flex items-center space-x-2">
+                                        <span class="font-mono bg-mathGreen/10 text-mathGreen px-2 py-1 rounded text-xs">f(x) = mx + b</span>
+                                        <span>Linear function</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <span class="font-mono bg-coral/10 text-coral px-2 py-1 rounded text-xs">f(x) = a(b)^x</span>
+                                        <span>Exponential function</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <span class="font-mono bg-sage/10 text-sage px-2 py-1 rounded text-xs">m = (y₂-y₁)/(x₂-x₁)</span>
+                                        <span>Slope formula</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-navy mb-3">Key Concepts</h4>
+                                <ul class="text-sm text-dusty space-y-1">
+                                    <li>• Functions show input-output relationships</li>
+                                    <li>• Linear functions have constant rate of change</li>
+                                    <li>• Exponential functions have constant percent change</li>
+                                    <li>• Graphs help visualize function behavior</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ADHD Study Tips -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
-                ADHD-Friendly Study Tips
+        <!-- Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-dusty/20">
+            <a href="chapter-4.html" class="flex items-center text-coral hover:text-coral/80 font-medium">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Previous: Chapter 4
+            </a>
+            
+            <div class="flex space-x-4">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                    Formula Sheet
+                </a>
+                <a href="chapter-6.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
+                    Next: Chapter 6
+                </a>
             </div>
-            <div class="p-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="eye" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            Visual Learning
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Draw graphs to see the difference between linear and exponential</li>
-                            <li>• Use different colors for slope and y-intercept</li>
-                            <li>• Create real-world scenarios you can visualize</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="repeat" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Practice Patterns
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Start with simple numbers (like 2, 3, 5)</li>
-                            <li>• Practice the same type of problem 3-4 times</li>
-                            <li>• Use the same formula format each time</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="book-open" class="w-4 h-4 text-[var(--blue-500)]"></i>
-                            Memory Aids
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Linear = "Line" (straight)</li>
-                            <li>• Exponential = "Explosion" (rapid growth)</li>
-                            <li>• m for "Move" (slope), b for "Beginning" (y-intercept)</li>
-                        </ul>
-                    </div>
-                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
-                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
-                            <i data-lucide="clock" class="w-4 h-4 text-[var(--coral-500)]"></i>
-                            Time Management
-                        </h4>
-                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
-                            <li>• Study one function type per session</li>
-                            <li>• Take 5-minute breaks between problem sets</li>
-                            <li>• Review formulas before starting problems</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Actions -->
-        <section class="card p-0">
-            <div class="card-title-dark math">
-                <i data-lucide="rocket" class="w-5 h-5 mr-2"></i>
-                Ready to Practice?
-            </div>
-            <div class="p-6">
-                <div class="flex flex-wrap gap-4">
-                    <a href="tutor.html" class="btn btn-primary is-math">
-                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
-                        Ask AI Tutor
-                    </a>
-                    <a href="calendar.html" class="btn btn-secondary">
-                        <i data-lucide="calendar" class="w-4 h-4 mr-2 text-black"></i>
-                        Study Schedule
-                    </a>
-                    <a href="index.html#chapters" class="btn btn-secondary">
-                        <i data-lucide="layers" class="w-4 h-4 mr-2 text-black"></i>
-                        All Chapters
-                    </a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer-dark mt-12">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
-            <p class="text-[var(--text-light)] mb-2">Chapter 5 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
-            <div class="flex justify-center gap-4 text-sm">
-                <a href="chapter-4.html" class="text-[var(--yellow-500)] hover:underline">
-                    <i data-lucide="arrow-left" class="w-4 h-4 inline mr-1"></i>
-                    Previous: Chapter 4
-                </a>
-                <a href="index.html" class="text-[var(--yellow-500)] hover:underline">Back to Dashboard</a>
-                <a href="chapter-6.html" class="text-[var(--yellow-500)] hover:underline">
-                    Next: Chapter 6
-                    <i data-lucide="arrow-right" class="w-4 h-4 inline ml-1"></i>
-                </a>
-            </div>
+    <footer class="mt-16 py-8 px-4 bg-navy/5 border-t border-dusty/20">
+        <div class="max-w-6xl mx-auto text-center text-dusty text-sm">
+            <p>Chapter 5: Functions • MAT 143</p>
+            <p class="mt-2">Understanding mathematical relationships</p>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide icons
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
+        lucide.createIcons();
+        
+        // Toggle answer visibility
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            const button = event.target;
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                button.textContent = 'Hide Solution';
+                button.classList.remove('bg-mathGreen/20', 'text-mathGreen');
+                button.classList.add('bg-dusty/20', 'text-dusty');
+            } else {
+                answer.classList.add('hidden');
+                button.textContent = 'Show Solution';
+                button.classList.remove('bg-dusty/20', 'text-dusty');
+                button.classList.add('bg-mathGreen/20', 'text-mathGreen');
             }
+        }
+
+        // Enhanced focus management for ADHD
+        document.addEventListener('DOMContentLoaded', function() {
+            const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+            focusableElements.forEach(element => {
+                element.classList.add('focus:ring-2', 'focus:ring-coral/50', 'focus:outline-none');
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
         });
     </script>
 </body>
