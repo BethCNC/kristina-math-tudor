@@ -3,546 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENG 111 Writing Coach - Your Personal Writing Assistant</title>
-    <meta name="description" content="Get personalized help with ENG 111 writing assignments, essays, and academic success. Designed for ADHD-friendly learning.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
-    
-    <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    
-    <!-- Microsoft Tiles -->
-    <meta name="msapplication-TileColor" content="#eb7754">
-    <meta name="msapplication-TileImage" content="/mstile-70x70.png">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="globals.css">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    <script>
-        tailwind.config = {
-            content: ["*.html"],
-            theme: {
-                extend: {
-                    colors: {
-                        black: "#080808",
-                        white: "#fafafa",
-                        neutral: {
-                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
-                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
-                        },
-                        coral: {
-                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
-                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
-                        },
-                        pink: {
-                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
-                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
-                        },
-                        yellow: {
-                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
-                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
-                        },
-                        blue: {
-                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
-                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
-                        }
-                    },
-                    fontFamily: {
-                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
-                    },
-                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
-                    boxShadow: {
-                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
-                    }
-                }
-            }
-        }
-    </script>
+    <title>ENG 111 Writing Coach - Complete Tutorial System</title>
+    <link rel="stylesheet" href="design-system.css">
 </head>
+<body class="bg-lightest-neutral">
 
-<body class="bg-[var(--surface-light)] text-[var(--text-dark)]">
-    <div class="header-dark">
-        <div class="max-w-6xl mx-auto px-4">
-            <a href="index.html" class="inline-flex items-center gap-2 text-[var(--text-light)] font-medium mb-4 hover:underline opacity-90">
-                <i data-lucide="arrow-left" class="w-4 h-4"></i>
-                Back to Dashboard
-            </a>
-            <h1 class="text-3xl font-bold text-[var(--text-light)] mb-2 flex items-center gap-2">
+<header class="header-dark">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-white flex items-center gap-2">
                 <i data-lucide="pen-tool" class="w-8 h-8"></i>
                 ENG 111 Writing Coach
             </h1>
-            <p class="text-[var(--text-light)] opacity-90">Your ADHD-friendly writing assistant for essays, discussions, and academic success</p>
+            <nav>
+                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Dashboard</a>
+            </nav>
         </div>
     </div>
-    
-    <div class="max-w-6xl mx-auto p-4">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="card english-card">
-                <div class="card-title-dark english mb-4 flex items-center gap-2">
-                    <i data-lucide="zap" class="w-5 h-5"></i>
-                    Quick Actions
-                </div>
-                <div class="space-y-3 mb-8">
-                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('help with critical reading discussion')">
-                        <i data-lucide="book-open" class="w-4 h-4"></i>
-                        Discussion Help
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Navigation -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <nav class="flex flex-wrap gap-4 text-sm">
+            <a href="#critical-reading" class="btn-secondary">Critical Reading</a>
+            <a href="#essay-types" class="btn-secondary">Essay Types</a>
+            <a href="#writing-process" class="btn-secondary">Writing Process</a>
+            <a href="#citations" class="btn-secondary">Citations & Plagiarism</a>
+            <a href="#ai-coach" class="btn-secondary">AI Writing Coach</a>
+        </nav>
+    </div>
+
+    <!-- AI Writing Coach -->
+    <div id="ai-coach" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark writing mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                Your Personal Writing Coach
+            </span>
+        </div>
+        <div class="space-y-4">
+            <p class="text-gray-600">Get instant help with any writing challenge!</p>
+            <div class="border border-gray-200 rounded-lg p-4">
+                <textarea 
+                    id="writing-question" 
+                    placeholder="Ask about anything: 'Help me brainstorm ideas for my compare/contrast essay' or 'How do I write a strong thesis statement?' or 'I'm stuck on my introduction...'"
+                    class="w-full h-32 p-3 border border-gray-300 rounded resize-none focus:border-blue-500 focus:outline-none"
+                ></textarea>
+                <div class="flex gap-3 mt-3">
+                    <button onclick="askWritingCoach()" class="btn btn-primary is-writing">
+                        <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+                        Get Writing Help
                     </button>
-                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('how to write compare contrast essay')">
-                        <i data-lucide="pen-tool" class="w-4 h-4"></i>
-                        Essay Writing
+                    <button onclick="brainstormIdeas()" class="btn btn-secondary">
+                        <i data-lucide="lightbulb" class="w-4 h-4 mr-2"></i>
+                        Brainstorm Ideas
                     </button>
-                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('plagiarism help')">
-                        <i data-lucide="search" class="w-4 h-4"></i>
-                        Citation Help
+                    <button onclick="checkGrammar()" class="btn btn-secondary">
+                        <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i>
+                        Grammar Check
                     </button>
-                    <button class="btn btn-primary w-full flex items-center gap-2" onclick="askQuestion('understanding assignment')">
-                        <i data-lucide="help-circle" class="w-4 h-4"></i>
-                        Assignment Help
-                    </button>
-                </div>
-                
-                <div class="card-title-dark english mb-4 flex items-center gap-2">
-                    <i data-lucide="calendar" class="w-5 h-5"></i>
-                    Current Assignments
-                </div>
-                <div class="space-y-3">
-                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--urgent-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('critical reading discussion adam grant')">
-                        <strong class="block mb-1 flex items-center gap-2">
-                            <i data-lucide="alert-circle" class="w-4 h-4 text-[var(--urgent-accent)]"></i>
-                            Week 1: Critical Reading Discussion
-                        </strong>
-                        <div class="text-sm text-[var(--urgent-accent)] font-semibold">DUE: Tomorrow (8/22)</div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--yellow-500)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('eva syllabus quiz')">
-                        <strong class="block mb-1 flex items-center gap-2">
-                            <i data-lucide="clock" class="w-4 h-4 text-[var(--yellow-500)]"></i>
-                            EVA Syllabus Quiz
-                        </strong>
-                        <div class="text-sm text-[var(--yellow-500)] font-semibold">DUE: This Week</div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--english-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('week 2 plagiarism citations')">
-                        <strong class="block mb-1 flex items-center gap-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-[var(--english-accent)]"></i>
-                            Week 2: Plagiarism & Citations
-                        </strong>
-                        <div class="text-sm text-[var(--text-muted)]">Coming Up</div>
-                    </div>
-                    <div class="p-4 rounded-lg bg-[var(--surface-muted)] border-l-4 border-[var(--english-accent)] cursor-pointer hover:bg-[var(--english-accent)] transition-colors" onclick="askQuestion('compare contrast essay')">
-                        <strong class="block mb-1 flex items-center gap-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-[var(--english-accent)]"></i>
-                            Week 3: Compare/Contrast Essay
-                        </strong>
-                        <div class="text-sm text-[var(--text-muted)]">Future Assignment</div>
-                    </div>
                 </div>
             </div>
-            
-            <div class="md:col-span-2 card english-card">
-                <div class="card-title-dark english mb-4 flex items-center gap-2">
-                    <i data-lucide="message-circle" class="w-5 h-5"></i>
-                    Chat with Your Writing Coach
-                </div>
-                
-                <div class="h-96 overflow-y-auto p-4" id="chatMessages">
-                    <div class="text-center text-[var(--text-muted)] p-8">
-                        <h3 class="text-xl font-semibold mb-3 text-[var(--english-accent)] flex items-center justify-center gap-2">
-                            <i data-lucide="heart" class="w-6 h-6"></i>
-                            Welcome to your ENG 111 Writing Coach!
-                        </h3>
-                        <p class="mb-6">I'm here to help you succeed in writing! I break down complex assignments into simple steps, help you understand what your professor wants, and guide you through each part of the writing process.</p>
-                        <div class="space-y-2">
-                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('What is the main point of Adam Grant article?')">
-                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
-                                "What is the main point of the Adam Grant article?"
-                            </div>
-                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('How do I structure my discussion post?')">
-                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
-                                "How do I structure my discussion post?"
-                            </div>
-                            <div class="p-3 rounded-lg bg-[var(--english-accent)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--surface-dark)] hover:text-[var(--text-light)] transition-colors text-left flex items-center gap-2" onclick="askQuestion('What does a works cited look like?')">
-                                <i data-lucide="lightbulb" class="w-4 h-4"></i>
-                                "What does a Works Cited look like?"
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="p-4 border-t border-[var(--border)] bg-[var(--surface-muted)]">
-                    <div class="flex gap-3">
-                        <input type="text" id="messageInput" placeholder="Ask me anything about ENG 111..." onkeypress="handleKeyPress(event)" class="flex-1 p-3 border-2 border-[var(--english-accent)] rounded-lg focus:outline-none focus:border-[var(--surface-dark)] bg-white">
-                        <button class="btn btn-primary flex items-center gap-2" onclick="sendMessage()" id="sendBtn">
-                            <i data-lucide="send" class="w-4 h-4"></i>
-                            Send
-                        </button>
-                    </div>
-                </div>
+            <div id="writing-response" class="hidden mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                <h5 class="font-semibold text-blue-800 mb-2 flex items-center gap-2">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    Your Writing Coach Says:
+                </h5>
+                <div id="writing-answer" class="text-blue-700"></div>
             </div>
         </div>
     </div>
 
-    <script>
-        // Initialize Lucide icons
+    <!-- Essay Progress Tracker -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark writing mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="target" class="w-5 h-5"></i>
+                Your Essay Progress
+            </span>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4" id="essay-progress">
+            <!-- Essay progress cards will be generated here -->
+        </div>
+    </div>
+
+</main>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', function() {
+        generateEssayProgress();
         lucide.createIcons();
+    });
+
+    function generateEssayProgress() {
+        const essays = [
+            { type: 'critical-reading', title: 'Critical Reading Discussion', dueDate: 'Week 1' },
+            { type: 'compare-contrast', title: 'Compare/Contrast Essay', dueDate: 'Week 4' },
+            { type: 'cause-effect', title: 'Cause & Effect Essay', dueDate: 'Week 6' },
+            { type: 'argument', title: 'Argument Essay', dueDate: 'Week 8' }
+        ];
+
+        const container = document.getElementById('essay-progress');
         
-        let isProcessing = false;
-        
-        function askQuestion(question) {
-            document.getElementById('messageInput').value = question;
-            sendMessage();
+        container.innerHTML = essays.map(essay => `
+            <div class="border border-gray-200 rounded-lg p-4">
+                <h5 class="font-semibold mb-2">${essay.title}</h5>
+                <p class="text-sm text-gray-600 mb-3">Due: ${essay.dueDate}</p>
+                <div class="space-y-2">
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" onchange="updateEssayProgress('${essay.type}', 'brainstorm')" class="rounded">
+                        Brainstorm Ideas
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" onchange="updateEssayProgress('${essay.type}', 'outline')" class="rounded">
+                        Create Outline
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" onchange="updateEssayProgress('${essay.type}', 'rough')" class="rounded">
+                        Rough Draft
+                    </label>
+                    <label class="flex items-center gap-2 text-sm">
+                        <input type="checkbox" onchange="updateEssayProgress('${essay.type}', 'final')" class="rounded">
+                        Final Draft
+                    </label>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function updateEssayProgress(essayType, stage) {
+        if (typeof progressTracker !== 'undefined') {
+            progressTracker.markEssayComplete(essayType, stage);
         }
+    }
+
+    async function askWritingCoach() {
+        const question = document.getElementById('writing-question').value;
+        if (!question.trim()) return;
         
-        function handleKeyPress(event) {
-            if (event.key === 'Enter' && !isProcessing) {
-                sendMessage();
-            }
-        }
+        const responseDiv = document.getElementById('writing-response');
+        const answerDiv = document.getElementById('writing-answer');
         
-        async function sendMessage() {
-            const input = document.getElementById('messageInput');
-            const message = input.value.trim();
-            
-            if (!message || isProcessing) return;
-            
-            // Add user message
-            addMessage(message, 'user');
-            input.value = '';
-            
-            // Show loading
-            isProcessing = true;
-            document.getElementById('sendBtn').disabled = true;
-            showLoading();
-            
-            try {
-                // Get response
-                const response = await generateResponse(message);
-                hideLoading();
-                addMessage(response, 'assistant');
-            } catch (error) {
-                hideLoading();
-                addMessage('Sorry, I encountered an error. Please try again.', 'assistant');
-                console.error('Error:', error);
-            } finally {
-                isProcessing = false;
-                document.getElementById('sendBtn').disabled = false;
-            }
-        }
+        responseDiv.classList.remove('hidden');
+        answerDiv.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin inline mr-2"></i>Thinking about your writing...';
         
-        function addMessage(content, sender) {
-            const messagesContainer = document.getElementById('chatMessages');
+        try {
+            const response = await fetch('/api/ai-tutor', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    question: question,
+                    context: 'writing-help'
+                })
+            });
             
-            // Clear welcome message on first user interaction
-            if (sender === 'user') {
-                const welcomeMessage = messagesContainer.querySelector('.welcome-message');
-                if (welcomeMessage) {
-                    welcomeMessage.remove();
-                }
-            }
-            
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `flex gap-3 ${sender === 'user' ? 'flex-row-reverse' : ''} mb-4`;
-            
-            const avatar = document.createElement('div');
-            avatar.className = `w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${sender === 'user' ? 'bg-[var(--english-accent)] text-[var(--text-dark)]' : 'bg-[var(--surface-muted)] text-[var(--text-dark)]'}`;
-            avatar.innerHTML = sender === 'user' ? '<i data-lucide="user" class="w-5 h-5"></i>' : '<i data-lucide="pen-tool" class="w-5 h-5"></i>';
-            
-            const messageContent = document.createElement('div');
-            messageContent.className = `p-3 rounded-lg max-w-[80%] ${sender === 'user' ? 'bg-[var(--english-accent)] text-[var(--text-dark)]' : 'bg-white border-2 border-[var(--english-accent)]'}`;
-            messageContent.innerHTML = content;
-            
-            messageDiv.appendChild(avatar);
-            messageDiv.appendChild(messageContent);
-            
-            messagesContainer.appendChild(messageDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
-            
-            // Reinitialize icons for new content
+            const data = await response.json();
+            answerDiv.innerHTML = data.answer;
             lucide.createIcons();
-        }
-        
-        function showLoading() {
-            const messagesContainer = document.getElementById('chatMessages');
-            const loadingDiv = document.createElement('div');
-            loadingDiv.className = 'flex gap-3 mb-4';
-            loadingDiv.id = 'loadingMessage';
-            
-            const avatar = document.createElement('div');
-            avatar.className = 'w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 bg-[var(--surface-muted)] text-[var(--text-dark)]';
-            avatar.innerHTML = '<i data-lucide="pen-tool" class="w-5 h-5"></i>';
-            
-            const loadingContent = document.createElement('div');
-            loadingContent.className = 'p-3 rounded-lg bg-white border-2 border-[var(--english-accent)]';
-            loadingContent.innerHTML = `
-                <div class="flex items-center gap-2 text-[var(--text-muted)] italic">
-                    <span>Thinking about your writing...</span>
-                    <div class="flex gap-1">
-                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce"></div>
-                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                        <div class="w-1 h-1 bg-[var(--english-accent)] rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+        } catch (error) {
+            answerDiv.innerHTML = `
+                <div class="space-y-3">
+                    <p><strong>I'm here to help with your writing!</strong> ✍️</p>
+                    <p>While I work on getting connected, here are some quick tips:</p>
+                    <div class="bg-white p-3 rounded border">
+                        <p><strong>For any essay:</strong></p>
+                        <ol class="list-decimal list-inside text-sm mt-2 space-y-1">
+                            <li>Start with brainstorming - write down everything you think of</li>
+                            <li>Organize your ideas into groups</li>
+                            <li>Create a simple outline</li>
+                            <li>Write your first draft without worrying about perfection</li>
+                            <li>Revise and edit after you have something on paper</li>
+                        </ol>
                     </div>
+                    <p class="text-sm text-gray-600">Try asking your question again in a moment!</p>
                 </div>
             `;
-            
-            loadingDiv.appendChild(avatar);
-            loadingDiv.appendChild(loadingContent);
-            messagesContainer.appendChild(loadingDiv);
-            messagesContainer.scrollTop = messagesContainer.scrollHeight;
-            
-            lucide.createIcons();
         }
-        
-        function hideLoading() {
-            const loadingMessage = document.getElementById('loadingMessage');
-            if (loadingMessage) {
-                loadingMessage.remove();
-            }
-        }
-        
-        async function generateResponse(message) {
-            const lowerMessage = message.toLowerCase();
-            
-            // Check if we're in production (has API endpoint)
-            const isProduction = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
-            
-            if (isProduction) {
-                try {
-                    // Use production API
-                    const response = await fetch('/api/english_tutor', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            query: message,
-                            assignment_type: extractAssignmentType(message),
-                            topic: extractTopic(message)
-                        })
-                    });
-                    
-                    const data = await response.json();
-                    
-                    if (data.error) {
-                        return `
-                            <strong>I'm having trouble connecting right now.</strong><br><br>
-                            <em>💡 Try refreshing the page or check back in a few minutes. You can also use the fallback responses below!</em>
-                        `;
-                    }
-                    
-                    return data.response.replace(/\n/g, '<br>');
-                    
-                } catch (error) {
-                    console.error('API Error:', error);
-                    return fallbackResponse(message);
-                }
-            } else {
-                // Use fallback responses for local development
-                return fallbackResponse(message);
-            }
-        }
-        
-        function extractAssignmentType(message) {
-            const lowerMessage = message.toLowerCase();
-            if (lowerMessage.includes('discussion')) return 'discussion';
-            if (lowerMessage.includes('essay')) return 'essay';
-            if (lowerMessage.includes('research')) return 'research';
-            if (lowerMessage.includes('analysis')) return 'analysis';
-            return '';
-        }
-        
-        function extractTopic(message) {
-            const topics = ['adam grant', 'happiness', 'compare', 'contrast', 'citation', 'plagiarism', 'writing process'];
-            const lowerMessage = message.toLowerCase();
-            for (const topic of topics) {
-                if (lowerMessage.includes(topic)) {
-                    return topic;
-                }
-            }
-            return '';
-        }
-        
-        function fallbackResponse(message) {
-            const lowerMessage = message.toLowerCase();
-            
-            // Critical Reading Discussion Help
-            if (lowerMessage.includes('critical reading') || lowerMessage.includes('adam grant') || lowerMessage.includes('discussion')) {
-                return `
-                    <strong>📖 Critical Reading Discussion - Step by Step</strong><br><br>
-                    
-                    <strong>🎯 Your Goal:</strong> Show you understand Adam Grant's article AND share your own thoughts<br><br>
-                    
-                    <strong>📝 Structure for Success:</strong><br>
-                    <strong>1. Main Point (2-3 sentences):</strong><br>
-                    • What is Grant trying to convince you of?<br>
-                    • Don't just repeat the title - dig deeper!<br><br>
-                    
-                    <strong>2. Your Response (3-4 sentences):</strong><br>
-                    • Do you agree or disagree? Why?<br>
-                    • Include ONE quote from the article<br>
-                    • Be specific about which parts you agree/disagree with<br><br>
-                    
-                    <strong>3. Works Cited (try your best):</strong><br>
-                    • Grant, Adam. "Does Trying to Be Happy Make Us Unhappy?" [Publication], [Date].<br>
-                    • Don't stress - the professor said it won't hurt your grade<br><br>
-                    
-                    <strong>🎯 Remember:</strong> Read the article twice! You can't have an opinion if you don't understand it first.
-                `;
-            }
-            
-            // Essay Writing Help
-            else if (lowerMessage.includes('essay') || lowerMessage.includes('compare') || lowerMessage.includes('contrast')) {
-                return `
-                    <strong>📝 Compare/Contrast Essay - ADHD-Friendly Guide</strong><br><br>
-                    
-                    <strong>🧠 Break It Down:</strong><br>
-                    <strong>Week 3:</strong> Rough Draft (first 3 paragraphs only)<br>
-                    <strong>Week 4:</strong> Final Draft (complete essay)<br><br>
-                    
-                    <strong>📖 Structure Made Simple:</strong><br>
-                    <strong>Paragraph 1:</strong> Introduction + Thesis<br>
-                    <strong>Paragraph 2:</strong> Similarities<br>
-                    <strong>Paragraph 3:</strong> Differences<br>
-                    <strong>Paragraph 4:</strong> More differences OR your conclusion<br>
-                    <strong>Paragraph 5:</strong> Conclusion<br><br>
-                    
-                    <strong>💡 Pro Tips:</strong><br>
-                    • Pick two things you actually know about<br>
-                    • Use transition words: "Similarly," "However," "In contrast"<br>
-                    • Don't just list - explain WHY the similarities/differences matter<br><br>
-                    
-                    <strong>🎯 Remember:</strong> You only need 3 paragraphs for the rough draft!
-                `;
-            }
-            
-            // Citation and Plagiarism Help
-            else if (lowerMessage.includes('citation') || lowerMessage.includes('plagiarism') || lowerMessage.includes('works cited')) {
-                return `
-                    <strong>🔍 Citations & Plagiarism - Keep It Simple</strong><br><br>
-                    
-                    <strong>⚠️ What IS Plagiarism:</strong><br>
-                    • Copying someone's words without quotes<br>
-                    • Using someone's ideas without saying where you got them<br>
-                    • Letting AI write your paper<br>
-                    • Turning in work you wrote for another class<br><br>
-                    
-                    <strong>✅ How to Avoid It:</strong><br>
-                    • Put quotes around copied words: "like this"<br>
-                    • Say where ideas came from: "According to Smith..."<br>
-                    • Write your own thoughts in your own words<br><br>
-                    
-                    <strong>📚 Basic MLA Format:</strong><br>
-                    <strong>In your paper:</strong> Grant argues that "happiness is complicated" (Grant 15).<br>
-                    <strong>Works Cited:</strong> Grant, Adam. "Article Title." Website Name, Date.<br><br>
-                    
-                    <strong>💡 Remember:</strong> Your professor wants to see YOUR thinking!
-                `;
-            }
-            
-            // Assignment Understanding
-            else if (lowerMessage.includes('assignment') || lowerMessage.includes('understand') || lowerMessage.includes('confused')) {
-                return `
-                    <strong>❓ Assignment Breakdown - Let's Make This Clear</strong><br><br>
-                    
-                    <strong>🧠 ADHD Strategy:</strong><br>
-                    1. <strong>Read the assignment twice</strong><br>
-                    2. <strong>Highlight key words:</strong> "analyze," "compare," "argue"<br>
-                    3. <strong>Look for requirements:</strong> length, format, due date<br>
-                    4. <strong>Break it into steps</strong><br><br>
-                    
-                    <strong>🔍 Key Words to Watch For:</strong><br>
-                    • <strong>Analyze:</strong> Break it down, explain why<br>
-                    • <strong>Compare:</strong> Show similarities<br>
-                    • <strong>Contrast:</strong> Show differences<br>
-                    • <strong>Argue:</strong> Take a side, defend it<br>
-                    • <strong>Discuss:</strong> Talk about different aspects<br><br>
-                    
-                    <strong>💡 Still Confused?</strong><br>
-                    • Email Professor Meggett: Emmanuel.Meggett@cpcc.edu<br>
-                    • Ask specific questions: "Do you want me to...?"<br>
-                    • Check the rubric if there is one<br><br>
-                    
-                    <strong>🎯 Remember:</strong> It's better to ask than to guess wrong!
-                `;
-            }
-            
-            // General Writing Process
-            else if (lowerMessage.includes('writing process') || lowerMessage.includes('how to write')) {
-                return `
-                    <strong>✍️ Writing Process - ADHD-Friendly Steps</strong><br><br>
-                    
-                    <strong>🧠 Break It Down (Don't Do It All at Once!):</strong><br><br>
-                    
-                    <strong>Day 1: Brainstorm</strong><br>
-                    • Write down everything you know about the topic<br>
-                    • Don't worry about organization yet<br><br>
-                    
-                    <strong>Day 2: Organize</strong><br>
-                    • Group similar ideas together<br>
-                    • Decide what order makes sense<br><br>
-                    
-                    <strong>Day 3: Write Rough Draft</strong><br>
-                    • Just get words on paper<br>
-                    • Don't worry about perfect sentences<br><br>
-                    
-                    <strong>Day 4: Take a Break</strong><br>
-                    • Let your brain rest<br>
-                    • Come back with fresh eyes<br><br>
-                    
-                    <strong>Day 5: Revise</strong><br>
-                    • Fix big problems: missing ideas, confusing parts<br>
-                    • Check: Does this make sense?<br><br>
-                    
-                    <strong>Day 6: Edit</strong><br>
-                    • Fix small problems: spelling, grammar<br>
-                    • Read out loud - your ears catch what your eyes miss<br><br>
-                    
-                    <strong>💡 ADHD Tip:</strong> Set a timer for 25 minutes, work, then take a 5-minute break!
-                `;
-            }
-            
-            // Default response
-            else {
-                return `
-                    <strong>I'm here to help with your ENG 111 success! 📝</strong><br><br>
-                    
-                    <strong>🎯 I can help you with:</strong><br>
-                    • Understanding assignments (break them down step-by-step)<br>
-                    • Writing essays (structure, organization, ideas)<br>
-                    • Discussion posts (what to say, how to say it)<br>
-                    • Citations and plagiarism (keep it simple and honest)<br>
-                    • Reading comprehension (get the main points)<br><br>
-                    
-                    <strong>💡 Try asking:</strong><br>
-                    • "Help me understand the Adam Grant article"<br>
-                    • "How do I start my compare/contrast essay?"<br>
-                    • "What should I include in my discussion post?"<br>
-                    • "How do I cite sources without plagiarizing?"<br><br>
-                    
-                    <strong>🧠 ADHD-Friendly Promise:</strong><br>
-                    I'll break everything down into simple steps, use clear language, and help you succeed one piece at a time!
-                `;
-            }
-        }
-        
-        // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('messageInput').focus();
-            console.log('📝 ENG 111 Writing Coach ready to help!');
-        });
-    </script>
+    }
+</script>
+
 </body>
 </html>

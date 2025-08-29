@@ -91,6 +91,116 @@
 </head>
 
 <body class="min-h-screen">
+    <!-- Weekly Focus Banner -->
+    <section class="bg-gradient-to-r from-coral-500 to-coral-600 text-white py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="calendar-clock" class="w-6 h-6"></i>
+                    <div>
+                        <h3 class="font-bold text-lg">Week of September 9-15, 2025</h3>
+                        <p class="text-coral-100 text-sm">2 assignments due • 1 test approaching</p>
+                    </div>
+                </div>
+                <a href="calendar.html" class="btn bg-white text-coral-600 hover:bg-coral-50 px-4 py-2 text-sm font-semibold">
+                    View Full Calendar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Week Focus -->
+    <section class="bg-white border-b border-gray-200 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">This Week's Focus</h2>
+                <p class="text-gray-600">Key assignments and deadlines to prioritize</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Math Focus -->
+                <div class="border-l-4 border-yellow-500 bg-yellow-50 p-6 rounded-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-yellow-500 text-white rounded-lg flex items-center justify-center">
+                            <i data-lucide="calculator" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">MAT 143</h3>
+                            <p class="text-sm text-gray-600">Quantitative Literacy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded border border-yellow-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-coral-500"></i>
+                                <span class="font-semibold text-coral-600">Due Sunday, Sep 15</span>
+                            </div>
+                            <p class="text-gray-800">Test 1: Chapters 1-4</p>
+                            <p class="text-sm text-gray-600 mt-1">Covers math thinking, proportions, and percentages</p>
+                        </div>
+                        
+                        <div class="bg-white p-3 rounded border border-yellow-200">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i data-lucide="book-open" class="w-4 h-4 text-blue-500"></i>
+                                <span class="font-semibold text-gray-700">Study Focus</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Chapter 4 practice problems & formula review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- English Focus -->
+                <div class="border-l-4 border-blue-500 bg-blue-50 p-6 rounded-lg">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-blue-500 text-white rounded-lg flex items-center justify-center">
+                            <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-900">ENG 111</h3>
+                            <p class="text-sm text-gray-600">Writing & Inquiry</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-white p-4 rounded border border-blue-200">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="alert-triangle" class="w-4 h-4 text-coral-500"></i>
+                                <span class="font-semibold text-coral-600">Due Tomorrow</span>
+                            </div>
+                            <p class="text-gray-800">Critical Reading Discussion</p>
+                            <p class="text-sm text-gray-600 mt-1">Adam Grant article response - 300 words minimum</p>
+                        </div>
+                        
+                        <div class="bg-white p-3 rounded border border-blue-200">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i data-lucide="clipboard-list" class="w-4 h-4 text-green-500"></i>
+                                <span class="font-semibold text-gray-700">This Week</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Complete syllabus quiz & plagiarism module</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Actions -->
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="tutor.html" class="btn btn-primary is-math px-4 py-2 text-sm flex items-center gap-2">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    Review Chapter 4
+                </a>
+                <a href="english_tutor.html" class="btn btn-primary is-writing px-4 py-2 text-sm flex items-center gap-2">
+                    <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                    Start Discussion Post
+                </a>
+                <a href="calendar.html" class="btn btn-ghost px-4 py-2 text-sm flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    View All Deadlines
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Hero Section -->
     <section class="hero-gradient text-white py-20">
         <div class="max-w-6xl mx-auto px-4 text-center">

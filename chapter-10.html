@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Probability - MAT 143 Study Guide</title>
+    <meta name="description" content="Master Chapter 10 of MAT 143: Learn probability calculations, expected value, tree diagrams, and real-world applications.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808", white: "#fafafa",
+                        neutral: {50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"},
+                        coral: {50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"},
+                        pink: {50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"},
+                        yellow: {50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"},
+                        blue: {50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"}
+                    },
+                    fontFamily: {sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]},
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"}
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-[var(--surface-light)]">
+    <!-- Header -->
+    <header class="header-dark">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="btn btn-secondary text-[var(--text-light)]">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                    Back to Home
+                </a>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold text-[var(--text-light)]">Chapter 10: Probability</h1>
+                    <p class="text-sm text-[var(--text-light)] opacity-90">Understanding Chance & Making Better Decisions</p>
+                </div>
+                <a href="tutor.html" class="btn btn-primary is-math">
+                    <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
+                    Get Help
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+        <!-- Chapter Overview -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="dice-6" class="w-5 h-5 mr-2"></i>
+                Probability: Understanding Chance
+            </div>
+            <div class="p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-16 h-16 rounded-xl bg-[var(--yellow-500)] text-black flex items-center justify-center text-2xl font-bold">10</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Probability & Expected Value</h2>
+                        <p class="text-[var(--text-muted)] text-lg leading-relaxed">
+                            Learn to quantify uncertainty and make informed decisions! Master probability calculations, expected values, and risk assessment for real-world situations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Essential Formulas -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="calculator" class="w-5 h-5 mr-2"></i>
+                Essential Probability Formulas
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-xl bg-blue-50 border-2 border-blue-200">
+                        <h4 class="font-bold text-blue-900 text-lg mb-4 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                            Basic Probability
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-blue-800 font-mono text-xl">P(event) = favorable outcomes / total outcomes</p>
+                                <p class="text-blue-700 text-sm">Always between 0 and 1</p>
+                            </div>
+                            <div class="text-blue-700 text-sm space-y-1">
+                                <p><strong>Certain event:</strong> P = 1 (100%)</p>
+                                <p><strong>Impossible event:</strong> P = 0 (0%)</p>
+                                <p><strong>Complement:</strong> P(not A) = 1 - P(A)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-green-50 border-2 border-green-200">
+                        <h4 class="font-bold text-green-900 text-lg mb-4 flex items-center gap-2">
+                            <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+                            Expected Value
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-green-800 font-mono text-xl">E(X) = Σ(x × P(x))</p>
+                                <p class="text-green-700 text-sm">Sum of (outcome × its probability)</p>
+                            </div>
+                            <div class="text-green-700 text-sm space-y-1">
+                                <p><strong>Interpretation:</strong> Long-term average</p>
+                                <p><strong>Use:</strong> Compare different options</p>
+                                <p><strong>Note:</strong> May not be a possible outcome</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Probability Tutorial -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
+                Tutorial: Basic Probability Concepts
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="lightbulb" class="w-4 h-4 text-[var(--yellow-500)]"></i>
+                            What is Probability?
+                        </h5>
+                        <p class="text-[var(--text-muted)] mb-4">Probability measures how likely something is to happen. It's always a number between 0 and 1 (or 0% and 100%).</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="p-3 rounded bg-red-50 text-center">
+                                <p class="font-bold text-red-900">P = 0</p>
+                                <p class="text-red-700 text-sm">Impossible</p>
+                                <p class="text-red-600 text-xs">Rolling a 7 on a standard die</p>
+                            </div>
+                            <div class="p-3 rounded bg-yellow-50 text-center">
+                                <p class="font-bold text-yellow-900">P = 0.5</p>
+                                <p class="text-yellow-700 text-sm">50-50 chance</p>
+                                <p class="text-yellow-600 text-xs">Flipping heads on a coin</p>
+                            </div>
+                            <div class="p-3 rounded bg-green-50 text-center">
+                                <p class="font-bold text-green-900">P = 1</p>
+                                <p class="text-green-700 text-sm">Certain</p>
+                                <p class="text-green-600 text-xs">The sun rising tomorrow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
+                        <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="dice-1" class="w-4 h-4"></i>
+                            Step-by-Step: Calculating Probability
+                        </h5>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded bg-white border border-blue-300">
+                                <h6 class="font-semibold text-blue-900 mb-2">Example: Rolling a die</h6>
+                                <div class="space-y-2 text-blue-700">
+                                    <p><strong>Question:</strong> What's the probability of rolling a 3?</p>
+                                    <p><strong>Step 1:</strong> Count favorable outcomes = 1 (only one way to roll a 3)</p>
+                                    <p><strong>Step 2:</strong> Count total outcomes = 6 (faces 1, 2, 3, 4, 5, 6)</p>
+                                    <p><strong>Step 3:</strong> Calculate: P(3) = 1/6 ≈ 0.167 or 16.7%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
+                        <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="shuffle" class="w-4 h-4"></i>
+                            Complement Rule
+                        </h5>
+                        <p class="text-yellow-800 mb-3">Sometimes it's easier to calculate the probability of something NOT happening, then subtract from 1.</p>
+                        <div class="p-3 rounded bg-white">
+                            <p class="text-yellow-900 font-semibold">Example: At least one head in 3 coin flips</p>
+                            <div class="text-yellow-700 text-sm space-y-1">
+                                <p>P(at least 1 head) = 1 - P(no heads)</p>
+                                <p>P(no heads) = P(all tails) = (1/2)³ = 1/8</p>
+                                <p>P(at least 1 head) = 1 - 1/8 = 7/8 = 0.875</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expected Value Tutorial -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
+                Tutorial: Expected Value
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
+                        <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4"></i>
+                            What is Expected Value?
+                        </h5>
+                        <p class="text-green-800 mb-4">Expected value is the average outcome you'd expect if you repeated an experiment many times. It helps you make decisions by comparing long-term results.</p>
+                        
+                        <div class="p-4 rounded bg-white border border-green-300">
+                            <h6 class="font-semibold text-green-900 mb-2">Formula Breakdown:</h6>
+                            <div class="space-y-2 text-green-700">
+                                <p><strong>E(X) = x₁P(x₁) + x₂P(x₂) + ... + xₙP(xₙ)</strong></p>
+                                <p>Multiply each outcome by its probability, then add them all up</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="calculator" class="w-4 h-4 text-[var(--coral-500)]"></i>
+                            Step-by-Step Example: Lottery Ticket
+                        </h5>
+                        <div class="space-y-3">
+                            <p class="text-[var(--text-muted)]">A $2 lottery ticket has these outcomes:</p>
+                            <div class="grid md:grid-cols-3 gap-3">
+                                <div class="p-3 rounded bg-red-50 text-center">
+                                    <p class="font-bold text-red-900">Win $1000</p>
+                                    <p class="text-red-700 text-sm">P = 1/10,000</p>
+                                </div>
+                                <div class="p-3 rounded bg-yellow-50 text-center">
+                                    <p class="font-bold text-yellow-900">Win $10</p>
+                                    <p class="text-yellow-700 text-sm">P = 50/10,000</p>
+                                </div>
+                                <div class="p-3 rounded bg-blue-50 text-center">
+                                    <p class="font-bold text-blue-900">Win $0</p>
+                                    <p class="text-blue-700 text-sm">P = 9,949/10,000</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded bg-white border">
+                                <p class="font-semibold text-[var(--text-dark)] mb-2">Calculation:</p>
+                                <div class="text-[var(--text-muted)] text-sm space-y-1">
+                                    <p>E(X) = $1000 × (1/10,000) + $10 × (50/10,000) + $0 × (9,949/10,000)</p>
+                                    <p>E(X) = $0.10 + $0.05 + $0 = $0.15</p>
+                                    <p class="font-semibold text-red-600">Expected loss = $2.00 - $0.15 = $1.85 per ticket</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Problems -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
+                Practice Problems
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="heart" class="w-4 h-4 text-red-600"></i>
+                            Problem 1: Card Probability
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            What's the probability of drawing a heart from a standard 52-card deck?
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-2">
+                                    <p><strong>Favorable outcomes:</strong> 13 hearts</p>
+                                    <p><strong>Total outcomes:</strong> 52 cards</p>
+                                    <p><strong>Probability:</strong> P(heart) = 13/52 = 1/4 = 0.25 or 25%</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="dollar-sign" class="w-4 h-4 text-green-600"></i>
+                            Problem 2: Expected Value Game
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            A game costs $3 to play. You win $15 with probability 1/6, win $6 with probability 1/3, or lose your $3 otherwise. What's the expected value?
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-2">
+                                    <p><strong>Net outcomes:</strong> Win $12 (15-3), Win $3 (6-3), Lose $3</p>
+                                    <p><strong>Probabilities:</strong> 1/6, 1/3, 1/2 (since 1 - 1/6 - 1/3 = 1/2)</p>
+                                    <p><strong>Calculate:</strong> E(X) = $12×(1/6) + $3×(1/3) + (-$3)×(1/2)</p>
+                                    <p><strong>E(X) =</strong> $2 + $1 - $1.50 = $1.50</p>
+                                    <p><strong>Result:</strong> Expected gain of $1.50 per game</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="shuffle" class="w-4 h-4 text-purple-600"></i>
+                            Problem 3: Complement Rule
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            In a group of 25 students, what's the probability that at least one student was born on your birthday (ignore leap years)?
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-2">
+                                    <p><strong>Use complement:</strong> P(at least 1) = 1 - P(none)</p>
+                                    <p><strong>P(one student doesn't share):</strong> 364/365</p>
+                                    <p><strong>P(all 25 don't share):</strong> (364/365)²⁵ ≈ 0.9315</p>
+                                    <p><strong>P(at least 1 shares):</strong> 1 - 0.9315 = 0.0685 or 6.85%</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real-World Applications -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="globe" class="w-5 h-5 mr-2"></i>
+                Real-World Applications
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-blue-50">
+                            <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="briefcase" class="w-4 h-4"></i>
+                                Business & Finance
+                            </h5>
+                            <ul class="text-blue-700 text-sm space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Investment risk assessment</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Insurance premium calculations</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Quality control in manufacturing</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Market research and forecasting</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-green-50">
+                            <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="activity" class="w-4 h-4"></i>
+                                Health & Science
+                            </h5>
+                            <ul class="text-green-700 text-sm space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Medical test accuracy</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Drug trial effectiveness</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Weather prediction</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Genetic probability</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-yellow-50">
+                            <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="gamepad-2" class="w-4 h-4"></i>
+                                Gaming & Sports
+                            </h5>
+                            <ul class="text-yellow-700 text-sm space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Casino game analysis</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Sports betting odds</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Fantasy sports strategy</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Video game mechanics</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50">
+                            <h5 class="font-semibold text-purple-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="smartphone" class="w-4 h-4"></i>
+                                Technology
+                            </h5>
+                            <ul class="text-purple-700 text-sm space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Search engine algorithms</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Machine learning models</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Network reliability</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i data-lucide="check" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+                                    <span>Security systems</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADHD Study Tips -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
+                ADHD-Friendly Study Tips
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4 text-[var(--yellow-500)]"></i>
+                            Visualization Techniques
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Draw pictures for each problem scenario</li>
+                            <li>• Use physical objects (coins, cards, dice) to practice</li>
+                            <li>• Create probability trees for complex problems</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="repeat" class="w-4 h-4 text-[var(--coral-500)]"></i>
+                            Memory Strategies
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Remember: 0 ≤ P ≤ 1 always</li>
+                            <li>• Expected value = weighted average</li>
+                            <li>• Complement: "everything else" = 1 - P</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="calculator" class="w-4 h-4 text-[var(--blue-500)]"></i>
+                            Problem-Solving Steps
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Read the problem twice before starting</li>
+                            <li>• Identify what you're looking for first</li>
+                            <li>• List all possible outcomes clearly</li>
+                            <li>• Double-check your fractions and decimals</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-[var(--coral-500)]"></i>
+                            Study Schedule
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Practice basic probability first</li>
+                            <li>• Then add expected value problems</li>
+                            <li>• End with real-world applications</li>
+                            <li>• Take breaks between different concepts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="rocket" class="w-5 h-5 mr-2"></i>
+                Ready to Practice?
+            </div>
+            <div class="p-6">
+                <div class="flex flex-wrap gap-4">
+                    <a href="tutor.html" class="btn btn-primary is-math">
+                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
+                        Ask AI Tutor
+                    </a>
+                    <a href="calendar.html" class="btn btn-secondary">
+                        <i data-lucide="calendar" class="w-4 h-4 mr-2 text-black"></i>
+                        Study Schedule
+                    </a>
+                    <a href="index.html#chapters" class="btn btn-secondary">
+                        <i data-lucide="layers" class="w-4 h-4 mr-2 text-black"></i>
+                        All Chapters
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-dark mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+            <p class="text-[var(--text-light)] mb-2">Chapter 10 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
+            <div class="flex justify-center gap-4 text-sm">
+                <a href="chapter-7.html" class="text-[var(--yellow-500)] hover:underline">
+                    <i data-lucide="arrow-left" class="w-4 h-4 inline mr-1"></i>
+                    Previous: Chapter 7
+                </a>
+                <a href="index.html" class="text-[var(--yellow-500)] hover:underline">Back to Dashboard</a>
+                <a href="chapter-11.html" class="text-[var(--yellow-500)] hover:underline">
+                    Next: Chapter 11
+                    <i data-lucide="arrow-right" class="w-4 h-4 inline ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>

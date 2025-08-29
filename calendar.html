@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="design-system.css">
     <script>
         tailwind.config = {
             content: ["*.html"],
@@ -72,36 +72,146 @@
             }
         }
     </script>
+    
+    <style>
+        .content-area {
+            display: none;
+        }
+        
+        .content-area.active {
+            display: block;
+        }
+        
+        .week-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid transparent;
+        }
+        
+        .week-card.current {
+            border-left-color: #eb7754;
+            background: linear-gradient(to right, #fef3f0, white);
+        }
+        
+        .week-card.urgent {
+            border-left-color: #ef4444;
+        }
+        
+        .week-card.test-week {
+            border-left-color: #8b5cf6;
+            background: linear-gradient(to right, #f8fafc, white);
+        }
+        
+        .test-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .countdown {
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-align: center;
+            margin-top: 1rem;
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .countdown.urgent {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .countdown.completed {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        
+        .btn.active {
+            background: #eb7754;
+            color: white;
+        }
+        
+        .assignment-item {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: #f9fafb;
+            border-radius: 0.375rem;
+            border-left: 3px solid #d1d5db;
+        }
+        
+        .assignment-item.urgent {
+            border-left-color: #ef4444;
+            background: #fef2f2;
+        }
+        
+        .due-date {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    </style>
 </head>
 
-<body class="bg-[var(--surface-light)] text-[var(--text-dark)]">
-    <!-- Header -->
-    <div class="header-dark">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-3xl font-bold text-[var(--text-light)] mb-2">📅 Your Fall 2025 Academic Calendar</h1>
-            <p class="text-[var(--text-light)] opacity-90 mb-4">Complete schedule for MAT 143 Math & ENG 111 Writing - Never miss a deadline!</p>
-            <div class="inline-block bg-[var(--surface-light)] bg-opacity-10 backdrop-blur-sm p-4 rounded-lg text-[var(--text-light)] font-medium" id="current-status">
+<body class="bg-lightest-neutral">
+    <header class="header-dark">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-3xl font-bold text-white flex items-center gap-3">
+                    <i data-lucide="calendar-days" class="w-8 h-8"></i>
+                    Academic Calendar
+                </h1>
+                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Dashboard</a>
+            </div>
+            <p class="text-light-neutral text-lg mb-6">Your complete schedule for MAT 143 Math & ENG 111 Writing</p>
+            <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg text-white font-medium" id="current-status">
                 Loading your current week...
             </div>
         </div>
-    </div>
+    </header>
 
     <!-- Navigation -->
-    <div class="bg-[var(--surface-light)] border-b border-[var(--border)] sticky top-0 z-10">
+    <section class="bg-white border-b border-gray-200 sticky top-0 z-10">
         <div class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex gap-2 justify-center flex-wrap">
-                <a href="index.html" class="btn btn-secondary">← Back to Home</a>
-                <button class="btn btn-primary" onclick="showSection('overview')">📍 This Week</button>
-                <button class="btn btn-ghost" onclick="showSection('math')">🧮 MAT 143 Schedule</button>
-                <button class="btn btn-ghost" onclick="showSection('english')">📝 ENG 111 Schedule</button>
-                <button class="btn btn-ghost" onclick="showSection('tests')">📊 All Tests</button>
+            <div class="flex gap-3 justify-center flex-wrap">
+                <button class="btn btn-primary is-math" onclick="showSection('overview')" id="nav-overview">
+                    <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
+                    This Week
+                </button>
+                <button class="btn btn-secondary" onclick="showSection('math')" id="nav-math">
+                    <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
+                    MAT 143
+                </button>
+                <button class="btn btn-secondary" onclick="showSection('english')" id="nav-english">
+                    <i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>
+                    ENG 111
+                </button>
+                <button class="btn btn-secondary" onclick="showSection('tests')" id="nav-tests">
+                    <i data-lucide="target" class="w-4 h-4 mr-2"></i>
+                    Tests
+                </button>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Week Overview -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- This Week Overview -->
         <div id="overview" class="content-area active">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">This Week's Priorities</h2>
+                <p class="text-gray-600">Focus on these key items to stay on track</p>
+            </div>
             <div id="current-week-content">
                 <!-- Populated by JavaScript -->
             </div>
@@ -109,10 +219,13 @@
 
         <!-- MAT 143 Schedule -->
         <div id="math" class="content-area">
-            <button class="back-btn" onclick="showSection('overview')">
-                <span>←</span> Back to This Week
-            </button>
-            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">🧮 MAT 143 Complete Schedule</h2>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+                    <i data-lucide="calculator" class="w-6 h-6 text-yellow-500"></i>
+                    MAT 143 Schedule
+                </h2>
+                <p class="text-gray-600">16-week semester overview</p>
+            </div>
             <div id="semester-timeline">
                 <!-- Populated by JavaScript -->
             </div>
@@ -120,18 +233,26 @@
 
         <!-- ENG 111 Schedule -->
         <div id="english" class="content-area">
-            <button class="back-btn" onclick="showSection('overview')">
-                <span>←</span> Back to This Week
-            </button>
-            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📝 ENG 111 Complete Schedule</h2>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+                    <i data-lucide="pen-tool" class="w-6 h-6 text-blue-500"></i>
+                    ENG 111 Schedule
+                </h2>
+                <p class="text-gray-600">8-week writing course timeline</p>
+            </div>
             <div class="english-schedule">
-                <div class="course-info">
-                    <div class="info-card bg-[var(--pink-500)] border-2 border-[var(--pink-600)]">
-                        <h3>📚 Course Info</h3>
-                        <p><strong>Duration:</strong> 8 weeks (Aug 18 - Oct 10, 2025)</p>
-                        <p><strong>Instructor:</strong> Emmanuel Meggett</p>
-                        <p><strong>Format:</strong> Online</p>
-                        <p><strong>Withdrawal Deadline:</strong> September 8, 2025</p>
+                <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                    <div class="card-title-dark writing mb-4">
+                        <span class="text-white font-semibold flex items-center gap-2">
+                            <i data-lucide="info" class="w-5 h-5"></i>
+                            Course Information
+                        </span>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                        <div><strong>Duration:</strong> 8 weeks (Aug 18 - Oct 10, 2025)</div>
+                        <div><strong>Instructor:</strong> Emmanuel Meggett</div>
+                        <div><strong>Format:</strong> Online</div>
+                        <div><strong>Withdrawal Deadline:</strong> September 8, 2025</div>
                     </div>
                 </div>
 
@@ -296,10 +417,13 @@
 
         <!-- Test Calendar -->
         <div id="tests" class="content-area">
-            <button class="back-btn" onclick="showSection('overview')">
-                <span>←</span> Back to Overview
-            </button>
-            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">Test Schedule & Countdown</h2>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+                    <i data-lucide="target" class="w-6 h-6 text-coral-500"></i>
+                    Test Schedule
+                </h2>
+                <p class="text-gray-600">All test dates and countdown timers</p>
+            </div>
             <div class="test-grid">
                 <div class="test-card">
                     <h3>📝 Test 1</h3>
@@ -393,8 +517,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
+    <!-- Add Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script>
         // Complete semester schedule data
         const semesterSchedule = {
@@ -581,8 +707,16 @@
 
         function showSection(sectionId) {
             // Update navigation
-            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-            event?.target?.classList.add('active');
+            document.querySelectorAll('button[id^="nav-"]').forEach(btn => {
+                btn.classList.remove('btn-primary', 'is-math');
+                btn.classList.add('btn-secondary');
+            });
+            
+            const activeBtn = document.getElementById('nav-' + sectionId);
+            if (activeBtn) {
+                activeBtn.classList.remove('btn-secondary');
+                activeBtn.classList.add('btn-primary', 'is-math');
+            }
 
             // Show/hide content areas
             document.querySelectorAll('.content-area').forEach(area => area.classList.remove('active'));
@@ -591,7 +725,7 @@
             // Populate content based on section
             if (sectionId === 'overview') {
                 populateCurrentWeek();
-            } else if (sectionId === 'schedule') {
+            } else if (sectionId === 'math') {
                 populateFullSchedule();
             } else if (sectionId === 'tests') {
                 updateTestCountdowns();
@@ -815,6 +949,11 @@
             updateCurrentStatus();
             populateCurrentWeek();
             updateTestCountdowns();
+            
+            // Initialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
 
             // Update every hour
             setInterval(() => {

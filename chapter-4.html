@@ -3,359 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 4: Proportions & Percentages - MAT 143 Study Guide</title>
-    <meta name="description" content="Master Chapter 4 of MAT 143: Learn proportions, percentages, ratios, and real-world applications with formulas and practice problems.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
-    
-    <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    
-    <!-- Microsoft Tiles -->
-    <meta name="msapplication-TileColor" content="#eb7754">
-    <meta name="msapplication-TileImage" content="/mstile-70x70.png">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="globals.css">
-    <script>
-        tailwind.config = {
-            content: ["*.html"],
-            theme: {
-                extend: {
-                    colors: {
-                        black: "#080808",
-                        white: "#fafafa",
-                        neutral: {
-                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
-                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
-                        },
-                        coral: {
-                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
-                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
-                        },
-                        pink: {
-                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
-                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
-                        },
-                        yellow: {
-                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
-                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
-                        },
-                        blue: {
-                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
-                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
-                        }
-                    },
-                    fontFamily: {
-                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
-                    },
-                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
-                    boxShadow: {
-                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Chapter 4: Proportions & Percentages - Math Tutor</title>
+    <link rel="stylesheet" href="design-system.css">
 </head>
+<body class="bg-lightest-neutral">
 
-<body class="min-h-screen">
-    <!-- Header -->
-    <header class="bg-[var(--panel)] border-b border-[var(--border)] sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4">
+<header class="header-dark">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-white flex items-center gap-2">
+                <i data-lucide="percent" class="w-8 h-8"></i>
+                Chapter 4: Proportions & Percentages
+            </h1>
+            <nav>
+                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Chapters</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Navigation -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <nav class="flex flex-wrap gap-4 text-sm">
+            <a href="#overview" class="btn-secondary">Chapter Overview</a>
+            <a href="#tutorials" class="btn-secondary">Step-by-Step Tutorials</a>
+            <a href="#formulas" class="btn-secondary">Formula Sheet</a>
+            <a href="#practice" class="btn-secondary">Practice Problems</a>
+            <a href="#ai-help" class="btn-secondary">Ask AI Tutor</a>
+            <a href="#study-tips" class="btn-secondary">ADHD Study Tips</a>
+        </nav>
+    </div>
+
+    <!-- Chapter Overview -->
+    <div id="overview" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold">Chapter Overview</span>
+        </div>
+        <div class="space-y-4">
+            <p>Real-world ratios, cross multiplication, and percentage calculations</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">What You'll Learn</h4>
+                    <div id="learning-objectives">
+                        <!-- Will be populated with specific chapter content -->
+                    </div>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">Real-World Applications</h4>
+                    <div id="applications">
+                        <!-- Will be populated with specific chapter content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutorials Section -->
+    <div id="tutorials" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="play-circle" class="w-5 h-5"></i>
+                Step-by-Step Tutorials
+            </span>
+        </div>
+        <div id="tutorial-content">
+            <!-- Chapter-specific tutorials will be inserted here -->
+        </div>
+    </div>
+
+    <!-- AI Tutor Integration -->
+    <div id="ai-help" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="bot" class="w-5 h-5"></i>
+                Ask Your AI Tutor
+            </span>
+        </div>
+        <div class="space-y-4">
+            <p class="text-gray-600">Stuck on something? Get personalized help right now!</p>
+            <div class="border border-gray-200 rounded-lg p-4">
+                <textarea 
+                    id="ai-question" 
+                    placeholder="Ask me anything about Chapter 4... For example: 'I don't understand how to solve proportions' or 'Can you explain this step by step?'"
+                    class="w-full h-24 p-3 border border-gray-300 rounded resize-none focus:border-yellow-500 focus:outline-none"
+                ></textarea>
+                <div class="flex gap-3 mt-3">
+                    <button onclick="askAITutor(4)" class="btn btn-primary is-math">
+                        <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+                        Get Help Now
+                    </button>
+                    <button onclick="getHint(4)" class="btn btn-secondary">
+                        <i data-lucide="lightbulb" class="w-4 h-4 mr-2"></i>
+                        Just Give Me a Hint
+                    </button>
+                </div>
+            </div>
+            <div id="ai-response" class="hidden mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <h5 class="font-semibold text-green-800 mb-2 flex items-center gap-2">
+                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                    Your AI Tutor Says:
+                </h5>
+                <div id="ai-answer" class="text-green-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Tracking -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="target" class="w-5 h-5"></i>
+                Your Progress
+            </span>
+        </div>
+        <div class="space-y-4">
             <div class="flex items-center justify-between">
-                <a href="index.html" class="btn btn-ghost">← Back to Home</a>
-                <div class="text-center">
-                    <h1 class="text-xl font-bold text-[var(--text)] is-math">Chapter 4: Proportions & Percentages</h1>
-                    <p class="text-sm text-[var(--text-muted)]">Ratios, Cross Multiplication & Real-World Math</p>
+                <span>Chapter 4 Completion</span>
+                <div class="flex items-center gap-2">
+                    <div class="w-32 h-2 bg-gray-200 rounded-full">
+                        <div id="progress-bar-4" class="h-2 bg-yellow-500 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                    <span id="progress-text-4" class="text-sm text-gray-600">0%</span>
                 </div>
-                <a href="tutor.html" class="btn btn-primary is-math">Get Help</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="progress-checklist-4">
+                <!-- Progress items will be added dynamically -->
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
-        <!-- Chapter Overview -->
-        <section class="card p-6 is-math">
-            <div class="flex items-start gap-4">
-                <div class="w-16 h-16 rounded-xl bg-[var(--class-math)] text-white flex items-center justify-center text-2xl font-bold">4</div>
-                <div>
-                    <h2 class="text-2xl font-bold text-[var(--text)] mb-2">Proportions & Percentages</h2>
-                    <p class="text-[var(--text-muted)] text-lg leading-relaxed">
-                        Master the art of comparing quantities! Learn proportions, ratios, and percentages that you'll use 
-                        daily - from calculating tips to understanding discounts, scaling recipes, and analyzing data.
-                    </p>
-                </div>
-            </div>
-        </section>
+</main>
 
-        <!-- Key Formulas -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-6">📐 Essential Formulas</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="p-6 rounded-xl bg-blue-50 border border-blue-200">
-                    <h4 class="font-bold text-blue-900 text-lg mb-3">Proportions</h4>
-                    <div class="space-y-2">
-                        <p class="text-blue-800 font-mono text-lg">a/b = c/d</p>
-                        <p class="text-blue-700 text-sm">Cross multiply: a × d = b × c</p>
-                    </div>
-                </div>
-                <div class="p-6 rounded-xl bg-green-50 border border-green-200">
-                    <h4 class="font-bold text-green-900 text-lg mb-3">Percentage</h4>
-                    <div class="space-y-2">
-                        <p class="text-green-800 font-mono text-lg">Part/Whole × 100 = %</p>
-                        <p class="text-green-700 text-sm">Or: (Part ÷ Whole) × 100</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Core Concepts -->
-        <section class="space-y-6">
-            <h3 class="text-2xl font-bold text-[var(--text)]">📚 Core Concepts</h3>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    // Initialize chapter content
+    document.addEventListener('DOMContentLoaded', function() {
+        loadChapterContent(4);
+        loadProgress(4);
+        lucide.createIcons();
+    });
+    
+    // AI Tutor Functions
+    async function askAITutor(chapter) {
+        const question = document.getElementById('ai-question').value;
+        if (!question.trim()) return;
+        
+        const responseDiv = document.getElementById('ai-response');
+        const answerDiv = document.getElementById('ai-answer');
+        
+        responseDiv.classList.remove('hidden');
+        answerDiv.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin inline mr-2"></i>Thinking...';
+        
+        try {
+            const response = await fetch('/api/ai-tutor', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    question: question,
+                    chapter: chapter,
+                    context: 'math-tutorial'
+                })
+            });
             
-            <!-- Ratios -->
-            <div class="card p-6">
-                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">📊 Understanding Ratios</h4>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h5 class="font-semibold text-[var(--text)] mb-3">What is a Ratio?</h5>
-                        <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                            <p class="text-[var(--text-muted)] mb-2">A comparison of two or more quantities</p>
-                            <div class="space-y-1 text-sm text-[var(--text-muted)]">
-                                <p><strong>Written as:</strong> 3:4, 3 to 4, or 3/4</p>
-                                <p><strong>Example:</strong> 3 cups flour to 4 cups water</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h5 class="font-semibold text-[var(--text)] mb-3">Simplifying Ratios</h5>
-                        <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                            <p class="text-[var(--text-muted)] mb-2">Divide both numbers by their GCD</p>
-                            <div class="space-y-1 text-sm text-[var(--text-muted)]">
-                                <p><strong>Example:</strong> 12:16</p>
-                                <p>GCD = 4, so 12:16 = 3:4</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            const data = await response.json();
+            answerDiv.innerHTML = data.answer;
+            lucide.createIcons();
+            
+            // Track engagement
+            updateProgress(chapter, 'ai-help-used');
+        } catch (error) {
+            answerDiv.innerHTML = 'Sorry, I had trouble connecting. Please try again in a moment.';
+        }
+    }
+    
+    // Progress tracking
+    function updateProgress(chapter, action) {
+        const progress = getProgress(chapter);
+        progress[action] = true;
+        saveProgress(chapter, progress);
+        updateProgressDisplay(chapter);
+    }
+</script>
 
-            <!-- Proportions -->
-            <div class="card p-6">
-                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">⚖️ Solving Proportions</h4>
-                <div class="space-y-4">
-                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
-                        <h5 class="font-semibold text-blue-900 mb-2">Step-by-Step Method</h5>
-                        <div class="space-y-2 text-blue-800">
-                            <p><strong>1.</strong> Set up the proportion: a/b = c/d</p>
-                            <p><strong>2.</strong> Cross multiply: a × d = b × c</p>
-                            <p><strong>3.</strong> Solve for the unknown variable</p>
-                            <p><strong>4.</strong> Check your answer by substituting back</p>
-                        </div>
-                    </div>
-                    
-                    <div class="p-4 rounded-xl bg-[var(--bg-muted)] border border-[var(--border)]">
-                        <h5 class="font-semibold text-[var(--text)] mb-2">🍎 Real Example: Grocery Shopping</h5>
-                        <div class="space-y-2 text-[var(--text-muted)]">
-                            <p><strong>Problem:</strong> 3 apples cost $2. How much do 9 apples cost?</p>
-                            <p><strong>Set up:</strong> 3/2 = 9/x</p>
-                            <p><strong>Cross multiply:</strong> 3x = 18</p>
-                            <p><strong>Solve:</strong> x = 6</p>
-                            <p><strong>Answer:</strong> 9 apples cost $6</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Percentages -->
-            <div class="card p-6">
-                <h4 class="text-xl font-semibold text-[var(--text)] mb-4">💯 Working with Percentages</h4>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
-                        <h5 class="font-semibold text-yellow-900 mb-2">Finding %</h5>
-                        <p class="text-yellow-800 text-sm">Part ÷ Whole × 100</p>
-                        <p class="text-yellow-700 text-xs mt-1">15 out of 60 = 25%</p>
-                    </div>
-                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
-                        <h5 class="font-semibold text-green-900 mb-2">Finding Part</h5>
-                        <p class="text-green-800 text-sm">% × Whole ÷ 100</p>
-                        <p class="text-green-700 text-xs mt-1">25% of 60 = 15</p>
-                    </div>
-                    <div class="p-4 rounded-xl bg-purple-50 border border-purple-200">
-                        <h5 class="font-semibold text-purple-900 mb-2">Finding Whole</h5>
-                        <p class="text-purple-800 text-sm">Part ÷ % × 100</p>
-                        <p class="text-purple-700 text-xs mt-1">15 is 25% of 60</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Practice Problems -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🧠 Practice Problems</h3>
-            <div class="space-y-6">
-                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 1: Recipe Scaling</h4>
-                    <p class="text-[var(--text-muted)] mb-3">
-                        A recipe calls for 2 cups flour to serve 4 people. How much flour is needed to serve 10 people?
-                    </p>
-                    <details class="mt-2">
-                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
-                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
-                            <div class="text-green-800 space-y-1">
-                                <p><strong>Set up proportion:</strong> 2/4 = x/10</p>
-                                <p><strong>Cross multiply:</strong> 2 × 10 = 4 × x</p>
-                                <p><strong>Solve:</strong> 20 = 4x → x = 5</p>
-                                <p><strong>Answer:</strong> 5 cups flour needed</p>
-                            </div>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 2: Test Score</h4>
-                    <p class="text-[var(--text-muted)] mb-3">
-                        You got 42 questions right out of 60 total. What percentage did you score?
-                    </p>
-                    <details class="mt-2">
-                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
-                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
-                            <div class="text-green-800 space-y-1">
-                                <p><strong>Formula:</strong> Part/Whole × 100</p>
-                                <p><strong>Calculate:</strong> 42/60 × 100</p>
-                                <p><strong>Simplify:</strong> 0.7 × 100 = 70</p>
-                                <p><strong>Answer:</strong> 70% score</p>
-                            </div>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--panel-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">Problem 3: Shopping Discount</h4>
-                    <p class="text-[var(--text-muted)] mb-3">
-                        A shirt costs $45 and is on sale for 20% off. What is the sale price?
-                    </p>
-                    <details class="mt-2">
-                        <summary class="text-[var(--class-math)] cursor-pointer font-medium">Show Solution</summary>
-                        <div class="mt-3 p-3 rounded bg-green-50 border border-green-200">
-                            <div class="text-green-800 space-y-1">
-                                <p><strong>Discount amount:</strong> 20% of $45 = 0.20 × 45 = $9</p>
-                                <p><strong>Sale price:</strong> $45 - $9 = $36</p>
-                                <p><strong>Alternative:</strong> 80% of $45 = 0.80 × 45 = $36</p>
-                                <p><strong>Answer:</strong> $36 sale price</p>
-                            </div>
-                        </div>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- Common Mistakes -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-4">⚠️ Common Mistakes to Avoid</h3>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 rounded-xl bg-red-50 border border-red-200">
-                    <h4 class="font-semibold text-red-900 mb-2">❌ Wrong Setup</h4>
-                    <p class="text-red-800 text-sm">Make sure units match on both sides of the proportion</p>
-                </div>
-                <div class="p-4 rounded-xl bg-red-50 border border-red-200">
-                    <h4 class="font-semibold text-red-900 mb-2">❌ Decimal Places</h4>
-                    <p class="text-red-800 text-sm">When converting decimals to percentages, remember to multiply by 100</p>
-                </div>
-                <div class="p-4 rounded-xl bg-red-50 border border-red-200">
-                    <h4 class="font-semibold text-red-900 mb-2">❌ Cross Multiplication</h4>
-                    <p class="text-red-800 text-sm">Multiply diagonally: a/b = c/d becomes ad = bc</p>
-                </div>
-                <div class="p-4 rounded-xl bg-red-50 border border-red-200">
-                    <h4 class="font-semibold text-red-900 mb-2">❌ Not Checking</h4>
-                    <p class="text-red-800 text-sm">Always substitute your answer back to verify it works</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Study Tips -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-4">💡 Study Tips for ADHD Success</h3>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">🎯 Visual Method</h4>
-                    <p class="text-[var(--text-muted)]">Draw rectangles to represent proportions. Visual aids help ADHD brains process relationships.</p>
-                </div>
-                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">🗣️ Say It Aloud</h4>
-                    <p class="text-[var(--text-muted)]">"3 apples to 2 dollars equals 9 apples to x dollars." Hearing helps retention.</p>
-                </div>
-                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">🔄 Real Examples</h4>
-                    <p class="text-[var(--text-muted)]">Practice with recipes, shopping, tips, and gas mileage. Real context improves focus.</p>
-                </div>
-                <div class="p-4 rounded-xl bg-[var(--bg-muted)]">
-                    <h4 class="font-semibold text-[var(--text)] mb-2">✅ Check Your Work</h4>
-                    <p class="text-[var(--text-muted)]">Substitute back and ask: "Does this make sense?" Build the checking habit early.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Reference -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-4">📋 Quick Reference Card</h3>
-            <div class="p-4 rounded-xl bg-[var(--bg-muted)] border border-[var(--border)]">
-                <div class="grid md:grid-cols-3 gap-4 text-sm">
-                    <div>
-                        <h5 class="font-semibold text-[var(--text)] mb-2">Proportion Setup</h5>
-                        <p class="text-[var(--text-muted)]">old/new = old/new</p>
-                        <p class="text-[var(--text-muted)]">part/whole = part/whole</p>
-                    </div>
-                    <div>
-                        <h5 class="font-semibold text-[var(--text)] mb-2">Cross Multiply</h5>
-                        <p class="text-[var(--text-muted)]">a/b = c/d</p>
-                        <p class="text-[var(--text-muted)]">→ ad = bc</p>
-                    </div>
-                    <div>
-                        <h5 class="font-semibold text-[var(--text)] mb-2">Percentage</h5>
-                        <p class="text-[var(--text-muted)]">decimal × 100 = %</p>
-                        <p class="text-[var(--text-muted)]">% ÷ 100 = decimal</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Actions -->
-        <section class="card p-6">
-            <h3 class="text-xl font-bold text-[var(--text)] mb-4">🚀 Ready to Practice?</h3>
-            <div class="flex flex-wrap gap-4">
-                <a href="tutor.html" class="btn btn-primary is-math">Ask AI Tutor</a>
-                <a href="calendar.html" class="btn btn-ghost">Study Schedule</a>
-                <a href="index.html#chapters" class="btn btn-ghost">All Chapters</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-[var(--border)] bg-[var(--panel)] py-8 mt-12">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-[var(--text-muted)]">Chapter 4 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
-            <p class="text-sm text-[var(--text-muted)] mt-2">
-                <a href="chapter-1.html" class="text-[var(--class-math)] hover:underline">← Previous: Chapter 1</a> • 
-                <a href="index.html" class="text-[var(--class-math)] hover:underline">Back to Dashboard</a> • 
-                <a href="chapter-5.html" class="text-[var(--class-math)] hover:underline">Next: Chapter 5 →</a>
-            </p>
-        </div>
-    </footer>
 </body>
 </html>

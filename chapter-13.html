@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13: Voting & Apportionment - Math Tutor</title>
+    <link rel="stylesheet" href="design-system.css">
+</head>
+<body class="bg-lightest-neutral">
+
+<header class="header-dark">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+        <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-white flex items-center gap-2">
+                <i data-lucide="vote" class="w-8 h-8"></i>
+                Chapter 13: Voting & Apportionment
+            </h1>
+            <nav>
+                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Chapters</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-8">
+
+    <!-- Navigation -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <nav class="flex flex-wrap gap-4 text-sm">
+            <a href="#voting-methods" class="btn-secondary">Voting Methods</a>
+            <a href="#apportionment" class="btn-secondary">Apportionment</a>
+            <a href="#fairness-criteria" class="btn-secondary">Fairness Criteria</a>
+            <a href="#formulas" class="btn-secondary">Formula Sheet</a>
+            <a href="#practice" class="btn-secondary">Practice Problems</a>
+            <a href="#study-tips" class="btn-secondary">Study Tips</a>
+        </nav>
+    </div>
+
+    <!-- Chapter Overview -->
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold">Chapter Overview</span>
+        </div>
+        <div class="space-y-4">
+            <p>This chapter explores the mathematics behind democratic decision-making, including different voting systems and methods for allocating representation (apportionment).</p>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">Key Topics</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>• Plurality and majority voting</li>
+                        <li>• Ranked choice voting (IRV)</li>
+                        <li>• Borda count method</li>
+                        <li>• Pairwise comparison</li>
+                        <li>• Apportionment methods</li>
+                        <li>• Fairness criteria</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4">
+                    <h4 class="font-semibold text-gray-800 mb-2">Real-World Applications</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>• Political elections</li>
+                        <li>• Congressional representation</li>
+                        <li>• Group decision making</li>
+                        <li>• Resource allocation</li>
+                        <li>• Award competitions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voting Methods Tutorial -->
+    <div id="voting-methods" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="users" class="w-5 h-5"></i>
+                Voting Methods Tutorial
+            </span>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- Plurality Method -->
+            <div class="border-l-4 border-coral-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">1. Plurality Method</h4>
+                <p class="mb-3">The candidate with the most votes wins, even without a majority.</p>
+                
+                <div class="bg-gray-50 p-4 rounded mb-3">
+                    <h5 class="font-semibold mb-2">Example:</h5>
+                    <p class="text-sm mb-2">100 voters choosing between candidates A, B, C:</p>
+                    <ul class="text-sm space-y-1">
+                        <li>• Candidate A: 42 votes</li>
+                        <li>• Candidate B: 35 votes</li>
+                        <li>• Candidate C: 23 votes</li>
+                    </ul>
+                    <p class="text-sm mt-2 font-semibold text-coral-600">Winner: Candidate A (42% of votes)</p>
+                </div>
+            </div>
+
+            <!-- Majority Method -->
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">2. Majority Method</h4>
+                <p class="mb-3">A candidate must receive more than 50% of votes to win. If no majority, often requires a runoff.</p>
+                
+                <div class="bg-gray-50 p-4 rounded mb-3">
+                    <h5 class="font-semibold mb-2">Calculation:</h5>
+                    <p class="text-sm">Majority needed = (Total votes ÷ 2) + 1</p>
+                    <p class="text-sm">For 100 voters: (100 ÷ 2) + 1 = 51 votes needed</p>
+                </div>
+            </div>
+
+            <!-- Instant Runoff Voting (IRV) -->
+            <div class="border-l-4 border-yellow-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">3. Instant Runoff Voting (IRV)</h4>
+                <p class="mb-3">Voters rank candidates. If no majority, eliminate lowest vote-getter and redistribute votes.</p>
+                
+                <details class="bg-gray-50 p-4 rounded">
+                    <summary class="font-semibold cursor-pointer">Show IRV Example</summary>
+                    <div class="mt-3 text-sm space-y-2">
+                        <p><strong>Round 1 (First choices):</strong></p>
+                        <ul class="ml-4">
+                            <li>• A: 35 votes</li>
+                            <li>• B: 40 votes</li>
+                            <li>• C: 25 votes</li>
+                        </ul>
+                        <p class="text-coral-600">No majority (need 51). Eliminate C, redistribute C's votes based on 2nd choices.</p>
+                        <p><strong>Round 2:</strong></p>
+                        <ul class="ml-4">
+                            <li>• A: 45 votes (35 + 10 from C voters)</li>
+                            <li>• B: 55 votes (40 + 15 from C voters)</li>
+                        </ul>
+                        <p class="font-semibold text-blue-600">Winner: Candidate B with majority</p>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Borda Count -->
+            <div class="border-l-4 border-green-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">4. Borda Count Method</h4>
+                <p class="mb-3">Points assigned based on ranking: last place gets 1 point, second-to-last gets 2, etc.</p>
+                
+                <div class="bg-gray-50 p-4 rounded">
+                    <h5 class="font-semibold mb-2">Point System (for 3 candidates):</h5>
+                    <ul class="text-sm space-y-1">
+                        <li>• 1st choice: 3 points</li>
+                        <li>• 2nd choice: 2 points</li>
+                        <li>• 3rd choice: 1 point</li>
+                    </ul>
+                    <p class="text-sm mt-2">Candidate with most total points wins</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apportionment Tutorial -->
+    <div id="apportionment" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                Apportionment Methods
+            </span>
+        </div>
+        
+        <div class="space-y-6">
+            <p>Apportionment determines how to fairly distribute a fixed number of seats or resources among groups based on population or other criteria.</p>
+
+            <!-- Hamilton Method -->
+            <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Hamilton Method (Largest Remainder)</h4>
+                <div class="space-y-3">
+                    <p class="text-sm">Steps:</p>
+                    <ol class="text-sm space-y-1 ml-4 list-decimal">
+                        <li>Calculate standard divisor: Total Population ÷ Total Seats</li>
+                        <li>Calculate each group's standard quota: Group Population ÷ Standard Divisor</li>
+                        <li>Give each group the whole number part of their quota</li>
+                        <li>Distribute remaining seats to groups with largest decimal remainders</li>
+                    </ol>
+                    
+                    <details class="bg-gray-50 p-4 rounded">
+                        <summary class="font-semibold cursor-pointer">Show Hamilton Example</summary>
+                        <div class="mt-3 text-sm">
+                            <p><strong>Scenario:</strong> 100 seats for 3 states</p>
+                            <table class="w-full border-collapse border border-gray-300 mt-2">
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-300 p-2">State</th>
+                                    <th class="border border-gray-300 p-2">Population</th>
+                                    <th class="border border-gray-300 p-2">Standard Quota</th>
+                                    <th class="border border-gray-300 p-2">Initial Seats</th>
+                                    <th class="border border-gray-300 p-2">Remainder</th>
+                                    <th class="border border-gray-300 p-2">Final Seats</th>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">A</td>
+                                    <td class="border border-gray-300 p-2">48,000</td>
+                                    <td class="border border-gray-300 p-2">48.0</td>
+                                    <td class="border border-gray-300 p-2">48</td>
+                                    <td class="border border-gray-300 p-2">0.0</td>
+                                    <td class="border border-gray-300 p-2">48</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">B</td>
+                                    <td class="border border-gray-300 p-2">32,400</td>
+                                    <td class="border border-gray-300 p-2">32.4</td>
+                                    <td class="border border-gray-300 p-2">32</td>
+                                    <td class="border border-gray-300 p-2">0.4</td>
+                                    <td class="border border-gray-300 p-2">32</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-2">C</td>
+                                    <td class="border border-gray-300 p-2">19,600</td>
+                                    <td class="border border-gray-300 p-2">19.6</td>
+                                    <td class="border border-gray-300 p-2">19</td>
+                                    <td class="border border-gray-300 p-2">0.6</td>
+                                    <td class="border border-gray-300 p-2">20</td>
+                                </tr>
+                            </table>
+                            <p class="mt-2"><strong>Standard Divisor:</strong> 100,000 ÷ 100 = 1,000</p>
+                            <p><strong>Remaining seat goes to State C</strong> (largest remainder: 0.6)</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Jefferson Method -->
+            <div class="border-l-4 border-green-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Jefferson Method (Greatest Divisor)</h4>
+                <div class="space-y-3">
+                    <p class="text-sm">Uses a modified divisor (smaller than standard) until total seats allocated equals target.</p>
+                    <ol class="text-sm space-y-1 ml-4 list-decimal">
+                        <li>Start with standard divisor</li>
+                        <li>If total seats < target, decrease divisor</li>
+                        <li>If total seats > target, increase divisor</li>
+                        <li>Repeat until exact number of seats allocated</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Webster Method -->
+            <div class="border-l-4 border-yellow-500 pl-4">
+                <h4 class="font-semibold text-gray-800 mb-2">Webster Method (Major Fractions)</h4>
+                <p class="text-sm">Similar to Jefferson, but rounds quotas to nearest whole number instead of always rounding down.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fairness Criteria -->
+    <div id="fairness-criteria" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="scale" class="w-5 h-5"></i>
+                Fairness Criteria
+            </span>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-4">
+            <div class="space-y-4">
+                <div class="bg-blue-50 p-4 rounded">
+                    <h4 class="font-semibold text-blue-800 mb-2">Majority Criterion</h4>
+                    <p class="text-sm">If a candidate receives a majority of first-place votes, they should win.</p>
+                </div>
+                
+                <div class="bg-green-50 p-4 rounded">
+                    <h4 class="font-semibold text-green-800 mb-2">Condorcet Criterion</h4>
+                    <p class="text-sm">If a candidate would beat every other candidate in head-to-head comparisons, they should win.</p>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-yellow-50 p-4 rounded">
+                    <h4 class="font-semibold text-yellow-800 mb-2">Independence of Irrelevant Alternatives</h4>
+                    <p class="text-sm">Adding or removing a losing candidate should not change the winner.</p>
+                </div>
+                
+                <div class="bg-purple-50 p-4 rounded">
+                    <h4 class="font-semibold text-purple-800 mb-2">Monotonicity</h4>
+                    <p class="text-sm">If a candidate wins, they should still win if they receive additional support.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 p-4 bg-coral-50 border border-coral-200 rounded">
+            <h4 class="font-semibold text-coral-800 mb-2 flex items-center gap-2">
+                <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                Arrow's Impossibility Theorem
+            </h4>
+            <p class="text-sm">No voting system can satisfy all fairness criteria simultaneously when there are 3+ candidates and 2+ voters.</p>
+        </div>
+    </div>
+
+    <!-- Formula Sheet -->
+    <div id="formulas" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="calculator" class="w-5 h-5"></i>
+                Formula Sheet
+            </span>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <h4 class="font-semibold text-gray-800 mb-3">Voting Formulas</h4>
+                <div class="space-y-3 text-sm">
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Majority Threshold:</strong><br>
+                        (Total votes ÷ 2) + 1
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Borda Count Points (n candidates):</strong><br>
+                        1st place: n points<br>
+                        2nd place: n-1 points<br>
+                        ...and so on
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Pairwise Comparisons:</strong><br>
+                        For n candidates: n(n-1) ÷ 2 comparisons
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-semibold text-gray-800 mb-3">Apportionment Formulas</h4>
+                <div class="space-y-3 text-sm">
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Standard Divisor:</strong><br>
+                        Total Population ÷ Total Seats
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Standard Quota:</strong><br>
+                        Group Population ÷ Standard Divisor
+                    </div>
+                    <div class="bg-gray-50 p-3 rounded">
+                        <strong>Modified Quota:</strong><br>
+                        Group Population ÷ Modified Divisor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Practice Problems -->
+    <div id="practice" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="edit-3" class="w-5 h-5"></i>
+                Practice Problems
+            </span>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- Problem 1 -->
+            <div class="border border-gray-200 rounded p-4">
+                <h4 class="font-semibold mb-2">Problem 1: Plurality vs IRV</h4>
+                <p class="text-sm mb-3">150 voters rank three candidates (A, B, C). First choice votes:</p>
+                <ul class="text-sm mb-3">
+                    <li>• A: 55 votes</li>
+                    <li>• B: 52 votes</li>
+                    <li>• C: 43 votes</li>
+                </ul>
+                <p class="text-sm mb-3">Of C's voters, 30 prefer A as second choice, 13 prefer B.</p>
+                <p class="text-sm">a) Who wins under plurality? b) Who wins under IRV?</p>
+                
+                <details class="mt-3">
+                    <summary class="text-sm font-semibold cursor-pointer text-blue-600">Show Solution</summary>
+                    <div class="mt-2 p-3 bg-gray-50 rounded text-sm">
+                        <p><strong>a) Plurality:</strong> A wins with 55 votes (most first-choice votes)</p>
+                        <p><strong>b) IRV:</strong></p>
+                        <ul class="ml-4 mt-1">
+                            <li>• No majority in Round 1 (need 76 votes)</li>
+                            <li>• Eliminate C (fewest votes)</li>
+                            <li>• Redistribute C's votes: A gets 55 + 30 = 85, B gets 52 + 13 = 65</li>
+                            <li>• <strong>A wins with 85 votes</strong></li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="border border-gray-200 rounded p-4">
+                <h4 class="font-semibold mb-2">Problem 2: Hamilton Apportionment</h4>
+                <p class="text-sm mb-3">A school district wants to assign 25 buses among 4 schools based on enrollment:</p>
+                <ul class="text-sm mb-3">
+                    <li>• School A: 845 students</li>
+                    <li>• School B: 1,230 students</li>
+                    <li>• School C: 680 students</li>
+                    <li>• School D: 945 students</li>
+                </ul>
+                <p class="text-sm">Use Hamilton method to allocate buses.</p>
+                
+                <details class="mt-3">
+                    <summary class="text-sm font-semibold cursor-pointer text-blue-600">Show Solution</summary>
+                    <div class="mt-2 p-3 bg-gray-50 rounded text-sm">
+                        <p><strong>Total students:</strong> 3,700</p>
+                        <p><strong>Standard divisor:</strong> 3,700 ÷ 25 = 148</p>
+                        <table class="w-full border-collapse border border-gray-300 mt-2 text-xs">
+                            <tr class="bg-gray-100">
+                                <th class="border border-gray-300 p-1">School</th>
+                                <th class="border border-gray-300 p-1">Quota</th>
+                                <th class="border border-gray-300 p-1">Initial</th>
+                                <th class="border border-gray-300 p-1">Remainder</th>
+                                <th class="border border-gray-300 p-1">Final</th>
+                            </tr>
+                            <tr><td class="border border-gray-300 p-1">A</td><td class="border border-gray-300 p-1">5.71</td><td class="border border-gray-300 p-1">5</td><td class="border border-gray-300 p-1">0.71</td><td class="border border-gray-300 p-1">6</td></tr>
+                            <tr><td class="border border-gray-300 p-1">B</td><td class="border border-gray-300 p-1">8.31</td><td class="border border-gray-300 p-1">8</td><td class="border border-gray-300 p-1">0.31</td><td class="border border-gray-300 p-1">8</td></tr>
+                            <tr><td class="border border-gray-300 p-1">C</td><td class="border border-gray-300 p-1">4.59</td><td class="border border-gray-300 p-1">4</td><td class="border border-gray-300 p-1">0.59</td><td class="border border-gray-300 p-1">5</td></tr>
+                            <tr><td class="border border-gray-300 p-1">D</td><td class="border border-gray-300 p-1">6.39</td><td class="border border-gray-300 p-1">6</td><td class="border border-gray-300 p-1">0.39</td><td class="border border-gray-300 p-1">6</td></tr>
+                        </table>
+                        <p class="mt-2">Initial total: 23. Give remaining 2 buses to schools with largest remainders (A and C).</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADHD Study Tips -->
+    <div id="study-tips" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+        <div class="card-title-dark math mb-4">
+            <span class="text-white font-semibold flex items-center gap-2">
+                <i data-lucide="lightbulb" class="w-5 h-5"></i>
+                ADHD-Friendly Study Tips
+            </span>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+                <div class="bg-blue-50 p-4 rounded">
+                    <h4 class="font-semibold text-blue-800 mb-2">Voting Methods</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>• Create flowcharts for each method</li>
+                        <li>• Use different colors for each voting system</li>
+                        <li>• Practice with real election examples</li>
+                        <li>• Make comparison tables</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 p-4 rounded">
+                    <h4 class="font-semibold text-green-800 mb-2">Memory Aids</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>• IRV: "Instant = Eliminate lowest immediately"</li>
+                        <li>• Borda: "Points for position"</li>
+                        <li>• Hamilton: "Remainder gets the extras"</li>
+                        <li>• Jefferson: "Decrease divisor = more seats"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bg-yellow-50 p-4 rounded">
+                    <h4 class="font-semibold text-yellow-800 mb-2">Problem-Solving Strategy</h4>
+                    <ol class="text-sm space-y-1 list-decimal ml-4">
+                        <li>Read problem twice, highlight key numbers</li>
+                        <li>Identify which method to use</li>
+                        <li>Set up organized table/chart</li>
+                        <li>Work step-by-step, check each calculation</li>
+                        <li>Verify answer makes sense</li>
+                    </ol>
+                </div>
+                
+                <div class="bg-purple-50 p-4 rounded">
+                    <h4 class="font-semibold text-purple-800 mb-2">Focus Techniques</h4>
+                    <ul class="text-sm space-y-1">
+                        <li>• Use timers for practice sessions (15-20 min)</li>
+                        <li>• Work through one method at a time</li>
+                        <li>• Take breaks between different topics</li>
+                        <li>• Review fairness criteria separately</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>

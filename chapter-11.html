@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Statistics & Data Analysis - MAT 143 Study Guide</title>
+    <meta name="description" content="Master Chapter 11 of MAT 143: Learn statistics, normal distribution, z-scores, mean, median, mode, and data interpretation.">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globals.css">
+    <script>
+        tailwind.config = {
+            content: ["*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        black: "#080808", white: "#fafafa",
+                        neutral: {50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"},
+                        coral: {50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"},
+                        pink: {50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"},
+                        yellow: {50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"},
+                        blue: {50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"}
+                    },
+                    fontFamily: {sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]},
+                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
+                    boxShadow: {card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"}
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen bg-[var(--surface-light)]">
+    <!-- Header -->
+    <header class="header-dark">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="btn btn-secondary text-[var(--text-light)]">
+                    <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                    Back to Home
+                </a>
+                <div class="text-center">
+                    <h1 class="text-xl font-bold text-[var(--text-light)]">Chapter 11: Statistics & Data Analysis</h1>
+                    <p class="text-sm text-[var(--text-light)] opacity-90">Making Sense of Numbers & Data</p>
+                </div>
+                <a href="tutor.html" class="btn btn-primary is-math">
+                    <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
+                    Get Help
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+        <!-- Chapter Overview -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="bar-chart-3" class="w-5 h-5 mr-2"></i>
+                Statistics & Data Analysis
+            </div>
+            <div class="p-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-16 h-16 rounded-xl bg-[var(--yellow-500)] text-black flex items-center justify-center text-2xl font-bold">11</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Statistics & Data Interpretation</h2>
+                        <p class="text-[var(--text-muted)] text-lg leading-relaxed">
+                            Turn data into insights! Learn to calculate measures of center and spread, understand normal distributions, and interpret z-scores for informed decision making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Essential Formulas -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="calculator" class="w-5 h-5 mr-2"></i>
+                Essential Statistics Formulas
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-xl bg-blue-50 border-2 border-blue-200">
+                        <h4 class="font-bold text-blue-900 text-lg mb-4 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5"></i>
+                            Measures of Center
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-blue-800 font-mono text-lg">Mean = Σx / n</p>
+                                <p class="text-blue-700 text-sm">Sum of all values ÷ count</p>
+                            </div>
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-blue-800 font-semibold">Median = middle value</p>
+                                <p class="text-blue-700 text-sm">When data is ordered</p>
+                            </div>
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-blue-800 font-semibold">Mode = most frequent</p>
+                                <p class="text-blue-700 text-sm">Value that appears most often</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 rounded-xl bg-green-50 border-2 border-green-200">
+                        <h4 class="font-bold text-green-900 text-lg mb-4 flex items-center gap-2">
+                            <i data-lucide="activity" class="w-5 h-5"></i>
+                            Z-Score & Normal Distribution
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-green-800 font-mono text-lg">z = (x - μ) / σ</p>
+                                <p class="text-green-700 text-sm">Population z-score</p>
+                            </div>
+                            <div class="p-3 rounded bg-white">
+                                <p class="text-green-800 font-mono text-lg">z = (x - x̄) / s</p>
+                                <p class="text-green-700 text-sm">Sample z-score</p>
+                            </div>
+                            <div class="text-green-700 text-sm space-y-1">
+                                <p><strong>68-95-99.7 Rule:</strong></p>
+                                <p>68% within 1σ, 95% within 2σ, 99.7% within 3σ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Measures of Center Tutorial -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="play-circle" class="w-5 h-5 mr-2"></i>
+                Tutorial: Measures of Center
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h5 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="lightbulb" class="w-4 h-4 text-[var(--yellow-500)]"></i>
+                            Understanding Mean, Median, and Mode
+                        </h5>
+                        <p class="text-[var(--text-muted)] mb-4">These three measures tell us where the "center" of our data is, but each gives us different information.</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="p-4 rounded bg-blue-50 border border-blue-200">
+                                <h6 class="font-bold text-blue-900 mb-2 flex items-center gap-2">
+                                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                                    Mean (Average)
+                                </h6>
+                                <div class="space-y-2 text-blue-700 text-sm">
+                                    <p><strong>What:</strong> Add all values, divide by count</p>
+                                    <p><strong>Use:</strong> When data is fairly normal</p>
+                                    <p><strong>Affected by:</strong> Outliers (extreme values)</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded bg-green-50 border border-green-200">
+                                <h6 class="font-bold text-green-900 mb-2 flex items-center gap-2">
+                                    <i data-lucide="divide" class="w-4 h-4"></i>
+                                    Median (Middle)
+                                </h6>
+                                <div class="space-y-2 text-green-700 text-sm">
+                                    <p><strong>What:</strong> Middle value when ordered</p>
+                                    <p><strong>Use:</strong> When data has outliers</p>
+                                    <p><strong>Resistant to:</strong> Extreme values</p>
+                                </div>
+                            </div>
+                            <div class="p-4 rounded bg-purple-50 border border-purple-200">
+                                <h6 class="font-bold text-purple-900 mb-2 flex items-center gap-2">
+                                    <i data-lucide="repeat" class="w-4 h-4"></i>
+                                    Mode (Most Frequent)
+                                </h6>
+                                <div class="space-y-2 text-purple-700 text-sm">
+                                    <p><strong>What:</strong> Value appearing most often</p>
+                                    <p><strong>Use:</strong> For categorical data</p>
+                                    <p><strong>Note:</strong> Can have no mode or multiple modes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-yellow-50 border border-yellow-200">
+                        <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="calculator" class="w-4 h-4"></i>
+                            Step-by-Step Example: Test Scores
+                        </h5>
+                        <p class="text-yellow-800 mb-3">Test scores: 78, 82, 85, 85, 90, 92, 95</p>
+                        
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="p-3 rounded bg-white">
+                                <p class="font-semibold text-yellow-900">Mean</p>
+                                <div class="text-yellow-700 text-sm space-y-1">
+                                    <p>Sum = 78+82+85+85+90+92+95 = 607</p>
+                                    <p>Count = 7 scores</p>
+                                    <p>Mean = 607 ÷ 7 = 86.7</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded bg-white">
+                                <p class="font-semibold text-yellow-900">Median</p>
+                                <div class="text-yellow-700 text-sm space-y-1">
+                                    <p>Already ordered: 78, 82, 85, 85, 90, 92, 95</p>
+                                    <p>7 values → middle is 4th value</p>
+                                    <p>Median = 85</p>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded bg-white">
+                                <p class="font-semibold text-yellow-900">Mode</p>
+                                <div class="text-yellow-700 text-sm space-y-1">
+                                    <p>85 appears twice</p>
+                                    <p>All others appear once</p>
+                                    <p>Mode = 85</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Normal Distribution & Z-Scores Tutorial -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="trending-up" class="w-5 h-5 mr-2"></i>
+                Tutorial: Normal Distribution & Z-Scores
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl bg-blue-50 border border-blue-200">
+                        <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="bell" class="w-4 h-4"></i>
+                            The Normal Distribution (Bell Curve)
+                        </h5>
+                        <p class="text-blue-800 mb-4">Many real-world measurements follow a bell-shaped pattern called the normal distribution.</p>
+                        
+                        <div class="p-4 rounded bg-white border border-blue-300">
+                            <h6 class="font-semibold text-blue-900 mb-3">68-95-99.7 Rule (Empirical Rule)</h6>
+                            <div class="grid md:grid-cols-3 gap-3">
+                                <div class="p-3 rounded bg-blue-100 text-center">
+                                    <p class="font-bold text-blue-900">68%</p>
+                                    <p class="text-blue-700 text-sm">Within 1 standard deviation</p>
+                                    <p class="text-blue-600 text-xs">μ ± σ</p>
+                                </div>
+                                <div class="p-3 rounded bg-blue-100 text-center">
+                                    <p class="font-bold text-blue-900">95%</p>
+                                    <p class="text-blue-700 text-sm">Within 2 standard deviations</p>
+                                    <p class="text-blue-600 text-xs">μ ± 2σ</p>
+                                </div>
+                                <div class="p-3 rounded bg-blue-100 text-center">
+                                    <p class="font-bold text-blue-900">99.7%</p>
+                                    <p class="text-blue-700 text-sm">Within 3 standard deviations</p>
+                                    <p class="text-blue-600 text-xs">μ ± 3σ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-green-50 border border-green-200">
+                        <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4"></i>
+                            Understanding Z-Scores
+                        </h5>
+                        <p class="text-green-800 mb-3">A z-score tells you how many standard deviations a value is from the mean.</p>
+                        
+                        <div class="space-y-3">
+                            <div class="p-4 rounded bg-white border border-green-300">
+                                <h6 class="font-semibold text-green-900 mb-2">Z-Score Interpretation</h6>
+                                <div class="grid md:grid-cols-3 gap-3">
+                                    <div class="text-center">
+                                        <p class="font-bold text-red-600">z < 0</p>
+                                        <p class="text-red-700 text-sm">Below average</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="font-bold text-gray-600">z = 0</p>
+                                        <p class="text-gray-700 text-sm">Exactly average</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="font-bold text-green-600">z > 0</p>
+                                        <p class="text-green-700 text-sm">Above average</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-4 rounded bg-white border border-green-300">
+                                <h6 class="font-semibold text-green-900 mb-2">Example: SAT Scores</h6>
+                                <div class="text-green-700 space-y-1">
+                                    <p>SAT scores: μ = 500, σ = 100</p>
+                                    <p>Your score: 650</p>
+                                    <p><strong>Calculate:</strong> z = (650 - 500) / 100 = 1.5</p>
+                                    <p><strong>Meaning:</strong> You scored 1.5 standard deviations above average!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Problems -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
+                Practice Problems
+            </div>
+            <div class="p-6">
+                <div class="space-y-6">
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="calculator" class="w-4 h-4 text-blue-600"></i>
+                            Problem 1: Measures of Center
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            Find the mean, median, and mode for these ages: 23, 25, 27, 25, 30, 32, 25
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-3">
+                                    <div>
+                                        <p><strong>Mean:</strong> (23+25+27+25+30+32+25) ÷ 7 = 187 ÷ 7 = 26.7</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Median:</strong> Order first: 23, 25, 25, 25, 27, 30, 32</p>
+                                        <p>Middle value (4th of 7) = 25</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Mode:</strong> 25 appears 3 times (most frequent)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="activity" class="w-4 h-4 text-green-600"></i>
+                            Problem 2: Z-Score Calculation
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            Heights are normally distributed with mean = 68 inches and standard deviation = 3 inches. What's the z-score for someone who is 74 inches tall?
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-2">
+                                    <p><strong>Given:</strong> x = 74, μ = 68, σ = 3</p>
+                                    <p><strong>Formula:</strong> z = (x - μ) / σ</p>
+                                    <p><strong>Calculate:</strong> z = (74 - 68) / 3 = 6 / 3 = 2.0</p>
+                                    <p><strong>Interpretation:</strong> This person is 2 standard deviations above average height</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--surface-light)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-2 flex items-center gap-2">
+                            <i data-lucide="bell" class="w-4 h-4 text-purple-600"></i>
+                            Problem 3: Empirical Rule
+                        </h4>
+                        <p class="text-[var(--text-muted)] mb-3">
+                            Test scores are normally distributed with mean = 75 and standard deviation = 8. What range contains 95% of all scores?
+                        </p>
+                        <details class="mt-2">
+                            <summary class="text-[var(--yellow-500)] cursor-pointer font-medium hover:underline">Show Solution</summary>
+                            <div class="mt-3 p-4 rounded bg-green-50 border border-green-200">
+                                <div class="text-green-800 space-y-2">
+                                    <p><strong>95% Rule:</strong> Within 2 standard deviations (μ ± 2σ)</p>
+                                    <p><strong>Lower bound:</strong> 75 - 2(8) = 75 - 16 = 59</p>
+                                    <p><strong>Upper bound:</strong> 75 + 2(8) = 75 + 16 = 91</p>
+                                    <p><strong>Answer:</strong> 95% of scores are between 59 and 91</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Types & Graphs -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="pie-chart" class="w-5 h-5 mr-2"></i>
+                Data Types & Visual Displays
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-blue-50">
+                            <h5 class="font-semibold text-blue-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="list" class="w-4 h-4"></i>
+                                Types of Data
+                            </h5>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded bg-white">
+                                    <p class="font-semibold text-blue-900">Quantitative (Numerical)</p>
+                                    <p class="text-blue-700 text-sm">Heights, weights, test scores, income</p>
+                                </div>
+                                <div class="p-3 rounded bg-white">
+                                    <p class="font-semibold text-blue-900">Qualitative (Categorical)</p>
+                                    <p class="text-blue-700 text-sm">Colors, majors, brands, genders</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-green-50">
+                            <h5 class="font-semibold text-green-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="bar-chart" class="w-4 h-4"></i>
+                                When to Use Each Graph
+                            </h5>
+                            <div class="text-green-700 text-sm space-y-2">
+                                <p><strong>Histogram:</strong> Show distribution shape</p>
+                                <p><strong>Box Plot:</strong> Compare groups, show outliers</p>
+                                <p><strong>Scatter Plot:</strong> Relationship between two variables</p>
+                                <p><strong>Bar Chart:</strong> Compare categories</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-yellow-50">
+                            <h5 class="font-semibold text-yellow-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="info" class="w-4 h-4"></i>
+                                Reading Box Plots
+                            </h5>
+                            <div class="text-yellow-700 text-sm space-y-2">
+                                <p><strong>Box:</strong> Contains middle 50% of data</p>
+                                <p><strong>Line in box:</strong> Median</p>
+                                <p><strong>Whiskers:</strong> Extend to min/max (or 1.5×IQR)</p>
+                                <p><strong>Dots beyond whiskers:</strong> Outliers</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-purple-50">
+                            <h5 class="font-semibold text-purple-900 mb-3 flex items-center gap-2">
+                                <i data-lucide="trending-up" class="w-4 h-4"></i>
+                                Distribution Shapes
+                            </h5>
+                            <div class="text-purple-700 text-sm space-y-2">
+                                <p><strong>Symmetric:</strong> Mean ≈ Median</p>
+                                <p><strong>Right-skewed:</strong> Mean > Median</p>
+                                <p><strong>Left-skewed:</strong> Mean < Median</p>
+                                <p><strong>Uniform:</strong> All values equally likely</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADHD Study Tips -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="brain" class="w-5 h-5 mr-2"></i>
+                ADHD-Friendly Study Tips
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="eye" class="w-4 h-4 text-[var(--yellow-500)]"></i>
+                            Visual Learning
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Draw the bell curve and mark standard deviations</li>
+                            <li>• Use different colors for mean, median, and mode</li>
+                            <li>• Create box plots by hand to understand structure</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="repeat" class="w-4 h-4 text-[var(--coral-500)]"></i>
+                            Memory Tricks
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• "Mean is Mean" - affected by outliers</li>
+                            <li>• "Median in the Middle" - resistant to extremes</li>
+                            <li>• "Mode is Most" - appears most frequently</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="calculator" class="w-4 h-4 text-[var(--blue-500)]"></i>
+                            Calculation Tips
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Always order data first for median</li>
+                            <li>• Use calculator for z-scores (avoid rounding errors)</li>
+                            <li>• Check if z-score sign makes sense</li>
+                        </ul>
+                    </div>
+                    <div class="p-4 rounded-xl bg-[var(--neutral-100)]">
+                        <h4 class="font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+                            <i data-lucide="target" class="w-4 h-4 text-[var(--coral-500)]"></i>
+                            Practice Strategy
+                        </h4>
+                        <ul class="text-[var(--text-muted)] text-sm space-y-2">
+                            <li>• Start with small datasets (5-7 values)</li>
+                            <li>• Practice with real data (class grades, heights)</li>
+                            <li>• Master one concept before moving to the next</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="card p-0">
+            <div class="card-title-dark math">
+                <i data-lucide="rocket" class="w-5 h-5 mr-2"></i>
+                Ready to Practice?
+            </div>
+            <div class="p-6">
+                <div class="flex flex-wrap gap-4">
+                    <a href="tutor.html" class="btn btn-primary is-math">
+                        <i data-lucide="message-circle" class="w-4 h-4 mr-2 text-black"></i>
+                        Ask AI Tutor
+                    </a>
+                    <a href="calendar.html" class="btn btn-secondary">
+                        <i data-lucide="calendar" class="w-4 h-4 mr-2 text-black"></i>
+                        Study Schedule
+                    </a>
+                    <a href="index.html#chapters" class="btn btn-secondary">
+                        <i data-lucide="layers" class="w-4 h-4 mr-2 text-black"></i>
+                        All Chapters
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-dark mt-12">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+            <p class="text-[var(--text-light)] mb-2">Chapter 11 of 8 • MAT 143 Quantitative Literacy • CPCC</p>
+            <div class="flex justify-center gap-4 text-sm">
+                <a href="chapter-10.html" class="text-[var(--yellow-500)] hover:underline">
+                    <i data-lucide="arrow-left" class="w-4 h-4 inline mr-1"></i>
+                    Previous: Chapter 10
+                </a>
+                <a href="index.html" class="text-[var(--yellow-500)] hover:underline">Back to Dashboard</a>
+                <a href="chapter-13.html" class="text-[var(--yellow-500)] hover:underline">
+                    Next: Chapter 13
+                    <i data-lucide="arrow-right" class="w-4 h-4 inline ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+</html>
