@@ -5,73 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fall 2025 Academic Calendar - MAT 143 & ENG 111</title>
     <meta name="description" content="Complete academic calendar showing deadlines, assignments, and schedules for both MAT 143 and ENG 111 classes.">
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
-    
-    <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    
-    <!-- Microsoft Tiles -->
-    <meta name="msapplication-TileColor" content="#eb7754">
-    <meta name="msapplication-TileImage" content="/mstile-70x70.png">
-    
-    <!-- Web App Manifest -->
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="design-system.css">
-    <script>
-        tailwind.config = {
-            content: ["*.html"],
-            theme: {
-                extend: {
-                    colors: {
-                        black: "#080808",
-                        white: "#fafafa",
-                        neutral: {
-                            50:"#e5e6e6",100:"#d4d5d6",200:"#bec0c1",300:"#a9acac",400:"#939798",
-                            500:"#7e8283",600:"#696c6d",700:"#545757",800:"#3f4142",900:"#2a2b2c",950:"#191a1a"
-                        },
-                        coral: {
-                            50:"#fbe4dd",100:"#f8d2c6",200:"#f5bba9",300:"#f2a48d",400:"#ee8e71",
-                            500:"#eb7754",600:"#c46346",700:"#9d4f38",800:"#763c2a",900:"#4e281c",950:"#2f1811"
-                        },
-                        pink: {
-                            50:"#faf5f6",100:"#f6eeef",200:"#f2e5e7",300:"#eedde0",400:"#e9d4d8",
-                            500:"#e5ccd0",600:"#bfaaad",700:"#99888b",800:"#736668",900:"#4c4445",950:"#2e292a"
-                        },
-                        yellow: {
-                            50:"#fafae5",100:"#f6f7d3",200:"#f1f2bd",300:"#edeea7",400:"#e8ea91",
-                            500:"#e4e67b",600:"#bec067",700:"#989952",800:"#72733e",900:"#4c4d29",950:"#2e2e19"
-                        },
-                        blue: {
-                            50:"#f3f8fb",100:"#ebf4f8",200:"#e1eef4",300:"#d7e8f0",400:"#cde3ed",
-                            500:"#c3dde9",600:"#a2b8c2",700:"#82939b",800:"#626f75",900:"#414a4e",950:"#272c2f"
-                        }
-                    },
-                    fontFamily: {
-                        sans: ["Vend Sans","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Arial","Noto Sans","sans-serif"]
-                    },
-                    borderRadius: {xl:"0.875rem", "2xl":"1rem"},
-                    boxShadow: {
-                        card:"0 1px 2px rgba(0,0,0,0.06), 0 6px 20px rgba(0,0,0,0.06)"
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/design-system.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <style>
         .content-area {
@@ -83,21 +26,16 @@
         }
         
         .week-card {
-            background: white;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border-left: 4px solid transparent;
+            transition: all 0.2s ease;
         }
         
         .week-card.current {
-            border-left-color: #eb7754;
-            background: linear-gradient(to right, #fef3f0, white);
+            border-left: 4px solid var(--color-brand);
+            background: linear-gradient(to right, var(--color-brand-tertiary), var(--color-background-secondary));
         }
         
         .week-card.urgent {
-            border-left-color: #ef4444;
+            border-left: 4px solid var(--color-danger);
         }
         
         .week-card.test-week {
@@ -164,100 +102,283 @@
     </style>
 </head>
 
-<body class="bg-lightest-neutral">
-    <header class="header-dark">
-        <div class="max-w-6xl mx-auto px-4 py-6">
-            <div class="flex items-center justify-between mb-4">
-                <h1 class="text-3xl font-bold text-white flex items-center gap-3">
-                    <i data-lucide="calendar-days" class="w-8 h-8"></i>
-                    Academic Calendar
-                </h1>
-                <a href="index.html" class="text-light-neutral hover:text-white transition-colors">← Back to Dashboard</a>
-            </div>
-            <p class="text-light-neutral text-lg mb-6">Your complete schedule for MAT 143 Math & ENG 111 Writing</p>
-            <div class="bg-white bg-opacity-10 backdrop-blur-sm p-4 rounded-lg text-white font-medium" id="current-status">
-                Loading your current week...
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl bg-brand flex items-center justify-center">
+                            <i data-lucide="calendar-days" class="w-6 h-6 text-text-inverse-primary"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-title text-text-primary">Academic Calendar</h1>
+                            <p class="font-caption text-text-secondary">Fall 2025 • Complete Schedule</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:block bg-brand-tertiary border border-brand rounded-lg px-4 py-2">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 rounded-full bg-brand animate-pulse"></div>
+                            <span class="font-button-small text-text-brand-primary" id="current-status">
+                                Loading current week...
+                            </span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span class="font-button">Dashboard</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <section class="bg-white border-b border-gray-200 sticky top-0 z-10">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex gap-3 justify-center flex-wrap">
-                <button class="btn btn-primary is-math" onclick="showSection('overview')" id="nav-overview">
-                    <i data-lucide="clock" class="w-4 h-4 mr-2"></i>
-                    This Week
-                </button>
-                <button class="btn btn-secondary" onclick="showSection('math')" id="nav-math">
-                    <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
-                    MAT 143
-                </button>
-                <button class="btn btn-secondary" onclick="showSection('english')" id="nav-english">
-                    <i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>
-                    ENG 111
-                </button>
-                <button class="btn btn-secondary" onclick="showSection('tests')" id="nav-tests">
-                    <i data-lucide="target" class="w-4 h-4 mr-2"></i>
-                    Tests
-                </button>
+    <!-- Navigation Tabs -->
+    <section class="bg-background-secondary border-b border-border sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center py-4">
+                <div class="flex items-center space-x-2 bg-background border border-border rounded-xl p-1">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-brand text-text-inverse-primary font-button transition-all" onclick="showSection('overview')" id="nav-overview">
+                        <i data-lucide="clock" class="w-4 h-4"></i>
+                        <span>This Week</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary font-button transition-all" onclick="showSection('math')" id="nav-math">
+                        <i data-lucide="calculator" class="w-4 h-4"></i>
+                        <span>MAT 143</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary font-button transition-all" onclick="showSection('english')" id="nav-english">
+                        <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                        <span>ENG 111</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary font-button transition-all" onclick="showSection('tests')" id="nav-tests">
+                        <i data-lucide="target" class="w-4 h-4"></i>
+                        <span>Tests</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- This Week Overview -->
         <div id="overview" class="content-area active">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2">This Week's Priorities</h2>
-                <p class="text-gray-600">Focus on these key items to stay on track</p>
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="clock" class="w-6 h-6 text-brand"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-title text-text-primary">This Week's Priorities</h2>
+                        <p class="font-body-small text-text-secondary">Focus on these key items to stay on track</p>
+                    </div>
+                </div>
             </div>
-            <div id="current-week-content">
-                <!-- Populated by JavaScript -->
+            <div id="current-week-content" class="space-y-6">
+                <!-- Priority Items -->
+                <div class="bg-warning-tertiary border-l-4 border-warning rounded-r-xl p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-warning flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="alert-triangle" class="w-5 h-5 text-text-inverse-primary"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-subtitle-small text-text-primary mb-2">Critical Reading Discussion Due</h3>
+                            <p class="font-body-small text-text-secondary mb-3">ENG 111 • Due Today at 11:59 PM</p>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-caption bg-warning-secondary text-text-warning-primary px-2 py-1 rounded">High Priority</span>
+                                <a href="english_materials.html" class="font-button text-brand hover:text-brand-hover transition-colors">View Assignment →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regular Items -->
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-positive/10 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="calculator" class="w-5 h-5 text-positive"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-subtitle-small text-text-primary mb-2">Chapter 1 Homework</h3>
+                                <p class="font-body-small text-text-secondary mb-3">MAT 143 • Hawkes Learning</p>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-16 h-2 bg-background-tertiary rounded-full overflow-hidden">
+                                        <div class="w-1/2 h-full bg-positive rounded-full"></div>
+                                    </div>
+                                    <span class="font-caption text-text-secondary">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="book-open" class="w-5 h-5 text-brand"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-subtitle-small text-text-primary mb-2">Critical Reading Materials</h3>
+                                <p class="font-body-small text-text-secondary mb-3">ENG 111 • Review for discussion</p>
+                                <div class="flex items-center space-x-3">
+                                    <span class="font-caption bg-positive-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- MAT 143 Schedule -->
         <div id="math" class="content-area">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
-                    <i data-lucide="calculator" class="w-6 h-6 text-yellow-500"></i>
-                    MAT 143 Schedule
-                </h2>
-                <p class="text-gray-600">16-week semester overview</p>
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-positive/10 flex items-center justify-center">
+                        <i data-lucide="calculator" class="w-6 h-6 text-positive"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-title text-text-primary">MAT 143 Schedule</h2>
+                        <p class="font-body-small text-text-secondary">16-week semester overview with test dates</p>
+                    </div>
+                </div>
             </div>
-            <div id="semester-timeline">
-                <!-- Populated by JavaScript -->
+            
+            <!-- Test Schedule Overview -->
+            <div class="grid lg:grid-cols-4 gap-4 mb-8">
+                <div class="bg-background-secondary border border-positive rounded-xl p-4">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-inverse-primary font-bold">1</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-primary mb-1">Test 1</h3>
+                        <p class="font-caption text-text-secondary mb-2">Sept 8-12</p>
+                        <p class="font-caption text-text-positive-primary">Ch. 1 & 13</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold">2</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1">Test 2</h3>
+                        <p class="font-caption text-text-tertiary mb-2">Sept 29-Oct 3</p>
+                        <p class="font-caption text-text-secondary">Ch. 4 & 5</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold">3</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1">Test 3</h3>
+                        <p class="font-caption text-text-tertiary mb-2">Nov 3-7</p>
+                        <p class="font-caption text-text-secondary">Ch. 6 & 7</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold">4</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1">Test 4</h3>
+                        <p class="font-caption text-text-tertiary mb-2">Dec 8-12</p>
+                        <p class="font-caption text-text-secondary">Ch. 10 & 11</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="semester-timeline" class="space-y-4">
+                <!-- Current Weeks -->
+                <div class="week-card current bg-brand-tertiary border-l-4 border-brand rounded-r-xl p-6">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-subtitle-small text-text-primary mb-2">Week 1-2: Current</h3>
+                            <p class="font-caption text-text-brand-primary">Aug 18 - Aug 31, 2025</p>
+                        </div>
+                        <span class="font-caption bg-brand text-text-inverse-primary px-2 py-1 rounded">Active</span>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded bg-positive flex items-center justify-center">
+                                <span class="font-button-small text-text-inverse-primary font-bold">1</span>
+                            </div>
+                            <div>
+                                <p class="font-button text-text-primary">Chapter 1: Thinking Mathematically</p>
+                                <p class="font-caption text-text-secondary">Hawkes Learning assignments</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded bg-positive flex items-center justify-center">
+                                <span class="font-button-small text-text-inverse-primary font-bold">13</span>
+                            </div>
+                            <div>
+                                <p class="font-button text-text-primary">Chapter 13: Voting & Apportionment</p>
+                                <p class="font-caption text-text-secondary">Hawkes Learning assignments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming weeks would be populated here -->
             </div>
         </div>
 
         <!-- ENG 111 Schedule -->
         <div id="english" class="content-area">
-            <div class="mb-6">
-                <h2 class="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-3">
-                    <i data-lucide="pen-tool" class="w-6 h-6 text-blue-500"></i>
-                    ENG 111 Schedule
-                </h2>
-                <p class="text-gray-600">8-week writing course timeline</p>
-            </div>
-            <div class="english-schedule">
-                <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
-                    <div class="card-title-dark writing mb-4">
-                        <span class="text-white font-semibold flex items-center gap-2">
-                            <i data-lucide="info" class="w-5 h-5"></i>
-                            Course Information
-                        </span>
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="pen-tool" class="w-6 h-6 text-brand"></i>
                     </div>
-                    <div class="grid md:grid-cols-2 gap-4 text-sm">
-                        <div><strong>Duration:</strong> 8 weeks (Aug 18 - Oct 10, 2025)</div>
-                        <div><strong>Instructor:</strong> Emmanuel Meggett</div>
-                        <div><strong>Format:</strong> Online</div>
-                        <div><strong>Withdrawal Deadline:</strong> September 8, 2025</div>
+                    <div>
+                        <h2 class="font-title text-text-primary">ENG 111 Schedule</h2>
+                        <p class="font-body-small text-text-secondary">8-week writing course timeline</p>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Course Info Card -->
+            <div class="bg-brand-tertiary border border-brand rounded-xl p-6 mb-8">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-brand flex items-center justify-center">
+                        <i data-lucide="info" class="w-5 h-5 text-text-inverse-primary"></i>
+                    </div>
+                    <h3 class="font-subtitle-large text-text-brand-primary">Course Information</h3>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="calendar" class="w-4 h-4 text-brand"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Duration:</span> 8 weeks (Aug 18 - Oct 10, 2025)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="user" class="w-4 h-4 text-brand"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Instructor:</span> Emmanuel Meggett</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="monitor" class="w-4 h-4 text-brand"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Format:</span> Online</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="alert-triangle" class="w-4 h-4 text-warning"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Withdrawal Deadline:</span> September 8, 2025</span>
+                    </div>
+                </div>
+            </div>
 
-                <div class="weekly-schedule">
-                    <h3>📅 Week-by-Week Schedule</h3>
+            <div class="space-y-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-8 h-8 rounded-lg bg-brand/10 flex items-center justify-center">
+                        <i data-lucide="calendar-days" class="w-4 h-4 text-brand"></i>
+                    </div>
+                    <h3 class="font-subtitle-large text-text-primary">Week-by-Week Schedule</h3>
+                </div>
                     
                     <div class="week-card urgent">
                         <div class="week-header">

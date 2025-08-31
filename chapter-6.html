@@ -4,60 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 6: Personal Finance - Kristina's Math Tutor</title>
-    <meta name="description" content="Learn personal finance for MAT 143 - interest, loans, taxes, and budgeting with clear explanations and step-by-step tutorials.">
+    <meta name="description" content="Master personal finance concepts for MAT 143 - interest calculations, loan payments, taxes, and budgeting with clear explanations and worked examples.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: '#faf7f0',
-                        sage: '#9ca986',
-                        coral: '#eb7754',
-                        navy: '#2d3748',
-                        dusty: '#a0aec0',
-                        mathGreen: '#68d391',
-                        englishBlue: '#63b3ed',
-                        warning: '#f56565',
-                        success: '#48bb78'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/design-system.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-cream text-navy font-sans leading-relaxed">
+<body class="bg-background-secondary text-text-primary font-sans leading-relaxed">
     <!-- Header -->
-    <header class="bg-white shadow-sm border-b border-dusty/20">
+    <header class="bg-background-primary border-b border-border-subtle">
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-lg flex items-center justify-center">
-                        <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+                        <i data-lucide="dollar-sign" class="w-6 h-6 text-emerald-600"></i>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-navy">Chapter 6: Personal Finance</h1>
-                        <p class="text-dusty text-sm">MAT 143 - Weeks 8-10</p>
+                        <h1 class="text-xl font-semibold text-text-primary">Chapter 6: Personal Finance</h1>
+                        <p class="text-text-tertiary text-sm">MAT 143 • Money Management & Interest</p>
                     </div>
                 </div>
                 <nav class="flex items-center space-x-4">
-                    <a href="index.html" class="text-coral hover:text-coral/80 font-medium flex items-center">
+                    <a href="index.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
                         <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                         Back to Dashboard
                     </a>
@@ -67,403 +40,906 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Progress Indicator -->
-        <div class="mb-8">
-            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-sm font-medium text-navy">Chapter Progress</span>
-                    <span class="text-xs bg-dusty/20 text-dusty px-2 py-1 rounded">Upcoming</span>
+        <!-- Hero Section -->
+        <section class="bg-emerald-50 border border-emerald-200 rounded-xl p-8 mb-6">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 rounded-xl bg-emerald-600 flex items-center justify-center">
+                    <i data-lucide="dollar-sign" class="w-8 h-8 text-text-inverse-primary"></i>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                    <div class="bg-dusty h-2 rounded-full" style="width: 0%"></div>
+                <div>
+                    <h2 class="text-2xl font-bold text-text-primary mb-2">Personal Finance</h2>
+                    <p class="text-text-secondary">Master interest, loans, taxes, and budgeting for real-world success</p>
                 </div>
-                <p class="text-xs text-dusty mt-1">Available Week 8-10</p>
             </div>
-        </div>
 
-        <!-- Chapter Overview -->
-        <section class="mb-12">
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
-                <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
-                    <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
-                    Chapter Overview
-                </h2>
-                <div class="prose prose-sm max-w-none text-dusty">
-                    <p class="mb-4">
-                        This chapter covers essential personal finance topics including simple and compound interest, loan calculations, tax brackets, and budgeting. You'll learn to make informed financial decisions using mathematical principles.
+            <div class="grid md:grid-cols-3 gap-6 mb-6">
+                <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="target" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                        Learning Objectives
+                    </h3>
+                    <ul class="text-sm text-text-secondary space-y-1">
+                        <li>• Calculate simple and compound interest</li>
+                        <li>• Understand loan payments and amortization</li>
+                        <li>• Apply progressive tax calculations</li>
+                        <li>• Create effective budget plans</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="clock" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                        Timeline
+                    </h3>
+                    <ul class="text-sm text-text-secondary space-y-1">
+                        <li>• Week 11-12: Interest calculations</li>
+                        <li>• Week 13: Loans and investments</li>
+                        <li>• Test 4: Covers Chapters 6-7</li>
+                        <li>• Final project: Personal budget</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="lightbulb" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                        Key Skills
+                    </h3>
+                    <ul class="text-sm text-text-secondary space-y-1">
+                        <li>• Interest formula applications</li>
+                        <li>• Tax bracket calculations</li>
+                        <li>• Budget percentage allocations</li>
+                        <li>• Financial decision making</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-text-primary">Chapter Progress</span>
+                    <span class="text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="w-full bg-border-subtle rounded-full h-2 mb-2">
+                    <div class="bg-emerald-600 h-2 rounded-full transition-all duration-300" style="width: 85%"></div>
+                </div>
+                <p class="text-xs text-text-tertiary">4 of 5 sections completed</p>
+            </div>
+        </section>
+
+        <!-- Section 6.1: Understanding Interest -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">6.1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary">Understanding Interest</h3>
+                </div>
+                <p class="text-text-secondary">Learn how simple interest works and applies to financial situations</p>
+            </div>
+
+            <!-- Simple Interest Key Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Simple Interest Formula</h4>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                    <div class="text-center mb-4">
+                        <p class="text-2xl font-mono font-bold text-blue-700 bg-background-primary border border-border-subtle rounded-lg py-3 px-4">
+                            I = Prt
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <ul class="text-sm text-text-secondary space-y-2">
+                                <li><strong>I</strong> = Interest earned (dollars)</li>
+                                <li><strong>P</strong> = Principal (initial amount)</li>
+                                <li><strong>r</strong> = Annual interest rate (as decimal)</li>
+                                <li><strong>t</strong> = Time (in years)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                                <h6 class="font-medium text-text-primary mb-2">Key Points</h6>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Interest stays constant each period</li>
+                                    <li>• Convert percentage to decimal (5% = 0.05)</li>
+                                    <li>• Total amount = Principal + Interest</li>
+                                    <li>• Time must be in years</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Step-by-Step Process</h5>
+                        <ol class="text-sm text-text-secondary space-y-2 list-decimal list-inside">
+                            <li>Identify P, r, and t from the problem</li>
+                            <li>Convert percentage to decimal (÷100)</li>
+                            <li>Convert time to years if needed</li>
+                            <li>Multiply: Interest = P × r × t</li>
+                            <li>Find total: Total = Principal + Interest</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Common Time Conversions</h5>
+                        <div class="text-sm text-text-secondary space-y-1">
+                            <p>• 6 months = 0.5 years</p>
+                            <p>• 9 months = 0.75 years</p>
+                            <p>• 18 months = 1.5 years</p>
+                            <p>• 30 months = 2.5 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Worked Examples -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Worked Examples</h4>
+                
+                <!-- Example 1 -->
+                <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Example 1: Basic Simple Interest</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        You invest $2,500 in a savings account that pays 4% simple interest per year. How much interest will you earn after 3 years?
                     </p>
                     
-                    <div class="grid md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-mathGreen/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Simple interest calculations</li>
-                                <li>• Compound interest formulas</li>
-                                <li>• Progressive tax calculations</li>
-                                <li>• Budget planning strategies</li>
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p><strong>Step 1:</strong> Identify the values</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary">
+                                <li>• P = $2,500</li>
+                                <li>• r = 4% = 0.04</li>
+                                <li>• t = 3 years</li>
                             </ul>
+                            
+                            <p><strong>Step 2:</strong> Apply the formula</p>
+                            <p class="ml-4">I = Prt = 2,500 × 0.04 × 3</p>
+                            
+                            <p><strong>Step 3:</strong> Calculate</p>
+                            <div class="ml-4 space-y-1">
+                                <p>I = 2,500 × 0.04 × 3 = $300</p>
+                                <p class="text-green-600 font-medium"><strong>Answer:</strong> You'll earn $300 in interest</p>
+                                <p class="text-text-secondary"><strong>Total amount:</strong> $2,500 + $300 = $2,800</p>
+                            </div>
                         </div>
-                        
-                        <div class="bg-coral/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Test Info</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Test 3: Oct 20-24</li>
-                                <li>• Combined with Chapter 7</li>
-                                <li>• Focus on applications</li>
-                                <li>• Formula sheet provided</li>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Example 2: Finding the Principal</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        What principal amount would earn $180 in simple interest at 6% annual rate for 2 years?
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p><strong>Step 1:</strong> Identify what we know</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary">
+                                <li>• I = $180</li>
+                                <li>• r = 6% = 0.06</li>
+                                <li>• t = 2 years</li>
+                                <li>• P = ? (what we're finding)</li>
                             </ul>
+                            
+                            <p><strong>Step 2:</strong> Rearrange the formula</p>
+                            <p class="ml-4">I = Prt → P = I ÷ (rt)</p>
+                            
+                            <p><strong>Step 3:</strong> Calculate</p>
+                            <div class="ml-4 space-y-1">
+                                <p>P = 180 ÷ (0.06 × 2) = 180 ÷ 0.12 = $1,500</p>
+                                <p class="text-blue-600 font-medium"><strong>Answer:</strong> The principal is $1,500</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Problems -->
+            <div class="border-t border-border-subtle pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Practice Problems</h4>
+                
+                <div class="space-y-4">
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2">Problem 1:</p>
+                        <p class="text-sm text-text-secondary mb-3">
+                            A loan of $5,000 charges 7% simple interest per year. How much total will be owed after 18 months?
+                        </p>
                         
-                        <div class="bg-sage/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Connect to real situations</li>
-                                <li>• Practice converting percentages</li>
-                                <li>• Use step-by-step approach</li>
-                                <li>• Check answers for reasonableness</li>
-                            </ul>
+                        <button onclick="toggleAnswer('simple-answer-1')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="simple-answer-1" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p><strong>Given:</strong> P = $5,000, r = 0.07, t = 18 months = 1.5 years</p>
+                                <p><strong>Interest:</strong> I = 5,000 × 0.07 × 1.5 = $525</p>
+                                <p><strong>Total owed:</strong> $5,000 + $525 = $5,525</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2">Problem 2:</p>
+                        <p class="text-sm text-text-secondary mb-3">
+                            How long will it take for $800 to earn $96 in simple interest at 4% annually?
+                        </p>
+                        
+                        <button onclick="toggleAnswer('simple-answer-2')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="simple-answer-2" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p><strong>Given:</strong> P = $800, I = $96, r = 0.04, t = ?</p>
+                                <p><strong>Rearrange:</strong> t = I ÷ (Pr) = 96 ÷ (800 × 0.04) = 96 ÷ 32 = 3 years</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Learning Sections -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
-                <i data-lucide="book-open" class="w-6 h-6 mr-3 text-mathGreen"></i>
-                Learning Materials
-            </h2>
-            
-            <div class="space-y-6">
-                <!-- Simple Interest -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
-                        <h3 class="text-xl font-semibold text-navy mb-2">6.1 Simple Interest</h3>
-                        <p class="text-dusty">Calculate interest that doesn't compound</p>
+        <!-- Section 6.2: Saving and Investing -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">6.2</span>
                     </div>
-                    
-                    <div class="p-6">
-                        <div class="mb-6">
-                            <h4 class="font-semibold text-navy mb-3">Simple Interest Formula</h4>
-                            <div class="bg-mathGreen/10 rounded-lg p-4 mb-4">
-                                <p class="text-lg font-mono text-center text-navy mb-2">
-                                    <strong>I = P × r × t</strong>
-                                </p>
-                                <div class="text-sm text-dusty space-y-1">
-                                    <p><strong>I</strong> = Interest earned</p>
-                                    <p><strong>P</strong> = Principal (starting amount)</p>
-                                    <p><strong>r</strong> = Annual interest rate (as decimal)</p>
-                                    <p><strong>t</strong> = Time in years</p>
-                                </div>
-                            </div>
-                            
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Step-by-Step Process</h5>
-                                    <div class="text-sm space-y-2">
-                                        <div class="flex items-center space-x-2">
-                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">1</span>
-                                            <span>Identify P, r, and t</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">2</span>
-                                            <span>Convert percentage to decimal</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">3</span>
-                                            <span>Multiply P × r × t</span>
-                                        </div>
-                                        <div class="flex items-center space-x-2">
-                                            <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold">4</span>
-                                            <span>Total = P + I</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Example</h5>
-                                    <div class="bg-cream/50 rounded p-3 text-sm">
-                                        <p class="mb-2"><strong>Problem:</strong> $1,000 at 5% for 3 years</p>
-                                        <div class="space-y-1 text-xs">
-                                            <p><strong>P:</strong> $1,000</p>
-                                            <p><strong>r:</strong> 5% = 0.05</p>
-                                            <p><strong>t:</strong> 3 years</p>
-                                            <p><strong>I:</strong> 1,000 × 0.05 × 3 = $150</p>
-                                            <p class="text-mathGreen"><strong>Total:</strong> $1,000 + $150 = $1,150</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <h3 class="text-xl font-bold text-text-primary">Saving and Investing</h3>
+                </div>
+                <p class="text-text-secondary">Understanding compound interest and how money grows over time</p>
+            </div>
+
+            <!-- Compound Interest Key Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Compound Interest Formula</h4>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-6">
+                    <div class="text-center mb-4">
+                        <p class="text-2xl font-mono font-bold text-purple-700 bg-background-primary border border-border-subtle rounded-lg py-3 px-4">
+                            A = P(1 + r/n)^(nt)
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <ul class="text-sm text-text-secondary space-y-2">
+                                <li><strong>A</strong> = Final amount</li>
+                                <li><strong>P</strong> = Principal (initial deposit)</li>
+                                <li><strong>r</strong> = Annual interest rate (decimal)</li>
+                                <li><strong>n</strong> = Times compounded per year</li>
+                                <li><strong>t</strong> = Number of years</li>
+                            </ul>
                         </div>
-
-                        <!-- Practice Problems -->
-                        <div class="border-t border-dusty/10 pt-6">
-                            <h5 class="font-semibold text-navy mb-4 flex items-center">
-                                <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
-                                Practice Problems
-                            </h5>
-                            
-                            <div class="space-y-4">
-                                <!-- Problem 1 -->
-                                <div class="bg-cream/30 rounded-lg p-4">
-                                    <p class="text-sm font-medium text-navy mb-2">Problem 1:</p>
-                                    <p class="text-sm text-dusty mb-3">You deposit $2,500 in a savings account that earns 3% simple interest per year. How much interest will you earn after 4 years?</p>
-                                    
-                                    <button onclick="toggleAnswer('answer5')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
-                                        Show Solution
-                                    </button>
-                                    
-                                    <div id="answer5" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
-                                        <div class="text-xs space-y-1">
-                                            <p><strong>Formula:</strong> I = P × r × t</p>
-                                            <p><strong>Given:</strong> P = $2,500, r = 0.03, t = 4 years</p>
-                                            <p><strong>Calculate:</strong> I = $2,500 × 0.03 × 4 = $300</p>
-                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> $300 in interest</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Problem 2 -->
-                                <div class="bg-cream/30 rounded-lg p-4">
-                                    <p class="text-sm font-medium text-navy mb-2">Problem 2:</p>
-                                    <p class="text-sm text-dusty mb-3">Your monthly budget is $3,200. You spend $960 on rent, $400 on food, $200 on transportation, and $300 on utilities. What percentage of your budget is left for other expenses?</p>
-                                    
-                                    <button onclick="toggleAnswer('answer6')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
-                                        Show Solution
-                                    </button>
-                                    
-                                    <div id="answer6" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
-                                        <div class="text-xs space-y-1">
-                                            <p><strong>Total expenses:</strong> $960 + $400 + $200 + $300 = $1,860</p>
-                                            <p><strong>Amount left:</strong> $3,200 - $1,860 = $1,340</p>
-                                            <p><strong>Percentage:</strong> ($1,340 ÷ $3,200) × 100% = 41.875%</p>
-                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 41.9% of budget remaining</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div>
+                            <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                                <h6 class="font-medium text-text-primary mb-2">Compounding Frequencies</h6>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Annually: n = 1</li>
+                                    <li>• Quarterly: n = 4</li>
+                                    <li>• Monthly: n = 12</li>
+                                    <li>• Daily: n = 365</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Compound Interest -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
-                        <h3 class="text-xl font-semibold text-navy mb-2">6.2 Compound Interest</h3>
-                        <p class="text-dusty">Calculate interest that grows on interest</p>
-                    </div>
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                    <h5 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="lightbulb" class="w-4 h-4 mr-2 text-yellow-600"></i>
+                        Why Compound Interest is Powerful
+                    </h5>
+                    <p class="text-sm text-text-secondary">
+                        With compound interest, you earn interest on your interest! This creates exponential growth over time. 
+                        Albert Einstein reportedly called compound interest "the eighth wonder of the world."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Worked Examples -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Worked Examples</h4>
+                
+                <!-- Example 1 -->
+                <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Example 1: Monthly Compounding</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        You deposit $1,000 in an account that pays 6% annual interest, compounded monthly. What will the account be worth after 5 years?
+                    </p>
                     
-                    <div class="p-6">
-                        <div class="mb-6">
-                            <h4 class="font-semibold text-navy mb-3">Compound Interest Formula</h4>
-                            <div class="bg-coral/10 rounded-lg p-4 mb-4">
-                                <p class="text-lg font-mono text-center text-navy mb-2">
-                                    <strong>A = P(1 + r/n)^(nt)</strong>
-                                </p>
-                                <div class="text-sm text-dusty space-y-1">
-                                    <p><strong>A</strong> = Final amount</p>
-                                    <p><strong>P</strong> = Principal</p>
-                                    <p><strong>r</strong> = Annual rate (decimal)</p>
-                                    <p><strong>n</strong> = Compounding frequency per year</p>
-                                    <p><strong>t</strong> = Time in years</p>
-                                </div>
-                            </div>
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p><strong>Step 1:</strong> Identify the values</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary">
+                                <li>• P = $1,000</li>
+                                <li>• r = 6% = 0.06</li>
+                                <li>• n = 12 (monthly)</li>
+                                <li>• t = 5 years</li>
+                            </ul>
                             
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Common Frequencies</h5>
-                                    <div class="space-y-2 text-sm">
-                                        <div class="flex justify-between">
-                                            <span>Annual:</span>
-                                            <span class="font-mono">n = 1</span>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <span>Quarterly:</span>
-                                            <span class="font-mono">n = 4</span>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <span>Monthly:</span>
-                                            <span class="font-mono">n = 12</span>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <span>Daily:</span>
-                                            <span class="font-mono">n = 365</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Example</h5>
-                                    <div class="bg-cream/50 rounded p-3 text-sm">
-                                        <p class="mb-2"><strong>Problem:</strong> $1,000 at 5% quarterly for 3 years</p>
-                                        <div class="space-y-1 text-xs">
-                                            <p><strong>Setup:</strong> A = 1000(1 + 0.05/4)^(4×3)</p>
-                                            <p><strong>Simplify:</strong> A = 1000(1.0125)^12</p>
-                                            <p><strong>Calculate:</strong> A = 1000(1.1608)</p>
-                                            <p class="text-mathGreen"><strong>Result:</strong> A = $1,160.80</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <p><strong>Step 2:</strong> Set up the formula</p>
+                            <p class="ml-4">A = 1,000(1 + 0.06/12)^(12×5)</p>
+                            
+                            <p><strong>Step 3:</strong> Simplify inside parentheses</p>
+                            <p class="ml-4">A = 1,000(1 + 0.005)^60 = 1,000(1.005)^60</p>
+                            
+                            <p><strong>Step 4:</strong> Calculate</p>
+                            <div class="ml-4 space-y-1">
+                                <p>A = 1,000(1.3489) = $1,348.90</p>
+                                <p class="text-green-600 font-medium"><strong>Answer:</strong> The account will be worth $1,348.90</p>
+                                <p class="text-text-secondary"><strong>Interest earned:</strong> $1,348.90 - $1,000 = $348.90</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tax Calculations -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
-                        <h3 class="text-xl font-semibold text-navy mb-2">6.3 Progressive Tax Brackets</h3>
-                        <p class="text-dusty">Understanding how tax brackets work</p>
-                    </div>
+                <!-- Example 2 -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Example 2: Comparing Compounding Frequencies</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Compare $5,000 invested at 8% for 10 years with annual vs. quarterly compounding.
+                    </p>
                     
-                    <div class="p-6">
-                        <div class="mb-6">
-                            <h4 class="font-semibold text-navy mb-3">How Progressive Taxes Work</h4>
-                            <div class="bg-sage/10 rounded-lg p-4 mb-4">
-                                <p class="text-sm text-navy mb-2">
-                                    <strong>You pay different rates on different portions of your income</strong>
-                                </p>
-                                <p class="text-xs text-dusty">
-                                    Think of climbing stairs - you pay the rate for each "step" you reach
-                                </p>
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-3">
+                            <div>
+                                <p><strong>Annual Compounding (n = 1):</strong></p>
+                                <div class="ml-4 space-y-1">
+                                    <p>A = 5,000(1 + 0.08/1)^(1×10) = 5,000(1.08)^10</p>
+                                    <p>A = 5,000(2.159) = $10,794.62</p>
+                                </div>
                             </div>
                             
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Sample Tax Brackets</h5>
-                                    <div class="space-y-2 text-sm">
-                                        <div class="flex justify-between bg-success/10 p-2 rounded">
-                                            <span>$0 - $10,000</span>
-                                            <span class="font-bold">10%</span>
-                                        </div>
-                                        <div class="flex justify-between bg-warning/10 p-2 rounded">
-                                            <span>$10,001 - $40,000</span>
-                                            <span class="font-bold">12%</span>
-                                        </div>
-                                        <div class="flex justify-between bg-coral/10 p-2 rounded">
-                                            <span>$40,001 - $85,000</span>
-                                            <span class="font-bold">22%</span>
-                                        </div>
-                                    </div>
+                            <div>
+                                <p><strong>Quarterly Compounding (n = 4):</strong></p>
+                                <div class="ml-4 space-y-1">
+                                    <p>A = 5,000(1 + 0.08/4)^(4×10) = 5,000(1.02)^40</p>
+                                    <p>A = 5,000(2.208) = $11,040.20</p>
                                 </div>
-                                
-                                <div class="space-y-3">
-                                    <h5 class="font-medium text-navy">Example: $50,000 Income</h5>
-                                    <div class="bg-cream/50 rounded p-3 text-sm">
-                                        <div class="space-y-1 text-xs">
-                                            <p><strong>Bracket 1:</strong> $10,000 × 0.10 = $1,000</p>
-                                            <p><strong>Bracket 2:</strong> $30,000 × 0.12 = $3,600</p>
-                                            <p><strong>Bracket 3:</strong> $10,000 × 0.22 = $2,200</p>
-                                            <p class="border-t pt-1 mt-2"><strong>Total Tax:</strong> $6,800</p>
-                                            <p class="text-mathGreen"><strong>Effective Rate:</strong> 13.6%</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            
+                            <div class="border-t pt-2">
+                                <p class="text-blue-600 font-medium"><strong>Difference:</strong> $11,040.20 - $10,794.62 = $245.58</p>
+                                <p class="text-text-secondary text-xs">More frequent compounding earns more money!</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Budget Planning -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
-                        <h3 class="text-xl font-semibold text-navy mb-2">6.4 Budget Planning</h3>
-                        <p class="text-dusty">The 50/30/20 budgeting rule</p>
+                <!-- APY Example -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Example 3: Annual Percentage Yield (APY)</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        An account advertises 5% annual interest compounded daily. What is the actual annual percentage yield?
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p><strong>APY Formula:</strong> APY = (1 + r/n)^n - 1</p>
+                            
+                            <p><strong>Step 1:</strong> Substitute values</p>
+                            <p class="ml-4">APY = (1 + 0.05/365)^365 - 1</p>
+                            
+                            <p><strong>Step 2:</strong> Calculate</p>
+                            <div class="ml-4 space-y-1">
+                                <p>APY = (1.0001370)^365 - 1</p>
+                                <p>APY = 1.0513 - 1 = 0.0513</p>
+                                <p class="text-amber-600 font-medium"><strong>Answer:</strong> APY = 5.13%</p>
+                            </div>
+                            
+                            <p class="text-text-secondary text-xs mt-2">
+                                The effective yield is slightly higher than the stated rate due to compounding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Problems -->
+            <div class="border-t border-border-subtle pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Practice Problems</h4>
+                
+                <div class="space-y-4">
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2">Problem 1:</p>
+                        <p class="text-sm text-text-secondary mb-3">
+                            $2,500 is invested at 7% annual interest, compounded quarterly. Find the value after 8 years.
+                        </p>
+                        
+                        <button onclick="toggleAnswer('compound-answer-1')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="compound-answer-1" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p><strong>Given:</strong> P = $2,500, r = 0.07, n = 4, t = 8</p>
+                                <p><strong>Formula:</strong> A = 2,500(1 + 0.07/4)^(4×8) = 2,500(1.0175)^32</p>
+                                <p><strong>Calculate:</strong> A = 2,500(1.749) = $4,372.50</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2">Problem 2:</p>
+                        <p class="text-sm text-text-secondary mb-3">
+                            What principal amount, invested at 4% compounded annually, would grow to $15,000 in 12 years?
+                        </p>
+                        
+                        <button onclick="toggleAnswer('compound-answer-2')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="compound-answer-2" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p><strong>Rearrange:</strong> P = A ÷ (1 + r/n)^(nt)</p>
+                                <p><strong>Calculate:</strong> P = 15,000 ÷ (1.04)^12 = 15,000 ÷ 1.601 = $9,370.74</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6.3: Borrowing Money -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">6.3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary">Borrowing Money</h3>
+                </div>
+                <p class="text-text-secondary">Understanding loans, monthly payments, and total interest costs</p>
+            </div>
+
+            <!-- Loan Payment Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Loan Payment Formula</h4>
+                
+                <div class="bg-red-50 border border-red-200 rounded-lg p-6 mb-6">
+                    <div class="text-center mb-4">
+                        <p class="text-lg font-mono font-bold text-red-700 bg-background-primary border border-border-subtle rounded-lg py-3 px-4">
+                            PMT = P × [r(1+r)^n] / [(1+r)^n - 1]
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <ul class="text-sm text-text-secondary space-y-2">
+                                <li><strong>PMT</strong> = Monthly payment</li>
+                                <li><strong>P</strong> = Loan amount (principal)</li>
+                                <li><strong>r</strong> = Monthly interest rate (annual rate ÷ 12)</li>
+                                <li><strong>n</strong> = Total number of payments</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                                <h6 class="font-medium text-text-primary mb-2">Key Facts About Loans</h6>
+                                <ul class="text-xs text-text-secondary space-y-1">
+                                    <li>• Early payments are mostly interest</li>
+                                    <li>• Later payments are mostly principal</li>
+                                    <li>• Total interest = (PMT × n) - P</li>
+                                    <li>• Longer term = higher total interest</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Loan Payment Process</h5>
+                        <ol class="text-sm text-text-secondary space-y-2 list-decimal list-inside">
+                            <li>Convert annual rate to monthly (÷12)</li>
+                            <li>Calculate total payments (years × 12)</li>
+                            <li>Apply the payment formula</li>
+                            <li>Find total paid and total interest</li>
+                        </ol>
                     </div>
                     
-                    <div class="p-6">
-                        <div class="mb-6">
-                            <h4 class="font-semibold text-navy mb-3">The 50/30/20 Rule</h4>
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Loan Comparison Tips</h5>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• Lower rate = less total interest</li>
+                            <li>• Shorter term = higher payment, less interest</li>
+                            <li>• Extra payments save thousands in interest</li>
+                            <li>• Shop around for best rates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Worked Example -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Worked Example</h4>
+                
+                <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Car Loan Calculation</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        You need to borrow $24,000 for a car at 6.5% annual interest for 4 years. Calculate the monthly payment and total interest.
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-3">
+                            <div>
+                                <p><strong>Step 1:</strong> Identify and convert values</p>
+                                <ul class="ml-4 space-y-1 text-text-secondary">
+                                    <li>• P = $24,000</li>
+                                    <li>• Annual rate = 6.5%, so monthly r = 0.065 ÷ 12 = 0.0054167</li>
+                                    <li>• n = 4 years × 12 = 48 payments</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <p><strong>Step 2:</strong> Apply the formula</p>
+                                <div class="ml-4">
+                                    <p>PMT = 24,000 × [0.0054167(1.0054167)^48] / [(1.0054167)^48 - 1]</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <p><strong>Step 3:</strong> Calculate components</p>
+                                <div class="ml-4 space-y-1">
+                                    <p>(1.0054167)^48 = 1.2979</p>
+                                    <p>PMT = 24,000 × [0.0054167 × 1.2979] / [1.2979 - 1]</p>
+                                    <p>PMT = 24,000 × 0.007029 / 0.2979 = $566.88</p>
+                                </div>
+                            </div>
+                            
+                            <div class="border-t pt-2">
+                                <p class="text-orange-600 font-medium"><strong>Monthly Payment:</strong> $566.88</p>
+                                <p><strong>Total Paid:</strong> $566.88 × 48 = $27,210.24</p>
+                                <p><strong>Total Interest:</strong> $27,210.24 - $24,000 = $3,210.24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6.4: Federal Revenue -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">6.4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary">Federal Revenue</h3>
+                </div>
+                <p class="text-text-secondary">Understanding progressive tax brackets and effective tax rates</p>
+            </div>
+
+            <!-- Tax Bracket Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Progressive Tax System</h4>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                    <h5 class="font-semibold text-text-primary mb-3">How Tax Brackets Work</h5>
+                    <p class="text-sm text-text-secondary mb-4">
+                        You pay different tax rates on different portions of your income. Think of it like climbing stairs - 
+                        you pay the rate for each "step" you reach, not the highest rate on all your income.
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h6 class="font-medium text-text-primary mb-2">2024 Tax Brackets (Simplified Example)</h6>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between items-center bg-green-100 p-2 rounded">
+                                <span>$0 - $11,000</span>
+                                <span class="font-bold text-green-700">10%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-yellow-100 p-2 rounded">
+                                <span>$11,001 - $44,725</span>
+                                <span class="font-bold text-yellow-700">12%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-orange-100 p-2 rounded">
+                                <span>$44,726 - $95,375</span>
+                                <span class="font-bold text-orange-700">22%</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-red-100 p-2 rounded">
+                                <span>$95,376+</span>
+                                <span class="font-bold text-red-700">24%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Key Terms</h5>
+                        <ul class="text-sm text-text-secondary space-y-2">
+                            <li><strong>Marginal Tax Rate:</strong> Rate on your last dollar earned</li>
+                            <li><strong>Effective Tax Rate:</strong> Average rate on all income</li>
+                            <li><strong>Tax Bracket:</strong> Income range with specific rate</li>
+                            <li><strong>Progressive:</strong> Higher earners pay higher rates</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3">Calculation Steps</h5>
+                        <ol class="text-sm text-text-secondary space-y-1 list-decimal list-inside">
+                            <li>Start with the lowest bracket</li>
+                            <li>Calculate tax for each bracket you fall into</li>
+                            <li>Add up all bracket taxes</li>
+                            <li>Find effective rate: Total tax ÷ Income</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Worked Example -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Worked Example</h4>
+                
+                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Tax Calculation for $60,000 Income</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Calculate the federal income tax and effective tax rate for someone earning $60,000.
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-3">
+                            <div>
+                                <p><strong>Bracket 1:</strong> $11,000 at 10%</p>
+                                <p class="ml-4 text-text-secondary">Tax = $11,000 × 0.10 = $1,100</p>
+                            </div>
+                            
+                            <div>
+                                <p><strong>Bracket 2:</strong> $33,725 at 12% ($44,725 - $11,000)</p>
+                                <p class="ml-4 text-text-secondary">Tax = $33,725 × 0.12 = $4,047</p>
+                            </div>
+                            
+                            <div>
+                                <p><strong>Bracket 3:</strong> $15,275 at 22% ($60,000 - $44,725)</p>
+                                <p class="ml-4 text-text-secondary">Tax = $15,275 × 0.22 = $3,360.50</p>
+                            </div>
+                            
+                            <div class="border-t pt-2 space-y-1">
+                                <p><strong>Total Tax:</strong> $1,100 + $4,047 + $3,360.50 = $8,507.50</p>
+                                <p><strong>Effective Rate:</strong> $8,507.50 ÷ $60,000 = 14.18%</p>
+                                <p class="text-indigo-600 font-medium"><strong>Marginal Rate:</strong> 22% (highest bracket reached)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Problem -->
+            <div class="border-t border-border-subtle pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Practice Problem</h4>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <p class="font-medium text-text-primary mb-2">Tax Calculation:</p>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Calculate the total federal tax and effective tax rate for someone earning $85,000 annually.
+                    </p>
+                    
+                    <button onclick="toggleAnswer('tax-answer-1')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                        Show Solution
+                    </button>
+                    
+                    <div id="tax-answer-1" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                        <div class="text-sm space-y-1">
+                            <p><strong>Bracket 1:</strong> $11,000 × 0.10 = $1,100</p>
+                            <p><strong>Bracket 2:</strong> $33,725 × 0.12 = $4,047</p>
+                            <p><strong>Bracket 3:</strong> $40,275 × 0.22 = $8,860.50 ($85,000 - $44,725)</p>
+                            <p><strong>Total Tax:</strong> $14,007.50</p>
+                            <p><strong>Effective Rate:</strong> 16.48%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6.5: Budgeting -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-100 flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">6.5</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary">Budgeting</h3>
+                </div>
+                <p class="text-text-secondary">Creating effective budgets using the 50/30/20 rule</p>
+            </div>
+
+            <!-- Budgeting Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">The 50/30/20 Budget Rule</h4>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                        <div class="w-16 h-16 rounded-full bg-green-600 text-text-inverse-primary flex items-center justify-center text-2xl font-bold mx-auto mb-3">50%</div>
+                        <h5 class="font-semibold text-text-primary mb-2">NEEDS</h5>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• Housing (rent/mortgage)</li>
+                            <li>• Utilities</li>
+                            <li>• Groceries</li>
+                            <li>• Transportation</li>
+                            <li>• Insurance</li>
+                            <li>• Minimum debt payments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
+                        <div class="w-16 h-16 rounded-full bg-blue-600 text-text-inverse-primary flex items-center justify-center text-2xl font-bold mx-auto mb-3">30%</div>
+                        <h5 class="font-semibold text-text-primary mb-2">WANTS</h5>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• Entertainment</li>
+                            <li>• Dining out</li>
+                            <li>• Hobbies</li>
+                            <li>• Shopping</li>
+                            <li>• Subscriptions</li>
+                            <li>• Vacations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 text-center">
+                        <div class="w-16 h-16 rounded-full bg-purple-600 text-text-inverse-primary flex items-center justify-center text-2xl font-bold mx-auto mb-3">20%</div>
+                        <h5 class="font-semibold text-text-primary mb-2">SAVINGS</h5>
+                        <ul class="text-sm text-text-secondary space-y-1">
+                            <li>• Emergency fund</li>
+                            <li>• Retirement contributions</li>
+                            <li>• Extra debt payments</li>
+                            <li>• Future goals</li>
+                            <li>• Investments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                    <h5 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="info" class="w-4 h-4 mr-2 text-yellow-600"></i>
+                        Budget Tips for Success
+                    </h5>
+                    <ul class="text-sm text-text-secondary space-y-1">
+                        <li>• Track spending for a month before creating a budget</li>
+                        <li>• Use percentages as guidelines, not rigid rules</li>
+                        <li>• Prioritize building an emergency fund first</li>
+                        <li>• Automate savings to make it effortless</li>
+                        <li>• Review and adjust your budget regularly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Worked Example -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Worked Example</h4>
+                
+                <div class="bg-teal-50 border border-teal-200 rounded-lg p-4">
+                    <h5 class="font-semibold text-text-primary mb-2">Monthly Budget for $4,500 Take-Home Pay</h5>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Create a 50/30/20 budget for someone with $4,500 monthly after-tax income.
+                    </p>
+                    
+                    <div class="bg-background-primary border border-border-subtle rounded-lg p-3">
+                        <div class="text-sm space-y-4">
                             <div class="grid md:grid-cols-3 gap-4">
-                                <div class="bg-success/10 rounded-lg p-4">
-                                    <h5 class="font-medium text-navy mb-2">50% Needs</h5>
-                                    <ul class="text-sm text-dusty space-y-1">
-                                        <li>• Housing</li>
-                                        <li>• Food</li>
-                                        <li>• Utilities</li>
-                                        <li>• Transportation</li>
-                                        <li>• Minimum debt payments</li>
+                                <div>
+                                    <p class="font-medium text-green-700 mb-2">NEEDS (50%)</p>
+                                    <p class="text-lg font-bold mb-2">$2,250</p>
+                                    <ul class="text-xs text-text-secondary space-y-1">
+                                        <li>Rent: $1,200</li>
+                                        <li>Utilities: $150</li>
+                                        <li>Groceries: $400</li>
+                                        <li>Car payment: $300</li>
+                                        <li>Insurance: $200</li>
                                     </ul>
                                 </div>
                                 
-                                <div class="bg-englishBlue/10 rounded-lg p-4">
-                                    <h5 class="font-medium text-navy mb-2">30% Wants</h5>
-                                    <ul class="text-sm text-dusty space-y-1">
-                                        <li>• Entertainment</li>
-                                        <li>• Dining out</li>
-                                        <li>• Hobbies</li>
-                                        <li>• Shopping</li>
-                                        <li>• Subscriptions</li>
+                                <div>
+                                    <p class="font-medium text-blue-700 mb-2">WANTS (30%)</p>
+                                    <p class="text-lg font-bold mb-2">$1,350</p>
+                                    <ul class="text-xs text-text-secondary space-y-1">
+                                        <li>Entertainment: $300</li>
+                                        <li>Dining out: $400</li>
+                                        <li>Hobbies: $200</li>
+                                        <li>Shopping: $250</li>
+                                        <li>Subscriptions: $200</li>
                                     </ul>
                                 </div>
                                 
-                                <div class="bg-coral/10 rounded-lg p-4">
-                                    <h5 class="font-medium text-navy mb-2">20% Savings</h5>
-                                    <ul class="text-sm text-dusty space-y-1">
-                                        <li>• Emergency fund</li>
-                                        <li>• Retirement</li>
-                                        <li>• Extra debt payments</li>
-                                        <li>• Future goals</li>
-                                        <li>• Investments</li>
+                                <div>
+                                    <p class="font-medium text-purple-700 mb-2">SAVINGS (20%)</p>
+                                    <p class="text-lg font-bold mb-2">$900</p>
+                                    <ul class="text-xs text-text-secondary space-y-1">
+                                        <li>Emergency fund: $300</li>
+                                        <li>Retirement: $400</li>
+                                        <li>Extra car payment: $100</li>
+                                        <li>Vacation fund: $100</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="bg-cream/50 rounded-lg p-4">
-                            <h5 class="font-medium text-navy mb-2">Example: $4,000 Monthly Income</h5>
-                            <div class="grid md:grid-cols-3 gap-3 text-sm">
-                                <div>
-                                    <p><strong>Needs:</strong> $2,000 (50%)</p>
-                                </div>
-                                <div>
-                                    <p><strong>Wants:</strong> $1,200 (30%)</p>
-                                </div>
-                                <div>
-                                    <p><strong>Savings:</strong> $800 (20%)</p>
-                                </div>
+                            
+                            <div class="border-t pt-2">
+                                <p class="text-teal-600 font-medium">
+                                    <strong>Total:</strong> $2,250 + $1,350 + $900 = $4,500 ✓
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Quick Reference -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
-                            <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
-                            Quick Reference & Formulas
-                        </h3>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-medium text-navy mb-3">Key Formulas</h4>
-                                <ul class="text-sm text-dusty space-y-2">
-                                    <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-mathGreen/10 text-mathGreen px-2 py-1 rounded text-xs">I = P × r × t</span>
-                                        <span>Simple interest</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-coral/10 text-coral px-2 py-1 rounded text-xs">A = P(1 + r/n)^(nt)</span>
-                                        <span>Compound interest</span>
-                                    </li>
-                                    <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-sage/10 text-sage px-2 py-1 rounded text-xs">Rate = Total Tax ÷ Income</span>
-                                        <span>Effective tax rate</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            
-                            <div>
-                                <h4 class="font-medium text-navy mb-3">Key Concepts</h4>
-                                <ul class="text-sm text-dusty space-y-1">
-                                    <li>• Simple interest stays the same each period</li>
-                                    <li>• Compound interest grows over time</li>
-                                    <li>• Tax brackets apply to income ranges</li>
-                                    <li>• Budgets help manage spending and saving</li>
-                                </ul>
-                            </div>
+            <!-- Practice Problem -->
+            <div class="border-t border-border-subtle pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4">Practice Problem</h4>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <p class="font-medium text-text-primary mb-2">Budget Creation:</p>
+                    <p class="text-sm text-text-secondary mb-3">
+                        Create a 50/30/20 budget for someone with $3,200 monthly take-home pay. How much should they allocate to each category?
+                    </p>
+                    
+                    <button onclick="toggleAnswer('budget-answer-1')" class="text-sm bg-emerald-100 text-emerald-700 px-3 py-1 rounded hover:bg-emerald-200 transition-colors">
+                        Show Solution
+                    </button>
+                    
+                    <div id="budget-answer-1" class="hidden mt-3 p-3 bg-background-primary border-l-4 border-emerald-600 rounded-r">
+                        <div class="text-sm space-y-1">
+                            <p><strong>Needs (50%):</strong> $3,200 × 0.50 = $1,600</p>
+                            <p><strong>Wants (30%):</strong> $3,200 × 0.30 = $960</p>
+                            <p><strong>Savings (20%):</strong> $3,200 × 0.20 = $640</p>
+                            <p><strong>Total:</strong> $1,600 + $960 + $640 = $3,200 ✓</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="bg-background-primary border border-border-subtle rounded-xl p-6 mb-6">
+            <h3 class="text-xl font-bold text-text-primary mb-4 flex items-center">
+                <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-emerald-600"></i>
+                Quick Reference & Formulas
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3">Interest Formulas</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3 p-2 bg-blue-50 rounded">
+                            <span class="font-mono text-sm bg-blue-600 text-text-inverse-primary px-2 py-1 rounded">I = Prt</span>
+                            <span class="text-sm text-text-secondary">Simple interest</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-2 bg-purple-50 rounded">
+                            <span class="font-mono text-xs bg-purple-600 text-text-inverse-primary px-2 py-1 rounded">A = P(1+r/n)^(nt)</span>
+                            <span class="text-sm text-text-secondary">Compound interest</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-2 bg-green-50 rounded">
+                            <span class="font-mono text-xs bg-green-600 text-text-inverse-primary px-2 py-1 rounded">APY = (1+r/n)^n-1</span>
+                            <span class="text-sm text-text-secondary">Annual Percentage Yield</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3">Key Concepts</h4>
+                    <ul class="text-sm text-text-secondary space-y-2">
+                        <li>• <strong>Simple interest:</strong> Interest on principal only</li>
+                        <li>• <strong>Compound interest:</strong> Interest earns interest</li>
+                        <li>• <strong>Progressive taxes:</strong> Higher rates on higher income brackets</li>
+                        <li>• <strong>50/30/20 rule:</strong> Needs/Wants/Savings budget allocation</li>
+                        <li>• <strong>Effective rate:</strong> Average tax rate on total income</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comparison Chart -->
+            <div class="mt-6 pt-6 border-t border-border-subtle">
+                <h4 class="font-semibold text-text-primary mb-3">Simple vs. Compound Interest Example</h4>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <p class="text-sm text-text-secondary mb-2">$1,000 invested at 5% for 10 years:</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 border border-blue-200 rounded p-3">
+                            <h5 class="font-medium text-blue-700 mb-1">Simple Interest</h5>
+                            <p class="text-sm">Final: $1,500 | Interest: $500</p>
+                        </div>
+                        <div class="bg-purple-50 border border-purple-200 rounded p-3">
+                            <h5 class="font-medium text-purple-700 mb-1">Compound Interest</h5>
+                            <p class="text-sm">Final: $1,629 | Interest: $629</p>
                         </div>
                     </div>
                 </div>
@@ -471,28 +947,30 @@
         </section>
 
         <!-- Navigation -->
-        <div class="flex justify-between items-center pt-8 border-t border-dusty/20">
-            <a href="chapter-5.html" class="flex items-center text-coral hover:text-coral/80 font-medium">
+        <div class="flex justify-between items-center pt-8 border-t border-border-subtle">
+            <a href="chapter-5.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary border border-border-default rounded-lg hover:border-border-strong transition-colors">
                 <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
                 Previous: Chapter 5
             </a>
             
-            <div class="flex space-x-4">
-                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+            <div class="flex space-x-3">
+                <a href="formula_lookup.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-lg hover:bg-emerald-100 transition-colors">
+                    <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
                     Formula Sheet
                 </a>
-                <a href="chapter-7.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
+                <a href="chapter-7.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-inverse-primary bg-emerald-600 border border-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors">
                     Next: Chapter 7
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
                 </a>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="mt-16 py-8 px-4 bg-navy/5 border-t border-dusty/20">
-        <div class="max-w-6xl mx-auto text-center text-dusty text-sm">
-            <p>Chapter 6: Personal Finance • MAT 143</p>
-            <p class="mt-2">Making smart financial decisions</p>
+    <footer class="mt-16 py-8 px-4 bg-background-primary border-t border-border-subtle">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-text-secondary text-sm">Chapter 6: Personal Finance</p>
+            <p class="text-text-tertiary text-xs mt-1">MAT 143 • Making Smart Financial Decisions</p>
         </div>
     </footer>
 
@@ -507,24 +985,32 @@
             if (answer.classList.contains('hidden')) {
                 answer.classList.remove('hidden');
                 button.textContent = 'Hide Solution';
-                button.classList.remove('bg-mathGreen/20', 'text-mathGreen');
-                button.classList.add('bg-dusty/20', 'text-dusty');
+                button.classList.remove('bg-emerald-100', 'text-emerald-700');
+                button.classList.add('bg-gray-100', 'text-gray-600');
             } else {
                 answer.classList.add('hidden');
                 button.textContent = 'Show Solution';
-                button.classList.remove('bg-dusty/20', 'text-dusty');
-                button.classList.add('bg-mathGreen/20', 'text-mathGreen');
+                button.classList.remove('bg-gray-100', 'text-gray-600');
+                button.classList.add('bg-emerald-100', 'text-emerald-700');
             }
         }
 
-        // Enhanced focus management for ADHD
+        // Enhanced focus management for ADHD-friendly experience
         document.addEventListener('DOMContentLoaded', function() {
+            // Add focus styles to all interactive elements
             const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
             focusableElements.forEach(element => {
-                element.classList.add('focus:ring-2', 'focus:ring-coral/50', 'focus:outline-none');
+                element.addEventListener('focus', function() {
+                    this.style.outline = '2px solid #10b981';
+                    this.style.outlineOffset = '2px';
+                });
+                element.addEventListener('blur', function() {
+                    this.style.outline = '';
+                    this.style.outlineOffset = '';
+                });
             });
 
-            // Smooth scrolling
+            // Smooth scrolling for internal links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();

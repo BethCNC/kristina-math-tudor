@@ -7,376 +7,292 @@
     <meta name="description" content="Learn mathematical thinking skills for MAT 143 - clear explanations, step-by-step tutorials, and practice questions.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cream: '#faf7f0',
-                        sage: '#9ca986',
-                        coral: '#eb7754',
-                        navy: '#2d3748',
-                        dusty: '#a0aec0',
-                        mathGreen: '#68d391',
-                        englishBlue: '#63b3ed',
-                        warning: '#f56565',
-                        success: '#48bb78'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/design-system.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-cream text-navy font-sans leading-relaxed">
+<body class="bg-background text-text-primary font-sans antialiased">
     <!-- Header -->
-    <header class="bg-white shadow-sm border-b border-dusty/20">
-        <div class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-3">
-                    <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-lg flex items-center justify-center">
-                        <i data-lucide="brain" class="w-5 h-5"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-navy">Chapter 1: Mathematical Thinking</h1>
-                        <p class="text-dusty text-sm">MAT 143 - Weeks 1-2</p>
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-positive flex items-center justify-center">
+                            <span class="font-button-small text-text-inverse-primary font-bold">1</span>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">Chapter 1</h1>
+                            <p class="font-caption text-text-secondary">Mathematical Thinking</p>
+                        </div>
                     </div>
                 </div>
-                <nav class="flex items-center space-x-4">
-                    <a href="index.html" class="text-coral hover:text-coral/80 font-medium flex items-center">
-                        <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
-                        Back to Dashboard
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center space-x-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-20 h-2 bg-background-tertiary rounded-full overflow-hidden">
+                                <div class="w-1/4 h-full bg-positive rounded-full"></div>
+                            </div>
+                            <span class="font-caption text-text-secondary">25%</span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span class="font-button">Dashboard</span>
                     </a>
-                </nav>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Progress Indicator -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Chapter Hero -->
         <div class="mb-8">
-            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
-                <div class="flex items-center justify-between mb-2">
-                    <span class="text-sm font-medium text-navy">Chapter Progress</span>
-                    <span class="text-xs bg-mathGreen/20 text-mathGreen px-2 py-1 rounded">Current</span>
+            <div class="bg-positive-tertiary border border-positive rounded-xl p-8 mb-6">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-16 h-16 rounded-xl bg-positive flex items-center justify-center">
+                        <i data-lucide="brain" class="w-8 h-8 text-text-inverse-primary"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-title-large text-text-primary mb-2">Mathematical Thinking</h1>
+                        <p class="font-body-large text-text-secondary">Foundation skills for quantitative literacy and problem-solving</p>
+                    </div>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
-                    <div class="bg-mathGreen h-2 rounded-full" style="width: 25%"></div>
+                
+                <!-- Quick Stats -->
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div class="bg-background border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-lg bg-positive/10 flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="clock" class="w-4 h-4 text-positive"></i>
+                        </div>
+                        <p class="font-button-small text-text-primary">2-3 Hours</p>
+                        <p class="font-caption text-text-secondary">Study Time</p>
+                    </div>
+                    <div class="bg-background border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-lg bg-warning/10 flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="target" class="w-4 h-4 text-warning"></i>
+                        </div>
+                        <p class="font-button-small text-text-primary">Test 1</p>
+                        <p class="font-caption text-text-secondary">Sept 8-12</p>
+                    </div>
+                    <div class="bg-background border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-lg bg-brand/10 flex items-center justify-center mx-auto mb-2">
+                            <i data-lucide="layers" class="w-4 h-4 text-brand"></i>
+                        </div>
+                        <p class="font-button-small text-text-primary">3 Sections</p>
+                        <p class="font-caption text-text-secondary">Learning Units</p>
+                    </div>
                 </div>
-                <p class="text-xs text-dusty mt-1">Keep going! You're making great progress.</p>
             </div>
         </div>
 
-        <!-- Chapter Overview -->
-        <section class="mb-12">
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
-                <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
-                    <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
-                    Chapter Overview
-                </h2>
-                <div class="prose prose-sm max-w-none text-dusty">
-                    <p class="mb-4">
-                        This chapter introduces you to mathematical thinking - the foundation for success in quantitative literacy. 
-                        You'll learn how to approach problems systematically, recognize patterns, and think logically about mathematical situations.
-                    </p>
-                    
-                    <div class="grid md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-mathGreen/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Problem-solving strategies</li>
-                                <li>• Pattern recognition</li>
-                                <li>• Logical reasoning</li>
-                                <li>• Mathematical communication</li>
-                            </ul>
+        <!-- Learning Sections -->
+        <div class="space-y-8">
+            <!-- Section 1.1 -->
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+                <div class="bg-positive-tertiary border-b border-positive p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-positive flex items-center justify-center">
+                            <span class="font-subtitle text-text-inverse-primary font-bold">1.1</span>
                         </div>
-                        
-                        <div class="bg-coral/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Test Info</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Test 1: Sept 8-12</li>
-                                <li>• Combined with Chapter 13</li>
-                                <li>• Focus on applications</li>
-                                <li>• Use formulas provided</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="bg-sage/10 rounded-lg p-4">
-                            <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
-                            <ul class="text-sm space-y-1">
-                                <li>• Work through examples step-by-step</li>
-                                <li>• Practice explaining your reasoning</li>
-                                <li>• Connect to real-world situations</li>
-                                <li>• Review regularly</li>
-                            </ul>
+                        <div>
+                            <h2 class="font-title-small text-text-primary">Problem Solving Strategies</h2>
+                            <p class="font-body-small text-text-secondary">Learn systematic approaches to mathematical problems</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Learning Sections -->
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
-                <i data-lucide="book-open" class="w-6 h-6 mr-3 text-mathGreen"></i>
-                Learning Materials
-            </h2>
-            
-            <div class="space-y-6">
-                <!-- Problem Solving Strategies -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
-                        <h3 class="text-xl font-semibold text-navy mb-2">1.1 Problem Solving Strategies</h3>
-                        <p class="text-dusty">Learn systematic approaches to tackling mathematical problems</p>
-                    </div>
-                    
-                    <div class="p-6">
-                        <div class="mb-6">
-                            <h4 class="font-semibold text-navy mb-3">The Four-Step Problem Solving Process</h4>
-                            <div class="grid md:grid-cols-2 gap-4">
-                                <div class="space-y-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-                                        <div>
-                                            <h5 class="font-medium text-navy">Understand the Problem</h5>
-                                            <p class="text-sm text-dusty">Read carefully, identify what you know and what you need to find</p>
-                                        </div>
+                
+                <div class="p-6">
+                    <!-- Four-Step Process -->
+                    <div class="mb-8">
+                        <h3 class="font-subtitle-large text-text-primary mb-6">The Four-Step Problem Solving Process</h3>
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-positive/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="font-button text-positive font-bold">1</span>
                                     </div>
-                                    
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
-                                        <div>
-                                            <h5 class="font-medium text-navy">Devise a Plan</h5>
-                                            <p class="text-sm text-dusty">Choose a strategy: draw a picture, make a table, look for patterns</p>
-                                        </div>
+                                    <div>
+                                        <h4 class="font-subtitle-small text-text-primary mb-2">Understand the Problem</h4>
+                                        <p class="font-body-small text-text-secondary">Read carefully, identify what you're looking for, and determine what information you have.</p>
                                     </div>
                                 </div>
                                 
-                                <div class="space-y-4">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                                        <div>
-                                            <h5 class="font-medium text-navy">Carry Out the Plan</h5>
-                                            <p class="text-sm text-dusty">Execute your strategy step by step, show your work</p>
-                                        </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-positive/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="font-button text-positive font-bold">2</span>
                                     </div>
-                                    
-                                    <div class="flex items-start space-x-3">
-                                        <div class="w-8 h-8 bg-mathGreen/20 text-mathGreen rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-                                        <div>
-                                            <h5 class="font-medium text-navy">Look Back</h5>
-                                            <p class="text-sm text-dusty">Check your answer, does it make sense?</p>
-                                        </div>
+                                    <div>
+                                        <h4 class="font-subtitle-small text-text-primary mb-2">Devise a Plan</h4>
+                                        <p class="font-body-small text-text-secondary">Choose a strategy: draw a diagram, make a table, look for patterns, or work backwards.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- Example Problem -->
-                        <div class="bg-cream/50 rounded-lg p-4 mb-4">
-                            <h5 class="font-semibold text-navy mb-3 flex items-center">
-                                <i data-lucide="lightbulb" class="w-4 h-4 mr-2 text-coral"></i>
-                                Example: The Parking Lot Problem
-                            </h5>
-                            <p class="text-sm text-dusty mb-3">
-                                "A parking lot has 5 rows with 12 spaces in each row. If 3/4 of the spaces are filled, how many cars are in the parking lot?"
-                            </p>
-                            
-                            <div class="space-y-3 text-sm">
-                                <div class="flex items-start space-x-3">
-                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
-                                    <div>
-                                        <strong>Understand:</strong> 5 rows, 12 spaces each, 3/4 filled. Find: number of cars.
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-3">
-                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
-                                    <div>
-                                        <strong>Plan:</strong> Find total spaces, then find 3/4 of that number.
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-3">
-                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
-                                    <div>
-                                        <strong>Solve:</strong> 5 × 12 = 60 total spaces. 60 × 3/4 = 60 × 0.75 = 45 cars.
-                                    </div>
-                                </div>
-                                
-                                <div class="flex items-start space-x-3">
-                                    <span class="w-6 h-6 bg-mathGreen/20 text-mathGreen rounded flex items-center justify-center text-xs font-bold flex-shrink-0">4</span>
-                                    <div>
-                                        <strong>Check:</strong> 45 is 3/4 of 60 ✓. Answer makes sense.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Practice Problems -->
-                        <div class="border-t border-dusty/10 pt-6">
-                            <h5 class="font-semibold text-navy mb-4 flex items-center">
-                                <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
-                                Practice Problems
-                            </h5>
                             
                             <div class="space-y-4">
-                                <!-- Problem 1 -->
-                                <div class="bg-cream/30 rounded-lg p-4">
-                                    <p class="text-sm font-medium text-navy mb-2">Problem 1:</p>
-                                    <p class="text-sm text-dusty mb-3">A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour do you need to make 30 cookies?</p>
-                                    
-                                    <button onclick="toggleAnswer('answer1')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
-                                        Show Solution
-                                    </button>
-                                    
-                                    <div id="answer1" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
-                                        <div class="text-xs space-y-1">
-                                            <p><strong>Setup:</strong> 2 cups / 12 cookies = x cups / 30 cookies</p>
-                                            <p><strong>Cross multiply:</strong> 2 × 30 = 12 × x</p>
-                                            <p><strong>Solve:</strong> 60 = 12x, so x = 5</p>
-                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 5 cups of flour</p>
-                                        </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-positive/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="font-button text-positive font-bold">3</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-subtitle-small text-text-primary mb-2">Carry Out the Plan</h4>
+                                        <p class="font-body-small text-text-secondary">Execute your strategy step by step. Be patient and persistent.</p>
                                     </div>
                                 </div>
-
-                                <!-- Problem 2 -->
-                                <div class="bg-cream/30 rounded-lg p-4">
-                                    <p class="text-sm font-medium text-navy mb-2">Problem 2:</p>
-                                    <p class="text-sm text-dusty mb-3">Look at this pattern: 2, 4, 8, 16, ___. What comes next and why?</p>
-                                    
-                                    <button onclick="toggleAnswer('answer2')" class="text-xs bg-mathGreen/20 text-mathGreen px-3 py-1 rounded hover:bg-mathGreen/30 focus:ring-2 focus:ring-mathGreen/50 focus:outline-none">
-                                        Show Solution
-                                    </button>
-                                    
-                                    <div id="answer2" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
-                                        <div class="text-xs space-y-1">
-                                            <p><strong>Pattern:</strong> Each number doubles the previous number</p>
-                                            <p><strong>Reasoning:</strong> 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16</p>
-                                            <p class="text-mathGreen font-medium"><strong>Answer:</strong> 32 (because 16 × 2 = 32)</p>
-                                        </div>
+                                
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-10 h-10 rounded-xl bg-positive/10 flex items-center justify-center flex-shrink-0">
+                                        <span class="font-button text-positive font-bold">4</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-subtitle-small text-text-primary mb-2">Look Back</h4>
+                                        <p class="font-body-small text-text-secondary">Check your answer. Does it make sense? Could you solve it differently?</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Quick Reference -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
-                            <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
-                            Quick Reference & Formulas
-                        </h3>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-medium text-navy mb-3">Problem Solving Strategies</h4>
-                                <ul class="text-sm text-dusty space-y-1">
-                                    <li>• Work backwards</li>
-                                    <li>• Make an organized list</li>
-                                    <li>• Draw a diagram</li>
-                                    <li>• Look for patterns</li>
-                                    <li>• Guess and check</li>
-                                    <li>• Solve a simpler problem</li>
-                                </ul>
+                    
+                    <!-- Practice Button -->
+                    <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center">
+                                    <i data-lucide="play" class="w-4 h-4 text-text-inverse-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-button text-text-primary">Practice Problems</p>
+                                    <p class="font-caption text-text-secondary">Try 5 guided examples</p>
+                                </div>
                             </div>
-                            
-                            <div>
-                                <h4 class="font-medium text-navy mb-3">Key Concepts</h4>
-                                <ul class="text-sm text-dusty space-y-1">
-                                    <li>• Inductive reasoning (patterns → conclusions)</li>
-                                    <li>• Deductive reasoning (facts → conclusions)</li>
-                                    <li>• Estimation and approximation</li>
-                                    <li>• Mathematical communication</li>
-                                </ul>
+                            <button class="px-4 py-2 bg-positive hover:bg-positive-hover text-text-inverse-primary font-button rounded-lg transition-colors">
+                                Start Practice
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1.2 -->
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+                <div class="bg-brand-tertiary border-b border-brand p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand flex items-center justify-center">
+                            <span class="font-subtitle text-text-inverse-primary font-bold">1.2</span>
+                        </div>
+                        <div>
+                            <h2 class="font-title-small text-text-primary">Estimation & Approximation</h2>
+                            <p class="font-body-small text-text-secondary">Develop number sense and estimation skills</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="grid lg:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-subtitle-large text-text-primary mb-4">Key Concepts</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand mt-2 flex-shrink-0"></div>
+                                    <span class="font-body-small text-text-secondary">Rounding techniques for quick calculations</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand mt-2 flex-shrink-0"></div>
+                                    <span class="font-body-small text-text-secondary">Scientific notation for very large/small numbers</span>
+                                </li>
+                                <li class="flex items-start space-x-3">
+                                    <div class="w-2 h-2 rounded-full bg-brand mt-2 flex-shrink-0"></div>
+                                    <span class="font-body-small text-text-secondary">Order of magnitude comparisons</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-brand-tertiary border border-brand rounded-lg p-4">
+                            <h3 class="font-subtitle-small text-text-brand-primary mb-3">Example: Quick Estimation</h3>
+                            <div class="font-body-small text-text-primary space-y-2">
+                                <p><strong>Problem:</strong> Estimate 47 × 23</p>
+                                <p><strong>Strategy:</strong> Round to 50 × 20 = 1,000</p>
+                                <p><strong>Actual:</strong> 1,081 (very close!)</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Navigation -->
-        <div class="flex justify-between items-center pt-8 border-t border-dusty/20">
-            <a href="index.html" class="flex items-center text-coral hover:text-coral/80 font-medium">
-                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
-                Back to Dashboard
-            </a>
+            <!-- Section 1.3 -->
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+                <div class="bg-background-tertiary border-b border-border p-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-text-neutral-primary flex items-center justify-center">
+                            <span class="font-subtitle text-text-inverse-primary font-bold">1.3</span>
+                        </div>
+                        <div>
+                            <h2 class="font-title-small text-text-primary">Mathematical Communication</h2>
+                            <p class="font-body-small text-text-secondary">Learn to explain mathematical reasoning clearly</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-6">
+                    <div class="bg-background border border-border rounded-lg p-4 mb-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <i data-lucide="info" class="w-5 h-5 text-brand"></i>
+                            <h3 class="font-subtitle-small text-text-primary">Why This Matters</h3>
+                        </div>
+                        <p class="font-body-small text-text-secondary">Being able to explain your mathematical thinking clearly helps you understand concepts better and shows your work on tests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Resources -->
+        <div class="mt-12 bg-background-secondary border border-border rounded-xl p-8">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-text-neutral-primary flex items-center justify-center">
+                    <i data-lucide="book-open" class="w-6 h-6 text-text-inverse-primary"></i>
+                </div>
+                <div>
+                    <h2 class="font-title text-text-primary">Study Resources</h2>
+                    <p class="font-body-small text-text-secondary">Additional materials to help you succeed</p>
+                </div>
+            </div>
             
-            <div class="flex space-x-4">
-                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
-                    Formula Sheet
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <a href="formula_lookup.html" class="group bg-background border border-border rounded-lg p-4 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-positive/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calculator" class="w-5 h-5 text-positive"></i>
+                    </div>
+                    <h3 class="font-subtitle-small text-text-primary mb-2">Formula Reference</h3>
+                    <p class="font-body-small text-text-secondary">Quick lookup for key formulas</p>
                 </a>
-                <a href="chapter-13.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
-                    Next: Chapter 13
+                
+                <a href="#practice" class="group bg-background border border-border rounded-lg p-4 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="target" class="w-5 h-5 text-brand"></i>
+                    </div>
+                    <h3 class="font-subtitle-small text-text-primary mb-2">Practice Problems</h3>
+                    <p class="font-body-small text-text-secondary">Extra problems to build skills</p>
+                </a>
+                
+                <a href="calendar.html" class="group bg-background border border-border rounded-lg p-4 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-warning/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calendar" class="w-5 h-5 text-warning"></i>
+                    </div>
+                    <h3 class="font-subtitle-small text-text-primary mb-2">Study Schedule</h3>
+                    <p class="font-body-small text-text-secondary">Plan your study time</p>
                 </a>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="mt-16 py-8 px-4 bg-navy/5 border-t border-dusty/20">
-        <div class="max-w-6xl mx-auto text-center text-dusty text-sm">
-            <p>Chapter 1: Mathematical Thinking • MAT 143</p>
-            <p class="mt-2">Focus on understanding, not just memorizing</p>
-        </div>
-    </footer>
-
+    <!-- Initialize Icons -->
     <script>
         lucide.createIcons();
-        
-        // Toggle answer visibility
-        function toggleAnswer(answerId) {
-            const answer = document.getElementById(answerId);
-            const button = event.target;
-            
-            if (answer.classList.contains('hidden')) {
-                answer.classList.remove('hidden');
-                button.textContent = 'Hide Solution';
-                button.classList.remove('bg-mathGreen/20', 'text-mathGreen');
-                button.classList.add('bg-dusty/20', 'text-dusty');
-            } else {
-                answer.classList.add('hidden');
-                button.textContent = 'Show Solution';
-                button.classList.remove('bg-dusty/20', 'text-dusty');
-                button.classList.add('bg-mathGreen/20', 'text-mathGreen');
-            }
-        }
-
-        // Enhanced focus management for ADHD
-        document.addEventListener('DOMContentLoaded', function() {
-            const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
-            focusableElements.forEach(element => {
-                element.classList.add('focus:ring-2', 'focus:ring-coral/50', 'focus:outline-none');
-            });
-
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>

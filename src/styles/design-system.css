@@ -1,0 +1,462 @@
+/* 
+ * Update your font families 
+ * Use @import if using Google Fonts or similar service
+ * Use @font-face if using a local font (see tailwindcss docs)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Mono font */
+
+@import "tailwindcss";
+
+/* 
+ * Up to date with TailwindCSS 4.1
+ * Run: npm run build:colors to sync colors to @figma-colors.json
+ * Run: npm run build:fonts to sync fonts to @figma-fonts.json
+ */
+
+@theme {
+  /* Font Variables */
+  --font-sans: "Host Grotesk", sans-serif; /* Change to your imported font-family */
+  --font-serif: "Host Grotesk", serif; /* Change to your imported font-family */
+  --font-mono: "Space Mono", monospace; /* Change to your imported font-family */
+  --font-heading: "Host Grotesk", sans-serif; /* Change to your imported font-family or change to var(--font-sans) if only using one font-family */
+
+  /* Amber Colors */
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+
+  /* Amethyst Colors */
+  --color-amethyst-50: oklch(0.953 0.019 312.8);
+  --color-amethyst-100: oklch(0.923 0.031 312.8);
+  --color-amethyst-200: oklch(0.883 0.047 313.7);
+  --color-amethyst-300: oklch(0.844 0.064 313.5);
+  --color-amethyst-400: oklch(0.806 0.080 313.0);
+  --color-amethyst-500: oklch(0.767 0.098 312.9);
+  --color-amethyst-600: oklch(0.670 0.085 312.4);
+  --color-amethyst-700: oklch(0.569 0.071 313.2);
+  --color-amethyst-800: oklch(0.467 0.055 313.4);
+  --color-amethyst-900: oklch(0.355 0.039 312.3);
+  --color-amethyst-950: oklch(0.258 0.026 312.2);
+
+  /* Aquamarine Colors */
+  --color-aquamarine-50: oklch(0.946 0.023 246.0);
+  --color-aquamarine-100: oklch(0.910 0.039 249.4);
+  --color-aquamarine-200: oklch(0.863 0.059 249.3);
+  --color-aquamarine-300: oklch(0.820 0.080 248.8);
+  --color-aquamarine-400: oklch(0.776 0.100 250.1);
+  --color-aquamarine-500: oklch(0.734 0.121 250.1);
+  --color-aquamarine-600: oklch(0.642 0.105 250.1);
+  --color-aquamarine-700: oklch(0.546 0.087 249.7);
+  --color-aquamarine-800: oklch(0.447 0.068 250.3);
+  --color-aquamarine-900: oklch(0.341 0.049 250.5);
+  --color-aquamarine-950: oklch(0.250 0.031 247.4);
+
+  /* Brand Colors */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+
+  /* Carnelian Colors */
+  --color-carnelian-50: oklch(0.949 0.032 61.4);
+  --color-carnelian-100: oklch(0.916 0.053 61.6);
+  --color-carnelian-200: oklch(0.875 0.081 60.4);
+  --color-carnelian-300: oklch(0.838 0.108 60.1);
+  --color-carnelian-400: oklch(0.800 0.133 58.4);
+  --color-carnelian-500: oklch(0.767 0.157 56.5);
+  --color-carnelian-600: oklch(0.671 0.136 56.7);
+  --color-carnelian-700: oklch(0.570 0.114 56.9);
+  --color-carnelian-800: oklch(0.466 0.090 56.8);
+  --color-carnelian-900: oklch(0.353 0.064 57.9);
+  --color-carnelian-950: oklch(0.258 0.043 58.2);
+
+  /* Citrine Colors */
+  --color-citrine-50: oklch(0.972 0.040 93.2);
+  --color-citrine-100: oklch(0.955 0.066 93.3);
+  --color-citrine-200: oklch(0.932 0.097 93.7);
+  --color-citrine-300: oklch(0.932 0.097 93.7);
+  --color-citrine-400: oklch(0.894 0.147 92.6);
+  --color-citrine-500: oklch(0.878 0.164 91.6);
+  --color-citrine-600: oklch(0.766 0.142 91.6);
+  --color-citrine-700: oklch(0.649 0.119 92.1);
+  --color-citrine-800: oklch(0.528 0.095 92.0);
+  --color-citrine-900: oklch(0.399 0.070 92.0);
+  --color-citrine-950: oklch(0.288 0.047 92.4);
+
+  /* Emerald Colors */
+  --color-emerald-50: oklch(0.920 0.033 146.7);
+  --color-emerald-100: oklch(0.868 0.056 145.9);
+  --color-emerald-200: oklch(0.803 0.086 145.2);
+  --color-emerald-300: oklch(0.740 0.115 145.0);
+  --color-emerald-400: oklch(0.676 0.140 144.5);
+  --color-emerald-500: oklch(0.616 0.164 143.7);
+  --color-emerald-600: oklch(0.541 0.142 143.7);
+  --color-emerald-700: oklch(0.462 0.119 143.8);
+  --color-emerald-800: oklch(0.381 0.095 143.8);
+  --color-emerald-900: oklch(0.291 0.068 144.1);
+  --color-emerald-950: oklch(0.216 0.045 144.8);
+
+  /* Gray Colors */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Green Colors */
+  --color-green-50: #f0fdf4;
+  --color-green-100: #dcfce7;
+  --color-green-200: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-800: #166534;
+  --color-green-900: #14532d;
+
+  /* Mooonstone Colors */
+  --color-mooonstone-50: oklch(0.985 0.007 53.4);
+  --color-mooonstone-100: oklch(0.976 0.012 51.3);
+  --color-mooonstone-200: oklch(0.963 0.017 50.4);
+  --color-mooonstone-300: oklch(0.952 0.023 48.5);
+  --color-mooonstone-400: oklch(0.939 0.029 50.6);
+  --color-mooonstone-500: oklch(0.928 0.035 49.2);
+  --color-mooonstone-600: oklch(0.809 0.031 47.2);
+  --color-mooonstone-700: oklch(0.686 0.025 48.3);
+  --color-mooonstone-800: oklch(0.559 0.020 50.2);
+  --color-mooonstone-900: oklch(0.420 0.015 51.0);
+  --color-mooonstone-950: oklch(0.301 0.009 53.1);
+
+  /* Red Colors */
+  --color-red-50: #fef2f2;
+  --color-red-100: #fee2e2;
+  --color-red-200: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+  --color-red-900: #7f1d1d;
+
+  /* Rose-quartz Colors */
+  --color-rose-quartz-50: oklch(0.957 0.022 353.1);
+  --color-rose-quartz-100: oklch(0.928 0.040 352.2);
+  --color-rose-quartz-200: oklch(0.893 0.060 353.2);
+  --color-rose-quartz-300: oklch(0.858 0.081 354.1);
+  --color-rose-quartz-400: oklch(0.826 0.104 354.5);
+  --color-rose-quartz-500: oklch(0.794 0.125 355.5);
+  --color-rose-quartz-600: oklch(0.694 0.107 355.8);
+  --color-rose-quartz-700: oklch(0.589 0.089 355.6);
+  --color-rose-quartz-800: oklch(0.482 0.071 355.3);
+  --color-rose-quartz-900: oklch(0.366 0.051 354.7);
+  --color-rose-quartz-950: oklch(0.266 0.032 355.7);
+
+  /* Ruby Colors */
+  --color-ruby-50: oklch(0.925 0.038 25.8);
+  --color-ruby-100: oklch(0.875 0.065 25.5);
+  --color-ruby-200: oklch(0.816 0.102 26.2);
+  --color-ruby-300: oklch(0.763 0.139 27.7);
+  --color-ruby-400: oklch(0.715 0.174 28.7);
+  --color-ruby-500: oklch(0.675 0.208 29.8);
+  --color-ruby-600: oklch(0.591 0.180 29.8);
+  --color-ruby-700: oklch(0.503 0.151 29.8);
+  --color-ruby-800: oklch(0.411 0.119 29.2);
+  --color-ruby-900: oklch(0.313 0.085 28.9);
+  --color-ruby-950: oklch(0.231 0.056 28.9);
+
+  /* Sapphire Colors */
+  --color-sapphire-50: oklch(0.911 0.030 256.0);
+  --color-sapphire-100: oklch(0.850 0.052 255.7);
+  --color-sapphire-200: oklch(0.775 0.080 256.8);
+  --color-sapphire-300: oklch(0.700 0.110 257.4);
+  --color-sapphire-400: oklch(0.628 0.138 256.8);
+  --color-sapphire-500: oklch(0.558 0.166 257.8);
+  --color-sapphire-600: oklch(0.490 0.144 257.9);
+  --color-sapphire-700: oklch(0.419 0.121 258.0);
+  --color-sapphire-800: oklch(0.348 0.095 257.5);
+  --color-sapphire-900: oklch(0.269 0.067 256.5);
+  --color-sapphire-950: oklch(0.203 0.043 256.5);
+
+  /* Slate Colors */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+
+  /* Smokey-quartz Colors */
+  --color-smokey-quartz-50: oklch(0.922 0.002 67.8);
+  --color-smokey-quartz-100: oklch(0.868 0.003 48.7);
+  --color-smokey-quartz-200: oklch(0.799 0.004 67.8);
+  --color-smokey-quartz-300: oklch(0.732 0.006 84.6);
+  --color-smokey-quartz-400: oklch(0.661 0.007 75.4);
+  --color-smokey-quartz-500: oklch(0.588 0.009 73.7);
+  --color-smokey-quartz-600: oklch(0.516 0.008 67.6);
+  --color-smokey-quartz-700: oklch(0.443 0.007 84.6);
+  --color-smokey-quartz-800: oklch(0.365 0.004 67.7);
+  --color-smokey-quartz-900: oklch(0.283 0.003 48.6);
+  --color-smokey-quartz-950: oklch(0.214 0.002 67.7);
+
+
+  /* Semantic Colors - Light Theme */
+  /* Background */
+  --color-background-tertiary: var(--color-smokey-quartz-400);
+  --color-background-secondary: var(--color-smokey-quartz-200);
+  --color-background: var(--color-smokey-quartz-50);
+  --color-background-secondary-hover: var(--color-smokey-quartz-300);
+  --color-background-hover: var(--color-smokey-quartz-100);
+  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+
+  /* Border */
+  --color-border-secondary: var(--color-smokey-quartz-400);
+  --color-border: var(--color-smokey-quartz-200);
+  --color-border-tertiary: var(--color-smokey-quartz-500);
+
+  /* Brand */
+  --color-brand-tertiary: var(--color-amethyst-50);
+  --color-brand-secondary-hover: var(--color-amethyst-300);
+  --color-brand-tertiary-hover: var(--color-amethyst-100);
+  --color-brand: var(--color-amethyst-600);
+  --color-brand-secondary: var(--color-amethyst-200);
+  --color-brand-hover: var(--color-amethyst-700);
+
+  /* Danger */
+  --color-danger-tertiary-hover: var(--color-ruby-100);
+  --color-danger-secondary-hover: var(--color-ruby-300);
+  --color-danger-secondary: var(--color-ruby-200);
+  --color-danger: var(--color-ruby-500);
+  --color-danger-hover: var(--color-ruby-600);
+  --color-danger-tertiary: var(--color-ruby-50);
+
+  /* Neutral */
+  --color-neutral-tertiary-hover: var(--color-mooonstone-200);
+  --color-neutral-secondary-hover: var(--color-mooonstone-500);
+  --color-neutral-hover: var(--color-mooonstone-800);
+  --color-neutral: var(--color-mooonstone-700);
+  --color-neutral-secondary: var(--color-mooonstone-300);
+  --color-neutral-tertiary: var(--color-mooonstone-50);
+
+  /* Positive */
+  --color-positive-tertiary-hover: var(--color-green-200);
+  --color-positive-tertiary: var(--color-green-100);
+  --color-positive-secondary-hover: var(--color-emerald-400);
+  --color-positive-secondary: var(--color-emerald-300);
+  --color-positive-hover: var(--color-green-700);
+  --color-positive: var(--color-green-600);
+
+  /* Text */
+  --color-text-neutral-primary: var(--color-smokey-quartz-800);
+  --color-text-inverse-tertiary: var(--color-smokey-quartz-100);
+  --color-text-primary: var(--color-smokey-quartz-900);
+  --color-text-inverse-secondary: var(--color-smokey-quartz-50);
+  --color-text-danger-primary: var(--color-ruby-600);
+  --color-text-inverse-primary: var(--color-mooonstone-50);
+  --color-text-neutral-tertiary: var(--color-smokey-quartz-400);
+  --color-text-brand-tertiary: var(--color-amethyst-300);
+  --color-text-danger-tertiary: var(--color-ruby-400);
+  --color-text-brand-primary: var(--color-amethyst-600);
+  --color-text-warning-tertiary: var(--color-carnelian-500);
+  --color-text-positive-tertiary: var(--color-green-600);
+  --color-text-positive-secondary: var(--color-green-700);
+  --color-text-neutral-secondary: var(--color-smokey-quartz-600);
+  --color-text-secondary: var(--color-smokey-quartz-500);
+  --color-text-positive-primary: var(--color-green-800);
+  --color-text-tertiary: var(--color-smokey-quartz-300);
+  --color-text-brand-secondary: var(--color-amethyst-400);
+  --color-text-warning-secondary: var(--color-carnelian-600);
+  --color-text-warning-primary: var(--color-carnelian-700);
+  --color-text-danger-secondary: var(--color-ruby-500);
+
+  /* Warning */
+  --color-warning-tertiary-hover: var(--color-carnelian-100);
+  --color-warning-tertiary: var(--color-carnelian-50);
+  --color-warning-hover: var(--color-carnelian-600);
+  --color-warning: var(--color-carnelian-500);
+  --color-warning-secondary-hover: var(--color-carnelian-300);
+  --color-warning-secondary: var(--color-carnelian-200);
+}
+
+.dark {
+  /* Semantic Colors - Dark Theme */
+  /* Background */
+  --color-background-tertiary: var(--color-smokey-quartz-600);
+  --color-background-secondary: var(--color-smokey-quartz-800);
+  --color-background: var(--color-smokey-quartz-950);
+  --color-background-secondary-hover: var(--color-smokey-quartz-700);
+  --color-background-hover: var(--color-smokey-quartz-900);
+  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+
+  /* Border */
+  --color-border-secondary: var(--color-smokey-quartz-500);
+  --color-border: var(--color-smokey-quartz-600);
+  --color-border-tertiary: var(--color-smokey-quartz-300);
+
+  /* Brand */
+  --color-brand-tertiary: var(--color-amethyst-800);
+  --color-brand-secondary-hover: var(--color-amethyst-800);
+  --color-brand-tertiary-hover: var(--color-amethyst-900);
+  --color-brand: var(--color-amethyst-400);
+  --color-brand-secondary: var(--color-amethyst-700);
+  --color-brand-hover: var(--color-amethyst-500);
+
+  /* Danger */
+  --color-danger-tertiary-hover: var(--color-ruby-800);
+  --color-danger-secondary-hover: var(--color-ruby-700);
+  --color-danger-secondary: var(--color-ruby-600);
+  --color-danger: var(--color-ruby-500);
+  --color-danger-hover: var(--color-ruby-600);
+  --color-danger-tertiary: var(--color-ruby-700);
+
+  /* Neutral */
+  --color-neutral-tertiary-hover: var(--color-mooonstone-950);
+  --color-neutral-secondary-hover: var(--color-mooonstone-800);
+  --color-neutral-hover: var(--color-mooonstone-500);
+  --color-neutral: var(--color-mooonstone-400);
+  --color-neutral-secondary: var(--color-mooonstone-700);
+  --color-neutral-tertiary: var(--color-mooonstone-900);
+
+  /* Positive */
+  --color-positive-tertiary-hover: var(--color-green-950);
+  --color-positive-tertiary: var(--color-green-900);
+  --color-positive-secondary-hover: var(--color-green-900);
+  --color-positive-secondary: var(--color-green-800);
+  --color-positive-hover: var(--color-green-800);
+  --color-positive: var(--color-green-700);
+
+  /* Text */
+  --color-text-neutral-primary: var(--color-smokey-quartz-50);
+  --color-text-inverse-tertiary: var(--color-smokey-quartz-300);
+  --color-text-primary: var(--color-mooonstone-50);
+  --color-text-inverse-secondary: var(--color-smokey-quartz-500);
+  --color-text-danger-primary: var(--color-ruby-100);
+  --color-text-inverse-primary: var(--color-smokey-quartz-900);
+  --color-text-neutral-tertiary: var(--color-smokey-quartz-200);
+  --color-text-brand-tertiary: var(--color-amethyst-400);
+  --color-text-danger-tertiary: var(--color-ruby-300);
+  --color-text-brand-primary: var(--color-amethyst-100);
+  --color-text-warning-tertiary: var(--color-carnelian-400);
+  --color-text-positive-tertiary: var(--color-emerald-400);
+  --color-text-positive-secondary: var(--color-emerald-300);
+  --color-text-neutral-secondary: var(--color-smokey-quartz-100);
+  --color-text-secondary: var(--color-smokey-quartz-50);
+  --color-text-positive-primary: var(--color-green-200);
+  --color-text-tertiary: var(--color-smokey-quartz-100);
+  --color-text-brand-secondary: var(--color-amethyst-300);
+  --color-text-warning-secondary: var(--color-carnelian-300);
+  --color-text-warning-primary: var(--color-carnelian-200);
+  --color-text-danger-secondary: var(--color-ruby-200);
+
+  /* Warning */
+  --color-warning-tertiary-hover: var(--color-carnelian-800);
+  --color-warning-tertiary: var(--color-carnelian-700);
+  --color-warning-hover: var(--color-carnelian-500);
+  --color-warning: var(--color-carnelian-400);
+  --color-warning-secondary-hover: var(--color-carnelian-700);
+  --color-warning-secondary: var(--color-carnelian-600);
+}
+
+@layer utilities {
+  .font-display {
+    @apply font-sans text-5xl font-medium leading-tight tracking-tight;
+  }
+
+  .font-title-large {
+    @apply font-sans text-4xl font-bold leading-tight tracking-normal;
+  }
+
+  .font-title {
+    @apply font-sans text-3xl font-medium leading-9 tracking-tight;
+  }
+
+  .font-title-small {
+    @apply font-sans text-xl font-medium leading-6;
+  }
+
+  .font-subtitle-large {
+    @apply font-sans text-lg font-semibold leading-5;
+  }
+
+  .font-subtitle {
+    @apply font-sans text-base font-semibold leading-5;
+  }
+
+  .font-subtitle-small {
+    @apply font-sans text-sm font-semibold leading-4;
+  }
+
+  .font-body-large {
+    @apply font-sans text-lg font-normal leading-6;
+  }
+
+  .font-body-regular {
+    @apply font-sans text-base font-normal leading-6;
+  }
+
+  .font-body-small {
+    @apply font-sans text-sm font-normal leading-5;
+  }
+
+  .font-input {
+    @apply font-sans text-sm font-normal leading-5;
+  }
+
+  .font-label {
+    @apply font-sans text-sm font-normal leading-3;
+  }
+
+  .font-label-bold {
+    @apply font-sans text-sm font-medium leading-3;
+  }
+
+  .font-caption {
+    @apply font-sans text-xs font-normal leading-3;
+  }
+
+  .font-code {
+    @apply font-mono text-base font-normal leading-5;
+  }
+
+  .font-button {
+    @apply font-sans text-sm font-medium leading-4;
+  }
+
+  .font-button-small {
+    @apply font-sans text-xs font-medium leading-3;
+  }
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

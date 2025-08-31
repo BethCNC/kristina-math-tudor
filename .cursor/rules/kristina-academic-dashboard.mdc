@@ -1,0 +1,225 @@
+# Kristina's Academic Success Dashboard - Cursor AI Rules
+
+## 🎯 **Project Purpose & Mission**
+
+**Primary Goal:** Create a comprehensive, accessible academic success dashboard specifically designed for Kristina to succeed in MAT 143 (Quantitative Literacy) and ENG 111 (Writing & Inquiry) during Fall 2025 semester.
+
+**Core Mission:** Provide an executive function support system that helps Kristina stay organized, meet deadlines, and build confidence in both quantitative literacy and academic writing skills.
+
+## 📚 **Academic Context**
+
+### **MAT 143 - Quantitative Literacy**
+- **Duration:** 16 weeks (Aug 18 - Dec 12, 2025)
+- **Format:** Online with Hawkes Learning platform
+- **Key Components:**
+  - 8 chapters covering mathematical reasoning, proportions, functions, personal finance, measurement, probability, statistics, and voting systems
+  - 4 major tests (60% of grade)
+  - Hawkes Learning homework (20% of grade)
+  - Lab assignments (10% of grade)
+  - Signature assignment (5% of grade)
+  - Weekly attendance (5% of grade)
+
+### **ENG 111 - Writing & Inquiry**
+- **Duration:** 8 weeks (Aug 18 - Oct 13, 2025)
+- **Format:** Online
+- **Key Components:**
+  - 4 major essays
+  - Critical reading and writing skills
+  - Academic research and citation
+  - Argumentative and analytical writing
+
+## 🎨 **Design System Requirements**
+
+### **Typography**
+- **Primary Font:** Vend Sans (Google Fonts) - modern, clean, highly readable
+- **Font Weights:** 400 (regular), 500 (medium), 600 (semibold), 700 (bold), 800 (extrabold), 900 (black)
+- **Accessibility:** High contrast ratios, clear hierarchy, ample line spacing
+
+### **Color Palette**
+- **Primary:** Black (#30302f) to White (#f2f2f2) gradient system
+- **Accent Colors:**
+  - Math Green: #68d391 (for MAT 143 content)
+  - English Blue: #63b3ed (for ENG 111 content)
+  - Warning Red: #f56565 (for urgent deadlines)
+  - Success Green: #48bb78 (for completed items)
+- **Neutral Palette:** Cream (#faf7f0), Sage (#9ca986), Coral (#eb7754), Navy (#2d3748)
+
+### **Layout Principles**
+- **Minimal Design:** Clean, uncluttered interface with ample whitespace
+- **Mobile-First:** Responsive design that works on all devices
+- **Accessibility:** WCAG 2.1 AA compliance, keyboard navigation, screen reader support
+- **ADHD-Friendly:** Clear visual hierarchy, consistent navigation, reduced cognitive load
+
+## 🏗️ **Technical Architecture**
+
+### **Frontend Stack**
+- **Framework:** Vanilla HTML/CSS/JavaScript (no heavy frameworks)
+- **Styling:** Tailwind CSS with custom design system
+- **Icons:** Lucide Icons for consistency
+- **Fonts:** Google Fonts (Vend Sans)
+
+### **Backend/API**
+- **AI Integration:** Anthropic Claude API for tutoring features
+- **Deployment:** Vercel for production hosting
+- **Environment:** Python virtual environment for local development
+
+### **File Structure**
+```
+kristina_math_tutor/
+├── index.html                    # Main dashboard
+├── calendar.html                 # Interactive calendar
+├── tutor.html                    # AI tutor interface
+├── english_materials.html        # ENG 111 resources
+├── chapter-*.html               # MAT 143 chapter pages
+├── src/styles/design-system.css # Design system
+├── tokens.json                  # Design tokens
+├── api/                         # API endpoints
+├── course_materials/            # Organized course content
+└── venv/                        # Python environment
+```
+
+## 🎯 **Core Features & Functionality**
+
+### **1. Executive Function Dashboard**
+- **Progress Tracking:** Visual progress bars for both courses
+- **Deadline Management:** Countdown timers and urgent alerts
+- **Weekly Overview:** Current week highlighting and upcoming tasks
+- **Quick Actions:** Direct links to current assignments and resources
+
+### **2. Interactive Calendar System**
+- **16-Week Timeline:** Complete semester mapping with real dates
+- **Test Schedule:** 4 major tests with countdown timers
+- **Assignment Tracking:** All due dates from pacing guides
+- **Filtering:** By course, urgency, and assignment type
+- **Color Coding:** Red (urgent), Orange (upcoming), Green (completed)
+
+### **3. MAT 143 Math Tutor**
+- **Chapter Coverage:** All 8 chapters with detailed sections
+- **AI-Powered Help:** Step-by-step problem explanations
+- **Formula Sheets:** Quick reference for all mathematical concepts
+- **Practice Problems:** Interactive examples and solutions
+- **Test Preparation:** Chapter-specific study guides
+
+### **4. ENG 111 Writing Coach**
+- **Essay Guides:** Requirements, rubrics, and writing strategies
+- **Writing Resources:** Critical reading, revision, and citation help
+- **Assignment Tracking:** Essay deadlines and submission requirements
+- **Writing Tools:** Checklists, templates, and examples
+
+### **5. Resource Center**
+- **Formula Lookup:** Quick access to mathematical formulas
+- **Writing Resources:** Academic writing guides and tools
+- **External Links:** Hawkes Learning, BrightSpace, and course materials
+- **Study Strategies:** Time management and test-taking tips
+
+## 🚫 **What NOT to Include**
+
+### **Avoid These Features:**
+- Complex animations or distracting visual effects
+- Unnecessary social features or gamification
+- Heavy JavaScript frameworks (React, Vue, etc.)
+- Complex user authentication systems
+- Features unrelated to academic success
+- Outdated or unused code from previous versions
+
+### **Remove Legacy Code:**
+- Files in `_archived/` directory
+- Unused prototype pages
+- Duplicate calendar implementations
+- Outdated design systems
+- Unused scripts and dependencies
+
+## 🔧 **Development Guidelines**
+
+### **Code Quality Standards**
+- **Semantic HTML:** Proper heading hierarchy, ARIA labels, alt text
+- **Clean CSS:** Organized design system, consistent naming
+- **Minimal JavaScript:** Only essential interactivity
+- **Performance:** Fast loading, optimized assets
+- **Accessibility:** Screen reader friendly, keyboard navigation
+
+### **Content Organization**
+- **Structured Data:** Clear information architecture
+- **Consistent Naming:** Predictable file and component names
+- **Modular Design:** Reusable components and styles
+- **Documentation:** Clear comments and README files
+
+### **Testing & Validation**
+- **Cross-Browser:** Test on Chrome, Safari, Firefox
+- **Mobile Testing:** Responsive design on various screen sizes
+- **Accessibility:** Use tools like axe-core or Lighthouse
+- **Performance:** Optimize for Core Web Vitals
+
+## 📋 **Success Metrics**
+
+### **User Experience Goals**
+- **Navigation:** Find any resource within 3 clicks
+- **Loading:** Page load times under 2 seconds
+- **Accessibility:** 100% WCAG 2.1 AA compliance
+- **Mobile:** Perfect functionality on all device sizes
+
+### **Academic Success Goals**
+- **Deadline Management:** Never miss an assignment due date
+- **Test Preparation:** Complete all tests with adequate preparation
+- **Progress Tracking:** Clear visibility of course progress
+- **Resource Access:** Quick access to all needed materials
+
+## 🎨 **Design Implementation**
+
+### **Component Guidelines**
+- **Cards:** Consistent padding, rounded corners, subtle shadows
+- **Buttons:** Clear hierarchy, hover states, accessible focus
+- **Forms:** Clear labels, error states, validation feedback
+- **Navigation:** Persistent, consistent, mobile-friendly
+
+### **Content Guidelines**
+- **Typography:** Clear hierarchy, readable font sizes
+- **Spacing:** Consistent 4pt grid system (16px increments)
+- **Color Usage:** Semantic color application (success, warning, info)
+- **Imagery:** Minimal, purposeful, accessible
+
+## 🔄 **Maintenance & Updates**
+
+### **Regular Tasks**
+- **Content Updates:** Keep course materials current
+- **Deadline Updates:** Maintain accurate calendar data
+- **Performance Monitoring:** Check loading speeds and accessibility
+- **User Feedback:** Incorporate improvements based on usage
+
+### **Version Control**
+- **Clear Commits:** Descriptive commit messages
+- **Feature Branches:** Separate development from production
+- **Documentation:** Keep README and guides updated
+- **Backup:** Regular backups of course materials and configurations
+
+## 🎯 **Project Success Criteria**
+
+### **Immediate Goals (Week 1-2)**
+- ✅ Clean, accessible dashboard interface
+- ✅ Accurate calendar with all deadlines
+- ✅ Working navigation between sections
+- ✅ Mobile-responsive design
+
+### **Short-term Goals (Month 1)**
+- ✅ Complete MAT 143 chapter coverage
+- ✅ ENG 111 writing resources
+- ✅ AI tutor integration
+- ✅ Formula lookup system
+
+### **Long-term Goals (Semester)**
+- ✅ Kristina successfully completes both courses
+- ✅ Dashboard proves effective for academic organization
+- ✅ System can be adapted for future semesters
+- ✅ Positive impact on academic confidence and success
+
+---
+
+## 📝 **Implementation Notes**
+
+**Remember:** This dashboard is specifically designed for Kristina's learning style and academic needs. Every feature should serve the goal of academic success and executive function support. Keep the interface clean, accessible, and focused on what matters most for her success in MAT 143 and ENG 111.
+
+**Priority:** Functionality over aesthetics, accessibility over complexity, and academic success over technical sophistication.
+description:
+globs:
+alwaysApply: true
+---
