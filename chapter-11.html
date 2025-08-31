@@ -12,7 +12,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +35,7 @@
                         success: '#48bb78'
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif']
+                        sans: ['Host Grotesk', 'sans-serif']
                     }
                 }
             }
@@ -69,12 +72,12 @@
     <main class="max-w-6xl mx-auto px-4 py-8">
         <!-- Progress Indicator -->
         <div class="mb-8">
-            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-border">
                 <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-medium text-navy">Chapter Progress</span>
                     <span class="text-xs bg-dusty/20 text-dusty px-2 py-1 rounded">Upcoming</span>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="w-full bg-background-secondary rounded-full h-2">
                     <div class="bg-dusty h-2 rounded-full" style="width: 0%"></div>
                 </div>
                 <p class="text-xs text-dusty mt-1">Available Week 12-15</p>
@@ -83,7 +86,7 @@
 
         <!-- Chapter Overview -->
         <section class="mb-12">
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-border mb-6">
                 <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
                     <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
                     Chapter Overview
@@ -94,7 +97,7 @@
                     </p>
                     
                     <div class="grid md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Mean, median, mode calculations</li>
@@ -104,7 +107,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-coral/10 rounded-lg p-4">
+                        <div class="bg-background-secondary rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Test Info</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Test 4: Nov 10-14</li>
@@ -114,7 +117,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-sage/10 rounded-lg p-4">
+                        <div class="bg-background-secondary rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Practice with real datasets</li>
@@ -137,8 +140,8 @@
             
             <div class="space-y-6">
                 <!-- Measures of Center -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">11.1 Measures of Center</h3>
                         <p class="text-dusty">Mean, median, and mode - finding the center of data</p>
                     </div>
@@ -147,7 +150,7 @@
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">The Three Measures</h4>
                             <div class="grid md:grid-cols-3 gap-4">
-                                <div class="bg-mathGreen/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Mean (Average)</h5>
                                     <p class="text-lg font-mono text-center mb-2">Mean = Σx / n</p>
                                     <div class="text-sm text-dusty space-y-1">
@@ -157,7 +160,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-coral/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Median (Middle)</h5>
                                     <p class="text-center mb-2 text-navy"><strong>Middle value when ordered</strong></p>
                                     <div class="text-sm text-dusty space-y-1">
@@ -167,7 +170,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-sage/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Mode (Most)</h5>
                                     <p class="text-center mb-2 text-navy"><strong>Most frequent value</strong></p>
                                     <div class="text-sm text-dusty space-y-1">
@@ -195,7 +198,7 @@
                         </div>
 
                         <!-- Practice Problems -->
-                        <div class="border-t border-dusty/10 pt-6">
+                        <div class="border-t border-border pt-6">
                             <h5 class="font-semibold text-navy mb-4 flex items-center">
                                 <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
                                 Practice Problems
@@ -211,7 +214,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer11" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer11" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>For Mean:</strong> Add all values: 85 + 92 + 78 + 95 + 88 + 90 + 82 = 610</p>
                                             <p><strong>Divide by count:</strong> 610 ÷ 7 = 87.14</p>
@@ -231,7 +234,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer12" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer12" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>Identify the range:</strong> 85 to 115</p>
                                             <p><strong>Distance from mean:</strong> 85 = 100 - 15, 115 = 100 + 15</p>
@@ -247,8 +250,8 @@
                 </div>
 
                 <!-- Normal Distribution -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">11.2 Normal Distribution</h3>
                         <p class="text-dusty">Understanding the bell curve and the 68-95-99.7 rule</p>
                     </div>
@@ -256,7 +259,7 @@
                     <div class="p-6">
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">The Bell Curve</h4>
-                            <div class="bg-englishBlue/10 rounded-lg p-4 mb-4">
+                            <div class="bg-background-secondary rounded-lg p-4 mb-4">
                                 <p class="text-sm text-navy mb-2">
                                     <strong>Normal distribution is a symmetric, bell-shaped curve where most data clusters around the center.</strong>
                                 </p>
@@ -267,7 +270,7 @@
                                 </div>
                             </div>
                             
-                            <div class="bg-warning/10 rounded-lg p-4">
+                            <div class="bg-background-secondary rounded-lg p-4">
                                 <h5 class="font-medium text-navy mb-3">The 68-95-99.7 Rule (Empirical Rule)</h5>
                                 <div class="grid md:grid-cols-3 gap-3">
                                     <div class="bg-white p-3 rounded text-center">
@@ -292,8 +295,8 @@
                 </div>
 
                 <!-- Z-Scores -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">11.3 Z-Scores</h3>
                         <p class="text-dusty">Standardizing values to compare across different distributions</p>
                     </div>
@@ -301,7 +304,7 @@
                     <div class="p-6">
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">Z-Score Formula</h4>
-                            <div class="bg-sage/10 rounded-lg p-4 mb-4">
+                            <div class="bg-background-secondary rounded-lg p-4 mb-4">
                                 <div class="grid md:grid-cols-2 gap-4">
                                     <div class="text-center">
                                         <p class="text-lg font-mono text-navy mb-2">z = (x - μ) / σ</p>
@@ -321,16 +324,16 @@
                                 <div class="space-y-3">
                                     <h5 class="font-medium text-navy">Interpreting Z-Scores</h5>
                                     <div class="space-y-2 text-sm">
-                                        <div class="bg-warning/10 p-2 rounded">
+                                        <div class="bg-background-secondary p-2 rounded">
                                             <p><strong>z < 0:</strong> Below average</p>
                                         </div>
-                                        <div class="bg-dusty/10 p-2 rounded">
+                                        <div class="bg-background-secondary p-2 rounded">
                                             <p><strong>z = 0:</strong> Exactly average</p>
                                         </div>
-                                        <div class="bg-success/10 p-2 rounded">
+                                        <div class="bg-background-secondary p-2 rounded">
                                             <p><strong>z > 0:</strong> Above average</p>
                                         </div>
-                                        <div class="bg-coral/10 p-2 rounded">
+                                        <div class="bg-background-secondary p-2 rounded">
                                             <p><strong>|z| > 2:</strong> Unusual value</p>
                                         </div>
                                     </div>
@@ -354,8 +357,8 @@
                 </div>
 
                 <!-- Data Types and Graphs -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">11.4 Data Types & Visual Displays</h3>
                         <p class="text-dusty">Understanding different data types and choosing appropriate graphs</p>
                     </div>
@@ -363,7 +366,7 @@
                     <div class="p-6">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div class="space-y-4">
-                                <div class="bg-englishBlue/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Types of Data</h5>
                                     <div class="space-y-2 text-sm">
                                         <div class="bg-white p-2 rounded">
@@ -377,7 +380,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-success/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Distribution Shapes</h5>
                                     <div class="text-sm text-dusty space-y-1">
                                         <p><strong>Symmetric:</strong> Mean ≈ Median</p>
@@ -389,7 +392,7 @@
                             </div>
                             
                             <div class="space-y-4">
-                                <div class="bg-coral/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Graph Types</h5>
                                     <div class="text-sm text-dusty space-y-1">
                                         <p><strong>Histogram:</strong> Show distribution shape</p>
@@ -400,7 +403,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-sage/10 rounded-lg p-4">
+                                <div class="bg-background-secondary rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Box Plot Components</h5>
                                     <div class="text-sm text-dusty space-y-1">
                                         <p><strong>Box:</strong> Middle 50% of data (Q1 to Q3)</p>
@@ -415,7 +418,7 @@
                 </div>
 
                 <!-- Quick Reference -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
                             <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
@@ -427,15 +430,15 @@
                                 <h4 class="font-medium text-navy mb-3">Key Formulas</h4>
                                 <ul class="text-sm text-dusty space-y-2">
                                     <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-mathGreen/10 text-mathGreen px-2 py-1 rounded text-xs">Mean = Σx/n</span>
+                                        <span class="font-mono bg-background-secondarybackground-tertiary-10 text-mathGreen px-2 py-1 rounded text-xs">Mean = Σx/n</span>
                                         <span>Average of all values</span>
                                     </li>
                                     <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-coral/10 text-coral px-2 py-1 rounded text-xs">z = (x-μ)/σ</span>
+                                        <span class="font-mono bg-background-secondary text-coral px-2 py-1 rounded text-xs">z = (x-μ)/σ</span>
                                         <span>Standard score</span>
                                     </li>
                                     <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-sage/10 text-sage px-2 py-1 rounded text-xs">68-95-99.7</span>
+                                        <span class="font-mono bg-background-secondary text-sage px-2 py-1 rounded text-xs">68-95-99.7</span>
                                         <span>Empirical rule</span>
                                     </li>
                                 </ul>
@@ -464,7 +467,7 @@
             </a>
             
             <div class="flex space-x-4">
-                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-background-secondary text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
                     Formula Sheet
                 </a>
                 <a href="index.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">

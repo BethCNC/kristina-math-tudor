@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/design-system.css">
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -22,7 +22,7 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center">
+                        <div class="w-10 h-10 rounded-xl bg-background-secondary flex items-center justify-center">
                             <span class="font-button-small text-text-inverse-primary font-bold">4</span>
                         </div>
                         <div>
@@ -36,7 +36,7 @@
                     <div class="hidden sm:flex items-center space-x-3">
                         <div class="flex items-center space-x-2">
                             <div class="w-20 h-2 bg-background-tertiary rounded-full overflow-hidden">
-                                <div class="w-0 h-full bg-emerald-600 rounded-full"></div>
+                                <div class="w-0 h-full bg-background-secondary rounded-full"></div>
                             </div>
                             <span class="font-caption text-text-secondary">0%</span>
                         </div>
@@ -53,9 +53,9 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Chapter Hero -->
         <div class="mb-8">
-            <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-8 mb-6">
+            <div class="bg-background-secondary border border-border rounded-xl p-8 mb-6">
                 <div class="flex items-center space-x-4 mb-6">
-                    <div class="w-16 h-16 rounded-xl bg-emerald-600 flex items-center justify-center">
+                    <div class="w-16 h-16 rounded-xl bg-positive flex items-center justify-center">
                         <i data-lucide="percent" class="w-8 h-8 text-text-inverse-primary"></i>
                     </div>
                     <div>
@@ -67,28 +67,28 @@
                 <!-- Learning Objectives -->
                 <div class="bg-background border border-border rounded-lg p-6 mb-6">
                     <h2 class="font-subtitle-large text-text-primary mb-4 flex items-center">
-                        <i data-lucide="target" class="w-5 h-5 mr-3 text-emerald-600"></i>
-                        Learning Objectives
+                        <i data-lucide="target" class="w-5 h-5 mr-3 text-positive"></i>
+                        Learning Objectives (Think Like a 5th Grader!)
                     </h2>
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div class="space-y-3">
                             <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></div>
-                                <span class="font-body-small text-text-secondary">Set up and solve proportions</span>
+                                <div class="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></div>
+                                <span class="font-body-small text-text-secondary">Set up and solve proportions (like recipes!)</span>
                             </div>
                             <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></div>
-                                <span class="font-body-small text-text-secondary">Calculate percentages and percentage changes</span>
+                                <div class="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></div>
+                                <span class="font-body-small text-text-secondary">Calculate percentages (like sales and tips!)</span>
                             </div>
                         </div>
                         <div class="space-y-3">
                             <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></div>
-                                <span class="font-body-small text-text-secondary">Work with rates and unit rates</span>
+                                <div class="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></div>
+                                <span class="font-body-small text-text-secondary">Work with rates (like speed and prices!)</span>
                             </div>
                             <div class="flex items-start space-x-3">
-                                <div class="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></div>
-                                <span class="font-body-small text-text-secondary">Use dimensional analysis for unit conversions</span>
+                                <div class="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></div>
+                                <span class="font-body-small text-text-secondary">Convert units (like inches to centimeters!)</span>
                             </div>
                         </div>
                     </div>
@@ -97,28 +97,28 @@
                 <!-- Quick Stats -->
                 <div class="grid sm:grid-cols-4 gap-4">
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
-                        <div class="w-8 h-8 rounded-lg bg-emerald-600/10 flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
                             <i data-lucide="clock" class="w-4 h-4 text-emerald-600"></i>
                         </div>
                         <p class="font-button-small text-text-primary">3-4 Hours</p>
                         <p class="font-caption text-text-secondary">Study Time</p>
                     </div>
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
-                        <div class="w-8 h-8 rounded-lg bg-carnelian-500/10 flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
                             <i data-lucide="target" class="w-4 h-4 text-carnelian-500"></i>
                         </div>
                         <p class="font-button-small text-text-primary">Test 2</p>
                         <p class="font-caption text-text-secondary">Sept 29-Oct 3</p>
                     </div>
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
-                        <div class="w-8 h-8 rounded-lg bg-brand-500/10 flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
                             <i data-lucide="layers" class="w-4 h-4 text-brand-500"></i>
                         </div>
                         <p class="font-button-small text-text-primary">4 Sections</p>
                         <p class="font-caption text-text-secondary">Learning Units</p>
                     </div>
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
-                        <div class="w-8 h-8 rounded-lg bg-amethyst-600/10 flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center mx-auto mb-2">
                             <i data-lucide="book-open" class="w-4 h-4 text-amethyst-600"></i>
                         </div>
                         <p class="font-button-small text-text-primary">Ch. 4 & 5</p>
@@ -132,9 +132,9 @@
         <div class="space-y-8">
             <!-- Section 4.1 -->
             <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
-                <div class="bg-emerald-50 border-b border-emerald-200 p-6">
+                <div class="bg-background-secondary border-b border-border p-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-emerald-600 flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-background-secondary flex items-center justify-center">
                             <span class="font-subtitle text-text-inverse-primary font-bold">4.1</span>
                         </div>
                         <div>
@@ -146,64 +146,197 @@
                 
                 <div class="p-6">
                     <!-- Key Concepts -->
-                    <div class="mb-8">
-                        <h3 class="font-subtitle-large text-text-primary mb-6">Key Concepts</h3>
-                        <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="key" class="w-5 h-5 mr-2 text-positive"></i>
+                            Key Concepts (Think Like a 5th Grader!)
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
                             <!-- Ratios -->
-                            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-                                <h4 class="font-subtitle-small text-text-primary mb-3 flex items-center">
-                                    <i data-lucide="split" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                            <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                                <h4 class="font-subtitle text-positive mb-3 flex items-center">
+                                    <i data-lucide="split" class="w-4 h-4 mr-2"></i>
                                     Ratios
                                 </h4>
-                                <div class="space-y-2 font-body-small text-text-secondary">
-                                    <p>Compare two quantities:</p>
-                                    <p class="font-code bg-background p-2 rounded">3:4 or 3/4</p>
-                                    <p><strong>Example:</strong> 3 cups flour to 4 cups water</p>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Comparing two quantities (like recipes!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-sm space-y-1 text-text-secondary">
+                                        <li>• 3:4 or 3/4 (3 cups flour to 4 cups water)</li>
+                                        <li>• 2:1 (2 boys for every 1 girl)</li>
+                                        <li>• 5:2 (5 red marbles to 2 blue marbles)</li>
+                                    </ul>
                                 </div>
                             </div>
                             
                             <!-- Proportions -->
-                            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-                                <h4 class="font-subtitle-small text-text-primary mb-3 flex items-center">
-                                    <i data-lucide="equal" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                            <div class="bg-brand-tertiary border border-brand rounded-lg p-4">
+                                <h4 class="font-subtitle text-brand mb-3 flex items-center">
+                                    <i data-lucide="equal" class="w-4 h-4 mr-2"></i>
                                     Proportions
                                 </h4>
-                                <div class="space-y-2 font-body-small text-text-secondary">
-                                    <p>Two equal ratios:</p>
-                                    <p class="font-code bg-background p-2 rounded">a/b = c/d</p>
-                                    <p><strong>Cross-multiply:</strong> ad = bc</p>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Two equal ratios (like equivalent fractions!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Formula:</strong></p>
+                                    <p class="font-mono text-sm text-positive mb-2">a/b = c/d</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Cross-multiply:</strong></p>
+                                    <p class="font-mono text-sm text-positive">ad = bc</p>
                                 </div>
                             </div>
                             
                             <!-- Percentages -->
-                            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
-                                <h4 class="font-subtitle-small text-text-primary mb-3 flex items-center">
-                                    <i data-lucide="percent" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                            <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                                <h4 class="font-subtitle text-warning mb-3 flex items-center">
+                                    <i data-lucide="percent" class="w-4 h-4 mr-2"></i>
                                     Percentages
                                 </h4>
-                                <div class="space-y-2 font-body-small text-text-secondary">
-                                    <p>Parts per hundred:</p>
-                                    <p class="font-code bg-background p-2 rounded">25% = 25/100 = 0.25</p>
-                                    <p><strong>Formula:</strong> P% × N = 0.P × N</p>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Parts per hundred (like grades and sales!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-sm space-y-1 text-text-secondary">
+                                        <li>• 25% = 25/100 = 0.25</li>
+                                        <li>• 50% = 50/100 = 0.5</li>
+                                        <li>• 100% = 100/100 = 1.0</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Cross-Multiplication -->
+                            <div class="bg-danger-tertiary border border-danger rounded-lg p-4">
+                                <h4 class="font-subtitle text-danger mb-3 flex items-center">
+                                    <i data-lucide="x" class="w-4 h-4 mr-2"></i>
+                                    Cross-Multiplication
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> The magic trick to solve proportions!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Rule:</strong></p>
+                                    <p class="font-mono text-sm text-danger mb-2">If a/b = c/d, then ad = bc</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="font-mono text-sm text-danger">If 3/4 = x/12, then 3×12 = 4×x</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Study Tips -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="book-open" class="w-5 h-5 mr-2 text-warning"></i>
+                            Study Tips & Tricks
+                        </h3>
+                        
+                        <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                            <div class="space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">1</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Set up proportions carefully</strong> - make sure units match!</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">2</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Cross-multiply to solve</strong> - it's like magic!</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">3</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Convert between formats</strong> - fractions, decimals, and percentages</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Worked Example -->
-                    <div class="bg-background border border-border rounded-lg p-6 mb-6">
+                    <div class="mb-6">
                         <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
-                            <i data-lucide="lightbulb" class="w-5 h-5 mr-3 text-emerald-600"></i>
-                            Worked Example: Setting Up Proportions
+                            <i data-lucide="play-circle" class="w-5 h-5 mr-2 text-positive"></i>
+                            Worked Example: The Recipe Problem
                         </h3>
-                        <div class="space-y-4">
-                            <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-lg">
+                        
+                        <div class="bg-background border border-border rounded-lg p-4">
+                            <p class="font-body-small text-text-primary mb-4">
+                                <strong>Problem:</strong> A recipe calls for 2 cups of flour to make 12 cookies. How many cups of flour do you need to make 36 cookies?
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-positive-tertiary border border-positive rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 1: Set up the proportion</strong></p>
+                                    <p class="font-mono text-sm text-positive">2 cups flour / 12 cookies = x cups flour / 36 cookies</p>
+                                    <p class="font-mono text-sm text-positive">2/12 = x/36</p>
+                                </div>
+                                
+                                <div class="bg-brand-tertiary border border-brand rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 2: Cross-multiply</strong></p>
+                                    <p class="font-mono text-sm text-brand">2 × 36 = 12 × x</p>
+                                    <p class="font-mono text-sm text-brand">72 = 12x</p>
+                                </div>
+                                
+                                <div class="bg-warning-tertiary border border-warning rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 3: Solve for x</strong></p>
+                                    <p class="font-mono text-sm text-warning">72 ÷ 12 = x</p>
+                                    <p class="font-mono text-sm text-warning">6 = x</p>
+                                </div>
+                                
+                                <div class="bg-danger-tertiary border border-danger rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 4: Check your answer</strong></p>
+                                    <p class="text-sm text-text-secondary">• 2 cups for 12 cookies = 1/6 cup per cookie</p>
+                                    <p class="text-sm text-text-secondary">• 6 cups for 36 cookies = 1/6 cup per cookie ✓</p>
+                                    <p class="font-body-small text-text-primary"><strong>Answer: 6 cups of flour</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Practice Question -->
+                    <div class="bg-background border border-border rounded-lg p-4">
+                        <h3 class="font-subtitle text-text-primary mb-3 flex items-center">
+                            <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-positive"></i>
+                            Practice Question
+                        </h3>
+                        <p class="font-body-small text-text-secondary mb-3">
+                            <strong>Question:</strong> If 3 apples cost $2.25, how much do 8 apples cost?
+                        </p>
+                        <details class="mt-3">
+                            <summary class="font-button text-positive cursor-pointer hover:text-positive-hover">
+                                Click to see answer
+                            </summary>
+                            <div class="mt-2 p-3 bg-positive-tertiary border border-positive rounded">
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Set up proportion:</strong> 3 apples / $2.25 = 8 apples / x dollars
+                                </p>
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Cross-multiply:</strong> 3x = 2.25 × 8 = 18
+                                </p>
+                                <p class="font-body-small text-text-primary">
+                                    <strong>Solve:</strong> x = 18 ÷ 3 = $6.00
+                                </p>
+                            </div>
+                        </details>
+                    </div>
                                 <p class="font-body-small text-text-primary mb-2"><strong>Problem:</strong> If 3 pencils cost $2.40, how much do 8 pencils cost?</p>
                             </div>
                             
                             <div class="space-y-3 font-body-small text-text-secondary">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <div class="w-6 h-6 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                         <span class="font-button-small text-text-inverse-primary">1</span>
                                     </div>
                                     <div>
@@ -213,7 +346,7 @@
                                 </div>
                                 
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <div class="w-6 h-6 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                         <span class="font-button-small text-text-inverse-primary">2</span>
                                     </div>
                                     <div>
@@ -223,7 +356,7 @@
                                 </div>
                                 
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <div class="w-6 h-6 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                         <span class="font-button-small text-text-inverse-primary">3</span>
                                     </div>
                                     <div>
@@ -233,17 +366,17 @@
                                 </div>
                             </div>
                             
-                            <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                            <div class="bg-background-tertiary border border-positive rounded-lg p-4">
                                 <p class="font-body-small text-text-positive-primary"><strong>Answer:</strong> 8 pencils cost $6.40</p>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Practice Section -->
-                    <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-6">
+                    <div class="bg-background-secondary border border-border rounded-lg p-6">
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center">
+                                <div class="w-8 h-8 rounded-lg bg-background-secondary flex items-center justify-center">
                                     <i data-lucide="play" class="w-4 h-4 text-text-inverse-primary"></i>
                                 </div>
                                 <div>
@@ -251,7 +384,7 @@
                                     <p class="font-caption text-text-secondary">Practice problems to test your understanding</p>
                                 </div>
                             </div>
-                            <button class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-text-inverse-primary font-button rounded-lg transition-colors">
+                            <button class="px-4 py-2 bg-background-secondary hover:bg-background-secondary text-text-inverse-primary font-button rounded-lg transition-colors">
                                 Start Practice
                             </button>
                         </div>
@@ -273,9 +406,9 @@
 
             <!-- Section 4.2 -->
             <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
-                <div class="bg-amethyst-50 border-b border-amethyst-200 p-6">
+                <div class="bg-background-secondary border-b border-border p-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-amethyst-600 flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-background-secondary flex items-center justify-center">
                             <span class="font-subtitle text-text-inverse-primary font-bold">4.2</span>
                         </div>
                         <div>
@@ -286,67 +419,197 @@
                 </div>
                 
                 <div class="p-6">
-                    <div class="grid lg:grid-cols-2 gap-6">
-                        <div>
-                            <h3 class="font-subtitle-large text-text-primary mb-4">Essential Formulas</h3>
-                            <div class="space-y-4">
-                                <div class="bg-amethyst-50 border border-amethyst-200 rounded-lg p-4">
-                                    <h4 class="font-subtitle-small text-text-primary mb-2">Percentage of a Number</h4>
-                                    <p class="font-code bg-background p-2 rounded">P% × N = (P/100) × N</p>
-                                    <p class="font-caption text-text-secondary mt-2">Example: 25% of 80 = 0.25 × 80 = 20</p>
+                    <!-- Key Concepts -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="key" class="w-5 h-5 mr-2 text-positive"></i>
+                            Key Concepts (Think Like a 5th Grader!)
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Percentage of a Number -->
+                            <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                                <h4 class="font-subtitle text-positive mb-3 flex items-center">
+                                    <i data-lucide="percent" class="w-4 h-4 mr-2"></i>
+                                    Percentage of a Number
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Finding a part of a whole (like a slice of pizza!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Formula:</strong></p>
+                                    <p class="font-mono text-sm text-positive mb-2">P% × N = 0.P × N</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="font-mono text-sm text-positive">25% of 80 = 0.25 × 80 = 20</p>
                                 </div>
-                                
-                                <div class="bg-amethyst-50 border border-amethyst-200 rounded-lg p-4">
-                                    <h4 class="font-subtitle-small text-text-primary mb-2">Percentage Change</h4>
-                                    <p class="font-code bg-background p-2 rounded">% Change = (New - Old) / Old × 100%</p>
-                                    <p class="font-caption text-text-secondary mt-2">Positive = increase, Negative = decrease</p>
+                            </div>
+                            
+                            <!-- Percentage Increase/Decrease -->
+                            <div class="bg-brand-tertiary border border-brand rounded-lg p-4">
+                                <h4 class="font-subtitle text-brand mb-3 flex items-center">
+                                    <i data-lucide="trending-up" class="w-4 h-4 mr-2"></i>
+                                    Percentage Increase/Decrease
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> How much something goes up or down (like prices!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Increase:</strong></p>
+                                    <p class="font-mono text-sm text-brand mb-2">New = Original × (1 + rate)</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Decrease:</strong></p>
+                                    <p class="font-mono text-sm text-brand">New = Original × (1 - rate)</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Finding Original Amount -->
+                            <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                                <h4 class="font-subtitle text-warning mb-3 flex items-center">
+                                    <i data-lucide="search" class="w-4 h-4 mr-2"></i>
+                                    Finding Original Amount
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Working backwards to find the starting amount!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Formula:</strong></p>
+                                    <p class="font-mono text-sm text-warning">Original = New ÷ (1 ± rate)</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="font-mono text-sm text-warning">If $90 is 10% off, original = $90 ÷ 0.9 = $100</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Percentage Change -->
+                            <div class="bg-danger-tertiary border border-danger rounded-lg p-4">
+                                <h4 class="font-subtitle text-danger mb-3 flex items-center">
+                                    <i data-lucide="activity" class="w-4 h-4 mr-2"></i>
+                                    Percentage Change
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> How much something changed as a percentage!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Formula:</strong></p>
+                                    <p class="font-mono text-sm text-danger">% Change = (New - Old) / Old × 100%</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="font-mono text-sm text-danger">$50 to $60 = (60-50)/50 × 100% = 20% increase</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                         
-                        <div>
-                            <h3 class="font-subtitle-large text-text-primary mb-4">Common Applications</h3>
+                    
+                    <!-- Study Tips -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="book-open" class="w-5 h-5 mr-2 text-warning"></i>
+                            Study Tips & Tricks
+                        </h3>
+                        
+                        <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
                             <div class="space-y-3">
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-amethyst-600 flex items-center justify-center flex-shrink-0 mt-1">
-                                        <i data-lucide="trending-up" class="w-3 h-3 text-text-inverse-primary"></i>
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">1</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-button text-text-primary">Price Increases</h4>
-                                        <p class="font-body-small text-text-secondary">New Price = Original × (1 + rate)</p>
+                                        <p class="font-body-small text-text-primary"><strong>Increase:</strong> New = Original × (1 + rate)</p>
                                     </div>
                                 </div>
-                                
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-amethyst-600 flex items-center justify-center flex-shrink-0 mt-1">
-                                        <i data-lucide="trending-down" class="w-3 h-3 text-text-inverse-primary"></i>
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">2</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-button text-text-primary">Discounts</h4>
-                                        <p class="font-body-small text-text-secondary">Sale Price = Original × (1 - rate)</p>
+                                        <p class="font-body-small text-text-primary"><strong>Decrease:</strong> New = Original × (1 - rate)</p>
                                     </div>
                                 </div>
-                                
                                 <div class="flex items-start space-x-3">
-                                    <div class="w-6 h-6 rounded bg-amethyst-600 flex items-center justify-center flex-shrink-0 mt-1">
-                                        <i data-lucide="percent" class="w-3 h-3 text-text-inverse-primary"></i>
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">3</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-button text-text-primary">Tax Calculations</h4>
-                                        <p class="font-body-small text-text-secondary">Total = Price × (1 + tax rate)</p>
+                                        <p class="font-body-small text-text-primary"><strong>To find original:</strong> Original = New ÷ (1 ± rate)</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Worked Example -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="play-circle" class="w-5 h-5 mr-2 text-positive"></i>
+                            Worked Example: Sale Price Problem
+                        </h3>
+                        
+                        <div class="bg-background border border-border rounded-lg p-4">
+                            <p class="font-body-small text-text-primary mb-4">
+                                <strong>Problem:</strong> A shirt costs $40. It's on sale for 25% off. What's the sale price?
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-positive-tertiary border border-positive rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 1: Identify the values</strong></p>
+                                    <p class="font-mono text-sm text-positive">Original = $40, Rate = 25% = 0.25</p>
+                                </div>
+                                
+                                <div class="bg-brand-tertiary border border-brand rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 2: Use decrease formula</strong></p>
+                                    <p class="font-mono text-sm text-brand">New = Original × (1 - rate)</p>
+                                    <p class="font-mono text-sm text-brand">New = $40 × (1 - 0.25)</p>
+                                    <p class="font-mono text-sm text-brand">New = $40 × 0.75</p>
+                                </div>
+                                
+                                <div class="bg-warning-tertiary border border-warning rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 3: Calculate</strong></p>
+                                    <p class="font-mono text-sm text-warning">New = $30</p>
+                                </div>
+                                
+                                <div class="bg-danger-tertiary border border-danger rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 4: Check your answer</strong></p>
+                                    <p class="text-sm text-text-secondary">• 25% off means you pay 75% of original</p>
+                                    <p class="text-sm text-text-secondary">• 75% of $40 = $30 ✓</p>
+                                    <p class="font-body-small text-text-primary"><strong>Answer: $30</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Practice Question -->
+                    <div class="bg-background border border-border rounded-lg p-4">
+                        <h3 class="font-subtitle text-text-primary mb-3 flex items-center">
+                            <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-positive"></i>
+                            Practice Question
+                        </h3>
+                        <p class="font-body-small text-text-secondary mb-3">
+                            <strong>Question:</strong> If a $60 item is marked up 15%, what's the new price?
+                        </p>
+                        <details class="mt-3">
+                            <summary class="font-button text-positive cursor-pointer hover:text-positive-hover">
+                                Click to see answer
+                            </summary>
+                            <div class="mt-2 p-3 bg-positive-tertiary border border-positive rounded">
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Use increase formula:</strong> New = Original × (1 + rate)
+                                </p>
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Calculate:</strong> New = $60 × (1 + 0.15) = $60 × 1.15 = $69
+                                </p>
+                                <p class="font-body-small text-text-primary">
+                                    <strong>Answer: $69</strong>
+                                </p>
+                            </div>
+                        </details>
+                    </div>
                     </div>
                 </div>
             </div>
 
             <!-- Section 4.3 -->
             <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
-                <div class="bg-carnelian-50 border-b border-carnelian-200 p-6">
+                <div class="bg-background-secondary border-b border-border p-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-carnelian-500 flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-background-secondary flex items-center justify-center">
                             <span class="font-subtitle text-text-inverse-primary font-bold">4.3</span>
                         </div>
                         <div>
@@ -357,12 +620,188 @@
                 </div>
                 
                 <div class="p-6">
-                    <div class="bg-background border border-border rounded-lg p-4 mb-6">
-                        <div class="flex items-center space-x-3 mb-3">
-                            <i data-lucide="info" class="w-5 h-5 text-carnelian-500"></i>
-                            <h3 class="font-subtitle-small text-text-primary">What are Rates?</h3>
+                    <!-- Key Concepts -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="key" class="w-5 h-5 mr-2 text-positive"></i>
+                            Key Concepts (Think Like a 5th Grader!)
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Rate -->
+                            <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                                <h4 class="font-subtitle text-positive mb-3 flex items-center">
+                                    <i data-lucide="activity" class="w-4 h-4 mr-2"></i>
+                                    Rate
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Comparing two different units (like speed!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-sm space-y-1 text-text-secondary">
+                                        <li>• 60 miles per hour</li>
+                                        <li>• $2.50 per pound</li>
+                                        <li>• 3 cookies per minute</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Unit Rate -->
+                            <div class="bg-brand-tertiary border border-brand rounded-lg p-4">
+                                <h4 class="font-subtitle text-brand mb-3 flex items-center">
+                                    <i data-lucide="target" class="w-4 h-4 mr-2"></i>
+                                    Unit Rate
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Rate with denominator of 1 (per unit!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Formula:</strong></p>
+                                    <p class="font-mono text-sm text-brand mb-2">Unit rate = Total amount ÷ Total units</p>
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="font-mono text-sm text-brand">$10 for 4 apples = $2.50 per apple</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Rate of Change -->
+                            <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                                <h4 class="font-subtitle text-warning mb-3 flex items-center">
+                                    <i data-lucide="trending-up" class="w-4 h-4 mr-2"></i>
+                                    Rate of Change
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> How one quantity changes relative to another!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-sm space-y-1 text-text-secondary">
+                                        <li>• Temperature change per hour</li>
+                                        <li>• Population growth per year</li>
+                                        <li>• Price increase per month</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Comparing Rates -->
+                            <div class="bg-danger-tertiary border border-danger rounded-lg p-4">
+                                <h4 class="font-subtitle text-danger mb-3 flex items-center">
+                                    <i data-lucide="scale" class="w-4 h-4 mr-2"></i>
+                                    Comparing Rates
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Finding the best deal by comparing rates!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Strategy:</strong></p>
+                                    <p class="text-sm text-text-secondary">• Convert both to same unit rate</p>
+                                    <p class="text-sm text-text-secondary">• Compare the numbers</p>
+                                    <p class="text-sm text-text-secondary">• Lower price per unit = better deal</p>
+                                </div>
+                            </div>
                         </div>
-                        <p class="font-body-small text-text-secondary">A rate compares two different units, like miles per hour or price per pound. A unit rate has a denominator of 1.</p>
+                    </div>
+                    
+                    <!-- Study Tips -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="book-open" class="w-5 h-5 mr-2 text-warning"></i>
+                            Study Tips & Tricks
+                        </h3>
+                        
+                        <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                            <div class="space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">1</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Unit rate = Total amount ÷ Total units</strong></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">2</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Use rates to compare different options</strong></p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">3</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Identify which rate is better for decision making</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Worked Example -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="play-circle" class="w-5 h-5 mr-2 text-positive"></i>
+                            Worked Example: Best Deal Problem
+                        </h3>
+                        
+                        <div class="bg-background border border-border rounded-lg p-4">
+                            <p class="font-body-small text-text-primary mb-4">
+                                <strong>Problem:</strong> Which is the better deal: 12 apples for $8 or 8 apples for $6?
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-positive-tertiary border border-positive rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 1: Find unit rate for first option</strong></p>
+                                    <p class="font-mono text-sm text-positive">$8 ÷ 12 apples = $0.67 per apple</p>
+                                </div>
+                                
+                                <div class="bg-brand-tertiary border border-brand rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 2: Find unit rate for second option</strong></p>
+                                    <p class="font-mono text-sm text-brand">$6 ÷ 8 apples = $0.75 per apple</p>
+                                </div>
+                                
+                                <div class="bg-warning-tertiary border border-warning rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 3: Compare the rates</strong></p>
+                                    <p class="font-mono text-sm text-warning">$0.67 vs $0.75 per apple</p>
+                                </div>
+                                
+                                <div class="bg-danger-tertiary border border-danger rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 4: Choose the better deal</strong></p>
+                                    <p class="text-sm text-text-secondary">• $0.67 is less than $0.75</p>
+                                    <p class="text-sm text-text-secondary">• Lower price per apple = better deal ✓</p>
+                                    <p class="font-body-small text-text-primary"><strong>Answer: 12 apples for $8 is the better deal</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Practice Question -->
+                    <div class="bg-background border border-border rounded-lg p-4 mb-6">
+                        <h3 class="font-subtitle text-text-primary mb-3 flex items-center">
+                            <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-positive"></i>
+                            Practice Question
+                        </h3>
+                        <p class="font-body-small text-text-secondary mb-3">
+                            <strong>Question:</strong> If you drive 240 miles in 4 hours, what's your speed in miles per hour?
+                        </p>
+                        <details class="mt-3">
+                            <summary class="font-button text-positive cursor-pointer hover:text-positive-hover">
+                                Click to see answer
+                            </summary>
+                            <div class="mt-2 p-3 bg-positive-tertiary border border-positive rounded">
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Use unit rate formula:</strong> Unit rate = Total amount ÷ Total units
+                                </p>
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Calculate:</strong> Speed = 240 miles ÷ 4 hours = 60 miles per hour
+                                </p>
+                                <p class="font-body-small text-text-primary">
+                                    <strong>Answer: 60 mph</strong>
+                                </p>
+                            </div>
+                        </details>
                     </div>
                     
                     <!-- Real-world Examples -->
@@ -370,15 +809,15 @@
                         <div class="space-y-4">
                             <h3 class="font-subtitle-large text-text-primary">Common Rate Examples</h3>
                             <div class="space-y-3">
-                                <div class="bg-carnelian-50 border border-carnelian-200 rounded-lg p-3">
+                                <div class="bg-background-secondary border border-border rounded-lg p-3">
                                     <p class="font-button text-text-primary">Speed: 60 miles per hour</p>
                                     <p class="font-caption text-text-secondary">Distance ÷ Time = Rate</p>
                                 </div>
-                                <div class="bg-carnelian-50 border border-carnelian-200 rounded-lg p-3">
+                                <div class="bg-background-secondary border border-border rounded-lg p-3">
                                     <p class="font-button text-text-primary">Unit Price: $2.50 per pound</p>
                                     <p class="font-caption text-text-secondary">Total Cost ÷ Amount = Unit Price</p>
                                 </div>
-                                <div class="bg-carnelian-50 border border-carnelian-200 rounded-lg p-3">
+                                <div class="bg-background-secondary border border-border rounded-lg p-3">
                                     <p class="font-button text-text-primary">Efficiency: 30 miles per gallon</p>
                                     <p class="font-caption text-text-secondary">Distance ÷ Fuel = Efficiency</p>
                                 </div>
@@ -387,7 +826,7 @@
                         
                         <div>
                             <h3 class="font-subtitle-large text-text-primary mb-4">Comparison Shopping</h3>
-                            <div class="bg-carnelian-50 border border-carnelian-200 rounded-lg p-4">
+                            <div class="bg-background-secondary border border-border rounded-lg p-4">
                                 <h4 class="font-subtitle-small text-text-primary mb-3">Which is the better deal?</h4>
                                 <div class="space-y-2 font-body-small text-text-secondary">
                                     <p><strong>Option A:</strong> 12 oz for $3.60</p>
@@ -408,9 +847,9 @@
 
             <!-- Section 4.4 -->
             <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
-                <div class="bg-citrine-50 border-b border-citrine-200 p-6">
+                <div class="bg-background-secondary border-b border-border p-6">
                     <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-xl bg-citrine-500 flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-background-secondary flex items-center justify-center">
                             <span class="font-subtitle text-text-inverse-primary font-bold">4.4</span>
                         </div>
                         <div>
@@ -421,48 +860,186 @@
                 </div>
                 
                 <div class="p-6">
+                    <!-- Key Concepts -->
                     <div class="mb-6">
-                        <h3 class="font-subtitle-large text-text-primary mb-4">The Strategy: Cancel Units</h3>
-                        <div class="bg-citrine-50 border border-citrine-200 rounded-lg p-6">
-                            <div class="space-y-4 font-body-small text-text-secondary">
-                                <p class="font-subtitle-small text-text-primary">Example: Convert 2.5 hours to minutes</p>
-                                
-                                <div class="bg-background p-4 rounded border">
-                                    <p class="font-code text-center">2.5 hours × (60 minutes / 1 hour) = 150 minutes</p>
-                                    <div class="flex justify-center mt-2">
-                                        <span class="text-xs text-text-tertiary">↑ Hours cancel out ↑</span>
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="key" class="w-5 h-5 mr-2 text-positive"></i>
+                            Key Concepts (Think Like a 5th Grader!)
+                        </h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <!-- Converting Between Units -->
+                            <div class="bg-positive-tertiary border border-positive rounded-lg p-4">
+                                <h4 class="font-subtitle text-positive mb-3 flex items-center">
+                                    <i data-lucide="repeat" class="w-4 h-4 mr-2"></i>
+                                    Converting Between Units
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Changing from one unit to another (like recipes!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Strategy:</strong></p>
+                                    <p class="text-sm text-text-secondary">• Write conversions as fractions</p>
+                                    <p class="text-sm text-text-secondary">• Set up so units cancel</p>
+                                    <p class="text-sm text-text-secondary">• Chain multiple conversions</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Conversion Factors -->
+                            <div class="bg-brand-tertiary border border-brand rounded-lg p-4">
+                                <h4 class="font-subtitle text-brand mb-3 flex items-center">
+                                    <i data-lucide="divide" class="w-4 h-4 mr-2"></i>
+                                    Conversion Factors
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Fractions that equal 1 (like 60 min/1 hour!)
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Examples:</strong></p>
+                                    <ul class="text-sm space-y-1 text-text-secondary">
+                                        <li>• 60 minutes / 1 hour</li>
+                                        <li>• 12 inches / 1 foot</li>
+                                        <li>• 3 feet / 1 yard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Multi-step Conversions -->
+                            <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                                <h4 class="font-subtitle text-warning mb-3 flex items-center">
+                                    <i data-lucide="arrow-right" class="w-4 h-4 mr-2"></i>
+                                    Multi-step Conversions
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Converting through multiple steps!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Example:</strong></p>
+                                    <p class="text-sm text-text-secondary">Days → Hours → Minutes</p>
+                                    <p class="text-sm text-text-secondary">Miles → Feet → Inches</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Checking Units -->
+                            <div class="bg-danger-tertiary border border-danger rounded-lg p-4">
+                                <h4 class="font-subtitle text-danger mb-3 flex items-center">
+                                    <i data-lucide="check-square" class="w-4 h-4 mr-2"></i>
+                                    Checking Units
+                                </h4>
+                                <p class="font-body-small text-text-secondary mb-3">
+                                    <strong>What it is:</strong> Always check your final units!
+                                </p>
+                                <div class="bg-background border border-border rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Rule:</strong></p>
+                                    <p class="text-sm text-text-secondary">• Final units should match what's asked</p>
+                                    <p class="text-sm text-text-secondary">• If units don't match, check your setup</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Study Tips -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="book-open" class="w-5 h-5 mr-2 text-warning"></i>
+                            Study Tips & Tricks
+                        </h3>
+                        
+                        <div class="bg-warning-tertiary border border-warning rounded-lg p-4">
+                            <div class="space-y-3">
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">1</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Write conversions as fractions</strong> so units cancel</p>
                                     </div>
                                 </div>
-                                
-                                <div class="grid sm:grid-cols-2 gap-4 mt-4">
-                                    <div>
-                                        <h4 class="font-button text-text-primary mb-2">Key Rules:</h4>
-                                        <ul class="space-y-1 text-sm">
-                                            <li>• Write conversions as fractions</li>
-                                            <li>• Units should cancel out</li>
-                                            <li>• Check your final units</li>
-                                        </ul>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">2</span>
                                     </div>
                                     <div>
-                                        <h4 class="font-button text-text-primary mb-2">Common Conversions:</h4>
-                                        <ul class="space-y-1 text-sm">
-                                            <li>• 1 hour = 60 minutes</li>
-                                            <li>• 1 foot = 12 inches</li>
-                                            <li>• 1 yard = 3 feet</li>
-                                        </ul>
+                                        <p class="font-body-small text-text-primary"><strong>Chain multiple conversions</strong> together</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div class="w-6 h-6 rounded-full bg-warning flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <span class="text-xs font-bold text-text-inverse-primary">3</span>
+                                    </div>
+                                    <div>
+                                        <p class="font-body-small text-text-primary"><strong>Always check final units</strong> match what's asked</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    
+                    <!-- Worked Example -->
+                    <div class="mb-6">
+                        <h3 class="font-subtitle-large text-text-primary mb-4 flex items-center">
+                            <i data-lucide="play-circle" class="w-5 h-5 mr-2 text-positive"></i>
+                            Worked Example: Time Conversion
+                        </h3>
+                        
+                        <div class="bg-background border border-border rounded-lg p-4">
+                            <p class="font-body-small text-text-primary mb-4">
+                                <strong>Problem:</strong> Convert 2.5 hours to minutes
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-positive-tertiary border border-positive rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 1: Set up conversion factor</strong></p>
+                                    <p class="font-mono text-sm text-positive">2.5 hours × (60 minutes / 1 hour)</p>
+                                </div>
+                                
+                                <div class="bg-brand-tertiary border border-brand rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 2: Cancel units</strong></p>
+                                    <p class="font-mono text-sm text-brand">2.5 × 60 minutes = 150 minutes</p>
+                                    <p class="text-xs text-text-secondary">↑ Hours cancel out ↑</p>
+                                </div>
+                                
+                                <div class="bg-warning-tertiary border border-warning rounded p-3">
+                                    <p class="font-body-small text-text-primary mb-2"><strong>Step 3: Check final units</strong></p>
+                                    <p class="font-mono text-sm text-warning">Final answer: 150 minutes ✓</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Practice Question -->
+                    <div class="bg-background border border-border rounded-lg p-4">
+                        <h3 class="font-subtitle text-text-primary mb-3 flex items-center">
+                            <i data-lucide="help-circle" class="w-4 h-4 mr-2 text-positive"></i>
+                            Practice Question
+                        </h3>
+                        <p class="font-body-small text-text-secondary mb-3">
+                            <strong>Question:</strong> Convert 3 feet to inches
+                        </p>
+                        <details class="mt-3">
+                            <summary class="font-button text-positive cursor-pointer hover:text-positive-hover">
+                                Click to see answer
+                            </summary>
+                            <div class="mt-2 p-3 bg-positive-tertiary border border-positive rounded">
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Set up conversion:</strong> 3 feet × (12 inches / 1 foot)
+                                </p>
+                                <p class="font-body-small text-text-primary mb-2">
+                                    <strong>Calculate:</strong> 3 × 12 inches = 36 inches
+                                </p>
+                                <p class="font-body-small text-text-primary">
+                                    <strong>Answer: 36 inches</strong>
+                                </p>
+                            </div>
+                        </details>
+                    </div>
             </div>
         </div>
 
         <!-- Chapter Summary -->
         <div class="mt-12 bg-background-secondary border border-border rounded-xl p-8">
             <div class="flex items-center space-x-4 mb-6">
-                <div class="w-12 h-12 rounded-xl bg-emerald-600 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-xl bg-background-secondary flex items-center justify-center">
                     <i data-lucide="check-circle" class="w-6 h-6 text-text-inverse-primary"></i>
                 </div>
                 <div>
@@ -476,25 +1053,25 @@
                     <h3 class="font-subtitle-large text-text-primary mb-4">Essential Skills</h3>
                     <div class="space-y-3">
                         <div class="flex items-start space-x-3">
-                            <div class="w-5 h-5 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-5 h-5 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-text-inverse-primary"></i>
                             </div>
                             <span class="font-body-small text-text-secondary">Set up and solve proportions using cross-multiplication</span>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <div class="w-5 h-5 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-5 h-5 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-text-inverse-primary"></i>
                             </div>
                             <span class="font-body-small text-text-secondary">Calculate percentage increases and decreases</span>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <div class="w-5 h-5 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-5 h-5 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-text-inverse-primary"></i>
                             </div>
                             <span class="font-body-small text-text-secondary">Find unit rates and compare options</span>
                         </div>
                         <div class="flex items-start space-x-3">
-                            <div class="w-5 h-5 rounded bg-emerald-600 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-5 h-5 rounded bg-background-secondary flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="check" class="w-3 h-3 text-text-inverse-primary"></i>
                             </div>
                             <span class="font-body-small text-text-secondary">Use dimensional analysis for unit conversions</span>
@@ -506,7 +1083,7 @@
                     <h3 class="font-subtitle-large text-text-primary mb-4">Study Resources</h3>
                     <div class="grid gap-3">
                         <a href="formula_lookup.html" class="flex items-center space-x-3 p-3 bg-background border border-border rounded-lg hover:shadow-md transition-all duration-200 group">
-                            <div class="w-8 h-8 rounded-lg bg-emerald-600/10 flex items-center justify-center">
+                            <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center">
                                 <i data-lucide="calculator" class="w-4 h-4 text-emerald-600"></i>
                             </div>
                             <div class="flex-1">
@@ -517,7 +1094,7 @@
                         </a>
                         
                         <a href="#practice" class="flex items-center space-x-3 p-3 bg-background border border-border rounded-lg hover:shadow-md transition-all duration-200 group">
-                            <div class="w-8 h-8 rounded-lg bg-amethyst-600/10 flex items-center justify-center">
+                            <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center">
                                 <i data-lucide="target" class="w-4 h-4 text-amethyst-600"></i>
                             </div>
                             <div class="flex-1">
@@ -528,7 +1105,7 @@
                         </a>
                         
                         <a href="calendar.html" class="flex items-center space-x-3 p-3 bg-background border border-border rounded-lg hover:shadow-md transition-all duration-200 group">
-                            <div class="w-8 h-8 rounded-lg bg-carnelian-500/10 flex items-center justify-center">
+                            <div class="w-8 h-8 rounded-lg bg-background-tertiary flex items-center justify-center">
                                 <i data-lucide="calendar" class="w-4 h-4 text-carnelian-500"></i>
                             </div>
                             <div class="flex-1">

@@ -12,7 +12,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +35,7 @@
                         success: '#48bb78'
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif']
+                        sans: ['Host Grotesk', 'sans-serif']
                     }
                 }
             }
@@ -69,12 +72,12 @@
     <main class="max-w-6xl mx-auto px-4 py-8">
         <!-- Progress Indicator -->
         <div class="mb-8">
-            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-border">
                 <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-medium text-navy">Chapter Progress</span>
                     <span class="text-xs bg-dusty/20 text-dusty px-2 py-1 rounded">Upcoming</span>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="w-full bg-background-secondary rounded-full h-2">
                     <div class="bg-dusty h-2 rounded-full" style="width: 0%"></div>
                 </div>
                 <p class="text-xs text-dusty mt-1">Available Week 8-10</p>
@@ -83,7 +86,7 @@
 
         <!-- Chapter Overview -->
         <section class="mb-12">
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-border mb-6">
                 <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
                     <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
                     Chapter Overview
@@ -94,7 +97,7 @@
                     </p>
                     
                     <div class="grid md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Metric system prefixes</li>
@@ -104,7 +107,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-coral/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Test Info</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Test 3: Oct 20-24</li>
@@ -114,7 +117,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-sage/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Memorize key conversion factors</li>
@@ -137,8 +140,8 @@
             
             <div class="space-y-6">
                 <!-- Metric System -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">7.1 The Metric System</h3>
                         <p class="text-dusty">Understanding metric prefixes and basic units</p>
                     </div>
@@ -146,7 +149,7 @@
                     <div class="p-6">
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">Metric Prefixes (Memory Aid: King Henry Died By Drinking Chocolate Milk)</h4>
-                            <div class="bg-mathGreen/10 rounded-lg p-4 mb-4">
+                            <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4 mb-4">
                                 <div class="grid grid-cols-7 gap-2 text-xs text-center">
                                     <div class="bg-white p-2 rounded">
                                         <p class="font-bold text-navy">King</p>
@@ -210,7 +213,7 @@
                         </div>
 
                         <!-- Practice Problems -->
-                        <div class="border-t border-dusty/10 pt-6">
+                        <div class="border-t border-border pt-6">
                             <h5 class="font-semibold text-navy mb-4 flex items-center">
                                 <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
                                 Practice Problems
@@ -226,7 +229,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer7" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer7" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>Conversion factor:</strong> 1 km = 1,000 m</p>
                                             <p><strong>Setup:</strong> 2.5 km × (1,000 m / 1 km)</p>
@@ -245,7 +248,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer8" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer8" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>Convert cups to mL:</strong> 2 cups × 237 mL/cup = 474 mL</p>
                                             <p><strong>Divide by cup size:</strong> 474 mL ÷ 500 mL = 0.948</p>
@@ -260,8 +263,8 @@
                 </div>
 
                 <!-- Dimensional Analysis -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">7.2 Dimensional Analysis</h3>
                         <p class="text-dusty">The unit cancellation method for conversions</p>
                     </div>
@@ -269,7 +272,7 @@
                     <div class="p-6">
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">The Goal: Make Units Cancel</h4>
-                            <div class="bg-coral/10 rounded-lg p-4 mb-4">
+                            <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4 mb-4">
                                 <p class="text-sm text-navy mb-2">
                                     <strong>Set up conversion factors as fractions so unwanted units cancel out</strong>
                                 </p>
@@ -318,8 +321,8 @@
                 </div>
 
                 <!-- Temperature Conversions -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">7.3 Temperature Conversions</h3>
                         <p class="text-dusty">Converting between Celsius and Fahrenheit</p>
                     </div>
@@ -328,7 +331,7 @@
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">Temperature Formulas</h4>
                             <div class="grid md:grid-cols-2 gap-4">
-                                <div class="bg-warning/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Celsius to Fahrenheit</h5>
                                     <p class="text-lg font-mono text-center mb-2">F = (9C/5) + 32</p>
                                     <div class="text-sm bg-white p-3 rounded">
@@ -339,7 +342,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-englishBlue/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Fahrenheit to Celsius</h5>
                                     <p class="text-lg font-mono text-center mb-2">C = 5(F-32)/9</p>
                                     <div class="text-sm bg-white p-3 rounded">
@@ -351,7 +354,7 @@
                                 </div>
                             </div>
                             
-                            <div class="mt-4 bg-sage/10 rounded-lg p-4">
+                            <div class="mt-4 bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                 <h5 class="font-medium text-navy mb-2">Temperature Reference Points</h5>
                                 <div class="grid md:grid-cols-3 gap-3 text-center text-sm">
                                     <div class="bg-white p-2 rounded">
@@ -373,8 +376,8 @@
                 </div>
 
                 <!-- US to Metric -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">7.4 US to Metric Conversions</h3>
                         <p class="text-dusty">Converting between measurement systems</p>
                     </div>
@@ -383,7 +386,7 @@
                         <div class="mb-6">
                             <h4 class="font-semibold text-navy mb-3">Key Conversion Factors</h4>
                             <div class="grid md:grid-cols-3 gap-4">
-                                <div class="bg-success/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Length</h5>
                                     <div class="text-sm space-y-1">
                                         <p><strong>1 inch = 2.54 cm</strong></p>
@@ -392,7 +395,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-coral/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Weight/Mass</h5>
                                     <div class="text-sm space-y-1">
                                         <p><strong>1 pound ≈ 0.454 kg</strong></p>
@@ -401,7 +404,7 @@
                                     </div>
                                 </div>
                                 
-                                <div class="bg-sage/10 rounded-lg p-4">
+                                <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                                     <h5 class="font-medium text-navy mb-2">Volume</h5>
                                     <div class="text-sm space-y-1">
                                         <p><strong>1 quart ≈ 0.946 L</strong></p>
@@ -424,7 +427,7 @@
                 </div>
 
                 <!-- Quick Reference -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-navy mb-4 flex items-center">
                             <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-coral"></i>
@@ -436,11 +439,11 @@
                                 <h4 class="font-medium text-navy mb-3">Temperature Formulas</h4>
                                 <ul class="text-sm text-dusty space-y-2">
                                     <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-warning/10 text-warning px-2 py-1 rounded text-xs">F = (9C/5) + 32</span>
+                                        <span class="font-mono bg-background-secondarybackground-tertiary-10 text-warning px-2 py-1 rounded text-xs">F = (9C/5) + 32</span>
                                         <span>C to F</span>
                                     </li>
                                     <li class="flex items-center space-x-2">
-                                        <span class="font-mono bg-englishBlue/10 text-englishBlue px-2 py-1 rounded text-xs">C = 5(F-32)/9</span>
+                                        <span class="font-mono bg-background-secondarybackground-tertiary-10 text-englishBlue px-2 py-1 rounded text-xs">C = 5(F-32)/9</span>
                                         <span>F to C</span>
                                     </li>
                                 </ul>
@@ -469,7 +472,7 @@
             </a>
             
             <div class="flex space-x-4">
-                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-background-secondarybackground-tertiary-10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
                     Formula Sheet
                 </a>
                 <a href="chapter-10.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">

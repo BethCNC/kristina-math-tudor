@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/design-system.css">
+    <link rel="stylesheet" href="src/styles/globals.css">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
@@ -168,7 +168,7 @@
         <div id="overview" class="content-area active">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand/10-10 flex items-center justify-center">
                         <i data-lucide="clock" class="w-6 h-6 text-brand"></i>
                     </div>
                     <div>
@@ -199,7 +199,7 @@
                 <div class="grid lg:grid-cols-2 gap-6">
                     <div class="bg-background-secondary border border-border rounded-xl p-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-lg bg-positive/10 flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 rounded-lg bg-bg-positive/10-10 flex items-center justify-center flex-shrink-0">
                                 <i data-lucide="calculator" class="w-5 h-5 text-positive"></i>
                             </div>
                             <div class="flex-1">
@@ -217,7 +217,7 @@
                     
                     <div class="bg-background-secondary border border-border rounded-xl p-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-lg bg-brand/10 flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 rounded-lg bg-bg-brand/10-10 flex items-center justify-center flex-shrink-0">
                                 <i data-lucide="book-open" class="w-5 h-5 text-brand"></i>
                             </div>
                             <div class="flex-1">
@@ -237,7 +237,7 @@
         <div id="math" class="content-area">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-positive/10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-positive/10-10 flex items-center justify-center">
                         <i data-lucide="calculator" class="w-6 h-6 text-positive"></i>
                     </div>
                     <div>
@@ -334,7 +334,7 @@
         <div id="english" class="content-area">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand/10-10 flex items-center justify-center">
                         <i data-lucide="pen-tool" class="w-6 h-6 text-brand"></i>
                     </div>
                     <div>
@@ -374,7 +374,7 @@
 
             <div class="space-y-6">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-8 h-8 rounded-lg bg-brand/10 flex items-center justify-center">
+                    <div class="w-8 h-8 rounded-lg bg-bg-brand/10-10 flex items-center justify-center">
                         <i data-lucide="calendar-days" class="w-4 h-4 text-brand"></i>
                     </div>
                     <h3 class="font-subtitle-large text-text-primary">Week-by-Week Schedule</h3>
@@ -1077,7 +1077,7 @@
             }
 
             // Update every hour
-            setInterval(() => {
+            setHost Groteskval(() => {
                 updateCurrentStatus();
                 updateTestCountdowns();
             }, 3600000);

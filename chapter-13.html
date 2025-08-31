@@ -12,7 +12,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,7 +35,7 @@
                         success: '#48bb78'
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif']
+                        sans: ['Host Grotesk', 'sans-serif']
                     }
                 }
             }
@@ -69,12 +72,12 @@
     <main class="max-w-6xl mx-auto px-4 py-8">
         <!-- Progress Indicator -->
         <div class="mb-8">
-            <div class="bg-white rounded-lg p-4 shadow-sm border border-dusty/10">
+            <div class="bg-white rounded-lg p-4 shadow-sm border border-border">
                 <div class="flex items-center justify-between mb-2">
                     <span class="text-sm font-medium text-navy">Chapter Progress</span>
                     <span class="text-xs bg-mathGreen/20 text-mathGreen px-2 py-1 rounded">Current</span>
                 </div>
-                <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="w-full bg-background-secondary rounded-full h-2">
                     <div class="bg-mathGreen h-2 rounded-full" style="width: 25%"></div>
                 </div>
                 <p class="text-xs text-dusty mt-1">Keep going! You're making great progress.</p>
@@ -83,7 +86,7 @@
 
         <!-- Chapter Overview -->
         <section class="mb-12">
-            <div class="bg-white rounded-lg p-6 shadow-sm border border-dusty/10 mb-6">
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-border mb-6">
                 <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
                     <i data-lucide="target" class="w-6 h-6 mr-3 text-mathGreen"></i>
                     Chapter Overview
@@ -95,7 +98,7 @@
                     </p>
                     
                     <div class="grid md:grid-cols-3 gap-4 mt-6">
-                        <div class="bg-mathGreen/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Key Skills</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Plurality and runoff voting</li>
@@ -105,7 +108,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-coral/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Test Info</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Test 1: Sept 8-12</li>
@@ -115,7 +118,7 @@
                             </ul>
                         </div>
                         
-                        <div class="bg-sage/10 rounded-lg p-4">
+                        <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-4">
                             <h3 class="font-semibold text-navy mb-2">Study Tips</h3>
                             <ul class="text-sm space-y-1">
                                 <li>• Practice with election examples</li>
@@ -138,8 +141,8 @@
             
             <div class="space-y-6">
                 <!-- Voting Methods -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">13.1 Voting Methods</h3>
                         <p class="text-dusty">Learn different ways to conduct elections and their outcomes</p>
                     </div>
@@ -215,13 +218,13 @@
                                 </div>
                             </div>
                             
-                            <div class="mt-3 text-xs text-dusty bg-warning/10 p-2 rounded">
+                            <div class="mt-3 text-xs text-dusty bg-background-secondarybackground-tertiary-10 p-2 rounded">
                                 <strong>Key Insight:</strong> Different voting methods can produce different winners with the same votes!
                             </div>
                         </div>
 
                         <!-- Practice Problems -->
-                        <div class="border-t border-dusty/10 pt-6">
+                        <div class="border-t border-border pt-6">
                             <h5 class="font-semibold text-navy mb-4 flex items-center">
                                 <i data-lucide="pencil" class="w-4 h-4 mr-2 text-coral"></i>
                                 Practice Problems
@@ -237,7 +240,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer13" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer13" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>Plurality method:</strong> Winner is candidate with the most votes</p>
                                             <p><strong>Compare votes:</strong> A: 45%, B: 35%, C: 20%</p>
@@ -256,7 +259,7 @@
                                         Show Solution
                                     </button>
                                     
-                                    <div id="answer14" class="hidden mt-3 p-3 bg-white rounded border-l-4 border-mathGreen">
+                                    <div id="answer14" class="hidden mt-3 p-3 bg-white rounded border-border border-mathGreen">
                                         <div class="text-xs space-y-1">
                                             <p><strong>Total population:</strong> 45,000 + 30,000 + 25,000 = 100,000</p>
                                             <p><strong>Standard divisor:</strong> 100,000 ÷ 8 = 12,500</p>
@@ -273,8 +276,8 @@
                 </div>
 
                 <!-- Apportionment -->
-                <div class="bg-white rounded-lg shadow-sm border border-dusty/10">
-                    <div class="p-6 border-b border-dusty/10">
+                <div class="bg-white rounded-lg shadow-sm border border-border">
+                    <div class="p-6 border-b border-border">
                         <h3 class="text-xl font-semibold text-navy mb-2">13.2 Apportionment Methods</h3>
                         <p class="text-dusty">Learn how to fairly distribute seats in representative bodies</p>
                     </div>
@@ -284,13 +287,13 @@
                             <h4 class="font-semibold text-navy mb-3">Key Concepts</h4>
                             <div class="grid md:grid-cols-2 gap-4">
                                 <div class="space-y-3">
-                                    <div class="bg-mathGreen/10 rounded-lg p-3">
+                                    <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-3">
                                         <h5 class="font-medium text-navy">Standard Quota</h5>
                                         <p class="text-xs text-dusty mt-1">Population ÷ Standard Divisor</p>
                                         <p class="text-xs text-dusty">How many seats a state "deserves"</p>
                                     </div>
                                     
-                                    <div class="bg-coral/10 rounded-lg p-3">
+                                    <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-3">
                                         <h5 class="font-medium text-navy">Hamilton Method</h5>
                                         <p class="text-xs text-dusty mt-1">Give each state its lower quota</p>
                                         <p class="text-xs text-dusty">Distribute remaining seats to largest remainders</p>
@@ -298,13 +301,13 @@
                                 </div>
                                 
                                 <div class="space-y-3">
-                                    <div class="bg-sage/10 rounded-lg p-3">
+                                    <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-3">
                                         <h5 class="font-medium text-navy">Jefferson Method</h5>
                                         <p class="text-xs text-dusty mt-1">Lower the divisor until exactly right number of seats</p>
                                         <p class="text-xs text-dusty">Favors larger states</p>
                                     </div>
                                     
-                                    <div class="bg-dusty/10 rounded-lg p-3">
+                                    <div class="bg-background-secondarybackground-tertiary-10 rounded-lg p-3">
                                         <h5 class="font-medium text-navy">Webster Method</h5>
                                         <p class="text-xs text-dusty mt-1">Round to nearest whole number</p>
                                         <p class="text-xs text-dusty">Currently used by US Congress</p>
@@ -325,7 +328,7 @@
             </a>
             
             <div class="flex space-x-4">
-                <a href="formula_lookup.html" class="px-4 py-2 bg-sage/10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
+                <a href="formula_lookup.html" class="px-4 py-2 bg-background-secondarybackground-tertiary-10 text-sage rounded-lg text-sm font-medium hover:bg-sage/20">
                     Formula Sheet
                 </a>
                 <a href="index.html" class="px-4 py-2 bg-mathGreen text-white rounded-lg text-sm font-medium hover:bg-mathGreen/90">
