@@ -1087,6 +1087,89 @@
                 </a>
             </div>
         </div>
+
+        <!-- Formula Sheet -->
+        <section class="bg-accent/5 rounded-2xl p-6 space-y-6 mt-8 mb-8">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="bookmark" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Chapter 6 Formula Sheet</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="percent" class="w-5 h-5 text-positive"></i>
+                        <span>Interest Formulas</span>
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="bg-positive/10 rounded-lg p-3">
+                            <h4 class="font-button text-positive mb-1">Simple Interest</h4>
+                            <p class="font-body text-accent">I = Prt</p>
+                            <p class="font-caption text-text-secondary">P = Principal, r = rate, t = time</p>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-3">
+                            <h4 class="font-button text-accent mb-1">Compound Interest</h4>
+                            <p class="font-body text-positive">A = P(1 + r/n)^(nt)</p>
+                            <p class="font-caption text-text-secondary">n = compounding frequency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="calculator" class="w-5 h-5 text-warning"></i>
+                        <span>Advanced Finance Formulas</span>
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="bg-warning/10 rounded-lg p-2">
+                            <p class="font-caption text-text-secondary"><strong>Present Value:</strong> PV = A / (1 + r/n)^(nt)</p>
+                        </div>
+                        <div class="bg-positive/10 rounded-lg p-2">
+                            <p class="font-caption text-text-secondary"><strong>Annuity Future Value:</strong> FV = PMT × [((1 + r/n)^(nt) - 1) / (r/n)]</p>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-2">
+                            <p class="font-caption text-text-secondary"><strong>Loan Payment:</strong> PMT = (P × r/n) / (1 - (1 + r/n)^(-nt))</p>
+                        </div>
+                        <div class="bg-warning/10 rounded-lg p-2">
+                            <p class="font-caption text-text-secondary"><strong>Continuous Compound:</strong> A = Pe^(rt)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-5 md:col-span-2">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="calendar" class="w-5 h-5 text-accent"></i>
+                        <span>Compounding Frequencies</span>
+                    </h3>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="bg-positive/10 rounded-lg p-2 text-center">
+                            <p class="font-button text-positive">Annual</p>
+                            <p class="font-caption text-text-secondary">n = 1</p>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-2 text-center">
+                            <p class="font-button text-accent">Quarterly</p>
+                            <p class="font-caption text-text-secondary">n = 4</p>
+                        </div>
+                        <div class="bg-warning/10 rounded-lg p-2 text-center">
+                            <p class="font-button text-warning">Monthly</p>
+                            <p class="font-caption text-text-secondary">n = 12</p>
+                        </div>
+                        <div class="bg-positive/10 rounded-lg p-2 text-center">
+                            <p class="font-button text-positive">Daily</p>
+                            <p class="font-caption text-text-secondary">n = 365</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-background rounded-xl p-4 border-l-4 border-positive">
+                <p class="font-caption text-text-secondary italic">
+                    💰 <strong>Money Tip:</strong> More frequent compounding = higher returns! Monthly beats annual, daily beats monthly.
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8: Measurement Magic - Kristina's Math Tutor</title>
+    <meta name="description" content="Learn measurement and unit conversions for MAT 143 - explained like you're learning magic tricks with numbers!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-positive flex items-center justify-center">
+                            <span class="font-button-small text-text-inverse-primary font-bold">8</span>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">Chapter 8</h1>
+                            <p class="font-caption text-text-secondary">Measurement Magic</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center space-x-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-20 h-2 bg-background-tertiary rounded-full overflow-hidden">
+                                <div class="w-full h-full bg-positive rounded-full"></div>
+                            </div>
+                            <span class="font-caption text-text-secondary">100%</span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span class="font-button">Dashboard</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        <!-- Chapter Introduction -->
+        <section class="text-center space-y-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-positive/10 mb-4">
+                <i data-lucide="ruler" class="w-8 h-8 text-positive"></i>
+            </div>
+            <h1 class="font-title-large text-text-primary">Measurement Magic 📏✨</h1>
+            <p class="font-body text-text-secondary max-w-2xl mx-auto">
+                Learning to convert between different measurements is like learning magic tricks! 
+                We'll master the art of changing centimeters to inches, pounds to kilograms, and more. 
+                Get ready to amaze yourself with measurement magic!
+            </p>
+        </section>
+
+        <!-- The Magic Memory Trick -->
+        <section class="bg-accent/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="brain" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">The Royal Memory Trick</h2>
+            </div>
+            
+            <div class="bg-background rounded-xl p-6">
+                <div class="text-center mb-6">
+                    <h3 class="font-title-small text-text-primary mb-2">👑 King Henry Died By Drinking Chocolate Milk</h3>
+                    <p class="font-body text-text-secondary">This silly sentence helps you remember metric prefixes in order!</p>
+                </div>
+
+                <div class="grid grid-cols-7 gap-2 mb-6">
+                    <div class="text-center p-3 bg-positive/10 rounded-lg">
+                        <div class="font-button text-positive">King</div>
+                        <div class="font-caption text-text-secondary">kilo</div>
+                        <div class="font-caption text-text-secondary">×1000</div>
+                    </div>
+                    <div class="text-center p-3 bg-accent/10 rounded-lg">
+                        <div class="font-button text-accent">Henry</div>
+                        <div class="font-caption text-text-secondary">hecto</div>
+                        <div class="font-caption text-text-secondary">×100</div>
+                    </div>
+                    <div class="text-center p-3 bg-warning/10 rounded-lg">
+                        <div class="font-button text-warning">Died</div>
+                        <div class="font-caption text-text-secondary">deka</div>
+                        <div class="font-caption text-text-secondary">×10</div>
+                    </div>
+                    <div class="text-center p-3 bg-positive rounded-lg">
+                        <div class="font-button text-text-inverse-primary">By</div>
+                        <div class="font-caption text-text-inverse-secondary">BASE</div>
+                        <div class="font-caption text-text-inverse-secondary">×1</div>
+                    </div>
+                    <div class="text-center p-3 bg-warning/10 rounded-lg">
+                        <div class="font-button text-warning">Drinking</div>
+                        <div class="font-caption text-text-secondary">deci</div>
+                        <div class="font-caption text-text-secondary">÷10</div>
+                    </div>
+                    <div class="text-center p-3 bg-accent/10 rounded-lg">
+                        <div class="font-button text-accent">Chocolate</div>
+                        <div class="font-caption text-text-secondary">centi</div>
+                        <div class="font-caption text-text-secondary">÷100</div>
+                    </div>
+                    <div class="text-center p-3 bg-positive/10 rounded-lg">
+                        <div class="font-button text-positive">Milk</div>
+                        <div class="font-caption text-text-secondary">milli</div>
+                        <div class="font-caption text-text-secondary">÷1000</div>
+                    </div>
+                </div>
+
+                <div class="bg-background-secondary rounded-lg p-4">
+                    <h4 class="font-button text-text-primary mb-2">🎯 The Magic Rules:</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-start space-x-2">
+                            <span class="text-positive">➡️</span>
+                            <span class="font-body">Moving RIGHT (to smaller units) = Move decimal RIGHT = Multiply</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-accent">⬅️</span>
+                            <span class="font-body">Moving LEFT (to bigger units) = Move decimal LEFT = Divide</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metric System Magic -->
+        <section class="bg-background-secondary rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center">
+                    <i data-lucide="zap" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Section 7.4: Metric Magic Tricks</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Length Magic -->
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="move-horizontal" class="w-5 h-5 text-positive"></i>
+                        <span>Length Magic 📏</span>
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-positive/10 rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">Common Length Units</h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• <strong>Kilometer (km)</strong> = 1000 meters (like 10 football fields)</li>
+                                <li>• <strong>Meter (m)</strong> = Base unit (like a big step)</li>
+                                <li>• <strong>Centimeter (cm)</strong> = 1/100 meter (width of your pinky)</li>
+                                <li>• <strong>Millimeter (mm)</strong> = 1/1000 meter (thickness of a dime)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-4">
+                            <h4 class="font-button text-accent mb-2">Magic Example</h4>
+                            <p class="font-caption text-text-secondary mb-2">Convert 2.5 meters to centimeters:</p>
+                            <div class="space-y-1 font-caption">
+                                <p>meters → centimeters (going RIGHT 2 steps)</p>
+                                <p>2.5 → 25.0 → 250</p>
+                                <p class="text-accent font-button">Answer: 250 cm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weight Magic -->
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="weight" class="w-5 h-5 text-warning"></i>
+                        <span>Weight Magic ⚖️</span>
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-warning/10 rounded-lg p-4">
+                            <h4 class="font-button text-warning mb-2">Common Weight Units</h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• <strong>Kilogram (kg)</strong> = 1000 grams (a bag of sugar)</li>
+                                <li>• <strong>Gram (g)</strong> = Base unit (a paperclip)</li>
+                                <li>• <strong>Milligram (mg)</strong> = 1/1000 gram (grain of salt)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-4">
+                            <h4 class="font-button text-accent mb-2">Magic Example</h4>
+                            <p class="font-caption text-text-secondary mb-2">Convert 3500 grams to kilograms:</p>
+                            <div class="space-y-1 font-caption">
+                                <p>grams → kilograms (going LEFT 3 steps)</p>
+                                <p>3500 → 350.0 → 35.00 → 3.500</p>
+                                <p class="text-accent font-button">Answer: 3.5 kg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volume Magic -->
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="droplets" class="w-5 h-5 text-accent"></i>
+                        <span>Volume Magic 🥤</span>
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-4">
+                        <div class="bg-accent/10 rounded-lg p-4">
+                            <h4 class="font-button text-accent mb-2">Common Volume Units</h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• <strong>Liter (L)</strong> = Base unit (big soda bottle)</li>
+                                <li>• <strong>Milliliter (mL)</strong> = 1/1000 liter (small medicine spoon)</li>
+                            </ul>
+                        </div>
+                        <div class="bg-positive/10 rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">Magic Example</h4>
+                            <p class="font-caption text-text-secondary mb-2">Convert 2.75 liters to milliliters:</p>
+                            <div class="space-y-1 font-caption">
+                                <p>liters → milliliters (going RIGHT 3 steps)</p>
+                                <p>2.75 → 27.5 → 275 → 2750</p>
+                                <p class="text-positive font-button">Answer: 2750 mL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dimensional Analysis Magic -->
+        <section class="bg-positive/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center">
+                    <i data-lucide="arrows-right-left" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Section 7.5: Cross-World Magic (Metric ↔ US)</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-background rounded-xl p-6">
+                    <h3 class="font-title-small text-text-primary mb-4">🌍 The Magic Conversion Spells</h3>
+                    <p class="font-body text-text-secondary mb-4">
+                        These are the magic numbers you need to memorize - they're like secret codes that let you 
+                        travel between the metric world and the US world!
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-positive/10 rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2 flex items-center space-x-2">
+                                <i data-lucide="ruler" class="w-4 h-4"></i>
+                                <span>Length Spells</span>
+                            </h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• 1 inch = 2.54 cm</li>
+                                <li>• 1 foot = 30.48 cm</li>
+                                <li>• 1 yard = 0.9144 m</li>
+                                <li>• 1 mile = 1.609 km</li>
+                            </ul>
+                        </div>
+                        <div class="bg-warning/10 rounded-lg p-4">
+                            <h4 class="font-button text-warning mb-2 flex items-center space-x-2">
+                                <i data-lucide="weight" class="w-4 h-4"></i>
+                                <span>Weight Spells</span>
+                            </h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• 1 pound ≈ 0.454 kg</li>
+                                <li>• 1 ounce ≈ 28.35 g</li>
+                                <li>• 1 kg ≈ 2.205 pounds</li>
+                            </ul>
+                        </div>
+                        <div class="bg-accent/10 rounded-lg p-4">
+                            <h4 class="font-button text-accent mb-2 flex items-center space-x-2">
+                                <i data-lucide="droplets" class="w-4 h-4"></i>
+                                <span>Volume Spells</span>
+                            </h4>
+                            <ul class="space-y-1 font-caption text-text-secondary">
+                                <li>• 1 quart ≈ 0.946 L</li>
+                                <li>• 1 gallon ≈ 3.785 L</li>
+                                <li>• 1 cup ≈ 237 mL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Magic Setup Method -->
+                <div class="bg-background rounded-xl p-6">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="wand" class="w-5 h-5 text-accent"></i>
+                        <span>The Magic Setup Method</span>
+                    </h3>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-accent/10 rounded-lg p-4">
+                            <h4 class="font-button text-text-primary mb-2">🎯 The Secret: Make Units Cancel!</h4>
+                            <p class="font-body text-text-secondary mb-3">
+                                Set up your conversion like fractions so the units you don't want disappear (cancel out), 
+                                and only the units you want remain!
+                            </p>
+                            <div class="bg-background-secondary rounded-lg p-3">
+                                <p class="font-caption text-text-primary">Magic Formula:</p>
+                                <p class="font-body text-positive">Starting Amount × (New Unit / Old Unit) = Answer</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-background-secondary rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-3">✨ Magic Example: Convert 5 feet to centimeters</h4>
+                            <div class="space-y-2">
+                                <p class="font-body text-text-secondary"><strong>Step 1:</strong> Set up the magic spell</p>
+                                <div class="bg-background rounded-lg p-3 border-l-4 border-positive">
+                                    <p class="font-caption">5 feet × (30.48 cm / 1 foot) = ?</p>
+                                </div>
+                                
+                                <p class="font-body text-text-secondary"><strong>Step 2:</strong> Watch the "feet" cancel out!</p>
+                                <div class="bg-background rounded-lg p-3 border-l-4 border-accent">
+                                    <p class="font-caption">5 <span class="line-through text-text-tertiary">feet</span> × (30.48 cm / 1 <span class="line-through text-text-tertiary">foot</span>) = ?</p>
+                                </div>
+                                
+                                <p class="font-body text-text-secondary"><strong>Step 3:</strong> Do the math!</p>
+                                <div class="bg-background rounded-lg p-3 border-l-4 border-warning">
+                                    <p class="font-caption">5 × 30.48 cm = 152.4 cm</p>
+                                </div>
+                                
+                                <p class="font-button text-positive">🎉 Magic Result: 152.4 centimeters!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chain Conversions -->
+        <section class="bg-background-secondary rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-warning flex items-center justify-center">
+                    <i data-lucide="link" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Advanced Magic: Chain Conversions</h2>
+            </div>
+
+            <div class="bg-background rounded-xl p-6">
+                <p class="font-body text-text-secondary mb-4">
+                    Sometimes you need to use multiple magic spells in a row! This is called a "chain conversion" - 
+                    like casting multiple spells to get from one world to another.
+                </p>
+
+                <div class="bg-warning/10 rounded-lg p-4 mb-4">
+                    <h3 class="font-title-small text-text-primary mb-3">🔗 Chain Magic Example</h3>
+                    <p class="font-body text-text-secondary mb-2">
+                        <strong>Challenge:</strong> Convert 2 miles to millimeters
+                    </p>
+                    <p class="font-caption text-text-secondary">This requires multiple magic spells in sequence!</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-positive mb-2">🪄 Spell Chain Setup:</h4>
+                        <div class="bg-background-secondary rounded-lg p-3">
+                            <p class="font-caption">2 miles × (1.609 km/1 mile) × (1000 m/1 km) × (1000 mm/1 m)</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-accent mb-2">✨ Watch the Magic:</h4>
+                        <div class="space-y-2 font-caption">
+                            <p>2 <span class="line-through text-text-tertiary">miles</span> × (1.609 km/1 <span class="line-through text-text-tertiary">mile</span>) × (1000 m/1 <span class="line-through text-text-tertiary">km</span>) × (1000 mm/1 <span class="line-through text-text-tertiary">m</span>)</p>
+                            <p class="text-accent">= 2 × 1.609 × 1000 × 1000 mm</p>
+                            <p class="text-positive font-button">= 3,218,000 millimeters!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temperature Magic -->
+        <section class="bg-accent/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="thermometer" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Temperature Magic 🌡️</h2>
+            </div>
+
+            <div class="bg-background rounded-xl p-6">
+                <p class="font-body text-text-secondary mb-4">
+                    Temperature conversions are special magic - they don't just multiply or divide, 
+                    they use special transformation spells!
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-accent/10 rounded-lg p-4">
+                        <h3 class="font-button text-text-primary mb-3 flex items-center space-x-2">
+                            <span>🧊</span>
+                            <span>Celsius to Fahrenheit</span>
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="bg-background rounded-lg p-3">
+                                <p class="font-caption text-positive">Magic Formula:</p>
+                                <p class="font-body">F = (C × 9/5) + 32</p>
+                            </div>
+                            <p class="font-caption text-text-secondary">
+                                <strong>Example:</strong> 20°C = (20 × 9/5) + 32 = 36 + 32 = 68°F
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-positive/10 rounded-lg p-4">
+                        <h3 class="font-button text-text-primary mb-3 flex items-center space-x-2">
+                            <span>🔥</span>
+                            <span>Fahrenheit to Celsius</span>
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="bg-background rounded-lg p-3">
+                                <p class="font-caption text-accent">Magic Formula:</p>
+                                <p class="font-body">C = (F - 32) × 5/9</p>
+                            </div>
+                            <p class="font-caption text-text-secondary">
+                                <strong>Example:</strong> 86°F = (86 - 32) × 5/9 = 54 × 5/9 = 30°C
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 bg-warning/10 rounded-lg p-4">
+                    <h4 class="font-button text-text-primary mb-2">🎯 Memory Helpers:</h4>
+                    <ul class="space-y-1 font-caption text-text-secondary">
+                        <li>• Water freezes: 0°C = 32°F</li>
+                        <li>• Room temperature: ~20°C = ~70°F</li>
+                        <li>• Body temperature: 37°C = 98.6°F</li>
+                        <li>• Water boils: 100°C = 212°F</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Section -->
+        <section class="bg-positive/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center">
+                    <i data-lucide="wand" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Practice Your Magic!</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4">🎯 Metric Practice</h3>
+                    <div class="space-y-3">
+                        <div class="border-2 border-dashed border-positive rounded-lg p-3">
+                            <p class="font-caption text-text-secondary">Convert 3.5 meters to centimeters:</p>
+                            <div class="mt-2 h-8 bg-background-secondary rounded"></div>
+                        </div>
+                        <div class="border-2 border-dashed border-accent rounded-lg p-3">
+                            <p class="font-caption text-text-secondary">Convert 2500 grams to kilograms:</p>
+                            <div class="mt-2 h-8 bg-background-secondary rounded"></div>
+                        </div>
+                    </div>
+                    
+                    <details class="mt-4">
+                        <summary class="font-button text-positive cursor-pointer">Show Answers</summary>
+                        <div class="mt-2 space-y-1 font-caption text-text-secondary">
+                            <p>3.5 m = 350 cm (move decimal right 2 places)</p>
+                            <p>2500 g = 2.5 kg (move decimal left 3 places)</p>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4">🌍 Cross-World Practice</h3>
+                    <div class="space-y-3">
+                        <div class="border-2 border-dashed border-warning rounded-lg p-3">
+                            <p class="font-caption text-text-secondary">Convert 10 pounds to kilograms:</p>
+                            <div class="mt-2 h-8 bg-background-secondary rounded"></div>
+                        </div>
+                        <div class="border-2 border-dashed border-accent rounded-lg p-3">
+                            <p class="font-caption text-text-secondary">Convert 77°F to Celsius:</p>
+                            <div class="mt-2 h-8 bg-background-secondary rounded"></div>
+                        </div>
+                    </div>
+                    
+                    <details class="mt-4">
+                        <summary class="font-button text-warning cursor-pointer">Show Answers</summary>
+                        <div class="mt-2 space-y-1 font-caption text-text-secondary">
+                            <p>10 lbs × 0.454 kg/lb = 4.54 kg</p>
+                            <p>(77-32) × 5/9 = 45 × 5/9 = 25°C</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Guide -->
+        <section class="bg-background-secondary rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="book-open" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Measurement Magic Study Guide</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="brain" class="w-5 h-5 text-positive"></i>
+                        <span>Must Memorize</span>
+                    </h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-start space-x-2">
+                            <span class="text-positive">👑</span>
+                            <span class="font-body">King Henry Died By Drinking Chocolate Milk</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-positive">📏</span>
+                            <span class="font-body">1 inch = 2.54 cm</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-positive">⚖️</span>
+                            <span class="font-body">1 pound ≈ 0.454 kg</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-positive">🌡️</span>
+                            <span class="font-body">F = (C × 9/5) + 32</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="lightbulb" class="w-5 h-5 text-warning"></i>
+                        <span>Pro Tips</span>
+                    </h3>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-start space-x-2">
+                            <span class="text-warning">✨</span>
+                            <span class="font-body">Always set up conversions so units cancel</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-warning">🎯</span>
+                            <span class="font-body">Check your final units match what's asked</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-warning">🔗</span>
+                            <span class="font-body">Chain multiple conversions together when needed</span>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <span class="text-warning">🧮</span>
+                            <span class="font-body">Use a calculator for complex chains</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center pt-8 border-t border-border">
+            <a href="chapter-7.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg border border-border hover:bg-background-secondary transition-colors">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                <span class="font-button">Previous: Chapter 7</span>
+            </a>
+            
+            <div class="flex items-center space-x-2">
+                <span class="font-caption text-text-secondary">Chapter 8 of 8</span>
+            </div>
+            
+            <div class="px-4 py-2 rounded-lg bg-accent/20 text-text-secondary">
+                <span class="font-button">Final Chapter Complete!</span>
+            </div>
+        </nav>
+    </main>
+
+    <script>
+        lucide.createIcons();
+        
+        // Add some measurement conversion interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects
+            const practiceBoxes = document.querySelectorAll('[class*="border-dashed"]');
+            practiceBoxes.forEach(box => {
+                box.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.02)';
+                    this.style.transition = 'transform 0.2s ease';
+                });
+                box.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

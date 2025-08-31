@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Problem Solving Like a Detective - Kristina's Math Tutor</title>
+    <meta name="description" content="Learn problem-solving strategies for MAT 143 - step-by-step methods explained like you're a detective solving mysteries!">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-xl bg-positive flex items-center justify-center">
+                            <span class="font-button-small text-text-inverse-primary font-bold">3</span>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">Chapter 3</h1>
+                            <p class="font-caption text-text-secondary">Problem Solving Like a Detective</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center space-x-3">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-20 h-2 bg-background-tertiary rounded-full overflow-hidden">
+                                <div class="w-3/8 h-full bg-positive rounded-full"></div>
+                            </div>
+                            <span class="font-caption text-text-secondary">37%</span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span class="font-button">Dashboard</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+        <!-- Chapter Introduction -->
+        <section class="text-center space-y-4">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-positive/10 mb-4">
+                <i data-lucide="search" class="w-8 h-8 text-positive"></i>
+            </div>
+            <h1 class="font-title-large text-text-primary">Problem Solving Like a Detective 🔍</h1>
+            <p class="font-body text-text-secondary max-w-2xl mx-auto">
+                Math problems are like mysteries waiting to be solved! Just like a detective follows clues to solve a case, 
+                we'll learn to follow steps to solve math problems. Let's become math detectives together!
+            </p>
+        </section>
+
+        <!-- Section 1.3: Problem Solving Processes and Techniques -->
+        <section class="bg-background-secondary rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="lightbulb" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">The 4-Step Detective Method (Polya's Process)</h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-background rounded-xl p-5 border-l-4 border-positive">
+                    <h3 class="font-title-small text-text-primary mb-3">🔍 Step 1: Understand the Mystery (Problem)</h3>
+                    <p class="font-body text-text-secondary mb-4">
+                        Just like a detective reads all the clues carefully, we need to understand what the problem is asking us to find.
+                    </p>
+                    <div class="bg-background-secondary rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Ask Yourself These Detective Questions:</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">What am I trying to find out?</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">What clues (information) do I have?</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">Can I explain this problem to someone else?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-5 border-l-4 border-accent">
+                    <h3 class="font-title-small text-text-primary mb-3">🎯 Step 2: Make a Plan (Choose Your Detective Tool)</h3>
+                    <p class="font-body text-text-secondary mb-4">
+                        Detectives have different tools for different cases. We have different math tools for different problems!
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-background-secondary rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">🧮 Make a Table</h4>
+                            <p class="font-caption text-text-secondary">Great for organizing information and finding patterns</p>
+                        </div>
+                        <div class="bg-background-secondary rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">🔄 Work Backwards</h4>
+                            <p class="font-caption text-text-secondary">Start from the answer and work back to the beginning</p>
+                        </div>
+                        <div class="bg-background-secondary rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">🎨 Draw a Picture</h4>
+                            <p class="font-caption text-text-secondary">Sometimes seeing it helps solve it!</p>
+                        </div>
+                        <div class="bg-background-secondary rounded-lg p-4">
+                            <h4 class="font-button text-positive mb-2">🔍 Find a Pattern</h4>
+                            <p class="font-caption text-text-secondary">Look for things that repeat or follow a rule</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-5 border-l-4 border-warning">
+                    <h3 class="font-title-small text-text-primary mb-3">⚡ Step 3: Carry Out the Plan (Do the Detective Work)</h3>
+                    <p class="font-body text-text-secondary mb-4">
+                        This is where you actually solve the problem using the tool you chose. Take your time and be careful!
+                    </p>
+                    <div class="bg-background-secondary rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Detective Tips:</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-warning">•</span>
+                                <span class="font-body">Write down each step clearly</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-warning">•</span>
+                                <span class="font-body">Double-check your calculations</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-warning">•</span>
+                                <span class="font-body">If your plan isn't working, try a different tool!</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-5 border-l-4 border-positive">
+                    <h3 class="font-title-small text-text-primary mb-3">✅ Step 4: Look Back (Check Your Detective Work)</h3>
+                    <p class="font-body text-text-secondary mb-4">
+                        Good detectives always double-check their answers. Does your solution make sense?
+                    </p>
+                    <div class="bg-background-secondary rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Final Check Questions:</h4>
+                        <ul class="space-y-2 text-text-secondary">
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">Does my answer make sense in real life?</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">Did I answer the question that was asked?</span>
+                            </li>
+                            <li class="flex items-start space-x-2">
+                                <span class="text-positive">•</span>
+                                <span class="font-body">Can I solve it a different way to double-check?</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practice Example -->
+        <section class="bg-accent/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="play-circle" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Let's Solve a Mystery Together!</h2>
+            </div>
+
+            <div class="bg-background rounded-xl p-6">
+                <div class="bg-accent/10 rounded-lg p-4 mb-6">
+                    <h3 class="font-title-small text-text-primary mb-2">🎪 The County Fair Problem</h3>
+                    <p class="font-body text-text-secondary">
+                        Sarah is buying tickets at the county fair. She needs 8 ride tickets and 3 game tickets. 
+                        Ride tickets cost $2 each and game tickets cost $5 each. She has $25. 
+                        Does she have enough money?
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-positive mb-3 flex items-center space-x-2">
+                            <span class="bg-positive text-text-inverse-primary rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">1</span>
+                            <span>Understand the Mystery</span>
+                        </h4>
+                        <div class="space-y-2 text-text-secondary font-body">
+                            <p><strong>What am I trying to find?</strong> Does Sarah have enough money?</p>
+                            <p><strong>What clues do I have?</strong></p>
+                            <ul class="ml-4 space-y-1">
+                                <li>• 8 ride tickets at $2 each</li>
+                                <li>• 3 game tickets at $5 each</li>
+                                <li>• She has $25</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-accent mb-3 flex items-center space-x-2">
+                            <span class="bg-accent text-text-inverse-primary rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">2</span>
+                            <span>Make a Plan</span>
+                        </h4>
+                        <p class="text-text-secondary font-body">
+                            I'll calculate the total cost of all tickets, then compare it to her $25.
+                        </p>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-warning mb-3 flex items-center space-x-2">
+                            <span class="bg-warning text-text-inverse-primary rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">3</span>
+                            <span>Carry Out the Plan</span>
+                        </h4>
+                        <div class="space-y-3 text-text-secondary font-body">
+                            <div class="bg-background-secondary rounded-lg p-3">
+                                <p><strong>Ride tickets:</strong> 8 tickets × $2 = $16</p>
+                                <p><strong>Game tickets:</strong> 3 tickets × $5 = $15</p>
+                                <p><strong>Total cost:</strong> $16 + $15 = $31</p>
+                            </div>
+                            <p>Sarah needs $31 but only has $25.</p>
+                        </div>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-4">
+                        <h4 class="font-button text-positive mb-3 flex items-center space-x-2">
+                            <span class="bg-positive text-text-inverse-primary rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold">4</span>
+                            <span>Look Back</span>
+                        </h4>
+                        <div class="space-y-2 text-text-secondary font-body">
+                            <p><strong>Answer:</strong> No, Sarah doesn't have enough money. She needs $6 more.</p>
+                            <p><strong>Check:</strong> $31 - $25 = $6 short. This makes sense!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem-Solving Strategies Deep Dive -->
+        <section class="bg-background-secondary rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-warning flex items-center justify-center">
+                    <i data-lucide="wrench" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Your Detective Toolbox</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Make a Table Strategy -->
+                <div class="bg-background rounded-xl p-5">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="table" class="w-5 h-5 text-accent"></i>
+                        <h3 class="font-title-small text-text-primary">Making Tables</h3>
+                    </div>
+                    <p class="font-body text-text-secondary mb-4">
+                        Tables help organize information so patterns jump out at you!
+                    </p>
+                    <div class="bg-accent/10 rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Example: Pizza Party</h4>
+                        <p class="font-caption text-text-secondary mb-3">
+                            If 2 people eat 6 slices, how many slices do 8 people eat?
+                        </p>
+                        <table class="w-full text-sm">
+                            <tr class="border-b border-border">
+                                <td class="font-button text-text-primary py-1">People</td>
+                                <td class="font-button text-text-primary py-1">Slices</td>
+                            </tr>
+                            <tr><td class="py-1">2</td><td class="py-1">6</td></tr>
+                            <tr><td class="py-1">4</td><td class="py-1">12</td></tr>
+                            <tr><td class="py-1">8</td><td class="py-1">24</td></tr>
+                        </table>
+                        <p class="font-caption text-accent mt-2">Pattern: Each person eats 3 slices!</p>
+                    </div>
+                </div>
+
+                <!-- Work Backwards Strategy -->
+                <div class="bg-background rounded-xl p-5">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="undo" class="w-5 h-5 text-positive"></i>
+                        <h3 class="font-title-small text-text-primary">Working Backwards</h3>
+                    </div>
+                    <p class="font-body text-text-secondary mb-4">
+                        Sometimes it's easier to start from the end and work backwards!
+                    </p>
+                    <div class="bg-positive/10 rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Example: Magic Number</h4>
+                        <p class="font-caption text-text-secondary mb-3">
+                            I'm thinking of a number. I multiply it by 3, then add 7, and get 22. What's my number?
+                        </p>
+                        <div class="space-y-2 font-caption">
+                            <p>Start with: 22</p>
+                            <p>Subtract 7: 22 - 7 = 15</p>
+                            <p>Divide by 3: 15 ÷ 3 = 5</p>
+                            <p class="text-positive font-button">The mystery number is 5!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Draw a Picture Strategy -->
+                <div class="bg-background rounded-xl p-5">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="image" class="w-5 h-5 text-warning"></i>
+                        <h3 class="font-title-small text-text-primary">Drawing Pictures</h3>
+                    </div>
+                    <p class="font-body text-text-secondary mb-4">
+                        A picture is worth a thousand words... and sometimes it's worth the answer too!
+                    </p>
+                    <div class="bg-warning/10 rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Best for:</h4>
+                        <ul class="space-y-1 font-caption text-text-secondary">
+                            <li>• Geometry problems</li>
+                            <li>• Word problems with movement</li>
+                            <li>• Comparing quantities</li>
+                            <li>• Understanding relationships</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Find Patterns Strategy -->
+                <div class="bg-background rounded-xl p-5">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="trending-up" class="w-5 h-5 text-accent"></i>
+                        <h3 class="font-title-small text-text-primary">Finding Patterns</h3>
+                    </div>
+                    <p class="font-body text-text-secondary mb-4">
+                        Math loves patterns! Once you spot one, the rest falls into place.
+                    </p>
+                    <div class="bg-accent/10 rounded-lg p-4">
+                        <h4 class="font-button text-text-primary mb-2">Pattern Example:</h4>
+                        <p class="font-caption text-text-secondary mb-2">2, 5, 8, 11, __, __</p>
+                        <p class="font-caption">Pattern: Add 3 each time</p>
+                        <p class="font-caption text-accent">Answer: 14, 17</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Guide -->
+        <section class="bg-accent/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="book-open" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Study Guide & Practice Tips</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="target" class="w-5 h-5 text-positive"></i>
+                        <span>Key Takeaways</span>
+                    </h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-positive font-bold">1.</span>
+                            <span class="font-body">Always start by understanding what the problem is really asking</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-positive font-bold">2.</span>
+                            <span class="font-body">Choose the right tool for the job - different problems need different strategies</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-positive font-bold">3.</span>
+                            <span class="font-body">Show your work step by step - it helps you and helps you find mistakes</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-positive font-bold">4.</span>
+                            <span class="font-body">Always check your answer - does it make sense in the real world?</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-background rounded-xl p-5">
+                    <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                        <i data-lucide="zap" class="w-5 h-5 text-warning"></i>
+                        <span>Practice Tips</span>
+                    </h3>
+                    <ul class="space-y-3 text-text-secondary">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-warning">📝</span>
+                            <span class="font-body">Practice the 4-step method with every problem, even easy ones</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-warning">🔄</span>
+                            <span class="font-body">Try solving the same problem different ways to build confidence</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-warning">👥</span>
+                            <span class="font-body">Explain your solution process to someone else - teaching helps learning!</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-warning">⏰</span>
+                            <span class="font-body">Don't rush - good problem solving takes time and patience</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Try It Yourself -->
+        <section class="bg-positive/5 rounded-2xl p-6 space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-positive flex items-center justify-center">
+                    <i data-lucide="pencil" class="w-5 h-5 text-text-inverse-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary">Try It Yourself!</h2>
+            </div>
+
+            <div class="bg-background rounded-xl p-6">
+                <div class="bg-positive/10 rounded-lg p-4 mb-4">
+                    <h3 class="font-title-small text-text-primary mb-2">🎯 Practice Problem</h3>
+                    <p class="font-body text-text-secondary">
+                        Maria is saving money for a new bike that costs $120. She already has $45. 
+                        She earns $15 per week doing chores. How many weeks will it take her to save enough money?
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="border-2 border-dashed border-border rounded-lg p-4">
+                        <h4 class="font-button text-positive mb-2">Step 1: Understand the Mystery</h4>
+                        <p class="font-caption text-text-secondary">Write what you're trying to find and what information you have:</p>
+                        <div class="mt-2 h-16 bg-background-secondary rounded border-2 border-dashed border-border"></div>
+                    </div>
+
+                    <div class="border-2 border-dashed border-border rounded-lg p-4">
+                        <h4 class="font-button text-accent mb-2">Step 2: Make a Plan</h4>
+                        <p class="font-caption text-text-secondary">What strategy will you use?</p>
+                        <div class="mt-2 h-16 bg-background-secondary rounded border-2 border-dashed border-border"></div>
+                    </div>
+
+                    <div class="border-2 border-dashed border-border rounded-lg p-4">
+                        <h4 class="font-button text-warning mb-2">Step 3: Carry Out the Plan</h4>
+                        <p class="font-caption text-text-secondary">Show your work:</p>
+                        <div class="mt-2 h-20 bg-background-secondary rounded border-2 border-dashed border-border"></div>
+                    </div>
+
+                    <div class="border-2 border-dashed border-border rounded-lg p-4">
+                        <h4 class="font-button text-positive mb-2">Step 4: Look Back</h4>
+                        <p class="font-caption text-text-secondary">Does your answer make sense?</p>
+                        <div class="mt-2 h-16 bg-background-secondary rounded border-2 border-dashed border-border"></div>
+                    </div>
+                </div>
+
+                <details class="mt-6">
+                    <summary class="font-button text-accent cursor-pointer hover:text-accent/80">
+                        🔍 Need a hint? Click here!
+                    </summary>
+                    <div class="mt-3 p-4 bg-accent/10 rounded-lg">
+                        <p class="font-caption text-text-secondary">
+                            <strong>Hint:</strong> Maria needs $120 - $45 = $75 more. If she earns $15 per week, 
+                            how many weeks does she need? Try: $75 ÷ $15 = ?
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center pt-8 border-t border-border">
+            <a href="chapter-1.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg border border-border hover:bg-background-secondary transition-colors">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                <span class="font-button">Previous: Chapter 1</span>
+            </a>
+            
+            <div class="flex items-center space-x-2">
+                <span class="font-caption text-text-secondary">Chapter 3 of 8</span>
+            </div>
+            
+            <a href="chapter-4.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-positive text-text-inverse-primary hover:bg-positive/90 transition-colors">
+                <span class="font-button">Next: Chapter 4</span>
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+        </nav>
+    </main>
+
+    <script>
+        lucide.createIcons();
+        
+        // Add some interactivity for better UX
+        document.addEventListener('DOMContentLoaded', function() {
+            // Highlight navigation items on hover
+            const navItems = document.querySelectorAll('nav a');
+            navItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-1px)';
+                });
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
