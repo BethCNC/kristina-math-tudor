@@ -1,12 +1,12 @@
 /* 
- * Kristina's Academic Success Dashboard - Design System
- * Using Figma-synchronized design tokens with Tailwind CSS 4.1
- * Fonts: Host Grotesk + Space Mono
- * Colors: OKLCH color space with semantic tokens
+ * Update your font families 
+ * Use @import if using Google Fonts or similar service
+ * Use @font-face if using a local font (see tailwindcss docs)
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Mono font */
 
 @import "tailwindcss";
 
@@ -175,7 +175,7 @@
   --color-rose-quartz-950: oklch(0.266 0.032 355.7);
 
   /* Ruby Colors */
-  --color-ruby-50: oklch(0.925 0.038 25.8);
+  --color-ruby-50: oklch(0.969 0.015 27.3);
   --color-ruby-100: oklch(0.875 0.065 25.5);
   --color-ruby-200: oklch(0.816 0.102 26.2);
   --color-ruby-300: oklch(0.763 0.139 27.7);
@@ -228,41 +228,44 @@
 
   /* Semantic Colors - Light Theme */
   /* Background */
-  --color-background-tertiary: var(--color-smokey-quartz-400);
-  --color-background-secondary: var(--color-smokey-quartz-200);
-  --color-background: var(--color-smokey-quartz-50);
-  --color-background-secondary-hover: var(--color-smokey-quartz-300);
-  --color-background-hover: var(--color-smokey-quartz-100);
-  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+  --color-background-tertiary: var(--color-mooonstone-200);
+  --color-background-secondary: var(--color-mooonstone-50);
+  --color-background: var(--color-red-50);
+  --color-background-secondary-hover: var(--color-mooonstone-100);
+  --color-background-hover: var(--color-mooonstone-50);
+  --color-background-tertiary-hover: var(--color-mooonstone-300);
 
   /* Border */
-  --color-border-secondary: var(--color-smokey-quartz-400);
-  --color-border: var(--color-smokey-quartz-200);
-  --color-border-tertiary: var(--color-smokey-quartz-500);
+  --color-border-secondary: var(--color-smokey-quartz-500);
+  --color-border: var(--color-mooonstone-900);
+  --color-border-tertiary: var(--color-smokey-quartz-300);
+  --color-border-danger: var(--color-ruby-600);
+  --color-border-brand: var(--color-aquamarine-700);
 
   /* Brand */
-  --color-brand-tertiary: var(--color-amethyst-50);
-  --color-brand-secondary-hover: var(--color-amethyst-300);
-  --color-brand-tertiary-hover: var(--color-amethyst-100);
-  --color-brand: var(--color-amethyst-600);
-  --color-brand-secondary: var(--color-amethyst-200);
-  --color-brand-hover: var(--color-amethyst-700);
+  --color-brand-tertiary: var(--color-aquamarine-50);
+  --color-brand-secondary-hover: var(--color-aquamarine-500);
+  --color-brand-tertiary-hover: var(--color-aquamarine-100);
+  --color-brand: var(--color-aquamarine-300);
+  --color-brand-secondary: var(--color-aquamarine-400);
+  --color-brand-hover: var(--color-aquamarine-400);
 
   /* Danger */
   --color-danger-tertiary-hover: var(--color-ruby-100);
-  --color-danger-secondary-hover: var(--color-ruby-300);
-  --color-danger-secondary: var(--color-ruby-200);
-  --color-danger: var(--color-ruby-500);
-  --color-danger-hover: var(--color-ruby-600);
+  --color-danger-secondary-hover: var(--color-ruby-600);
+  --color-danger-secondary: var(--color-ruby-500);
+  --color-danger: var(--color-ruby-400);
+  --color-danger-hover: var(--color-ruby-500);
   --color-danger-tertiary: var(--color-ruby-50);
 
   /* Neutral */
-  --color-neutral-tertiary-hover: var(--color-mooonstone-200);
-  --color-neutral-secondary-hover: var(--color-mooonstone-500);
-  --color-neutral-hover: var(--color-mooonstone-800);
-  --color-neutral: var(--color-mooonstone-700);
-  --color-neutral-secondary: var(--color-mooonstone-300);
-  --color-neutral-tertiary: var(--color-mooonstone-50);
+  --color-neutral-tertiary-hover: var(--color-smokey-quartz-500);
+  --color-neutral-secondary-hover: var(--color-smokey-quartz-600);
+  --color-neutral-hover: var(--color-smokey-quartz-800);
+  --color-neutral: var(--color-smokey-quartz-900);
+  --color-neutral-secondary: var(--color-smokey-quartz-700);
+  --color-neutral-tertiary: var(--color-smokey-quartz-400);
+  --color-neutral-disabled: var(--color-smokey-quartz-100);
 
   /* Positive */
   --color-positive-tertiary-hover: var(--color-green-200);
@@ -273,75 +276,79 @@
   --color-positive: var(--color-green-600);
 
   /* Text */
-  --color-text-neutral-primary: var(--color-smokey-quartz-800);
-  --color-text-inverse-tertiary: var(--color-smokey-quartz-100);
-  --color-text-primary: var(--color-smokey-quartz-900);
-  --color-text-inverse-secondary: var(--color-smokey-quartz-50);
-  --color-text-danger-primary: var(--color-ruby-600);
-  --color-text-inverse-primary: var(--color-mooonstone-50);
-  --color-text-neutral-tertiary: var(--color-smokey-quartz-400);
-  --color-text-brand-tertiary: var(--color-amethyst-300);
-  --color-text-danger-tertiary: var(--color-ruby-400);
-  --color-text-brand-primary: var(--color-amethyst-600);
-  --color-text-warning-tertiary: var(--color-carnelian-500);
-  --color-text-positive-tertiary: var(--color-green-600);
-  --color-text-positive-secondary: var(--color-green-700);
-  --color-text-neutral-secondary: var(--color-smokey-quartz-600);
-  --color-text-secondary: var(--color-smokey-quartz-500);
-  --color-text-positive-primary: var(--color-green-800);
-  --color-text-tertiary: var(--color-smokey-quartz-300);
-  --color-text-brand-secondary: var(--color-amethyst-400);
-  --color-text-warning-secondary: var(--color-carnelian-600);
-  --color-text-warning-primary: var(--color-carnelian-700);
-  --color-text-danger-secondary: var(--color-ruby-500);
+  --color-text-neutral-primary: var(--color-smokey-quartz-950);
+  --color-text-inverse-tertiary: var(--color-mooonstone-200);
+  --color-text-primary: var(--color-smokey-quartz-950);
+  --color-text-inverse-secondary: var(--color-mooonstone-50);
+  --color-text-danger-primary: var(--color-ruby-500);
+  --color-text-inverse-primary: var(--color-white);
+  --color-text-neutral-tertiary: var(--color-smokey-quartz-700);
+  --color-text-brand-tertiary: var(--color-aquamarine-200);
+  --color-text-danger-tertiary: var(--color-ruby-200);
+  --color-text-brand-primary: var(--color-aquamarine-400);
+  --color-text-warning-tertiary: var(--color-carnelian-200);
+  --color-text-positive-tertiary: var(--color-emerald-300);
+  --color-text-positive-secondary: var(--color-emerald-500);
+  --color-text-neutral-secondary: var(--color-smokey-quartz-800);
+  --color-text-secondary: var(--color-smokey-quartz-900);
+  --color-text-positive-primary: var(--color-green-600);
+  --color-text-tertiary: var(--color-smokey-quartz-800);
+  --color-text-brand-secondary: var(--color-aquamarine-700);
+  --color-text-warning-secondary: var(--color-carnelian-400);
+  --color-text-warning-primary: var(--color-carnelian-500);
+  --color-text-danger-secondary: var(--color-ruby-400);
+  --color-text-muted: var(--color-smokey-quartz-500);
 
   /* Warning */
   --color-warning-tertiary-hover: var(--color-carnelian-100);
   --color-warning-tertiary: var(--color-carnelian-50);
-  --color-warning-hover: var(--color-carnelian-600);
-  --color-warning: var(--color-carnelian-500);
-  --color-warning-secondary-hover: var(--color-carnelian-300);
-  --color-warning-secondary: var(--color-carnelian-200);
+  --color-warning-hover: var(--color-carnelian-500);
+  --color-warning: var(--color-carnelian-400);
+  --color-warning-secondary-hover: var(--color-carnelian-600);
+  --color-warning-secondary: var(--color-carnelian-500);
 }
 
 .dark {
   /* Semantic Colors - Dark Theme */
   /* Background */
-  --color-background-tertiary: var(--color-smokey-quartz-600);
-  --color-background-secondary: var(--color-smokey-quartz-800);
-  --color-background: var(--color-smokey-quartz-950);
-  --color-background-secondary-hover: var(--color-smokey-quartz-700);
-  --color-background-hover: var(--color-smokey-quartz-900);
-  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+  --color-background-tertiary: var(--color-mooonstone-50);
+  --color-background-secondary: var(--color-mooonstone-100);
+  --color-background: var(--color-mooonstone-300);
+  --color-background-secondary-hover: var(--color-mooonstone-50);
+  --color-background-hover: var(--color-mooonstone-200);
+  --color-background-tertiary-hover: var(--color-white);
 
   /* Border */
-  --color-border-secondary: var(--color-smokey-quartz-500);
-  --color-border: var(--color-smokey-quartz-600);
-  --color-border-tertiary: var(--color-smokey-quartz-300);
+  --color-border-secondary: var(--color-smokey-quartz-400);
+  --color-border: var(--color-smokey-quartz-300);
+  --color-border-tertiary: var(--color-mooonstone-600);
+  --color-border-danger: var(--color-ruby-400);
+  --color-border-brand: var(--color-aquamarine-100);
 
   /* Brand */
-  --color-brand-tertiary: var(--color-amethyst-800);
-  --color-brand-secondary-hover: var(--color-amethyst-800);
-  --color-brand-tertiary-hover: var(--color-amethyst-900);
-  --color-brand: var(--color-amethyst-400);
-  --color-brand-secondary: var(--color-amethyst-700);
-  --color-brand-hover: var(--color-amethyst-500);
+  --color-brand-tertiary: var(--color-aquamarine-400);
+  --color-brand-secondary-hover: var(--color-aquamarine-200);
+  --color-brand-tertiary-hover: var(--color-aquamarine-500);
+  --color-brand: var(--color-aquamarine-50);
+  --color-brand-secondary: var(--color-aquamarine-100);
+  --color-brand-hover: var(--color-aquamarine-100);
 
   /* Danger */
-  --color-danger-tertiary-hover: var(--color-ruby-800);
-  --color-danger-secondary-hover: var(--color-ruby-700);
-  --color-danger-secondary: var(--color-ruby-600);
-  --color-danger: var(--color-ruby-500);
-  --color-danger-hover: var(--color-ruby-600);
-  --color-danger-tertiary: var(--color-ruby-700);
+  --color-danger-tertiary-hover: var(--color-ruby-600);
+  --color-danger-secondary-hover: var(--color-ruby-400);
+  --color-danger-secondary: var(--color-ruby-300);
+  --color-danger: var(--color-ruby-100);
+  --color-danger-hover: var(--color-ruby-200);
+  --color-danger-tertiary: var(--color-ruby-500);
 
   /* Neutral */
-  --color-neutral-tertiary-hover: var(--color-mooonstone-950);
-  --color-neutral-secondary-hover: var(--color-mooonstone-800);
-  --color-neutral-hover: var(--color-mooonstone-500);
-  --color-neutral: var(--color-mooonstone-400);
-  --color-neutral-secondary: var(--color-mooonstone-700);
-  --color-neutral-tertiary: var(--color-mooonstone-900);
+  --color-neutral-tertiary-hover: var(--color-mooonstone-500);
+  --color-neutral-secondary-hover: var(--color-smokey-quartz-500);
+  --color-neutral-hover: var(--color-smokey-quartz-300);
+  --color-neutral: var(--color-smokey-quartz-50);
+  --color-neutral-secondary: var(--color-smokey-quartz-400);
+  --color-neutral-tertiary: var(--color-mooonstone-300);
+  --color-neutral-disabled: var(--color-smokey-quartz-100);
 
   /* Positive */
   --color-positive-tertiary-hover: var(--color-green-950);
@@ -354,33 +361,34 @@
   /* Text */
   --color-text-neutral-primary: var(--color-smokey-quartz-50);
   --color-text-inverse-tertiary: var(--color-smokey-quartz-300);
-  --color-text-primary: var(--color-mooonstone-50);
+  --color-text-primary: var(--color-smokey-quartz-50);
   --color-text-inverse-secondary: var(--color-smokey-quartz-500);
-  --color-text-danger-primary: var(--color-ruby-100);
-  --color-text-inverse-primary: var(--color-smokey-quartz-900);
+  --color-text-danger-primary: var(--color-ruby-200);
+  --color-text-inverse-primary: var(--color-smokey-quartz-950);
   --color-text-neutral-tertiary: var(--color-smokey-quartz-200);
-  --color-text-brand-tertiary: var(--color-amethyst-400);
-  --color-text-danger-tertiary: var(--color-ruby-300);
-  --color-text-brand-primary: var(--color-amethyst-100);
-  --color-text-warning-tertiary: var(--color-carnelian-400);
-  --color-text-positive-tertiary: var(--color-emerald-400);
-  --color-text-positive-secondary: var(--color-emerald-300);
+  --color-text-brand-tertiary: var(--color-aquamarine-500);
+  --color-text-danger-tertiary: var(--color-ruby-500);
+  --color-text-brand-primary: var(--color-aquamarine-100);
+  --color-text-warning-tertiary: var(--color-carnelian-500);
+  --color-text-positive-tertiary: var(--color-green-600);
+  --color-text-positive-secondary: var(--color-emerald-500);
   --color-text-neutral-secondary: var(--color-smokey-quartz-100);
-  --color-text-secondary: var(--color-smokey-quartz-50);
-  --color-text-positive-primary: var(--color-green-200);
-  --color-text-tertiary: var(--color-smokey-quartz-100);
-  --color-text-brand-secondary: var(--color-amethyst-300);
-  --color-text-warning-secondary: var(--color-carnelian-300);
+  --color-text-secondary: var(--color-smokey-quartz-200);
+  --color-text-positive-primary: var(--color-emerald-300);
+  --color-text-tertiary: var(--color-smokey-quartz-300);
+  --color-text-brand-secondary: var(--color-aquamarine-300);
+  --color-text-warning-secondary: var(--color-carnelian-400);
   --color-text-warning-primary: var(--color-carnelian-200);
-  --color-text-danger-secondary: var(--color-ruby-200);
+  --color-text-danger-secondary: var(--color-ruby-400);
+  --color-text-muted: var(--color-smokey-quartz-100);
 
   /* Warning */
-  --color-warning-tertiary-hover: var(--color-carnelian-800);
-  --color-warning-tertiary: var(--color-carnelian-700);
-  --color-warning-hover: var(--color-carnelian-500);
-  --color-warning: var(--color-carnelian-400);
-  --color-warning-secondary-hover: var(--color-carnelian-700);
-  --color-warning-secondary: var(--color-carnelian-600);
+  --color-warning-tertiary-hover: var(--color-carnelian-600);
+  --color-warning-tertiary: var(--color-carnelian-500);
+  --color-warning-hover: var(--color-carnelian-200);
+  --color-warning: var(--color-carnelian-100);
+  --color-warning-secondary-hover: var(--color-carnelian-400);
+  --color-warning-secondary: var(--color-carnelian-300);
 }
 
 @layer utilities {

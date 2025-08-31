@@ -9,9 +9,8 @@ export default defineConfig({
         main: './index.html',
         calendar: './calendar.html',
         tutor: './tutor.html',
-        reference: './reference.html',
-        calendarStudy: './calendar_study_system.html',
-        studyHelper: './web_study_helper.html'
+        formulaLookup: './formula_lookup.html',
+        englishMaterials: './english_materials.html'
       }
     }
   },

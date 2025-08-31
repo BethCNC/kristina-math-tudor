@@ -12,7 +12,8 @@
       "Bash(fi)",
       "Bash(done)",
       "Bash(find:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cp:*)"
     ],
     "deny": [],
     "ask": []
