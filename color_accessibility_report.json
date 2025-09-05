@@ -1,0 +1,4906 @@
+{
+  "timestamp": "2025-09-05T13:37:55.061172",
+  "total_files_checked": 44,
+  "total_issues": 699,
+  "issues_by_type": {
+    "icon_accessibility": 699
+  },
+  "issues_by_severity": {
+    "medium": 699
+  },
+  "issues": [
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-8 h-8 text-text-pr...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 text-positiv...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-warnin...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"layers\" class=\"w-4 h-4 text-brand\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-down\" aria-label=\"Go down\" a...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-circle\" class=\"w-4 h-4 mr-2\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"puzzle\" class=\"w-6 h-6 text-text-p...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"list-ordered\" class=\"w-5 h-5 mr-2 ...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-square\" class=\"w-6 h-6 mr-2 ...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-positiv...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"list-checks\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clipboard-check\" class=\"w-5 h-5 te...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"external-link\" class=\"w-5 h-5 text...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 text-w...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-5 h-5 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"menu\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-5 h-5 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-4 h-4 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-3 h-3 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-8 h-8 text-bran...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lock\" class=\"w-4 h-4\">...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lock\" class=\"w-4 h-4\">...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4\" aria-label=...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-po...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-4 h-4 group-hover...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-4 h-4 group-ho...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book\" class=\"w-4 h-4 group-hover:t...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-5 h-5 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-4 h-4 grou...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"settings\" class=\"w-4 h-4 group-hov...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-4 h-4 group-ho...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wrench\" class=\"w-5 h-5 text-text-n...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 group-h...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"sticky-note\" class=\"w-4 h-4 group-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-8 h-8 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-6 h-6 text...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4\" aria-label=...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4\" aria-l...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-4 h-4\">...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4\" aria-label...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-6 h-6 text-brand\" ...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-5 h-5 tex...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-po...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-bra...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-po...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-bran...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5 text-text-pri...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-4 h-4 text-bran...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"user\" class=\"w-4 h-4 text-brand\" a...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"monitor\" class=\"w-4 h-4 text-brand...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-4 h-4 tex...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-4 h-4 text...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 text-coral-...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"function\" class=\"w-8 h-8\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 mr-2\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-6\" class=\"w-5 h-5 mr-2\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5 mr-2\" aria-l...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-6\" class=\"w-5 h-5\">...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-1\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 text-warnin...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5\" aria-label=...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"thermometer\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"crown\" class=\"w-5 h-5 text-accent\"...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-6 h-6 text-p...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-8 h-8 text-t...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2 text-p...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2 text-po...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"scale\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2\" aria-l...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-4 h-4 mr-2 text-yel...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 ml-2\" ...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 text-posit...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-5 h-5 text-acce...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5\" aria-...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-5 h-5 text-warn...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bell-ring\" class=\"w-5 h-5 text-acc...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-8 h-8\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2\" ar...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"edit-3\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-square\" class=\"w-5 h-5 mr-...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"library\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-5 h-5 mr-2\" aria-la...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-circle\" class=\"w-8 h-8\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-8 h-8\" aria-lab...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"home\" class=\"w-8 h-8\" aria-label=\"...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-6 h-6 text-e...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-8 h-8 text-t...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2 text-e...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2 text-em...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-down\" class=\"w-4 h-4 mr-2...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-warning\">...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 ml-2\" ...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"users\" class=\"w-5 h-5\">...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-4 h-4 mr-2 text-cor...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-5 h-5 text-positive...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"users\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-ac...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-8 h-8 text-text-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 mr-3 text-p...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 text-emerald...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-carnel...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"layers\" class=\"w-4 h-4 text-brand-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-4 h-4 text-ame...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"split\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"equal\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"x\" class=\"w-4 h-4 mr-2\" aria-label...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play\" class=\"w-4 h-4 text-text-pri...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"scale\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"repeat\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"divide\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 mr-2\" ...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-square\" class=\"w-4 h-4 mr-2\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-circle\" class=\"w-6 h-6 text-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 text-em...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-amethy...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-4 h-4 text-carn...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 text-posit...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrows-right-left\" class=\"w-5 h-5 ...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-8 h-8 text-positiv...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-text-pr...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-text-prim...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"move-horizontal\" class=\"w-5 h-5 te...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"weight\" class=\"w-5 h-5 text-warnin...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"droplets\" class=\"w-5 h-5 text-acce...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrows-right-left\" class=\"w-5 h-5 ...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-4 h-4\" aria-label=...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"weight\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"droplets\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wand\" class=\"w-5 h-5 text-accent\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-5 h-5 text-text-pri...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"thermometer\" class=\"w-5 h-5 text-t...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wand\" class=\"w-5 h-5 text-text-pri...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-positiv...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-left\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-8 h-8 text-positi...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 text-t...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wrench\" class=\"w-5 h-5 text-text-p...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"table\" class=\"w-5 h-5 text-accent\"...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"undo\" class=\"w-5 h-5 text-positive...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"image\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-5 h-5 text-a...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-warning\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-5 h-5 text-text-p...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-left\" class=\"w-4 h-4\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-right\" class=\"w-4 h-4\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-5 h-5 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 inline ...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-4 h-4 inline mr...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-4 h-4 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-br...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-bra...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"edit\" class=\"w-5 h-5 text-brand mb...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-4 h-4 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"loader-2\" class=\"w-4 h-4 animate-s...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-8 h-8 text-text-pr...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 text-positiv...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-warnin...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"layers\" class=\"w-4 h-4 text-brand\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-down\" aria-label=\"Go down\" a...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-circle\" class=\"w-4 h-4 mr-2\"...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"puzzle\" class=\"w-6 h-6 text-text-p...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"list-ordered\" class=\"w-5 h-5 mr-2 ...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-square\" class=\"w-6 h-6 mr-2 ...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-positiv...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"list-checks\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clipboard-check\" class=\"w-5 h-5 te...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"external-link\" class=\"w-5 h-5 text...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 text-w...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "chapter-1.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-5 h-5 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"menu\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-5 h-5 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-4 h-4 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-3 h-3 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-8 h-8 text-bran...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-te...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lock\" class=\"w-4 h-4\">...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lock\" class=\"w-4 h-4\">...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-text...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4\" aria-label=...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-po...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-4 h-4 group-hover...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-4 h-4 group-ho...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book\" class=\"w-4 h-4 group-hover:t...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-5 h-5 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-4 h-4 grou...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"settings\" class=\"w-4 h-4 group-hov...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-4 h-4 group-ho...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wrench\" class=\"w-5 h-5 text-text-n...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 group-h...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"sticky-note\" class=\"w-4 h-4 group-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-8 h-8 tex...",
+      "file": "index.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-6 h-6 text...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4\" aria-label=...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4\" aria-l...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-4 h-4\">...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4\" aria-label...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-6 h-6 text-brand\" ...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-5 h-5 tex...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-po...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-bra...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-6 h-6 text-po...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-6 h-6 text-bran...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5 text-text-pri...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-4 h-4 text-bran...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"user\" class=\"w-4 h-4 text-brand\" a...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"monitor\" class=\"w-4 h-4 text-brand...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-4 h-4 tex...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar-days\" class=\"w-4 h-4 text...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 text-coral-...",
+      "file": "calendar.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"function\" class=\"w-8 h-8\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 mr-2\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-6\" class=\"w-5 h-5 mr-2\">...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5 mr-2\" aria-l...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-6\" class=\"w-5 h-5\">...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-1\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 text-warnin...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-10.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5\" aria-label=...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"thermometer\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"crown\" class=\"w-5 h-5 text-accent\"...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-7.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-6 h-6 text-p...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-8 h-8 text-t...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2 text-p...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2 text-po...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"scale\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2\" aria-l...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-4 h-4 mr-2 text-yel...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 ml-2\" ...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 text-posit...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-5 h-5 text-acce...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5\" aria-...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-5 h-5 text-warn...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bell-ring\" class=\"w-5 h-5 text-acc...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-11.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-8 h-8\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2\" ar...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"edit-3\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-square\" class=\"w-5 h-5 mr-...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"library\" class=\"w-5 h-5 mr-2\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-5 h-5 mr-2\" aria-la...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-circle\" class=\"w-8 h-8\">...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-8 h-8\" aria-lab...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"home\" class=\"w-8 h-8\" aria-label=\"...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" aria-...",
+      "file": "english_materials.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-6 h-6 text-e...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-8 h-8 text-t...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2 text-e...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 mr-2 text-em...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-down\" class=\"w-4 h-4 mr-2...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 mr-2 text...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-5 h-5 text-p...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-warning\">...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 ml-2\" ...",
+      "file": "chapter-5.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"users\" class=\"w-5 h-5\">...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-6 h-6 mr-3 text-m...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 mr-3 tex...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-4 h-4 mr-2 text-cor...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-4 h-4 mr-2 text-c...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-5 h-5 text-positive...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"users\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-ac...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-13.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-8 h-8 text-text-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 mr-3 text-p...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-4 h-4 text-emerald...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-carnel...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"layers\" class=\"w-4 h-4 text-brand-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-4 h-4 text-ame...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"split\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"equal\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"x\" class=\"w-4 h-4 mr-2\" aria-label...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play\" class=\"w-4 h-4 text-text-pri...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"activity\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 mr-2\" aria-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"scale\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"key\" aria-label=\"Key\" aria-label=\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"repeat\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"divide\" class=\"w-4 h-4 mr-2\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 mr-2\" ...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-square\" class=\"w-4 h-4 mr-2\"...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2 tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"help-circle\" class=\"w-4 h-4 mr-2 t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-circle\" class=\"w-6 h-6 text-...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check\" class=\"w-3 h-3 text-text-pr...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 text-em...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-4 h-4 text-amethy...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-4 h-4 text-carn...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-right\" class=\"w-4 h-4 text-t...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bookmark\" class=\"w-5 h-5 text-text...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 text-posit...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-wa...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrows-right-left\" class=\"w-5 h-5 ...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-4.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-8 h-8 text-positiv...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-text-pr...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-text-prim...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"move-horizontal\" class=\"w-5 h-5 te...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"weight\" class=\"w-5 h-5 text-warnin...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"droplets\" class=\"w-5 h-5 text-acce...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrows-right-left\" class=\"w-5 h-5 ...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-4 h-4\" aria-label=...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"weight\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"droplets\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wand\" class=\"w-5 h-5 text-accent\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-5 h-5 text-text-pri...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"thermometer\" class=\"w-5 h-5 text-t...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wand\" class=\"w-5 h-5 text-text-pri...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 text-positiv...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"info\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-left\" class=\"w-4 h-4\">...",
+      "file": "chapter-8.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"search\" class=\"w-8 h-8 text-positi...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" aria-...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5 text-t...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"wrench\" class=\"w-5 h-5 text-text-p...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"table\" class=\"w-5 h-5 text-accent\"...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"undo\" class=\"w-5 h-5 text-positive...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"image\" class=\"w-5 h-5 text-warning...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-5 h-5 text-a...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5 text-positi...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 text-warning\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pencil\" class=\"w-5 h-5 text-text-p...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"file-text\" class=\"w-5 h-5 text-tex...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5\" aria-la...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"play-circle\" class=\"w-5 h-5\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-left\" class=\"w-4 h-4\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"chevron-right\" class=\"w-4 h-4\">...",
+      "file": "chapter-3.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-5 h-5 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-4 h-4 inline ...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-4 h-4 inline mr...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-4 h-4 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5 text-br...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 text-bra...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"edit\" class=\"w-5 h-5 text-brand mb...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain-circuit\" class=\"w-4 h-4 text...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"loader-2\" class=\"w-4 h-4 animate-s...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-8 h-8\" aria-...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-5 h-5 mr-2\" ari...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"alert-triangle\" class=\"w-5 h-5 tex...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clock\" class=\"w-5 h-5 text-yellow-...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calendar\" class=\"w-5 h-5 text-blue...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-5 h-5 tex...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2\" ar...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2\" ar...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-5 h-5 mr-2\" ar...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" class...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"clipboard-check\" class=\"w-5 h-5 mr...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-8 h-8\" aria-la...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"function\" class=\"w-8 h-8\">...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-circle\" class=\"w-8 h-8\">...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" class...",
+      "file": "test_prep.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"pen-tool\" class=\"w-8 h-8\">...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-circle\" class=\"w-5 h-5\">...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4 mr-2\">...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" class...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"check-circle\" class=\"w-4 h-4 mr-2\"...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"user\" class=\"w-4 h-4\" aria-label=\"...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"target\" class=\"w-5 h-5\" aria-label...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"loader-2\" class=\"w-4 h-4 animate-s...",
+      "file": "english_tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4 mr-2\" a...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-8 h-8\" aria-la...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"brain\" class=\"w-5 h-5 mr-2\" aria-l...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"percent\" class=\"w-5 h-5 mr-2\">...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dice-6\" class=\"w-5 h-5 mr-2\">...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-5 h-5 mr-2\" ...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"trending-up\" class=\"w-5 h-5 mr-2\">...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-5 h-5 mr-2\" aria-l...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-5 h-5 mr-2\" aria-la...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-up\" aria-label=\"Go up\" class...",
+      "file": "homework_help.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"arrow-left\" class=\"w-4 h-4\" aria-l...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bot\" class=\"w-8 h-8\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"zap\" class=\"w-5 h-5 mr-2\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book\" class=\"w-4 h-4 text-black\" a...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-4 h-4 text-bla...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-4 h-4 text-b...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"function\" class=\"w-4 h-4 text-blac...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"layers\" class=\"w-5 h-5 mr-2\" aria-...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"message-circle\" class=\"w-5 h-5 mr-...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"graduation-cap\" class=\"w-8 h-8 tex...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" class...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" class...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"lightbulb\" aria-label=\"Idea\" class...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4 mr-2 text-bla...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"user\" class=\"w-4 h-4\" aria-label=\"...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bot\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bot\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"home\" class=\"w-5 h-5\" aria-label=\"...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-5 h-5\" aria-l...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"calculator\" class=\"w-10 h-10 inlin...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-6 h-6 text-a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-6 h-6 text-accent-...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-6 h-6 text-a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-6 h-6 text-accent-p...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-acc...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-6 h-6 text-accent-p...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"dollar-sign\" class=\"w-6 h-6 text-a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"ruler\" class=\"w-6 h-6 text-accent-...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-6 h-6 text-a...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"vote\" class=\"w-6 h-6 text-accent-p...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-6 h-6 text-acc...",
+      "file": "formula_lookup.html"
+    },
+    {
+      "type": "icon_accessibility",
+      "severity": "medium",
+      "description": "Icon without aria-label",
+      "location": "Line containing: <i data-lucide=\"link\" class=\"w-6 h-6 text-accent-p...",
+      "file": "formula_lookup.html"
+    }
+  ]
+}

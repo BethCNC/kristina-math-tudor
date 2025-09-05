@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Lookup - MAT 143 | Kristina's Academic Success Dashboard</title>
+    <link rel="stylesheet" href="../../src/styles/globals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../public/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../public/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../public/favicons/favicon-16x16.png">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background text-text-primary min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-surface-primary border-b border-border-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="flex items-center space-x-2 text-text-primary hover:text-accent-primary transition-colors">
+                        <i data-lucide="home" class="w-5 h-5" aria-label="Home"></i>
+                        <span class="font-medium">Back to Dashboard</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="../../formula_lookup.html" class="text-text-primary hover:text-accent-primary transition-colors">
+                        <i data-lucide="calculator" class="w-5 h-5" aria-label="Calculator"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-text-primary mb-4">
+                <i data-lucide="calculator" class="w-10 h-10 inline-block mr-3 text-accent-primary" aria-label="Calculator"></i>
+                MAT 143 Formula Lookup
+            </h1>
+            <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                Quick reference for all formulas, conversions, and key concepts covered in MAT 143 Quantitative Literacy.
+            </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <a href="#personal-finance" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="dollar-sign" class="w-6 h-6 text-accent-primary mr-3" aria-label="Money"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Personal Finance</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Interest, loans, investments, and budgeting formulas</p>
+            </a>
+            
+            <a href="#conversions" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="ruler" class="w-6 h-6 text-accent-primary mr-3" aria-label="Measurement"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Conversions</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Metric system, US customary, and temperature conversions</p>
+            </a>
+            
+            <a href="#statistics" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="bar-chart-3" class="w-6 h-6 text-accent-primary mr-3" aria-label="Statistics"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Statistics</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Z-scores, probability, and data analysis</p>
+            </a>
+            
+            <a href="#voting" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="vote" class="w-6 h-6 text-accent-primary mr-3" aria-label="Voting"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Voting Methods</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Election counting and apportionment methods</p>
+            </a>
+            
+            <a href="#study-guide" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="book-open" class="w-6 h-6 text-accent-primary mr-3" aria-label="Study guide"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Study Guide</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Complete section-by-section study guide</p>
+            </a>
+            
+            <a href="#resources" class="bg-surface-primary border border-border-primary rounded-lg p-6 hover:border-accent-primary transition-colors group">
+                <div class="flex items-center mb-3">
+                    <i data-lucide="link" class="w-6 h-6 text-accent-primary mr-3" aria-label="Link"></i>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary">Resources</h3>
+                </div>
+                <p class="text-text-secondary text-sm">Google Drive folders and additional materials</p>
+            </a>
+        </div>
+
+        <!-- Personal Finance Formulas -->
+        <section id="personal-finance" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="dollar-sign" class="w-6 h-6 text-accent-primary mr-3" aria-label="Money"></i>
+                    Personal Finance Formulas (Chapter 6)
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Simple Interest -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Simple Interest</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>I = Prt</strong></p>
+                        </div>
+                        <ul class="text-text-secondary space-y-2 text-sm">
+                            <li><strong>I</strong> = Interest earned</li>
+                            <li><strong>P</strong> = Principal (starting amount)</li>
+                            <li><strong>r</strong> = annual interest rate (as decimal)</li>
+                            <li><strong>t</strong> = time in years</li>
+                        </ul>
+                    </div>
+
+                    <!-- Compound Interest -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Compound Interest</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>A = P(1 + r/n)^(nt)</strong></p>
+                        </div>
+                        <ul class="text-text-secondary space-y-2 text-sm">
+                            <li><strong>A</strong> = Final amount</li>
+                            <li><strong>P</strong> = Principal</li>
+                            <li><strong>r</strong> = annual interest rate (as decimal)</li>
+                            <li><strong>n</strong> = compounding periods per year</li>
+                            <li><strong>t</strong> = time in years</li>
+                        </ul>
+                        <div class="mt-4 p-3 bg-surface-secondary rounded-lg">
+                            <p class="text-xs text-text-secondary"><strong>Compounding Frequencies:</strong><br>
+                            Annually: n=1, Quarterly: n=4, Monthly: n=12, Daily: n=365</p>
+                        </div>
+                    </div>
+
+                    <!-- Continuous Compound Interest -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Continuous Compound Interest</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>A = Pe^(rt)</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Annual Percentage Yield -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Annual Percentage Yield (APY)</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>APY = ((1 + r/n)^n - 1) × 100%</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Present Value -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Present Value</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>PV = A / (1 + r/n)^(nt)</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Annuity Future Value -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Annuity Future Value</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>FV = PMT × [((1 + r/n)^(nt) - 1) / (r/n)]</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Loan Payment -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Fixed Installment Loan Payment</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>PMT = (P × r/n) / (1 - (1 + r/n)^(-nt))</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Credit Card Debt -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Credit Card Debt Payments</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>R = -log(1 - (r/n)(A/PMT)) / log(1 + r/n)</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversions -->
+        <section id="conversions" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="ruler" class="w-6 h-6 text-accent-primary mr-3" aria-label="Measurement"></i>
+                    Measurement & Conversions (Chapter 7)
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- US Customary System -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">US Customary System</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Length</h4>
+                                <ul class="text-text-secondary text-sm space-y-1">
+                                    <li>12 inches = 1 foot</li>
+                                    <li>3 feet = 1 yard</li>
+                                    <li>5280 feet = 1 mile</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Mass</h4>
+                                <ul class="text-text-secondary text-sm space-y-1">
+                                    <li>16 ounces = 1 pound</li>
+                                    <li>2000 pounds = 1 ton</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Capacity</h4>
+                                <ul class="text-text-secondary text-sm space-y-1">
+                                    <li>8 fluid ounces = 1 cup</li>
+                                    <li>2 cups = 1 pint</li>
+                                    <li>2 pints = 1 quart</li>
+                                    <li>4 quarts = 1 gallon</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metric System -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Metric System Prefixes</h3>
+                        
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-center text-accent-primary font-medium">King Henry Died By Drinking Chocolate Milk</p>
+                        </div>
+                        
+                        <ul class="text-text-secondary text-sm space-y-1">
+                            <li><strong>Kilo-</strong> (1000)</li>
+                            <li><strong>Hecto-</strong> (100)</li>
+                            <li><strong>Deka-</strong> (10)</li>
+                            <li><strong>Base Unit</strong> (1)</li>
+                            <li><strong>Deci-</strong> (0.1)</li>
+                            <li><strong>Centi-</strong> (0.01)</li>
+                            <li><strong>Milli-</strong> (0.001)</li>
+                        </ul>
+                    </div>
+
+                    <!-- US to Metric Conversions -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Key US to Metric Conversions</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Length</h4>
+                                <ul class="text-text-secondary text-sm space-y-1">
+                                    <li><strong>1 inch = 2.54 cm</strong></li>
+                                    <li>1 foot ≈ 0.305 m</li>
+                                    <li>1 yard ≈ 0.914 m</li>
+                                    <li>1 mile ≈ 1.61 km</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Mass</h4>
+                                <ul class="text-text-secondary text-sm space-y-1">
+                                    <li>1 ounce ≈ 28.35 g</li>
+                                    <li><strong>1 pound ≈ 0.454 kg</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Temperature -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Temperature Conversions</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4">
+                                <p class="text-center text-accent-primary font-mono"><strong>F = (9C/5) + 32</strong></p>
+                            </div>
+                            <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4">
+                                <p class="text-center text-accent-primary font-mono"><strong>C = 5(F-32)/9</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section id="statistics" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="bar-chart-3" class="w-6 h-6 text-accent-primary mr-3" aria-label="Statistics"></i>
+                    Statistics & Probability (Chapters 10 & 11)
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Z-Score -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Z-Score Formula</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>z = (data - mean) / standard deviation</strong></p>
+                        </div>
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">For Populations:</h4>
+                                <p class="text-sm text-text-secondary font-mono">z = (x - μ) / σ</p>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">For Samples:</h4>
+                                <p class="text-sm text-text-secondary font-mono">z = (x - x̄) / s</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Empirical Rule -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Empirical Rule (68-95-99.7)</h3>
+                        <p class="text-text-secondary text-sm mb-4">For normally distributed data:</p>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>68%</strong> of data falls within 1 standard deviation of the mean</li>
+                            <li><strong>95%</strong> of data falls within 2 standard deviations of the mean</li>
+                            <li><strong>99.7%</strong> of data falls within 3 standard deviations of the mean</li>
+                        </ul>
+                    </div>
+
+                    <!-- Probability -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Probability</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>P(event) = favorable outcomes / total outcomes</strong></p>
+                        </div>
+                    </div>
+
+                    <!-- Expected Value -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Expected Value</h3>
+                        <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-4 mb-4">
+                            <p class="text-lg font-mono text-accent-primary text-center"><strong>E(X) = Σ(x × P(x))</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Voting Methods -->
+        <section id="voting" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="vote" class="w-6 h-6 text-accent-primary mr-3" aria-label="Voting"></i>
+                    Voting Methods & Apportionment (Chapter 13)
+                </h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Election Counting Methods -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Election Counting Methods</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Majority Rule</h4>
+                                <p class="text-text-secondary text-sm">Winner must have more than 50% of the votes</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Plurality</h4>
+                                <p class="text-text-secondary text-sm">Candidate with the most votes wins (no majority required)</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Borda Count</h4>
+                                <p class="text-text-secondary text-sm">Points assigned based on ranking positions</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Plurality with Elimination</h4>
+                                <p class="text-text-secondary text-sm">Runoff elections until majority is achieved</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Pairwise Comparison</h4>
+                                <p class="text-text-secondary text-sm">Head-to-head matchups: n(n-1)/2 comparisons</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apportionment -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Apportionment</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Standard Divisor (SD)</h4>
+                                <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-3 mb-2">
+                                    <p class="text-sm font-mono text-accent-primary text-center"><strong>SD = total population / total seats</strong></p>
+                                </div>
+                                <p class="text-text-secondary text-xs">Round to 4 decimal places</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-medium text-text-primary mb-2">Standard Quota (SQ)</h4>
+                                <div class="bg-accent-primary/10 border border-accent-primary/20 rounded-lg p-3">
+                                    <p class="text-sm font-mono text-accent-primary text-center"><strong>SQ = state population / SD</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Guide -->
+        <section id="study-guide" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="book-open" class="w-6 h-6 text-accent-primary mr-3" aria-label="Study guide"></i>
+                    Complete Study Guide
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Chapter 1 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 1: Thinking Mathematically</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>1.1:</strong> Deductive vs Inductive Reasoning</li>
+                            <li><strong>1.2:</strong> Estimation and Evaluation</li>
+                            <li><strong>1.3:</strong> Polya's 4-step Problem Solving</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 4 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 4: Proportions & Percentages</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>4.1:</strong> Ratios, Proportions, Percentages</li>
+                            <li><strong>4.2:</strong> Using Percentages</li>
+                            <li><strong>4.3:</strong> Rates and Unit Rates</li>
+                            <li><strong>4.4:</strong> Dimensional Analysis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 5 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 5: Linear & Exponential Functions</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>5.1:</strong> Linear Equations y = mx + b</li>
+                            <li><strong>5.2:</strong> Linear Modeling</li>
+                            <li><strong>5.7:</strong> Exponential Functions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 6 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 6: Personal Finance</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>6.1:</strong> Simple Interest I = Prt</li>
+                            <li><strong>6.2:</strong> Compound Interest</li>
+                            <li><strong>6.3:</strong> Borrowing Money</li>
+                            <li><strong>6.4:</strong> Federal Revenue</li>
+                            <li><strong>6.5:</strong> Budgeting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 7 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 7: Measurement & Conversions</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>7.4:</strong> Metric System</li>
+                            <li><strong>7.5:</strong> US to Metric Conversions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 10 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 10: Probability</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>10.1:</strong> Introduction to Probability</li>
+                            <li><strong>10.3:</strong> Single Events</li>
+                            <li><strong>10.6:</strong> Expected Value</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 11 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 11: Statistics</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>11.1:</strong> Statistical Studies</li>
+                            <li><strong>11.2:</strong> Displaying Data</li>
+                            <li><strong>11.3:</strong> Describing Data</li>
+                            <li><strong>11.4:</strong> Normal Distribution</li>
+                        </ul>
+                    </div>
+
+                    <!-- Chapter 13 -->
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Chapter 13: Voting & Apportionment</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><strong>13.1:</strong> Determining Winners</li>
+                            <li><strong>13.2:</strong> Flaws in Voting Methods</li>
+                            <li><strong>13.3:</strong> Apportionment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section id="resources" class="mb-12">
+            <div class="bg-surface-primary border border-border-primary rounded-lg p-8">
+                <h2 class="text-2xl font-bold text-text-primary mb-6 flex items-center">
+                    <i data-lucide="link" class="w-6 h-6 text-accent-primary mr-3" aria-label="Link"></i>
+                    Additional Resources
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Google Drive Folders</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><a href="https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb" target="_blank" class="text-accent-primary hover:underline">Chapter 1 & 13</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv" target="_blank" class="text-accent-primary hover:underline">Chapter 4 & 5</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx" target="_blank" class="text-accent-primary hover:underline">Chapter 6 & 7</a></li>
+                            <li><a href="https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW" target="_blank" class="text-accent-primary hover:underline">Chapter 10 & 11</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-background border border-border-secondary rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-text-primary mb-4">Course Materials</h3>
+                        <ul class="text-text-secondary text-sm space-y-2">
+                            <li><a href="formula_sheets/All_Sections_Guide.md" class="text-accent-primary hover:underline">Complete Sections Guide</a></li>
+                            <li><a href="instructions/Hawkes_Learning_Setup.md" class="text-accent-primary hover:underline">Hawkes Learning Setup</a></li>
+                            <li><a href="resources/Chapter_Resources.md" class="text-accent-primary hover:underline">Chapter Resources</a></li>
+                            <li><a href="syllabus_and_schedule/Course_Schedule_Fall_2025.md" class="text-accent-primary hover:underline">Course Schedule</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-primary border-t border-border-primary mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center text-text-secondary">
+                <p>&copy; 2025 Kristina's Academic Success Dashboard. All formulas and content based on MAT 143 Quantitative Literacy curriculum.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

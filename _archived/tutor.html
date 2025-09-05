@@ -171,7 +171,7 @@
         <div class="max-w-6xl mx-auto px-4 py-6">
             <div class="text-center">
                 <a href="index.html" class="inline-flex items-center gap-2 text-[var(--yellow-500)] font-medium mb-4 hover:underline">
-                    <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                    <i data-lucide="arrow-left" class="w-4 h-4" aria-label="Go back"></i>
                     Back to Home
                 </a>
                 <h1 class="text-3xl font-bold text-[var(--text-light)] mb-2 flex items-center justify-center gap-3">
@@ -195,15 +195,15 @@
                 <div class="p-6">
                     <div class="flex flex-col gap-3 mb-8">
                         <a href="homework_help.html" class="btn btn-secondary flex items-center gap-2">
-                            <i data-lucide="book" class="w-4 h-4 text-black"></i>
+                            <i data-lucide="book" class="w-4 h-4 text-black" aria-label="Book"></i>
                             Chapter Help
                         </a>
                         <a href="homework_help.html" class="btn btn-secondary flex items-center gap-2">
-                            <i data-lucide="book-open" class="w-4 h-4 text-black"></i>
+                            <i data-lucide="book-open" class="w-4 h-4 text-black" aria-label="Study guide"></i>
                             Homework Help
                         </a>
                         <a href="test_prep.html" class="btn btn-secondary flex items-center gap-2">
-                            <i data-lucide="bar-chart-3" class="w-4 h-4 text-black"></i>
+                            <i data-lucide="bar-chart-3" class="w-4 h-4 text-black" aria-label="Statistics"></i>
                             Test Preparation
                         </a>
                         <a href="course_materials/formula_sheets_lookup.html" class="btn btn-secondary flex items-center gap-2">
@@ -214,7 +214,7 @@
                 </div>
                 
                 <div class="card-title-dark math mb-0">
-                    <i data-lucide="layers" class="w-5 h-5 mr-2"></i>
+                    <i data-lucide="layers" class="w-5 h-5 mr-2" aria-label="Layers"></i>
                     Chapters
                 </div>
                 <div class="p-6">
@@ -248,15 +248,15 @@
                             <p class="mb-6">I'm here to help you understand math concepts, solve problems, and prepare for tests. Just ask me anything!</p>
                             <div class="flex flex-col gap-3">
                                 <div class="chip bg-[var(--neutral-100)] border border-[var(--yellow-500)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--yellow-500)] hover:text-[var(--black)] transition flex items-center gap-2" onclick="askQuestion('How do I calculate compound interest?')">
-                                    <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                    <i data-lucide="lightbulb" aria-label="Idea" class="w-4 h-4"></i>
                                     "How do I calculate compound interest?"
                                 </div>
                                 <div class="chip bg-[var(--neutral-100)] border border-[var(--yellow-500)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--yellow-500)] hover:text-[var(--black)] transition flex items-center gap-2" onclick="askQuestion('Help me understand proportions')">
-                                    <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                    <i data-lucide="lightbulb" aria-label="Idea" class="w-4 h-4"></i>
                                     "Help me understand proportions"
                                 </div>
                                 <div class="chip bg-[var(--neutral-100)] border border-[var(--yellow-500)] text-[var(--text-dark)] cursor-pointer hover:bg-[var(--yellow-500)] hover:text-[var(--black)] transition flex items-center gap-2" onclick="askQuestion('What formulas do I need for Test 3?')">
-                                    <i data-lucide="lightbulb" class="w-4 h-4"></i>
+                                    <i data-lucide="lightbulb" aria-label="Idea" class="w-4 h-4"></i>
                                     "What formulas do I need for Test 3?"
                                 </div>
                             </div>
@@ -339,7 +339,7 @@
             const avatar = document.createElement('div');
             avatar.className = 'message-avatar';
             if (sender === 'user') {
-                avatar.innerHTML = '<i data-lucide="user" class="w-4 h-4"></i>';
+                avatar.innerHTML = '<i data-lucide="user" class="w-4 h-4" aria-label="User"></i>';
             } else {
                 avatar.innerHTML = '<i data-lucide="bot" class="w-4 h-4"></i>';
             }
