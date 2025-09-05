@@ -61,17 +61,17 @@
   --color-aquamarine-900: oklch(0.341 0.049 250.5);
   --color-aquamarine-950: oklch(0.250 0.031 247.4);
 
-  /* Brand Colors */
-  --color-brand-50: #eff6ff;
-  --color-brand-100: #dbeafe;
-  --color-brand-200: #bfdbfe;
-  --color-brand-300: #93c5fd;
-  --color-brand-400: #60a5fa;
-  --color-brand-500: #3b82f6;
-  --color-brand-600: #2563eb;
-  --color-brand-700: #1d4ed8;
-  --color-brand-800: #1e40af;
-  --color-brand-900: #1e3a8a;
+  /* Retro Brand Colors - Inspired by vintage frames */
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-200: #bae6fd;
+  --color-brand-300: #7dd3fc;
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-700: #0369a1;
+  --color-brand-800: #075985;
+  --color-brand-900: #0c4a6e;
 
   /* Carnelian Colors */
   --color-carnelian-50: oklch(0.949 0.032 61.4);
@@ -98,6 +98,18 @@
   --color-citrine-800: oklch(0.528 0.095 92.0);
   --color-citrine-900: oklch(0.399 0.070 92.0);
   --color-citrine-950: oklch(0.288 0.047 92.4);
+
+  /* Retro Frame Colors - Inspired by vintage design */
+  --color-retro-pink: #ffb3d1;
+  --color-retro-yellow: #fff2cc;
+  --color-retro-green: #d5e8d4;
+  --color-retro-blue: #dae8fc;
+  --color-retro-purple: #e1d5e7;
+  --color-retro-orange: #ffe6cc;
+  --color-retro-red: #f8cecc;
+  --color-retro-lavender: #f0e6ff;
+  --color-retro-mint: #d5f4e6;
+  --color-retro-peach: #ffeaa7;
 
   /* Emerald Colors */
   --color-emerald-50: oklch(0.920 0.033 146.7);
@@ -458,6 +470,32 @@
 
   .font-button-small {
     @apply font-sans text-xs font-medium leading-3;
+  }
+
+  /* Retro Frame Styling */
+  .retro-frame {
+    border: 2px dashed var(--color-retro-pink);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 179, 209, 0.3);
+  }
+
+  .retro-card {
+    background: var(--color-retro-yellow);
+    border: 2px dashed var(--color-retro-green);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(213, 232, 212, 0.4);
+  }
+
+  .retro-button {
+    background: var(--color-retro-blue);
+    border: 2px dashed var(--color-retro-purple);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(225, 213, 231, 0.3);
+  }
+
+  .retro-accent {
+    background: var(--color-retro-orange);
+    border: 2px dashed var(--color-retro-red);
   }
 }
 
