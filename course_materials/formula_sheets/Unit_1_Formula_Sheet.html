@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 143 Unit 1 Formula Sheet - Kristina's Academic Success Dashboard</title>
+    <meta name="description" content="Course materials and resources for MAT 143 and ENG 111.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand text-text-primary flex items-center justify-center">
+                            <i data-lucide="book-open" class="w-5 h-5 text-text-primary" aria-label="Course materials"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">MAT 143 Unit 1 Formula Sheet</h1>
+                            <p class="font-caption text-text-secondary">Course Materials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-1" role="navigation" aria-label="Main navigation">
+                    <a href="../index.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Home</a>
+                    <a href="../calendar.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Calendar</a>
+                    <a href="../tutor.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Tutor</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-background-secondary border border-border rounded-xl p-8">
+            <div class="prose prose-lg max-w-none">
+                <h1>MAT 143 Unit 1 Formula Sheet</h1>
+<h2>Election Counting Methods</h2>
+<p><strong>Majority Rule Decision</strong> — The winner must have more than 50% of the votes to win.</p>
+<p><strong>Plurality</strong> — The candidate with the most votes wins. No majority required.</p>
+<p><strong>Borda Count</strong> — Voting results are organized in a preference table and each ranking is assigned a specific number of points based on how many candidates are in the election. The candidate with the most ranking points is declared the winner.</p>
+<p><strong>Plurality with Elimination</strong> — A series of runoff elections where the candidate with the least amount of first-place votes is removed from the ballot each round. A winner is declared when a candidate has a majority of the first place votes.</p>
+<p><strong>Pairwise Comparison</strong> — Every candidate is compared head to head with other candidates. In each pair of comparisons, the candidate with the greater number of higher rankings is given a point. The candidate with the most points after all head-to head comparisons are made is the winner. The number of pairwise match-ups is n(n-1)/2.</p>
+<h2>Apportionment</h2>
+<p><strong>Standard Divisor (SD)</strong> — The average number of members of the population that will account for one apportioned item.
+SD = total population in a group / total number of items to be apportioned
+<em>Round the standard divisor to 4 decimal places</em></p>
+<p><strong>Standard Quota (SQ)</strong> — represents the number of items that will be apportioned to each subgroup
+SQ = population of the subgroup / Standard divisor</p>
+<h3>Hamilton Method of Apportionment</h3>
+<ol>
+<li>Calculate the standard divisor</li>
+<li>Calculate the standard quota for each subgroup</li>
+<li>Calculate the lower quota for each subgroup (Round down)</li>
+<li>Assign each subgroup the number of resources based on its lower quota</li>
+<li>Assign any remaining resources based on the fractional remainder of the standard quota, in order from largest to smallest</li>
+</ol>
+<h3>Jefferson Method of Apportionment</h3>
+<ol>
+<li>Calculate the Standard divisor</li>
+<li>Calculate the standard quota for each subgroup</li>
+<li>Calculate the lower quota (round down)</li>
+<li>Assign each subgroup the number of resources based on its lower quota</li>
+<li>If there are remaining resources to be distributed, chose a modified divisor by trial and error until the sum of the lower quotas equals the number of resources to be apportioned</li>
+</ol>
+<h3>Webster's Method</h3>
+<ol>
+<li>Calculate the standard divisor</li>
+<li>Calculate the standard quota for each subgroup. Round each quota to the nearest integer</li>
+<li>Assign each subgroup the number of resources based on the rounded quota (Round like normal)</li>
+<li>If there are remaining resources to be distributed, chose a modified divisor by trial and error until the sum of the rounded quotas equals the number of resources to be apportioned</li>
+</ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-background-secondary border-t border-border mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="text-center">
+                <p class="font-caption text-text-secondary">&copy; 2025 Kristina's Academic Success Dashboard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
