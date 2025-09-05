@@ -17,22 +17,22 @@
 </head>
 <body class="bg-background text-text-primary font-sans antialiased min-h-screen">
     <!-- Header -->
-    <header class="bg-background-secondary border border-border border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 rounded-lg bg-brand text-white text-text-primary flex items-center justify-center">
-                            <i data-lucide="brain-circuit" class="w-5 h-5 text-text-primary"></i>
+                        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-text-inverse-primary"></i>
                         </div>
                         <div>
-                            <h1 class="font-title-small text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">AI Tutor</h1>
-                            <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">MAT 143 & ENG 111 Helper</p>
+                            <h1 class="font-title-small text-text-primary">AI Tutor</h1>
+                            <p class="font-caption text-text-secondary">MAT 143 & ENG 111 Helper</p>
                         </div>
                     </div>
                 </div>
                 
-                <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">
+                <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary-hover transition-colors">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i>
                     <span class="font-button">Dashboard</span>
                 </a>
@@ -44,11 +44,11 @@
         <!-- Subject Selection -->
         <div class="mb-6">
             <div class="flex gap-2">
-                <button id="math-btn" class="subject-btn active px-4 py-2 rounded-lg font-button transition-colors bg-brand text-white text-text-primary text-text-primary">
+                <button id="math-btn" class="subject-btn active px-4 py-2 rounded-lg font-button transition-colors bg-brand text-text-inverse-primary">
                     <i data-lucide="calculator" class="w-4 h-4 inline mr-2"></i>
                     MAT 143 Math
                 </button>
-                <button id="english-btn" class="subject-btn px-4 py-2 rounded-lg font-button transition-colors bg-background-secondary text-text-primary hover:bg-background-secondary border border-border border border-border-hover">
+                <button id="english-btn" class="subject-btn px-4 py-2 rounded-lg font-button transition-colors bg-background-secondary text-text-primary hover:bg-background-secondary-hover">
                     <i data-lucide="pen-tool" class="w-4 h-4 inline mr-2"></i>
                     ENG 111 Writing
                 </button>
@@ -56,18 +56,18 @@
         </div>
 
         <!-- Chat Host Groteskface -->
-        <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl overflow-hidden">
+        <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
             <!-- Chat Messages -->
             <div id="chat-messages" class="h-96 overflow-y-auto p-6 space-y-4">
                 <div class="message ai-message bg-background rounded-lg p-4">
                     <div class="flex items-start space-x-3">
-                        <div class="w-8 h-8 rounded-full bg-brand text-white text-text-primary flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
+                        <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="brain-circuit" class="w-4 h-4 text-text-inverse-primary"></i>
                         </div>
                         <div>
-                            <p class="font-body-regular text-text-primary mb-2" class="mb-4" class="mb-4">Hi Kristina! I'm your AI tutor, ready to help with MAT 143 math and ENG 111 writing.</p>
-                            <p class="font-body-small text-text-secondary" class="mb-4" class="mb-4">Try asking me:</p>
-                            <ul class="font-body-small text-text-secondary mt-2 space-y-1" class="space-y-2" class="space-y-2">
+                            <p class="font-body-regular text-text-primary mb-2">Hi Kristina! I'm your AI tutor, ready to help with MAT 143 math and ENG 111 writing.</p>
+                            <p class="font-body-small text-text-secondary">Try asking me:</p>
+                            <ul class="font-body-small text-text-secondary mt-2 space-y-1">
                                 <li>• "Help me with Chapter 6 compound interest"</li>
                                 <li>• "Explain how to write a thesis statement"</li>
                                 <li>• "What's the formula for probability?"</li>
@@ -80,23 +80,15 @@
             <!-- Input Area -->
             <div class="border-t border-border p-4">
                 <div class="flex gap-2">
-                    <label for="input- 
+                    <input 
                         id="user-input" 
-                        " class="sr-only">Text input</label><label for="input- 
-                        id="user-input" 
-                        " class="sr-only">Text input</label><input 
-                        id="user-input" 
-                        type="text"id="input- 
-                        id="user-input" 
-                        "id="input- 
-                        id="user-input" 
-                        " 
+                        type="text" 
                         placeholder="Ask me about math formulas, writing help, or study strategies..."
                         class="flex-1 px-4 py-3 bg-background border border-border rounded-lg font-input focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand"
                     >
                     <button 
                         id="send-btn" 
-                        class="px-6 py-3 bg-brand text-text-primary rounded-lg font-button hover:bg-brand text-white text-text-primary-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        class="px-6 py-3 bg-brand text-text-inverse-primary rounded-lg font-button hover:bg-brand-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <i data-lucide="send" class="w-4 h-4"></i>
                     </button>
@@ -106,22 +98,22 @@
 
         <!-- Quick Actions -->
         <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary border border-border border border-border-hover transition-colors text-left">
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="calculator" class="w-5 h-5 text-brand mb-2"></i>
-                <h3 class="font-subtitle-small text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">Formula Help</h3>
-                <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Get help with specific formulas</p>
+                <h3 class="font-subtitle-small text-text-primary">Formula Help</h3>
+                <p class="font-caption text-text-secondary">Get help with specific formulas</p>
             </button>
             
-            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary border border-border border border-border-hover transition-colors text-left">
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="book-open" class="w-5 h-5 text-brand mb-2"></i>
-                <h3 class="font-subtitle-small text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">Chapter Review</h3>
-                <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Review chapter concepts</p>
+                <h3 class="font-subtitle-small text-text-primary">Chapter Review</h3>
+                <p class="font-caption text-text-secondary">Review chapter concepts</p>
             </button>
             
-            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary border border-border border border-border-hover transition-colors text-left">
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="edit" class="w-5 h-5 text-brand mb-2"></i>
-                <h3 class="font-subtitle-small text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">Writing Help</h3>
-                <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Essay structure & grammar</p>
+                <h3 class="font-subtitle-small text-text-primary">Writing Help</h3>
+                <p class="font-caption text-text-secondary">Essay structure & grammar</p>
             </button>
         </div>
     </main>
@@ -196,13 +188,13 @@
                 messageDiv.innerHTML = `
                     <div class="bg-background rounded-lg p-4">
                         <div class="flex items-start space-x-3">
-                            <div class="w-8 h-8 rounded-full bg-brand text-white text-text-primary flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
+                            <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="brain-circuit" class="w-4 h-4 text-text-inverse-primary"></i>
                             </div>
                             <div>
-                                <p class="font-body-regular text-text-primary" class="mb-4" class="mb-4">${content}</p>
+                                <p class="font-body-regular text-text-primary">${content}</p>
                                 ${examples ? `
-                                    <ul class="font-body-small text-text-secondary mt-2 space-y-1" class="space-y-2" class="space-y-2">
+                                    <ul class="font-body-small text-text-secondary mt-2 space-y-1">
                                         ${examples.map(ex => `<li>${ex}</li>`).join('')}
                                     </ul>
                                 ` : ''}
@@ -212,8 +204,8 @@
                 `;
             } else {
                 messageDiv.innerHTML = `
-                    <div class="bg-brand text-white text-text-primary rounded-lg p-4 ml-12">
-                        <p class="font-body-regular text-text-primary" class="mb-4" class="mb-4">${content}</p>
+                    <div class="bg-brand rounded-lg p-4 ml-12">
+                        <p class="font-body-regular text-text-inverse-primary">${content}</p>
                     </div>
                 `;
             }
