@@ -1,0 +1,4258 @@
+{
+  "internal_links": [],
+  "external_links": [
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "index.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-1.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-6.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-5.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-4.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-3.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-8.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-1.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "index.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-6.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-5.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-4.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-8.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-3.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/index.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "dist/english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/test_prep.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/homework_help.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/test_prep.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/reference.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/homework_help.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/english_tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://www.thoughtco.com/compare-and-contrast-essay-topics-7822",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://www.thoughtco.com/compare-and-contrast-essay-topics-7822"
+    },
+    {
+      "url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d"
+    },
+    {
+      "url": "https://pxhere.com/en/photo/1435021",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://pxhere.com/en/photo/1435021"
+    }
+  ],
+  "broken_links": [],
+  "file_links": [
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/sample_assignments/Week_1_Attendance_Sample.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/sample_assignments/Week_1_Attendance_Sample.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-13.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-13.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "/other-classes/FA-2025-ENG-111-N815.pdf",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "other-classes/FA-2025-ENG-111-N815.pdf",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.js",
+      "file": "index.html",
+      "link_type": "src",
+      "exists": true,
+      "resolved_path": "calendar.js",
+      "status": "OK"
+    },
+    {
+      "url": "src/js/study-planner.js",
+      "file": "index.html",
+      "link_type": "src",
+      "exists": true,
+      "resolved_path": "src/js/study-planner.js",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-180x180.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-180x180.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-152x152.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-152x152.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-167x167.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-167x167.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-192x192.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-192x192.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-512x512.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-512x512.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/site.webmanifest",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-11.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-11.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-6.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-6.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-10.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-10.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-5.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-5.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_6_Formula_Sheet.md",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_6_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-10.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-10.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-180x180.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-180x180.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-152x152.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-152x152.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-167x167.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-167x167.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-192x192.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-192x192.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-512x512.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-512x512.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/site.webmanifest",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Ways to Organize CompareContrast Essay.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Ways to Organize CompareContrast Essay.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Topic Ideas - Copy (1).html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Topic Ideas - Copy (1).html",
+      "status": "OK"
+    },
+    {
+      "url": "english/love hate comparison ada.pdf",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/love hate comparison ada.pdf",
+      "status": "OK"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "status": "OK"
+    },
+    {
+      "url": "english_tutor.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "english_tutor.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "calendar.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-4.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-4.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-6.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-6.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-4.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-4.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/sample_assignments/Week_1_Attendance_Sample.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/sample_assignments/Week_1_Attendance_Sample.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-13.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-13.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "status": "OK"
+    },
+    {
+      "url": "/course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "/other-classes/FA-2025-ENG-111-N815.pdf",
+      "file": "index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "other-classes/FA-2025-ENG-111-N815.pdf",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.js",
+      "file": "index.html",
+      "link_type": "src",
+      "exists": true,
+      "resolved_path": "calendar.js",
+      "status": "OK"
+    },
+    {
+      "url": "src/js/study-planner.js",
+      "file": "index.html",
+      "link_type": "src",
+      "exists": true,
+      "resolved_path": "src/js/study-planner.js",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-180x180.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-180x180.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-152x152.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-152x152.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-167x167.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-167x167.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-192x192.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-192x192.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-512x512.png",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-512x512.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/site.webmanifest",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-11.html",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-11.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-6.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-6.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-10.html",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-10.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-5.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-5.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_6_Formula_Sheet.md",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_6_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-10.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-10.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_4_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-32x32.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon-16x16.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-180x180.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-180x180.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-152x152.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-152x152.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/apple-touch-icon-167x167.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/apple-touch-icon-167x167.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-192x192.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-192x192.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/android-chrome-512x512.png",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/android-chrome-512x512.png",
+      "status": "OK"
+    },
+    {
+      "url": "/public/site.webmanifest",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Ways to Organize CompareContrast Essay.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Ways to Organize CompareContrast Essay.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Topic Ideas - Copy (1).html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Topic Ideas - Copy (1).html",
+      "status": "OK"
+    },
+    {
+      "url": "english/love hate comparison ada.pdf",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/love hate comparison ada.pdf",
+      "status": "OK"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "status": "OK"
+    },
+    {
+      "url": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "status": "OK"
+    },
+    {
+      "url": "english_tutor.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "english_tutor.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "calendar.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-4.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-4.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-6.html",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-6.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.html",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/Chapter_7_Formula_Sheet.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "chapter-8.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-7.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-1.html",
+      "status": "OK"
+    },
+    {
+      "url": "chapter-4.html",
+      "file": "chapter-3.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "chapter-4.html",
+      "status": "OK"
+    },
+    {
+      "url": "/public/favicons/favicon.ico",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "src/styles/globals.css",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/assets/favicon-2eb4701b.ico",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/favicon-2eb4701b.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/design-system-044e4f35.css",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/design-system-044e4f35.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/chapter-1.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/chapter-13.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/formula_lookup.html",
+      "status": "OK"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_sheets/All_Sections_Guide.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/course_materials/instructions/Hawkes_Learning_Setup.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "other-classes/FA-2025-ENG-111-N815.pdf",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/other-classes/FA-2025-ENG-111-N815.pdf",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/main-4c8760a5.js",
+      "file": "dist/index.html",
+      "link_type": "src",
+      "exists": false,
+      "resolved_path": "assets/main-4c8760a5.js",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/favicon-2eb4701b.ico",
+      "file": "dist/calendar.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/favicon-2eb4701b.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/design-system-044e4f35.css",
+      "file": "dist/calendar.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/design-system-044e4f35.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "index.html",
+      "file": "dist/calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "dist/calendar.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "/assets/favicon-2eb4701b.ico",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/favicon-2eb4701b.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-180x180-7a023755.png",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-180x180-7a023755.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-152x152-b91ded11.png",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-152x152-b91ded11.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-167x167-ee5a1d51.png",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-167x167-ee5a1d51.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/android-chrome-192x192-cb6fc209.png",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/android-chrome-192x192-cb6fc209.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/android-chrome-512x512-3978b0f3.png",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/android-chrome-512x512-3978b0f3.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/design-system-044e4f35.css",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/design-system-044e4f35.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "index.html",
+      "file": "dist/formula_lookup.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/assets/favicon-2eb4701b.ico",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/favicon-2eb4701b.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-180x180-7a023755.png",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-180x180-7a023755.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-152x152-b91ded11.png",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-152x152-b91ded11.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/apple-touch-icon-167x167-ee5a1d51.png",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/apple-touch-icon-167x167-ee5a1d51.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/android-chrome-192x192-cb6fc209.png",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/android-chrome-192x192-cb6fc209.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/android-chrome-512x512-3978b0f3.png",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/android-chrome-512x512-3978b0f3.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "index.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/Ways to Organize CompareContrast Essay.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/Ways to Organize CompareContrast Essay.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/Topic Ideas - Copy (1).html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/Topic Ideas - Copy (1).html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/love hate comparison ada.pdf",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/love hate comparison ada.pdf",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "status": "BROKEN"
+    },
+    {
+      "url": "english_tutor.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/english_tutor.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "calendar.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/index.html",
+      "status": "OK"
+    },
+    {
+      "url": "/assets/favicon-2eb4701b.ico",
+      "file": "dist/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/favicon-2eb4701b.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/assets/design-system-044e4f35.css",
+      "file": "dist/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "assets/design-system-044e4f35.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "index.html",
+      "file": "dist/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "dist/index.html",
+      "status": "OK"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon.ico",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-32x32.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-32x32.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-16x16.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-16x16.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-152x152.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-152x152.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-167x167.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-167x167.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-192x192.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-192x192.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-512x512.png",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-512x512.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/site.webmanifest",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "site.webmanifest",
+      "status": "BROKEN"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "homework_help.html",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/homework_help.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/formula_lookup.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "tutor.html",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/tutor.html",
+      "status": "OK"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "design-system.css",
+      "file": "_archived/english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/design-system.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/english_tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon.ico",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-32x32.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-32x32.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-16x16.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-16x16.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-152x152.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-152x152.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-167x167.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-167x167.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-192x192.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-192x192.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-512x512.png",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-512x512.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/site.webmanifest",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "site.webmanifest",
+      "status": "BROKEN"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon.ico",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-32x32.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-32x32.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-16x16.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-16x16.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-152x152.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-152x152.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-167x167.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-167x167.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-192x192.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-192x192.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-512x512.png",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-512x512.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/site.webmanifest",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "site.webmanifest",
+      "status": "BROKEN"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon.ico",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon.ico",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-32x32.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-32x32.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/favicon-16x16.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "favicon-16x16.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-152x152.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-152x152.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/apple-touch-icon-167x167.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "apple-touch-icon-167x167.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-192x192.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-192x192.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/android-chrome-512x512.png",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "android-chrome-512x512.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "/site.webmanifest",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "site.webmanifest",
+      "status": "BROKEN"
+    },
+    {
+      "url": "globals.css",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/index.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "homework_help.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/homework_help.html",
+      "status": "OK"
+    },
+    {
+      "url": "homework_help.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/homework_help.html",
+      "status": "OK"
+    },
+    {
+      "url": "test_prep.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/test_prep.html",
+      "status": "OK"
+    },
+    {
+      "url": "formula_lookup.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/formula_lookup.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-1.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-1.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-4.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-4.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-5.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-5.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-6.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-6.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-7.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-7.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-10.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-10.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-11.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-11.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "chapter-13.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/chapter-13.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "reference.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/reference.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "_archived/calendar.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "web_study_helper.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/web_study_helper.html",
+      "status": "OK"
+    },
+    {
+      "url": "reference.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/reference.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar_study_system.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/calendar_study_system.html",
+      "status": "OK"
+    },
+    {
+      "url": "web_study_helper.html",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "_archived/web_study_helper.html",
+      "status": "OK"
+    },
+    {
+      "url": "CTLE_HTML_Templates/styles.css",
+      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "english/CTLE_HTML_Templates/styles.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
+      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "link_type": "src",
+      "exists": false,
+      "resolved_path": "english/CTLE_HTML_Templates/CPCC_Logo.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/styles.css",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "english/CTLE_HTML_Templates/styles.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "src",
+      "exists": false,
+      "resolved_path": "english/CTLE_HTML_Templates/CPCC_Logo.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/styles.css",
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/CTLE_HTML_Templates/styles.css",
+      "status": "OK"
+    },
+    {
+      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "link_type": "src",
+      "exists": true,
+      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/CTLE_HTML_Templates/CPCC_Logo.png",
+      "status": "OK"
+    },
+    {
+      "url": "CTLE_HTML_Templates/styles.css",
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/styles.css",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/Clock_Tower_BG.jpg",
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "link_type": "src",
+      "exists": false,
+      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/Clock_Tower_BG.jpg",
+      "status": "BROKEN"
+    },
+    {
+      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "link_type": "src",
+      "exists": false,
+      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/CPCC_Logo.png",
+      "status": "BROKEN"
+    }
+  ],
+  "summary": {
+    "total_links": 623,
+    "file_links": 394,
+    "external_links": 136,
+    "internal_links": 0,
+    "broken_file_links": 104,
+    "broken_external_links": 34,
+    "total_broken": 138,
+    "check_time": "2025-09-05T11:50:18.504880"
+  }
+}

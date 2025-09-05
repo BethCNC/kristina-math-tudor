@@ -4,8 +4,8 @@
  * Use @font-face if using a local font (see tailwindcss docs)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Mono font */
 
 @import "tailwindcss";
@@ -18,10 +18,10 @@
 
 @theme {
   /* Font Variables */
-  --font-sans: "Host Grotesk", sans-serif; /* Change to your imported font-family */
-  --font-serif: "Host Grotesk", serif; /* Change to your imported font-family */
+  --font-sans: "Vend Sans", sans-serif; /* Change to your imported font-family */
+  --font-serif: "Vend Sans", serif; /* Change to your imported font-family */
   --font-mono: "Space Mono", monospace; /* Change to your imported font-family */
-  --font-heading: "Host Grotesk", sans-serif; /* Change to your imported font-family or change to var(--font-sans) if only using one font-family */
+  --font-heading: "Vend Sans", sans-serif; /* Change to your imported font-family or change to var(--font-sans) if only using one font-family */
 
   /* Amber Colors */
   --color-amber-50: #fffbeb;
@@ -137,8 +137,8 @@
   --color-green-900: #14532d;
 
   /* Mooonstone Colors */
-  --color-mooonstone-50: oklch(0.985 0.007 53.4);
-  --color-mooonstone-100: oklch(0.976 0.012 51.3);
+  --color-mooonstone-50: oklch(0.95 0.01 53.4);
+  --color-mooonstone-100: oklch(0.92 0.015 51.3);
   --color-mooonstone-200: oklch(0.963 0.017 50.4);
   --color-mooonstone-300: oklch(0.952 0.023 48.5);
   --color-mooonstone-400: oklch(0.939 0.029 50.6);
@@ -278,7 +278,7 @@
   /* Text */
   --color-text-neutral-primary: #1f2937;
   --color-text-inverse-tertiary: var(--color-mooonstone-200);
-  --color-text-primary: #1f2937;
+  --color-text-primary: #111827;
   --color-text-inverse-secondary: var(--color-mooonstone-50);
   --color-text-danger-primary: var(--color-ruby-500);
   --color-text-inverse-primary: #ffffff;

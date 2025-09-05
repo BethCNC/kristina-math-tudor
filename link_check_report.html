@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Check Report - Kristina's Academic Success Dashboard</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2d3748; border-bottom: 3px solid #68d391; padding-bottom: 10px; }
+        h2 { color: #4a5568; margin-top: 30px; }
+        .summary { background: #f7fafc; padding: 20px; border-radius: 6px; margin: 20px 0; }
+        .summary-item { display: flex; justify-content: space-between; margin: 8px 0; }
+        .summary-item strong { color: #2d3748; }
+        .status-ok { color: #48bb78; font-weight: bold; }
+        .status-broken { color: #f56565; font-weight: bold; }
+        .link-item { background: #f7fafc; padding: 15px; margin: 10px 0; border-radius: 6px; border-left: 4px solid #e2e8f0; }
+        .link-item.broken { border-left-color: #f56565; background: #fed7d7; }
+        .link-item.ok { border-left-color: #48bb78; background: #c6f6d5; }
+        .link-url { font-family: monospace; background: #edf2f7; padding: 4px 8px; border-radius: 4px; }
+        .link-file { color: #718096; font-size: 0.9em; margin-top: 5px; }
+        .error-details { color: #e53e3e; font-size: 0.9em; margin-top: 5px; }
+        .timestamp { color: #718096; font-size: 0.9em; text-align: right; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Link Check Report</h1>
+        <p>Kristina's Academic Success Dashboard - Link Validation Results</p>
+        
+        <div class="summary">
+            <h2>📊 Summary</h2>
+            <div class="summary-item">
+                <span>Total Links Checked:</span>
+                <strong>623</strong>
+            </div>
+            <div class="summary-item">
+                <span>File Links:</span>
+                <strong>394 (104 broken)</strong>
+            </div>
+            <div class="summary-item">
+                <span>External Links:</span>
+                <strong>136 (34 broken)</strong>
+            </div>
+            <div class="summary-item">
+                <span>Internal Links:</span>
+                <strong>0</strong>
+            </div>
+            <div class="summary-item">
+                <span>Total Broken Links:</span>
+                <strong class="status-broken">138</strong>
+            </div>
+        </div>
+
+        <h2>❌ Broken File Links</h2>
+
+        <div class="link-item broken">
+            <div class="link-url">english_tutor.html</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Resolved path: english_tutor.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english_tutor.html</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Resolved path: english_tutor.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/favicon-2eb4701b.ico</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: assets/favicon-2eb4701b.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/design-system-044e4f35.css</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: assets/design-system-044e4f35.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-1.html</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/chapter-1.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-13.html</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/chapter-13.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">course_materials/formula_sheets/Unit_1_Formula_Sheet.md</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/course_materials/formula_sheets/Unit_1_Formula_Sheet.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">course_materials/formula_sheets/All_Sections_Guide.md</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/course_materials/formula_sheets/All_Sections_Guide.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">course_materials/instructions/Hawkes_Learning_Setup.md</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/course_materials/instructions/Hawkes_Learning_Setup.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">other-classes/FA-2025-ENG-111-N815.pdf</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: dist/other-classes/FA-2025-ENG-111-N815.pdf</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/main-4c8760a5.js</div>
+            <div class="link-file">File: dist/index.html</div>
+            <div class="error-details">Resolved path: assets/main-4c8760a5.js</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/favicon-2eb4701b.ico</div>
+            <div class="link-file">File: dist/calendar.html</div>
+            <div class="error-details">Resolved path: assets/favicon-2eb4701b.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/design-system-044e4f35.css</div>
+            <div class="link-file">File: dist/calendar.html</div>
+            <div class="error-details">Resolved path: assets/design-system-044e4f35.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/favicon-2eb4701b.ico</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/favicon-2eb4701b.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-180x180-7a023755.png</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-180x180-7a023755.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-152x152-b91ded11.png</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-152x152-b91ded11.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-167x167-ee5a1d51.png</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-167x167-ee5a1d51.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/android-chrome-192x192-cb6fc209.png</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/android-chrome-192x192-cb6fc209.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/android-chrome-512x512-3978b0f3.png</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/android-chrome-512x512-3978b0f3.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/design-system-044e4f35.css</div>
+            <div class="link-file">File: dist/formula_lookup.html</div>
+            <div class="error-details">Resolved path: assets/design-system-044e4f35.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/favicon-2eb4701b.ico</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/favicon-2eb4701b.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-180x180-7a023755.png</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-180x180-7a023755.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-152x152-b91ded11.png</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-152x152-b91ded11.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/apple-touch-icon-167x167-ee5a1d51.png</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/apple-touch-icon-167x167-ee5a1d51.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/android-chrome-192x192-cb6fc209.png</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/android-chrome-192x192-cb6fc209.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/android-chrome-512x512-3978b0f3.png</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: assets/android-chrome-512x512-3978b0f3.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/Ways to Organize CompareContrast Essay.html</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/Ways to Organize CompareContrast Essay.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/Topic Ideas - Copy (1).html</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/Topic Ideas - Copy (1).html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/love hate comparison ada.pdf</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/love hate comparison ada.pdf</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/researchguides.cpcc.edu_Citing_Sources___Central_Piedmont_Libraries_Instru_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/researchguides.cpcc.edu_What_is_Plagiarism____Avoid_Plagiarism___Learn_to__2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/slc.berkeley.edu_Editing_vs__Revision___Student_Learning_Center_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/owl.excelsior.edu_Revising___Editing_Process___Excelsior_OWL_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/purdueglobal.edu_How_to_Improve_Your_Reading_Comprehension_for_Coll_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/psychologytoday.com_Does_Trying_to_Be_Happy_Make_Us_Unhappy____Psychol_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/lib.sfu.ca_Critical_thinking_for_critical_writing___SFU_Libra_2025-08-28.md</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english/✍ Submit- Critical Reading Discussion (Due-8:22).txt</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english/✍ Submit- Critical Reading Discussion (Due-8:22).txt</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">english_tutor.html</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Resolved path: dist/english_tutor.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/favicon-2eb4701b.ico</div>
+            <div class="link-file">File: dist/tutor.html</div>
+            <div class="error-details">Resolved path: assets/favicon-2eb4701b.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/assets/design-system-044e4f35.css</div>
+            <div class="link-file">File: dist/tutor.html</div>
+            <div class="error-details">Resolved path: assets/design-system-044e4f35.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/web_study_helper.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon.ico</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: favicon.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-32x32.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: favicon-32x32.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-16x16.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: favicon-16x16.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-152x152.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-152x152.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-167x167.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-167x167.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-192x192.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: android-chrome-192x192.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-512x512.png</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: android-chrome-512x512.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/site.webmanifest</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: site.webmanifest</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">formula_lookup.html</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Resolved path: _archived/formula_lookup.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/calendar_study_system.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/english_tutor.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon.ico</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: favicon.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-32x32.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: favicon-32x32.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-16x16.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: favicon-16x16.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-152x152.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-152x152.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-167x167.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-167x167.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-192x192.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: android-chrome-192x192.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-512x512.png</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: android-chrome-512x512.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/site.webmanifest</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: site.webmanifest</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon.ico</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: favicon.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-32x32.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: favicon-32x32.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-16x16.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: favicon-16x16.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-152x152.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-152x152.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-167x167.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-167x167.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-192x192.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: android-chrome-192x192.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-512x512.png</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: android-chrome-512x512.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/site.webmanifest</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: site.webmanifest</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon.ico</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: favicon.ico</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-32x32.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: favicon-32x32.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/favicon-16x16.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: favicon-16x16.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-152x152.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-152x152.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/apple-touch-icon-167x167.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: apple-touch-icon-167x167.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-192x192.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: android-chrome-192x192.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/android-chrome-512x512.png</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: android-chrome-512x512.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">/site.webmanifest</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: site.webmanifest</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">index.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/index.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">formula_lookup.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/formula_lookup.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-1.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-1.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-4.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-4.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-5.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-5.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-6.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-6.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-7.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-7.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-10.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-10.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-11.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-11.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">chapter-13.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/chapter-13.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">calendar.html</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Resolved path: _archived/calendar.html</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/styles.css</div>
+            <div class="link-file">File: english/Ways to Organize CompareContrast Essay.html</div>
+            <div class="error-details">Resolved path: english/CTLE_HTML_Templates/styles.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/CPCC_Logo.png</div>
+            <div class="link-file">File: english/Ways to Organize CompareContrast Essay.html</div>
+            <div class="error-details">Resolved path: english/CTLE_HTML_Templates/CPCC_Logo.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/styles.css</div>
+            <div class="link-file">File: english/Topic Ideas - Copy (1).html</div>
+            <div class="error-details">Resolved path: english/CTLE_HTML_Templates/styles.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/CPCC_Logo.png</div>
+            <div class="link-file">File: english/Topic Ideas - Copy (1).html</div>
+            <div class="error-details">Resolved path: english/CTLE_HTML_Templates/CPCC_Logo.png</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/styles.css</div>
+            <div class="link-file">File: english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html</div>
+            <div class="error-details">Resolved path: english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/styles.css</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/Clock_Tower_BG.jpg</div>
+            <div class="link-file">File: english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html</div>
+            <div class="error-details">Resolved path: english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/Clock_Tower_BG.jpg</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">CTLE_HTML_Templates/CPCC_Logo.png</div>
+            <div class="link-file">File: english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html</div>
+            <div class="error-details">Resolved path: english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/CPCC_Logo.png</div>
+        </div>
+
+        <h2>❌ Broken External Links</h2>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-10.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-10.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-7.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-7.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-11.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-11.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-13.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-13.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-10.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-10.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-7.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-7.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-11.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-11.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: chapter-13.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: chapter-13.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: dist/english_materials.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/web_study_helper.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/web_study_helper.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/test_prep.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/calendar_study_system.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/calendar_study_system.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/reference.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/homework_help.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.googleapis.com</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <div class="link-item broken">
+            <div class="link-url">https://fonts.gstatic.com</div>
+            <div class="link-file">File: _archived/tutor.html</div>
+            <div class="error-details">Error: HTTP 404</div>
+        </div>
+
+        <h2>✅ Working Links</h2>
+        <p>All other links are working correctly.</p>
+
+        <div class="timestamp">
+            Report generated: 2025-09-05T11:50:18.504880
+        </div>
+    </div>
+</body>
+</html>

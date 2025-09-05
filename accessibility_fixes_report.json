@@ -1,0 +1,260 @@
+{
+  "fixes_applied": [
+    {
+      "file": "chapter-1.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "index.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "calendar.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "formula_lookup.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-10.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-7.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-6.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-11.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "english_materials.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-5.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-13.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-4.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-8.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-3.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "tutor.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "chapter-1.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "index.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "calendar.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "formula_lookup.html",
+      "fixes": [
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-10.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-7.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-6.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-11.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "english_materials.html",
+      "fixes": [
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-5.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-13.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-4.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-8.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "chapter-3.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility"
+      ]
+    },
+    {
+      "file": "tutor.html",
+      "fixes": [
+        "contrast",
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "fixes": [
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "english/Topic Ideas - Copy (1).html",
+      "fixes": [
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "fixes": [
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "fixes": [
+        "ADHD accessibility",
+        "general accessibility"
+      ]
+    },
+    {
+      "file": "src/styles/globals.css",
+      "fixes": [
+        "font update",
+        "contrast improvement"
+      ]
+    }
+  ],
+  "fix_time": "2025-09-05T11:49:56.264618",
+  "summary": {
+    "total_files_fixed": 35,
+    "fixes_by_type": {
+      "contrast": 28,
+      "ADHD accessibility": 34,
+      "general accessibility": 6,
+      "font update": 1,
+      "contrast improvement": 1
+    }
+  }
+}
