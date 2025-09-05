@@ -2,6 +2,30 @@
   "internal_links": [],
   "external_links": [
     {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-1.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
       "file": "chapter-10.html",
       "link_type": "href",
@@ -34,46 +58,6 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-1.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-10.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
       "file": "formula_lookup.html",
       "link_type": "src",
@@ -82,6 +66,22 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
       "file": "chapter-7.html",
       "link_type": "href",
@@ -90,20 +90,12 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "url": "https://cdn.tailwindcss.com",
       "file": "chapter-10.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
       "url": "https://cdn.tailwindcss.com",
@@ -112,54 +104,6 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-11.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-6.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
@@ -170,20 +114,12 @@
       "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "english_tutor.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "english_tutor.html",
-      "link_type": "href",
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
@@ -195,43 +131,51 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "english_materials.html",
+      "file": "chapter-11.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "english_materials.html",
+      "file": "chapter-11.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-11.html",
+      "file": "chapter-6.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "english_materials.html",
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-7.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
@@ -243,7 +187,7 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-13.html",
+      "file": "english_tutor.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -251,51 +195,19 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-13.html",
+      "file": "english_tutor.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-5.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "english_tutor.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
@@ -307,255 +219,31 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-4.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
       "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-8.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "tutor.html",
+      "url": "https://cdn.tailwindcss.com",
+      "file": "english_materials.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
-      "file": "chapter-5.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-1.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
-      "file": "chapter-1.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "index.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
-      "file": "chapter-4.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-3.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "formula_lookup.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
       "file": "chapter-13.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-10.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "chapter-1.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-10.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "english_tutor.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-11.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "english_tutor.html",
+      "file": "chapter-13.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -568,110 +256,6 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "english_tutor.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-11.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-6.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
     },
     {
       "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
@@ -682,6 +266,22 @@
       "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
     },
     {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
       "file": "chapter-5.html",
       "link_type": "src",
@@ -690,12 +290,52 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
-      "file": "chapter-7.html",
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-13.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-8.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-3.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -704,6 +344,350 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-4.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-1.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "index.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-6.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -730,20 +714,28 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "tutor.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
       "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
       "file": "chapter-5.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
@@ -754,20 +746,12 @@
       "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
     },
     {
-      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
-      "file": "chapter-4.html",
-      "link_type": "href",
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "tutor.html",
+      "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -776,6 +760,30 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-5.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "dist/chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "dist/chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
@@ -784,38 +792,6 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "dist/chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -826,20 +802,44 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "dist/english_materials.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
-      "file": "dist/english_materials.html",
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "chapter-4.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "dist/chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "dist/chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
@@ -850,12 +850,28 @@
       "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
     },
     {
-      "url": "https://fonts.gstatic.com",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "dist/english_materials.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -866,16 +882,56 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://fonts.googleapis.com",
+      "url": "https://cdn.tailwindcss.com",
+      "file": "dist/english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/chapter-6.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "dist/chapter-13.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "dist/chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://cdn.tailwindcss.com",
-      "file": "dist/english_materials.html",
+      "file": "dist/chapter-13.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -890,32 +946,40 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-6.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "dist/chapter-13.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
-      "file": "chapter-6.html",
+      "file": "dist/chapter-6.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -923,67 +987,11 @@
     },
     {
       "url": "https://cdn.tailwindcss.com",
-      "file": "dist/chapter-13.html",
+      "file": "_archived/web_study_helper.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/formula_lookup.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -1002,32 +1010,8 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/calendar_study_system.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1042,14 +1026,6 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
       "url": "https://cdn.tailwindcss.com",
       "file": "_archived/test_prep.html",
       "link_type": "src",
@@ -1058,56 +1034,8 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
-      "file": "dist/chapter-6.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
       "file": "_archived/test_prep.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/homework_help.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1115,15 +1043,7 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/homework_help.html",
+      "file": "_archived/calendar_study_system.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1131,7 +1051,7 @@
     },
     {
       "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/reference.html",
+      "file": "_archived/calendar_study_system.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -1139,7 +1059,7 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/tutor.html",
+      "file": "_archived/calendar_study_system.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1147,67 +1067,11 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/tutor.html",
+      "file": "_archived/calendar_study_system.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/tutor.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "_archived/english_tutor.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/homework_help.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/homework_help.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/tutor.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "_archived/homework_help.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
     },
     {
       "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
@@ -1218,16 +1082,96 @@
       "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
     },
     {
-      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
-      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/reference.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/test_prep.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/reference.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
+      "file": "dist/chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/english_tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/homework_help.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
       "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
-      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "file": "english/Ways to Organize CompareContrast Essay.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1243,11 +1187,83 @@
     },
     {
       "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
       "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/homework_help.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d"
     },
     {
       "url": "https://www.thoughtco.com/compare-and-contrast-essay-topics-7822",
@@ -1272,22 +1288,6 @@
       "status": "OK",
       "status_code": 200,
       "final_url": "https://pxhere.com/en/photo/1435021"
-    },
-    {
-      "url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics"
-    },
-    {
-      "url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d"
     }
   ],
   "broken_links": [],
@@ -1421,15 +1421,15 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "index.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
-      "url": "/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -1437,7 +1437,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/formula_sheets/All_Sections_Guide.md",
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -1445,7 +1445,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "url": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -1453,7 +1453,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/instructions/Hawkes_Learning_Setup.md",
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -1653,12 +1653,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-10.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-11.html",
@@ -1709,12 +1709,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-7.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-10.html",
@@ -1765,12 +1765,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-6.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-7.html",
@@ -1821,12 +1821,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-11.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "index.html",
@@ -1859,14 +1859,6 @@
       "exists": true,
       "resolved_path": "public/favicons/favicon.ico",
       "status": "OK"
-    },
-    {
-      "url": "public/favicons/apple-touch-icon.png",
-      "file": "english_tutor.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "public/favicons/apple-touch-icon.png",
-      "status": "BROKEN"
     },
     {
       "url": "public/favicons/favicon-32x32.png",
@@ -2221,12 +2213,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-5.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-6.html",
@@ -2269,12 +2261,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-13.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "index.html",
@@ -2317,12 +2309,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-4.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "calendar.html",
@@ -2597,15 +2589,15 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "index.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
-      "url": "/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -2613,7 +2605,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/formula_sheets/All_Sections_Guide.md",
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -2621,7 +2613,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "url": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -2629,7 +2621,7 @@
       "status": "OK"
     },
     {
-      "url": "/course_materials/instructions/Hawkes_Learning_Setup.md",
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
       "file": "index.html",
       "link_type": "href",
       "exists": true,
@@ -2829,12 +2821,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-10.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-11.html",
@@ -2885,12 +2877,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-7.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-10.html",
@@ -2941,12 +2933,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-6.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-7.html",
@@ -2997,12 +2989,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-11.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "index.html",
@@ -3035,14 +3027,6 @@
       "exists": true,
       "resolved_path": "public/favicons/favicon.ico",
       "status": "OK"
-    },
-    {
-      "url": "public/favicons/apple-touch-icon.png",
-      "file": "english_tutor.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "public/favicons/apple-touch-icon.png",
-      "status": "BROKEN"
     },
     {
       "url": "public/favicons/favicon-32x32.png",
@@ -3397,12 +3381,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-5.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-6.html",
@@ -3445,12 +3429,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-13.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "index.html",
@@ -3493,12 +3477,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "chapter-4.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "calendar.html",
@@ -3653,11 +3637,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/chapter-1.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3725,11 +3709,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/index.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3757,43 +3741,43 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
+      "file": "dist/index.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_lookup.html",
+      "status": "BROKEN"
+    },
+    {
+      "url": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
       "file": "dist/index.html",
       "link_type": "href",
       "exists": true,
-      "resolved_path": "dist/formula_lookup.html",
+      "resolved_path": "dist/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
       "status": "OK"
     },
     {
-      "url": "/course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "url": "course_materials/formula_sheets/All_Sections_Guide.md",
       "file": "dist/index.html",
       "link_type": "href",
       "exists": true,
-      "resolved_path": "course_materials/formula_sheets/Unit_1_Formula_Sheet.md",
+      "resolved_path": "dist/course_materials/formula_sheets/All_Sections_Guide.md",
       "status": "OK"
     },
     {
-      "url": "/course_materials/formula_sheets/All_Sections_Guide.md",
+      "url": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
       "file": "dist/index.html",
       "link_type": "href",
       "exists": true,
-      "resolved_path": "course_materials/formula_sheets/All_Sections_Guide.md",
+      "resolved_path": "dist/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
       "status": "OK"
     },
     {
-      "url": "/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
+      "url": "course_materials/instructions/Hawkes_Learning_Setup.md",
       "file": "dist/index.html",
       "link_type": "href",
       "exists": true,
-      "resolved_path": "course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.md",
-      "status": "OK"
-    },
-    {
-      "url": "/course_materials/instructions/Hawkes_Learning_Setup.md",
-      "file": "dist/index.html",
-      "link_type": "href",
-      "exists": true,
-      "resolved_path": "course_materials/instructions/Hawkes_Learning_Setup.md",
+      "resolved_path": "dist/course_materials/instructions/Hawkes_Learning_Setup.md",
       "status": "OK"
     },
     {
@@ -3805,11 +3789,11 @@
       "status": "OK"
     },
     {
-      "url": "/assets/main-a718bc86.js",
+      "url": "/assets/main-342d30be.js",
       "file": "dist/index.html",
       "link_type": "src",
       "exists": false,
-      "resolved_path": "assets/main-a718bc86.js",
+      "resolved_path": "assets/main-342d30be.js",
       "status": "BROKEN"
     },
     {
@@ -3821,11 +3805,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/calendar.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3893,11 +3877,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/formula_lookup.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3917,11 +3901,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/chapter-7.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3941,12 +3925,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "dist/chapter-7.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "dist/formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-10.html",
@@ -3973,11 +3957,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/chapter-6.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -3997,12 +3981,12 @@
       "status": "BROKEN"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "dist/chapter-6.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "dist/formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "chapter-7.html",
@@ -4069,11 +4053,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/english_materials.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -4189,12 +4173,12 @@
       "status": "BROKEN"
     },
     {
-      "url": "english_tutor.html",
+      "url": "tutor.html",
       "file": "dist/english_materials.html",
       "link_type": "href",
-      "exists": false,
-      "resolved_path": "dist/english_tutor.html",
-      "status": "BROKEN"
+      "exists": true,
+      "resolved_path": "dist/tutor.html",
+      "status": "OK"
     },
     {
       "url": "calendar.html",
@@ -4221,11 +4205,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/chapter-13.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -4245,12 +4229,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "dist/chapter-13.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "dist/formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "index.html",
@@ -4277,11 +4261,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/chapter-4.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -4293,12 +4277,12 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_lookup.html",
       "file": "dist/chapter-4.html",
       "link_type": "href",
-      "exists": true,
-      "resolved_path": "dist/formula_lookup.html",
-      "status": "OK"
+      "exists": false,
+      "resolved_path": "dist/course_materials/formula_lookup.html",
+      "status": "BROKEN"
     },
     {
       "url": "calendar.html",
@@ -4325,11 +4309,11 @@
       "status": "BROKEN"
     },
     {
-      "url": "/assets/globals-165d1962.css",
+      "url": "/assets/globals-9d987792.css",
       "file": "dist/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "assets/globals-165d1962.css",
+      "resolved_path": "assets/globals-9d987792.css",
       "status": "BROKEN"
     },
     {
@@ -4357,75 +4341,67 @@
       "status": "BROKEN"
     },
     {
-      "url": "/favicon.ico",
+      "url": "public/favicons/favicon.ico",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon.ico",
+      "resolved_path": "_archived/public/favicons/favicon.ico",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-32x32.png",
+      "url": "public/favicons/favicon-32x32.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-32x32.png",
+      "resolved_path": "_archived/public/favicons/favicon-32x32.png",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-16x16.png",
+      "url": "public/favicons/favicon-16x16.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-16x16.png",
+      "resolved_path": "_archived/public/favicons/favicon-16x16.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon.png",
+      "url": "public/favicons/apple-touch-icon-152x152.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-152x152.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-152x152.png",
+      "url": "public/favicons/apple-touch-icon-167x167.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-152x152.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-167x167.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-167x167.png",
+      "url": "public/favicons/android-chrome-192x192.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-167x167.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-192x192.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-192x192.png",
+      "url": "public/favicons/android-chrome-512x512.png",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-192x192.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-512x512.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-512x512.png",
+      "url": "public/site.webmanifest",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-512x512.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "/site.webmanifest",
-      "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "site.webmanifest",
+      "resolved_path": "_archived/public/site.webmanifest",
       "status": "BROKEN"
     },
     {
@@ -4453,11 +4429,11 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_sheets_lookup.html",
       "file": "_archived/test_prep.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "_archived/formula_lookup.html",
+      "resolved_path": "_archived/course_materials/formula_sheets_lookup.html",
       "status": "BROKEN"
     },
     {
@@ -4501,75 +4477,67 @@
       "status": "BROKEN"
     },
     {
-      "url": "/favicon.ico",
+      "url": "public/favicons/favicon.ico",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon.ico",
+      "resolved_path": "_archived/public/favicons/favicon.ico",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-32x32.png",
+      "url": "public/favicons/favicon-32x32.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-32x32.png",
+      "resolved_path": "_archived/public/favicons/favicon-32x32.png",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-16x16.png",
+      "url": "public/favicons/favicon-16x16.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-16x16.png",
+      "resolved_path": "_archived/public/favicons/favicon-16x16.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon.png",
+      "url": "public/favicons/apple-touch-icon-152x152.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-152x152.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-152x152.png",
+      "url": "public/favicons/apple-touch-icon-167x167.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-152x152.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-167x167.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-167x167.png",
+      "url": "public/favicons/android-chrome-192x192.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-167x167.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-192x192.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-192x192.png",
+      "url": "public/favicons/android-chrome-512x512.png",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-192x192.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-512x512.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-512x512.png",
+      "url": "public/site.webmanifest",
       "file": "_archived/reference.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-512x512.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "/site.webmanifest",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "site.webmanifest",
+      "resolved_path": "_archived/public/site.webmanifest",
       "status": "BROKEN"
     },
     {
@@ -4589,75 +4557,67 @@
       "status": "BROKEN"
     },
     {
-      "url": "/favicon.ico",
+      "url": "public/favicons/favicon.ico",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon.ico",
+      "resolved_path": "_archived/public/favicons/favicon.ico",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-32x32.png",
+      "url": "public/favicons/favicon-32x32.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-32x32.png",
+      "resolved_path": "_archived/public/favicons/favicon-32x32.png",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-16x16.png",
+      "url": "public/favicons/favicon-16x16.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-16x16.png",
+      "resolved_path": "_archived/public/favicons/favicon-16x16.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon.png",
+      "url": "public/favicons/apple-touch-icon-152x152.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-152x152.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-152x152.png",
+      "url": "public/favicons/apple-touch-icon-167x167.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-152x152.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-167x167.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-167x167.png",
+      "url": "public/favicons/android-chrome-192x192.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-167x167.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-192x192.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-192x192.png",
+      "url": "public/favicons/android-chrome-512x512.png",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-192x192.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-512x512.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-512x512.png",
+      "url": "public/site.webmanifest",
       "file": "_archived/homework_help.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-512x512.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "/site.webmanifest",
-      "file": "_archived/homework_help.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "site.webmanifest",
+      "resolved_path": "_archived/public/site.webmanifest",
       "status": "BROKEN"
     },
     {
@@ -4677,75 +4637,67 @@
       "status": "BROKEN"
     },
     {
-      "url": "/favicon.ico",
+      "url": "public/favicons/favicon.ico",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon.ico",
+      "resolved_path": "_archived/public/favicons/favicon.ico",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-32x32.png",
+      "url": "public/favicons/favicon-32x32.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-32x32.png",
+      "resolved_path": "_archived/public/favicons/favicon-32x32.png",
       "status": "BROKEN"
     },
     {
-      "url": "/favicon-16x16.png",
+      "url": "public/favicons/favicon-16x16.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "favicon-16x16.png",
+      "resolved_path": "_archived/public/favicons/favicon-16x16.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon.png",
+      "url": "public/favicons/apple-touch-icon-152x152.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-152x152.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-152x152.png",
+      "url": "public/favicons/apple-touch-icon-167x167.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-152x152.png",
+      "resolved_path": "_archived/public/favicons/apple-touch-icon-167x167.png",
       "status": "BROKEN"
     },
     {
-      "url": "/apple-touch-icon-167x167.png",
+      "url": "public/favicons/android-chrome-192x192.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "apple-touch-icon-167x167.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-192x192.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-192x192.png",
+      "url": "public/favicons/android-chrome-512x512.png",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-192x192.png",
+      "resolved_path": "_archived/public/favicons/android-chrome-512x512.png",
       "status": "BROKEN"
     },
     {
-      "url": "/android-chrome-512x512.png",
+      "url": "public/site.webmanifest",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "android-chrome-512x512.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "/site.webmanifest",
-      "file": "_archived/tutor.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "site.webmanifest",
+      "resolved_path": "_archived/public/site.webmanifest",
       "status": "BROKEN"
     },
     {
@@ -4789,11 +4741,11 @@
       "status": "OK"
     },
     {
-      "url": "formula_lookup.html",
+      "url": "course_materials/formula_sheets_lookup.html",
       "file": "_archived/tutor.html",
       "link_type": "href",
       "exists": false,
-      "resolved_path": "_archived/formula_lookup.html",
+      "resolved_path": "_archived/course_materials/formula_sheets_lookup.html",
       "status": "BROKEN"
     },
     {
@@ -4907,88 +4859,16 @@
       "exists": true,
       "resolved_path": "_archived/web_study_helper.html",
       "status": "OK"
-    },
-    {
-      "url": "CTLE_HTML_Templates/styles.css",
-      "file": "english/Ways to Organize CompareContrast Essay.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "english/CTLE_HTML_Templates/styles.css",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
-      "file": "english/Ways to Organize CompareContrast Essay.html",
-      "link_type": "src",
-      "exists": false,
-      "resolved_path": "english/CTLE_HTML_Templates/CPCC_Logo.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/styles.css",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "english/CTLE_HTML_Templates/styles.css",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "src",
-      "exists": false,
-      "resolved_path": "english/CTLE_HTML_Templates/CPCC_Logo.png",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/styles.css",
-      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
-      "link_type": "href",
-      "exists": true,
-      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/CTLE_HTML_Templates/styles.css",
-      "status": "OK"
-    },
-    {
-      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
-      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
-      "link_type": "src",
-      "exists": true,
-      "resolved_path": "english/Course Schedule (8-Week)_MRCE.html/CTLE_HTML_Templates/CPCC_Logo.png",
-      "status": "OK"
-    },
-    {
-      "url": "CTLE_HTML_Templates/styles.css",
-      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
-      "link_type": "href",
-      "exists": false,
-      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/styles.css",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/Clock_Tower_BG.jpg",
-      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
-      "link_type": "src",
-      "exists": false,
-      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/Clock_Tower_BG.jpg",
-      "status": "BROKEN"
-    },
-    {
-      "url": "CTLE_HTML_Templates/CPCC_Logo.png",
-      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
-      "link_type": "src",
-      "exists": false,
-      "resolved_path": "english/Course Overview and Introduction_MRCE.html/CTLE_HTML_Templates/CPCC_Logo.png",
-      "status": "BROKEN"
     }
   ],
   "summary": {
-    "total_links": 713,
-    "file_links": 461,
+    "total_links": 698,
+    "file_links": 446,
     "external_links": 161,
     "internal_links": 0,
-    "broken_file_links": 110,
-    "broken_external_links": 10,
-    "total_broken": 120,
-    "check_time": "2025-09-05T12:48:29.276454"
+    "broken_file_links": 117,
+    "broken_external_links": 0,
+    "total_broken": 117,
+    "check_time": "2025-09-05T13:08:22.762926"
   }
 }
