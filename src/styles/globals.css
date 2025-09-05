@@ -283,7 +283,7 @@
   --color-text-danger-primary: var(--color-ruby-500);
   --color-text-inverse-primary: #ffffff;
   --color-text-neutral-tertiary: #4b5563;
-  --color-text-brand-tertiary: var(--color-aquamarine-200);
+  --color-text-brand-tertiary: var(--color-aquamarine-700);
   --color-text-danger-tertiary: var(--color-ruby-200);
   --color-text-brand-primary: var(--color-aquamarine-400);
   --color-text-warning-tertiary: var(--color-carnelian-800);
@@ -292,7 +292,7 @@
   --color-text-neutral-secondary: #374151;
   --color-text-secondary: #6b7280;
   --color-text-positive-primary: var(--color-green-600);
-  --color-text-tertiary: #9ca3af;
+  --color-text-tertiary: #6b7280;
   --color-text-brand-secondary: var(--color-aquamarine-700);
   --color-text-warning-secondary: var(--color-carnelian-800);
   --color-text-warning-primary: var(--color-carnelian-900);
@@ -366,7 +366,7 @@
   --color-text-danger-primary: var(--color-ruby-200);
   --color-text-inverse-primary: var(--color-smokey-quartz-950);
   --color-text-neutral-tertiary: var(--color-smokey-quartz-200);
-  --color-text-brand-tertiary: var(--color-aquamarine-500);
+  --color-text-brand-tertiary: var(--color-aquamarine-200);
   --color-text-danger-tertiary: var(--color-ruby-500);
   --color-text-brand-primary: var(--color-aquamarine-100);
   --color-text-warning-tertiary: var(--color-carnelian-200);
@@ -375,7 +375,7 @@
   --color-text-neutral-secondary: var(--color-smokey-quartz-100);
   --color-text-secondary: var(--color-smokey-quartz-200);
   --color-text-positive-primary: var(--color-emerald-300);
-  --color-text-tertiary: var(--color-smokey-quartz-300);
+  --color-text-tertiary: var(--color-smokey-quartz-200);
   --color-text-brand-secondary: var(--color-aquamarine-300);
   --color-text-warning-secondary: var(--color-carnelian-800);
   --color-text-warning-primary: var(--color-carnelian-100);
