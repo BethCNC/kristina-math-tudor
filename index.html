@@ -454,18 +454,18 @@
                     </div>
                     <h3 class="font-subtitle-small text-text-primary mb-4">Quick Tools</h3>
                     <ul class="space-y-3">
-                        <li><a href="#calculator" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group">
+                        <li><button onclick="openCalculator()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
                             <i data-lucide="calculator" class="w-4 h-4 group-hover:text-text-neutral-primary"></i>
                             <span>Calculator</span>
-                        </a></li>
-                        <li><a href="#notes" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group">
+                        </button></li>
+                        <li><button onclick="showNoteTemplates()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
                             <i data-lucide="sticky-note" class="w-4 h-4 group-hover:text-text-neutral-primary"></i>
                             <span>Note Templates</span>
-                        </a></li>
-                        <li><a href="#study-tips" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group">
+                        </button></li>
+                        <li><button onclick="showStudyTips()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
                             <i data-lucide="lightbulb" class="w-4 h-4 group-hover:text-text-neutral-primary"></i>
                             <span>Study Tips</span>
-                        </a></li>
+                        </button></li>
                     </ul>
                 </div>
             </div>
@@ -575,6 +575,20 @@
                 console.log('Calendar system should populate urgent deadlines');
             }
         });
+        
+        // Quick Tools Functions
+        function openCalculator() {
+            // Open system calculator or redirect to online calculator
+            window.open('https://www.calculator.net/', '_blank');
+        }
+        
+        function showNoteTemplates() {
+            alert('📝 Note Templates Coming Soon!\n\nWe\'re working on ADHD-friendly note templates including:\n• Cornell Notes for lectures\n• Problem-solving worksheets\n• Study schedule templates\n• Concept mapping guides');
+        }
+        
+        function showStudyTips() {
+            alert('💡 ADHD Study Tips\n\n• Break study sessions into 25-minute chunks\n• Use visual aids and color coding\n• Study in a quiet, organized space\n• Take regular breaks\n• Review material within 24 hours\n• Use active recall techniques\n• Connect new concepts to existing knowledge');
+        }
     </script>
 </body>
 </html>
