@@ -1,12 +1,13 @@
 {
-  "timestamp": "2025-09-05T13:37:55.061172",
+  "timestamp": "2025-09-05T13:43:11.265198",
   "total_files_checked": 44,
-  "total_issues": 699,
+  "total_issues": 710,
   "issues_by_type": {
-    "icon_accessibility": 699
+    "icon_accessibility": 699,
+    "text_color": 11
   },
   "issues_by_severity": {
-    "medium": 699
+    "medium": 710
   },
   "issues": [
     {
@@ -605,6 +606,13 @@
       "file": "calendar.html"
     },
     {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "calendar.html"
+    },
+    {
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
@@ -1022,6 +1030,20 @@
       "severity": "medium",
       "description": "Icon without aria-label",
       "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
       "file": "chapter-6.html"
     },
     {
@@ -2817,6 +2839,13 @@
       "file": "calendar.html"
     },
     {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "calendar.html"
+    },
+    {
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
@@ -3234,6 +3263,20 @@
       "severity": "medium",
       "description": "Icon without aria-label",
       "location": "Line containing: <i data-lucide=\"folder\" class=\"w-5 h-5\">...",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "chapter-6.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
       "file": "chapter-6.html"
     },
     {
@@ -4703,28 +4746,28 @@
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
-      "location": "Line containing: <i data-lucide=\"book\" class=\"w-4 h-4 text-black\" a...",
+      "location": "Line containing: <i data-lucide=\"book\" class=\"w-4 h-4 text-white\" a...",
       "file": "tutor.html"
     },
     {
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
-      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-4 h-4 text-bla...",
+      "location": "Line containing: <i data-lucide=\"book-open\" class=\"w-4 h-4 text-whi...",
       "file": "tutor.html"
     },
     {
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
-      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-4 h-4 text-b...",
+      "location": "Line containing: <i data-lucide=\"bar-chart-3\" class=\"w-4 h-4 text-w...",
       "file": "tutor.html"
     },
     {
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
-      "location": "Line containing: <i data-lucide=\"function\" class=\"w-4 h-4 text-blac...",
+      "location": "Line containing: <i data-lucide=\"function\" class=\"w-4 h-4 text-whit...",
       "file": "tutor.html"
     },
     {
@@ -4773,7 +4816,7 @@
       "type": "icon_accessibility",
       "severity": "medium",
       "description": "Icon without aria-label",
-      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4 mr-2 text-bla...",
+      "location": "Line containing: <i data-lucide=\"send\" class=\"w-4 h-4 mr-2 text-whi...",
       "file": "tutor.html"
     },
     {
@@ -4795,6 +4838,41 @@
       "severity": "medium",
       "description": "Icon without aria-label",
       "location": "Line containing: <i data-lucide=\"bot\" class=\"w-4 h-4\">...",
+      "file": "tutor.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "tutor.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "tutor.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "tutor.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
+      "file": "tutor.html"
+    },
+    {
+      "type": "text_color",
+      "severity": "medium",
+      "description": "White text - may have contrast issues",
+      "location": "Text color class: text-white",
       "file": "tutor.html"
     },
     {
