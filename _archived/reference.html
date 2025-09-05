@@ -133,12 +133,14 @@
         <div class="card p-8 mb-8 text-center math-card">
             <a href="index.html" class="inline-flex items-center gap-2 text-[var(--accent)] font-medium mb-4 hover:underline">← Back to Home</a>
             <h1 class="text-3xl font-bold text-[var(--text-dark)] mb-2">📚 MAT 143 Quick Reference</h1>
+<div class="mb-4"></div>
             <p class="text-[var(--text-muted)] text-lg">All formulas, concepts, and study strategies in one place</p>
         </div>
         
         <div class="card p-4 mb-6 flex gap-3 items-center">
             <span class="text-xl">🔍</span>
-            <input type="text" id="searchInput" placeholder="Search formulas, concepts, or topics..." onkeyup="filterContent()" class="flex-1 border-none outline-none bg-transparent text-[var(--text-dark)] placeholder-[var(--text-muted)]">
+            <label for="searchInput" class="sr-only">Input field</label>
+<input type="text" id="searchInput" placeholder="Search formulas, concepts, or topics..." onkeyup="filterContent()" class="flex-1 border-none outline-none bg-transparent text-[var(--text-dark)] placeholder-[var(--text-muted)]">
         </div>
         
         <div class="flex flex-wrap gap-2 mb-8 justify-center">
@@ -153,6 +155,7 @@
             <div class="card p-8">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Essential Formulas</h2>
+<div class="mb-3"></div>
                     <p class="text-[var(--text-muted)] text-lg">All the formulas you need for MAT 143, organized by topic</p>
                 </div>
                 
@@ -160,6 +163,7 @@
                     <!-- Interest Formulas -->
                     <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 Simple Interest</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">I = Prt</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -178,6 +182,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 Compound Interest</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">A = P(1 + r/n)^(nt)</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -197,6 +202,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="finance interest">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💰 APY (Annual Percentage Yield)</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">APY = ((1 + r/n)^n - 1) × 100%</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -215,6 +221,7 @@
                     <!-- Conversion Formulas -->
                     <div class="card p-6 hover:shadow-lg transition" data-category="conversions">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📏 Length Conversions</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">1 inch = 2.54 cm<br>1 foot ≈ 0.305 m</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Key Conversions:</h4>
@@ -232,6 +239,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="conversions">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">🌡️ Temperature Conversion</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">F = 9C/5 + 32</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -249,6 +257,7 @@
                     <!-- Statistics Formulas -->
                     <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📊 Z-Score</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">z = (x - μ)/σ</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -267,6 +276,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">📊 Mean (Average)</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">μ = Σx/n</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Variables:</h4>
@@ -285,6 +295,7 @@
                     <!-- Proportions -->
                     <div class="card p-6 hover:shadow-lg transition" data-category="proportions">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">⚖️ Proportions</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">a/b = c/d</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Cross Multiplication:</h4>
@@ -302,6 +313,7 @@
                     <!-- Percentages -->
                     <div class="card p-6 hover:shadow-lg transition" data-category="percentages">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3 flex items-center gap-2">💯 Percentages</h3>
+<div class="mb-2"></div>
                         <div class="formula-display">Part = Whole × Rate<br>Rate = Part/Whole</div>
                         <div class="formula-variables">
                             <h4 class="text-sm font-semibold text-[var(--text-muted)] mb-2">Key Concepts:</h4>
@@ -324,12 +336,14 @@
             <div class="card p-8">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Key Concepts</h2>
+<div class="mb-3"></div>
                     <p class="text-[var(--text-muted)] text-lg">Understanding the big ideas behind the math</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     <div class="card p-6 hover:shadow-lg transition" data-category="thinking">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🧠 Mathematical Thinking</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Learn to think like a mathematician - recognize patterns, make logical connections, and solve problems systematically.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Skills:</h4>
@@ -344,6 +358,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="proportions">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">⚖️ Proportions & Ratios</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Understanding how quantities relate to each other - essential for real-world problem solving.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Ideas:</h4>
@@ -358,6 +373,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="functions">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📈 Functions & Growth</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">How things change over time - from linear patterns to exponential growth.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Types:</h4>
@@ -372,6 +388,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="finance">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">💰 Personal Finance</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Making smart money decisions with mathematical tools.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Areas:</h4>
@@ -386,6 +403,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="measurement">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📏 Measurement & Conversions</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Navigating between different units and measurement systems.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Skills:</h4>
@@ -400,6 +418,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="probability">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎲 Probability</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Understanding chance and uncertainty in decision making.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Concepts:</h4>
@@ -414,6 +433,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="statistics">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Statistics</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Making sense of data and numbers in the real world.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Areas:</h4>
@@ -428,6 +448,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition" data-category="voting">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🗳️ Voting & Fairness</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">How mathematics shapes democracy and fair representation.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Key Topics:</h4>
@@ -448,12 +469,14 @@
             <div class="card p-8">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Study Strategies</h2>
+<div class="mb-3"></div>
                     <p class="text-[var(--text-muted)] text-lg">Proven techniques to master MAT 143 concepts</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📝 Active Learning</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Don't just read - engage with the material actively.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Techniques:</h4>
@@ -468,6 +491,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🔄 Spaced Repetition</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Review material over time, not just before tests.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Schedule:</h4>
@@ -482,6 +506,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎯 Problem-Solving Framework</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Systematic approach to tackle any math problem.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Steps:</h4>
@@ -496,6 +521,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Formula Mastery</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Don't just memorize - understand when and why to use each formula.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Approach:</h4>
@@ -510,6 +536,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🧠 Concept Connections</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">See how different topics relate to each other.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Connections:</h4>
@@ -524,6 +551,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">💪 Confidence Building</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Build mathematical confidence through small wins.</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Strategies:</h4>
@@ -544,12 +572,14 @@
             <div class="card p-8">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-2">Test Preparation</h2>
+<div class="mb-3"></div>
                     <p class="text-[var(--text-muted)] text-lg">Strategic preparation for each test</p>
                 </div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 1: Chapters 1 & 13</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Thinking Mathematically & Voting Methods</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
@@ -564,6 +594,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 2: Chapters 4 & 5</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Proportions & Linear/Exponential Functions</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
@@ -578,6 +609,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 3: Chapters 6 & 7</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Personal Finance & Conversions</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
@@ -592,6 +624,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">📊 Test 4: Chapters 10 & 11</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Probability & Statistics</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Focus Areas:</h4>
@@ -606,6 +639,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">🎯 Test Strategy</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">General approach for all tests</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Tips:</h4>
@@ -620,6 +654,7 @@
                     
                     <div class="card p-6 hover:shadow-lg transition">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-3">⏰ Time Management</h3>
+<div class="mb-2"></div>
                         <p class="text-[var(--text-muted)] mb-3">Make the most of your test time</p>
                         <div class="key-points">
                             <h4 class="text-sm font-semibold text-[var(--urgent-strong)] mb-2">Strategy:</h4>

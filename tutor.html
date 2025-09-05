@@ -23,10 +23,12 @@
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-3">
                         <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
-                            <i data-lucide="brain-circuit" class="w-5 h-5 text-text-inverse-primary"></i>
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-text-primary"></i>
                         </div>
                         <div>
                             <h1 class="font-title-small text-text-primary">AI Tutor</h1>
+<div class="mb-4"></div>
+<div class="mb-4"></div>
                             <p class="font-caption text-text-secondary">MAT 143 & ENG 111 Helper</p>
                         </div>
                     </div>
@@ -44,7 +46,7 @@
         <!-- Subject Selection -->
         <div class="mb-6">
             <div class="flex gap-2">
-                <button id="math-btn" class="subject-btn active px-4 py-2 rounded-lg font-button transition-colors bg-brand text-text-inverse-primary">
+                <button id="math-btn" class="subject-btn active px-4 py-2 rounded-lg font-button transition-colors bg-brand text-text-primary">
                     <i data-lucide="calculator" class="w-4 h-4 inline mr-2"></i>
                     MAT 143 Math
                 </button>
@@ -62,7 +64,7 @@
                 <div class="message ai-message bg-background rounded-lg p-4">
                     <div class="flex items-start space-x-3">
                         <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
-                            <i data-lucide="brain-circuit" class="w-4 h-4 text-text-inverse-primary"></i>
+                            <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
                         </div>
                         <div>
                             <p class="font-body-regular text-text-primary mb-2">Hi Kristina! I'm your AI tutor, ready to help with MAT 143 math and ENG 111 writing.</p>
@@ -80,7 +82,8 @@
             <!-- Input Area -->
             <div class="border-t border-border p-4">
                 <div class="flex gap-2">
-                    <input 
+                    <label for="user-input" class="sr-only">Input field</label>
+<input 
                         id="user-input" 
                         type="text" 
                         placeholder="Ask me about math formulas, writing help, or study strategies..."
@@ -88,7 +91,7 @@
                     >
                     <button 
                         id="send-btn" 
-                        class="px-6 py-3 bg-brand text-text-inverse-primary rounded-lg font-button hover:bg-brand-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                        class="px-6 py-3 bg-brand text-text-primary rounded-lg font-button hover:bg-brand-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         <i data-lucide="send" class="w-4 h-4"></i>
                     </button>
@@ -101,18 +104,24 @@
             <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="calculator" class="w-5 h-5 text-brand mb-2"></i>
                 <h3 class="font-subtitle-small text-text-primary">Formula Help</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
                 <p class="font-caption text-text-secondary">Get help with specific formulas</p>
             </button>
             
             <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="book-open" class="w-5 h-5 text-brand mb-2"></i>
                 <h3 class="font-subtitle-small text-text-primary">Chapter Review</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
                 <p class="font-caption text-text-secondary">Review chapter concepts</p>
             </button>
             
             <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
                 <i data-lucide="edit" class="w-5 h-5 text-brand mb-2"></i>
                 <h3 class="font-subtitle-small text-text-primary">Writing Help</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
                 <p class="font-caption text-text-secondary">Essay structure & grammar</p>
             </button>
         </div>
@@ -141,12 +150,12 @@
             
             // Update button states
             document.querySelectorAll('.subject-btn').forEach(btn => {
-                btn.classList.remove('active', 'bg-brand', 'text-text-inverse-primary');
+                btn.classList.remove('active', 'bg-brand', 'text-text-primary');
                 btn.classList.add('bg-background-secondary', 'text-text-primary');
             });
             
             const activeBtn = subject === 'math' ? mathBtn : englishBtn;
-            activeBtn.classList.add('active', 'bg-brand', 'text-text-inverse-primary');
+            activeBtn.classList.add('active', 'bg-brand', 'text-text-primary');
             activeBtn.classList.remove('bg-background-secondary', 'text-text-primary');
             
             // Clear chat and show subject-specific welcome
@@ -189,7 +198,7 @@
                     <div class="bg-background rounded-lg p-4">
                         <div class="flex items-start space-x-3">
                             <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
-                                <i data-lucide="brain-circuit" class="w-4 h-4 text-text-inverse-primary"></i>
+                                <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
                             </div>
                             <div>
                                 <p class="font-body-regular text-text-primary">${content}</p>
@@ -205,7 +214,7 @@
             } else {
                 messageDiv.innerHTML = `
                     <div class="bg-brand rounded-lg p-4 ml-12">
-                        <p class="font-body-regular text-text-inverse-primary">${content}</p>
+                        <p class="font-body-regular text-text-primary">${content}</p>
                     </div>
                 `;
             }

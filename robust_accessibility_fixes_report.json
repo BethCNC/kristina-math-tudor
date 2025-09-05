@@ -1,0 +1,218 @@
+{
+  "timestamp": "2025-09-05T12:40:48.497522",
+  "total_files_processed": 41,
+  "total_fixes_applied": 139,
+  "files_fixed": [
+    {
+      "file": "chapter-1.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.458469"
+    },
+    {
+      "file": "index.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.459514"
+    },
+    {
+      "file": "calendar.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.460517"
+    },
+    {
+      "file": "formula_lookup.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.461028"
+    },
+    {
+      "file": "chapter-10.html",
+      "fixes": 6,
+      "timestamp": "2025-09-05T12:40:48.461745"
+    },
+    {
+      "file": "chapter-7.html",
+      "fixes": 6,
+      "timestamp": "2025-09-05T12:40:48.463146"
+    },
+    {
+      "file": "chapter-6.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.465258"
+    },
+    {
+      "file": "chapter-11.html",
+      "fixes": 6,
+      "timestamp": "2025-09-05T12:40:48.466118"
+    },
+    {
+      "file": "english_materials.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.467082"
+    },
+    {
+      "file": "chapter-5.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.468261"
+    },
+    {
+      "file": "chapter-13.html",
+      "fixes": 6,
+      "timestamp": "2025-09-05T12:40:48.469126"
+    },
+    {
+      "file": "chapter-4.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.471240"
+    },
+    {
+      "file": "chapter-8.html",
+      "fixes": 5,
+      "timestamp": "2025-09-05T12:40:48.472084"
+    },
+    {
+      "file": "chapter-3.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.472828"
+    },
+    {
+      "file": "tutor.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.473764"
+    },
+    {
+      "file": "chapter-1.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.475120"
+    },
+    {
+      "file": "index.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.475870"
+    },
+    {
+      "file": "calendar.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.476971"
+    },
+    {
+      "file": "formula_lookup.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.477486"
+    },
+    {
+      "file": "chapter-10.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.478210"
+    },
+    {
+      "file": "chapter-7.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.478921"
+    },
+    {
+      "file": "chapter-6.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.480831"
+    },
+    {
+      "file": "chapter-11.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.481621"
+    },
+    {
+      "file": "english_materials.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.482299"
+    },
+    {
+      "file": "chapter-5.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.483553"
+    },
+    {
+      "file": "chapter-13.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.484161"
+    },
+    {
+      "file": "chapter-4.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.485765"
+    },
+    {
+      "file": "chapter-8.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.486687"
+    },
+    {
+      "file": "chapter-3.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.487360"
+    },
+    {
+      "file": "tutor.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.487705"
+    },
+    {
+      "file": "_archived/web_study_helper.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.488524"
+    },
+    {
+      "file": "_archived/test_prep.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.489893"
+    },
+    {
+      "file": "_archived/calendar_study_system.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.491163"
+    },
+    {
+      "file": "_archived/english_tutor.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.491642"
+    },
+    {
+      "file": "_archived/reference.html",
+      "fixes": 4,
+      "timestamp": "2025-09-05T12:40:48.492980"
+    },
+    {
+      "file": "_archived/homework_help.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.493741"
+    },
+    {
+      "file": "_archived/tutor.html",
+      "fixes": 3,
+      "timestamp": "2025-09-05T12:40:48.494690"
+    },
+    {
+      "file": "english/Ways to Organize CompareContrast Essay.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.495007"
+    },
+    {
+      "file": "english/Topic Ideas - Copy (1).html",
+      "fixes": 1,
+      "timestamp": "2025-09-05T12:40:48.495686"
+    },
+    {
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "fixes": 1,
+      "timestamp": "2025-09-05T12:40:48.496860"
+    },
+    {
+      "file": "english/Course Overview and Introduction_MRCE.html/Course Overview and Introduction_MRCE.html",
+      "fixes": 2,
+      "timestamp": "2025-09-05T12:40:48.497317"
+    }
+  ],
+  "summary": {
+    "contrast_issues_fixed": 139,
+    "adhd_improvements_applied": 41,
+    "accessibility_attributes_added": 41,
+    "design_system_compliance_improved": 41
+  }
+}

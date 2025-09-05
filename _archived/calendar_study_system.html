@@ -99,6 +99,7 @@
         <div class="card mb-8 bg-[var(--surface-dark)] text-[var(--text-light)] p-8 md:p-12 text-center">
             <a href="index.html" class="inline-flex items-center gap-2 text-[var(--text-light)] opacity-80 hover:opacity-100 font-medium mb-4">← Back to Home</a>
             <h1 class="text-3xl md:text-4xl font-bold mb-2">📅 MAT 143 Study Calendar</h1>
+<div class="mb-4"></div>
             <p class="text-lg opacity-90">Your complete semester timeline and study guide</p>
             
             <div class="bg-[var(--surface-light)] bg-opacity-10 p-4 rounded-lg mt-6" id="current-week-info">
@@ -111,6 +112,7 @@
             <!-- Main Menu -->
             <div id="main-menu" class="content-area active">
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">What would you like to see today? 📚</h2>
+<div class="mb-3"></div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('schedule')">📅 Full Semester Schedule</button>
                     <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('current-week')">📍 This Week's Focus</button>
@@ -125,6 +127,7 @@
             <div id="schedule" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📅 Complete Semester Schedule - Fall 2025</h2>
+<div class="mb-3"></div>
                 
                 <div id="semester-timeline" class="space-y-6">
                     <!-- Week cards will be populated by JavaScript -->
@@ -135,6 +138,7 @@
             <div id="current-week" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📍 This Week's Focus</h2>
+<div class="mb-3"></div>
                 
                 <div id="current-week-detail">
                     <!-- Current week info populated by JavaScript -->
@@ -145,10 +149,12 @@
             <div id="tests" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📊 Test Schedule & Preparation</h2>
+<div class="mb-3"></div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card p-6 border-t-4 border-[var(--urgent)]">
                         <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">📝 Test 1</h3>
+<div class="mb-2"></div>
                         <p class="mb-2"><strong>Date:</strong> September 8-12, 2025</p>
                         <p class="mb-2"><strong>Chapters:</strong> 1 & 13</p>
                         <p class="mb-3"><strong>Topics:</strong></p>
@@ -158,11 +164,12 @@
                             <li>• Voting methods</li>
                             <li>• Apportionment</li>
                         </ul>
-                        <div class="countdown p-3 rounded-lg text-center text-white font-semibold" id="test1-countdown"></div>
+                        <div class="countdown p-3 rounded-lg text-center text-text-primary font-semibold" id="test1-countdown"></div>
                     </div>
                     
                     <div class="card p-6 border-t-4 border-[var(--urgent)]">
                         <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">📈 Test 2</h3>
+<div class="mb-2"></div>
                         <p class="mb-2"><strong>Date:</strong> September 29 - October 3, 2025</p>
                         <p class="mb-2"><strong>Chapters:</strong> 4 & 5</p>
                         <p class="mb-3"><strong>Topics:</strong></p>
@@ -172,11 +179,12 @@
                             <li>• Linear functions</li>
                             <li>• Exponential functions</li>
                         </ul>
-                        <div class="countdown p-3 rounded-lg text-center text-white font-semibold" id="test2-countdown"></div>
+                        <div class="countdown p-3 rounded-lg text-center text-text-primary font-semibold" id="test2-countdown"></div>
                     </div>
                     
                     <div class="card p-6 border-t-4 border-[var(--urgent)]">
                         <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">💰 Test 3</h3>
+<div class="mb-2"></div>
                         <p class="mb-2"><strong>Date:</strong> November 3-7, 2025</p>
                         <p class="mb-2"><strong>Chapters:</strong> 6 & 7</p>
                         <p class="mb-3"><strong>Topics:</strong></p>
@@ -186,11 +194,12 @@
                             <li>• Metric conversions</li>
                             <li>• Temperature conversions</li>
                         </ul>
-                        <div class="countdown p-3 rounded-lg text-center text-white font-semibold" id="test3-countdown"></div>
+                        <div class="countdown p-3 rounded-lg text-center text-text-primary font-semibold" id="test3-countdown"></div>
                     </div>
                     
                     <div class="card p-6 border-t-4 border-[var(--urgent)]">
                         <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">🎲 Test 4</h3>
+<div class="mb-2"></div>
                         <p class="mb-2"><strong>Date:</strong> December 8-12, 2025</p>
                         <p class="mb-2"><strong>Chapters:</strong> 10 & 11</p>
                         <p class="mb-3"><strong>Topics:</strong></p>
@@ -200,7 +209,7 @@
                             <li>• Statistical analysis</li>
                             <li>• Z-scores and normal distribution</li>
                         </ul>
-                        <div class="countdown p-3 rounded-lg text-center text-white font-semibold" id="test4-countdown"></div>
+                        <div class="countdown p-3 rounded-lg text-center text-text-primary font-semibold" id="test4-countdown"></div>
                     </div>
                 </div>
             </div>
@@ -209,9 +218,11 @@
             <div id="progress" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📈 Progress Tracker</h2>
+<div class="mb-3"></div>
                 
                 <div class="card p-6 mb-8">
                     <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📊 Semester Progress</h3>
+<div class="mb-2"></div>
                     <div class="w-full h-5 bg-[var(--bg-muted)] rounded-full overflow-hidden mb-4">
                         <div class="progress-fill h-full rounded-full" id="semester-progress" style="width: 0%"></div>
                     </div>
@@ -221,6 +232,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">✅ Completed</h3>
+<div class="mb-2"></div>
                         <div id="completed-items">
                             <!-- Populated by JavaScript -->
                         </div>
@@ -228,6 +240,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">⏳ Current Focus</h3>
+<div class="mb-2"></div>
                         <div id="current-focus">
                             <!-- Populated by JavaScript -->
                         </div>
@@ -235,6 +248,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">🔮 Coming Up</h3>
+<div class="mb-2"></div>
                         <div id="upcoming-items">
                             <!-- Populated by JavaScript -->
                         </div>
@@ -246,10 +260,12 @@
             <div id="formulas" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📐 Quick Formula Reference</h2>
+<div class="mb-3"></div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">💰 Personal Finance (Chapter 6)</h3>
+<div class="mb-2"></div>
                         <div class="bg-[var(--bg-muted)] p-4 rounded-lg font-mono text-sm mb-4">
                             Simple Interest: I = Prt<br>
                             Compound Interest: A = P(1 + r/n)^(nt)<br>
@@ -261,6 +277,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📏 Conversions (Chapter 7)</h3>
+<div class="mb-2"></div>
                         <div class="bg-[var(--bg-muted)] p-4 rounded-lg font-mono text-sm mb-4">
                             1 inch = 2.54 cm<br>
                             1 foot ≈ 0.305 m<br>
@@ -273,6 +290,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📊 Statistics (Chapter 11)</h3>
+<div class="mb-2"></div>
                         <div class="bg-[var(--bg-muted)] p-4 rounded-lg font-mono text-sm mb-4">
                             Z-score: z = (x - μ) / σ<br>
                             Sample z: z = (x - x̄) / s
@@ -282,6 +300,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">🗳️ Apportionment (Chapter 13)</h3>
+<div class="mb-2"></div>
                         <div class="bg-[var(--bg-muted)] p-4 rounded-lg font-mono text-sm mb-4">
                             Standard Divisor:<br>
                             SD = total pop / total items<br><br>
@@ -296,10 +315,12 @@
             <div id="study-tips" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">💡 Weekly Study Strategy</h2>
+<div class="mb-3"></div>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📅 Daily Study Plan</h3>
+<div class="mb-2"></div>
                         <ul class="space-y-2 text-sm">
                             <li><strong>Monday:</strong> Review weekend Hawkes assignments</li>
                             <li><strong>Tuesday:</strong> Work on current week's sections</li>
@@ -313,6 +334,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">🎯 Hawkes Learning Success</h3>
+<div class="mb-2"></div>
                         <ul class="space-y-2 text-sm">
                             <li>• Work on assignments throughout the week</li>
                             <li>• Don't wait until Sunday to start</li>
@@ -325,6 +347,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📚 Test Preparation Timeline</h3>
+<div class="mb-2"></div>
                         <ul class="space-y-2 text-sm">
                             <li><strong>2 weeks before:</strong> Start reviewing covered chapters</li>
                             <li><strong>1 week before:</strong> Focus on weak areas</li>
@@ -336,6 +359,7 @@
                     
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">🌟 Mindset & Motivation</h3>
+<div class="mb-2"></div>
                         <p class="text-sm leading-relaxed mb-4">Remember: You're not behind, you're exactly where you need to be. Every expert was once a beginner. Focus on progress, not perfection. Celebrate small wins - they add up to big success!</p>
                         
                         <div class="bg-green-50 border border-green-200 p-4 rounded-lg">
@@ -755,6 +779,7 @@
                     html += `
                         <div class="card p-6 text-center bg-green-50 border border-green-200">
                             <h3 class="text-lg font-bold text-green-700 mb-2">🏖️ Fall Break: October 13-19, 2025</h3>
+<div class="mb-2"></div>
                             <p class="text-green-600">No classes - Use this time to catch up and recharge!</p>
                         </div>
                     `;
@@ -823,6 +848,7 @@
                 detailElement.innerHTML = `
                     <div class="card p-6">
                         <h3 class="text-xl font-bold mb-4">${currentWeek.message}</h3>
+<div class="mb-2"></div>
                         <p class="mb-4">Get ready! In ${currentWeek.daysUntil} days you'll start with:</p>
                         <ul class="space-y-2">
                             <li>• Setting up Hawkes Learning</li>
@@ -835,6 +861,7 @@
                 detailElement.innerHTML = `
                     <div class="card p-6">
                         <h3 class="text-xl font-bold">${currentWeek.message}</h3>
+<div class="mb-2"></div>
                     </div>
                 `;
             }

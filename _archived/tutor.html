@@ -178,6 +178,7 @@
                     <i data-lucide="bot" class="w-8 h-8"></i>
                     Your AI Math Tutor
                 </h1>
+<div class="mb-4"></div>
                 <p class="text-[var(--text-light)] text-lg opacity-90">Ask me anything about MAT 143 - I'm here to help make math make sense!</p>
             </div>
         </div>
@@ -242,6 +243,7 @@
                             <div class="flex items-center justify-center gap-2 mb-4">
                                 <i data-lucide="graduation-cap" class="w-8 h-8 text-[var(--yellow-500)]"></i>
                                 <h3 class="text-xl text-[var(--text-dark)]">Welcome to your MAT 143 tutor!</h3>
+<div class="mb-2"></div>
                             </div>
                             <p class="mb-6">I'm here to help you understand math concepts, solve problems, and prepare for tests. Just ask me anything!</p>
                             <div class="flex flex-col gap-3">
@@ -263,7 +265,8 @@
                     
                     <div class="p-6 border-t border-[var(--border)] bg-[var(--neutral-100)] rounded-b-2xl">
                         <div class="flex gap-3">
-                            <input type="text" id="messageInput" placeholder="Ask me anything about MAT 143..." onkeypress="handleKeyPress(event)" class="flex-1 p-4 border-2 border-[var(--border)] rounded-lg text-[var(--text-dark)] bg-white focus:outline-none focus:border-[var(--yellow-500)]">
+                            <label for="messageInput" class="sr-only">Input field</label>
+<input type="text" id="messageInput" placeholder="Ask me anything about MAT 143..." onkeypress="handleKeyPress(event)" class="flex-1 p-4 border-2 border-[var(--border)] rounded-lg text-[var(--text-dark)] bg-white focus:outline-none focus:border-[var(--yellow-500)]">
                             <button class="btn btn-primary is-math" onclick="sendMessage()" id="sendBtn">
                                 <i data-lucide="send" class="w-4 h-4 mr-2 text-black"></i>
                                 Send
