@@ -2,14 +2,6 @@
   "internal_links": [],
   "external_links": [
     {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
       "file": "chapter-10.html",
       "link_type": "href",
@@ -18,52 +10,20 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
-      "url": "https://fonts.googleapis.com",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "chapter-10.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-1.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-7.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-10.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -74,8 +34,16 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "formula_lookup.html",
+      "file": "calendar.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -83,7 +51,7 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-10.html",
+      "file": "chapter-1.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -98,20 +66,44 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "chapter-11.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-11.html",
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-7.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://cdn.tailwindcss.com",
@@ -122,6 +114,22 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
       "file": "chapter-11.html",
       "link_type": "href",
@@ -130,8 +138,24 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-6.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -146,6 +170,22 @@
       "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
     },
     {
+      "url": "https://fonts.googleapis.com",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.googleapis.com/"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
       "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
       "file": "chapter-1.html",
       "link_type": "href",
@@ -154,36 +194,20 @@
       "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
       "file": "english_materials.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-11.html",
-      "link_type": "src",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
@@ -195,7 +219,319 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-6.html",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-5.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-4.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-8.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
+      "file": "chapter-5.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-1.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "index.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "chapter-4.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "calendar.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-3.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "formula_lookup.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-7.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-10.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
+      "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-7.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -203,19 +539,99 @@
     },
     {
       "url": "https://fonts.googleapis.com",
-      "file": "chapter-13.html",
+      "file": "english_tutor.html",
       "link_type": "href",
       "status": "BROKEN",
       "status_code": 404,
       "final_url": "https://fonts.googleapis.com/"
     },
     {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
       "url": "https://fonts.gstatic.com",
-      "file": "chapter-13.html",
+      "file": "english_tutor.html",
       "link_type": "href",
       "status": "BROKEN",
       "status_code": 404,
       "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
+      "file": "chapter-10.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
+      "file": "english_materials.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-11.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-6.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "chapter-13.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://cdn.tailwindcss.com",
@@ -235,7 +651,39 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
       "file": "chapter-11.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "chapter-5.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -250,24 +698,8 @@
       "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
     },
     {
-      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "english_materials.html",
+      "file": "chapter-13.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -275,31 +707,7 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-5.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
-      "file": "chapter-6.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-13.html",
+      "file": "chapter-8.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -323,14 +731,6 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-8.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
       "file": "tutor.html",
       "link_type": "src",
       "status": "OK",
@@ -338,20 +738,20 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-1.html",
-      "link_type": "src",
+      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
+      "file": "chapter-5.html",
+      "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "chapter-13.html",
+      "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
     },
     {
       "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
@@ -363,39 +763,7 @@
     },
     {
       "url": "https://fonts.googleapis.com",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "chapter-7.html",
+      "file": "dist/chapter-7.html",
       "link_type": "href",
       "status": "BROKEN",
       "status_code": 404,
@@ -403,347 +771,51 @@
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "index.html",
+      "file": "dist/chapter-1.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-10.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
-      "file": "chapter-5.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "formula_lookup.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-10.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-11.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-7.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "chapter-1.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-6.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
-      "file": "english_materials.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
       "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
-      "file": "chapter-1.html",
+      "file": "dist/chapter-1.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
     },
     {
-      "url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW",
-      "file": "chapter-10.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "chapter-13.html",
+      "file": "dist/chapter-7.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
+      "url": "https://fonts.gstatic.com",
+      "file": "dist/chapter-7.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-11.html",
+      "file": "dist/calendar.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
-      "file": "chapter-6.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
-    },
-    {
       "url": "https://cdn.tailwindcss.com",
-      "file": "chapter-13.html",
+      "file": "dist/chapter-7.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
-      "file": "chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-5.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-4.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv",
-      "file": "chapter-11.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-8.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "tutor.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "chapter-3.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK",
-      "file": "chapter-5.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
-      "file": "chapter-4.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "dist/chapter-7.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -754,52 +826,12 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-1.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
       "url": "https://fonts.googleapis.com",
       "file": "dist/english_materials.html",
       "link_type": "href",
       "status": "BROKEN",
       "status_code": 404,
       "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/calendar.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/formula_lookup.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "dist/english_materials.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap",
@@ -810,6 +842,30 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&display=swap"
     },
     {
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "dist/chapter-1.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://fonts.gstatic.com",
+      "file": "dist/english_materials.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/chapter-7.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
       "url": "https://fonts.googleapis.com",
       "file": "dist/chapter-13.html",
       "link_type": "href",
@@ -819,27 +875,11 @@
     },
     {
       "url": "https://cdn.tailwindcss.com",
-      "file": "dist/chapter-7.html",
+      "file": "dist/english_materials.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb",
-      "file": "dist/chapter-1.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "dist/chapter-1.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Host Grotesk:wght@400;500;600;700&display=swap",
@@ -850,24 +890,8 @@
       "final_url": "https://fonts.googleapis.com/css2?family=Host%20Grotesk:wght@400;500;600;700&display=swap"
     },
     {
-      "url": "https://fonts.gstatic.com",
-      "file": "dist/chapter-13.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "dist/english_materials.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-7.html",
+      "file": "dist/calendar.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -882,6 +906,22 @@
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
+      "url": "https://fonts.gstatic.com",
+      "file": "dist/chapter-13.html",
+      "link_type": "href",
+      "status": "BROKEN",
+      "status_code": 404,
+      "final_url": "https://fonts.gstatic.com/"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
+      "file": "chapter-6.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
+    },
+    {
       "url": "https://cdn.tailwindcss.com",
       "file": "dist/chapter-13.html",
       "link_type": "src",
@@ -890,140 +930,12 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/english_materials.html",
+      "file": "dist/formula_lookup.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/test_prep.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/web_study_helper.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-13.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/chapter-4.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/test_prep.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
-    },
-    {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "dist/tutor.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/reference.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
-    },
-    {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/calendar_study_system.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
     },
     {
       "url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9",
@@ -1034,6 +946,118 @@
       "final_url": "https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9"
     },
     {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/english_materials.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/chapter-4.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/chapter-13.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/web_study_helper.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/test_prep.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "dist/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/calendar_study_system.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/test_prep.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
       "url": "https://cdn.tailwindcss.com",
       "file": "_archived/calendar_study_system.html",
       "link_type": "src",
@@ -1051,19 +1075,11 @@
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/homework_help.html",
+      "file": "_archived/reference.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
-    },
-    {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/homework_help.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
     },
     {
       "url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx",
@@ -1074,24 +1090,40 @@
       "final_url": "https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/tutor.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/calendar_study_system.html",
       "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://fonts.gstatic.com",
-      "file": "_archived/tutor.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.gstatic.com/"
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/test_prep.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
     },
     {
       "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
-      "file": "_archived/tutor.html",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/reference.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1106,28 +1138,28 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
-      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
-      "file": "dist/chapter-4.html",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://cdn.tailwindcss.com",
-      "file": "_archived/homework_help.html",
-      "link_type": "src",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "_archived/test_prep.html",
-      "link_type": "src",
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/tutor.html",
+      "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
     },
     {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
@@ -1139,6 +1171,22 @@
     },
     {
       "url": "https://cdn.tailwindcss.com",
+      "file": "_archived/homework_help.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://cdn.tailwindcss.com/3.4.17"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap",
+      "file": "_archived/homework_help.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://fonts.googleapis.com/css2?family=Vend+Sans:wght@400;500;600;700;800;900&display=swap"
+    },
+    {
+      "url": "https://cdn.tailwindcss.com",
       "file": "_archived/tutor.html",
       "link_type": "src",
       "status": "OK",
@@ -1146,24 +1194,8 @@
       "final_url": "https://cdn.tailwindcss.com/3.4.17"
     },
     {
-      "url": "https://fonts.googleapis.com",
-      "file": "_archived/homework_help.html",
-      "link_type": "href",
-      "status": "BROKEN",
-      "status_code": 404,
-      "final_url": "https://fonts.googleapis.com/"
-    },
-    {
-      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
-      "file": "dist/chapter-13.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
-    },
-    {
       "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "_archived/tutor.html",
+      "file": "_archived/homework_help.html",
       "link_type": "src",
       "status": "OK",
       "status_code": 200,
@@ -1171,23 +1203,23 @@
     },
     {
       "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
-      "file": "english/Ways to Organize CompareContrast Essay.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
-    },
-    {
-      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
-      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
-      "link_type": "href",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
-    },
-    {
-      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
       "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv",
+      "file": "dist/chapter-4.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Ways to Organize CompareContrast Essay.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
@@ -1202,28 +1234,20 @@
       "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
     },
     {
-      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
-      "file": "_archived/homework_help.html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
-    },
-    {
-      "url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d",
-      "file": "english/Topic Ideas - Copy (1).html",
-      "link_type": "src",
-      "status": "OK",
-      "status_code": 200,
-      "final_url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d"
-    },
-    {
-      "url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics",
-      "file": "english/Topic Ideas - Copy (1).html",
+      "url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg",
+      "file": "dist/chapter-13.html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
-      "final_url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics"
+      "final_url": "https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg"
+    },
+    {
+      "url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css",
+      "file": "english/Course Schedule (8-Week)_MRCE.html/Course Schedule (8-Week)_MRCE.html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"
     },
     {
       "url": "https://www.thoughtco.com/compare-and-contrast-essay-topics-7822",
@@ -1234,12 +1258,36 @@
       "final_url": "https://www.thoughtco.com/compare-and-contrast-essay-topics-7822"
     },
     {
+      "url": "https://unpkg.com/lucide@latest/dist/umd/lucide.js",
+      "file": "_archived/tutor.html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://unpkg.com/lucide@0.542.0/dist/umd/lucide.js"
+    },
+    {
       "url": "https://pxhere.com/en/photo/1435021",
       "file": "english/Topic Ideas - Copy (1).html",
       "link_type": "href",
       "status": "OK",
       "status_code": 200,
       "final_url": "https://pxhere.com/en/photo/1435021"
+    },
+    {
+      "url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "href",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://www.yourdictionary.com/articles/compare-contrast-essay-topics"
+    },
+    {
+      "url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d",
+      "file": "english/Topic Ideas - Copy (1).html",
+      "link_type": "src",
+      "status": "OK",
+      "status_code": 200,
+      "final_url": "https://c.pxhere.com/images/8d/68/6ac208f9fcd89e0d8005500c3c79-1435021.jpg!d"
     }
   ],
   "broken_links": [],
@@ -1797,6 +1845,126 @@
       "status": "OK"
     },
     {
+      "url": "src/styles/globals.css",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/favicon.ico",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/apple-touch-icon.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "public/favicons/apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "public/favicons/favicon-32x32.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/favicon-16x16.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "public/site.webmanifest",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "tutor.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "status": "OK"
+    },
+    {
+      "url": "english/Ways to Organize CompareContrast Essay.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Ways to Organize CompareContrast Essay.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Topic Ideas - Copy (1).html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Topic Ideas - Copy (1).html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "tutor.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
+    },
+    {
       "url": "/public/favicons/favicon.ico",
       "file": "english_materials.html",
       "link_type": "href",
@@ -1989,12 +2157,12 @@
       "status": "OK"
     },
     {
-      "url": "english_tutor.html",
+      "url": "tutor.html",
       "file": "english_materials.html",
       "link_type": "href",
-      "exists": false,
-      "resolved_path": "english_tutor.html",
-      "status": "BROKEN"
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
     },
     {
       "url": "calendar.html",
@@ -2853,6 +3021,126 @@
       "status": "OK"
     },
     {
+      "url": "src/styles/globals.css",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "src/styles/globals.css",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/favicon.ico",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon.ico",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/apple-touch-icon.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": false,
+      "resolved_path": "public/favicons/apple-touch-icon.png",
+      "status": "BROKEN"
+    },
+    {
+      "url": "public/favicons/favicon-32x32.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-32x32.png",
+      "status": "OK"
+    },
+    {
+      "url": "public/favicons/favicon-16x16.png",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/favicons/favicon-16x16.png",
+      "status": "OK"
+    },
+    {
+      "url": "public/site.webmanifest",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "public/site.webmanifest",
+      "status": "OK"
+    },
+    {
+      "url": "index.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "index.html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "tutor.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/\u270d Submit- Critical Reading Discussion (Due-8:22).txt",
+      "status": "OK"
+    },
+    {
+      "url": "english/Ways to Organize CompareContrast Essay.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Ways to Organize CompareContrast Essay.html",
+      "status": "OK"
+    },
+    {
+      "url": "english/Topic Ideas - Copy (1).html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english/Topic Ideas - Copy (1).html",
+      "status": "OK"
+    },
+    {
+      "url": "english_materials.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "english_materials.html",
+      "status": "OK"
+    },
+    {
+      "url": "calendar.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "calendar.html",
+      "status": "OK"
+    },
+    {
+      "url": "tutor.html",
+      "file": "english_tutor.html",
+      "link_type": "href",
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
+    },
+    {
       "url": "/public/favicons/favicon.ico",
       "file": "english_materials.html",
       "link_type": "href",
@@ -3045,12 +3333,12 @@
       "status": "OK"
     },
     {
-      "url": "english_tutor.html",
+      "url": "tutor.html",
       "file": "english_materials.html",
       "link_type": "href",
-      "exists": false,
-      "resolved_path": "english_tutor.html",
-      "status": "BROKEN"
+      "exists": true,
+      "resolved_path": "tutor.html",
+      "status": "OK"
     },
     {
       "url": "calendar.html",
@@ -4694,13 +4982,13 @@
     }
   ],
   "summary": {
-    "total_links": 677,
-    "file_links": 431,
-    "external_links": 155,
+    "total_links": 713,
+    "file_links": 461,
+    "external_links": 161,
     "internal_links": 0,
     "broken_file_links": 110,
-    "broken_external_links": 38,
-    "total_broken": 148,
-    "check_time": "2025-09-05T12:46:54.478623"
+    "broken_external_links": 10,
+    "total_broken": 120,
+    "check_time": "2025-09-05T12:48:29.276454"
   }
 }
