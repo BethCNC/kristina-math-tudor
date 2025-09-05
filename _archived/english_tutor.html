@@ -3,15 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENG 111 Writing Coach - Complete Tutorial System</title>
-    <link rel="stylesheet" href="design-system.css">
+    <title>ENG 111 Writing Coach - Complete Tutorial System - Kristina's Academic Success Dashboard</title>
+    <meta name="description" content="Course materials and resources for MAT 143 and ENG 111.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-lightest-neutral">
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand text-text-primary flex items-center justify-center">
+                            <i data-lucide="book-open" class="w-5 h-5 text-text-primary" aria-label="Course materials"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">ENG 111 Writing Coach - Complete Tutorial System</h1>
+                            <p class="font-caption text-text-secondary">Course Materials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-1" role="navigation" aria-label="Main navigation">
+                    <a href="../index.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Home</a>
+                    <a href="../calendar.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Calendar</a>
+                    <a href="../tutor.html" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border border border-border-hover transition-colors">Tutor</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-background-secondary border border-border rounded-xl p-8">
+            <div class="prose prose-lg max-w-none">
+                
 
 <header class="header-dark">
     <div class="max-w-6xl mx-auto px-4 py-6">
         <div class="flex items-center justify-between">
-            <h1 class="text-2xl font-bold text-text-primary flex items-center gap-2">
+            <h1 class="text-2xl font-bold text-text-primary flex items-center gap-2" class="text-3xl font-bold text-text-primary mb-6">
                 <i data-lucide="pen-tool" class="w-8 h-8"></i>
                 ENG 111 Writing Coach
             </h1>
@@ -44,7 +84,7 @@
             </span>
         </div>
         <div class="space-y-4">
-            <p class="text-gray-700">Get instant help with any writing challenge!</p>
+            <p class="text-gray-700" class="text-text-secondary mb-4">Get instant help with any writing challenge!</p>
             <div class="border border-gray-200 rounded-lg p-4">
                 <textarea 
                     id="writing-question" 
@@ -112,7 +152,7 @@
         container.innerHTML = essays.map(essay => `
             <div class="border border-gray-200 rounded-lg p-4">
                 <h5 class="font-semibold mb-2">${essay.title}</h5>
-                <p class="text-sm text-gray-700 mb-3">Due: ${essay.dueDate}</p>
+                <p class="text-sm text-gray-700 mb-3" class="text-text-secondary mb-4">Due: ${essay.dueDate}</p>
                 <div class="space-y-2">
                     <label class="flex items-center gap-2 text-sm">
                         <input type="checkbox" onchange="updateEssayProgress('${essay.type}', 'brainstorm')" class="rounded">
@@ -167,24 +207,41 @@
         } catch (error) {
             answerDiv.innerHTML = `
                 <div class="space-y-3">
-                    <p><strong>I'm here to help with your writing!</strong> ✍️</p>
-                    <p>While I work on getting connected, here are some quick tips:</p>
+                    <p class="text-text-secondary mb-4"><strong>I'm here to help with your writing!</strong> ✍️</p>
+                    <p class="text-text-secondary mb-4">While I work on getting connected, here are some quick tips:</p>
                     <div class="bg-white p-3 rounded border">
-                        <p><strong>For any essay:</strong></p>
-                        <ol class="list-decimal list-inside text-sm mt-2 space-y-1">
-                            <li>Start with brainstorming - write down everything you think of</li>
-                            <li>Organize your ideas into groups</li>
-                            <li>Create a simple outline</li>
-                            <li>Write your first draft without worrying about perfection</li>
-                            <li>Revise and edit after you have something on paper</li>
+                        <p class="text-text-secondary mb-4"><strong>For any essay:</strong></p>
+                        <ol class="list-decimal list-inside text-sm mt-2 space-y-1" class="list-decimal list-inside text-text-secondary mb-4 space-y-2">
+                            <li class="text-text-secondary">Start with brainstorming - write down everything you think of</li>
+                            <li class="text-text-secondary">Organize your ideas into groups</li>
+                            <li class="text-text-secondary">Create a simple outline</li>
+                            <li class="text-text-secondary">Write your first draft without worrying about perfection</li>
+                            <li class="text-text-secondary">Revise and edit after you have something on paper</li>
                         </ol>
                     </div>
-                    <p class="text-sm text-gray-700">Try asking your question again in a moment!</p>
+                    <p class="text-sm text-gray-700" class="text-text-secondary mb-4">Try asking your question again in a moment!</p>
                 </div>
             `;
         }
     }
 </script>
 
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-background-secondary border-t border-border mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <div class="text-center">
+                <p class="font-caption text-text-secondary">&copy; 2025 Kristina's Academic Success Dashboard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
