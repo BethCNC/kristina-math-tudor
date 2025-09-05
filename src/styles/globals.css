@@ -523,4 +523,41 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Dark Mode as Default */
+body {
+  background: var(--color-mooonstone-300);
+  color: var(--color-smokey-quartz-50);
+}
+
+/* Pops of Color for Dark Mode */
+.dark-mode-accent {
+  background: var(--color-retro-pink);
+  color: var(--color-smokey-quartz-950);
+}
+
+.dark-mode-accent-2 {
+  background: var(--color-retro-yellow);
+  color: var(--color-smokey-quartz-950);
+}
+
+.dark-mode-accent-3 {
+  background: var(--color-retro-green);
+  color: var(--color-smokey-quartz-950);
+}
+
+.dark-mode-accent-4 {
+  background: var(--color-retro-blue);
+  color: var(--color-smokey-quartz-950);
+}
+
+.dark-mode-accent-5 {
+  background: var(--color-retro-purple);
+  color: var(--color-smokey-quartz-50);
+}
+
+.dark-mode-accent-6 {
+  background: var(--color-retro-orange);
+  color: var(--color-smokey-quartz-950);
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
