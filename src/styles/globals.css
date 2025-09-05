@@ -239,13 +239,18 @@
 
 
   /* Semantic Colors - Light Theme */
-  /* Background */
-  --color-background-tertiary: var(--color-mooonstone-200);
-  --color-background-secondary: var(--color-mooonstone-50);
+  /* Background - Bolder Surface Colors */
+  --color-background-tertiary: var(--color-mooonstone-300);
+  --color-background-secondary: var(--color-mooonstone-200);
   --color-background: #ffffff;
-  --color-background-secondary-hover: var(--color-mooonstone-100);
-  --color-background-hover: var(--color-mooonstone-50);
-  --color-background-tertiary-hover: var(--color-mooonstone-300);
+  --color-background-secondary-hover: var(--color-mooonstone-300);
+  --color-background-hover: var(--color-mooonstone-100);
+  --color-background-tertiary-hover: var(--color-mooonstone-400);
+  
+  /* Surface Colors - Bolder for Better Contrast */
+  --color-surface-primary: var(--color-mooonstone-200);
+  --color-surface-secondary: var(--color-mooonstone-300);
+  --color-surface-tertiary: var(--color-mooonstone-100);
 
   /* Border */
   --color-border-secondary: var(--color-smokey-quartz-500);
@@ -254,13 +259,13 @@
   --color-border-danger: var(--color-ruby-600);
   --color-border-brand: var(--color-aquamarine-700);
 
-  /* Brand */
-  --color-brand-tertiary: var(--color-aquamarine-50);
-  --color-brand-secondary-hover: var(--color-aquamarine-500);
-  --color-brand-tertiary-hover: var(--color-aquamarine-100);
-  --color-brand: var(--color-aquamarine-300);
-  --color-brand-secondary: var(--color-aquamarine-400);
-  --color-brand-hover: var(--color-aquamarine-400);
+  /* Brand - Using Retro Brand Colors */
+  --color-brand-tertiary: var(--color-brand-100);
+  --color-brand-secondary-hover: var(--color-brand-700);
+  --color-brand-tertiary-hover: var(--color-brand-200);
+  --color-brand: var(--color-brand-500);
+  --color-brand-secondary: var(--color-brand-600);
+  --color-brand-hover: var(--color-brand-600);
 
   /* Danger */
   --color-danger-tertiary-hover: var(--color-ruby-100);
@@ -287,29 +292,29 @@
   --color-positive-hover: var(--color-green-700);
   --color-positive: var(--color-green-600);
 
-  /* Text */
-  --color-text-neutral-primary: #1f2937;
+  /* Text - Darkest Colors for Maximum Contrast */
+  --color-text-neutral-primary: var(--color-smokey-quartz-950);
   --color-text-inverse-tertiary: var(--color-mooonstone-200);
-  --color-text-primary: #111827;
+  --color-text-primary: var(--color-smokey-quartz-950);
   --color-text-inverse-secondary: var(--color-mooonstone-50);
-  --color-text-danger-primary: var(--color-ruby-500);
+  --color-text-danger-primary: var(--color-ruby-600);
   --color-text-inverse-primary: #ffffff;
-  --color-text-neutral-tertiary: #4b5563;
-  --color-text-brand-tertiary: var(--color-aquamarine-700);
-  --color-text-danger-tertiary: var(--color-ruby-200);
-  --color-text-brand-primary: var(--color-aquamarine-400);
+  --color-text-neutral-tertiary: var(--color-smokey-quartz-700);
+  --color-text-brand-tertiary: var(--color-aquamarine-800);
+  --color-text-danger-tertiary: var(--color-ruby-300);
+  --color-text-brand-primary: var(--color-aquamarine-600);
   --color-text-warning-tertiary: var(--color-carnelian-800);
-  --color-text-positive-tertiary: var(--color-emerald-300);
-  --color-text-positive-secondary: var(--color-emerald-500);
-  --color-text-neutral-secondary: #374151;
-  --color-text-secondary: #6b7280;
-  --color-text-positive-primary: var(--color-green-600);
-  --color-text-tertiary: #6b7280;
-  --color-text-brand-secondary: var(--color-aquamarine-700);
+  --color-text-positive-tertiary: var(--color-emerald-600);
+  --color-text-positive-secondary: var(--color-emerald-700);
+  --color-text-neutral-secondary: var(--color-smokey-quartz-800);
+  --color-text-secondary: var(--color-smokey-quartz-700);
+  --color-text-positive-primary: var(--color-green-700);
+  --color-text-tertiary: var(--color-smokey-quartz-700);
+  --color-text-brand-secondary: var(--color-aquamarine-800);
   --color-text-warning-secondary: var(--color-carnelian-800);
   --color-text-warning-primary: var(--color-carnelian-900);
-  --color-text-danger-secondary: var(--color-ruby-400);
-  --color-text-muted: #6b7280;
+  --color-text-danger-secondary: var(--color-ruby-500);
+  --color-text-muted: var(--color-smokey-quartz-600);
 
   /* Warning */
   --color-warning-tertiary-hover: var(--color-carnelian-100);
@@ -497,6 +502,19 @@
     background: var(--color-retro-orange);
     border: 2px dashed var(--color-retro-red);
   }
+}
+
+/* Surface Utility Classes */
+.bg-surface-primary {
+  background-color: var(--color-surface-primary);
+}
+
+.bg-surface-secondary {
+  background-color: var(--color-surface-secondary);
+}
+
+.bg-surface-tertiary {
+  background-color: var(--color-surface-tertiary);
 }
 
 body {
