@@ -230,7 +230,7 @@
   /* Background */
   --color-background-tertiary: var(--color-mooonstone-200);
   --color-background-secondary: var(--color-mooonstone-50);
-  --color-background: var(--color-red-50);
+  --color-background: #ffffff;
   --color-background-secondary-hover: var(--color-mooonstone-100);
   --color-background-hover: var(--color-mooonstone-50);
   --color-background-tertiary-hover: var(--color-mooonstone-300);
@@ -276,28 +276,28 @@
   --color-positive: var(--color-green-600);
 
   /* Text */
-  --color-text-neutral-primary: var(--color-smokey-quartz-950);
+  --color-text-neutral-primary: #1f2937;
   --color-text-inverse-tertiary: var(--color-mooonstone-200);
-  --color-text-primary: var(--color-smokey-quartz-950);
+  --color-text-primary: #1f2937;
   --color-text-inverse-secondary: var(--color-mooonstone-50);
   --color-text-danger-primary: var(--color-ruby-500);
-  --color-text-inverse-primary: var(--color-white);
-  --color-text-neutral-tertiary: var(--color-smokey-quartz-700);
+  --color-text-inverse-primary: #ffffff;
+  --color-text-neutral-tertiary: #4b5563;
   --color-text-brand-tertiary: var(--color-aquamarine-200);
   --color-text-danger-tertiary: var(--color-ruby-200);
   --color-text-brand-primary: var(--color-aquamarine-400);
   --color-text-warning-tertiary: var(--color-carnelian-200);
   --color-text-positive-tertiary: var(--color-emerald-300);
   --color-text-positive-secondary: var(--color-emerald-500);
-  --color-text-neutral-secondary: var(--color-smokey-quartz-800);
-  --color-text-secondary: var(--color-smokey-quartz-900);
+  --color-text-neutral-secondary: #374151;
+  --color-text-secondary: #6b7280;
   --color-text-positive-primary: var(--color-green-600);
-  --color-text-tertiary: var(--color-smokey-quartz-800);
+  --color-text-tertiary: #9ca3af;
   --color-text-brand-secondary: var(--color-aquamarine-700);
   --color-text-warning-secondary: var(--color-carnelian-400);
   --color-text-warning-primary: var(--color-carnelian-500);
   --color-text-danger-secondary: var(--color-ruby-400);
-  --color-text-muted: var(--color-smokey-quartz-500);
+  --color-text-muted: #6b7280;
 
   /* Warning */
   --color-warning-tertiary-hover: var(--color-carnelian-100);
