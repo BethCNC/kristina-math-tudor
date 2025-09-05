@@ -104,33 +104,33 @@
 
 <body class="bg-background text-text-primary font-sans antialiased">
     <!-- Header -->
-    <header class="bg-background-secondary border border-border border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-12 h-12 rounded-xl bg-brand text-text-primary text-text-primary flex items-center justify-center">
+                        <div class="w-12 h-12 rounded-xl bg-brand text-text-primary flex items-center justify-center">
                             <i data-lucide="calendar-days" class="w-6 h-6 text-text-primary"></i>
                         </div>
                         <div>
-                            <h1 class="font-title text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">Academic Calendar</h1>
-<div class="mb-4"></div>
-<div class="mb-4"></div>
-                            <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Fall 2025 • Complete Schedule</p>
+                            <h1 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">Academic Calendar</h1>
+
+
+                            <p class="font-caption text-text-secondary mb-4 mb-4">Fall 2025 • Complete Schedule</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="flex items-center space-x-4">
-                    <div class="hidden sm:block bg-brand text-text-primary text-text-primary-tertiary border border-brand rounded-lg px-4 py-2">
+                    <div class="hidden sm:block bg-brand text-text-primary-tertiary border border-brand rounded-lg px-4 py-2">
                         <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 rounded-full bg-brand text-text-primary text-text-primary animate-pulse"></div>
+                            <div class="w-2 h-2 rounded-full bg-brand text-text-primary animate-pulse"></div>
                             <span class="font-button-small text-text-brand-primary" id="current-status">
                                 Loading current week...
                             </span>
                         </div>
                     </div>
-                    <a href="index.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border border border-border transition-colors">
+                    <a href="index.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border transition-colors">
                         <i data-lucide="arrow-left" class="w-4 h-4" aria-label="Go back"></i>
                         <span class="font-button">Dashboard</span>
                     </a>
@@ -140,23 +140,23 @@
     </header>
 
     <!-- Navigation Tabs -->
-    <section class="bg-background-secondary border border-border border border-border border-b border-border sticky top-20 z-40">
+    <section class="bg-background-secondary border border-border border-b border-border sticky top-20 z-40 mb-12" class="mb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-center py-4">
                 <div class="flex items-center space-x-2 bg-background border border-border rounded-xl p-1">
-                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-brand text-text-primary text-text-primary text-text-primary font-button transition-all" onclick="showSection('overview')" id="nav-overview">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-brand text-text-primary font-button transition-all" onclick="showSection('overview')" id="nav-overview">
                         <i data-lucide="clock" class="w-4 h-4" aria-label="Time"></i>
                         <span>This Week</span>
                     </button>
-                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border border border-border font-button transition-all" onclick="showSection('math')" id="nav-math">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all" onclick="showSection('math')" id="nav-math">
                         <i data-lucide="calculator" class="w-4 h-4" aria-label="Calculator"></i>
                         <span>MAT 143</span>
                     </button>
-                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border border border-border font-button transition-all" onclick="showSection('english')" id="nav-english">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all" onclick="showSection('english')" id="nav-english">
                         <i data-lucide="pen-tool" class="w-4 h-4"></i>
                         <span>ENG 111</span>
                     </button>
-                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border border border-border font-button transition-all" onclick="showSection('tests')" id="nav-tests">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all" onclick="showSection('tests')" id="nav-tests">
                         <i data-lucide="target" class="w-4 h-4" aria-label="Goal"></i>
                         <span>Tests</span>
                     </button>
@@ -165,36 +165,36 @@
         </div>
     </section>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <!-- This Week Overview -->
         <div id="overview" class="content-area active">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary text-text-primary/10-10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
                         <i data-lucide="clock" class="w-6 h-6 text-brand" aria-label="Time"></i>
                     </div>
                     <div>
-                        <h2 class="font-title text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">This Week's Priorities</h2>
-<div class="mb-3"></div>
-<div class="mb-3"></div>
-                        <p class="font-body-small text-text-secondary" class="mb-4" class="mb-4">Focus on these key items to stay on track</p>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">This Week's Priorities</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">Focus on these key items to stay on track</p>
                     </div>
                 </div>
             </div>
             <div id="current-week-content" class="space-y-6">
                 <!-- Priority Items -->
-                <div class="bg-warning text-text-primary text-text-primary-tertiary border-l-4 border-warning rounded-r-xl p-6">
+                <div class="bg-warning text-text-primary-tertiary border-l-4 border-warning rounded-r-xl p-6">
                     <div class="flex items-start space-x-4">
-                        <div class="w-10 h-10 rounded-lg bg-warning text-text-primary text-text-primary flex items-center justify-center flex-shrink-0">
+                        <div class="w-10 h-10 rounded-lg bg-warning text-text-primary flex items-center justify-center flex-shrink-0">
                             <i data-lucide="alert-triangle" class="w-5 h-5 text-text-primary"></i>
                         </div>
                         <div class="flex-1">
-                            <h3 class="font-subtitle-small text-text-primary mb-2" class="mt-8 mb-4" class="mt-8 mb-4">Critical Reading Discussion Due</h3>
+                            <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Critical Reading Discussion Due</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                            <p class="font-body-small text-text-secondary mb-3" class="mb-4" class="mb-4">ENG 111 • Due Today at 11:59 PM</p>
+                            <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">ENG 111 • Due Today at 11:59 PM</p>
                             <div class="flex items-center space-x-3">
-                                <span class="font-caption bg-warning text-text-primary text-text-primary-secondary text-text-warning-primary px-2 py-1 rounded">High Priority</span>
+                                <span class="font-caption bg-warning text-text-primary-secondary text-text-warning-primary px-2 py-1 rounded">High Priority</span>
                                 <a href="english_materials.html" class="font-button text-brand hover:text-brand-hover transition-colors">View Assignment →</a>
                             </div>
                         </div>
@@ -202,20 +202,20 @@
                 </div>
                 
                 <!-- Regular Items -->
-                <div class="grid lg:grid-cols-2 gap-6">
-                    <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl p-6">
+                <div class="grid lg:grid-cols-2 gap-6 gap-6 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
                                 <i data-lucide="calculator" class="w-5 h-5 text-positive" aria-label="Calculator"></i>
                             </div>
                             <div class="flex-1">
-                                <h3 class="font-subtitle-small text-text-primary mb-2" class="mt-8 mb-4" class="mt-8 mb-4">Chapter 1 Homework</h3>
+                                <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 1 Homework</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                                <p class="font-body-small text-text-secondary mb-3" class="mb-4" class="mb-4">MAT 143 • Hawkes Learning</p>
+                                <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">MAT 143 • Hawkes Learning</p>
                                 <div class="flex items-center space-x-3">
-                                    <div class="w-16 h-2 bg-background-tertiary border border-border border border-border rounded-full overflow-hidden">
-                                        <div class="w-1/2 h-full bg-positive text-text-primary text-text-primary rounded-full"></div>
+                                    <div class="w-16 h-2 bg-background-tertiary border border-border rounded-full overflow-hidden">
+                                        <div class="w-1/2 h-full bg-positive text-text-primary rounded-full"></div>
                                     </div>
                                     <span class="font-caption text-text-secondary">50% Complete</span>
                                 </div>
@@ -223,18 +223,18 @@
                         </div>
                     </div>
                     
-                    <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl p-6">
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 rounded-lg bg-bg-brand text-text-primary text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
+                            <div class="w-10 h-10 rounded-lg bg-bg-brand text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
                                 <i data-lucide="book-open" class="w-5 h-5 text-brand" aria-label="Study guide"></i>
                             </div>
                             <div class="flex-1">
-                                <h3 class="font-subtitle-small text-text-primary mb-2" class="mt-8 mb-4" class="mt-8 mb-4">Critical Reading Materials</h3>
+                                <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Critical Reading Materials</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                                <p class="font-body-small text-text-secondary mb-3" class="mb-4" class="mb-4">ENG 111 • Review for discussion</p>
+                                <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">ENG 111 • Review for discussion</p>
                                 <div class="flex items-center space-x-3">
-                                    <span class="font-caption bg-positive text-text-primary text-text-primary-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Completed</span>
+                                    <span class="font-caption bg-positive text-text-primary-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Completed</span>
                                 </div>
                             </div>
                         </div>
@@ -247,102 +247,102 @@
         <div id="math" class="content-area">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-bg-positive text-text-primary text-text-primary/10-10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-positive text-text-primary/10-10 flex items-center justify-center">
                         <i data-lucide="calculator" class="w-6 h-6 text-positive" aria-label="Calculator"></i>
                     </div>
                     <div>
-                        <h2 class="font-title text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">MAT 143 Schedule</h2>
-<div class="mb-3"></div>
-<div class="mb-3"></div>
-                        <p class="font-body-small text-text-secondary" class="mb-4" class="mb-4">16-week semester overview with test dates</p>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">MAT 143 Schedule</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">16-week semester overview with test dates</p>
                     </div>
                 </div>
             </div>
             
             <!-- Test Schedule Overview -->
-            <div class="grid lg:grid-cols-4 gap-4 mb-8">
-                <div class="bg-background-secondary border border-border border border-border border border-positive rounded-xl p-4">
+            <div class="grid lg:grid-cols-4 gap-4 mb-8 gap-6 gap-6">
+                <div class="bg-background-secondary border border-border border border-positive rounded-xl p-4">
                     <div class="text-center">
-                        <div class="w-8 h-8 rounded-lg bg-positive text-text-primary text-text-primary flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-positive text-text-primary flex items-center justify-center mx-auto mb-2">
                             <span class="font-button-small text-text-primary font-bold">1</span>
                         </div>
-                        <h3 class="font-subtitle-small text-text-primary mb-1" class="mt-8 mb-4" class="mt-8 mb-4">Test 1</h3>
+                        <h3 class="font-subtitle-small text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Test 1</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p class="font-caption text-text-secondary mb-2" class="mb-4" class="mb-4">Sept 8-12</p>
-                        <p class="font-caption text-text-positive-primary" class="mb-4" class="mb-4">Ch. 1 & 13</p>
+                        <p class="font-caption text-text-secondary mb-2 mb-4 mb-4">Sept 8-12</p>
+                        <p class="font-caption text-text-positive-primary mb-4 mb-4">Ch. 1 & 13</p>
                     </div>
                 </div>
                 
-                <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl p-4 opacity-75">
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
                     <div class="text-center">
-                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border border border-border flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
                             <span class="font-button-small text-text-tertiary font-bold">2</span>
                         </div>
-                        <h3 class="font-subtitle-small text-text-secondary mb-1" class="mt-8 mb-4" class="mt-8 mb-4">Test 2</h3>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 2</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p class="font-caption text-text-tertiary mb-2" class="mb-4" class="mb-4">Sept 29-Oct 3</p>
-                        <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Ch. 4 & 5</p>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Sept 29-Oct 3</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 4 & 5</p>
                     </div>
                 </div>
                 
-                <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl p-4 opacity-75">
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
                     <div class="text-center">
-                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border border border-border flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
                             <span class="font-button-small text-text-tertiary font-bold">3</span>
                         </div>
-                        <h3 class="font-subtitle-small text-text-secondary mb-1" class="mt-8 mb-4" class="mt-8 mb-4">Test 3</h3>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 3</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p class="font-caption text-text-tertiary mb-2" class="mb-4" class="mb-4">Nov 3-7</p>
-                        <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Ch. 6 & 7</p>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Nov 3-7</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 6 & 7</p>
                     </div>
                 </div>
                 
-                <div class="bg-background-secondary border border-border border border-border border border-border rounded-xl p-4 opacity-75">
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
                     <div class="text-center">
-                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border border border-border flex items-center justify-center mx-auto mb-2">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
                             <span class="font-button-small text-text-tertiary font-bold">4</span>
                         </div>
-                        <h3 class="font-subtitle-small text-text-secondary mb-1" class="mt-8 mb-4" class="mt-8 mb-4">Test 4</h3>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 4</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p class="font-caption text-text-tertiary mb-2" class="mb-4" class="mb-4">Dec 8-12</p>
-                        <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Ch. 10 & 11</p>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Dec 8-12</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 10 & 11</p>
                     </div>
                 </div>
             </div>
             
             <div id="semester-timeline" class="space-y-4">
                 <!-- Current Weeks -->
-                <div class="week-card current bg-brand text-text-primary text-text-primary-tertiary border-l-4 border-brand rounded-r-xl p-6">
+                <div class="week-card current bg-brand text-text-primary-tertiary border-l-4 border-brand rounded-r-xl p-6">
                     <div class="flex items-start justify-between mb-4">
                         <div>
-                            <h3 class="font-subtitle-small text-text-primary mb-2" class="mt-8 mb-4" class="mt-8 mb-4">Week 1-2: Current</h3>
+                            <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Week 1-2: Current</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                            <p class="font-caption text-text-brand-primary" class="mb-4" class="mb-4">Aug 18 - Aug 31, 2025</p>
+                            <p class="font-caption text-text-brand-primary mb-4 mb-4">Aug 18 - Aug 31, 2025</p>
                         </div>
-                        <span class="font-caption bg-brand text-text-primary text-text-primary text-text-primary px-2 py-1 rounded">Active</span>
+                        <span class="font-caption bg-brand text-text-primary px-2 py-1 rounded">Active</span>
                     </div>
                     <div class="space-y-3">
                         <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 rounded bg-positive text-text-primary text-text-primary flex items-center justify-center">
+                            <div class="w-6 h-6 rounded bg-positive text-text-primary flex items-center justify-center">
                                 <span class="font-button-small text-text-primary font-bold">1</span>
                             </div>
                             <div>
-                                <p class="font-button text-text-primary" class="mb-4" class="mb-4">Chapter 1: Thinking Mathematically</p>
-                                <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Hawkes Learning assignments</p>
+                                <p class="font-button text-text-primary mb-4 mb-4">Chapter 1: Thinking Mathematically</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Hawkes Learning assignments</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 rounded bg-positive text-text-primary text-text-primary flex items-center justify-center">
+                            <div class="w-6 h-6 rounded bg-positive text-text-primary flex items-center justify-center">
                                 <span class="font-button-small text-text-primary font-bold">13</span>
                             </div>
                             <div>
-                                <p class="font-button text-text-primary" class="mb-4" class="mb-4">Chapter 13: Voting & Apportionment</p>
-                                <p class="font-caption text-text-secondary" class="mb-4" class="mb-4">Hawkes Learning assignments</p>
+                                <p class="font-button text-text-primary mb-4 mb-4">Chapter 13: Voting & Apportionment</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Hawkes Learning assignments</p>
                             </div>
                         </div>
                     </div>
@@ -356,29 +356,29 @@
         <div id="english" class="content-area">
             <div class="mb-8">
                 <div class="flex items-center space-x-4 mb-4">
-                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary text-text-primary/10-10 flex items-center justify-center">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
                         <i data-lucide="pen-tool" class="w-6 h-6 text-brand"></i>
                     </div>
                     <div>
-                        <h2 class="font-title text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">ENG 111 Schedule</h2>
-<div class="mb-3"></div>
-<div class="mb-3"></div>
-                        <p class="font-body-small text-text-secondary" class="mb-4" class="mb-4">8-week writing course timeline</p>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">ENG 111 Schedule</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">8-week writing course timeline</p>
                     </div>
                 </div>
             </div>
             
             <!-- Course Info Card -->
-            <div class="bg-brand text-text-primary text-text-primary-tertiary border border-brand rounded-xl p-6 mb-8">
+            <div class="bg-brand text-text-primary-tertiary border border-brand rounded-xl p-6 mb-8">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-10 h-10 rounded-lg bg-brand text-text-primary text-text-primary flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-lg bg-brand text-text-primary flex items-center justify-center">
                         <i data-lucide="info" class="w-5 h-5 text-text-primary" aria-label="Information"></i>
                     </div>
-                    <h3 class="font-subtitle-large text-text-brand-primary" class="mt-8 mb-4" class="mt-8 mb-4">Course Information</h3>
+                    <h3 class="font-subtitle-large text-text-brand-primary mt-8 mb-4 mt-8 mb-4">Course Information</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                 </div>
-                <div class="grid sm:grid-cols-2 gap-4">
+                <div class="grid sm:grid-cols-2 gap-4 gap-6 gap-6">
                     <div class="flex items-center space-x-2">
                         <i data-lucide="calendar" class="w-4 h-4 text-brand" aria-label="Calendar"></i>
                         <span class="font-body-small text-text-primary"><span class="font-medium">Duration:</span> 8 weeks (Aug 18 - Oct 10, 2025)</span>
@@ -400,23 +400,23 @@
 
             <div class="space-y-6">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-8 h-8 rounded-lg bg-bg-brand text-text-primary text-text-primary/10-10 flex items-center justify-center">
+                    <div class="w-8 h-8 rounded-lg bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
                         <i data-lucide="calendar-days" class="w-4 h-4 text-brand"></i>
                     </div>
-                    <h3 class="font-subtitle-large text-text-primary" class="mt-8 mb-4" class="mt-8 mb-4">Week-by-Week Schedule</h3>
+                    <h3 class="font-subtitle-large text-text-primary mt-8 mb-4 mt-8 mb-4">Week-by-Week Schedule</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                 </div>
                     
                     <div class="week-card urgent">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 1: August 18-22, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 1: August 18-22, 2025</h4>
                             <span class="week-status">📖 Critical Reading</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li class="urgent">📝 Critical Reading Discussion (Due: Thu 8/22)</li>
                                     <li class="important">📚 EVA Syllabus Quiz (Due: This week)</li>
                                     <li>📖 Read "Does Trying to Be Happy Make Us Unhappy" by Adam Grant</li>
@@ -428,13 +428,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 2: August 25-29, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 2: August 25-29, 2025</h4>
                             <span class="week-status">🔍 Plagiarism & Citations</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>📚 Read "Documenting Sources" and "MLA Documentation" (pp. 602-618)</li>
                                     <li>✅ Complete Tutorial: Plagiarism</li>
                                     <li>✅ Complete Tutorial: MLA Citations</li>
@@ -447,13 +447,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 3: September 1-5, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 3: September 1-5, 2025</h4>
                             <span class="week-status">📝 Compare/Contrast Essay: Rough Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>📖 Read Chapter 20 "Comparison and Contrast" (pp. 467-471)</li>
                                     <li>📖 Read Compare/Contrast Essay Instructions</li>
                                     <li>🎥 Watch: Comparison/Contrast Essays videos</li>
@@ -467,13 +467,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 4: September 8-12, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 4: September 8-12, 2025</h4>
                             <span class="week-status">📝 Compare/Contrast Essay: Final Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>✏️ Revise your draft</li>
                                     <li>✏️ Edit/proofread your draft</li>
                                     <li>🎥 Watch: Video: Revising and Editing</li>
@@ -486,13 +486,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 5: September 15-19, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 5: September 15-19, 2025</h4>
                             <span class="week-status">📝 Cause & Effect Essay: Rough Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>📖 Read Chapter 21 Cause and Effect (pp. 495-97)</li>
                                     <li>📖 Read Cause and Effect Essay Guidelines</li>
                                     <li>💡 View: Cause & Effect Essay Introduction</li>
@@ -506,13 +506,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 6: September 22-26, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 6: September 22-26, 2025</h4>
                             <span class="week-status">📝 Cause & Effect Essay: Final Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>📖 Read Revising, Editing, and Proofreading (pp. 24-26)</li>
                                     <li>✏️ Revise your draft</li>
                                     <li>✏️ Edit/proofread your draft</li>
@@ -525,13 +525,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 7: September 29 - October 3, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 7: September 29 - October 3, 2025</h4>
                             <span class="week-status">📝 Argument Essay: Rough Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>📖 Read Argument in Models for Writers (pp. 521-30)</li>
                                     <li>📖 Read Argument Essay Instructions</li>
                                     <li>💡 Read and explore: Topic Ideas</li>
@@ -545,13 +545,13 @@
 
                     <div class="week-card">
                         <div class="week-header">
-                            <h4 class="mt-8 mb-4" class="mt-8 mb-4">Week 8: October 6-10, 2025</h4>
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 8: October 6-10, 2025</h4>
                             <span class="week-status">📝 Argument Essay: Final Draft</span>
                         </div>
                         <div class="week-content">
                             <div class="assignments">
-                                <h5 class="mt-8 mb-4" class="mt-8 mb-4">📋 Assignments</h5>
-                                <ul class="space-y-2" class="space-y-2">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
                                     <li>🎥 Watch: Video: Incorporating Information from Sources</li>
                                     <li>🎥 Watch: Video: Incorporating Opposing Viewpoints</li>
                                     <li>📝 Submit: Argument Essay Final Draft</li>
@@ -571,18 +571,18 @@
                     <i data-lucide="target" class="w-6 h-6 text-coral-500" aria-label="Goal"></i>
                     Test Schedule
                 </h2>
-<div class="mb-3"></div>
-<div class="mb-3"></div>
-                <p class="text-gray-700" class="mb-4" class="mb-4">All test dates and countdown timers</p>
+
+
+                <p class="text-gray-700 mb-4 mb-4">All test dates and countdown timers</p>
             </div>
             <div class="test-grid">
                 <div class="test-card">
-                    <h3 class="mt-8 mb-4" class="mt-8 mb-4">📝 Test 1</h3>
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">📝 Test 1</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                    <p class="mb-4" class="mb-4"><strong>Date:</strong> September 8-12, 2025</p>
-                    <p class="mb-4" class="mb-4"><strong>Chapters:</strong> 1 & 13</p>
-                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2" class="space-y-2">
+                    <p class="mb-4 mb-4"><strong>Date:</strong> September 8-12, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 1 & 13</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
                         <li>Mathematical reasoning (deductive vs inductive)</li>
                         <li>Pattern recognition in sequences</li>
                         <li>Voting methods (majority, plurality, Borda)</li>
@@ -592,12 +592,12 @@
                 </div>
                 
                 <div class="test-card">
-                    <h3 class="mt-8 mb-4" class="mt-8 mb-4">📈 Test 2</h3>
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">📈 Test 2</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                    <p class="mb-4" class="mb-4"><strong>Date:</strong> September 29 - October 3, 2025</p>
-                    <p class="mb-4" class="mb-4"><strong>Chapters:</strong> 4 & 5</p>
-                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2" class="space-y-2">
+                    <p class="mb-4 mb-4"><strong>Date:</strong> September 29 - October 3, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 4 & 5</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
                         <li>Proportions and cross-multiplication</li>
                         <li>Percentage calculations</li>
                         <li>Linear vs exponential functions</li>
@@ -607,12 +607,12 @@
                 </div>
                 
                 <div class="test-card">
-                    <h3 class="mt-8 mb-4" class="mt-8 mb-4">💰 Test 3</h3>
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">💰 Test 3</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                    <p class="mb-4" class="mb-4"><strong>Date:</strong> November 3-7, 2025</p>
-                    <p class="mb-4" class="mb-4"><strong>Chapters:</strong> 6 & 7</p>
-                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2" class="space-y-2">
+                    <p class="mb-4 mb-4"><strong>Date:</strong> November 3-7, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 6 & 7</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
                         <li>Simple and compound interest calculations</li>
                         <li>Loan and payment formulas</li>
                         <li>Metric system conversions</li>
@@ -622,12 +622,12 @@
                 </div>
                 
                 <div class="test-card">
-                    <h3 class="mt-8 mb-4" class="mt-8 mb-4">🎲 Test 4</h3>
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">🎲 Test 4</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                    <p class="mb-4" class="mb-4"><strong>Date:</strong> December 8-12, 2025</p>
-                    <p class="mb-4" class="mb-4"><strong>Chapters:</strong> 10 & 11</p>
-                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2" class="space-y-2">
+                    <p class="mb-4 mb-4"><strong>Date:</strong> December 8-12, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 10 & 11</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
                         <li>Basic probability calculations</li>
                         <li>Expected value problems</li>
                         <li>Statistical data interpretation</li>
@@ -643,45 +643,45 @@
             <button class="back-btn" onclick="showSection('overview')">
                 <span>←</span> Back to Overview
             </button>
-            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6" class="mt-8 mb-4" class="mt-8 mb-4">Your Progress Tracker</h2>
-<div class="mb-3"></div>
-<div class="mb-3"></div>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6 mt-8 mb-4 mt-8 mb-4">Your Progress Tracker</h2>
+
+
             
             <div class="progress-section">
-                <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4" class="mt-8 mb-4" class="mt-8 mb-4">📊 Semester Progress</h3>
+                <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4 mt-8 mb-4 mt-8 mb-4">📊 Semester Progress</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="semester-progress" style="width: 0%"></div>
                 </div>
-                <p id="progress-text" class="text-center font-medium text-[var(--text-muted)]" class="mb-4" class="mb-4">Calculating progress...</p>
+                <p id="progress-text" class="text-center font-medium text-[var(--text-muted)] mb-4 mb-4">Calculating progress...</p>
             </div>
 
             <div class="test-grid">
                 <div class="test-card">
-                    <h3 class="text-[var(--success-accent)]" class="mt-8 mb-4" class="mt-8 mb-4">✅ Completed</h3>
+                    <h3 class="text-[var(--success-accent)] mt-8 mb-4 mt-8 mb-4">✅ Completed</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                     <div id="completed-items">
-                        <p class="mb-4" class="mb-4">Your completed work will appear here as you progress through the semester.</p>
+                        <p class="mb-4 mb-4">Your completed work will appear here as you progress through the semester.</p>
                     </div>
                 </div>
                 
                 <div class="test-card">
-                    <h3 class="text-[var(--accent)]" class="mt-8 mb-4" class="mt-8 mb-4">⏳ Current Focus</h3>
+                    <h3 class="text-[var(--accent)] mt-8 mb-4 mt-8 mb-4">⏳ Current Focus</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                     <div id="current-focus">
-                        <p class="mb-4" class="mb-4">Loading your current focus areas...</p>
+                        <p class="mb-4 mb-4">Loading your current focus areas...</p>
                     </div>
                 </div>
                 
                 <div class="test-card">
-                    <h3 class="text-[var(--yellow-500)]" class="mt-8 mb-4" class="mt-8 mb-4">🔮 Coming Up</h3>
+                    <h3 class="text-[var(--yellow-500)] mt-8 mb-4 mt-8 mb-4">🔮 Coming Up</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
                     <div id="upcoming-items">
-                        <p class="mb-4" class="mb-4">Your upcoming deadlines will appear here.</p>
+                        <p class="mb-4 mb-4">Your upcoming deadlines will appear here.</p>
                     </div>
                 </div>
             </div>
@@ -930,7 +930,7 @@
                         
                         <div class="assignments">
                             <div class="assignment-group">
-                                <h4 class="mt-8 mb-4" class="mt-8 mb-4">📝 BrightSpace Assignments</h4>
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">📝 BrightSpace Assignments</h4>
                                 ${week.assignments.brightspace.map(a => `
                                     <div class="assignment-item">
                                         <strong>${a.name}</strong><br>
@@ -940,7 +940,7 @@
                             </div>
                             
                             <div class="assignment-group">
-                                <h4 class="mt-8 mb-4" class="mt-8 mb-4">🎯 Hawkes Learning</h4>
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">🎯 Hawkes Learning</h4>
                                 ${week.assignments.hawkes.map(a => `
                                     <div class="assignment-item">
                                         <strong>${a.name}</strong><br>
@@ -959,11 +959,11 @@
             } else if (currentWeek.status === 'not_started') {
                 content.innerHTML = `
                     <div class="week-card">
-                        <h3 class="mt-8 mb-4" class="mt-8 mb-4">${currentWeek.message}</h3>
+                        <h3 class="mt-8 mb-4 mt-8 mb-4">${currentWeek.message}</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p style="margin: var(--space-4) 0;" class="mb-4" class="mb-4">You have ${currentWeek.daysUntil} days to get ready! Here's what to do:</p>
-                        <ul style="line-height: var(--line-height-relaxed); padding-left: var(--space-5);" class="space-y-2" class="space-y-2">
+                        <p style="margin: var(--space-4) 0;" class="mb-4 mb-4">You have ${currentWeek.daysUntil} days to get ready! Here's what to do:</p>
+                        <ul style="line-height: var(--line-height-relaxed); padding-left: var(--space-5);" class="space-y-2 space-y-2">
                             <li>Complete the EVA (Enrollment Verification Activity) as soon as it becomes available</li>
                             <li>Set up your Hawkes Learning account</li>
                             <li>Bookmark this calendar for daily reference</li>
@@ -974,10 +974,10 @@
             } else {
                 content.innerHTML = `
                     <div class="week-card">
-                        <h3 class="mt-8 mb-4" class="mt-8 mb-4">${currentWeek.message}</h3>
+                        <h3 class="mt-8 mb-4 mt-8 mb-4">${currentWeek.message}</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                        <p class="mb-4" class="mb-4">Congratulations on completing MAT 143! 🎓</p>
+                        <p class="mb-4 mb-4">Congratulations on completing MAT 143! 🎓</p>
                     </div>
                 `;
             }
@@ -1018,7 +1018,7 @@
                         
                         <div class="assignments">
                             <div class="assignment-group">
-                                <h4 class="mt-8 mb-4" class="mt-8 mb-4">📝 BrightSpace</h4>
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">📝 BrightSpace</h4>
                                 ${week.assignments.brightspace.map(a => `
                                     <div class="assignment-item">
                                         ${a.name}<br>
@@ -1028,7 +1028,7 @@
                             </div>
                             
                             <div class="assignment-group">
-                                <h4 class="mt-8 mb-4" class="mt-8 mb-4">🎯 Hawkes Learning</h4>
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">🎯 Hawkes Learning</h4>
                                 ${week.assignments.hawkes.map(a => `
                                     <div class="assignment-item">
                                         ${a.name}<br>
@@ -1043,12 +1043,12 @@
 
             html += `
                 <div class="break-notice">
-                    <h3 class="mt-8 mb-4" class="mt-8 mb-4">🏖️ Fall Break: October 13-19, 2025</h3>
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">🏖️ Fall Break: October 13-19, 2025</h3>
 <div class="mb-2"></div>
 <div class="mb-2"></div>
-                    <p class="mb-4" class="mb-4">No classes - Use this time to catch up and recharge!</p>
+                    <p class="mb-4 mb-4">No classes - Use this time to catch up and recharge!</p>
                 </div>
-                <p class="text-center text-[var(--text-muted)] my-8" class="mb-4" class="mb-4">
+                <p class="text-center text-[var(--text-muted)] my-8 mb-4 mb-4">
                     <em>Remaining weeks (9-16) continue with Chapters 6, 10, 11 and Tests 3 & 4</em>
                 </p>
             `;
@@ -1111,11 +1111,11 @@
             if (currentWeek.status === 'in_progress') {
                 const week = currentWeek.info;
                 currentFocus.innerHTML = `
-                    <p class="mb-4" class="mb-4"><strong>Sections:</strong> ${week.sections.join(', ')}</p>
-                    <p style="margin-top: var(--space-2);" class="mb-4" class="mb-4">${week.focus}</p>
+                    <p class="mb-4 mb-4"><strong>Sections:</strong> ${week.sections.join(', ')}</p>
+                    <p style="margin-top: var(--space-2);" class="mb-4 mb-4">${week.focus}</p>
                 `;
             } else {
-                currentFocus.innerHTML = '<p class="mb-4" class="mb-4">No current focus areas.</p>';
+                currentFocus.innerHTML = '<p class="mb-4 mb-4">No current focus areas.</p>';
             }
         }
 

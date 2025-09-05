@@ -99,7 +99,7 @@
         <div class="card mb-8 bg-[var(--surface-dark)] text-[var(--text-light)] p-8 md:p-12 text-center">
             <a href="index.html" class="inline-flex items-center gap-2 text-[var(--text-light)] opacity-80 hover:opacity-100 font-medium mb-4">← Back to Home</a>
             <h1 class="text-3xl md:text-4xl font-bold mb-2">📅 MAT 143 Study Calendar</h1>
-<div class="mb-4"></div>
+
             <p class="text-lg opacity-90">Your complete semester timeline and study guide</p>
             
             <div class="bg-[var(--surface-light)] bg-opacity-10 p-4 rounded-lg mt-6" id="current-week-info">
@@ -112,8 +112,8 @@
             <!-- Main Menu -->
             <div id="main-menu" class="content-area active">
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">What would you like to see today? 📚</h2>
-<div class="mb-3"></div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 gap-6">
                     <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('schedule')">📅 Full Semester Schedule</button>
                     <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('current-week')">📍 This Week's Focus</button>
                     <button class="btn btn-primary p-6 text-left uppercase tracking-wider font-semibold hover:-translate-y-1 transition-transform" onclick="showSection('tests')">📊 Test Calendar</button>
@@ -127,7 +127,7 @@
             <div id="schedule" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📅 Complete Semester Schedule - Fall 2025</h2>
-<div class="mb-3"></div>
+
                 
                 <div id="semester-timeline" class="space-y-6">
                     <!-- Week cards will be populated by JavaScript -->
@@ -138,7 +138,7 @@
             <div id="current-week" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📍 This Week's Focus</h2>
-<div class="mb-3"></div>
+
                 
                 <div id="current-week-detail">
                     <!-- Current week info populated by JavaScript -->
@@ -149,9 +149,9 @@
             <div id="tests" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📊 Test Schedule & Preparation</h2>
-<div class="mb-3"></div>
+
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 gap-6">
                     <div class="card p-6 border-t-4 border-[var(--urgent)]">
                         <h3 class="text-xl font-bold text-[var(--urgent)] mb-4">📝 Test 1</h3>
 <div class="mb-2"></div>
@@ -218,7 +218,7 @@
             <div id="progress" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📈 Progress Tracker</h2>
-<div class="mb-3"></div>
+
                 
                 <div class="card p-6 mb-8">
                     <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📊 Semester Progress</h3>
@@ -229,7 +229,7 @@
                     <p class="text-[var(--text-muted)]" id="progress-text">Calculating progress...</p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">✅ Completed</h3>
 <div class="mb-2"></div>
@@ -260,9 +260,9 @@
             <div id="formulas" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">📐 Quick Formula Reference</h2>
-<div class="mb-3"></div>
+
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">💰 Personal Finance (Chapter 6)</h3>
 <div class="mb-2"></div>
@@ -315,9 +315,9 @@
             <div id="study-tips" class="content-area">
                 <button class="btn btn-ghost mb-6" onclick="showSection('main-menu')">← Back to Menu</button>
                 <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6">💡 Weekly Study Strategy</h2>
-<div class="mb-3"></div>
+
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 gap-6">
                     <div class="card p-6">
                         <h3 class="text-lg font-semibold text-[var(--text-dark)] mb-4">📅 Daily Study Plan</h3>
 <div class="mb-2"></div>
@@ -747,7 +747,7 @@
                         ${week.important ? `<div class="banner-urgent mb-4">⚠️ ${week.important}</div>` : ''}
                         ${week.note ? `<div class="bg-blue-50 border border-blue-200 p-3 rounded-lg mb-4 text-sm">${week.note}</div>` : ''}
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-6">
                             <div class="bg-[var(--panel-muted)] p-4 rounded-lg">
                                 <h4 class="text-[var(--brand)] font-semibold mb-3 text-sm">📝 BrightSpace</h4>
                                 ${week.assignments.brightspace.map(a => 
@@ -812,7 +812,7 @@
                         
                         ${week.important ? `<div class="banner-urgent mb-6">⚠️ ${week.important}</div>` : ''}
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6 gap-6">
                             <div class="bg-[var(--panel-muted)] p-4 rounded-lg">
                                 <h4 class="text-[var(--brand)] font-semibold mb-3">📝 BrightSpace Assignments</h4>
                                 ${week.assignments.brightspace.map(a => 
