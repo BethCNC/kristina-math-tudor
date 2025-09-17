@@ -1,0 +1,105 @@
+/* Enhanced Card Component Styles */
+.card {
+  @apply bg-background-secondary border border-border rounded-xl transition-all duration-200;
+}
+
+.card-hover {
+  @apply hover:shadow-lg hover:border-brand/20;
+}
+
+.card-padding {
+  @apply p-6;
+}
+
+.card-padding-sm {
+  @apply p-4;
+}
+
+.card-padding-lg {
+  @apply p-8;
+}
+
+/* Card Header */
+.card-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.card-title {
+  @apply font-title-small text-text-primary;
+}
+
+.card-subtitle {
+  @apply font-caption text-text-secondary;
+}
+
+/* Card Content */
+.card-content {
+  @apply space-y-4;
+}
+
+/* Card Status Badge */
+.card-status {
+  @apply flex items-center space-x-2;
+}
+
+.card-status-dot {
+  @apply w-2 h-2 rounded-full;
+}
+
+.card-status-text {
+  @apply font-caption font-medium;
+}
+
+/* Status Colors */
+.status-active .card-status-dot {
+  @apply bg-positive;
+}
+
+.status-active .card-status-text {
+  @apply text-text-positive-primary;
+}
+
+.status-warning .card-status-dot {
+  @apply bg-warning;
+}
+
+.status-warning .card-status-text {
+  @apply text-text-warning-primary;
+}
+
+.status-danger .card-status-dot {
+  @apply bg-danger;
+}
+
+.status-danger .card-status-text {
+  @apply text-text-danger-primary;
+}
+
+.status-brand .card-status-dot {
+  @apply bg-brand;
+}
+
+.status-brand .card-status-text {
+  @apply text-text-brand-primary;
+}
+
+/* Progress Bar */
+.card-progress {
+  @apply w-full h-2 bg-background-tertiary border border-border rounded-full overflow-hidden;
+}
+
+.card-progress-bar {
+  @apply h-full transition-all duration-300 ease-out;
+}
+
+.card-progress-bar.positive {
+  @apply bg-positive;
+}
+
+.card-progress-bar.brand {
+  @apply bg-brand;
+}
+
+.card-progress-bar.warning {
+  @apply bg-warning;
+}

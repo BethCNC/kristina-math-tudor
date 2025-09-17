@@ -1,0 +1,55 @@
+/* Enhanced Button Component Styles */
+.btn {
+  @apply font-button px-4 py-2 rounded-lg transition-all duration-200 focus:ring-2 focus:outline-none;
+}
+
+.btn-primary {
+  @apply bg-brand text-background hover:bg-brand-hover focus:ring-brand;
+}
+
+.btn-secondary {
+  @apply bg-background-secondary text-text-primary border border-border hover:bg-background-secondary-hover focus:ring-brand;
+}
+
+.btn-danger {
+  @apply bg-danger text-background hover:bg-danger-hover focus:ring-danger;
+}
+
+.btn-success {
+  @apply bg-positive text-background hover:bg-positive-hover focus:ring-positive;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-border text-text-primary hover:bg-background-secondary-hover focus:ring-brand;
+}
+
+.btn-small {
+  @apply font-button-small px-3 py-1.5 text-xs;
+}
+
+.btn-large {
+  @apply font-subtitle px-6 py-3 text-lg;
+}
+
+.btn-icon {
+  @apply w-10 h-10 p-0 flex items-center justify-center;
+}
+
+/* Accessibility enhancements */
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn:focus-visible {
+  @apply ring-2 ring-offset-2;
+}
+
+/* Loading state */
+.btn-loading {
+  @apply cursor-wait opacity-75;
+}
+
+.btn-loading::before {
+  content: '';
+  @apply inline-block w-4 h-4 mr-2 animate-spin rounded-full border-2 border-current border-t-transparent;
+}

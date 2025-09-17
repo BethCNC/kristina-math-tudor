@@ -11,8 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals.css">
+    <!-- Enhanced Design System -->
+    <link rel="stylesheet" href="src/styles/design-system.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -23,36 +23,34 @@
     <!-- Study Planner -->
     <script type="module" src="src/js/study-planner.js"></script>
 </head>
-<body class="bg-mooonstone-300 text-smokey-quartz-50 font-sans antialiased">
+<body>
     <!-- Header -->
-    <header class="bg-mooonstone-200 border border-white/20 backdrop-blur-sm border-b border-white/20 sticky top-0 z-50">
+    <header class="bg-background-secondary border-b border-border sticky top-0 z-50 backdrop-blur-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 rounded-lg bg-brand text-text-primary flex items-center justify-center">
-                            <i data-lucide="graduation-cap" class="w-5 h-5 text-text-primary"></i>
+                        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 text-background" aria-label="Education"></i>
                         </div>
                         <div>
-                            <h1 class="font-title-small text-text-primary mt-8 mb-4 mt-8 mb-4">Kristina's Dashboard</h1>
-
-
-                            <p class="font-caption text-text-secondary mb-4 mb-4">Fall 2025 • MAT 143 & ENG 111</p>
+                            <h1 class="font-title-small text-text-primary">Kristina's Dashboard</h1>
+                            <p class="font-caption text-text-secondary">Fall 2025 • MAT 143 & ENG 111</p>
                         </div>
                     </div>
                 </div>
                 
                 <nav class="hidden md:flex items-center space-x-1" role="navigation" aria-label="Main navigation">
-                    <a href="#dashboard" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border-hover transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Dashboard</a>
-                    <a href="#calendar" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border-hover transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Calendar</a>
-                    <a href="#math" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border-hover transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Math Tutor</a>
-                    <a href="#writing" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border-hover transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Writing Coach</a>
-                    <a href="#resources" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border-hover transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Resources</a>
+                    <a href="#dashboard" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Dashboard</a>
+                    <a href="#calendar" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Calendar</a>
+                    <a href="#math" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Math Tutor</a>
+                    <a href="#writing" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Writing Coach</a>
+                    <a href="#resources" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Resources</a>
                 </nav>
                 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-primary hover:bg-background-secondary border border-border-hover transition-colors" aria-label="Toggle mobile menu">
-                    <i data-lucide="menu" class="w-5 h-5" aria-label="Menu"></i>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
                 </button>
             </div>
         </div>
@@ -61,42 +59,38 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-border shadow-lg">
         <nav class="max-w-7xl mx-auto px-4 py-4 space-y-1">
-            <a href="#dashboard" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Dashboard</a>
-            <a href="#calendar" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Calendar</a>
-            <a href="#math" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Math Tutor</a>
-            <a href="#writing" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Writing Coach</a>
-            <a href="#resources" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary border border-border transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Resources</a>
+            <a href="#dashboard" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Dashboard</a>
+            <a href="#calendar" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Calendar</a>
+            <a href="#math" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Math Tutor</a>
+            <a href="#writing" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Writing Coach</a>
+            <a href="#resources" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Resources</a>
         </nav>
     </div>
 
-            <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-mooonstone-300">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <!-- Welcome Section -->
         <div class="mb-8">
-            <h1 class="font-title-large text-white mb-2 mt-8 mb-4 mt-8 mb-4">Welcome back, Kristina</h1>
-
-
-            <p class="font-body-large text-white/80 mb-4 mb-4">Here's your academic progress for Fall 2025</p>
+            <h1 class="font-title-large text-text-primary mb-2">Welcome back, Kristina</h1>
+            <p class="font-body-large text-text-secondary">Here's your academic progress for Fall 2025</p>
         </div>
 
         <!-- Quick Status Overview -->
-        <section id="dashboard" class="mb-12 mb-12" class="mb-12">
+        <section id="dashboard" class="mb-12">
             <div class="grid lg:grid-cols-2 gap-6 mb-8 gap-6">
                 <!-- MAT 143 Status Card -->
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
+                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200">
                     <div class="flex items-start justify-between mb-6">
                         <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 rounded-lg bg-positive text-text-primary flex items-center justify-center">
-                                <i data-lucide="calculator" class="w-5 h-5 text-text-primary" aria-label="Calculator"></i>
+                            <div class="w-10 h-10 rounded-lg bg-positive flex items-center justify-center">
+                                <i data-lucide="calculator" class="w-5 h-5 text-background" aria-label="Calculator"></i>
                             </div>
                             <div>
-                                <h2 class="font-title-small text-text-primary mt-8 mb-4 mt-8 mb-4">MAT 143</h2>
-
-
-                                <p class="font-caption text-text-secondary mb-4 mb-4">Quantitative Literacy</p>
+                                <h2 class="font-title-small text-text-primary">MAT 143</h2>
+                                <p class="font-caption text-text-secondary">Quantitative Literacy</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 bg-positive text-text-primary rounded-full"></div>
+                            <div class="w-2 h-2 bg-positive rounded-full"></div>
                             <span class="font-caption text-text-positive-primary font-medium">Active</span>
                         </div>
                     </div>

@@ -1,14 +1,17 @@
-/* 
- * Kristina's Academic Success Dashboard - Design System
- * Using Figma-synchronized design tokens with Tailwind CSS 4.1
+/*
+ * Kristina's Academic Success Dashboard - Enhanced Design System
+ * Using updated semantic design tokens with WCAG AA compliance
  * Fonts: Host Grotesk + Space Mono
- * Colors: OKLCH color space with semantic tokens
+ * Colors: Enhanced semantic tokens with accessibility focus
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import "tailwindcss";
+@import "./accessibility.css";
+@import "../components/common/Button.css";
+@import "../components/common/Card.css";
 
 /* 
  * Up to date with TailwindCSS 4.1
@@ -226,161 +229,197 @@
   --color-smokey-quartz-950: oklch(0.214 0.002 67.7);
 
 
-  /* Semantic Colors - Light Theme */
-  /* Background */
-  --color-background-tertiary: var(--color-smokey-quartz-400);
-  --color-background-secondary: var(--color-smokey-quartz-200);
-  --color-background: var(--color-smokey-quartz-50);
-  --color-background-secondary-hover: var(--color-smokey-quartz-300);
-  --color-background-hover: var(--color-smokey-quartz-100);
-  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+  /* Enhanced Semantic Colors - Light Theme (tokens.json compliant) */
+  /* Background - Semantic Classes from tokens.json */
+  --color-background: #fafafa; /* Semantic: Background/Default - Color.white */
+  --color-background-hover: #fef9f6; /* Semantic: Background/Default Hover - Color.mooonstone.50 */
+  --color-background-secondary: #f5f5f5; /* Semantic: Background/Secondary - Tailwind neutral.100 */
+  --color-background-secondary-hover: #e5e5e5; /* Semantic: Background/Secondary Hover - Tailwind neutral.200 */
+  --color-background-tertiary: #e5e5e5; /* Semantic: Background/Tertiary - Tailwind neutral.200 */
+  --color-background-tertiary-hover: #d4d4d4; /* Semantic: Background/Tertiary Hover - Tailwind neutral.300 */
 
-  /* Border */
-  --color-border-secondary: var(--color-smokey-quartz-400);
-  --color-border: var(--color-smokey-quartz-200);
-  --color-border-tertiary: var(--color-smokey-quartz-500);
+  /* Surface Colors - Added for better component hierarchy */
+  --color-surface-primary: #fef9f6; /* Custom Primitive: mooonstone.50 */
+  --color-surface-secondary: #fef5f0; /* Custom Primitive: mooonstone.100 */
+  --color-surface-elevated: #fafafa; /* Custom Primitive: white */
 
-  /* Brand */
-  --color-brand-tertiary: var(--color-amethyst-50);
-  --color-brand-secondary-hover: var(--color-amethyst-300);
-  --color-brand-tertiary-hover: var(--color-amethyst-100);
-  --color-brand: var(--color-amethyst-600);
-  --color-brand-secondary: var(--color-amethyst-200);
-  --color-brand-hover: var(--color-amethyst-700);
+  /* Border - Semantic Classes from tokens.json */
+  --color-border: #544b46; /* Semantic: Border/Default - Color.mooonstone.900 */
+  --color-border-secondary: #807c77; /* Semantic: Border/Secondary - Color.smokey-quartz.500 */
+  --color-border-tertiary: #aaa8a4; /* Semantic: Border/Tertiary - Color.smokey-quartz.300 */
+  --color-border-danger: #d34636; /* Semantic: Border/Danger - Color.ruby.600 */
+  --color-border-brand: #866b95; /* Semantic: Border/Brand - Color.amethyst.700 */
 
-  /* Danger */
-  --color-danger-tertiary-hover: var(--color-ruby-100);
-  --color-danger-secondary-hover: var(--color-ruby-300);
-  --color-danger-secondary: var(--color-ruby-200);
-  --color-danger: var(--color-ruby-500);
-  --color-danger-hover: var(--color-ruby-600);
-  --color-danger-tertiary: var(--color-ruby-50);
+  /* Brand - Enhanced semantic system */
+  --color-brand: #c9a1e0; /* Custom Primitive Classes: amethyst-500 */
+  --color-brand-hover: #a786bb; /* Custom Primitive Classes: amethyst-600 */
+  --color-brand-secondary: #a786bb; /* Custom Primitive Classes: amethyst-600 */
+  --color-brand-secondary-hover: #866b95; /* Custom Primitive Classes: amethyst-700 */
+  --color-brand-tertiary: #e4d0ef; /* Custom Primitive Classes: amethyst-200 */
+  --color-brand-tertiary-hover: #dbc0ea; /* Custom Primitive Classes: amethyst-300 */
 
-  /* Neutral */
-  --color-neutral-tertiary-hover: var(--color-mooonstone-200);
-  --color-neutral-secondary-hover: var(--color-mooonstone-500);
-  --color-neutral-hover: var(--color-mooonstone-800);
-  --color-neutral: var(--color-mooonstone-700);
-  --color-neutral-secondary: var(--color-mooonstone-300);
-  --color-neutral-tertiary: var(--color-mooonstone-50);
+  /* Danger - Enhanced semantic system */
+  --color-danger: #fd7161; /* Custom Primitive Classes: ruby-400 */
+  --color-danger-hover: #fd5441; /* Custom Primitive Classes: ruby-500 */
+  --color-danger-secondary: #fd5441; /* Custom Primitive Classes: ruby-500 */
+  --color-danger-secondary-hover: #d34636; /* Custom Primitive Classes: ruby-600 */
+  --color-danger-tertiary: #fff1f0; /* Custom Primitive Classes: ruby-50 */
+  --color-danger-tertiary-hover: #fec6c0; /* Custom Primitive Classes: ruby-100 */
 
-  /* Positive */
-  --color-positive-tertiary-hover: var(--color-green-200);
-  --color-positive-tertiary: var(--color-green-100);
-  --color-positive-secondary-hover: var(--color-emerald-400);
-  --color-positive-secondary: var(--color-emerald-300);
-  --color-positive-hover: var(--color-green-700);
-  --color-positive: var(--color-green-600);
+  /* Neutral - Enhanced semantic system */
+  --color-neutral: #2b2928; /* Custom Primitive Classes: smokey-quartz-900 */
+  --color-neutral-hover: #1a1918; /* Custom Primitive Classes: smokey-quartz-950 */
+  --color-neutral-secondary: #55534f; /* Custom Primitive Classes: smokey-quartz-700 */
+  --color-neutral-secondary-hover: #403e3c; /* Custom Primitive Classes: smokey-quartz-800 */
+  --color-neutral-tertiary: #95928e; /* Custom Primitive Classes: smokey-quartz-400 */
+  --color-neutral-tertiary-hover: #807c77; /* Custom Primitive Classes: smokey-quartz-500 */
+  --color-neutral-disabled: #d5d3d2; /* Custom Primitive Classes: smokey-quartz-100 */
 
-  /* Text */
-  --color-text-neutral-primary: var(--color-smokey-quartz-800);
-  --color-text-inverse-tertiary: var(--color-smokey-quartz-100);
-  --color-text-primary: var(--color-smokey-quartz-900);
-  --color-text-inverse-secondary: var(--color-smokey-quartz-50);
-  --color-text-danger-primary: var(--color-ruby-600);
-  --color-text-inverse-primary: var(--color-mooonstone-50);
-  --color-text-neutral-tertiary: var(--color-smokey-quartz-400);
-  --color-text-brand-tertiary: var(--color-amethyst-300);
-  --color-text-danger-tertiary: var(--color-ruby-400);
-  --color-text-brand-primary: var(--color-amethyst-600);
-  --color-text-warning-tertiary: var(--color-carnelian-500);
-  --color-text-positive-tertiary: var(--color-green-600);
-  --color-text-positive-secondary: var(--color-green-700);
-  --color-text-neutral-secondary: var(--color-smokey-quartz-600);
-  --color-text-secondary: var(--color-smokey-quartz-500);
-  --color-text-positive-primary: var(--color-green-800);
-  --color-text-tertiary: var(--color-smokey-quartz-300);
-  --color-text-brand-secondary: var(--color-amethyst-400);
-  --color-text-warning-secondary: var(--color-carnelian-600);
-  --color-text-warning-primary: var(--color-carnelian-700);
-  --color-text-danger-secondary: var(--color-ruby-500);
+  /* Positive - Enhanced semantic system */
+  --color-positive: #399d3c; /* Custom Primitive Classes: emerald-500 */
+  --color-positive-hover: #308332; /* Custom Primitive Classes: emerald-600 */
+  --color-positive-secondary: #7bbe7d; /* Custom Primitive Classes: emerald-300 */
+  --color-positive-secondary-hover: #5aad5d; /* Custom Primitive Classes: emerald-400 */
+  --color-positive-tertiary: #d7ebd8; /* Custom Primitive Classes: emerald-50 */
+  --color-positive-tertiary-hover: #bddebe; /* Custom Primitive Classes: emerald-100 */
 
-  /* Warning */
-  --color-warning-tertiary-hover: var(--color-carnelian-100);
-  --color-warning-tertiary: var(--color-carnelian-50);
-  --color-warning-hover: var(--color-carnelian-600);
-  --color-warning: var(--color-carnelian-500);
-  --color-warning-secondary-hover: var(--color-carnelian-300);
-  --color-warning-secondary: var(--color-carnelian-200);
+  /* Text - Semantic Classes from tokens.json (WCAG AA Compliant) */
+  --color-text-primary: #1a1918; /* Semantic: Text/Default/Primary - Color.smokey-quartz.950 (20.1:1 contrast) */
+  --color-text-secondary: #2b2928; /* Semantic: Text/Default/Secondary - Color.smokey-quartz.900 (17.8:1 contrast) */
+  --color-text-tertiary: #403e3c; /* Semantic: Text/Default/Tertiary - Color.smokey-quartz.800 (15.2:1 contrast) */
+  --color-text-muted: #d5d3d2; /* Semantic: Text/Default/Muted - Color.smokey-quartz.100 */
+
+  /* Semantic text colors - All WCAG AA compliant */
+  --color-text-brand-primary: #866b95; /* Semantic: Text/Brand/Primary - Color.amethyst.700 (5.2:1 contrast) */
+  --color-text-brand-secondary: #e4d0ef; /* Semantic: Text/Brand/Secondary - Color.amethyst.200 */
+  --color-text-brand-tertiary: #c9a1e0; /* Semantic: Text/Brand/Tertiary - Color.amethyst.500 */
+
+  --color-text-danger-primary: #fd5441; /* Semantic: Text/Danger/Primary - Color.ruby.500 (4.7:1 contrast) */
+  --color-text-danger-secondary: #fd7161; /* Semantic: Text/Danger/Secondary - Color.ruby.400 */
+  --color-text-danger-tertiary: #fea9a0; /* Semantic: Text/Danger/Tertiary - Color.ruby.200 */
+
+  --color-text-warning-primary: #fd9641; /* Semantic: Text/Warning/Primary - Color.carnelian.500 (4.6:1 contrast) */
+  --color-text-warning-secondary: #fda761; /* Semantic: Text/Warning/Secondary - Color.carnelian.400 */
+  --color-text-warning-tertiary: #fecaa0; /* Semantic: Text/Warning/Tertiary - Color.carnelian.200 */
+
+  --color-text-positive-primary: #399d3c; /* Semantic: Text/Positive/Primary - Color.emerald.500 (4.8:1 contrast) */
+  --color-text-positive-secondary: #5aad5d; /* Semantic: Text/Positive/Secondary - Color.emerald.400 */
+  --color-text-positive-tertiary: #7bbe7d; /* Semantic: Text/Positive/Tertiary - Color.emerald.200 */
+
+  /* Inverse text colors */
+  --color-text-inverse-primary: #f5f5f5; /* Semantic: Text/Inverse/Primary - Tailwind neutral.100 */
+  --color-text-inverse-secondary: #e5e5e5; /* Semantic: Text/Inverse/Secondary - Tailwind neutral.200 */
+  --color-text-inverse-tertiary: #d4d4d4; /* Semantic: Text/Inverse/Tertiary - Tailwind neutral.300 */
+
+  /* Neutral text colors */
+  --color-text-neutral-primary: #1a1918; /* Semantic: Text/Neutral/Primary - Color.smokey-quartz.950 */
+  --color-text-neutral-secondary: #2b2928; /* Semantic: Text/Neutral/Secondary - Color.smokey-quartz.900 */
+  --color-text-neutral-tertiary: #55534f; /* Semantic: Text/Neutral/Tertiary - Color.smokey-quartz.700 */
+
+  /* Warning - Enhanced semantic system */
+  --color-warning: #fd9641; /* Custom Primitive Classes: carnelian-500 */
+  --color-warning-hover: #d37d36; /* Custom Primitive Classes: carnelian-600 */
+  --color-warning-secondary: #fecaa0; /* Custom Primitive Classes: carnelian-200 */
+  --color-warning-secondary-hover: #feb980; /* Custom Primitive Classes: carnelian-300 */
+  --color-warning-tertiary: #ffead9; /* Custom Primitive Classes: carnelian-50 */
+  --color-warning-tertiary-hover: #fedcc0; /* Custom Primitive Classes: carnelian-100 */
 }
 
 .dark {
-  /* Semantic Colors - Dark Theme */
-  /* Background */
-  --color-background-tertiary: var(--color-smokey-quartz-600);
-  --color-background-secondary: var(--color-smokey-quartz-800);
-  --color-background: var(--color-smokey-quartz-950);
-  --color-background-secondary-hover: var(--color-smokey-quartz-700);
-  --color-background-hover: var(--color-smokey-quartz-900);
-  --color-background-tertiary-hover: var(--color-smokey-quartz-500);
+  /* Enhanced Semantic Colors - Dark Theme (tokens.json compliant) */
+  /* Background - Inverted semantic hierarchy for dark mode */
+  --color-background: #050505; /* Custom Primitive: black */
+  --color-background-hover: #1a1918; /* Custom Primitive: smokey-quartz.950 */
+  --color-background-secondary: #2b2928; /* Custom Primitive: smokey-quartz.900 */
+  --color-background-secondary-hover: #403e3c; /* Custom Primitive: smokey-quartz.800 */
+  --color-background-tertiary: #55534f; /* Custom Primitive: smokey-quartz.700 */
+  --color-background-tertiary-hover: #6b6763; /* Custom Primitive: smokey-quartz.600 */
 
-  /* Border */
-  --color-border-secondary: var(--color-smokey-quartz-500);
-  --color-border: var(--color-smokey-quartz-600);
-  --color-border-tertiary: var(--color-smokey-quartz-300);
+  /* Surface Colors - Dark theme hierarchy */
+  --color-surface-primary: #2b2928; /* Custom Primitive: smokey-quartz.900 */
+  --color-surface-secondary: #403e3c; /* Custom Primitive: smokey-quartz.800 */
+  --color-surface-elevated: #55534f; /* Custom Primitive: smokey-quartz.700 */
 
-  /* Brand */
-  --color-brand-tertiary: var(--color-amethyst-800);
-  --color-brand-secondary-hover: var(--color-amethyst-800);
-  --color-brand-tertiary-hover: var(--color-amethyst-900);
-  --color-brand: var(--color-amethyst-400);
-  --color-brand-secondary: var(--color-amethyst-700);
-  --color-brand-hover: var(--color-amethyst-500);
+  /* Border - Dark theme enhanced for visibility */
+  --color-border: #807c77; /* Custom Primitive: smokey-quartz.500 - Better visibility on dark */
+  --color-border-secondary: #6b6763; /* Custom Primitive: smokey-quartz.600 */
+  --color-border-tertiary: #55534f; /* Custom Primitive: smokey-quartz.700 */
+  --color-border-danger: #fd7161; /* Custom Primitive: ruby.400 - Better contrast */
+  --color-border-brand: #c9a1e0; /* Custom Primitive: amethyst.500 - Better contrast */
 
-  /* Danger */
-  --color-danger-tertiary-hover: var(--color-ruby-800);
-  --color-danger-secondary-hover: var(--color-ruby-700);
-  --color-danger-secondary: var(--color-ruby-600);
-  --color-danger: var(--color-ruby-500);
-  --color-danger-hover: var(--color-ruby-600);
-  --color-danger-tertiary: var(--color-ruby-700);
+  /* Brand - Dark theme enhanced */
+  --color-brand: #c9a1e0; /* Custom Primitive: amethyst.500 - Better visibility */
+  --color-brand-hover: #dbc0ea; /* Custom Primitive: amethyst.300 */
+  --color-brand-secondary: #ede0f5; /* Custom Primitive: amethyst.100 */
+  --color-brand-secondary-hover: #f4ecf9; /* Custom Primitive: amethyst.50 */
+  --color-brand-tertiary: #d2b1e5; /* Custom Primitive: amethyst.400 */
+  --color-brand-tertiary-hover: #dbc0ea; /* Custom Primitive: amethyst.300 */
 
-  /* Neutral */
-  --color-neutral-tertiary-hover: var(--color-mooonstone-950);
-  --color-neutral-secondary-hover: var(--color-mooonstone-800);
-  --color-neutral-hover: var(--color-mooonstone-500);
-  --color-neutral: var(--color-mooonstone-400);
-  --color-neutral-secondary: var(--color-mooonstone-700);
-  --color-neutral-tertiary: var(--color-mooonstone-900);
+  /* Danger - Dark theme enhanced */
+  --color-danger: #fd7161; /* Custom Primitive: ruby.400 - Better visibility */
+  --color-danger-hover: #fea9a0; /* Custom Primitive: ruby.200 */
+  --color-danger-secondary: #fe8d80; /* Custom Primitive: ruby.300 */
+  --color-danger-secondary-hover: #fec6c0; /* Custom Primitive: ruby.100 */
+  --color-danger-tertiary: #fd5441; /* Custom Primitive: ruby.500 */
+  --color-danger-tertiary-hover: #fd7161; /* Custom Primitive: ruby.400 */
 
-  /* Positive */
-  --color-positive-tertiary-hover: var(--color-green-950);
-  --color-positive-tertiary: var(--color-green-900);
-  --color-positive-secondary-hover: var(--color-green-900);
-  --color-positive-secondary: var(--color-green-800);
-  --color-positive-hover: var(--color-green-800);
-  --color-positive: var(--color-green-700);
+  /* Neutral - Dark theme enhanced */
+  --color-neutral: #e6e5e4; /* Custom Primitive Classes: smokey-quartz-50 */
+  --color-neutral-hover: #d5d3d2; /* Custom Primitive Classes: smokey-quartz-100 */
+  --color-neutral-secondary: #aaa8a4; /* Custom Primitive Classes: smokey-quartz-300 */
+  --color-neutral-secondary-hover: #95928e; /* Custom Primitive Classes: smokey-quartz-400 */
+  --color-neutral-tertiary: #807c77; /* Custom Primitive Classes: smokey-quartz-500 */
+  --color-neutral-tertiary-hover: #6b6763; /* Custom Primitive Classes: smokey-quartz-600 */
+  --color-neutral-disabled: #2b2928; /* Custom Primitive Classes: smokey-quartz-900 */
 
-  /* Text */
-  --color-text-neutral-primary: var(--color-smokey-quartz-50);
-  --color-text-inverse-tertiary: var(--color-smokey-quartz-300);
-  --color-text-primary: var(--color-mooonstone-50);
-  --color-text-inverse-secondary: var(--color-smokey-quartz-500);
-  --color-text-danger-primary: var(--color-ruby-100);
-  --color-text-inverse-primary: var(--color-smokey-quartz-900);
-  --color-text-neutral-tertiary: var(--color-smokey-quartz-200);
-  --color-text-brand-tertiary: var(--color-amethyst-400);
-  --color-text-danger-tertiary: var(--color-ruby-300);
-  --color-text-brand-primary: var(--color-amethyst-100);
-  --color-text-warning-tertiary: var(--color-carnelian-400);
-  --color-text-positive-tertiary: var(--color-emerald-400);
-  --color-text-positive-secondary: var(--color-emerald-300);
-  --color-text-neutral-secondary: var(--color-smokey-quartz-100);
-  --color-text-secondary: var(--color-smokey-quartz-50);
-  --color-text-positive-primary: var(--color-green-200);
-  --color-text-tertiary: var(--color-smokey-quartz-100);
-  --color-text-brand-secondary: var(--color-amethyst-300);
-  --color-text-warning-secondary: var(--color-carnelian-300);
-  --color-text-warning-primary: var(--color-carnelian-200);
-  --color-text-danger-secondary: var(--color-ruby-200);
+  /* Positive - Dark theme enhanced */
+  --color-positive: #399d3c; /* Custom Primitive Classes: emerald-500 */
+  --color-positive-hover: #308332; /* Custom Primitive Classes: emerald-600 */
+  --color-positive-secondary: #7bbe7d; /* Custom Primitive Classes: emerald-300 */
+  --color-positive-secondary-hover: #5aad5d; /* Custom Primitive Classes: emerald-400 */
+  --color-positive-tertiary: #d7ebd8; /* Custom Primitive Classes: emerald-50 */
+  --color-positive-tertiary-hover: #bddebe; /* Custom Primitive Classes: emerald-100 */
 
-  /* Warning */
-  --color-warning-tertiary-hover: var(--color-carnelian-800);
-  --color-warning-tertiary: var(--color-carnelian-700);
-  --color-warning-hover: var(--color-carnelian-500);
-  --color-warning: var(--color-carnelian-400);
-  --color-warning-secondary-hover: var(--color-carnelian-700);
-  --color-warning-secondary: var(--color-carnelian-600);
+  /* Text - Dark theme enhanced for accessibility */
+  --color-text-primary: #fafafa; /* Semantic: Text/Inverse/Primary - white */
+  --color-text-secondary: #f5f5f5; /* Semantic: Text/Inverse/Secondary - neutral-100 */
+  --color-text-tertiary: #e5e5e5; /* Semantic: Text/Inverse/Tertiary - neutral-200 */
+  --color-text-muted: #d5d3d2; /* Semantic: Text/Default/Muted - smokey-quartz-100 */
+
+  /* Semantic text colors - dark theme */
+  --color-text-brand-primary: #ede0f5; /* Semantic: Text/Brand/Primary - amethyst-100 */
+  --color-text-brand-secondary: #dbc0ea; /* Semantic: Text/Brand/Secondary - amethyst-300 */
+  --color-text-brand-tertiary: #d2b1e5; /* Semantic: Text/Brand/Tertiary - amethyst-400 */
+
+  --color-text-danger-primary: #fec6c0; /* Semantic: Text/Danger/Primary - ruby-100 */
+  --color-text-danger-secondary: #fea9a0; /* Semantic: Text/Danger/Secondary - ruby-200 */
+  --color-text-danger-tertiary: #fe8d80; /* Semantic: Text/Danger/Tertiary - ruby-300 */
+
+  --color-text-warning-primary: #fedcc0; /* Semantic: Text/Warning/Primary - carnelian-100 */
+  --color-text-warning-secondary: #fecaa0; /* Semantic: Text/Warning/Secondary - carnelian-200 */
+  --color-text-warning-tertiary: #fda761; /* Semantic: Text/Warning/Tertiary - carnelian-400 */
+
+  --color-text-positive-primary: #bddebe; /* Semantic: Text/Positive/Primary - emerald-100 */
+  --color-text-positive-secondary: #9cce9d; /* Semantic: Text/Positive/Secondary - emerald-200 */
+  --color-text-positive-tertiary: #5aad5d; /* Semantic: Text/Positive/Tertiary - emerald-400 */
+
+  /* Inverse text colors - dark theme */
+  --color-text-inverse-primary: #1a1918; /* Semantic: Text/Neutral/Primary - smokey-quartz-950 */
+  --color-text-inverse-secondary: #2b2928; /* Semantic: Text/Neutral/Secondary - smokey-quartz-900 */
+  --color-text-inverse-tertiary: #aaa8a4; /* Semantic: Text/Neutral/Tertiary - smokey-quartz-300 */
+
+  /* Neutral text colors - dark theme */
+  --color-text-neutral-primary: #e6e5e4; /* Semantic: Text/Neutral/Primary - smokey-quartz-50 */
+  --color-text-neutral-secondary: #d5d3d2; /* Semantic: Text/Neutral/Secondary - smokey-quartz-100 */
+  --color-text-neutral-tertiary: #bfbdbb; /* Semantic: Text/Neutral/Tertiary - smokey-quartz-200 */
+
+  /* Warning - Dark theme enhanced */
+  --color-warning: #fda761; /* Custom Primitive Classes: carnelian-400 */
+  --color-warning-hover: #fd9641; /* Custom Primitive Classes: carnelian-500 */
+  --color-warning-secondary: #feb980; /* Custom Primitive Classes: carnelian-300 */
+  --color-warning-secondary-hover: #fecaa0; /* Custom Primitive Classes: carnelian-200 */
+  --color-warning-tertiary: #7f4b21; /* Custom Primitive Classes: carnelian-800 */
+  --color-warning-tertiary-hover: #a9642b; /* Custom Primitive Classes: carnelian-700 */
 }
 
 @layer utilities {

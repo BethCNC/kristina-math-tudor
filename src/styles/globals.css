@@ -1,11 +1,10 @@
-/* 
- * Update your font families 
- * Use @import if using Google Fonts or similar service
- * Use @font-face if using a local font (see tailwindcss docs)
+/*
+ * Enhanced Academic Success Dashboard - Global Styles
+ * Updated to use Host Grotesk font family consistently
+ * Accessibility-focused design system implementation
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Mono font */
 
 @import "tailwindcss";
@@ -17,11 +16,11 @@
  */
 
 @theme {
-  /* Font Variables */
-  --font-sans: "Vend Sans", sans-serif; /* Change to your imported font-family */
-  --font-serif: "Vend Sans", serif; /* Change to your imported font-family */
-  --font-mono: "Space Mono", monospace; /* Change to your imported font-family */
-  --font-heading: "Vend Sans", sans-serif; /* Change to your imported font-family or change to var(--font-sans) if only using one font-family */
+  /* Font Variables - Updated to Host Grotesk */
+  --font-sans: "Host Grotesk", sans-serif;
+  --font-serif: "Host Grotesk", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-heading: "Host Grotesk", sans-serif;
 
   /* Amber Colors */
   --color-amber-50: #fffbeb;
@@ -523,10 +522,14 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Dark Mode as Default */
+/* Enhanced Body Styling */
 body {
-  background: var(--color-mooonstone-300);
-  color: var(--color-smokey-quartz-50);
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Pops of Color for Dark Mode */
