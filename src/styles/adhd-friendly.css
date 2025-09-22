@@ -1,0 +1,368 @@
+/*
+ * ADHD-Friendly Academic Dashboard Design System
+ * Focus: Cognitive Load Reduction, Clear Visual Hierarchy, Minimal Distractions
+ */
+
+/* Import clean, readable fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ADHD-Friendly Color Palette - High Contrast, Calming */
+  --primary-blue: #2563eb;
+  --primary-blue-light: #3b82f6;
+  --success-green: #059669;
+  --success-green-light: #10b981;
+  --warning-orange: #ea580c;
+  --warning-orange-light: #f97316;
+  --urgent-red: #dc2626;
+  --urgent-red-light: #ef4444;
+
+  /* Neutral colors for reduced cognitive load */
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+
+  /* Typography scale - simplified and consistent */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+
+  /* Spacing for cognitive breathing room */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-12: 3rem;     /* 48px */
+
+  /* Border radius for friendly, approachable feel */
+  --radius-sm: 0.375rem;  /* 6px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+}
+
+/* Base body styles */
+body {
+  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--gray-900);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+/* Reduced motion for sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Typography System - Clear and Scannable */
+.text-huge {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--gray-900);
+  margin-bottom: var(--space-4);
+}
+
+.text-big {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--gray-900);
+  margin-bottom: var(--space-3);
+}
+
+.text-medium {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--gray-900);
+  margin-bottom: var(--space-2);
+}
+
+.text-normal {
+  font-size: var(--text-base);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+.text-small {
+  font-size: var(--text-sm);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--gray-600);
+}
+
+/* Layout Containers - Focused and Uncluttered */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.section {
+  margin-bottom: var(--space-12);
+}
+
+.card {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Status Cards with Clear Color Coding */
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+}
+
+.status-active {
+  background-color: #ecfdf5;
+  border-left-color: var(--success-green);
+}
+
+.status-warning {
+  background-color: #fef3c7;
+  border-left-color: var(--warning-orange);
+}
+
+.status-urgent {
+  background-color: #fee2e2;
+  border-left-color: var(--urgent-red);
+}
+
+/* Buttons - Clear and Actionable */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-base);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+  min-height: 44px; /* Touch target size */
+  justify-content: center;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-light);
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background-color: var(--success-green);
+  color: var(--white);
+}
+
+.btn-success:hover {
+  background-color: var(--success-green-light);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+/* Quick Action Cards - Visual and Immediate */
+.quick-action {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.quick-action:hover {
+  transform: scale(1.02);
+}
+
+.quick-action-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  font-size: 24px;
+  color: var(--white);
+}
+
+.quick-action-math { background-color: var(--success-green); }
+.quick-action-writing { background-color: var(--primary-blue); }
+.quick-action-calendar { background-color: var(--warning-orange); }
+.quick-action-resources { background-color: var(--gray-600); }
+
+/* Progress Elements - Clear Visual Feedback */
+.progress-container {
+  background-color: var(--gray-200);
+  border-radius: var(--radius-sm);
+  height: 8px;
+  overflow: hidden;
+  margin: var(--space-2) 0;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  transition: width 0.3s ease;
+}
+
+.progress-success { background-color: var(--success-green); }
+
+/* Navigation - Simple and Predictable */
+.nav {
+  background-color: var(--white);
+  border-bottom: 2px solid var(--gray-200);
+  padding: var(--space-4) 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-6);
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--gray-700);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+  background-color: var(--gray-100);
+  color: var(--primary-blue);
+}
+
+/* Grid System - Clean and Organized */
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .container {
+    padding: 0 var(--space-3);
+  }
+}
+
+/* Focus states for accessibility */
+*:focus {
+  outline: 3px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+/* Utility classes */
+.mb-small { margin-bottom: var(--space-2); }
+.mb-medium { margin-bottom: var(--space-4); }
+.mb-large { margin-bottom: var(--space-8); }
+
+.text-center { text-align: center; }
+.text-success { color: var(--success-green); }
+.text-warning { color: var(--warning-orange); }
+.text-urgent { color: var(--urgent-red); }
+
+.bg-success-light { background-color: #ecfdf5; }
+.bg-warning-light { background-color: #fef3c7; }
+.bg-urgent-light { background-color: #fee2e2; }
+
+/* Hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
