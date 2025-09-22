@@ -40,17 +40,17 @@
   --color-primary-900: #f0f9ff;    /* Brightest blue for text */
 
   /* === SUCCESS COLORS === */
-  /* Enhanced greens for dark mode - better visibility for completed tasks */
-  --color-success-50: #064e3b;     /* Darkest green for backgrounds */
-  --color-success-100: #065f46;    /* Dark green accents */
-  --color-success-200: #047857;    /* Medium green for borders */
-  --color-success-300: #059669;    /* Interaction green */
-  --color-success-400: #10b981;    /* Primary success green */
-  --color-success-500: #34d399;    /* Bright success green */
-  --color-success-600: #6ee7b7;    /* Light success green */
-  --color-success-700: #a7f3d0;    /* Lighter green */
-  --color-success-800: #d1fae5;    /* Very light green */
-  --color-success-900: #ecfdf5;    /* Brightest green for text */
+  /* Professional green for completed tasks */
+  --color-success-50: #0f1f13;     /* Dark green background */
+  --color-success-100: #15803d;    /* Dark green accents */
+  --color-success-200: #166534;    /* Medium green for borders */
+  --color-success-300: #16a34a;    /* Interaction green */
+  --color-success-400: #22c55e;    /* Primary success green */
+  --color-success-500: #4ade80;    /* Bright success green */
+  --color-success-600: #86efac;    /* Light success green */
+  --color-success-700: #bbf7d0;    /* Lighter green */
+  --color-success-800: #dcfce7;    /* Very light green */
+  --color-success-900: #f0fdf4;    /* Brightest green for text */
 
   /* === WARNING COLORS === */
   /* Enhanced oranges for dark mode - warm but visible warnings */
@@ -66,10 +66,10 @@
   --color-warning-900: #fffbeb;    /* Brightest orange for text */
 
   /* === URGENT COLORS === */
-  /* Enhanced reds for dark mode - attention-grabbing but not harsh */
-  --color-urgent-50: #7f1d1d;      /* Darkest red for backgrounds */
-  --color-urgent-100: #991b1b;     /* Dark red accents */
-  --color-urgent-200: #b91c1c;     /* Medium red for borders */
+  /* Professional red for urgency - clear and accessible */
+  --color-urgent-50: #1f1315;      /* Dark red background */
+  --color-urgent-100: #7f1d1d;     /* Dark red accents */
+  --color-urgent-200: #991b1b;     /* Medium red for borders */
   --color-urgent-300: #dc2626;     /* Interaction red */
   --color-urgent-400: #ef4444;     /* Primary urgent red */
   --color-urgent-500: #f87171;     /* Bright urgent red */
@@ -94,12 +94,14 @@
   --color-neutral-900: #fafafa;    /* Maximum contrast text */
 
   /* === SEMANTIC COLORS === */
-  --color-math: var(--color-primary-600);
-  --color-math-light: var(--color-primary-100);
-  --color-english: #7c3aed;
-  --color-english-light: #ede9fe;
-  --color-calendar: #059669;
-  --color-calendar-light: #d1fae5;
+  --color-math: #2563eb;           /* Deep blue for math */
+  --color-math-light: #1e40af;
+  --color-english: #7c3aed;        /* Professional purple for English */
+  --color-english-light: #5b21b6;
+  --color-calendar: #0ea5e9;       /* Sky blue for calendar */
+  --color-calendar-light: #0284c7;
+  --color-resources: #ea580c;      /* Orange for resources */
+  --color-resources-light: #c2410c;
 
   /* === TYPOGRAPHY SCALE === */
   /* Optimized for readability and hierarchy */
@@ -113,7 +115,7 @@
   --font-size-4xl: 2.25rem;     /* 36px */
 
   /* === SPACING SYSTEM === */
-  /* Fibonacci-based for natural cognitive flow */
+  /* Enhanced spacing for better visual hierarchy and ADHD-friendly layouts */
   --space-0: 0;
   --space-px: 1px;
   --space-0-5: 0.125rem;    /* 2px */
@@ -130,8 +132,15 @@
   --space-8: 2rem;          /* 32px */
   --space-10: 2.5rem;       /* 40px */
   --space-12: 3rem;         /* 48px */
+  --space-14: 3.5rem;       /* 56px */
   --space-16: 4rem;         /* 64px */
+  --space-18: 4.5rem;       /* 72px */
   --space-20: 5rem;         /* 80px */
+  --space-24: 6rem;         /* 96px */
+  --space-28: 7rem;         /* 112px */
+  --space-32: 8rem;         /* 128px */
+  --space-40: 10rem;        /* 160px */
+  --space-48: 12rem;        /* 192px */
 
   /* === BORDER RADIUS === */
   --radius-none: 0px;
@@ -212,23 +221,72 @@ body {
 /* ===== LAYOUT SYSTEM ===== */
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
 }
 
-/* Professional grid system */
+/* Enhanced container spacing for optimal ADHD-friendly layouts */
+@media (max-width: 640px) {
+  .container {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1440px;
+    padding-left: var(--space-12);
+    padding-right: var(--space-12);
+  }
+}
+
+/* Enhanced grid system with optimal spacing for ADHD users */
 .grid {
   display: grid;
-  gap: var(--space-6);
+  gap: var(--space-10);
 }
 
 .grid-1 { grid-template-columns: 1fr; }
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-8);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+/* Enhanced responsive grid behavior for ADHD-friendly layouts */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+}
+
+@media (max-width: 640px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .grid {
+    gap: var(--space-6);
+  }
+}
 
 /* Responsive breakpoints */
 @media (max-width: 768px) {
@@ -330,22 +388,22 @@ body {
 }
 
 .card-padding {
-  padding: var(--space-6);
+  padding: var(--space-8);
 }
 
 .card-header {
-  padding: var(--space-6);
+  padding: var(--space-8);
   border-bottom: 1px solid var(--color-neutral-200);
   background: var(--color-neutral-25);
   backdrop-filter: blur(4px);
 }
 
 .card-content {
-  padding: var(--space-6);
+  padding: var(--space-8);
 }
 
 .card-footer {
-  padding: var(--space-6);
+  padding: var(--space-8);
   border-top: 1px solid var(--color-neutral-200);
   background: var(--color-neutral-25);
   backdrop-filter: blur(4px);
@@ -562,20 +620,21 @@ body {
 
 .status-card {
   display: flex;
-  align-items: flex-start;
-  gap: var(--space-4);
-  padding: var(--space-6);
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-8);
   border-radius: var(--radius-xl);
   border: 2px solid transparent;
   transition: all var(--transition-normal);
+  min-height: 120px;
 }
 
-/* Status variants - enhanced for dark mode */
+/* Status variants - better color scheme */
 .status-urgent {
   background: linear-gradient(135deg, var(--color-urgent-100) 0%, var(--color-urgent-200) 100%);
   border-color: var(--color-urgent-400);
   animation: urgent-pulse 3s infinite;
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
 }
 
 .status-warning {
@@ -587,7 +646,7 @@ body {
 .status-success {
   background: linear-gradient(135deg, var(--color-success-100) 0%, var(--color-success-200) 100%);
   border-color: var(--color-success-400);
-  box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
 }
 
 .status-completed {
@@ -608,7 +667,7 @@ body {
 .progress-tracker {
   background: var(--color-neutral-50);
   border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  padding: var(--space-8);
   border: 1px solid var(--color-neutral-200);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
@@ -618,7 +677,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .progress-header h3 {
@@ -629,18 +688,19 @@ body {
 }
 
 .progress-percentage {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-3xl);
   font-weight: 700;
-  color: var(--color-primary-600);
+  color: var(--color-primary-500);
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
 }
 
 .progress-bar-container {
   width: 100%;
-  height: 12px;
+  height: 16px;
   background: var(--color-neutral-200);
   border-radius: var(--radius-full);
   overflow: hidden;
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .progress-bar {
@@ -665,7 +725,7 @@ body {
 .progress-details {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 /* ===== TASK STATUS BADGES ===== */
@@ -711,14 +771,14 @@ body {
 /* ===== ATTENTION GRABBER SYSTEM ===== */
 
 .attention-grabber {
-  background: linear-gradient(135deg, var(--color-urgent-100) 0%, var(--color-warning-100) 100%);
+  background: linear-gradient(135deg, var(--color-urgent-100) 0%, var(--color-urgent-200) 100%);
   border: 2px solid var(--color-urgent-400);
   border-radius: var(--radius-2xl);
-  padding: var(--space-6);
-  margin-bottom: var(--space-8);
+  padding: var(--space-10);
+  margin-bottom: var(--space-16);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+  box-shadow: 0 8px 32px rgba(239, 68, 68, 0.3);
   backdrop-filter: blur(10px);
 }
 
@@ -752,8 +812,8 @@ body {
 .action-item {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4);
+  gap: var(--space-4);
+  padding: var(--space-6);
   background: var(--color-neutral-50);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-neutral-200);
@@ -811,7 +871,7 @@ body {
 .focus-today {
   background: var(--color-neutral-50);
   border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  padding: var(--space-8);
   border: 1px solid var(--color-neutral-200);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
@@ -821,21 +881,21 @@ body {
   font-size: var(--font-size-xl);
   font-weight: 700;
   color: var(--color-neutral-800);
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-8);
   text-align: center;
 }
 
 .focus-items {
   display: grid;
-  gap: var(--space-4);
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .focus-item {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4);
+  gap: var(--space-4);
+  padding: var(--space-6);
   background: var(--color-neutral-100);  /* Slightly lighter for contrast */
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-neutral-200);
@@ -903,7 +963,7 @@ body {
 .pomodoro-timer {
   background: var(--color-neutral-50);
   border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  padding: var(--space-8);
   text-align: center;
   border: 2px solid var(--color-primary-200);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
@@ -915,15 +975,15 @@ body {
   font-size: var(--font-size-4xl);
   font-weight: 700;
   color: var(--color-primary-600);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
   letter-spacing: 0.1em;
 }
 
 .timer-controls {
   display: flex;
   justify-content: center;
-  gap: var(--space-3);
-  margin-bottom: var(--space-4);
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .timer-btn {
@@ -963,9 +1023,9 @@ body {
 
 .quick-actions {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-6);
-  margin-bottom: var(--space-12);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-8);
+  margin-bottom: var(--space-16);
 }
 
 .quick-action {
@@ -981,12 +1041,17 @@ body {
 .quick-action-card {
   background: var(--color-neutral-50);
   border-radius: var(--radius-xl);
-  padding: var(--space-6);
+  padding: var(--space-8);
   text-align: center;
   border: 1px solid var(--color-neutral-200);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-normal);
   backdrop-filter: blur(6px);
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .quick-action-card:hover {
@@ -996,48 +1061,60 @@ body {
 }
 
 .quick-action-icon {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto var(--space-4);
-  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-3xl);
   color: var(--color-neutral-0);
   transition: all var(--transition-fast);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .quick-action-math {
-  background: linear-gradient(135deg, var(--color-math) 0%, var(--color-primary-700) 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 }
 
 .quick-action-english {
-  background: linear-gradient(135deg, var(--color-english) 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
 }
 
 .quick-action-calendar {
-  background: linear-gradient(135deg, var(--color-calendar) 0%, var(--color-success-700) 100%);
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
 }
 
 .quick-action-resources {
-  background: linear-gradient(135deg, var(--color-warning-600) 0%, var(--color-warning-700) 100%);
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
 }
 
 /* ===== SECTIONS ===== */
 
 .section {
-  margin-bottom: var(--space-12);
+  margin-bottom: var(--space-20);
+  padding: var(--space-4) 0;
+}
+
+.section:first-child {
+  margin-top: var(--space-12);
+}
+
+.section:last-child {
+  margin-bottom: var(--space-32);
 }
 
 .section-title {
   font-size: var(--font-size-2xl);
   font-weight: 700;
   color: var(--color-neutral-900);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-10);
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 2px solid var(--color-neutral-200);
 }
 
 /* ===== ANIMATIONS ===== */
@@ -1145,6 +1222,50 @@ body {
   .card, .status-card, .progress-tracker {
     border-width: 2px;
   }
+}
+
+/* Additional modern design enhancements */
+
+/* Improved visual hierarchy with better contrast */
+.card:focus-within {
+  box-shadow: 0 0 0 3px var(--color-primary-200), 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  border-color: var(--color-primary-300);
+}
+
+/* Enhanced button interactions */
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Better loading states */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+  position: relative;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid var(--color-primary-200);
+  border-radius: 50%;
+  border-top-color: var(--color-primary-500);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
 
 /* Enhanced dark mode is now the default - no media query needed */
