@@ -75,8 +75,16 @@
 </head>
 
 <body class="min-h-screen">
-    <!-- Header -->
+    <!-- Header with Breadcrumb Navigation -->
     <header class="hero-gradient text-text-primary py-8">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">📊 Formula Lookup</a>
+            </nav>
+        </div>
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex items-center gap-4 mb-4">
                 <a href="index.html" class="btn btn-ghost text-text-primary hover:bg-white/20">
@@ -97,6 +105,32 @@
     </header>
 
     <div class="max-w-6xl mx-auto p-4">
+        <!-- Exam Reminders -->
+        <div class="deadline-urgent mb-6">
+            <div class="flex items-center space-x-3">
+                <div class="deadline-icon">
+                    📊
+                </div>
+                <div>
+                    <h3 class="deadline-title">Need These for Test 1!</h3>
+                    <p class="deadline-text">Basic formulas & reasoning (Chapter 1) • Test: Sept 8-12</p>
+                </div>
+                <div class="ml-auto">
+                    <div class="countdown-timer">5 days left</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Study Helper -->
+        <div class="study-helper mb-6">
+            <h3 class="helper-title">🎯 Quick Study Mode</h3>
+            <div class="helper-buttons">
+                <button class="helper-btn" data-filter="chapter-1">Chapter 1 Only</button>
+                <button class="helper-btn" data-filter="test-1">Test 1 Formulas</button>
+                <button class="helper-btn" data-filter="all">Show All</button>
+            </div>
+        </div>
+
         <!-- Quick Navigation -->
         <div class="mb-8">
             <div class="flex flex-wrap gap-2 mb-4">

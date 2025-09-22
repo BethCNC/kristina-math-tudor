@@ -106,8 +106,16 @@
 </head>
 
 <body class="bg-background text-text-primary font-sans antialiased">
-    <!-- Header -->
+    <!-- Header with Breadcrumb Navigation -->
     <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">📅 Academic Calendar</a>
+            </nav>
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-4">
@@ -141,6 +149,44 @@
             </div>
         </div>
     </header>
+
+    <!-- Urgent Deadlines Alert -->
+    <div class="attention-grabber mb-8 mx-4">
+        <div class="attention-content">
+            <h3>⚠️ Upcoming Deadlines!</h3>
+            <div class="next-actions">
+                <div class="action-item action-urgent">
+                    <span class="action-icon">📝</span>
+                    <span class="action-text">Essay 1 Due: Sept 15 (8 days left)</span>
+                    <button class="action-btn">Work on it</button>
+                </div>
+                <div class="action-item deadline-reminder">
+                    <span class="action-icon">📊</span>
+                    <span class="action-text">Test 1: Sept 8-12 (5 days left)</span>
+                    <button class="action-btn">Study now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Focus Today -->
+    <div class="focus-today mb-8 mx-4">
+        <h3 class="focus-title">Today's Focus Areas</h3>
+        <div class="focus-items">
+            <div class="focus-item focus-math">
+                <span class="focus-icon">📊</span>
+                <span class="focus-subject">MAT 143</span>
+                <span class="focus-task">Chapter 1: Mathematical Thinking</span>
+                <div class="focus-progress">65% Complete</div>
+            </div>
+            <div class="focus-item focus-english">
+                <span class="focus-icon">✍️</span>
+                <span class="focus-subject">ENG 111</span>
+                <span class="focus-task">Narrative Essay First Draft</span>
+                <div class="focus-progress">40% Complete</div>
+            </div>
+        </div>
+    </div>
 
     <!-- Navigation Tabs -->
     <section class="bg-background-secondary border border-border border-b border-border sticky top-20 z-40 mb-12" class="mb-12">

@@ -366,3 +366,319 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* Executive Function Support Features */
+
+/* Vivid Due Date Reminders */
+.deadline-urgent {
+  background: linear-gradient(135deg, #fee2e2, #fecaca);
+  border: 3px solid var(--urgent-red);
+  animation: pulse-urgent 2s infinite;
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+}
+
+.deadline-today {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 3px solid var(--warning-orange);
+  animation: pulse-warning 3s infinite;
+  box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
+}
+
+.deadline-soon {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 2px solid var(--primary-blue);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+@keyframes pulse-urgent {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes pulse-warning {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Task Status Visual Cues */
+.task-not-started {
+  border-left: 6px solid var(--gray-300);
+  background-color: var(--gray-50);
+}
+
+.task-in-progress {
+  border-left: 6px solid var(--primary-blue);
+  background: linear-gradient(90deg, #dbeafe, #f8fafc);
+}
+
+.task-completed {
+  border-left: 6px solid var(--success-green);
+  background: linear-gradient(90deg, #ecfdf5, #f8fafc);
+  opacity: 0.7;
+}
+
+.task-overdue {
+  border-left: 6px solid var(--urgent-red);
+  background: linear-gradient(90deg, #fee2e2, #fef2f2);
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Progress Tracking for Executive Function */
+.progress-ring {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--space-4);
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.progress-circle circle {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.progress-bg {
+  stroke: var(--gray-200);
+}
+
+.progress-fill {
+  stroke: var(--success-green);
+  stroke-dasharray: 251;
+  stroke-dashoffset: 251;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+/* Executive Function Helper Cards */
+.executive-helper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  padding: var(--space-4);
+  background: var(--white);
+  border: 2px solid var(--primary-blue);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: slide-in 0.3s ease-out;
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.helper-close {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  background: none;
+  border: none;
+  font-size: var(--text-lg);
+  cursor: pointer;
+  color: var(--gray-600);
+}
+
+/* Time Management Visuals */
+.time-block {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+}
+
+.time-now {
+  border-color: var(--urgent-red);
+  background: linear-gradient(90deg, #fee2e2, #fef2f2);
+}
+
+.time-next {
+  border-color: var(--warning-orange);
+  background: linear-gradient(90deg, #fef3c7, #fffbeb);
+}
+
+.time-later {
+  border-color: var(--gray-300);
+  background: var(--gray-50);
+}
+
+/* Study Session Timer */
+.pomodoro-timer {
+  text-align: center;
+  padding: var(--space-6);
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border: 3px solid var(--primary-blue);
+  border-radius: var(--radius-xl);
+  margin-bottom: var(--space-6);
+}
+
+.timer-display {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-bottom: var(--space-4);
+  font-family: 'Atkinson Hyperlegible', monospace;
+}
+
+.timer-controls {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Attention Grabbers for ADHD */
+.attention-grabber {
+  animation: gentle-bounce 2s infinite;
+  background: linear-gradient(45deg, #fef3c7, #fbbf24);
+  border: 3px solid var(--warning-orange);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+@keyframes gentle-bounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Clear Navigation Breadcrumbs */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--gray-100);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.breadcrumb-separator {
+  color: var(--gray-400);
+}
+
+/* Chapter Progress Tracker */
+.chapter-progress {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.progress-step {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  color: var(--white);
+  position: relative;
+}
+
+.step-completed {
+  background: var(--success-green);
+}
+
+.step-current {
+  background: var(--primary-blue);
+  animation: pulse-current 2s infinite;
+}
+
+.step-upcoming {
+  background: var(--gray-400);
+}
+
+@keyframes pulse-current {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+  50% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+}
+
+/* Quick Action Floating Button */
+.floating-action {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.floating-action:hover {
+  transform: scale(1.1);
+}
+
+/* Executive Function Reminders */
+.reminder-sticky {
+  position: relative;
+  background: #fef08a;
+  border: 2px solid #eab308;
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  transform: rotate(-1deg);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-sticky::before {
+  content: "📌";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+/* Visual Learning Aids */
+.concept-visual {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border: 3px dashed var(--primary-blue);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+  margin: var(--space-6) 0;
+}
+
+.concept-icon {
+  font-size: 48px;
+  margin-bottom: var(--space-4);
+}
+
+/* Mobile optimizations for ADHD */
+@media (max-width: 768px) {
+  .executive-helper {
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--space-4);
+  }
+
+  .floating-action {
+    bottom: 80px; /* Account for mobile navigation */
+  }
+
+  .timer-display {
+    font-size: 2rem;
+  }
+}

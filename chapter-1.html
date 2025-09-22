@@ -16,8 +16,18 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body class="bg-background text-text-primary font-sans antialiased">
-    <!-- Header -->
+    <!-- Header with Breadcrumb Navigation -->
     <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">📖 Chapter 1: Mathematical Thinking</a>
+                <span class="breadcrumb-separator">→</span>
+                <span class="breadcrumb-preview">📈 Chapter 3: Statistics (Next)</span>
+            </nav>
+        </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
@@ -53,6 +63,38 @@
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Deadline Alert Banner -->
+        <div class="deadline-urgent mb-6">
+            <div class="flex items-center space-x-3">
+                <div class="deadline-icon">
+                    ⚠️
+                </div>
+                <div>
+                    <h3 class="deadline-title">Test 1 Coming Up!</h3>
+                    <p class="deadline-text">Sept 8-12 • Chapter 1 material will be on the test</p>
+                </div>
+                <div class="ml-auto">
+                    <div class="countdown-timer">5 days left</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Progress Tracker -->
+        <div class="progress-tracker mb-6">
+            <div class="progress-header">
+                <h3>Your Chapter 1 Progress</h3>
+                <span class="progress-percentage">65%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 65%"></div>
+            </div>
+            <div class="progress-details">
+                <span class="task-completed">✅ Section 1.1 Complete</span>
+                <span class="task-in-progress">🔄 Section 1.2 In Progress</span>
+                <span class="task-pending">⏳ Section 1.3 Pending</span>
+            </div>
+        </div>
+
         <!-- Chapter Hero -->
         <div class="mb-8">
             <div class="bg-background-tertiary border border-border border border-positive rounded-xl p-8 mb-6">
@@ -68,6 +110,20 @@
                     </div>
                 </div>
                 
+                <!-- Study Session Planner -->
+                <div class="study-planner mb-6">
+                    <h4 class="font-subtitle text-text-primary mb-3">📅 Your Study Plan</h4>
+                    <div class="pomodoro-timer">
+                        <div class="timer-display">25:00</div>
+                        <div class="timer-controls">
+                            <button class="timer-btn timer-start">▶️ Start</button>
+                            <button class="timer-btn timer-pause">⏸️ Pause</button>
+                            <button class="timer-btn timer-reset">🔄 Reset</button>
+                        </div>
+                        <p class="timer-session">Focus Session 1 of 3 for today</p>
+                    </div>
+                </div>
+
                 <!-- Quick Stats -->
                 <div class="grid sm:grid-cols-3 gap-6">
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
@@ -77,12 +133,13 @@
                         <p class="font-button-small text-text-primary mb-4 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">2-3 Hours</p>
                         <p class="font-caption text-text-secondary mb-4 mb-4">Study Time</p>
                     </div>
-                    <div class="bg-background border border-border rounded-lg p-4 text-center">
+                    <div class="deadline-reminder">
                         <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
                             <i data-lucide="target" class="w-4 h-4 text-warning" aria-label="Goal"></i>
                         </div>
                         <p class="font-button-small text-text-primary mb-4 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Test 1</p>
-                        <p class="font-caption text-text-secondary mb-4 mb-4">Sept 8-12</p>
+                        <p class="font-caption text-danger mb-4 mb-4 font-bold">Sept 8-12 ⚠️</p>
+                        <div class="urgency-indicator">HIGH PRIORITY</div>
                     </div>
                     <div class="bg-background border border-border rounded-lg p-4 text-center">
                         <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
@@ -98,8 +155,12 @@
         <!-- Learning Sections -->
         <div class="space-y-8">
             <!-- Section 1.1: Thinking Mathematically -->
-            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden section-completed">
                 <div class="bg-background-tertiary border border-border border-b border-positive p-6">
+                    <div class="section-status">
+                        <span class="status-badge status-completed">✅ Completed</span>
+                        <span class="study-time">Studied: 45 min ago</span>
+                    </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-12 h-12 rounded-xl bg-positive text-text-primary flex items-center justify-center">
                             <i data-lucide="lightbulb" aria-label="Idea" aria-label="Idea" class="w-6 h-6 text-text-primary" aria-label="Idea"></i>
@@ -229,8 +290,12 @@
             </div>
 
             <!-- Section 1.2: Estimating and Evaluating -->
-            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden section-in-progress">
                 <div class="bg-background-tertiary border border-border border-b border-positive p-6">
+                    <div class="section-status">
+                        <span class="status-badge status-in-progress">🔄 In Progress</span>
+                        <span class="study-time">Resume your work here!</span>
+                    </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-12 h-12 rounded-xl bg-positive text-text-primary flex items-center justify-center">
                             <i data-lucide="calculator" class="w-6 h-6 text-text-primary" aria-label="Calculator"></i>
@@ -370,8 +435,12 @@
             </div>
 
             <!-- Section 1.3: Problem Solving -->
-            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+            <div class="bg-background-secondary border border-border rounded-xl overflow-hidden section-pending">
                 <div class="bg-background-tertiary border border-border border-b border-positive p-6">
+                    <div class="section-status">
+                        <span class="status-badge status-pending">⏳ Not Started</span>
+                        <span class="study-time">Start after Section 1.2</span>
+                    </div>
                     <div class="flex items-center space-x-4">
                         <div class="w-12 h-12 rounded-xl bg-positive text-text-primary flex items-center justify-center">
                             <i data-lucide="puzzle" class="w-6 h-6 text-text-primary"></i>
@@ -887,6 +956,25 @@
             </div>
         </section>
 
+        <!-- Quick Actions & Reminders -->
+        <div class="attention-grabber mb-8">
+            <div class="attention-content">
+                <h3>🎯 What's Next?</h3>
+                <div class="next-actions">
+                    <div class="action-item action-urgent">
+                        <span class="action-icon">📖</span>
+                        <span class="action-text">Finish Section 1.2 (20 min left)</span>
+                        <button class="action-btn">Continue</button>
+                    </div>
+                    <div class="action-item">
+                        <span class="action-icon">📝</span>
+                        <span class="action-text">Complete practice problems</span>
+                        <button class="action-btn">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Navigation -->
         <div class="mt-8 flex items-center justify-between">
             <a href="index.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border transition-colors">
@@ -904,8 +992,71 @@
     <script>
         lucide.createIcons();
         
-        // Enhanced ADHD-friendly features
+        // Enhanced ADHD-friendly features with executive function support
         document.addEventListener('DOMContentLoaded', function() {
+            // Pomodoro Timer Functionality
+            const timerDisplay = document.querySelector('.timer-display');
+            const startBtn = document.querySelector('.timer-start');
+            const pauseBtn = document.querySelector('.timer-pause');
+            const resetBtn = document.querySelector('.timer-reset');
+            let timerInterval;
+            let timeLeft = 25 * 60; // 25 minutes in seconds
+            let isRunning = false;
+
+            function updateDisplay() {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+
+            startBtn.addEventListener('click', function() {
+                if (!isRunning) {
+                    isRunning = true;
+                    timerInterval = setInterval(function() {
+                        timeLeft--;
+                        updateDisplay();
+                        if (timeLeft <= 0) {
+                            clearInterval(timerInterval);
+                            isRunning = false;
+                            alert('🎉 Focus session complete! Take a 5-minute break.');
+                            timeLeft = 25 * 60;
+                            updateDisplay();
+                        }
+                    }, 1000);
+                }
+            });
+
+            pauseBtn.addEventListener('click', function() {
+                if (isRunning) {
+                    clearInterval(timerInterval);
+                    isRunning = false;
+                }
+            });
+
+            resetBtn.addEventListener('click', function() {
+                clearInterval(timerInterval);
+                isRunning = false;
+                timeLeft = 25 * 60;
+                updateDisplay();
+            });
+
+            // Deadline countdown update
+            function updateCountdown() {
+                const testDate = new Date('2024-09-08');
+                const now = new Date();
+                const timeDiff = testDate - now;
+                const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+                const countdownElement = document.querySelector('.countdown-timer');
+                if (countdownElement && daysLeft > 0) {
+                    countdownElement.textContent = `${daysLeft} days left`;
+                    if (daysLeft <= 3) {
+                        countdownElement.classList.add('countdown-urgent');
+                    }
+                }
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000 * 60 * 60); // Update hourly
             // Focus management
             const focusRings = document.querySelectorAll('a, button, details');
             focusRings.forEach(element => {

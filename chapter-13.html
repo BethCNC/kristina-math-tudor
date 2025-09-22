@@ -46,8 +46,18 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body class="bg-surface-secondary text-navy font-sans leading-relaxed border-2 border-dashed border-rose-quartz/20 border-2 border-dashed border-rose-quartz/20">
-    <!-- Header -->
+    <!-- Header with Breadcrumb Navigation -->
     <header class="bg-white shadow-sm border-b border-dusty/20">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="chapter-1.html" class="breadcrumb-item">📖 Chapter 1</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">🗳️ Chapter 13: Voting & Apportionment</a>
+            </nav>
+        </div>
         <div class="max-w-6xl mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
@@ -72,6 +82,38 @@
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Chapter 13 Deadline Alert -->
+        <div class="deadline-urgent mb-6">
+            <div class="flex items-center space-x-3">
+                <div class="deadline-icon">
+                    🗳️
+                </div>
+                <div>
+                    <h3 class="deadline-title">Chapter 13 on Test 1!</h3>
+                    <p class="deadline-text">Voting methods will be tested Sept 8-12</p>
+                </div>
+                <div class="ml-auto">
+                    <div class="countdown-timer">5 days left</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Study Progress Tracker -->
+        <div class="progress-tracker mb-6">
+            <div class="progress-header">
+                <h3>Your Chapter 13 Progress</h3>
+                <span class="progress-percentage">25%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 25%"></div>
+            </div>
+            <div class="progress-details">
+                <span class="task-in-progress">🔄 Getting Started</span>
+                <span class="task-pending">⏳ Voting Methods Pending</span>
+                <span class="task-pending">⏳ Apportionment Pending</span>
+            </div>
+        </div>
+
         <!-- Progress Indicator -->
         <div class="mb-8">
             <div class="bg-white rounded-lg p-4 shadow-sm border border-border">

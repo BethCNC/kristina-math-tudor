@@ -61,8 +61,16 @@
 </head>
 
 <body class="bg-surface-secondary text-navy font-sans leading-relaxed min-h-screen border-2 border-dashed border-rose-quartz/20 border-2 border-dashed border-rose-quartz/20">
-    <!-- Header -->
+    <!-- Header with Breadcrumb Navigation -->
     <header class="hero-gradient text-text-primary py-8">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">✍️ ENG 111: Writing & Inquiry</a>
+            </nav>
+        </div>
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex items-center gap-4 mb-4">
                 <a href="index.html" class="btn btn-ghost text-text-primary hover:bg-white/20">
@@ -83,6 +91,38 @@
     </header>
 
     <div class="max-w-6xl mx-auto p-4">
+        <!-- Deadline Alert Banner -->
+        <div class="deadline-urgent mb-6">
+            <div class="flex items-center space-x-3">
+                <div class="deadline-icon">
+                    📅
+                </div>
+                <div>
+                    <h3 class="deadline-title">Essay 1 Due Soon!</h3>
+                    <p class="deadline-text">Due: Sept 15 • Narrative essay (750 words minimum)</p>
+                </div>
+                <div class="ml-auto">
+                    <div class="countdown-timer">8 days left</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Writing Progress Tracker -->
+        <div class="progress-tracker mb-6">
+            <div class="progress-header">
+                <h3>Your Writing Progress</h3>
+                <span class="progress-percentage">40%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 40%"></div>
+            </div>
+            <div class="progress-details">
+                <span class="task-completed">✅ Outline Complete</span>
+                <span class="task-in-progress">🔄 First Draft Started</span>
+                <span class="task-pending">⏳ Revision Pending</span>
+            </div>
+        </div>
+
         <!-- Course Overview -->
         <section class="mb-12 mb-12" class="mb-12">
             <div class="card p-8 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
