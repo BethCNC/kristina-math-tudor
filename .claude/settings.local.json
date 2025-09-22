@@ -13,7 +13,8 @@
       "Bash(done)",
       "Bash(find:*)",
       "Bash(grep:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(open english_materials.html)"
     ],
     "deny": [],
     "ask": []

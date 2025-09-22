@@ -11,8 +11,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Enhanced Design System -->
-    <link rel="stylesheet" href="src/styles/design-system.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Modern Tailwind Design System -->
+    <link rel="stylesheet" href="src/styles/tailwind-design-system.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -25,391 +28,435 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-background-secondary border-b border-border sticky top-0 z-50 backdrop-blur-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
-                            <i data-lucide="graduation-cap" class="w-5 h-5 text-background" aria-label="Education"></i>
-                        </div>
-                        <div>
-                            <h1 class="font-title-small text-text-primary">Kristina's Dashboard</h1>
-                            <p class="font-caption text-text-secondary">Fall 2025 • MAT 143 & ENG 111</p>
-                        </div>
+    <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div class="container mx-auto flex h-16 max-w-screen-2xl items-center px-4">
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
+                        <i data-lucide="graduation-cap" class="icon-accessible text-primary-foreground" aria-hidden="true"></i>
+                        <span class="sr-only">Education Dashboard</span>
+                    </div>
+                    <div>
+                        <h1 class="heading-4">Kristina's Dashboard</h1>
+                        <p class="caption">Fall 2025 • MAT 143 & ENG 111</p>
                     </div>
                 </div>
-                
-                <nav class="hidden md:flex items-center space-x-1" role="navigation" aria-label="Main navigation">
-                    <a href="#dashboard" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Dashboard</a>
-                    <a href="#calendar" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Calendar</a>
-                    <a href="#math" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Math Tutor</a>
-                    <a href="#writing" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Writing Coach</a>
-                    <a href="#resources" class="px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Resources</a>
-                </nav>
-                
+            </div>
+
+            <nav class="mx-6 hidden items-center space-x-2 md:flex" role="navigation" aria-label="Main navigation">
+                <a href="#dashboard" class="nav-link">
+                    <i data-lucide="layout-dashboard" class="w-4 h-4" aria-hidden="true"></i>
+                    Dashboard
+                </a>
+                <a href="#calendar" class="nav-link">
+                    <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i>
+                    Calendar
+                </a>
+                <a href="#math" class="nav-link">
+                    <i data-lucide="calculator" class="w-4 h-4" aria-hidden="true"></i>
+                    Math Tutor
+                </a>
+                <a href="#writing" class="nav-link">
+                    <i data-lucide="pen-tool" class="w-4 h-4" aria-hidden="true"></i>
+                    Writing Coach
+                </a>
+                <a href="#resources" class="nav-link">
+                    <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
+                    Resources
+                </a>
+            </nav>
+
+            <div class="ml-auto">
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none" aria-label="Toggle mobile menu">
-                    <i data-lucide="menu" class="w-5 h-5"></i>
+                <button id="mobile-menu-btn" class="icon-btn md:hidden" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i data-lucide="menu" class="w-5 h-5" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-border shadow-lg">
-        <nav class="max-w-7xl mx-auto px-4 py-4 space-y-1">
-            <a href="#dashboard" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Dashboard</a>
-            <a href="#calendar" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Calendar</a>
-            <a href="#math" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Math Tutor</a>
-            <a href="#writing" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Writing Coach</a>
-            <a href="#resources" class="block px-3 py-2 rounded-md font-button text-text-primary hover:bg-background-secondary-hover border border-border transition-colors focus:ring-2 focus:ring-brand focus:outline-none">Resources</a>
+    <div id="mobile-menu" class="hidden border-b bg-background md:hidden">
+        <nav class="container mx-auto space-y-1 px-4 py-4" role="navigation" aria-label="Mobile navigation">
+            <a href="#dashboard" class="nav-link w-full justify-start">
+                <i data-lucide="layout-dashboard" class="w-4 h-4" aria-hidden="true"></i>
+                Dashboard
+            </a>
+            <a href="#calendar" class="nav-link w-full justify-start">
+                <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i>
+                Calendar
+            </a>
+            <a href="#math" class="nav-link w-full justify-start">
+                <i data-lucide="calculator" class="w-4 h-4" aria-hidden="true"></i>
+                Math Tutor
+            </a>
+            <a href="#writing" class="nav-link w-full justify-start">
+                <i data-lucide="pen-tool" class="w-4 h-4" aria-hidden="true"></i>
+                Writing Coach
+            </a>
+            <a href="#resources" class="nav-link w-full justify-start">
+                <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
+                Resources
+            </a>
         </nav>
     </div>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="container mx-auto max-w-screen-2xl px-4 py-8">
         <!-- Welcome Section -->
-        <div class="mb-8">
-            <h1 class="font-title-large text-text-primary mb-2">Welcome back, Kristina</h1>
-            <p class="font-body-large text-text-secondary">Here's your academic progress for Fall 2025</p>
+        <div class="mb-10">
+            <h1 class="heading-1 mb-3">Welcome back, Kristina</h1>
+            <p class="body-large max-w-2xl">Here's your academic progress for Fall 2025</p>
         </div>
 
         <!-- Quick Status Overview -->
         <section id="dashboard" class="mb-12">
-            <div class="grid lg:grid-cols-2 gap-6 mb-8 gap-6">
+            <div class="grid gap-6 lg:grid-cols-2 mb-8">
                 <!-- MAT 143 Status Card -->
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 rounded-lg bg-positive flex items-center justify-center">
-                                <i data-lucide="calculator" class="w-5 h-5 text-background" aria-label="Calculator"></i>
+                <div class="academic-card-active">
+                    <div class="card-header">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500">
+                                    <i data-lucide="calculator" class="icon-accessible text-white" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h2 class="card-title text-xl">MAT 143</h2>
+                                    <p class="card-description">Quantitative Literacy</p>
+                                </div>
                             </div>
-                            <div>
-                                <h2 class="font-title-small text-text-primary">MAT 143</h2>
-                                <p class="font-caption text-text-secondary">Quantitative Literacy</p>
+                            <div class="status-success">
+                                <div class="h-2 w-2 rounded-full bg-green-500"></div>
+                                Active
                             </div>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 bg-positive rounded-full"></div>
-                            <span class="font-caption text-text-positive-primary font-medium">Active</span>
                         </div>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Next Test:</span>
-                            <span class="font-button text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Test 1 - Sept 8-12</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Current Chapters:</span>
-                            <span class="font-button text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Ch. 1 & 13</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Progress:</span>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-20 h-2 bg-background-tertiary border border-border rounded-full overflow-hidden">
-                                    <div class="w-3/12 h-full bg-positive text-text-primary rounded-full"></div>
+                    <div class="card-content">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Next Test:</span>
+                                <span class="font-semibold">Test 1 - Sept 8-12</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Current Chapters:</span>
+                                <span class="font-semibold">Ch. 1 & 13</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Progress:</span>
+                                <div class="flex items-center space-x-3">
+                                    <div class="progress-bar w-20">
+                                        <div class="progress-fill bg-green-500" style="width: 25%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium">Week 1-2</span>
                                 </div>
-                                <span class="font-button-small text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Week 1-2</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ENG 111 Status Card -->
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-shadow duration-200">
-                    <div class="flex items-start justify-between mb-6">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 rounded-lg bg-brand text-text-primary flex items-center justify-center">
-                                <i data-lucide="pen-tool" class="w-5 h-5 text-text-primary"></i>
+                <div class="academic-card-active">
+                    <div class="card-header">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
+                                    <i data-lucide="pen-tool" class="icon-accessible text-primary-foreground" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h2 class="card-title text-xl">ENG 111</h2>
+                                    <p class="card-description">Writing & Inquiry</p>
+                                </div>
                             </div>
-                            <div>
-                                <h2 class="font-title-small text-text-primary mt-8 mb-4 mt-8 mb-4">ENG 111</h2>
-
-
-                                <p class="font-caption text-text-secondary mb-4 mb-4">Writing & Inquiry</p>
+                            <div class="status-info">
+                                <div class="h-2 w-2 rounded-full bg-blue-500"></div>
+                                Active
                             </div>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <div class="w-2 h-2 bg-brand text-text-primary rounded-full"></div>
-                            <span class="font-caption text-text-brand-primary font-medium">Active</span>
                         </div>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Current Focus:</span>
-                            <span class="font-button text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Critical Reading</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Next Essay:</span>
-                            <span class="font-button text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Compare/Contrast</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="font-body-small text-text-secondary">Course End:</span>
-                            <span class="font-button text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Oct 10, 2025</span>
+                    <div class="card-content">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Current Focus:</span>
+                                <span class="font-semibold">Critical Reading</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Next Essay:</span>
+                                <span class="font-semibold">Compare/Contrast</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="body-small">Course End:</span>
+                                <span class="font-semibold">Oct 10, 2025</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Urgent Deadlines -->
-            <div class="bg-warning text-text-primary-tertiary border border-warning rounded-xl p-6 mb-8">
+            <div class="alert-warning mb-8">
                 <div class="flex items-center space-x-3 mb-4">
-                    <div class="w-8 h-8 rounded-lg bg-warning text-text-primary flex items-center justify-center">
-                        <i data-lucide="alert-triangle" class="w-4 h-4 text-text-primary"></i>
+                    <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500">
+                        <i data-lucide="alert-triangle" class="icon-accessible text-black" aria-hidden="true"></i>
                     </div>
                     <div>
-                        <h3 class="font-subtitle text-text-warning-primary mt-8 mb-4 mt-8 mb-4">Urgent Deadlines</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                        <p class="font-caption text-text-warning-secondary mb-4 mb-4">Next 48 Hours</p>
+                        <h3 class="heading-4 text-yellow-400">Urgent Deadlines</h3>
+                        <p class="caption">Next 48 Hours</p>
                     </div>
                 </div>
                 <div id="urgent-deadlines" class="space-y-3">
-                    <div class="flex items-center justify-between p-3 bg-background rounded-lg border border-border">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-6 h-6 rounded bg-brand text-text-primary flex items-center justify-center">
-                                <i data-lucide="book-open" class="w-3 h-3 text-text-primary" aria-label="Study guide"></i>
+                    <div class="card">
+                        <div class="flex items-center justify-between p-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
+                                    <i data-lucide="book-open" class="w-4 h-4 text-primary-foreground" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <p class="font-semibold">Critical Reading Discussion</p>
+                                    <p class="body-small">ENG 111</p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="font-button text-text-primary mb-4 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Critical Reading Discussion</p>
-                                <p class="font-caption text-text-secondary mb-4 mb-4">ENG 111</p>
+                            <div class="status-warning">
+                                <i data-lucide="clock" class="w-4 h-4" aria-hidden="true"></i>
+                                Today 11:59 PM
                             </div>
                         </div>
-                        <span class="font-button-small text-text-warning-primary bg-warning text-text-primary-tertiary px-2 py-1 rounded border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Today 11:59 PM</span>
                     </div>
                 </div>
             </div>
 
             <!-- Quick Actions -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <a href="chapter-1.html" class="dark-mode-accent group hover:scale-105 p-6 transition-all duration-200 hover:shadow-lg rounded-xl border-2 border-dashed border-white/20">
-                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
-                        <i data-lucide="calculator" class="w-6 h-6 text-white" aria-label="Calculator"></i>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-12">
+                <a href="chapter-1.html" class="quick-action bg-green-500/10 border-green-500/20" aria-label="Study Math - Chapters 1 and 13">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-500 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calculator" class="w-7 h-7 text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="font-subtitle-small text-white mb-1">Study Math</div>
-                    <div class="font-caption text-white/80">Chapters 1 & 13</div>
+                    <h3 class="heading-4 mb-2">Study Math</h3>
+                    <p class="body-small">Chapters 1 & 13</p>
                 </a>
-                
-                <a href="english_materials.html" class="dark-mode-accent-2 group hover:scale-105 p-6 transition-all duration-200 hover:shadow-lg rounded-xl border-2 border-dashed border-white/20">
-                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
-                        <i data-lucide="pen-tool" class="w-6 h-6 text-white" aria-label="Writing"></i>
+
+                <a href="english_materials.html" class="quick-action bg-primary/10 border-primary/20" aria-label="Writing Help - Critical Reading">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-primary mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="pen-tool" class="w-7 h-7 text-primary-foreground" aria-hidden="true"></i>
                     </div>
-                    <div class="font-subtitle-small text-white mb-1">Writing Help</div>
-                    <div class="font-caption text-white/80">Critical Reading</div>
+                    <h3 class="heading-4 mb-2">Writing Help</h3>
+                    <p class="body-small">Critical Reading</p>
                 </a>
-                
-                <a href="calendar.html" class="dark-mode-accent-3 group hover:scale-105 p-6 transition-all duration-200 hover:shadow-lg rounded-xl border-2 border-dashed border-white/20">
-                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
-                        <i data-lucide="calendar" class="w-6 h-6 text-white" aria-label="Calendar"></i>
+
+                <a href="calendar.html" class="quick-action bg-blue-500/10 border-blue-500/20" aria-label="View Calendar - Week and Month view">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-blue-500 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="calendar" class="w-7 h-7 text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="font-subtitle-small text-white mb-1">View Calendar</div>
-                    <div class="font-caption text-white/80">Week & Month</div>
+                    <h3 class="heading-4 mb-2">View Calendar</h3>
+                    <p class="body-small">Week & Month</p>
                 </a>
-                
-                <a href="formula_lookup.html" class="dark-mode-accent-4 group hover:scale-105 p-6 transition-all duration-200 hover:shadow-lg rounded-xl border-2 border-dashed border-white/20">
-                    <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
-                        <i data-lucide="book-open" class="w-6 h-6 text-white" aria-label="Study guide"></i>
+
+                <a href="formula_lookup.html" class="quick-action bg-orange-500/10 border-orange-500/20" aria-label="Resources - Formulas and Guides">
+                    <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-orange-500 mb-4 group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-7 h-7 text-white" aria-hidden="true"></i>
                     </div>
-                    <div class="font-subtitle-small text-white mb-1">Resources</div>
-                    <div class="font-caption text-white/80">Formulas & Guides</div>
+                    <h3 class="heading-4 mb-2">Resources</h3>
+                    <p class="body-small">Formulas & Guides</p>
                 </a>
             </div>
         </section>
 
         <!-- Calendar Section -->
-        <section id="calendar" class="mb-12 mb-12" class="mb-12">
+        <section id="calendar" class="mb-12">
             <div class="flex items-center justify-between mb-6">
                 <div>
-                    <h2 class="font-title text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Calendar & Pacing Guide</h2>
-
-
-                    <p class="font-body-small text-text-secondary mb-4 mb-4">Track your assignments, tests, and deadlines</p>
+                    <h2 class="heading-2 mb-2">Calendar & Pacing Guide</h2>
+                    <p class="body-small">Track your assignments, tests, and deadlines</p>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <button data-view="week" class="px-4 py-2 bg-background-secondary hover:bg-background-secondary border border-border-hover border border-border rounded-lg font-button text-text-primary transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Week View</button>
-                    <button data-view="month" class="px-4 py-2 bg-brand hover:bg-brand text-text-primary-hover text-text-primary rounded-lg font-button transition-colors border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Month View</button>
+                    <button data-view="week" class="btn-outline" aria-label="Switch to week view">
+                        <i data-lucide="calendar-days" class="w-4 h-4" aria-hidden="true"></i>
+                        Week View
+                    </button>
+                    <button data-view="month" class="btn-primary" aria-label="Switch to month view">
+                        <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i>
+                        Month View
+                    </button>
                 </div>
             </div>
-            
-            <div class="bg-background-secondary border border-border rounded-xl p-8">
-                <div id="calendar-container">
-                    <!-- Calendar will be populated by JavaScript -->
-                    <div class="text-center py-16">
-                        <div class="w-16 h-16 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center mx-auto mb-4">
-                            <i data-lucide="calendar" class="w-8 h-8 text-brand" aria-label="Calendar"></i>
+
+            <div class="card">
+                <div class="card-content">
+                    <div id="calendar-container">
+                        <!-- Calendar will be populated by JavaScript -->
+                        <div class="text-center py-16">
+                            <div class="flex h-16 w-16 items-center justify-center rounded-xl bg-primary mx-auto mb-4">
+                                <i data-lucide="calendar" class="w-8 h-8 text-primary-foreground" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="heading-3 mb-2">Calendar Loading...</h3>
+                            <p class="body-small">Please wait while we load your schedule</p>
                         </div>
-                        <h3 class="font-subtitle-large text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Calendar Loading...</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                        <p class="font-body-small text-text-secondary mb-4 mb-4">Please wait while we load your schedule</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Math Tutor Section -->
-        <section id="math" class="mb-12 mb-12" class="mb-12">
-            <div class="flex items-center space-x-4 mb-6">
-                <div class="w-12 h-12 rounded-xl bg-positive text-text-primary flex items-center justify-center">
-                    <i data-lucide="calculator" class="w-6 h-6 text-text-primary" aria-label="Calculator"></i>
+        <section id="math" class="mb-12">
+            <div class="flex items-center space-x-4 mb-8">
+                <div class="flex h-14 w-14 items-center justify-center rounded-xl bg-green-500">
+                    <i data-lucide="calculator" class="w-7 h-7 text-white" aria-hidden="true"></i>
                 </div>
                 <div>
-                    <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">Math Tutor - MAT 143</h2>
-
-
-                    <p class="font-body-small text-text-secondary mb-4 mb-4">Quantitative Literacy Study Modules</p>
+                    <h2 class="heading-2">Math Tutor - MAT 143</h2>
+                    <p class="body-small">Quantitative Literacy Study Modules</p>
                 </div>
             </div>
-            
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <div class="group bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:border-positive">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary/10-10 flex items-center justify-center">
-                            <span class="font-button-small text-positive font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">1</span>
-                        </div>
-                        <span class="font-caption bg-positive text-text-primary-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Current</span>
-                    </div>
-                    <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 1</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <p class="font-body-small text-text-secondary mb-4 mb-4 mb-4">Thinking Mathematically</p>
-                    <a href="chapter-1.html" class="retro-button inline-flex items-center space-x-2 font-button text-positive hover:text-positive-hover transition-all duration-200 group-hover:translate-x-1 transform px-4 py-2">
-                        <span>Study Now</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4" aria-label="Go forward"></i>
-                    </a>
-                </div>
 
-                <div class="group bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:border-positive">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary/10-10 flex items-center justify-center">
-                            <span class="font-button-small text-positive font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">13</span>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-12">
+                <div class="academic-card-active group hover:border-green-500/50">
+                    <div class="card-header">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500">
+                                <span class="text-xl font-bold text-white">1</span>
+                            </div>
+                            <div class="status-success">Current</div>
                         </div>
-                        <span class="font-caption bg-positive text-text-primary-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Current</span>
+                        <h3 class="card-title text-lg">Chapter 1</h3>
+                        <p class="card-description">Thinking Mathematically</p>
                     </div>
-                    <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 13</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <p class="font-body-small text-text-secondary mb-4 mb-4 mb-4">Voting & Apportionment</p>
-                    <a href="chapter-13.html" class="inline-flex items-center space-x-2 font-button text-positive hover:text-positive-hover transition-colors group-hover:translate-x-1 transform duration-200 bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
-                        <span>Study Now</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4" aria-label="Go forward"></i>
-                    </a>
-                </div>
-
-                <div class="bg-background-secondary border border-border rounded-xl p-6 opacity-60">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-10 h-10 rounded-lg bg-background-tertiary border border-border flex items-center justify-center">
-                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">4</span>
-                        </div>
-                        <span class="font-caption bg-background-tertiary border border-border text-text-tertiary px-2 py-1 rounded">Week 5-6</span>
-                    </div>
-                    <h3 class="font-subtitle-small text-text-secondary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 4</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <p class="font-body-small text-text-tertiary mb-4 mb-4 mb-4">Proportions</p>
-                    <div class="inline-flex items-center space-x-2 font-button text-text-tertiary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
-                        <span>Coming Soon</span>
-                        <i data-lucide="lock" class="w-4 h-4"></i>
+                    <div class="card-footer">
+                        <a href="chapter-1.html" class="btn-primary w-full group-hover:translate-x-1 transition-transform" aria-label="Study Chapter 1 - Thinking Mathematically">
+                            Study Now
+                            <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="bg-background-secondary border border-border rounded-xl p-6 opacity-60">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="w-10 h-10 rounded-lg bg-background-tertiary border border-border flex items-center justify-center">
-                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">5</span>
+                <div class="academic-card-active group hover:border-green-500/50">
+                    <div class="card-header">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-green-500">
+                                <span class="text-xl font-bold text-white">13</span>
+                            </div>
+                            <div class="status-success">Current</div>
                         </div>
-                        <span class="font-caption bg-background-tertiary border border-border text-text-tertiary px-2 py-1 rounded">Week 5-6</span>
+                        <h3 class="card-title text-lg">Chapter 13</h3>
+                        <p class="card-description">Voting & Apportionment</p>
                     </div>
-                    <h3 class="font-subtitle-small text-text-secondary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 5</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <p class="font-body-small text-text-tertiary mb-4 mb-4 mb-4">Functions</p>
-                    <div class="inline-flex items-center space-x-2 font-button text-text-tertiary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
-                        <span>Coming Soon</span>
-                        <i data-lucide="lock" class="w-4 h-4"></i>
+                    <div class="card-footer">
+                        <a href="chapter-13.html" class="btn-primary w-full group-hover:translate-x-1 transition-transform" aria-label="Study Chapter 13 - Voting and Apportionment">
+                            Study Now
+                            <i data-lucide="arrow-right" class="w-4 h-4" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="academic-card-disabled">
+                    <div class="card-header">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-muted">
+                                <span class="text-xl font-bold text-muted-foreground">4</span>
+                            </div>
+                            <div class="status-badge bg-muted text-muted-foreground">Week 5-6</div>
+                        </div>
+                        <h3 class="card-title text-lg text-muted-foreground">Chapter 4</h3>
+                        <p class="card-description">Proportions</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="flex items-center justify-center gap-2 text-muted-foreground">
+                            <i data-lucide="lock" class="w-4 h-4" aria-hidden="true"></i>
+                            Coming Soon
+                        </div>
+                    </div>
+                </div>
+
+                <div class="academic-card-disabled">
+                    <div class="card-header">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-muted">
+                                <span class="text-xl font-bold text-muted-foreground">5</span>
+                            </div>
+                            <div class="status-badge bg-muted text-muted-foreground">Week 5-6</div>
+                        </div>
+                        <h3 class="card-title text-lg text-muted-foreground">Chapter 5</h3>
+                        <p class="card-description">Functions</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="flex items-center justify-center gap-2 text-muted-foreground">
+                            <i data-lucide="lock" class="w-4 h-4" aria-hidden="true"></i>
+                            Coming Soon
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Writing Coach Section -->
-        <section id="writing" class="mb-12 mb-12" class="mb-12">
+        <section id="writing" class="mb-12">
             <div class="flex items-center space-x-4 mb-6">
-                <div class="w-12 h-12 rounded-xl bg-brand text-text-primary flex items-center justify-center">
-                    <i data-lucide="pen-tool" class="w-6 h-6 text-text-primary"></i>
+                <div class="w-12 h-12 rounded-xl bg-brand flex items-center justify-center">
+                    <i data-lucide="pen-tool" class="w-6 h-6" style="color: var(--color-white);"></i>
                 </div>
                 <div>
-                    <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">Writing Coach - ENG 111</h2>
-
-
-                    <p class="font-body-small text-text-secondary mb-4 mb-4">Writing & Inquiry Course Modules</p>
+                    <h2 class="font-title text-primary">Writing Coach - ENG 111</h2>
+                    <p class="font-body-small text-secondary">Writing & Inquiry Course Modules</p>
                 </div>
             </div>
             
             <div class="grid lg:grid-cols-2 gap-6">
-                <div class="group bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:border-brand">
+                <div class="group bg-secondary border border-default rounded-xl p-6 hover:shadow-lg transition-all duration-200 hover:border-brand">
                     <div class="flex items-start space-x-4 mb-6">
-                        <div class="w-10 h-10 rounded-lg bg-brand text-text-primary flex items-center justify-center flex-shrink-0">
-                            <span class="font-button-small text-text-primary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">1</span>
+                        <div class="w-10 h-10 rounded-lg bg-brand flex items-center justify-center flex-shrink-0">
+                            <span class="font-button-small font-bold" style="color: var(--color-white);">1</span>
                         </div>
                         <div>
-                            <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Critical Reading</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                            <p class="font-caption text-text-secondary mb-4 mb-4">Weeks 1-2 • Active Module</p>
+                            <h3 class="font-subtitle-small text-primary mb-2">Critical Reading</h3>
+                            <p class="font-caption text-secondary">Weeks 1-2 • Active Module</p>
                         </div>
                     </div>
                     
                     <div class="space-y-3 mb-6">
                         <div class="flex items-center space-x-3">
-                            <div class="w-5 h-5 rounded-full bg-positive text-text-primary flex items-center justify-center">
-                                <i data-lucide="check" class="w-3 h-3 text-text-primary" aria-label="Check"></i>
+                            <div class="w-5 h-5 rounded-full bg-positive flex items-center justify-center">
+                                <i data-lucide="check" class="w-3 h-3" style="color: var(--color-white);" aria-label="Check"></i>
                             </div>
-                            <span class="font-body-small text-text-positive-primary">EVA Syllabus Quiz</span>
+                            <span class="font-body-small text-positive-primary">EVA Syllabus Quiz</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-5 h-5 rounded-full border-2 border-brand bg-bg-brand text-text-primary/10-10">
-                                <div class="w-2 h-2 rounded-full bg-brand text-text-primary mx-auto mt-0.5"></div>
+                            <div class="w-5 h-5 rounded-full border-2 border-brand bg-brand">
+                                <div class="w-2 h-2 rounded-full bg-default mx-auto mt-0.5"></div>
                             </div>
-                            <span class="font-body-small text-text-brand-primary font-medium">Critical Reading Discussion</span>
+                            <span class="font-body-small text-brand-primary font-medium">Critical Reading Discussion</span>
                         </div>
                     </div>
                     
-                    <a href="english_materials.html" class="inline-flex items-center space-x-2 font-button text-brand hover:text-brand-hover transition-colors group-hover:translate-x-1 transform duration-200 bg-brand/10 hover:bg-brand/20 border border-brand/30 hover:border-brand/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 bg-brand/10 hover:bg-brand/20 border border-brand/30 hover:border-brand/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                    <a href="english_materials.html" class="inline-flex items-center space-x-2 font-button text-brand hover:text-brand-hover transition-colors group-hover:translate-x-1 transform duration-200 rounded-lg px-4 py-2">
                         <span>View Materials</span>
                         <i data-lucide="arrow-right" class="w-4 h-4" aria-label="Go forward"></i>
                     </a>
                 </div>
 
-                <div class="bg-background-secondary border border-border rounded-xl p-6 opacity-60">
+                <div class="bg-secondary border border-default rounded-xl p-6 opacity-60">
                     <div class="flex items-start space-x-4 mb-6">
-                        <div class="w-10 h-10 rounded-lg bg-background-tertiary border border-border flex items-center justify-center flex-shrink-0">
-                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">2</span>
+                        <div class="w-10 h-10 rounded-lg bg-tertiary border border-tertiary flex items-center justify-center flex-shrink-0">
+                            <span class="font-button-small text-tertiary font-bold">2</span>
                         </div>
                         <div>
-                            <h3 class="font-subtitle-small text-text-secondary mb-2 mt-8 mb-4 mt-8 mb-4">Compare/Contrast Essay</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                            <p class="font-caption text-text-tertiary mb-4 mb-4">Weeks 3-4 • Coming Soon</p>
+                            <h3 class="font-subtitle-small text-secondary mb-2">Compare/Contrast Essay</h3>
+                            <p class="font-caption text-tertiary">Weeks 3-4 • Coming Soon</p>
                         </div>
                     </div>
                     
                     <div class="space-y-3 mb-6">
                         <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 rounded-full bg-text-tertiary"></div>
-                            <span class="font-body-small text-text-tertiary">Rough Draft (first 3 paragraphs)</span>
+                            <div class="w-2 h-2 rounded-full bg-tertiary"></div>
+                            <span class="font-body-small text-tertiary">Rough Draft (first 3 paragraphs)</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 rounded-full bg-text-tertiary"></div>
-                            <span class="font-body-small text-text-tertiary">Checklist submission</span>
+                            <div class="w-2 h-2 rounded-full bg-tertiary"></div>
+                            <span class="font-body-small text-tertiary">Checklist submission</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <div class="w-2 h-2 rounded-full bg-text-tertiary"></div>
-                            <span class="font-body-small text-text-tertiary">Final Draft</span>
+                            <div class="w-2 h-2 rounded-full bg-tertiary"></div>
+                            <span class="font-body-small text-tertiary">Final Draft</span>
                         </div>
                     </div>
-                    
-                    <div class="inline-flex items-center space-x-2 font-button text-text-tertiary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+
+                    <div class="inline-flex items-center space-x-2 font-button text-tertiary">
                         <span>Available Week 3</span>
                         <i data-lucide="clock" class="w-4 h-4" aria-label="Time"></i>
                     </div>
@@ -420,82 +467,74 @@
         <!-- Resources Section -->
         <section id="resources">
             <div class="flex items-center space-x-4 mb-8">
-                <div class="w-12 h-12 rounded-xl bg-text-neutral-primary flex items-center justify-center">
-                    <i data-lucide="book-open" class="w-6 h-6 text-text-primary" aria-label="Study guide"></i>
+                <div class="w-12 h-12 rounded-xl bg-tertiary flex items-center justify-center">
+                    <i data-lucide="book-open" class="w-6 h-6 text-primary" aria-label="Study guide"></i>
                 </div>
                 <div>
-                    <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">Academic Resources</h2>
-
-
-                    <p class="font-body-small text-text-secondary mb-4 mb-4">Formulas, guides, and course materials</p>
+                    <h2 class="font-title text-primary">Academic Resources</h2>
+                    <p class="font-body-small text-secondary">Formulas, guides, and course materials</p>
                 </div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-                    <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary/10-10 flex items-center justify-center mb-4">
-                        <i data-lucide="calculator" class="w-5 h-5 text-positive" aria-label="Calculator"></i>
+                <div class="bg-secondary border border-default rounded-xl p-6 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-positive flex items-center justify-center mb-4">
+                        <i data-lucide="calculator" class="w-5 h-5" style="color: var(--color-white);" aria-label="Calculator"></i>
                     </div>
-                    <h3 class="font-subtitle-small text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Formula Sheets</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <ul class="space-y-3 space-y-2 space-y-2">
-                        <li><a href="course_materials/formula_lookup.html" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-positive transition-colors group bg-citrine/10 hover:bg-citrine/20 border border-citrine/30 hover:border-citrine/50 rounded-lg px-3 py-2 transition-all duration-200 bg-citrine/10 hover:bg-citrine/20 border border-citrine/30 hover:border-citrine/50 rounded-lg px-3 py-2 transition-all duration-200">
+                    <h3 class="font-subtitle-small text-primary mb-4">Formula Sheets</h3>
+                    <ul class="space-y-3">
+                        <li><a href="course_materials/formula_lookup.html" class="flex items-center space-x-2 font-body-small text-secondary hover:text-positive transition-colors group rounded-lg px-3 py-2">
                             <i data-lucide="search" class="w-4 h-4 group-hover:text-positive" aria-label="Search"></i>
                             <span>Quick Formula Lookup</span>
                         </a></li>
-                        <li><a href="course_materials/formula_sheets/Unit_1_Formula_Sheet.html" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-positive transition-colors group">
+                        <li><a href="course_materials/formula_sheets/Unit_1_Formula_Sheet.html" class="flex items-center space-x-2 font-body-small text-secondary hover:text-positive transition-colors group">
                             <i data-lucide="file-text" class="w-4 h-4 group-hover:text-positive"></i>
                             <span>Unit 1 Formulas</span>
                         </a></li>
-                        <li><a href="course_materials/formula_sheets/All_Sections_Guide.html" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-positive transition-colors group">
+                        <li><a href="course_materials/formula_sheets/All_Sections_Guide.html" class="flex items-center space-x-2 font-body-small text-secondary hover:text-positive transition-colors group">
                             <i data-lucide="book" class="w-4 h-4 group-hover:text-positive" aria-label="Book"></i>
                             <span>Complete Guide</span>
                         </a></li>
                     </ul>
                 </div>
 
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-                    <div class="w-10 h-10 rounded-lg bg-bg-brand text-text-primary/10-10 flex items-center justify-center mb-4">
-                        <i data-lucide="graduation-cap" class="w-5 h-5 text-brand"></i>
+                <div class="bg-secondary border border-default rounded-xl p-6 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-brand flex items-center justify-center mb-4">
+                        <i data-lucide="graduation-cap" class="w-5 h-5" style="color: var(--color-white);"></i>
                     </div>
-                    <h3 class="font-subtitle-small text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Course Information</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <ul class="space-y-3 space-y-2 space-y-2">
-                        <li><a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-brand transition-colors group">
+                    <h3 class="font-subtitle-small text-primary mb-4">Course Information</h3>
+                    <ul class="space-y-3">
+                        <li><a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="flex items-center space-x-2 font-body-small text-secondary hover:text-brand transition-colors group">
                             <i data-lucide="calendar-days" class="w-4 h-4 group-hover:text-brand"></i>
                             <span>Course Schedule</span>
                         </a></li>
-                        <li><a href="course_materials/instructions/Hawkes_Learning_Setup.html" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-brand transition-colors group">
+                        <li><a href="course_materials/instructions/Hawkes_Learning_Setup.html" class="flex items-center space-x-2 font-body-small text-secondary hover:text-brand transition-colors group">
                             <i data-lucide="settings" class="w-4 h-4 group-hover:text-brand" aria-label="Settings"></i>
                             <span>Hawkes Setup</span>
                         </a></li>
-                        <li><a href="/other-classes/FA-2025-ENG-111-N815.pdf" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-brand transition-colors group">
+                        <li><a href="/other-classes/FA-2025-ENG-111-N815.pdf" class="flex items-center space-x-2 font-body-small text-secondary hover:text-brand transition-colors group">
                             <i data-lucide="file-text" class="w-4 h-4 group-hover:text-brand"></i>
                             <span>ENG 111 Syllabus</span>
                         </a></li>
                     </ul>
                 </div>
 
-                <div class="bg-background-secondary border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-200">
-                    <div class="w-10 h-10 rounded-lg bg-text-neutral-primary/10 flex items-center justify-center mb-4">
-                        <i data-lucide="wrench" class="w-5 h-5 text-text-neutral-primary"></i>
+                <div class="bg-secondary border border-default rounded-xl p-6 hover:shadow-lg transition-all duration-200">
+                    <div class="w-10 h-10 rounded-lg bg-tertiary flex items-center justify-center mb-4">
+                        <i data-lucide="wrench" class="w-5 h-5 text-primary"></i>
                     </div>
-                    <h3 class="font-subtitle-small text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Quick Tools</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                    <ul class="space-y-3 space-y-2 space-y-2">
-                        <li><button onclick="openCalculator()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
-                            <i data-lucide="calculator" class="w-4 h-4 group-hover:text-text-neutral-primary" aria-label="Calculator"></i>
+                    <h3 class="font-subtitle-small text-primary mb-4">Quick Tools</h3>
+                    <ul class="space-y-3">
+                        <li><button onclick="openCalculator()" class="flex items-center space-x-2 font-body-small text-secondary hover:text-primary transition-colors group cursor-pointer">
+                            <i data-lucide="calculator" class="w-4 h-4 group-hover:text-primary" aria-label="Calculator"></i>
                             <span>Calculator</span>
                         </button></li>
-                        <li><button onclick="showNoteTemplates()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
-                            <i data-lucide="sticky-note" class="w-4 h-4 group-hover:text-text-neutral-primary"></i>
+                        <li><button onclick="showNoteTemplates()" class="flex items-center space-x-2 font-body-small text-secondary hover:text-primary transition-colors group cursor-pointer">
+                            <i data-lucide="sticky-note" class="w-4 h-4 group-hover:text-primary"></i>
                             <span>Note Templates</span>
                         </button></li>
-                        <li><button onclick="showStudyTips()" class="flex items-center space-x-2 font-body-small text-text-secondary hover:text-text-neutral-primary transition-colors group cursor-pointer">
-                            <i data-lucide="lightbulb" aria-label="Idea" aria-label="Idea" class="w-4 h-4 group-hover:text-text-neutral-primary"></i>
+                        <li><button onclick="showStudyTips()" class="flex items-center space-x-2 font-body-small text-secondary hover:text-primary transition-colors group cursor-pointer">
+                            <i data-lucide="lightbulb" class="w-4 h-4 group-hover:text-primary" aria-label="Idea"></i>
                             <span>Study Tips</span>
                         </button></li>
                     </ul>
@@ -505,24 +544,22 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-24 py-12 px-4 bg-background-secondary border border-border border-t border-border">
+    <footer class="mt-24 py-12 px-4 bg-secondary border-t border-default">
         <div class="max-w-7xl mx-auto">
             <div class="text-center">
-                <div class="w-16 h-16 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center mx-auto mb-4">
-                    <i data-lucide="graduation-cap" class="w-8 h-8 text-brand"></i>
+                <div class="w-16 h-16 rounded-xl bg-brand flex items-center justify-center mx-auto mb-4">
+                    <i data-lucide="graduation-cap" class="w-8 h-8" style="color: var(--color-white);"></i>
                 </div>
-                <h3 class="font-subtitle-large text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Kristina's Academic Success Dashboard</h3>
-<div class="mb-2"></div>
-<div class="mb-2"></div>
-                <p class="font-body-small text-text-secondary mb-6 mb-4 mb-4">Fall 2025 • Designed for focus, clarity, and academic success</p>
+                <h3 class="font-subtitle-large text-primary mb-2">Kristina's Academic Success Dashboard</h3>
+                <p class="font-body-small text-secondary mb-6">Fall 2025 • Designed for focus, clarity, and academic success</p>
                 <div class="flex items-center justify-center space-x-6">
                     <div class="flex items-center space-x-2">
-                        <div class="w-2 h-2 rounded-full bg-positive text-text-primary"></div>
-                        <span class="font-caption text-text-secondary">MAT 143 Active</span>
+                        <div class="w-2 h-2 rounded-full bg-positive"></div>
+                        <span class="font-caption text-secondary">MAT 143 Active</span>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <div class="w-2 h-2 rounded-full bg-brand text-text-primary"></div>
-                        <span class="font-caption text-text-secondary">ENG 111 Active</span>
+                        <div class="w-2 h-2 rounded-full bg-brand"></div>
+                        <span class="font-caption text-secondary">ENG 111 Active</span>
                     </div>
                 </div>
             </div>
@@ -563,24 +600,24 @@
                 }
             });
             
-            // Enhanced hover effects for cards
-            document.querySelectorAll('.group').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-2px)';
-                });
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+            // Enhanced accessibility features
+            document.querySelectorAll('a, button').forEach(element => {
+                element.classList.add('focus-ring');
             });
-            
-            // Mobile menu toggle
+
+            // Mobile menu toggle with enhanced accessibility
             const mobileMenuBtn = document.getElementById('mobile-menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
             if (mobileMenuBtn && mobileMenu) {
                 mobileMenuBtn.addEventListener('click', function() {
+                    const isExpanded = !mobileMenu.classList.contains('hidden');
+
                     mobileMenu.classList.toggle('hidden');
-                    
+
+                    // Update aria-expanded attribute
+                    this.setAttribute('aria-expanded', !isExpanded);
+
                     // Update button icon
                     const icon = this.querySelector('i');
                     if (mobileMenu.classList.contains('hidden')) {
@@ -590,11 +627,12 @@
                     }
                     lucide.createIcons();
                 });
-                
+
                 // Close mobile menu when clicking links
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
                         mobileMenu.classList.add('hidden');
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
                         const icon = mobileMenuBtn.querySelector('i');
                         icon.setAttribute('data-lucide', 'menu');
                         lucide.createIcons();
