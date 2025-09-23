@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Math & Writing Tutor - Kristina's Academic Success</title>
+    <meta name="description" content="Award-winning AI tutoring experience for MAT 143 and ENG 111 - intelligent, accessible, and designed for neurodivergent learners.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    
+    <!-- Award-Winning Design System -->
+    <link rel="stylesheet" href="src/styles/award-winning-design.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Custom AI Tutor Styles */
+        .chat-container {
+            height: 60vh;
+            min-height: 400px;
+            max-height: 600px;
+        }
+        
+        .message {
+            animation: slideInUp 0.3s ease-out;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            animation: typing 1.4s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        .typing-dot:nth-child(3) { animation-delay: 0s; }
+        
+        @keyframes typing {
+            0%, 80%, 100% {
+                transform: scale(0.8);
+                opacity: 0.5;
+            }
+            40% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .subject-card {
+            transition: all var(--transition-normal);
+            cursor: pointer;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .subject-card.active {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .quick-question {
+            transition: all var(--transition-fast);
+        }
+        
+        .quick-question:hover {
+            background: var(--bg-secondary);
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body class="bg-primary">
+    <!-- Award-Winning Navigation -->
+    <nav class="sticky top-0 z-50 bg-elevated border-b border-light shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Back Button -->
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="btn btn-secondary btn-sm" aria-label="Back to Dashboard">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Back to Dashboard</span>
+                        <span class="sm:hidden">Back</span>
+                    </a>
+                </div>
+                
+                <!-- Page Title -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain-circuit" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-primary">AI Tutor</h1>
+                        <p class="text-sm text-secondary">MAT 143 & ENG 111 Helper</p>
+                    </div>
+                </div>
+                
+                <!-- Settings -->
+                <button class="btn btn-secondary btn-sm" aria-label="Tutor Settings">
+                    <i data-lucide="settings" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-6xl">
+        <!-- Subject Selection - Award-Winning Design -->
+        <section class="mb-8" aria-labelledby="subject-heading">
+            <h2 id="subject-heading" class="text-2xl font-bold text-primary mb-6 text-center">
+                Choose Your Subject
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Math Subject Card -->
+                <div id="math-card" class="subject-card card card-elevated active" data-subject="math">
+                    <div class="p-8 text-center">
+                        <div class="w-16 h-16 bg-success rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="calculator" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Mathematics</h3>
+                        <p class="text-secondary mb-6">
+                            Get help with MAT 143 concepts, formulas, and problem-solving strategies
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="status status-info">Chapter 7</span>
+                            <span class="status status-info">Conversions</span>
+                            <span class="status status-info">Formulas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- English Subject Card -->
+                <div id="english-card" class="subject-card card card-elevated" data-subject="english">
+                    <div class="p-8 text-center">
+                        <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="pen-tool" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-4">Writing & English</h3>
+                        <p class="text-secondary mb-6">
+                            Improve your writing skills, essay structure, and grammar for ENG 111
+                        </p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="status status-info">Argument Essay</span>
+                            <span class="status status-info">Grammar</span>
+                            <span class="status status-info">Citations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Questions - Hick's Law Applied -->
+        <section class="mb-8" aria-labelledby="quick-questions-heading">
+            <h2 id="quick-questions-heading" class="text-xl font-bold text-primary mb-6">
+                <i data-lucide="zap" class="w-5 h-5 inline mr-2"></i>
+                Quick Questions
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="Explain Chapter 7 conversions">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    Explain Chapter 7 conversions
+                </button>
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="Help with argument essay structure">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    Help with argument essay structure
+                </button>
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="What is the formula for simple interest?">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    Simple interest formula
+                </button>
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="Give me a practice problem for percentages">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    Practice percentages
+                </button>
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="How do I cite sources in MLA format?">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    MLA citation help
+                </button>
+                <button class="quick-question btn btn-secondary text-left justify-start" data-question="What are the key concepts in Chapter 6?">
+                    <i data-lucide="help-circle" class="w-4 h-4 mr-3"></i>
+                    Chapter 6 key concepts
+                </button>
+            </div>
+        </section>
+
+        <!-- Chat Interface - Award-Winning UX -->
+        <section class="mb-8" aria-labelledby="chat-heading">
+            <h2 id="chat-heading" class="text-xl font-bold text-primary mb-6">
+                <i data-lucide="message-circle" class="w-5 h-5 inline mr-2"></i>
+                Ask Your Question
+            </h2>
+            
+            <div class="card card-elevated">
+                <div class="p-6">
+                    <!-- Chat Messages Container -->
+                    <div id="chat-messages" class="chat-container overflow-y-auto border border-light rounded-lg p-6 mb-6 bg-secondary">
+                        <!-- Welcome Message -->
+                        <div class="message mb-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="bg-elevated rounded-lg p-4 shadow-sm">
+                                        <p class="text-primary font-medium mb-2">AI Tutor</p>
+                                        <p class="text-secondary">
+                                            Hi Kristina! I'm your AI tutor for MAT 143 and ENG 111. I can help you with:
+                                        </p>
+                                        <ul class="list-disc list-inside text-secondary mt-2 space-y-1">
+                                            <li>Math concepts and problem-solving</li>
+                                            <li>Writing and essay structure</li>
+                                            <li>Study strategies and tips</li>
+                                            <li>Formula explanations and examples</li>
+                                        </ul>
+                                        <p class="text-secondary mt-2">
+                                            What would you like to work on today?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Typing Indicator (Hidden by default) -->
+                    <div id="typing-indicator" class="hidden mb-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
+                            </div>
+                            <div class="bg-elevated rounded-lg p-4 shadow-sm">
+                                <div class="typing-indicator">
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                    <div class="typing-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Input Form -->
+                    <form id="chat-form" class="flex gap-4">
+                        <div class="flex-1">
+                            <input 
+                                type="text" 
+                                id="message-input" 
+                                class="form-input" 
+                                placeholder="Ask me anything about your courses..."
+                                autocomplete="off"
+                                required
+                            >
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span class="hidden sm:inline ml-2">Send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Study Tips - Neurodivergent-Friendly -->
+        <section class="mb-8" aria-labelledby="study-tips-heading">
+            <h2 id="study-tips-heading" class="text-xl font-bold text-primary mb-6">
+                <i data-lucide="lightbulb" class="w-5 h-5 inline mr-2"></i>
+                ADHD-Friendly Study Tips
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-warning rounded-lg flex items-center justify-center">
+                                <i data-lucide="clock" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h3 class="font-bold text-primary">Time Management</h3>
+                        </div>
+                        <p class="text-secondary text-sm">
+                            Use the Pomodoro Technique: 25 minutes of focused study, then 5-minute breaks.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-success rounded-lg flex items-center justify-center">
+                                <i data-lucide="target" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h3 class="font-bold text-primary">Break It Down</h3>
+                        </div>
+                        <p class="text-secondary text-sm">
+                            Break large assignments into smaller, manageable tasks with clear deadlines.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                                <i data-lucide="brain" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <h3 class="font-bold text-primary">Active Learning</h3>
+                        </div>
+                        <p class="text-secondary text-sm">
+                            Use active recall techniques: quiz yourself regularly instead of just re-reading.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Subject selection
+        const subjectCards = document.querySelectorAll('.subject-card');
+        const currentSubject = 'math';
+        
+        subjectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove active class from all cards
+                subjectCards.forEach(c => c.classList.remove('active'));
+                // Add active class to clicked card
+                card.classList.add('active');
+            });
+        });
+        
+        // Quick question buttons
+        const quickQuestions = document.querySelectorAll('.quick-question');
+        const messageInput = document.getElementById('message-input');
+        
+        quickQuestions.forEach(button => {
+            button.addEventListener('click', () => {
+                const question = button.dataset.question;
+                messageInput.value = question;
+                messageInput.focus();
+            });
+        });
+        
+        // Chat functionality
+        const chatForm = document.getElementById('chat-form');
+        const chatMessages = document.getElementById('chat-messages');
+        const typingIndicator = document.getElementById('typing-indicator');
+        
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const messageInput = document.getElementById('message-input');
+            const message = messageInput.value.trim();
+            
+            if (!message) return;
+            
+            // Add user message to chat
+            addMessageToChat(message, 'user');
+            messageInput.value = '';
+            
+            // Show typing indicator
+            typingIndicator.classList.remove('hidden');
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Simulate AI response (replace with actual API call)
+            setTimeout(() => {
+                typingIndicator.classList.add('hidden');
+                addMessageToChat(getAIResponse(message), 'ai');
+            }, 1500);
+        });
+        
+        function addMessageToChat(message, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message mb-6';
+            
+            const isUser = sender === 'user';
+            const bgColor = isUser ? 'bg-primary' : 'bg-elevated';
+            const textColor = isUser ? 'text-white' : 'text-primary';
+            const icon = isUser ? 'user' : 'brain-circuit';
+            const name = isUser ? 'You' : 'AI Tutor';
+            
+            messageDiv.innerHTML = `
+                <div class="flex items-start space-x-4">
+                    <div class="w-8 h-8 ${bgColor} rounded-full flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="${icon}" class="w-4 h-4 ${isUser ? 'text-white' : 'text-white'}"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="${bgColor} rounded-lg p-4 shadow-sm">
+                            <p class="${textColor} font-medium mb-2">${name}</p>
+                            <p class="${isUser ? 'text-white' : 'text-secondary'}">${message}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Re-initialize icons for new elements
+            lucide.createIcons();
+        }
+        
+        function getAIResponse(userMessage) {
+            // This would be replaced with actual API call to the AI tutor
+            const responses = [
+                "I'd be happy to help you with that! Let me break this down into manageable steps...",
+                "Great question! Here's a detailed explanation with examples...",
+                "This is a common challenge. Let me show you a step-by-step approach...",
+                "Excellent! I can help you understand this concept better. Here's what you need to know..."
+            ];
+            
+            return responses[Math.floor(Math.random() * responses.length)];
+        }
+        
+        // Auto-focus message input
+        document.getElementById('message-input').focus();
+        
+        // Handle Enter key in message input
+        document.getElementById('message-input').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                chatForm.dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
+</body>
+</html>
