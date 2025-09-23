@@ -11,11 +11,20 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-# Load the comprehensive knowledge base
+# Load the enhanced knowledge base with comprehensive notes and tutorials
 def load_knowledge_base():
-    """Load the comprehensive knowledge base with ALL course materials."""
+    """Load the enhanced knowledge base with comprehensive notes and tutorials."""
     try:
-        # Try comprehensive knowledge base first
+        # Try enhanced knowledge base first
+        knowledge_path = Path("../ai_knowledge_base_enhanced.json")
+        if not knowledge_path.exists():
+            knowledge_path = Path("ai_knowledge_base_enhanced.json")
+        
+        if knowledge_path.exists():
+            with open(knowledge_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        
+        # Fallback to comprehensive knowledge base
         knowledge_path = Path("../ai_knowledge_base_comprehensive.json")
         if not knowledge_path.exists():
             knowledge_path = Path("ai_knowledge_base_comprehensive.json")
