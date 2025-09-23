@@ -1,0 +1,57 @@
+{
+  "math": {
+    "formulas": {
+      "general": "MAT 143 Unit 4 Formula Sheet - Statistics - Kristina's Academic Success Dashboard MAT 143 Unit 4 Formula Sheet - Statistics Course Materials Home Calendar Tutor MAT 143 Unit 4 Formula Sheet - Statistics Z-Score Formula z = (data - mean) / standard deviation For Populations: z = (x - μ) / σ - x = data value - μ = population mean - σ = population standard deviation For Samples: z = (x - x̄) / s - x = data value - x̄ = sample mean - s = sample standard deviation Empirical Rule (68-95-99.7 Rule) For normally distributed data: - 68% of data falls within 1 standard deviation of the mean - 95% of data falls within 2 standard deviations of the mean - 99.7% of data falls within 3 standard deviations of the mean Probability P(event) = favorable outcomes / total outcomes Expected Value: E(X) = Σ(x × P(x)) &copy; 2025 Kristina's Academic Success Dashboard. All rights reserved. lucide.createIcons();"
+    },
+    "concepts": {
+      "chapter_resources": "# MAT 143 Chapter Resources ## Google Drive Folders (from course materials) ### Chapter 1 & 13 - Chapter 1: https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb - Chapter 13: https://drive.google.com/drive/folders/1yOKSgy3mr3X7oR1LpzBtp7mpk9pzVuIg ### Chapter 4 & 5 - Chapter 4: https://drive.google.com/drive/folders/18ATn37hsHGv6X09NP1FeEvtSJ7owBjzv - Chapter 5: https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK ### Chapter 6 & 7 - Chapter 6: https://drive.google.com/drive/folders/18_REPow9vLpTEAWCJEDIKqgHbPix3vBx - Chapter 7: https://drive.google.com/drive/folders/1EQ4JvXkaMcVQg5YvEt7twpY4j_FjCvL9 ### Chapter 10 & 11 - Chapter 10: https://drive.google.com/drive/folders/1X1oVeQMy4vZY0tkr5GdtFS9UE20F2MhW - Chapter 11: https://drive.google.com/drive/folders/1hKIdhMi4LlINf0CxPOvpWEpEnt911tUv ## Hawkes Learning Video Topics ### Chapter 1: Thinking Mathematically - 1.1 Thinking Mathematically - 1.2 Estimating and Evaluating - 1.3 Problem Solving: Processes and Techniques ### Chapter 4: Proportions & Percentages - 4.1 Proportions, Percentages, and Ratios - 4.2 Using Percentages - 4.3 Rates, Unit Rates, and Rates of Change - 4.4 Using Rates for Dimensional Analysis ### Chapter 5: Linear & Exponential Functions - Note: Hawkes Learning does not have videos for Chapter 5 ### Chapter 6: Personal Finance - 6.1 Understanding Interest - 6.2 Saving and Investing - 6.3 Borrowing Money - 6.4 Federal Revenue - 6.5 Budgeting ### Chapter 7: Measurement & Conversions - 7.4 The Metric System - 7.5 Converting between the US Customary System and the Metric System ### Chapter 10: Probability - 10.1 Introduction to Probability - 10.2 Counting Outcomes - 10.3 Probability of Single Events - 10.4 Addition and Multiplication Rules of Probability - 10.6 Expected Value ### Chapter 11: Statistics - 11.1 Statistical Studies - 11.2 Displaying Data - 11.3 Describing and Analyzing Data - 11.4 The Normal Distribution ### Chapter 13: Voting & Apportionment - 13.1 How to Determine a Winner - 13.2 Flaws in Voting Methods - 13.3 Apportionment"
+    },
+    "examples": {},
+    "study_guides": {},
+    "schedules": {
+      "fall_2025": "# MAT 143 Course Schedule - Fall 2025 ## Important Dates - **Semester Start:** August 18, 2025 - **Semester End:** December 12, 2025 - **Census Date (EVA Due):** August 29, 2025 - **Last Day to Withdraw:** September 26, 2025 ## Test Schedule - **Test 1:** Week 4 (Sept 8-12) - Chapters 1 & 13 - **Test 2:** Week 7 (Sept 29-Oct 3) - Chapters 4 & 5 - **Test 3:** Week 11 (Nov 3-7) - Chapters 6 & 7 - **Test 4:** Week 16 (Dec 8-12) - Chapters 10 & 11 ## Chapter Coverage by Week 1. **Weeks 1-2:** Chapter 1 (Thinking Mathematically) & Chapter 13 (Voting/Apportionment) 2. **Weeks 5-6:** Chapter 4 (Proportions) & Chapter 5 (Functions) 3. **Weeks 8-10:** Chapter 7 (Conversions) & Chapter 6 (Personal Finance) 4. **Weeks 12-15:** Chapter 10 (Probability) & Chapter 11 (Statistics) ## Assignment Types & Weights - **Tests:** 60% - **Homework (Hawkes Learning):** 20% - **Lab Assignments:** 10% - **Signature Assignment:** 5% - **Weekly Attendance:** 5% ## Key Requirements - Complete EVA (Enrollment Verification Activity) by census date - Use Respondus Lockdown Browser for all tests - Achieve \"mastery\" in Hawkes Learning assignments (must see congratulations message) - Submit weekly attendance assignments in BrightSpace"
+    },
+    "assignments": {
+      "hawkes_setup": "Setting Up Hawkes Learning for MAT 143 - Kristina's Academic Success Dashboard Setting Up Hawkes Learning for MAT 143 Course Materials Home Calendar Tutor Setting Up Hawkes Learning for MAT 143 IMPORTANT: Complete EVA First! The Hawkes Learning button will NOT appear on your Brightspace page until the EVA (Enrollment Verification Activity) is completed. Setup Steps: Log into your Brightspace account Click on your MAT 143 course Click on Content Click on the Hawkes Learning button (6th item on left-hand side) Click on the first assignment: Lesson 1.1 You should now be in Hawkes Learning For Homework Success: Complete problems until you see: \"Congratulations! You've Mastered this lesson\" You get either 100% (mastery) or 0% (not mastered) - no partial credit Use hints when stuck, but focus on understanding Return to Hawkes Learning tab in Brightspace for all assignments Need Help? No access code needed - it's included in your tuition If you have issues, contact your instructor immediately For MAT 043 students: Follow separate instructions from your MAT 043 instructor &copy; 2025 Kristina's Academic Success Dashboard. All rights reserved. lucide.createIcons();",
+      "sample_assignments": "MAT 143 Week 1 Attendance Assignment Sample - Kristina's Academic Success Dashboard MAT 143 Week 1 Attendance Assignment Sample Course Materials Home Calendar Tutor MAT 143 Week 1 Attendance Assignment Sample Question Types You Can Expect: Deductive vs Inductive Reasoning Example: Taylor plays football and has caught 24 out of 56 targets so far this season. So, he is expected to catch 6 out of 14 targets in tonight's game. Answer: Inductive (making a prediction based on past performance) Pattern Recognition Example: Given the sequence: 288, 144, 72, 36, ... - Pattern: To find the next number, divide the previous number by 2 - Next terms: 18, 9 - Type: Geometric sequence Sequence Types Arithmetic: Constant difference between terms (add same number each time) Geometric: Constant ratio between terms (multiply/divide by same number each time) Neither: Pattern that doesn't fit arithmetic or geometric rules Study Tips: Look for what's being added, subtracted, multiplied, or divided Check if the pattern is consistent throughout the sequence Write out your reasoning in complete sentences Always identify the sequence type (arithmetic, geometric, or neither) &copy; 2025 Kristina's Academic Success Dashboard. All rights reserved. lucide.createIcons();"
+    }
+  },
+  "english": {
+    "writing_guides": {},
+    "essay_requirements": {},
+    "citation_guides": {}
+  },
+  "course_info": {
+    "mat143": {
+      "title": "MAT 143 - Quantitative Literacy",
+      "chapters": {
+        "1": "Thinking Mathematically, Estimating, Problem Solving",
+        "4": "Proportions, Percentages, and Ratios",
+        "5": "Linear and Exponential Functions",
+        "6": "Personal Finance (Interest, Saving, Borrowing)",
+        "7": "Measurement and Conversions",
+        "10": "Probability and Expected Value",
+        "11": "Statistics and Data Analysis",
+        "13": "Voting Methods and Apportionment"
+      },
+      "test_schedule": {
+        "Test 1": "Week 4 (Sept 8-12) - Chapters 1 & 13",
+        "Test 2": "Week 7 (Sept 29-Oct 3) - Chapters 4 & 5",
+        "Test 3": "Week 11 (Nov 3-7) - Chapters 6 & 7",
+        "Test 4": "Week 16 (Dec 8-12) - Chapters 10 & 11"
+      },
+      "important_dates": {
+        "semester_start": "August 18, 2025",
+        "semester_end": "December 12, 2025",
+        "census_date": "August 29, 2025",
+        "last_withdraw": "September 26, 2025"
+      }
+    },
+    "eng111": {
+      "title": "ENG 111 - Writing and Inquiry",
+      "current_assignments": {
+        "cause_effect_essay": "Due September 22, 2025"
+      }
+    }
+  }
+}

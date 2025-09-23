@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: Linear and Exponential Functions - Kristina's Math Tutor</title>
+    <meta name="description" content="Master linear and exponential functions for MAT 143 - clear explanations, worked examples, and practice problems.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background-secondarysecondary text-text-primary font-sans leading-relaxed">
+    <!-- Header -->
+    <header class="bg-background-secondarysecondary border-b border-border">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl bg-background-secondary border border-border flex items-center justify-center">
+                        <i data-lucide="trending-up" class="w-6 h-6 text-emerald-600"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-semibold text-text-primary mt-8 mb-4 mt-8 mb-4">Chapter 5: Linear and Exponential Functions</h1>
+
+
+                        <p class="text-text-tertiary text-sm mb-4 mb-4">MAT 143 • Functions & Relationships</p>
+                    </div>
+                </div>
+                <nav class="flex items-center space-x-4">
+                    <a href="index.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-text-secondary hover:text-text-primary transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4 mr-2" aria-label="Go back"></i>
+                        Back to Dashboard
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="bg-background-secondary border border-border rounded-xl p-8 mb-6 mb-12" class="mb-12">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 rounded-xl bg-background-secondary border border-border flex items-center justify-center">
+                    <i data-lucide="trending-up" class="w-8 h-8 text-text-primary"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Linear and Exponential Functions</h2>
+
+
+                    <p class="text-text-secondary mb-4 mb-4">Master function relationships and real-world applications</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-6 gap-6">
+                <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="target" class="w-4 h-4 mr-2 text-emerald-600" aria-label="Goal"></i>
+                        Learning Objectives
+                    </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <ul class="text-sm text-text-secondary space-y-1 space-y-2 space-y-2">
+                        <li>• Understand linear and exponential functions</li>
+                        <li>• Create mathematical models</li>
+                        <li>• Interpret graphs and equations</li>
+                        <li>• Apply functions to real situations</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="clock" class="w-4 h-4 mr-2 text-emerald-600" aria-label="Time"></i>
+                        Timeline
+                    </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <ul class="text-sm text-text-secondary space-y-1 space-y-2 space-y-2">
+                        <li>• Week 8-9: Linear functions</li>
+                        <li>• Week 10: Exponential functions</li>
+                        <li>• Test 3: Covers Chapters 4-5</li>
+                        <li>• Formula sheet provided</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                    <h3 class="font-semibold text-text-primary mb-2 flex items-center">
+                        <i data-lucide="lightbulb" aria-label="Idea" aria-label="Idea" class="w-4 h-4 mr-2 text-emerald-600"></i>
+                        Key Skills
+                    </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <ul class="text-sm text-text-secondary space-y-1 space-y-2 space-y-2">
+                        <li>• Function notation f(x)</li>
+                        <li>• Slope and y-intercept</li>
+                        <li>• Growth and decay rates</li>
+                        <li>• Mathematical modeling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-sm font-medium text-text-primary">Chapter Progress</span>
+                    <span class="text-xs bg-background-secondary border border-border text-emerald-700 px-2 py-1 rounded-full">Active</span>
+                </div>
+                <div class="w-full bg-background-secondarysubtle rounded-full h-2 mb-2">
+                    <div class="bg-background-secondary border border-border h-2 rounded-full transition-all duration-300" style="width: 75%"></div>
+                </div>
+                <p class="text-xs text-text-tertiary mb-4 mb-4">3 of 4 sections completed</p>
+            </div>
+        </section>
+
+        <!-- Section 5.1: Linear Equations and Functions -->
+        <section class="bg-background-secondarysecondary border border-border rounded-xl p-6 mb-6 mb-12" class="mb-12">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-background-secondary border border-border flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">5.1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mt-8 mb-4 mt-8 mb-4">Linear Equations and Functions</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                </div>
+                <p class="text-text-secondary mb-4 mb-4">Understanding linear relationships and the slope-intercept form</p>
+            </div>
+
+            <!-- Key Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Key Concepts</h4>
+                
+                <div class="bg-background-secondary border border-border rounded-lg p-6 mb-6">
+                    <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Linear Function Form</h5>
+                    <div class="text-center mb-4">
+                        <p class="text-2xl font-mono font-bold text-emerald-700 bg-background-secondarysecondary border border-border rounded-lg py-3 px-4 mb-4 mb-4">
+                            y = mx + b
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="text-sm text-text-secondary space-y-2 space-y-2 space-y-2">
+                                <li><strong>m</strong> = slope (rate of change)</li>
+                                <li><strong>b</strong> = y-intercept (starting value)</li>
+                                <li><strong>x</strong> = input variable</li>
+                                <li><strong>y</strong> = output variable</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                                <h6 class="font-medium text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Slope Interpretation</h6>
+                                <ul class="text-xs text-text-secondary space-y-1 space-y-2 space-y-2">
+                                    <li>• Positive slope: increasing</li>
+                                    <li>• Negative slope: decreasing</li>
+                                    <li>• Zero slope: horizontal</li>
+                                    <li>• Undefined slope: vertical</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Slope Formula</h5>
+                        <div class="text-center mb-3">
+                            <p class="font-mono text-lg text-text-primary bg-background-secondarysubtle rounded py-2 px-3 mb-4 mb-4">
+                                m = (y₂ - y₁)/(x₂ - x₁)
+                            </p>
+                        </div>
+                        <p class="text-sm text-text-secondary mb-4 mb-4">Rise over run - change in y divided by change in x</p>
+                    </div>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Finding Slope Example</h5>
+                        <div class="text-sm text-text-secondary space-y-1">
+                            <p class="mb-4 mb-4"><strong>Points:</strong> (2, 5) and (6, 13)</p>
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> m = (13 - 5)/(6 - 2)</p>
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> m = 8/4 = 2</p>
+                            <p class="text-emerald-600 font-medium mb-4 mb-4"><strong>Slope:</strong> m = 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Worked Examples -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Worked Examples</h4>
+                
+                <!-- Example 1 -->
+                <div class="bg-background-secondary border border-border rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Example 1: Writing Linear Equations</h5>
+                    <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                        A cell phone plan costs $30 per month plus $0.15 per text message. Write a linear function for the total monthly cost.
+                    </p>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> Identify the components</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• Fixed cost = $30 (y-intercept)</li>
+                                <li>• Variable cost = $0.15 per text (slope)</li>
+                            </ul>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> Set up the equation</p>
+                            <p class="ml-4 font-mono bg-background-secondary border border-border text-emerald-700 px-2 py-1 rounded mb-4 mb-4">C(t) = 0.15t + 30</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 3:</strong> Interpret the function</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• t = number of text messages</li>
+                                <li>• C(t) = total monthly cost</li>
+                                <li>• For 100 texts: C(100) = 0.15(100) + 30 = $45</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 2 -->
+                <div class="bg-background-secondary border border-border rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Example 2: Finding Linear Equation from Two Points</h5>
+                    <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                        Find the linear equation passing through points (1, 3) and (5, 11).
+                    </p>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> Find the slope</p>
+                            <p class="ml-4 mb-4 mb-4">m = (11 - 3)/(5 - 1) = 8/4 = 2</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> Use point-slope form</p>
+                            <p class="ml-4 mb-4 mb-4">y - y₁ = m(x - x₁)</p>
+                            <p class="ml-4 mb-4 mb-4">y - 3 = 2(x - 1)</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 3:</strong> Convert to slope-intercept form</p>
+                            <div class="ml-4 space-y-1">
+                                <p class="mb-4 mb-4">y - 3 = 2x - 2</p>
+                                <p class="mb-4 mb-4">y = 2x - 2 + 3</p>
+                                <p class="font-mono bg-background-secondary border border-border text-emerald-700 px-2 py-1 rounded mb-4 mb-4">y = 2x + 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Problems -->
+            <div class="border-t border-border pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Practice Problems</h4>
+                
+                <div class="space-y-4">
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2 mb-4 mb-4">Problem 1:</p>
+                        <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                            A water tank contains 500 gallons and drains at 25 gallons per hour. Write a function for the water remaining after t hours.
+                        </p>
+                        
+                        <button onclick="toggleAnswer('linear-answer-1')" class="text-sm bg-background-secondary text-emerald-700 px-3 py-1 rounded hover:bg-background-secondary border border-border transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="linear-answer-1" class="hidden mt-3 p-3 bg-background-secondarysecondary border-border border-border rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p class="mb-4 mb-4"><strong>Starting amount:</strong> 500 gallons</p>
+                                <p class="mb-4 mb-4"><strong>Rate of change:</strong> -25 gallons/hour (negative because draining)</p>
+                                <p class="mb-4 mb-4"><strong>Function:</strong> W(t) = -25t + 500</p>
+                                <p class="text-emerald-600 mb-4 mb-4"><strong>Check:</strong> After 10 hours: W(10) = -25(10) + 500 = 250 gallons</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2 mb-4 mb-4">Problem 2:</p>
+                        <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                            Find the equation of the line passing through (3, 7) and (8, 22).
+                        </p>
+                        
+                        <button onclick="toggleAnswer('linear-answer-2')" class="text-sm bg-background-secondary text-emerald-700 px-3 py-1 rounded hover:bg-background-secondary border border-border transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="linear-answer-2" class="hidden mt-3 p-3 bg-background-secondarysecondary border-border border-border rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p class="mb-4 mb-4"><strong>Find slope:</strong> m = (22 - 7)/(8 - 3) = 15/5 = 3</p>
+                                <p class="mb-4 mb-4"><strong>Point-slope form:</strong> y - 7 = 3(x - 3)</p>
+                                <p class="mb-4 mb-4"><strong>Simplify:</strong> y - 7 = 3x - 9</p>
+                                <p class="mb-4 mb-4"><strong>Final equation:</strong> y = 3x - 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5.2: Linear Modeling -->
+        <section class="bg-background-secondarysecondary border border-border rounded-xl p-6 mb-6 mb-12" class="mb-12">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-background-secondary border border-border flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">5.2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mt-8 mb-4 mt-8 mb-4">Linear Modeling</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                </div>
+                <p class="text-text-secondary mb-4 mb-4">Using linear functions to model real-world situations</p>
+            </div>
+
+            <!-- Key Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Modeling Process</h4>
+                
+                <div class="grid md:grid-cols-4 gap-4 mb-6 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-full bg-background-secondary border border-border text-text-primary flex items-center justify-center text-sm font-bold mx-auto mb-2">1</div>
+                        <h5 class="font-semibold text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Identify</h5>
+                        <p class="text-xs text-text-secondary mb-4 mb-4">Find the rate and starting value</p>
+                    </div>
+                    <div class="bg-background-secondary border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-full bg-background-secondary border border-border text-text-primary flex items-center justify-center text-sm font-bold mx-auto mb-2">2</div>
+                        <h5 class="font-semibold text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Set Up</h5>
+                        <p class="text-xs text-text-secondary mb-4 mb-4">Write the linear function</p>
+                    </div>
+                    <div class="bg-background-secondary border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-full bg-background-secondary border border-border text-text-primary flex items-center justify-center text-sm font-bold mx-auto mb-2">3</div>
+                        <h5 class="font-semibold text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Solve</h5>
+                        <p class="text-xs text-text-secondary mb-4 mb-4">Answer the question</p>
+                    </div>
+                    <div class="bg-background-secondary border border-border rounded-lg p-4 text-center">
+                        <div class="w-8 h-8 rounded-full bg-background-secondary border border-border text-text-primary flex items-center justify-center text-sm font-bold mx-auto mb-2">4</div>
+                        <h5 class="font-semibold text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Check</h5>
+                        <p class="text-xs text-text-secondary mb-4 mb-4">Verify the answer makes sense</p>
+                    </div>
+                </div>
+
+                <!-- Real-World Applications -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Common Applications</h5>
+                        <ul class="text-sm text-text-secondary space-y-2 space-y-2 space-y-2">
+                            <li>• <strong>Cost functions:</strong> Fixed cost + variable cost</li>
+                            <li>• <strong>Depreciation:</strong> Value decreases over time</li>
+                            <li>• <strong>Population growth:</strong> Constant rate of change</li>
+                            <li>• <strong>Temperature change:</strong> Heating/cooling rates</li>
+                            <li>• <strong>Distance/time:</strong> Constant speed problems</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Key Questions to Ask</h5>
+                        <ul class="text-sm text-text-secondary space-y-2 space-y-2 space-y-2">
+                            <li>• What is the starting value?</li>
+                            <li>• What is the rate of change?</li>
+                            <li>• Is the change per unit constant?</li>
+                            <li>• What are the units for inputs/outputs?</li>
+                            <li>• Does a linear model make sense?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comprehensive Example -->
+            <div class="bg-background-secondary border border-border rounded-lg p-4 mb-6">
+                <h5 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Comprehensive Example: Car Rental Company</h5>
+                <p class="text-sm text-text-secondary mb-4 mb-4 mb-4">
+                    A car rental company charges a base fee of $50 plus $0.30 per mile driven. 
+                    Create a cost function and determine the cost for driving 200 miles.
+                </p>
+                
+                <div class="bg-background-secondarysecondary border border-border rounded-lg p-4">
+                    <div class="text-sm space-y-3">
+                        <div>
+                            <p class="mb-4 mb-4"><strong>Step 1: Identify components</strong></p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• Base fee (fixed cost): $50</li>
+                                <li>• Cost per mile (rate): $0.30</li>
+                                <li>• Variable: miles driven (m)</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <p class="mb-4 mb-4"><strong>Step 2: Set up function</strong></p>
+                            <p class="ml-4 font-mono bg-background-secondary border border-border text-emerald-700 px-2 py-1 rounded mb-4 mb-4">C(m) = 0.30m + 50</p>
+                        </div>
+                        
+                        <div>
+                            <p class="mb-4 mb-4"><strong>Step 3: Calculate cost for 200 miles</strong></p>
+                            <div class="ml-4 space-y-1">
+                                <p class="mb-4 mb-4">C(200) = 0.30(200) + 50</p>
+                                <p class="mb-4 mb-4">C(200) = 60 + 50</p>
+                                <p class="text-emerald-600 font-medium mb-4 mb-4">C(200) = $110</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p class="mb-4 mb-4"><strong>Step 4: Interpret the result</strong></p>
+                            <p class="ml-4 text-text-secondary mb-4 mb-4">It costs $110 to rent the car and drive 200 miles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5.7: Exponential Functions -->
+        <section class="bg-background-secondarysecondary border border-border rounded-xl p-6 mb-6 mb-12" class="mb-12">
+            <div class="mb-6">
+                <div class="flex items-center space-x-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-background-secondary border border-border flex items-center justify-center">
+                        <span class="text-sm font-bold text-emerald-600">5.7</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mt-8 mb-4 mt-8 mb-4">Exponential Functions</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                </div>
+                <p class="text-text-secondary mb-4 mb-4">Understanding growth and decay with constant percent change</p>
+            </div>
+
+            <!-- Key Concepts -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Exponential Function Form</h4>
+                
+                <div class="bg-background-secondary border border-border rounded-lg p-6 mb-6">
+                    <div class="text-center mb-4">
+                        <p class="text-2xl font-mono font-bold text-purple-700 bg-background-secondarysecondary border border-border rounded-lg py-3 px-4 mb-4 mb-4">
+                            f(x) = a(b)^x
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="text-sm text-text-secondary space-y-2 space-y-2 space-y-2">
+                                <li><strong>a</strong> = initial value (when x = 0)</li>
+                                <li><strong>b</strong> = growth/decay factor</li>
+                                <li><strong>x</strong> = time or input variable</li>
+                                <li><strong>f(x)</strong> = output value</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                                <h6 class="font-medium text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Factor Interpretation</h6>
+                                <ul class="text-xs text-text-secondary space-y-1 space-y-2 space-y-2">
+                                    <li>• b > 1: exponential growth</li>
+                                    <li>• 0 < b < 1: exponential decay</li>
+                                    <li>• b = 1: constant (no change)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 flex items-center">
+                            <i data-lucide="trending-up" class="w-4 h-4 mr-2 text-green-600"></i>
+                            Exponential Growth
+                        </h5>
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Growth factor:</strong> b = 1 + rate</p>
+                            <p class="mb-4 mb-4"><strong>Example:</strong> 5% growth -> b = 1.05</p>
+                            <div class="bg-background-secondarysecondary border border-border rounded p-2">
+                                <p class="font-mono text-xs mb-4 mb-4">f(x) = 100(1.05)^x</p>
+                                <p class="text-xs text-text-secondary mt-1 mb-4 mb-4">Initial: $100, grows 5% per period</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <h5 class="font-semibold text-text-primary mb-3 flex items-center">
+                            <i data-lucide="trending-down" class="w-4 h-4 mr-2 text-red-600"></i>
+                            Exponential Decay
+                        </h5>
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Decay factor:</strong> b = 1 - rate</p>
+                            <p class="mb-4 mb-4"><strong>Example:</strong> 20% decay -> b = 0.80</p>
+                            <div class="bg-background-secondarysecondary border border-border rounded p-2">
+                                <p class="font-mono text-xs mb-4 mb-4">f(x) = 50000(0.80)^x</p>
+                                <p class="text-xs text-text-secondary mt-1 mb-4 mb-4">Initial: $50,000, loses 20% per period</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Worked Examples -->
+            <div class="mb-8">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Worked Examples</h4>
+                
+                <!-- Growth Example -->
+                <div class="bg-background-secondary border border-border rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Example 1: Population Growth</h5>
+                    <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                        A city's population is 50,000 and grows at 3% per year. Find the population after 10 years.
+                    </p>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> Identify values</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• Initial population: a = 50,000</li>
+                                <li>• Growth rate: 3% per year</li>
+                                <li>• Time: x = 10 years</li>
+                            </ul>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> Find growth factor</p>
+                            <p class="ml-4 mb-4 mb-4">b = 1 + 0.03 = 1.03</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 3:</strong> Set up function</p>
+                            <p class="ml-4 font-mono bg-background-secondary border border-border text-green-700 px-2 py-1 rounded mb-4 mb-4">P(t) = 50,000(1.03)^t</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 4:</strong> Calculate after 10 years</p>
+                            <div class="ml-4 space-y-1">
+                                <p class="mb-4 mb-4">P(10) = 50,000(1.03)^10</p>
+                                <p class="mb-4 mb-4">P(10) = 50,000(1.344)</p>
+                                <p class="text-green-600 font-medium mb-4 mb-4">P(10) ≈ 67,200 people</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decay Example -->
+                <div class="bg-background-secondary border border-border rounded-lg p-4 mb-4">
+                    <h5 class="font-semibold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Example 2: Car Depreciation</h5>
+                    <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                        A car worth $25,000 depreciates by 15% each year. Find its value after 5 years.
+                    </p>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> Identify values</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• Initial value: a = $25,000</li>
+                                <li>• Depreciation rate: 15% per year</li>
+                                <li>• Time: x = 5 years</li>
+                            </ul>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> Find decay factor</p>
+                            <p class="ml-4 mb-4 mb-4">b = 1 - 0.15 = 0.85</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 3:</strong> Set up function</p>
+                            <p class="ml-4 font-mono bg-background-secondary border border-border text-red-700 px-2 py-1 rounded mb-4 mb-4">V(t) = 25,000(0.85)^t</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 4:</strong> Calculate after 5 years</p>
+                            <div class="ml-4 space-y-1">
+                                <p class="mb-4 mb-4">V(5) = 25,000(0.85)^5</p>
+                                <p class="mb-4 mb-4">V(5) = 25,000(0.444)</p>
+                                <p class="text-red-600 font-medium mb-4 mb-4">V(5) ≈ $11,100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Investment Example -->
+                <div class="bg-background-secondary border border-border rounded-lg p-4">
+                    <h5 class="font-semibold text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Example 3: Investment Growth</h5>
+                    <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                        An investment of $1,000 grows at 7% annual interest, compounded annually. Find the value after 8 years.
+                    </p>
+                    
+                    <div class="bg-background-secondarysecondary border border-border rounded-lg p-3">
+                        <div class="text-sm space-y-2">
+                            <p class="mb-4 mb-4"><strong>Step 1:</strong> Identify the exponential model</p>
+                            <ul class="ml-4 space-y-1 text-text-secondary space-y-2 space-y-2">
+                                <li>• Principal: a = $1,000</li>
+                                <li>• Interest rate: r = 7% = 0.07</li>
+                                <li>• Time: t = 8 years</li>
+                            </ul>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 2:</strong> Use compound interest formula</p>
+                            <p class="ml-4 font-mono bg-background-secondary border border-border text-blue-700 px-2 py-1 rounded mb-4 mb-4">A(t) = 1000(1.07)^t</p>
+                            
+                            <p class="mb-4 mb-4"><strong>Step 3:</strong> Calculate</p>
+                            <div class="ml-4 space-y-1">
+                                <p class="mb-4 mb-4">A(8) = 1000(1.07)^8</p>
+                                <p class="mb-4 mb-4">A(8) = 1000(1.718)</p>
+                                <p class="text-blue-600 font-medium mb-4 mb-4">A(8) ≈ $1,718</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Problems -->
+            <div class="border-t border-border pt-6">
+                <h4 class="text-lg font-semibold text-text-primary mb-4 mt-8 mb-4 mt-8 mb-4">Practice Problems</h4>
+                
+                <div class="space-y-4">
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2 mb-4 mb-4">Problem 1:</p>
+                        <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                            A bacteria culture starts with 200 bacteria and doubles every 4 hours. Write the exponential function and find the population after 12 hours.
+                        </p>
+                        
+                        <button onclick="toggleAnswer('exp-answer-1')" class="text-sm bg-background-secondary text-emerald-700 px-3 py-1 rounded hover:bg-background-secondary border border-border transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="exp-answer-1" class="hidden mt-3 p-3 bg-background-secondarysecondary border-border border-border rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p class="mb-4 mb-4"><strong>Doubling means:</strong> growth factor b = 2 every 4 hours</p>
+                                <p class="mb-4 mb-4"><strong>Function:</strong> B(t) = 200(2)^(t/4), where t is in hours</p>
+                                <p class="mb-4 mb-4"><strong>After 12 hours:</strong> B(12) = 200(2)^(12/4) = 200(2)^3 = 200(8) = 1,600 bacteria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-background-secondary border border-border rounded-lg p-4">
+                        <p class="font-medium text-text-primary mb-2 mb-4 mb-4">Problem 2:</p>
+                        <p class="text-sm text-text-secondary mb-3 mb-4 mb-4">
+                            The value of a collectible item decreases by 8% each year. If it's worth $500 today, what will it be worth in 6 years?
+                        </p>
+                        
+                        <button onclick="toggleAnswer('exp-answer-2')" class="text-sm bg-background-secondary text-emerald-700 px-3 py-1 rounded hover:bg-background-secondary border border-border transition-colors">
+                            Show Solution
+                        </button>
+                        
+                        <div id="exp-answer-2" class="hidden mt-3 p-3 bg-background-secondarysecondary border-border border-border rounded-r">
+                            <div class="text-sm space-y-1">
+                                <p class="mb-4 mb-4"><strong>Decay rate:</strong> 8%, so factor b = 1 - 0.08 = 0.92</p>
+                                <p class="mb-4 mb-4"><strong>Function:</strong> V(t) = 500(0.92)^t</p>
+                                <p class="mb-4 mb-4"><strong>After 6 years:</strong> V(6) = 500(0.92)^6 = 500(0.606) ≈ $303</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="bg-background-secondarysecondary border border-border rounded-xl p-6 mb-6 mb-12" class="mb-12">
+            <h3 class="text-xl font-bold text-text-primary mb-4 flex items-center">
+                <i data-lucide="bookmark" class="w-5 h-5 mr-2 text-emerald-600"></i>
+                Quick Reference & Formulas
+            </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Linear Functions</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3 p-2 bg-background-secondary border border-border rounded">
+                            <span class="font-mono text-sm bg-background-secondary border border-border text-text-primary px-2 py-1 rounded">y = mx + b</span>
+                            <span class="text-sm text-text-secondary">Slope-intercept form</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-2 bg-background-secondary border border-border rounded">
+                            <span class="font-mono text-sm bg-background-secondary border border-border text-text-primary px-2 py-1 rounded">m = (y₂-y₁)/(x₂-x₁)</span>
+                            <span class="text-sm text-text-secondary">Slope formula</span>
+                        </div>
+                        <div class="text-xs text-text-tertiary mt-2">
+                            <p class="mb-4 mb-4">• Constant rate of change</p>
+                            <p class="mb-4 mb-4">• Straight line when graphed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Exponential Functions</h4>
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3 p-2 bg-background-secondary border border-border rounded">
+                            <span class="font-mono text-sm bg-background-secondary border border-border text-text-primary px-2 py-1 rounded">f(x) = a(b)^x</span>
+                            <span class="text-sm text-text-secondary">Exponential form</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-2 bg-background-secondary border border-border rounded">
+                            <span class="font-mono text-sm bg-background-secondary border border-border text-text-primary px-2 py-1 rounded">b = 1 + r</span>
+                            <span class="text-sm text-text-secondary">Growth factor</span>
+                        </div>
+                        <div class="flex items-center space-x-3 p-2 bg-background-secondary border border-border rounded">
+                            <span class="font-mono text-sm bg-background-secondary border border-border text-text-primary px-2 py-1 rounded">b = 1 - r</span>
+                            <span class="text-sm text-text-secondary">Decay factor</span>
+                        </div>
+                        <div class="text-xs text-text-tertiary mt-2">
+                            <p class="mb-4 mb-4">• Constant percent change</p>
+                            <p class="mb-4 mb-4">• Curved when graphed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Differences -->
+            <div class="mt-6 pt-6 border-t border-border">
+                <h4 class="font-semibold text-text-primary mb-3 mt-8 mb-4 mt-8 mb-4">Linear vs Exponential</h4>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-lg p-3">
+                        <h5 class="font-medium text-emerald-700 mb-2 mt-8 mb-4 mt-8 mb-4">Linear Functions</h5>
+                        <ul class="text-xs text-text-secondary space-y-1 space-y-2 space-y-2">
+                            <li>• Add/subtract same amount each time</li>
+                            <li>• Constant rate of change</li>
+                            <li>• Forms a straight line</li>
+                            <li>• Example: Save $50 per month</li>
+                        </ul>
+                    </div>
+                    <div class="bg-background-secondary border border-border rounded-lg p-3">
+                        <h5 class="font-medium text-purple-700 mb-2 mt-8 mb-4 mt-8 mb-4">Exponential Functions</h5>
+                        <ul class="text-xs text-text-secondary space-y-1 space-y-2 space-y-2">
+                            <li>• Multiply by same factor each time</li>
+                            <li>• Constant percent change</li>
+                            <li>• Forms a curved line</li>
+                            <li>• Example: Population grows 2% per year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center pt-8 border-t border-border">
+            <a href="chapter-4.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary border border-borderdefault rounded-lg hover:border-borderstrong transition-colors bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200 bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2" aria-label="Go back"></i>
+                Previous: Chapter 4
+            </a>
+            
+            <!-- Formula Sheet -->
+            <section class="bg-accent/5 rounded-2xl p-6 space-y-6 mt-8 mb-8 mb-12" class="mb-12">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                        <i data-lucide="bookmark" class="w-5 h-5 text-text-primary"></i>
+                    </div>
+                    <h2 class="font-title-medium text-text-primary mt-8 mb-4 mt-8 mb-4">Chapter 5 Formula Sheet</h2>
+
+
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-background rounded-xl p-5">
+                        <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                            <i data-lucide="trending-up" class="w-5 h-5 text-positive"></i>
+                            <span>Linear Functions</span>
+                        </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <div class="space-y-3">
+                            <div class="bg-positive text-text-primary/10 rounded-lg p-3">
+                                <h4 class="font-button text-positive mb-1 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Slope-Intercept Form</h4>
+                                <p class="font-body text-accent mb-4 mb-4">y = mx + b</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">m = slope, b = y-intercept</p>
+                            </div>
+                            <div class="bg-accent/10 rounded-lg p-3">
+                                <h4 class="font-button text-accent mb-1 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Slope Formula</h4>
+                                <p class="font-body text-positive mb-4 mb-4">m = (y₂ - y₁) / (x₂ - x₁)</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Rise over run</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-background rounded-xl p-5">
+                        <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                            <i data-lucide="zap" class="w-5 h-5 text-warning"></i>
+                            <span>Exponential Functions</span>
+                        </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <div class="space-y-3">
+                            <div class="bg-warning text-text-primary/10 rounded-lg p-3">
+                                <h4 class="font-button text-warning mb-1 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Exponential Form</h4>
+                                <p class="font-body text-accent mb-4 mb-4">y = a(b)ˣ</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">a = initial value, b = growth/decay factor</p>
+                            </div>
+                            <div class="bg-positive text-text-primary/10 rounded-lg p-3">
+                                <h4 class="font-button text-positive mb-1 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Growth/Decay</h4>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Growth: b > 1 | Decay: 0 < b < 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-background rounded-xl p-5 md:col-span-2">
+                        <h3 class="font-title-small text-text-primary mb-4 flex items-center space-x-2">
+                            <i data-lucide="lightbulb" aria-label="Idea" aria-label="Idea" class="w-5 h-5 text-accent"></i>
+                            <span>Key Differences</span>
+                        </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-positive text-text-primary/10 rounded-lg p-3">
+                                <h4 class="font-button text-positive mb-2 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Linear Functions</h4>
+                                <ul class="space-y-1 font-caption text-text-secondary space-y-2 space-y-2">
+                                    <li>• Constant rate of change (slope)</li>
+                                    <li>• Straight line graph</li>
+                                    <li>• Add/subtract same amount each step</li>
+                                </ul>
+                            </div>
+                            <div class="bg-warning text-text-primary/10 rounded-lg p-3">
+                                <h4 class="font-button text-warning mb-2 mt-8 mb-4 mt-8 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Exponential Functions</h4>
+                                <ul class="space-y-1 font-caption text-text-secondary space-y-2 space-y-2">
+                                    <li>• Constant percent change</li>
+                                    <li>• Curved graph</li>
+                                    <li>• Multiply/divide by same factor each step</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background rounded-xl p-4 border-l-4 border-accent">
+                    <p class="font-caption text-text-secondary italic mb-4 mb-4">
+                        💡 <strong>Memory Tip:</strong> Linear = Line (constant slope), Exponential = Explosive growth/decay (constant multiplier)!
+                    </p>
+                </div>
+            </section>
+
+        <!-- Course Materials -->
+        <section class="bg-background-secondary border border-border rounded-2xl p-6 space-y-6 mt-8 mb-8 mb-12" class="mb-12">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+                    <i data-lucide="file-text" class="w-5 h-5 text-text-primary"></i>
+                </div>
+                <h2 class="font-title-medium text-text-primary mt-8 mb-4 mt-8 mb-4">Chapter 5 Course Materials</h2>
+
+
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://drive.google.com/drive/folders/19DpXl6jGlVsVU5XeoZCSGDzkBipyJDsK" 
+                   class="block p-4 bg-positive/10 rounded-lg hover:bg-positive text-text-primary/20 transition-colors" 
+                   target="_blank" rel="noopener noreferrer">
+                    <h3 class="font-button text-positive mb-2 flex items-center space-x-2 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                        <i data-lucide="folder" class="w-5 h-5"></i>
+                        <span>Chapter 5 Google Drive</span>
+                    </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="font-caption text-text-secondary mb-4 mb-4">Linear and exponential functions course materials</p>
+                </a>
+
+                <a href="course_materials/formula_sheets/All_Sections_Guide.html" 
+                   class="block p-4 bg-accent/10 rounded-lg hover:bg-accent/20 transition-colors" 
+                   target="_blank">
+                    <h3 class="font-button text-accent mb-2 flex items-center space-x-2 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                        <i data-lucide="book-open" class="w-5 h-5" aria-label="Study guide"></i>
+                        <span>Chapter 5 Study Guide</span>
+                    </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="font-caption text-text-secondary mb-4 mb-4">Linear equations, modeling, and exponential functions</p>
+                </a>
+            </div>
+
+            <div class="bg-warning text-text-primary/10 rounded-lg p-4 mt-4">
+                <h3 class="font-button text-warning mb-2 flex items-center space-x-2 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                    <i data-lucide="info" class="w-5 h-5" aria-label="Information"></i>
+                    <span>Important Note</span>
+                </h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                <p class="font-caption text-text-secondary mb-4 mb-4">Hawkes Learning does not have videos for Chapter 5 - use the course materials above for extra practice</p>
+            </div>
+            </div>
+        </section>
+
+            <div class="flex space-x-3">
+                <a href="course_materials/formula_lookup.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-emerald-700 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary border border-border transition-colors bg-citrine/10 hover:bg-citrine/20 border border-citrine/30 hover:border-citrine/50 rounded-lg px-3 py-2 transition-all duration-200 bg-citrine/10 hover:bg-citrine/20 border border-citrine/30 hover:border-citrine/50 rounded-lg px-3 py-2 transition-all duration-200">
+                    <i data-lucide="calculator" class="w-4 h-4 mr-2" aria-label="Calculator"></i>
+                    Formula Sheet
+                </a>
+                <a href="chapter-6.html" class="inline-flex items-center px-4 py-2 text-sm font-medium text-text-primary bg-background-secondary border border-border rounded-lg hover:bg-background-secondary border border-border transition-colors bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200 bg-positive/10 hover:bg-positive/20 border border-positive/30 hover:border-positive/50 rounded-lg px-4 py-2 transition-all duration-200">
+                    Next: Chapter 6
+                    <i data-lucide="arrow-right" class="w-4 h-4 ml-2" aria-label="Go forward"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-8 px-4 bg-background-secondarysecondary border-t border-border">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-text-secondary text-sm mb-4 mb-4">Chapter 5: Linear and Exponential Functions</p>
+            <p class="text-text-tertiary text-xs mt-1 mb-4 mb-4">MAT 143 • Understanding Mathematical Relationships</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        // Toggle answer visibility
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            const button = event.target;
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                button.textContent = 'Hide Solution';
+                button.classList.remove('bg-background-secondary', 'text-emerald-700');
+                button.classList.add('bg-background-secondary', 'text-gray-700');
+            } else {
+                answer.classList.add('hidden');
+                button.textContent = 'Show Solution';
+                button.classList.remove('bg-background-secondary', 'text-gray-700');
+                button.classList.add('bg-background-secondary', 'text-emerald-700');
+            }
+        }
+
+        // Enhanced focus management for ADHD-friendly experience
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add focus styles to all interactive elements
+            const focusableElements = document.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+            focusableElements.forEach(element => {
+                element.addEventListener('focus', function() {
+                    this.style.outline = '2px solid #10b981';
+                    this.style.outlineOffset = '2px';
+                });
+                element.addEventListener('blur', function() {
+                    this.style.outline = '';
+                    this.style.outlineOffset = '';
+                });
+            });
+
+            // Smooth scrolling for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

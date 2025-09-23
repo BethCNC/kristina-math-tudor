@@ -13,8 +13,18 @@ app = Flask(__name__)
 
 # Load the comprehensive knowledge base
 def load_knowledge_base():
-    """Load the extracted knowledge base."""
+    """Load the comprehensive knowledge base with ALL course materials."""
     try:
+        # Try comprehensive knowledge base first
+        knowledge_path = Path("../ai_knowledge_base_comprehensive.json")
+        if not knowledge_path.exists():
+            knowledge_path = Path("ai_knowledge_base_comprehensive.json")
+        
+        if knowledge_path.exists():
+            with open(knowledge_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        
+        # Fallback to original
         knowledge_path = Path("../ai_knowledge_base.json")
         if not knowledge_path.exists():
             knowledge_path = Path("ai_knowledge_base.json")
@@ -23,7 +33,7 @@ def load_knowledge_base():
             return json.load(f)
     except Exception as e:
         print(f"⚠️ Could not load knowledge base: {e}")
-        return {"math": {"formulas": {}, "concepts": {}, "examples": {}}, "english": {}}
+        return {"math": {"formulas": {}, "concepts": {}, "examples": {}, "study_guides": {}, "schedules": {}, "assignments": {}}, "english": {}}
 
 KNOWLEDGE_BASE = load_knowledge_base()
 
@@ -100,6 +110,9 @@ class EnhancedMathTutor:
         
         relevant_formulas = []
         relevant_concepts = []
+        study_guides = []
+        schedules = []
+        assignments = []
         
         # Get formulas for the specific chapter
         if chapter in self.formulas:
@@ -115,6 +128,23 @@ class EnhancedMathTutor:
         if chapter in self.concepts:
             relevant_concepts = self.concepts[chapter]
         
+        # Get study guides
+        study_guides_data = self.knowledge.get('study_guides', {})
+        for key, content in study_guides_data.items():
+            if any(topic in content.lower() for topic in topic_info['topics']):
+                study_guides.append(content[:500])  # First 500 chars
+        
+        # Get schedules
+        schedules_data = self.knowledge.get('schedules', {})
+        for key, content in schedules_data.items():
+            schedules.append(content[:300])  # First 300 chars
+        
+        # Get assignments
+        assignments_data = self.knowledge.get('assignments', {})
+        for key, content in assignments_data.items():
+            if any(topic in content.lower() for topic in topic_info['topics']):
+                assignments.append(content[:400])  # First 400 chars
+        
         # Remove duplicates
         relevant_formulas = list(set(relevant_formulas))
         relevant_concepts = list(set(relevant_concepts))
@@ -122,6 +152,9 @@ class EnhancedMathTutor:
         return {
             'formulas': relevant_formulas[:10],  # Limit to top 10
             'concepts': relevant_concepts[:5],    # Limit to top 5
+            'study_guides': study_guides[:3],     # Limit to top 3
+            'schedules': schedules[:2],           # Limit to top 2
+            'assignments': assignments[:2],       # Limit to top 2
             'chapter': chapter
         }
     
@@ -148,6 +181,30 @@ class EnhancedMathTutor:
                 if len(clean_formula) > 5:  # Only show meaningful formulas
                     response_parts.append(f'<div class="bg-white p-2 rounded border font-mono text-sm">{clean_formula}</div>')
             
+            response_parts.append('</div>')
+        
+        # Study guides from course materials
+        if relevant_content['study_guides']:
+            response_parts.append('<div class="bg-purple-50 border border-purple-200 p-4 rounded-lg">')
+            response_parts.append('<h5 class="font-semibold text-purple-800 mb-2">📚 From Your Course Materials:</h5>')
+            for guide in relevant_content['study_guides']:
+                response_parts.append(f'<div class="bg-white p-3 rounded border text-sm">{guide}...</div>')
+            response_parts.append('</div>')
+        
+        # Assignment information
+        if relevant_content['assignments']:
+            response_parts.append('<div class="bg-orange-50 border border-orange-200 p-4 rounded-lg">')
+            response_parts.append('<h5 class="font-semibold text-orange-800 mb-2">📝 Assignment Help:</h5>')
+            for assignment in relevant_content['assignments']:
+                response_parts.append(f'<div class="bg-white p-3 rounded border text-sm">{assignment}...</div>')
+            response_parts.append('</div>')
+        
+        # Schedule information
+        if relevant_content['schedules']:
+            response_parts.append('<div class="bg-indigo-50 border border-indigo-200 p-4 rounded-lg">')
+            response_parts.append('<h5 class="font-semibold text-indigo-800 mb-2">📅 Course Schedule:</h5>')
+            for schedule in relevant_content['schedules']:
+                response_parts.append(f'<div class="bg-white p-3 rounded border text-sm">{schedule}...</div>')
             response_parts.append('</div>')
         
         # Study tips for ADHD
