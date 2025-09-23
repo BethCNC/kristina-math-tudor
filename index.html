@@ -11,11 +11,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- ADHD-Friendly Design System -->
-    <link rel="stylesheet" href="src/styles/adhd-friendly.css">
+    <!-- Enhanced Design System with Semantic Tokens -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- React and TypeScript for shadcn/ui -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
     <!-- Calendar System -->
     <script type="module" src="calendar.js"></script>
@@ -24,162 +29,180 @@
     <script type="module" src="src/js/study-planner.js"></script>
 </head>
 <body>
-    <!-- Simple, Clean Navigation -->
-    <nav class="nav">
-        <div class="container nav-container">
-            <a href="#" class="nav-brand">
-                <i data-lucide="graduation-cap" aria-hidden="true"></i>
-                Kristina's Dashboard
-            </a>
-            <ul class="nav-links">
-                <li><a href="#today" class="nav-link">Today</a></li>
-                <li><a href="#math" class="nav-link">Math</a></li>
-                <li><a href="#writing" class="nav-link">Writing</a></li>
-                <li><a href="#calendar" class="nav-link">Calendar</a></li>
-            </ul>
+    <!-- Enhanced Navigation with Design System -->
+    <nav class="bg-[var(--color-background-default)] border-b border-[var(--color-border-secondary)] shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors">
+                    <i data-lucide="graduation-cap" aria-hidden="true" class="w-6 h-6"></i>
+                    <span class="text-xl font-medium font-['Host_Grotesk']">Kristina's Dashboard</span>
+                </a>
+                <ul class="flex items-center space-x-8">
+                    <li><a href="#today" class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors font-['Host_Grotesk']">Today</a></li>
+                    <li><a href="#math" class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors font-['Host_Grotesk']">Math</a></li>
+                    <li><a href="#writing" class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors font-['Host_Grotesk']">Writing</a></li>
+                    <li><a href="#calendar" class="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors font-['Host_Grotesk']">Calendar</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <main class="container">
-        <!-- Simple Welcome -->
-        <div class="section" id="today">
-            <h1 class="text-huge">Hi Kristina! 👋</h1>
-            <p class="text-normal">Ready to tackle today?</p>
+    <main class="container mx-auto px-6 py-8 max-w-7xl">
+        <!-- Enhanced Welcome Section -->
+        <div class="mb-12" id="today">
+            <h1 class="text-4xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-4">Hi Kristina! 👋</h1>
+            <p class="text-lg text-[var(--color-text-secondary)] font-['Host_Grotesk']">Ready to tackle today?</p>
         </div>
 
         <!-- Urgent - What Needs Attention RIGHT NOW -->
-        <div class="section">
-            <h2 class="text-big">⚡ Do This First</h2>
-            <div class="status-card status-urgent">
-                <div class="quick-action-icon" style="background-color: var(--urgent-red); width: 50px; height: 50px;">
-                    <i data-lucide="edit" aria-hidden="true"></i>
-                </div>
-                <div>
-                    <div class="text-medium">Cause Effect Essay Rough Draft</div>
-                    <div class="text-small">Due: TODAY 11:59 PM (Sept 22)</div>
-                    <a href="english_materials.html" class="btn btn-primary">Finish Essay</a>
+        <div class="mb-12">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">⚡ Do This First</h2>
+            <div class="bg-[var(--color-background-default)] border border-[var(--color-border-danger)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center">
+                        <i data-lucide="edit" aria-hidden="true" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Cause Effect Essay Rough Draft</div>
+                        <div class="text-sm text-[var(--color-text-danger-primary)] font-['Host_Grotesk'] mb-4">Due: TODAY 11:59 PM (Sept 22)</div>
+                        <a href="english_materials.html" class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-brand-default)] text-white rounded-md font-medium font-['Host_Grotesk'] hover:bg-[var(--color-brand-default)]/90 transition-colors">
+                            Finish Essay
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Quick Progress Check -->
-        <div class="section">
-            <h2 class="text-big">📊 Your Progress</h2>
-            <div class="grid grid-2">
+        <div class="mb-12">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">📊 Your Progress</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Math Progress -->
-                <div class="card">
-                    <div class="status-card status-completed">
-                        <div class="quick-action-icon quick-action-math">
-                            <i data-lucide="check-circle" aria-hidden="true"></i>
+                <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center">
+                            <i data-lucide="check-circle" aria-hidden="true" class="w-6 h-6 text-white"></i>
                         </div>
-                        <div>
-                            <div class="text-medium">Math (MAT 143)</div>
-                            <div class="text-small">Test 1 Complete ✅</div>
-                            <div class="progress-container">
-                                <div class="progress-bar progress-success" style="width: 75%;"></div>
+                        <div class="flex-1">
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Math (MAT 143)</div>
+                            <div class="text-sm text-[var(--color-text-positive-primary)] font-['Host_Grotesk'] mb-3">Test 1 Complete ✅</div>
+                            <div class="w-full bg-[var(--color-background-secondary)] rounded-full h-2 mb-3">
+                                <div class="bg-[var(--color-positive-default)] h-2 rounded-full" style="width: 75%;"></div>
                             </div>
-                            <div class="text-small">Preparing for Test 2 (Ch. 4 & 5)</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Preparing for Test 2 (Ch. 4 & 5)</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Writing Progress -->
-                <div class="card">
-                    <div class="status-card status-urgent">
-                        <div class="quick-action-icon quick-action-writing">
-                            <i data-lucide="edit" aria-hidden="true"></i>
+                <div class="bg-[var(--color-background-default)] border border-[var(--color-border-danger)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center">
+                            <i data-lucide="edit" aria-hidden="true" class="w-6 h-6 text-white"></i>
                         </div>
-                        <div>
-                            <div class="text-medium">Writing (ENG 111)</div>
-                            <div class="text-small">Cause Effect Essay DUE TODAY</div>
-                            <div class="progress-container">
-                                <div class="progress-bar progress-warning" style="width: 80%;"></div>
+                        <div class="flex-1">
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Writing (ENG 111)</div>
+                            <div class="text-sm text-[var(--color-text-danger-primary)] font-['Host_Grotesk'] mb-3">Cause Effect Essay DUE TODAY</div>
+                            <div class="w-full bg-[var(--color-background-secondary)] rounded-full h-2 mb-3">
+                                <div class="bg-[var(--color-warning-default)] h-2 rounded-full" style="width: 80%;"></div>
                             </div>
-                            <div class="text-small">Week 5 of 8 - Submit Now!</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Week 5 of 8 - Submit Now!</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Quick Actions - BIG Buttons -->
-        <div class="section">
-            <h2 class="text-big">🚀 What Do You Want To Do?</h2>
-            <div class="grid grid-4">
-                <a href="chapter-1.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-math">
-                            <i data-lucide="calculator" aria-hidden="true"></i>
+        <!-- Quick Actions - Enhanced Cards -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">🚀 What Do You Want To Do?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="chapter-1.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 group-hover:border-[var(--color-brand-default)]">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="calculator" aria-hidden="true" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Study Math</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Prep for Test 2</div>
                         </div>
-                        <div class="text-medium">Study Math</div>
-                        <div class="text-small">Prep for Test 2</div>
                     </div>
                 </a>
 
-                <a href="english_materials.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-writing">
-                            <i data-lucide="pen-tool" aria-hidden="true"></i>
+                <a href="english_materials.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 group-hover:border-[var(--color-brand-default)]">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="pen-tool" aria-hidden="true" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Writing Help</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Get Assistance</div>
                         </div>
-                        <div class="text-medium">Writing Help</div>
-                        <div class="text-small">Get Assistance</div>
                     </div>
                 </a>
 
-                <a href="calendar.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-calendar">
-                            <i data-lucide="calendar" aria-hidden="true"></i>
+                <a href="calendar.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 group-hover:border-[var(--color-brand-default)]">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="calendar" aria-hidden="true" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Check Calendar</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">See Deadlines</div>
                         </div>
-                        <div class="text-medium">Check Calendar</div>
-                        <div class="text-small">See Deadlines</div>
                     </div>
                 </a>
 
-                <a href="formula_lookup.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-resources">
-                            <i data-lucide="book-open" aria-hidden="true"></i>
+                <a href="formula_lookup.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 group-hover:border-[var(--color-brand-default)]">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                                <i data-lucide="book-open" aria-hidden="true" class="w-8 h-8 text-white"></i>
+                            </div>
+                            <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Find Formulas</div>
+                            <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Quick Reference</div>
                         </div>
-                        <div class="text-medium">Find Formulas</div>
-                        <div class="text-small">Quick Reference</div>
                     </div>
                 </a>
             </div>
         </div>
 
         <!-- Math Chapters -->
-        <div class="section" id="math">
-            <h2 class="text-big">📚 All Math Chapters</h2>
+        <div class="mb-12" id="math">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">📚 All Math Chapters</h2>
 
             <!-- Current Chapters -->
-            <h3 class="text-medium">⭐ Current (Week 1-2)</h3>
-            <div class="grid grid-2 mb-large">
-                <a href="chapter-1.html" class="quick-action">
-                    <div class="card">
-                        <div class="status-card status-active">
-                            <div class="quick-action-icon quick-action-math">
-                                <span style="color: white; font-weight: bold; font-size: 24px;">1</span>
+            <h3 class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-4">⭐ Current (Week 1-2)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <a href="chapter-1.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-brand)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
+                                <span class="text-white font-bold text-xl">1</span>
                             </div>
-                            <div>
-                                <div class="text-medium">Chapter 1</div>
-                                <div class="text-small">Thinking Mathematically</div>
-                                <div class="btn btn-success">Study Now</div>
+                            <div class="flex-1">
+                                <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Chapter 1</div>
+                                <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk'] mb-4">Thinking Mathematically</div>
+                                <div class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-positive-default)] text-white rounded-md font-medium font-['Host_Grotesk'] text-sm">
+                                    Study Now
+                                </div>
                             </div>
                         </div>
                     </div>
                 </a>
 
-                <a href="chapter-13.html" class="quick-action">
-                    <div class="card">
-                        <div class="status-card status-active">
-                            <div class="quick-action-icon quick-action-math">
-                                <span style="color: white; font-weight: bold; font-size: 24px;">13</span>
+                <a href="chapter-13.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-brand)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
+                                <span class="text-white font-bold text-xl">13</span>
                             </div>
-                            <div>
-                                <div class="text-medium">Chapter 13</div>
-                                <div class="text-small">Voting & Apportionment</div>
-                                <div class="btn btn-success">Study Now</div>
+                            <div class="flex-1">
+                                <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Chapter 13</div>
+                                <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk'] mb-4">Voting & Apportionment</div>
+                                <div class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-positive-default)] text-white rounded-md font-medium font-['Host_Grotesk'] text-sm">
+                                    Study Now
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,167 +210,167 @@
             </div>
 
             <!-- All Other Chapters -->
-            <h3 class="text-medium">📖 All Chapters</h3>
-            <div class="grid grid-4">
-                <a href="chapter-3.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">3</span>
+            <h3 class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-4">📖 All Chapters</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="chapter-3.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">3</span>
                         </div>
-                        <div class="text-medium">Chapter 3</div>
-                        <div class="text-small">Problem Solving</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 3</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Problem Solving</div>
                     </div>
                 </a>
 
-                <a href="chapter-4.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">4</span>
+                <a href="chapter-4.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">4</span>
                         </div>
-                        <div class="text-medium">Chapter 4</div>
-                        <div class="text-small">Proportions</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 4</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Proportions</div>
                     </div>
                 </a>
 
-                <a href="chapter-5.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">5</span>
+                <a href="chapter-5.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">5</span>
                         </div>
-                        <div class="text-medium">Chapter 5</div>
-                        <div class="text-small">Functions</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 5</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Functions</div>
                     </div>
                 </a>
 
-                <a href="chapter-6.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">6</span>
+                <a href="chapter-6.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">6</span>
                         </div>
-                        <div class="text-medium">Chapter 6</div>
-                        <div class="text-small">Algebra</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 6</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Algebra</div>
                     </div>
                 </a>
 
-                <a href="chapter-7.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">7</span>
+                <a href="chapter-7.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">7</span>
                         </div>
-                        <div class="text-medium">Chapter 7</div>
-                        <div class="text-small">Finance</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 7</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Finance</div>
                     </div>
                 </a>
 
-                <a href="chapter-8.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">8</span>
+                <a href="chapter-8.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">8</span>
                         </div>
-                        <div class="text-medium">Chapter 8</div>
-                        <div class="text-small">Exponentials</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 8</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Exponentials</div>
                     </div>
                 </a>
 
-                <a href="chapter-10.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">10</span>
+                <a href="chapter-10.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">10</span>
                         </div>
-                        <div class="text-medium">Chapter 10</div>
-                        <div class="text-small">Probability</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 10</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Probability</div>
                     </div>
                 </a>
 
-                <a href="chapter-11.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--gray-600);">
-                            <span style="color: white; font-weight: bold; font-size: 24px;">11</span>
+                <a href="chapter-11.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <span class="text-white font-bold text-lg">11</span>
                         </div>
-                        <div class="text-medium">Chapter 11</div>
-                        <div class="text-small">Statistics</div>
+                        <div class="text-sm font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-1">Chapter 11</div>
+                        <div class="text-xs text-[var(--color-text-secondary)] font-['Host_Grotesk']">Statistics</div>
                     </div>
                 </a>
             </div>
         </div>
 
         <!-- English Materials -->
-        <div class="section" id="writing">
-            <h2 class="text-big">✍️ Writing & English</h2>
-            <div class="grid grid-3">
-                <a href="english_materials.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-writing">
-                            <i data-lucide="pen-tool" aria-hidden="true"></i>
+        <div class="mb-12" id="writing">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">✍️ Writing & English</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="english_materials.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="pen-tool" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">ENG 111 Materials</div>
-                        <div class="text-small">All Course Content</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">ENG 111 Materials</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">All Course Content</div>
                     </div>
                 </a>
 
-                <a href="english/Ways to Organize CompareContrast Essay.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--primary-blue);">
-                            <i data-lucide="file-text" aria-hidden="true"></i>
+                <a href="english/Ways to Organize CompareContrast Essay.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="file-text" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">Essay Organization</div>
-                        <div class="text-small">Compare/Contrast</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Essay Organization</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Compare/Contrast</div>
                     </div>
                 </a>
 
-                <a href="english/Topic Ideas - Copy (1).html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--primary-blue);">
-                            <i data-lucide="lightbulb" aria-hidden="true"></i>
+                <a href="english/Topic Ideas - Copy (1).html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="lightbulb" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">Topic Ideas</div>
-                        <div class="text-small">Essay Topics</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Topic Ideas</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Essay Topics</div>
                     </div>
                 </a>
             </div>
         </div>
 
         <!-- Resources & Tools -->
-        <div class="section" id="resources">
-            <h2 class="text-big">🔧 Resources & Tools</h2>
-            <div class="grid grid-4">
-                <a href="formula_lookup.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon quick-action-resources">
-                            <i data-lucide="search" aria-hidden="true"></i>
+        <div class="mb-12" id="resources">
+            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-6">🔧 Resources & Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="formula_lookup.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="search" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">Formula Lookup</div>
-                        <div class="text-small">Quick Reference</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Formula Lookup</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Quick Reference</div>
                     </div>
                 </a>
 
-                <a href="course_materials/formula_sheets/All_Sections_Guide.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--warning-orange);">
-                            <i data-lucide="book-open" aria-hidden="true"></i>
+                <a href="course_materials/formula_sheets/All_Sections_Guide.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="book-open" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">All Formulas</div>
-                        <div class="text-small">Complete Guide</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">All Formulas</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Complete Guide</div>
                     </div>
                 </a>
 
-                <a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--warning-orange);">
-                            <i data-lucide="calendar-days" aria-hidden="true"></i>
+                <a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="calendar-days" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">Course Schedule</div>
-                        <div class="text-small">Fall 2025</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">Course Schedule</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">Fall 2025</div>
                     </div>
                 </a>
 
-                <a href="other-classes/FA-2025-ENG-111-N815.pdf" class="quick-action">
-                    <div class="card text-center">
-                        <div class="quick-action-icon" style="background-color: var(--warning-orange);">
-                            <i data-lucide="file-text" aria-hidden="true"></i>
+                <a href="other-classes/FA-2025-ENG-111-N815.pdf" class="group">
+                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px] hover:shadow-md transition-all duration-200 text-center">
+                        <div class="w-16 h-16 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <i data-lucide="file-text" aria-hidden="true" class="w-8 h-8 text-white"></i>
                         </div>
-                        <div class="text-medium">ENG 111 Syllabus</div>
-                        <div class="text-small">PDF</div>
+                        <div class="text-lg font-medium text-[var(--color-text-primary)] font-['Host_Grotesk'] mb-2">ENG 111 Syllabus</div>
+                        <div class="text-sm text-[var(--color-text-secondary)] font-['Host_Grotesk']">PDF</div>
                     </div>
                 </a>
             </div>
