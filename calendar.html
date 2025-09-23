@@ -18,14 +18,15 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body class="bg-[var(--color-background-default)] text-[var(--color-text-primary)] font-['Host_Grotesk'] min-h-screen">
-    <!-- Enhanced Header -->
+    <!-- Enhanced Responsive Header -->
     <header class="bg-[var(--color-background-default)] border-b border-[var(--color-border-secondary)] shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors">
+                    <a href="index.html" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-default)] focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
                         <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium">Back to Dashboard</span>
+                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
+                        <span class="text-lg font-medium sm:hidden">Back</span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-3">
@@ -33,7 +34,7 @@
                         <i data-lucide="calendar-days" aria-hidden="true" class="w-5 h-5 text-white"></i>
                     </div>
                     <div>
-                        <h1 class="text-xl font-medium text-[var(--color-text-primary)]">Academic Calendar</h1>
+                        <h1 class="text-lg sm:text-xl font-medium text-[var(--color-text-primary)]">Academic Calendar</h1>
                         <p class="text-sm text-[var(--color-text-secondary)]">Fall 2025 • Week 5</p>
                     </div>
                 </div>
@@ -41,46 +42,47 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-8">
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
         <!-- Urgent Alert - Visual Priority -->
-        <div class="mb-8">
-            <div class="bg-[var(--color-background-default)] border-l-4 border-[var(--color-danger-default)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
-                <div class="flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center flex-shrink-0">
-                        <i data-lucide="alert-triangle" aria-hidden="true" class="w-6 h-6 text-white"></i>
+        <section class="mb-6 sm:mb-8" aria-labelledby="urgent-heading">
+            <h2 id="urgent-heading" class="sr-only">Urgent Deadlines</h2>
+            <div class="adhd-card border-[var(--color-border-danger)]" role="alert" aria-live="polite">
+                <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                        <i data-lucide="alert-triangle" class="w-6 h-6 text-white"></i>
                     </div>
-                    <div class="flex-1">
-                        <h2 class="text-xl font-medium text-[var(--color-text-primary)] mb-2">⚠️ DUE TODAY</h2>
-                        <p class="text-lg text-[var(--color-text-danger-primary)] font-medium mb-3">Cause Effect Essay Rough Draft</p>
+                    <div class="flex-1 w-full">
+                        <h3 class="text-lg sm:text-xl font-medium text-[var(--color-text-primary)] mb-2">⚠️ DUE TODAY</h3>
+                        <p class="text-base sm:text-lg text-[var(--color-text-danger-primary)] font-medium mb-3">Cause Effect Essay Rough Draft</p>
                         <p class="text-sm text-[var(--color-text-secondary)] mb-4">Submit by 11:59 PM (Sept 22)</p>
-                        <button class="inline-flex items-center justify-center px-6 py-3 bg-[var(--color-danger-default)] text-white rounded-lg font-medium hover:bg-[var(--color-danger-default)]/90 transition-colors">
-                            <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+                        <button class="adhd-button adhd-button-danger" aria-label="Submit Cause Effect Essay">
+                            <i data-lucide="send" class="w-4 h-4" aria-hidden="true"></i>
                             Submit Now
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Quick Actions - Visual Cards -->
-        <div class="mb-8">
-            <h2 class="text-2xl font-medium text-[var(--color-text-primary)] mb-6">🚀 This Week's Focus</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Quick Actions - Responsive Cards -->
+        <section class="mb-6 sm:mb-8" aria-labelledby="focus-heading">
+            <h2 id="focus-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🚀 This Week's Focus</h2>
+            <div class="responsive-grid">
                 <!-- Math Focus -->
-                <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
+                <div class="adhd-card" role="article" aria-labelledby="math-focus">
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
-                            <i data-lucide="calculator" aria-hidden="true" class="w-6 h-6 text-white"></i>
+                        <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                            <i data-lucide="calculator" class="w-6 h-6 text-white"></i>
                         </div>
-                        <div class="flex-1">
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-2">MAT 143</h3>
+                        <div class="flex-1 min-w-0">
+                            <h3 id="math-focus" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">MAT 143</h3>
                             <p class="text-sm text-[var(--color-text-secondary)] mb-3">Prepare for Test 2</p>
-                            <div class="flex items-center space-x-2 mb-4">
+                            <div class="flex flex-wrap items-center gap-2 mb-4">
                                 <span class="text-xs bg-[var(--color-positive-default)] text-white px-2 py-1 rounded-full">Test 1 ✅</span>
                                 <span class="text-xs bg-[var(--color-warning-default)] text-white px-2 py-1 rounded-full">Chapters 4 & 5</span>
                             </div>
-                            <button class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-brand-default)] text-white rounded-md font-medium text-sm hover:bg-[var(--color-brand-default)]/90 transition-colors">
-                                <i data-lucide="book-open" class="w-4 h-4 mr-2"></i>
+                            <button class="adhd-button adhd-button-primary" aria-label="Study for MAT 143 Test 2">
+                                <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
                                 Study Now
                             </button>
                         </div>
@@ -88,98 +90,103 @@
                 </div>
 
                 <!-- English Focus -->
-                <div class="bg-[var(--color-background-default)] border border-[var(--color-border-danger)] rounded-lg p-6 shadow-sm backdrop-blur-[6px]">
+                <div class="adhd-card border-[var(--color-border-danger)]" role="article" aria-labelledby="english-focus">
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center">
-                            <i data-lucide="pen-tool" aria-hidden="true" class="w-6 h-6 text-white"></i>
+                        <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
+                            <i data-lucide="pen-tool" class="w-6 h-6 text-white"></i>
                         </div>
-                        <div class="flex-1">
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-2">ENG 111</h3>
+                        <div class="flex-1 min-w-0">
+                            <h3 id="english-focus" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">ENG 111</h3>
                             <p class="text-sm text-[var(--color-text-danger-primary)] mb-3">Cause Effect Essay</p>
-                            <div class="flex items-center space-x-2 mb-4">
+                            <div class="flex flex-wrap items-center gap-2 mb-4">
                                 <span class="text-xs bg-[var(--color-danger-default)] text-white px-2 py-1 rounded-full">DUE TODAY</span>
                                 <span class="text-xs bg-[var(--color-warning-default)] text-white px-2 py-1 rounded-full">Week 5</span>
                             </div>
-                            <button class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-danger-default)] text-white rounded-md font-medium text-sm hover:bg-[var(--color-danger-default)]/90 transition-colors">
-                                <i data-lucide="edit" class="w-4 h-4 mr-2"></i>
+                            <button class="adhd-button adhd-button-danger" aria-label="Write Cause Effect Essay">
+                                <i data-lucide="edit" class="w-4 h-4" aria-hidden="true"></i>
                                 Write Now
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Visual Navigation Tabs -->
-        <div class="mb-8">
-            <div class="flex flex-wrap gap-3 mb-6">
-                <button class="inline-flex items-center justify-center px-6 py-3 bg-[var(--color-brand-default)] text-white rounded-lg font-medium hover:bg-[var(--color-brand-default)]/90 transition-all duration-200 shadow-sm" data-tab="this-week">
-                    <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                    This Week
+        <!-- Responsive Navigation Tabs -->
+        <section class="mb-6 sm:mb-8" aria-labelledby="navigation-heading">
+            <h2 id="navigation-heading" class="sr-only">Calendar Navigation</h2>
+            <div class="flex flex-wrap gap-2 sm:gap-3 mb-6" role="tablist" aria-label="Calendar navigation">
+                <button class="adhd-button adhd-button-primary flex-1 sm:flex-none" data-tab="this-week" role="tab" aria-selected="true" aria-controls="this-week-content">
+                    <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i>
+                    <span class="hidden sm:inline">This Week</span>
+                    <span class="sm:hidden">Week</span>
                 </button>
-                <button class="inline-flex items-center justify-center px-6 py-3 bg-[var(--color-background-default)] text-[var(--color-text-secondary)] border border-[var(--color-border-secondary)] rounded-lg font-medium hover:bg-[var(--color-background-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-200" data-tab="math">
-                    <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
-                    MAT 143
+                <button class="adhd-button adhd-button-secondary flex-1 sm:flex-none" data-tab="math" role="tab" aria-selected="false" aria-controls="math-content">
+                    <i data-lucide="calculator" class="w-4 h-4" aria-hidden="true"></i>
+                    <span class="hidden sm:inline">MAT 143</span>
+                    <span class="sm:hidden">Math</span>
                 </button>
-                <button class="inline-flex items-center justify-center px-6 py-3 bg-[var(--color-background-default)] text-[var(--color-text-secondary)] border border-[var(--color-border-secondary)] rounded-lg font-medium hover:bg-[var(--color-background-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-200" data-tab="english">
-                    <i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>
-                    ENG 111
+                <button class="adhd-button adhd-button-secondary flex-1 sm:flex-none" data-tab="english" role="tab" aria-selected="false" aria-controls="english-content">
+                    <i data-lucide="pen-tool" class="w-4 h-4" aria-hidden="true"></i>
+                    <span class="hidden sm:inline">ENG 111</span>
+                    <span class="sm:hidden">English</span>
                 </button>
-                <button class="inline-flex items-center justify-center px-6 py-3 bg-[var(--color-background-default)] text-[var(--color-text-secondary)] border border-[var(--color-border-secondary)] rounded-lg font-medium hover:bg-[var(--color-background-secondary)] hover:text-[var(--color-text-primary)] transition-all duration-200" data-tab="tests">
-                    <i data-lucide="clipboard-check" class="w-4 h-4 mr-2"></i>
-                    Tests
+                <button class="adhd-button adhd-button-secondary flex-1 sm:flex-none" data-tab="tests" role="tab" aria-selected="false" aria-controls="tests-content">
+                    <i data-lucide="clipboard-check" class="w-4 h-4" aria-hidden="true"></i>
+                    <span class="hidden sm:inline">Tests</span>
+                    <span class="sm:hidden">Tests</span>
                 </button>
             </div>
-        </div>
+        </section>
 
         <!-- Content Sections -->
-        <div class="space-y-8">
+        <div class="space-y-6 sm:space-y-8">
             <!-- This Week Section -->
-            <div id="this-week-content" class="content-section">
-                <h2 class="text-2xl font-medium text-[var(--color-text-primary)] mb-6">📅 This Week's Schedule</h2>
+            <div id="this-week-content" class="content-section" role="tabpanel" aria-labelledby="this-week-tab">
+                <h2 class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📅 This Week's Schedule</h2>
                 
                 <!-- Visual Timeline -->
                 <div class="space-y-4">
                     <!-- Monday -->
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
+                    <div class="adhd-card" role="article" aria-labelledby="monday-schedule">
+                        <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                            <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
                                 <span class="text-white font-bold">M</span>
                             </div>
-                            <div class="flex-1">
-                                <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Monday, Sept 22</h3>
-                                <p class="text-sm text-[var(--color-text-secondary)]">Today</p>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <span class="text-xs bg-[var(--color-danger-default)] text-white px-3 py-1 rounded-full">DUE TODAY</span>
-                            </div>
-                        </div>
-                        <div class="mt-4 pl-16">
-                            <div class="flex items-center space-x-3 p-3 bg-[var(--color-background-danger)] rounded-lg">
-                                <i data-lucide="edit" class="w-5 h-5 text-[var(--color-danger-default)]"></i>
-                                <span class="text-[var(--color-text-danger-primary)] font-medium">Cause Effect Essay Rough Draft</span>
+                            <div class="flex-1 w-full">
+                                <h3 id="monday-schedule" class="text-lg font-medium text-[var(--color-text-primary)]">Monday, Sept 22</h3>
+                                <p class="text-sm text-[var(--color-text-secondary)] mb-4">Today</p>
+                                <div class="flex flex-wrap items-center gap-2 mb-4">
+                                    <span class="text-xs bg-[var(--color-danger-default)] text-white px-3 py-1 rounded-full">DUE TODAY</span>
+                                </div>
+                                <div class="p-3 bg-[var(--color-background-danger)] rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i data-lucide="edit" class="w-5 h-5 text-[var(--color-danger-default)]" aria-hidden="true"></i>
+                                        <span class="text-[var(--color-text-danger-primary)] font-medium">Cause Effect Essay Rough Draft</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Tuesday-Friday -->
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center">
+                    <div class="adhd-card" role="article" aria-labelledby="tuesday-friday-schedule">
+                        <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                            <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
                                 <span class="text-white font-bold">T-F</span>
                             </div>
-                            <div class="flex-1">
-                                <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Tuesday-Friday</h3>
-                                <p class="text-sm text-[var(--color-text-secondary)]">Sept 23-26</p>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <span class="text-xs bg-[var(--color-warning-default)] text-white px-3 py-1 rounded-full">PREP</span>
-                            </div>
-                        </div>
-                        <div class="mt-4 pl-16">
-                            <div class="flex items-center space-x-3 p-3 bg-[var(--color-background-warning)] rounded-lg">
-                                <i data-lucide="book-open" class="w-5 h-5 text-[var(--color-warning-default)]"></i>
-                                <span class="text-[var(--color-text-warning-primary)] font-medium">Study for Test 2 (Chapters 4 & 5)</span>
+                            <div class="flex-1 w-full">
+                                <h3 id="tuesday-friday-schedule" class="text-lg font-medium text-[var(--color-text-primary)]">Tuesday-Friday</h3>
+                                <p class="text-sm text-[var(--color-text-secondary)] mb-4">Sept 23-26</p>
+                                <div class="flex flex-wrap items-center gap-2 mb-4">
+                                    <span class="text-xs bg-[var(--color-warning-default)] text-white px-3 py-1 rounded-full">PREP</span>
+                                </div>
+                                <div class="p-3 bg-[var(--color-background-warning)] rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i data-lucide="book-open" class="w-5 h-5 text-[var(--color-warning-default)]" aria-hidden="true"></i>
+                                        <span class="text-[var(--color-text-warning-primary)] font-medium">Study for Test 2 (Chapters 4 & 5)</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,31 +194,31 @@
             </div>
 
             <!-- MAT 143 Section -->
-            <div id="math-content" class="content-section hidden">
-                <h2 class="text-2xl font-medium text-[var(--color-text-primary)] mb-6">📊 MAT 143 Schedule</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm">
-                        <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Current Focus</h3>
+            <div id="math-content" class="content-section hidden" role="tabpanel" aria-labelledby="math-tab">
+                <h2 class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📊 MAT 143 Schedule</h2>
+                <div class="responsive-grid">
+                    <div class="adhd-card" role="article" aria-labelledby="math-current">
+                        <h3 id="math-current" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Current Focus</h3>
                         <div class="space-y-3">
                             <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center">
+                                <div class="w-8 h-8 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
                                     <i data-lucide="check" class="w-4 h-4 text-white"></i>
                                 </div>
                                 <span class="text-sm text-[var(--color-text-secondary)]">Test 1 Complete</span>
                             </div>
                             <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center">
+                                <div class="w-8 h-8 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
                                     <i data-lucide="book" class="w-4 h-4 text-white"></i>
                                 </div>
                                 <span class="text-sm text-[var(--color-text-secondary)]">Preparing Test 2</span>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-6 shadow-sm">
-                        <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Upcoming</h3>
+                    <div class="adhd-card" role="article" aria-labelledby="math-upcoming">
+                        <h3 id="math-upcoming" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Upcoming</h3>
                         <div class="space-y-3">
                             <div class="flex items-center space-x-3">
-                                <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
+                                <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
                                     <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
                                 </div>
                                 <span class="text-sm text-[var(--color-text-secondary)]">Test 2: Sept 29-Oct 3</span>
@@ -222,19 +229,19 @@
             </div>
 
             <!-- ENG 111 Section -->
-            <div id="english-content" class="content-section hidden">
-                <h2 class="text-2xl font-medium text-[var(--color-text-primary)] mb-6">✍️ ENG 111 Schedule</h2>
-                <div class="bg-[var(--color-background-default)] border border-[var(--color-border-danger)] rounded-lg p-6 shadow-sm">
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Current Assignment</h3>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center">
+            <div id="english-content" class="content-section hidden" role="tabpanel" aria-labelledby="english-tab">
+                <h2 class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">✍️ ENG 111 Schedule</h2>
+                <div class="adhd-card border-[var(--color-border-danger)]" role="article" aria-labelledby="english-current">
+                    <h3 id="english-current" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Current Assignment</h3>
+                    <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <div class="w-12 h-12 bg-[var(--color-danger-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
                             <i data-lucide="edit" class="w-6 h-6 text-white"></i>
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-1 w-full">
                             <p class="text-lg font-medium text-[var(--color-text-primary)]">Cause Effect Essay</p>
                             <p class="text-sm text-[var(--color-text-danger-primary)]">DUE TODAY - Sept 22</p>
                         </div>
-                        <button class="inline-flex items-center justify-center px-4 py-2 bg-[var(--color-danger-default)] text-white rounded-md font-medium text-sm hover:bg-[var(--color-danger-default)]/90 transition-colors">
+                        <button class="adhd-button adhd-button-danger w-full sm:w-auto" aria-label="Submit Cause Effect Essay">
                             Submit Now
                         </button>
                     </div>
@@ -242,24 +249,24 @@
             </div>
 
             <!-- Tests Section -->
-            <div id="tests-content" class="content-section hidden">
-                <h2 class="text-2xl font-medium text-[var(--color-text-primary)] mb-6">📝 Test Schedule</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-positive)] rounded-lg p-6 shadow-sm">
+            <div id="tests-content" class="content-section hidden" role="tabpanel" aria-labelledby="tests-tab">
+                <h2 class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📝 Test Schedule</h2>
+                <div class="responsive-grid">
+                    <div class="adhd-card border-[var(--color-border-positive)]" role="article" aria-labelledby="test-1">
                         <div class="flex items-center space-x-3 mb-4">
-                            <div class="w-8 h-8 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center">
+                            <div class="w-8 h-8 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
                                 <i data-lucide="check" class="w-4 h-4 text-white"></i>
                             </div>
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Test 1 - Complete</h3>
+                            <h3 id="test-1" class="text-lg font-medium text-[var(--color-text-primary)]">Test 1 - Complete</h3>
                         </div>
                         <p class="text-sm text-[var(--color-text-secondary)]">Chapters 1 & 13</p>
                     </div>
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-warning)] rounded-lg p-6 shadow-sm">
+                    <div class="adhd-card border-[var(--color-border-warning)]" role="article" aria-labelledby="test-2">
                         <div class="flex items-center space-x-3 mb-4">
-                            <div class="w-8 h-8 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center">
+                            <div class="w-8 h-8 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
                                 <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
                             </div>
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Test 2 - Coming</h3>
+                            <h3 id="test-2" class="text-lg font-medium text-[var(--color-text-primary)]">Test 2 - Coming</h3>
                         </div>
                         <p class="text-sm text-[var(--color-text-secondary)]">Sept 29-Oct 3 • Chapters 4 & 5</p>
                     </div>
@@ -268,31 +275,64 @@
         </div>
     </main>
 
-    <!-- Initialize Icons and JavaScript -->
+    <!-- Initialize Icons and Tab Functionality -->
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
 
-        // Tab functionality
+        // Tab functionality with accessibility
         document.querySelectorAll('[data-tab]').forEach(button => {
             button.addEventListener('click', function() {
                 const tabName = this.getAttribute('data-tab');
                 
                 // Update button states
                 document.querySelectorAll('[data-tab]').forEach(btn => {
-                    btn.classList.remove('bg-[var(--color-brand-default)]', 'text-white');
-                    btn.classList.add('bg-[var(--color-background-default)]', 'text-[var(--color-text-secondary)]', 'border', 'border-[var(--color-border-secondary)]');
+                    btn.classList.remove('adhd-button-primary');
+                    btn.classList.add('adhd-button-secondary');
+                    btn.setAttribute('aria-selected', 'false');
                 });
                 
-                this.classList.remove('bg-[var(--color-background-default)]', 'text-[var(--color-text-secondary)]', 'border', 'border-[var(--color-border-secondary)]');
-                this.classList.add('bg-[var(--color-brand-default)]', 'text-white');
+                this.classList.remove('adhd-button-secondary');
+                this.classList.add('adhd-button-primary');
+                this.setAttribute('aria-selected', 'true');
                 
                 // Show/hide content
                 document.querySelectorAll('.content-section').forEach(section => {
                     section.classList.add('hidden');
                 });
                 
-                document.getElementById(tabName + '-content').classList.remove('hidden');
+                const targetContent = document.getElementById(tabName + '-content');
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                }
+            });
+        });
+
+        // Keyboard navigation for tabs
+        document.querySelectorAll('[role="tab"]').forEach(tab => {
+            tab.addEventListener('keydown', function(event) {
+                const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+                const currentIndex = tabs.indexOf(this);
+                
+                if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+                    event.preventDefault();
+                    const nextIndex = (currentIndex + 1) % tabs.length;
+                    tabs[nextIndex].focus();
+                    tabs[nextIndex].click();
+                } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+                    event.preventDefault();
+                    const prevIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+                    tabs[prevIndex].focus();
+                    tabs[prevIndex].click();
+                } else if (event.key === 'Home') {
+                    event.preventDefault();
+                    tabs[0].focus();
+                    tabs[0].click();
+                } else if (event.key === 'End') {
+                    event.preventDefault();
+                    tabs[tabs.length - 1].focus();
+                    tabs[tabs.length - 1].click();
+                }
             });
         });
     </script>
