@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fall 2025 Academic Calendar - MAT 143 & ENG 111</title>
+    <meta name="description" content="Complete academic calendar showing deadlines, assignments, and schedules for both MAT 143 and ENG 111 classes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Enhanced Design System with Semantic Tokens -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        .content-area {
+            display: none;
+        }
+        
+        .content-area.active {
+            display: block;
+        }
+        
+        .week-card {
+            transition: all 0.2s ease;
+        }
+        
+        .week-card.current {
+            border-left: 4px solid var(--color-brand);
+            background: linear-gradient(to right, var(--color-brand-tertiary), var(--color-background-secondary));
+        }
+        
+        .week-card.urgent {
+            border-left: 4px solid var(--color-danger);
+        }
+        
+        .week-card.test-week {
+            border-left-color: #8b5cf6;
+            background: linear-gradient(to right, #f8fafc, white);
+        }
+        
+        .test-card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .countdown {
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-align: center;
+            margin-top: 1rem;
+            background: #f3f4f6;
+            color: #374151;
+        }
+        
+        .countdown.urgent {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .countdown.completed {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        
+        .btn.active {
+            background: #eb7754;
+            color: white;
+        }
+        
+        .assignment-item {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: #f9fafb;
+            border-radius: 0.375rem;
+            border-left: 3px solid #d1d5db;
+        }
+        
+        .assignment-item.urgent {
+            border-left-color: #ef4444;
+            background: #fef2f2;
+        }
+        
+        .due-date {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-text-primary font-sans antialiased">
+    <!-- Header with Breadcrumb Navigation -->
+    <header class="bg-background-secondary border border-border/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav" aria-label="Navigation breadcrumb">
+                <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+                <span class="breadcrumb-separator">→</span>
+                <a href="#" class="breadcrumb-item breadcrumb-current">📅 Academic Calendar</a>
+            </nav>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-12 h-12 rounded-xl bg-brand text-text-primary flex items-center justify-center">
+                            <i data-lucide="calendar-days" class="w-6 h-6 text-text-primary"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">Academic Calendar</h1>
+
+
+                            <p class="font-caption text-text-secondary mb-4 mb-4">Fall 2025 • Complete Schedule</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:block bg-brand text-text-primary-tertiary border border-brand rounded-lg px-4 py-2">
+                        <div class="flex items-center space-x-2">
+                            <div class="w-2 h-2 rounded-full bg-brand text-text-primary animate-pulse"></div>
+                            <span class="font-button-small text-text-brand-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10" id="current-status">
+                                Loading current week...
+                            </span>
+                        </div>
+                    </div>
+                    <a href="index.html" class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border transition-colors">
+                        <i data-lucide="arrow-left" class="w-4 h-4" aria-label="Go back"></i>
+                        <span class="font-button border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Dashboard</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Urgent Deadlines Alert -->
+    <div class="attention-grabber mb-8 mx-4">
+        <div class="attention-content">
+            <h3>⚠️ Today's Deadlines!</h3>
+            <div class="next-actions">
+                <div class="action-item action-urgent">
+                    <span class="action-icon">📝</span>
+                    <span class="action-text">Cause Effect Essay Rough Draft: DUE TODAY (Sept 22)</span>
+                    <button class="action-btn">Submit Now</button>
+                </div>
+                <div class="action-item deadline-reminder">
+                    <span class="action-icon">📊</span>
+                    <span class="action-text">Test 2 Prep: Sept 29-Oct 3 (7 days away)</span>
+                    <button class="action-btn">Start studying</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Study Focus Today -->
+    <div class="focus-today mb-8 mx-4">
+        <h3 class="focus-title">Today's Focus Areas - Week 5</h3>
+        <div class="focus-items">
+            <div class="focus-item focus-math">
+                <span class="focus-icon">📊</span>
+                <span class="focus-subject">MAT 143</span>
+                <span class="focus-task">Prepare for Test 2 (Chapters 4 & 5)</span>
+                <div class="focus-progress">Test 1 Complete ✅</div>
+            </div>
+            <div class="focus-item focus-english focus-urgent">
+                <span class="focus-icon">✍️</span>
+                <span class="focus-subject">ENG 111</span>
+                <span class="focus-task">Cause Effect Essay Rough Draft - DUE TODAY!</span>
+                <div class="focus-progress">Must submit by 11:59 PM</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <section class="bg-background-secondary border border-border border-b border-border sticky top-20 z-40 mb-12" class="mb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center py-4">
+                <div class="flex items-center space-x-2 bg-background border border-border rounded-xl p-1">
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg bg-brand text-text-primary font-button transition-all border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10" onclick="showSection('overview')" id="nav-overview">
+                        <i data-lucide="clock" class="w-4 h-4" aria-label="Time"></i>
+                        <span>This Week</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10" onclick="showSection('math')" id="nav-math">
+                        <i data-lucide="calculator" class="w-4 h-4" aria-label="Calculator"></i>
+                        <span>MAT 143</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10" onclick="showSection('english')" id="nav-english">
+                        <i data-lucide="pen-tool" class="w-4 h-4"></i>
+                        <span>ENG 111</span>
+                    </button>
+                    <button class="flex items-center space-x-2 px-4 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary border border-border font-button transition-all border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10" onclick="showSection('tests')" id="nav-tests">
+                        <i data-lucide="target" class="w-4 h-4" aria-label="Goal"></i>
+                        <span>Tests</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- This Week Overview -->
+        <div id="overview" class="content-area active">
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
+                        <i data-lucide="clock" class="w-6 h-6 text-brand" aria-label="Time"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">This Week's Priorities</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">Focus on these key items to stay on track</p>
+                    </div>
+                </div>
+            </div>
+            <div id="current-week-content" class="space-y-6">
+                <!-- Priority Items -->
+                <div class="bg-warning text-text-primary-tertiary border-l-4 border-warning rounded-r-xl p-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-warning text-text-primary flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="alert-triangle" class="w-5 h-5 text-text-primary"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Critical Reading Discussion Due</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                            <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">ENG 111 • Due Today at 11:59 PM</p>
+                            <div class="flex items-center space-x-3">
+                                <span class="font-caption bg-warning text-text-primary-secondary text-text-warning-primary px-2 py-1 rounded">High Priority</span>
+                                <a href="english_materials.html" class="font-button text-brand hover:text-brand-hover transition-colors bg-brand/10 hover:bg-brand/20 border border-brand/30 hover:border-brand/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 bg-brand/10 hover:bg-brand/20 border border-brand/30 hover:border-brand/50 rounded-lg px-4 py-2 transition-all duration-200 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">View Assignment →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regular Items -->
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-bg-positive text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="calculator" class="w-5 h-5 text-positive" aria-label="Calculator"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Chapter 1 Homework</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                                <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">MAT 143 • Hawkes Learning</p>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-16 h-2 bg-background-tertiary border border-border rounded-full overflow-hidden">
+                                        <div class="w-1/2 h-full bg-positive text-text-primary rounded-full"></div>
+                                    </div>
+                                    <span class="font-caption text-text-secondary">50% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-background-secondary border border-border rounded-xl p-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-bg-brand text-text-primary/10-10 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="book-open" class="w-5 h-5 text-brand" aria-label="Study guide"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Critical Reading Materials</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                                <p class="font-body-small text-text-secondary mb-3 mb-4 mb-4">ENG 111 • Review for discussion</p>
+                                <div class="flex items-center space-x-3">
+                                    <span class="font-caption bg-positive text-text-primary-tertiary text-text-positive-primary px-2 py-1 rounded border border-positive">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MAT 143 Schedule -->
+        <div id="math" class="content-area">
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-bg-positive text-text-primary/10-10 flex items-center justify-center">
+                        <i data-lucide="calculator" class="w-6 h-6 text-positive" aria-label="Calculator"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">MAT 143 Schedule</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">16-week semester overview with test dates</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Test Schedule Overview -->
+            <div class="grid lg:grid-cols-4 gap-4 mb-8 gap-6">
+                <div class="bg-background-secondary border border-border border border-positive rounded-xl p-4">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-positive text-text-primary flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-primary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">1</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-primary mb-1 mt-8 mb-4 mt-8 mb-4">Test 1</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p class="font-caption text-text-secondary mb-2 mb-4 mb-4">Sept 8-12</p>
+                        <p class="font-caption text-text-positive-primary mb-4 mb-4">Ch. 1 & 13</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">2</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 2</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Sept 29-Oct 3</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 4 & 5</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">3</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 3</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Nov 3-7</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 6 & 7</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background-secondary border border-border rounded-xl p-4 opacity-75">
+                    <div class="text-center">
+                        <div class="w-8 h-8 rounded-lg bg-background-tertiary border border-border flex items-center justify-center mx-auto mb-2">
+                            <span class="font-button-small text-text-tertiary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">4</span>
+                        </div>
+                        <h3 class="font-subtitle-small text-text-secondary mb-1 mt-8 mb-4 mt-8 mb-4">Test 4</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p class="font-caption text-text-tertiary mb-2 mb-4 mb-4">Dec 8-12</p>
+                        <p class="font-caption text-text-secondary mb-4 mb-4">Ch. 10 & 11</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="semester-timeline" class="space-y-4">
+                <!-- Current Weeks -->
+                <div class="week-card current bg-brand text-text-primary-tertiary border-l-4 border-brand rounded-r-xl p-6 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="font-subtitle-small text-text-primary mb-2 mt-8 mb-4 mt-8 mb-4">Week 1-2: Current</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                            <p class="font-caption text-text-brand-primary mb-4 mb-4">Aug 18 - Aug 31, 2025</p>
+                        </div>
+                        <span class="font-caption bg-brand text-text-primary px-2 py-1 rounded">Active</span>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded bg-positive text-text-primary flex items-center justify-center">
+                                <span class="font-button-small text-text-primary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">1</span>
+                            </div>
+                            <div>
+                                <p class="font-button text-text-primary mb-4 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Chapter 1: Thinking Mathematically</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Hawkes Learning assignments</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-6 h-6 rounded bg-positive text-text-primary flex items-center justify-center">
+                                <span class="font-button-small text-text-primary font-bold border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">13</span>
+                            </div>
+                            <div>
+                                <p class="font-button text-text-primary mb-4 mb-4 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Chapter 13: Voting & Apportionment</p>
+                                <p class="font-caption text-text-secondary mb-4 mb-4">Hawkes Learning assignments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming weeks would be populated here -->
+            </div>
+        </div>
+
+        <!-- ENG 111 Schedule -->
+        <div id="english" class="content-area">
+            <div class="mb-8">
+                <div class="flex items-center space-x-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
+                        <i data-lucide="pen-tool" class="w-6 h-6 text-brand"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-title text-text-primary mt-8 mb-4 mt-8 mb-4">ENG 111 Schedule</h2>
+
+
+                        <p class="font-body-small text-text-secondary mb-4 mb-4">8-week writing course timeline</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Course Info Card -->
+            <div class="bg-brand text-text-primary-tertiary border border-brand rounded-xl p-6 mb-8">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-10 h-10 rounded-lg bg-brand text-text-primary flex items-center justify-center">
+                        <i data-lucide="info" class="w-5 h-5 text-text-primary" aria-label="Information"></i>
+                    </div>
+                    <h3 class="font-subtitle-large text-text-brand-primary mt-8 mb-4 mt-8 mb-4">Course Information</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-6">
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="calendar" class="w-4 h-4 text-brand" aria-label="Calendar"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Duration:</span> 8 weeks (Aug 18 - Oct 10, 2025)</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="user" class="w-4 h-4 text-brand" aria-label="User"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Instructor:</span> Emmanuel Meggett</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="monitor" class="w-4 h-4 text-brand"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Format:</span> Online</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i data-lucide="alert-triangle" class="w-4 h-4 text-warning"></i>
+                        <span class="font-body-small text-text-primary"><span class="font-medium">Withdrawal Deadline:</span> September 8, 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-8 h-8 rounded-lg bg-bg-brand text-text-primary/10-10 flex items-center justify-center">
+                        <i data-lucide="calendar-days" class="w-4 h-4 text-brand"></i>
+                    </div>
+                    <h3 class="font-subtitle-large text-text-primary mt-8 mb-4 mt-8 mb-4">Week-by-Week Schedule</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                </div>
+                    
+                    <div class="week-card urgent border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 1: August 18-22, 2025</h4>
+                            <span class="week-status">📖 Critical Reading</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li class="urgent">📝 Critical Reading Discussion (Due: Thu 8/22)</li>
+                                    <li class="important">📚 EVA Syllabus Quiz (Due: This week)</li>
+                                    <li>📖 Read "Does Trying to Be Happy Make Us Unhappy" by Adam Grant</li>
+                                    <li>📖 Read "10 Strategies to Improve Reading Comprehension"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 2: August 25-29, 2025</h4>
+                            <span class="week-status">🔍 Plagiarism & Citations</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>📚 Read "Documenting Sources" and "MLA Documentation" (pp. 602-618)</li>
+                                    <li>✅ Complete Tutorial: Plagiarism</li>
+                                    <li>✅ Complete Tutorial: MLA Citations</li>
+                                    <li>📝 Submit: Quiz: Plagiarism Tutorial</li>
+                                    <li>📝 Submit: Quiz: MLA Citations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 3: September 1-5, 2025</h4>
+                            <span class="week-status">📝 Compare/Contrast Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>📖 Read Chapter 20 "Comparison and Contrast" (pp. 467-471)</li>
+                                    <li>📖 Read Compare/Contrast Essay Instructions</li>
+                                    <li>🎥 Watch: Comparison/Contrast Essays videos</li>
+                                    <li>📖 Read Sample Essay: Love Hate</li>
+                                    <li>📝 Submit: Compare/Contrast Rough Draft (first 3 paragraphs)</li>
+                                    <li>✅ Submit: Checklist for Compare/Contrast Essay</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 4: September 8-12, 2025</h4>
+                            <span class="week-status">📝 Compare/Contrast Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>✏️ Revise your draft</li>
+                                    <li>✏️ Edit/proofread your draft</li>
+                                    <li>🎥 Watch: Video: Revising and Editing</li>
+                                    <li>📖 Website: Revising & Editing Process</li>
+                                    <li>📝 Submit: Compare/Contrast Final Draft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 5: September 15-19, 2025</h4>
+                            <span class="week-status">📝 Cause & Effect Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>📖 Read Chapter 21 Cause and Effect (pp. 495-97)</li>
+                                    <li>📖 Read Cause and Effect Essay Guidelines</li>
+                                    <li>💡 View: Cause & Effect Essay Introduction</li>
+                                    <li>✅ Complete: Cause & Effect Essay Tutorial</li>
+                                    <li>📖 Read Sample Student Essay</li>
+                                    <li>📝 Submit: Cause & Effect Rough Draft (first 3 paragraphs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 6: September 22-26, 2025</h4>
+                            <span class="week-status">📝 Cause & Effect Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>📖 Read Revising, Editing, and Proofreading (pp. 24-26)</li>
+                                    <li>✏️ Revise your draft</li>
+                                    <li>✏️ Edit/proofread your draft</li>
+                                    <li>🎥 Watch Video: Revising and Editing</li>
+                                    <li>📝 Submit: Cause & Effect Essay Final Draft</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 7: September 29 - October 3, 2025</h4>
+                            <span class="week-status">📝 Argument Essay: Rough Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>📖 Read Argument in Models for Writers (pp. 521-30)</li>
+                                    <li>📖 Read Argument Essay Instructions</li>
+                                    <li>💡 Read and explore: Topic Ideas</li>
+                                    <li>📖 Read: Parts of an Argument</li>
+                                    <li>📖 Read: Claims</li>
+                                    <li>📝 Submit: Argument Essay Rough Draft (first 3 paragraphs)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <h4 class="mt-8 mb-4 mt-8 mb-4">Week 8: October 6-10, 2025</h4>
+                            <span class="week-status">📝 Argument Essay: Final Draft</span>
+                        </div>
+                        <div class="week-content">
+                            <div class="assignments">
+                                <h5 class="mt-8 mb-4 mt-8 mb-4">📋 Assignments</h5>
+                                <ul class="space-y-2 space-y-2">
+                                    <li>🎥 Watch: Video: Incorporating Information from Sources</li>
+                                    <li>🎥 Watch: Video: Incorporating Opposing Viewpoints</li>
+                                    <li>📝 Submit: Argument Essay Final Draft</li>
+                                    <li>🎉 <strong>COURSE COMPLETION!</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Calendar -->
+        <div id="tests" class="content-area">
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-white mb-2 flex items-center gap-3">
+                    <i data-lucide="target" class="w-6 h-6 text-coral-500" aria-label="Goal"></i>
+                    Test Schedule
+                </h2>
+
+
+                <p class="text-gray-700 mb-4 mb-4">All test dates and countdown timers</p>
+            </div>
+            <div class="test-grid">
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">📝 Test 1</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="mb-4 mb-4"><strong>Date:</strong> September 8-12, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 1 & 13</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
+                        <li>Mathematical reasoning (deductive vs inductive)</li>
+                        <li>Pattern recognition in sequences</li>
+                        <li>Voting methods (majority, plurality, Borda)</li>
+                        <li>Apportionment methods</li>
+                    </ul>
+                    <div class="countdown" id="test1-countdown">Calculating...</div>
+                </div>
+                
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">📈 Test 2</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="mb-4 mb-4"><strong>Date:</strong> September 29 - October 3, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 4 & 5</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
+                        <li>Proportions and cross-multiplication</li>
+                        <li>Percentage calculations</li>
+                        <li>Linear vs exponential functions</li>
+                        <li>Function modeling and interpretation</li>
+                    </ul>
+                    <div class="countdown" id="test2-countdown">Calculating...</div>
+                </div>
+                
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">💰 Test 3</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="mb-4 mb-4"><strong>Date:</strong> November 3-7, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 6 & 7</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
+                        <li>Simple and compound interest calculations</li>
+                        <li>Loan and payment formulas</li>
+                        <li>Metric system conversions</li>
+                        <li>Temperature and unit conversions</li>
+                    </ul>
+                    <div class="countdown" id="test3-countdown">Calculating...</div>
+                </div>
+                
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">🎲 Test 4</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="mb-4 mb-4"><strong>Date:</strong> December 8-12, 2025</p>
+                    <p class="mb-4 mb-4"><strong>Chapters:</strong> 10 & 11</p>
+                    <ul style="margin: var(--space-3) 0; padding-left: var(--space-5); line-height: var(--line-height-relaxed);" class="space-y-2 space-y-2">
+                        <li>Basic probability calculations</li>
+                        <li>Expected value problems</li>
+                        <li>Statistical data interpretation</li>
+                        <li>Z-scores and normal distribution</li>
+                    </ul>
+                    <div class="countdown" id="test4-countdown">Calculating...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div id="progress" class="content-area">
+            <button class="back-btn" onclick="showSection('overview')">
+                <span>←</span> Back to Overview
+            </button>
+            <h2 class="text-2xl font-bold text-[var(--text-dark)] mb-6 mt-8 mb-4 mt-8 mb-4">Your Progress Tracker</h2>
+
+
+            
+            <div class="progress-section">
+                <h3 class="text-xl font-semibold text-[var(--text-dark)] mb-4 mt-8 mb-4 mt-8 mb-4">📊 Semester Progress</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="semester-progress" style="width: 0%"></div>
+                </div>
+                <p id="progress-text" class="text-center font-medium text-[var(--text-muted)] mb-4 mb-4">Calculating progress...</p>
+            </div>
+
+            <div class="test-grid">
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="text-[var(--success-accent)] mt-8 mb-4 mt-8 mb-4">✅ Completed</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <div id="completed-items">
+                        <p class="mb-4 mb-4">Your completed work will appear here as you progress through the semester.</p>
+                    </div>
+                </div>
+                
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="text-[var(--accent)] mt-8 mb-4 mt-8 mb-4">⏳ Current Focus</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <div id="current-focus">
+                        <p class="mb-4 mb-4">Loading your current focus areas...</p>
+                    </div>
+                </div>
+                
+                <div class="test-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                    <h3 class="text-[var(--yellow-500)] mt-8 mb-4 mt-8 mb-4">🔮 Coming Up</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <div id="upcoming-items">
+                        <p class="mb-4 mb-4">Your upcoming deadlines will appear here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+        // Complete semester schedule data
+        const semesterSchedule = {
+            1: {
+                dates: "August 18-22, 2025",
+                sections: ["1.1", "1.2"],
+                focus: "Getting started with mathematical thinking and estimation",
+                assignments: {
+                    brightspace: [
+                        {name: "Syllabus Review", due: "Friday 8/22 11:59 PM"},
+                        {name: "Attendance Week 1", due: "Friday 8/22 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "1.1 Thinking Mathematically", due: "Sunday 8/24 11:59 PM"},
+                        {name: "1.2 Estimating and Evaluating", due: "Sunday 8/24 11:59 PM"}
+                    ]
+                }
+            },
+            2: {
+                dates: "August 25-29, 2025",
+                sections: ["1.3", "13.1"],
+                focus: "Problem solving strategies and voting methods introduction",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 2", due: "Friday 8/29 11:59 PM"},
+                        {name: "Lab #1 (Chapter 1)", due: "Friday 8/29 11:59 PM"},
+                        {name: "EVA (CRITICAL DEADLINE)", due: "Friday 8/29 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "1.3 Problem Solving", due: "Sunday 8/31 11:59 PM"},
+                        {name: "13.1 How to Determine a Winner", due: "Sunday 8/31 11:59 PM"}
+                    ]
+                },
+                important: "⚠️ EVA must be completed by Friday 8/29 or you'll be automatically withdrawn!"
+            },
+            3: {
+                dates: "September 1-5, 2025",
+                sections: ["13.2", "13.3"],
+                focus: "Voting method flaws and apportionment systems",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 3", due: "Friday 9/5 11:59 PM"},
+                        {name: "Lab #2 (Chapter 13)", due: "Friday 9/5 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "13.2 Flaws in Voting Methods", due: "Sunday 9/7 11:59 PM"},
+                        {name: "13.3 Apportionment", due: "Sunday 9/7 11:59 PM"}
+                    ]
+                }
+            },
+            4: {
+                dates: "September 8-12, 2025",
+                sections: ["Review", "TEST 1"],
+                focus: "TEST 1: Mathematical thinking and voting methods",
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 4", due: "Friday 9/12 11:59 PM"},
+                        {name: "TEST 1 (BrightSpace)", due: "During week - check email"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 1 (Hawkes)", due: "During week - check email"}
+                    ]
+                }
+            },
+            5: {
+                dates: "September 15-19, 2025",
+                sections: ["4.1", "4.2", "4.3"],
+                focus: "Proportions, percentages, and rates",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 5", due: "Friday 9/19 11:59 PM"},
+                        {name: "Lab #3 (Chapter 4)", due: "Friday 9/19 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "4.1 Proportions, Percentages, & Ratios", due: "Sunday 9/21 11:59 PM"},
+                        {name: "4.2 Using Percentages", due: "Sunday 9/21 11:59 PM"},
+                        {name: "4.3 Rates, Unit Rates, & Rates of Changes", due: "Sunday 9/21 11:59 PM"}
+                    ]
+                }
+            },
+            6: {
+                dates: "September 22-26, 2025",
+                sections: ["5.1", "5.2", "5.7"],
+                focus: "Linear and exponential functions",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 6", due: "Friday 9/26 11:59 PM"},
+                        {name: "Lab #4 (Chapter 5)", due: "Friday 9/26 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "5.1 Linear Equations & Functions", due: "Sunday 9/28 11:59 PM"},
+                        {name: "5.2 Linear Modeling", due: "Sunday 9/28 11:59 PM"},
+                        {name: "5.7 Exponential Functions", due: "Sunday 9/28 11:59 PM"}
+                    ]
+                },
+                important: "⚠️ LAST DAY TO WITHDRAW: Friday 9/26/2025"
+            },
+            7: {
+                dates: "September 29 - October 3, 2025",
+                sections: ["Review", "TEST 2"],
+                focus: "TEST 2: Proportions and functions",
+                isTest: true,
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 7", due: "Friday 10/3 11:59 PM"},
+                        {name: "TEST 2 (BrightSpace)", due: "During week - check email"}
+                    ],
+                    hawkes: [
+                        {name: "TEST 2 (Hawkes)", due: "During week - check email"}
+                    ]
+                }
+            },
+            8: {
+                dates: "October 6-10, 2025",
+                sections: ["7.4", "7.5"],
+                focus: "Metric system and unit conversions",
+                assignments: {
+                    brightspace: [
+                        {name: "Attendance Week 8", due: "Friday 10/10 11:59 PM"},
+                        {name: "Lab #5 (Chapter 7)", due: "Friday 10/10 11:59 PM"}
+                    ],
+                    hawkes: [
+                        {name: "7.4 The Metric System", due: "Sunday 10/12 11:59 PM"},
+                        {name: "7.5 Converting Between Metric and US", due: "Sunday 10/12 11:59 PM"}
+                    ]
+                }
+            }
+            // Continue for remaining weeks... (truncated for brevity)
+        };
+
+        function getCurrentWeek() {
+            const now = new Date();
+            const semesterStart = new Date('2025-08-18');
+            const semesterEnd = new Date('2025-12-12');
+            
+            if (now < semesterStart) {
+                const daysUntil = Math.ceil((semesterStart - now) / (1000 * 60 * 60 * 24));
+                return {
+                    status: 'not_started',
+                    message: `Semester starts August 18, 2025`,
+                    daysUntil: daysUntil
+                };
+            }
+            
+            if (now > semesterEnd) {
+                return {
+                    status: 'completed',
+                    message: 'Semester completed! Congratulations! 🎉'
+                };
+            }
+            
+            // Calculate current week
+            const daysSinceStart = Math.ceil((now - semesterStart) / (1000 * 60 * 60 * 24));
+            const weekNumber = Math.min(Math.max(Math.ceil(daysSinceStart / 7), 1), 16);
+            
+            if (semesterSchedule[weekNumber]) {
+                return {
+                    status: 'in_progress',
+                    week: weekNumber,
+                    info: semesterSchedule[weekNumber]
+                };
+            }
+            
+            return {
+                status: 'unknown',
+                message: 'Unable to determine current week'
+            };
+        }
+
+        function updateCurrentStatus() {
+            const currentWeek = getCurrentWeek();
+            const statusElement = document.getElementById('current-status');
+            
+            if (currentWeek.status === 'not_started') {
+                statusElement.textContent = `${currentWeek.message} (${currentWeek.daysUntil} days to go!)`;
+            } else if (currentWeek.status === 'in_progress') {
+                const weekInfo = currentWeek.info;
+                statusElement.textContent = `Week ${currentWeek.week}: ${weekInfo.focus}`;
+            } else {
+                statusElement.textContent = currentWeek.message;
+            }
+        }
+
+        function showSection(sectionId) {
+            // Update navigation
+            document.querySelectorAll('button[id^="nav-"]').forEach(btn => {
+                btn.classList.remove('btn-primary', 'is-math');
+                btn.classList.add('btn-secondary');
+            });
+            
+            const activeBtn = document.getElementById('nav-' + sectionId);
+            if (activeBtn) {
+                activeBtn.classList.remove('btn-secondary');
+                activeBtn.classList.add('btn-primary', 'is-math');
+            }
+
+            // Show/hide content areas
+            document.querySelectorAll('.content-area').forEach(area => area.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+
+            // Populate content based on section
+            if (sectionId === 'overview') {
+                populateCurrentWeek();
+            } else if (sectionId === 'math') {
+                populateFullSchedule();
+            } else if (sectionId === 'tests') {
+                updateTestCountdowns();
+            } else if (sectionId === 'progress') {
+                updateProgressTracker();
+            }
+
+            window.scrollTo(0, 0);
+        }
+
+        function populateCurrentWeek() {
+            const currentWeek = getCurrentWeek();
+            const content = document.getElementById('current-week-content');
+            
+            if (currentWeek.status === 'in_progress') {
+                const week = currentWeek.info;
+                content.innerHTML = `
+                    <div class="week-card current border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <div>
+                                <div class="week-number">Week ${currentWeek.week}</div>
+                                <div class="week-dates">${week.dates}</div>
+                            </div>
+                        </div>
+                        
+                        <div class="week-focus">${week.focus}</div>
+                        
+                        <div class="sections">
+                            <strong>📚 Study These Sections:</strong> ${week.sections.join(', ')}
+                        </div>
+                        
+                        ${week.important ? `<div class="important-note">${week.important}</div>` : ''}
+                        
+                        <div class="assignments">
+                            <div class="assignment-group">
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">📝 BrightSpace Assignments</h4>
+                                ${week.assignments.brightspace.map(a => `
+                                    <div class="assignment-item">
+                                        <strong>${a.name}</strong><br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <div class="assignment-group">
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">🎯 Hawkes Learning</h4>
+                                ${week.assignments.hawkes.map(a => `
+                                    <div class="assignment-item">
+                                        <strong>${a.name}</strong><br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="bg-[var(--success-weak)] p-4 rounded-lg mt-4 border-l-4 border-[var(--success-accent)]">
+                            <strong>💡 This Week's Success Strategy:</strong><br>
+                            Focus on truly understanding each concept rather than memorizing. Take your time with each section and don't hesitate to review previous material if needed. You're building a foundation that will support everything that comes next!
+                        </div>
+                    </div>
+                `;
+            } else if (currentWeek.status === 'not_started') {
+                content.innerHTML = `
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <h3 class="mt-8 mb-4 mt-8 mb-4">${currentWeek.message}</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p style="margin: var(--space-4) 0;" class="mb-4 mb-4">You have ${currentWeek.daysUntil} days to get ready! Here's what to do:</p>
+                        <ul style="line-height: var(--line-height-relaxed); padding-left: var(--space-5);" class="space-y-2 space-y-2">
+                            <li>Complete the EVA (Enrollment Verification Activity) as soon as it becomes available</li>
+                            <li>Set up your Hawkes Learning account</li>
+                            <li>Bookmark this calendar for daily reference</li>
+                            <li>Prepare for Section 1.1: Thinking Mathematically</li>
+                        </ul>
+                    </div>
+                `;
+            } else {
+                content.innerHTML = `
+                    <div class="week-card border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <h3 class="mt-8 mb-4 mt-8 mb-4">${currentWeek.message}</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                        <p class="mb-4 mb-4">Congratulations on completing MAT 143! 🎓</p>
+                    </div>
+                `;
+            }
+        }
+
+        function populateFullSchedule() {
+            const timeline = document.getElementById('semester-timeline');
+            const currentWeek = getCurrentWeek();
+            let html = '';
+
+            for (let weekNum = 1; weekNum <= 8; weekNum++) { // Showing first 8 weeks for demo
+                if (!semesterSchedule[weekNum]) continue;
+
+                const week = semesterSchedule[weekNum];
+                const isCurrent = currentWeek.status === 'in_progress' && currentWeek.week === weekNum;
+                const isTest = week.isTest;
+
+                let cardClass = 'week-card';
+                if (isCurrent) cardClass += ' current';
+                if (isTest) cardClass += ' test-week';
+
+                html += `
+                    <div class="${cardClass} border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10 border-2 border-dashed border-positive/20 shadow-lg shadow-positive/10">
+                        <div class="week-header">
+                            <div>
+                                <div class="week-number">Week ${weekNum}</div>
+                                <div class="week-dates">${week.dates}</div>
+                            </div>
+                        </div>
+                        
+                        <div class="week-focus">${week.focus}</div>
+                        
+                        <div class="sections">
+                            <strong>📚 Sections:</strong> ${week.sections.join(', ')}
+                        </div>
+                        
+                        ${week.important ? `<div class="important-note">${week.important}</div>` : ''}
+                        
+                        <div class="assignments">
+                            <div class="assignment-group">
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">📝 BrightSpace</h4>
+                                ${week.assignments.brightspace.map(a => `
+                                    <div class="assignment-item">
+                                        ${a.name}<br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                            
+                            <div class="assignment-group">
+                                <h4 class="mt-8 mb-4 mt-8 mb-4">🎯 Hawkes Learning</h4>
+                                ${week.assignments.hawkes.map(a => `
+                                    <div class="assignment-item">
+                                        ${a.name}<br>
+                                        <span class="due-date">Due: ${a.due}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            html += `
+                <div class="break-notice">
+                    <h3 class="mt-8 mb-4 mt-8 mb-4">🏖️ Fall Break: October 13-19, 2025</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                    <p class="mb-4 mb-4">No classes - Use this time to catch up and recharge!</p>
+                </div>
+                <p class="text-center text-[var(--text-muted)] my-8 mb-4 mb-4">
+                    <em>Remaining weeks (9-16) continue with Chapters 6, 10, 11 and Tests 3 & 4</em>
+                </p>
+            `;
+
+            timeline.innerHTML = html;
+        }
+
+        function updateTestCountdowns() {
+            const testDates = {
+                'test1-countdown': new Date('2025-09-08'),
+                'test2-countdown': new Date('2025-09-29'),
+                'test3-countdown': new Date('2025-11-03'),
+                'test4-countdown': new Date('2025-12-08')
+            };
+
+            const now = new Date();
+
+            for (const [elementId, testDate] of Object.entries(testDates)) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    const daysUntil = Math.ceil((testDate - now) / (1000 * 60 * 60 * 24));
+
+                    element.classList.remove('urgent', 'completed');
+
+                    if (daysUntil > 7) {
+                        element.textContent = `${daysUntil} days until test`;
+                    } else if (daysUntil > 0) {
+                        element.textContent = `${daysUntil} days - Start studying now!`;
+                        element.classList.add('urgent');
+                    } else if (daysUntil > -7) {
+                        element.textContent = 'Test week!';
+                        element.classList.add('urgent');
+                    } else {
+                        element.textContent = 'Test completed ✓';
+                        element.classList.add('completed');
+                    }
+                }
+            }
+        }
+
+        function updateProgressTracker() {
+            const currentWeek = getCurrentWeek();
+            const progressElement = document.getElementById('semester-progress');
+            const progressText = document.getElementById('progress-text');
+
+            if (currentWeek.status === 'in_progress') {
+                const progressPercent = (currentWeek.week / 16) * 100;
+                progressElement.style.width = progressPercent + '%';
+                progressText.textContent = `Week ${currentWeek.week} of 16 (${Math.round(progressPercent)}% complete)`;
+            } else if (currentWeek.status === 'not_started') {
+                progressElement.style.width = '0%';
+                progressText.textContent = 'Semester has not started yet';
+            } else {
+                progressElement.style.width = '100%';
+                progressText.textContent = 'Semester completed! 🎉';
+            }
+
+            // Update current focus
+            const currentFocus = document.getElementById('current-focus');
+            if (currentWeek.status === 'in_progress') {
+                const week = currentWeek.info;
+                currentFocus.innerHTML = `
+                    <p class="mb-4 mb-4"><strong>Sections:</strong> ${week.sections.join(', ')}</p>
+                    <p style="margin-top: var(--space-2);" class="mb-4 mb-4">${week.focus}</p>
+                `;
+            } else {
+                currentFocus.innerHTML = '<p class="mb-4 mb-4">No current focus areas.</p>';
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCurrentStatus();
+            populateCurrentWeek();
+            updateTestCountdowns();
+            
+            // Initialize Lucide icons
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+
+            // Update every hour
+            setHost Groteskval(() => {
+                updateCurrentStatus();
+                updateTestCountdowns();
+            }, 3600000);
+        });
+    </script>
+</body>
+</html>
