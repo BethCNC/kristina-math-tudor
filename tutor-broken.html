@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Math & Writing Tutor - Kristina's Academic Success</title>
+    <meta name="description" content="AI-powered tutoring for MAT 143 and ENG 111 - get instant help with math problems, writing assignments, and study strategies.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    
+    <!-- Modern Tailwind Design System -->
+    <link rel="stylesheet" href="src/styles/tailwind-design-system.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-background text-text-primary font-sans antialiased min-h-screen">
+    <!-- Header -->
+    <header class="bg-background-secondary/50 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-text-primary"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-title-small text-text-primary">AI Tutor</h1>
+
+
+                            <p class="font-caption text-text-secondary">MAT 143 & ENG 111 Helper</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="index.html" class="flex items-center space-x-2 px-3 py-2 rounded-lg text-text-secondary hover:text-text-primary hover:bg-background-secondary-hover transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4" aria-label="Go back"></i>
+                    <span class="font-button border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">Dashboard</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <!-- Subject Selection -->
+        <div class="mb-6">
+            <div class="flex gap-2">
+                <button id="math-btn" class="subject-btn active px-4 py-2 rounded-lg font-button transition-colors bg-brand text-text-primary border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                    <i data-lucide="calculator" class="w-4 h-4 inline mr-2" aria-label="Calculator"></i>
+                    MAT 143 Math
+                </button>
+                <button id="english-btn" class="subject-btn px-4 py-2 rounded-lg font-button transition-colors bg-background-secondary text-text-primary hover:bg-background-secondary-hover border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10">
+                    <i data-lucide="pen-tool" class="w-4 h-4 inline mr-2"></i>
+                    ENG 111 Writing
+                </button>
+            </div>
+        </div>
+
+        <!-- Chat Host Groteskface -->
+        <div class="bg-background-secondary border border-border rounded-xl overflow-hidden">
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="h-96 overflow-y-auto p-6 space-y-4">
+                <div class="message ai-message bg-background rounded-lg p-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="font-body-regular text-text-primary mb-2">Hi Kristina! I'm your AI tutor, ready to help with MAT 143 math and ENG 111 writing.</p>
+                            <p class="font-body-small text-text-secondary">Try asking me:</p>
+                            <ul class="font-body-small text-text-secondary mt-2 space-y-1">
+                                <li>• "Help me with Chapter 6 compound interest"</li>
+                                <li>• "Explain how to write a thesis statement"</li>
+                                <li>• "What's the formula for probability?"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="border-t border-border p-4">
+                <div class="flex gap-2">
+                    <label for="user-input" class="sr-only">Input field</label>
+<input 
+                        id="user-input" 
+                        type="text" 
+                        placeholder="Ask me about math formulas, writing help, or study strategies..."
+                        class="flex-1 px-4 py-3 bg-background border border-border rounded-lg font-input focus:outline-none focus:ring-2 focus:ring-brand focus:border-brand"
+                    >
+                    <button 
+                        id="send-btn" 
+                        class="px-6 py-3 bg-brand text-text-primary rounded-lg font-button hover:bg-brand-hover transition-colors disabled:opacity-50 disabled:cursor-not-allowed border-2 border-dashed border-brand/30 shadow-md shadow-brand/10 border-2 border-dashed border-brand/30 shadow-md shadow-brand/10"
+                    >
+                        <i data-lucide="send" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
+                <i data-lucide="calculator" class="w-5 h-5 text-brand mb-2" aria-label="Calculator"></i>
+                <h3 class="font-subtitle-small text-text-primary">Formula Help</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                <p class="font-caption text-text-secondary">Get help with specific formulas</p>
+            </button>
+            
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
+                <i data-lucide="book-open" class="w-5 h-5 text-brand mb-2" aria-label="Study guide"></i>
+                <h3 class="font-subtitle-small text-text-primary">Chapter Review</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                <p class="font-caption text-text-secondary">Review chapter concepts</p>
+            </button>
+            
+            <button class="quick-action p-4 bg-background-secondary border border-border rounded-lg hover:bg-background-secondary-hover transition-colors text-left">
+                <i data-lucide="edit" class="w-5 h-5 text-brand mb-2"></i>
+                <h3 class="font-subtitle-small text-text-primary">Writing Help</h3>
+<div class="mb-2"></div>
+<div class="mb-2"></div>
+                <p class="font-caption text-text-secondary">Essay structure & grammar</p>
+            </button>
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Global variables
+        let currentSubject = 'math';
+        
+        // DOM elements
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const mathBtn = document.getElementById('math-btn');
+        const englishBtn = document.getElementById('english-btn');
+
+        // Subject switching
+        mathBtn.addEventListener('click', () => switchSubject('math'));
+        englishBtn.addEventListener('click', () => switchSubject('english'));
+
+        function switchSubject(subject) {
+            currentSubject = subject;
+            
+            // Update button states
+            document.querySelectorAll('.subject-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-brand', 'text-text-primary');
+                btn.classList.add('bg-background-secondary', 'text-text-primary');
+            });
+            
+            const activeBtn = subject === 'math' ? mathBtn : englishBtn;
+            activeBtn.classList.add('active', 'bg-brand', 'text-text-primary');
+            activeBtn.classList.remove('bg-background-secondary', 'text-text-primary');
+            
+            // Clear chat and show subject-specific welcome
+            showSubjectWelcome(subject);
+        }
+
+        function showSubjectWelcome(subject) {
+            const welcomeMessages = {
+                math: {
+                    title: 'MAT 143 Math Tutor',
+                    message: 'I can help with all 8 chapters: proportions, functions, finance, probability, statistics, and more!',
+                    examples: [
+                        '• "Solve this compound interest problem"',
+                        '• "Explain z-scores in statistics"',
+                        '• "Help with Chapter 4 proportions"'
+                    ]
+                },
+                english: {
+                    title: 'ENG 111 Writing Coach',
+                    message: 'I can help with essays, grammar, citations, and critical thinking!',
+                    examples: [
+                        '• "Help me write a thesis statement"',
+                        '• "How do I cite sources in MLA format?"',
+                        '• "Review my essay structure"'
+                    ]
+                }
+            };
+
+            const welcome = welcomeMessages[subject];
+            addMessage('ai', welcome.message, welcome.examples);
+        }
+
+        // Chat functionality
+        function addMessage(type, content, examples = null) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+            
+            if (type === 'ai') {
+                messageDiv.innerHTML = `
+                    <div class="bg-background rounded-lg p-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="brain-circuit" class="w-4 h-4 text-text-primary"></i>
+                            </div>
+                            <div>
+                                <p class="font-body-regular text-text-primary">${content}</p>
+                                ${examples ? `
+                                    <ul class="font-body-small text-text-secondary mt-2 space-y-1">
+                                        ${examples.map(ex => `<li>${ex}</li>`).join('')}
+                                    </ul>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="bg-brand rounded-lg p-4 ml-12">
+                        <p class="font-body-regular text-text-primary">${content}</p>
+                    </div>
+                `;
+            }
+            
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
+            // Re-initialize Lucide icons for new content
+            lucide.createIcons();
+        }
+
+        async function sendMessage() {
+            const message = userInput.value.trim();
+            if (!message) return;
+
+            // Add user message
+            addMessage('user', message);
+            userInput.value = '';
+            
+            // Disable send button
+            sendBtn.disabled = true;
+            sendBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>';
+            lucide.createIcons();
+
+            try {
+                // Call your AI API
+                const response = await fetch('/api/ai-tutor', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        question: message,
+                        subject: currentSubject,
+                        context: currentSubject === 'math' ? 'MAT 143' : 'ENG 111'
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                addMessage('ai', data.response || 'Sorry, I encountered an error. Please try again.');
+                
+            } catch (error) {
+                console.error('Error:', error);
+                addMessage('ai', 'Sorry, I\'m having trouble connecting right now. Please check your internet connection and try again.');
+            } finally {
+                // Re-enable send button
+                sendBtn.disabled = false;
+                sendBtn.innerHTML = '<i data-lucide="send" class="w-4 h-4"></i>';
+                lucide.createIcons();
+            }
+        }
+
+        // Event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Quick action handlers
+        document.querySelectorAll('.quick-action').forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                const prompts = [
+                    'Show me the most important formulas for my next test',
+                    'Help me review the key concepts from this chapter',
+                    'Help me improve my essay writing skills'
+                ];
+                userInput.value = prompts[index];
+                sendMessage();
+            });
+        });
+
+        // Initialize
+        showSubjectWelcome('math');
+    </script>
+</body>
+</html>
