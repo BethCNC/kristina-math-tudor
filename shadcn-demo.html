@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadcn/ui Components Demo - Kristina's Dashboard</title>
+    <meta name="description" content="Demonstration of shadcn/ui components with Kristina's design system">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
+    
+    <!-- ADHD-Friendly Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="src/styles/adhd-friendly.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- React and TypeScript for shadcn/ui -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-brand">
+                <i data-lucide="graduation-cap" aria-hidden="true"></i>
+                Kristina's Dashboard
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#components" class="nav-link">Components</a></li>
+                <li><a href="#design-system" class="nav-link">Design System</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Header -->
+        <div class="section">
+            <h1 class="text-huge">🎨 shadcn/ui Components Demo</h1>
+            <p class="text-normal">Your design system integrated with shadcn/ui components</p>
+        </div>
+
+        <!-- Button Components -->
+        <div class="section" id="components">
+            <h2 class="text-big">🔘 Button Components</h2>
+            <div class="card">
+                <h3 class="text-medium mb-4">Button Variants</h3>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <button class="btn btn-primary">Default</button>
+                    <button class="btn btn-destructive">Destructive</button>
+                    <button class="btn btn-outline">Outline</button>
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-ghost">Ghost</button>
+                    <button class="btn btn-link">Link</button>
+                </div>
+                
+                <h3 class="text-medium mb-4">Button Sizes</h3>
+                <div class="flex flex-wrap gap-4 mb-6">
+                    <button class="btn btn-primary btn-sm">Small</button>
+                    <button class="btn btn-primary">Default</button>
+                    <button class="btn btn-primary btn-lg">Large</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Components -->
+        <div class="section">
+            <h2 class="text-big">📋 Card Components</h2>
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-medium">Create Project</h3>
+                        <p class="text-small text-muted">Deploy your new project in one-click.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="mb-4">
+                            <label class="text-small font-medium mb-2 block">Name</label>
+                            <input type="text" class="input" placeholder="Name of your project">
+                        </div>
+                        <button class="btn btn-primary w-full">Create Project</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="text-medium">Math Progress</h3>
+                        <p class="text-small text-muted">Your current math course status.</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="mb-4">
+                            <div class="flex justify-between text-small mb-2">
+                                <span>Test 1 Complete</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-success" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline w-full">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Components -->
+        <div class="section">
+            <h2 class="text-big">📝 Form Components</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-medium">Student Information</h3>
+                    <p class="text-small text-muted">Update your academic information.</p>
+                </div>
+                <div class="card-content">
+                    <div class="grid grid-2 gap-4 mb-4">
+                        <div>
+                            <label class="text-small font-medium mb-2 block">First Name</label>
+                            <input type="text" class="input" placeholder="Kristina">
+                        </div>
+                        <div>
+                            <label class="text-small font-medium mb-2 block">Last Name</label>
+                            <input type="text" class="input" placeholder="Smith">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-small font-medium mb-2 block">Email</label>
+                        <input type="email" class="input" placeholder="kristina@email.com">
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-small font-medium mb-2 block">Course</label>
+                        <select class="input">
+                            <option>MAT 143 - Quantitative Literacy</option>
+                            <option>ENG 111 - Writing & Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn btn-primary">Save Changes</button>
+                        <button class="btn btn-outline">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Badge Components -->
+        <div class="section">
+            <h2 class="text-big">🏷️ Badge Components</h2>
+            <div class="card">
+                <h3 class="text-medium mb-4">Status Badges</h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="badge badge-default">Default</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-destructive">Destructive</span>
+                    <span class="badge badge-outline">Outline</span>
+                </div>
+                
+                <h3 class="text-medium mb-4">Course Status</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="badge badge-success">Math Complete</span>
+                    <span class="badge badge-warning">Writing In Progress</span>
+                    <span class="badge badge-info">Calendar Active</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Components -->
+        <div class="section">
+            <h2 class="text-big">⚠️ Alert Components</h2>
+            <div class="space-y-4">
+                <div class="alert alert-info">
+                    <i data-lucide="info" class="alert-icon"></i>
+                    <div>
+                        <h4 class="text-medium">Information</h4>
+                        <p class="text-small">This is an informational alert with your design system colors.</p>
+                    </div>
+                </div>
+                
+                <div class="alert alert-warning">
+                    <i data-lucide="alert-triangle" class="alert-icon"></i>
+                    <div>
+                        <h4 class="text-medium">Warning</h4>
+                        <p class="text-small">Your essay is due today at 11:59 PM!</p>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success">
+                    <i data-lucide="check-circle" class="alert-icon"></i>
+                    <div>
+                        <h4 class="text-medium">Success</h4>
+                        <p class="text-small">Test 1 completed successfully!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design System Info -->
+        <div class="section" id="design-system">
+            <h2 class="text-big">🎨 Design System Integration</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-medium">Semantic Tokens in Action</h3>
+                    <p class="text-small text-muted">Your design system colors and tokens are being used throughout these components.</p>
+                </div>
+                <div class="card-content">
+                    <div class="grid grid-3 gap-4">
+                        <div class="text-center">
+                            <div class="color-swatch" style="background-color: var(--color-brand-default); width: 60px; height: 60px; border-radius: 8px; margin: 0 auto 8px;"></div>
+                            <div class="text-small font-medium">Brand Default</div>
+                            <div class="text-xs text-muted">#6baef2</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="color-swatch" style="background-color: var(--color-text-primary); width: 60px; height: 60px; border-radius: 8px; margin: 0 auto 8px;"></div>
+                            <div class="text-small font-medium">Text Primary</div>
+                            <div class="text-xs text-muted">#1a1918</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="color-swatch" style="background-color: var(--color-background-default); width: 60px; height: 60px; border-radius: 8px; margin: 0 auto 8px; border: 1px solid var(--color-border-secondary);"></div>
+                            <div class="text-small font-medium">Background</div>
+                            <div class="text-xs text-muted">#fafafa</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize icons
+        lucide.createIcons();
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
