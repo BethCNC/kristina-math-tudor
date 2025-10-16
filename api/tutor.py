@@ -6,34 +6,40 @@ Serverless function for Vercel deployment
 
 import os
 import json
-import anthropic
+from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 
-def handler(request, context):
+try:
+    import anthropic
+except ImportError:
+    anthropic = None
+
+class handler(BaseHTTPRequestHandler):
     """Vercel serverless function handler."""
     
-    # Handle CORS preflight
-    if request.method == 'OPTIONS':
-        return {
-            'statusCode': 200,
-            'headers': {
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                'Access-Control-Allow-Headers': 'Content-Type'
-            }
-        }
+    def do_OPTIONS(self):
+        """Handle CORS preflight."""
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
     
-    if request.method == 'POST':
+    def do_POST(self):
+        """Handle POST requests."""
         try:
             # Parse request body
-            body = json.loads(request.body)
+            content_length = int(self.headers.get('Content-Length', 0))
+            body_data = self.rfile.read(content_length)
+            body = json.loads(body_data.decode('utf-8'))
+            
             query = body.get('query', '')
             chapter = body.get('chapter', '')
             topic = body.get('topic', '')
             
             # Get API key
             api_key = os.getenv('ANTHROPIC_API_KEY')
-            if not api_key:
+            if not api_key or not anthropic:
                 # Return a helpful fallback response instead of error
                 chapter_info = ""
                 if chapter:
@@ -51,99 +57,94 @@ def handler(request, context):
                     if topic_hint:
                         chapter_info = f"<br><br><strong>Chapter {chapter} covers:</strong> {topic_hint}"
                 
-                return {
-                    'statusCode': 200,
-                    'headers': {
-                        'Content-Type': 'application/json',
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                    'body': json.dumps({
-                        "error": False,
-                        "response": f"""
-                        <strong>Question: "{query}"</strong>{chapter_info}<br><br>
-                        
-                        <div style="background-color: #fff6d8; border-left: 4px solid #fed23b; padding: 12px; border-radius: 4px;">
-                        <strong>💡 AI Tutor Setup Needed</strong><br>
-                        The AI tutor endpoint needs an ANTHROPIC_API_KEY environment variable to be configured.
-                        </div><br>
-                        
-                        <strong>📚 In the meantime, try these resources:</strong><br>
-                        • <a href="/formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
-                        • <a href="/chapter-{chapter}.html" style="color: #399d3c; font-weight: 500;">Chapter {chapter} Page</a> - Detailed explanations & examples<br>
-                        • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice problems<br><br>
-                        
-                        <strong>🎯 Study Tips:</strong><br>
-                        • Review the chapter page for step-by-step examples<br>
-                        • Practice similar problems in Hawkes Learning<br>
-                        • Check the formula sheet for quick reference<br>
-                        • Reach out to your instructor during office hours
-                        """,
-                        "timestamp": datetime.now().isoformat(),
-                        "chapter": chapter,
-                        "topic": topic,
-                        "fallback": True
-                    })
-                }
-            
-            # Generate response
-            response = generate_tutor_response(query, chapter, topic, api_key)
-            
-            return {
-                'statusCode': 200,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
-                'body': json.dumps(response)
-            }
-            
-        except Exception as e:
-            # Return a helpful fallback response instead of error
-            return {
-                'statusCode': 200,
-                'headers': {
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                },
-                'body': json.dumps({
+                response_data = {
                     "error": False,
                     "response": f"""
-                    <strong>Question: "{query}"</strong><br><br>
+                    <strong>Question: "{query}"</strong>{chapter_info}<br><br>
                     
-                    <div style="background-color: #fec6c0; border-left: 4px solid #fd5441; padding: 12px; border-radius: 4px;">
-                    <strong>⚠️ Temporary Service Issue</strong><br>
-                    The AI tutor is experiencing a temporary issue. Don't worry - here are alternative resources!
+                    <div style="background-color: #fff6d8; border-left: 4px solid #fed23b; padding: 12px; border-radius: 4px;">
+                    <strong>💡 AI Tutor Setup Needed</strong><br>
+                    The AI tutor endpoint needs an ANTHROPIC_API_KEY environment variable to be configured.
                     </div><br>
                     
-                    <strong>📚 Alternative Resources:</strong><br>
-                    • <a href="/formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
-                    • <a href="/tutor.html" style="color: #399d3c; font-weight: 500;">Chapter Pages</a> - Detailed explanations & examples<br>
-                    • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice & video tutorials<br><br>
+                    <strong>📚 In the meantime, try these resources:</strong><br>
+                    • <a href="formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
+                    • <a href="chapter-{chapter}.html" style="color: #399d3c; font-weight: 500;">Chapter {chapter} Page</a> - Detailed explanations & examples<br>
+                    • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice problems<br><br>
                     
-                    <strong>🎯 Study Strategy:</strong><br>
-                    1. Review the relevant chapter page for formulas and examples<br>
-                    2. Try practice problems in Hawkes Learning<br>
-                    3. Use the formula lookup for quick reference<br>
-                    4. If still stuck, reach out during office hours
+                    <strong>🎯 Study Tips:</strong><br>
+                    • Review the chapter page for step-by-step examples<br>
+                    • Practice similar problems in Hawkes Learning<br>
+                    • Check the formula sheet for quick reference<br>
+                    • Reach out to your instructor during office hours
                     """,
                     "timestamp": datetime.now().isoformat(),
                     "chapter": chapter,
                     "topic": topic,
                     "fallback": True
-                })
+                }
+                
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.send_header('Access-Control-Allow-Origin', '*')
+                self.end_headers()
+                self.wfile.write(json.dumps(response_data).encode('utf-8'))
+                return
+            
+            # Generate response
+            response = generate_tutor_response(query, chapter, topic, api_key)
+            
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps(response).encode('utf-8'))
+            
+        except Exception as e:
+            # Return a helpful fallback response instead of error
+            response_data = {
+                "error": False,
+                "response": f"""
+                <strong>Question: "{query}"</strong><br><br>
+                
+                <div style="background-color: #fec6c0; border-left: 4px solid #fd5441; padding: 12px; border-radius: 4px;">
+                <strong>⚠️ Temporary Service Issue</strong><br>
+                The AI tutor is experiencing a temporary issue. Don't worry - here are alternative resources!
+                </div><br>
+                
+                <strong>📚 Alternative Resources:</strong><br>
+                • <a href="formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
+                • <a href="tutor.html" style="color: #399d3c; font-weight: 500;">Chapter Pages</a> - Detailed explanations & examples<br>
+                • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice & video tutorials<br><br>
+                
+                <strong>🎯 Study Strategy:</strong><br>
+                1. Review the relevant chapter page for formulas and examples<br>
+                2. Try practice problems in Hawkes Learning<br>
+                3. Use the formula lookup for quick reference<br>
+                4. If still stuck, reach out during office hours
+                """,
+                "timestamp": datetime.now().isoformat(),
+                "chapter": chapter,
+                "topic": topic,
+                "fallback": True
             }
+            
+            self.send_response(200)
+            self.send_header('Content-Type', 'application/json')
+            self.send_header('Access-Control-Allow-Origin', '*')
+            self.end_headers()
+            self.wfile.write(json.dumps(response_data).encode('utf-8'))
     
-    return {
-        'statusCode': 405,
-        'headers': {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
-        },
-        'body': json.dumps({
+    def do_GET(self):
+        """Handle GET requests."""
+        self.send_response(405)
+        self.send_header('Content-Type', 'application/json')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.end_headers()
+        self.wfile.write(json.dumps({
             "error": True,
-            "message": "Method not allowed"
-        })
-    }
+            "message": "Method not allowed. Use POST to /api/tutor"
+        }).encode('utf-8'))
 
 def generate_tutor_response(query, chapter, topic, api_key):
     """Generate AI tutor response."""

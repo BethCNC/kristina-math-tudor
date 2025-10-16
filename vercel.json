@@ -1,15 +1,4 @@
 {
-  "functions": {
-    "api/tutor.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/api/tutor",
-      "destination": "/api/tutor.py"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
