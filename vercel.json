@@ -1,20 +1,13 @@
 {
+  "functions": {
+    "api/tutor.py": {
+      "runtime": "python3.9"
+    }
+  },
   "rewrites": [
     {
-      "source": "/tutor",
-      "destination": "/tutor.html"
-    },
-    {
-      "source": "/reference",
-      "destination": "/reference.html"
-    },
-    {
-      "source": "/calendar",
-      "destination": "/calendar_study_system.html"
-    },
-    {
-      "source": "/study-helper",
-      "destination": "/web_study_helper.html"
+      "source": "/api/tutor",
+      "destination": "/api/tutor.py"
     }
   ],
   "headers": [

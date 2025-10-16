@@ -7,9 +7,9 @@
     <meta name="description" content="AI-powered math tutor for MAT 143. Get instant help with formulas, practice problems, and chapter concepts.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
     <!-- Design System -->
     <link rel="stylesheet" href="src/styles/globals.css">
@@ -28,7 +28,7 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
-                    <a href="/index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
+                    <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
                         <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
                             <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
                         </div>
@@ -37,23 +37,23 @@
                 </div>
 
                 <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
-                    <a href="/index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                    <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
                         <i data-lucide="home" class="w-4 h-4 inline mr-1"></i>
                         Dashboard
                     </a>
-                    <a href="/calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                    <a href="calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
                         <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i>
                         Calendar
                     </a>
-                    <a href="/tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
+                    <a href="tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
                         <i data-lucide="calculator" class="w-4 h-4 inline mr-1"></i>
                         Math Tutor
                     </a>
-                    <a href="/english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                    <a href="english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
                         <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1"></i>
                         Writing Coach
                     </a>
-                    <a href="/formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                    <a href="formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
                         <i data-lucide="book-open" class="w-4 h-4 inline mr-1"></i>
                         Resources
                     </a>
@@ -67,11 +67,11 @@
 
         <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
             <nav class="px-4 py-3 space-y-1">
-                <a href="/index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="home" class="w-4 h-4 mr-2"></i>Dashboard</a>
-                <a href="/calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i>Calendar</a>
-                <a href="/tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300"><i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Math Tutor</a>
-                <a href="/english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>Writing Coach</a>
-                <a href="/formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="book-open" class="w-4 h-4 mr-2"></i>Resources</a>
+                <a href="index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="home" class="w-4 h-4 mr-2"></i>Dashboard</a>
+                <a href="calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i>Calendar</a>
+                <a href="tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300"><i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Math Tutor</a>
+                <a href="english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>Writing Coach</a>
+                <a href="formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="book-open" class="w-4 h-4 mr-2"></i>Resources</a>
             </nav>
         </div>
     </header>
@@ -154,7 +154,7 @@
             <h2 id="chapters-heading" class="text-2xl font-semibold mb-6">📚 Study by Chapter</h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- Chapter 1 -->
-                <a href="/chapter-1.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-1.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                     <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -170,7 +170,7 @@
                 </a>
 
                 <!-- Chapter 4 -->
-                <a href="/chapter-4.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-4.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                     <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -186,7 +186,7 @@
                 </a>
 
                 <!-- Chapter 5 -->
-                <a href="/chapter-5.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-5.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -202,7 +202,7 @@
                 </a>
 
                 <!-- Chapter 6 -->
-                <a href="/chapter-6.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-6.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -218,7 +218,7 @@
                 </a>
 
                 <!-- Chapter 7 -->
-                <a href="/chapter-7.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-7.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                             <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -234,7 +234,7 @@
                         </a>
 
                 <!-- Chapter 10 -->
-                <a href="/chapter-10.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-10.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                             <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -250,7 +250,7 @@
                 </a>
 
                 <!-- Chapter 11 -->
-                <a href="/chapter-11.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-11.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                             <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -266,7 +266,7 @@
                         </a>
 
                 <!-- Chapter 13 -->
-                <a href="/chapter-13.html" class="card hover:shadow-lg transition-shadow">
+                <a href="chapter-13.html" class="card hover:shadow-lg transition-shadow">
                     <div class="flex items-center justify-between mb-3">
                             <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
@@ -289,7 +289,7 @@
             <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
                 Looking for a specific formula? Try the complete formula lookup or ask the AI tutor above.
             </p>
-            <a href="/formula_lookup.html" class="btn btn-secondary">
+            <a href="formula_lookup.html" class="btn btn-secondary">
                 <i data-lucide="search" class="w-4 h-4 mr-2"></i>
                 Open Formula Lookup
             </a>
@@ -321,7 +321,7 @@
                     <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">
                         Access syllabus, pacing guides, and formula sheets.
                     </p>
-                    <a href="/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="btn btn-outline btn-sm">
+                    <a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="btn btn-outline btn-sm">
                         View Materials
                     </a>
                 </div>
@@ -342,10 +342,10 @@
                 <div>
                     <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">Quick Links</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
-                        <li><a href="/calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Course Calendar</a></li>
-                        <li><a href="/english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Writing Resources</a></li>
-                        <li><a href="/formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
+                        <li><a href="index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
+                        <li><a href="calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Course Calendar</a></li>
+                        <li><a href="english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Writing Resources</a></li>
+                        <li><a href="formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
                     </ul>
                 </div>
                 <div>
