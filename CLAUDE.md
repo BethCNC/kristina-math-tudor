@@ -15,10 +15,11 @@ npm run build      # Build for production using Vite
 npm run preview    # Preview production build locally
 ```
 
-**Python Scripts:**
+**Common Python Scripts:**
 ```bash
-python scripts/check_accessibility.py        # Run accessibility audit
+python scripts/check_accessibility.py        # Run accessibility audit (WCAG 2.1 AA)
 python scripts/check_links.py               # Check for broken links
+python scripts/check_color_accessibility.py  # Verify color contrast ratios
 python scripts/convert_markdown_to_html.py  # Convert course materials to HTML
 ```
 
@@ -61,28 +62,39 @@ The project includes a sophisticated AI tutoring system with multiple components
 ### Frontend Architecture
 **Technology Stack:**
 - Vanilla HTML/CSS/JavaScript with Tailwind CSS v4
-- Radix UI components for enhanced UX
-- Lucide React icons
-- Custom retro design system with Vend Sans typography
+- Radix UI components for enhanced UX (dialog, select, tabs, slot)
+- Lucide React icons (imported via npm)
+- Custom retro design system with Vend Sans typography (via Google Fonts)
+
+**Source Organization:**
+- `src/styles/` - Design system CSS files (tokens-implementation.css, award-winning-design.css, main.css, adhd-friendly.css, accessibility.css)
+- `src/components/` - Reusable UI components
+- `src/js/` - JavaScript modules (e.g., study-planner.js)
+- `src/lib/` - Utility functions
+- `tokens.json` - Design token definitions (colors, spacing, typography)
 
 **Design System:**
-- WCAG 2.1 AA accessibility compliance
+- WCAG 2.1 AA accessibility compliance (verified with check_accessibility.py)
 - Retro color palette optimized for ADHD-friendly design
+- Semantic color tokens: math (green), English (blue), warnings (red), success (green)
 - High contrast minimal flat design
 - Mobile-first responsive approach
 
 ### Build Configuration
-**Vite Setup:**
-- Multi-entry point configuration for all HTML pages
-- PostCSS integration with Tailwind CSS
+**Vite Setup (vite.config.js):**
+- Multi-entry point configuration for HTML pages
+- Active entry points: index, calendar, tutor, formulaLookup, englishMaterials, chapter-1, chapter-4, chapter-6, chapter-7, chapter-13
+- Temporarily disabled: chapter-5, chapter-10, chapter-11 (CSS parsing issues)
+- PostCSS integration with @tailwindcss/postcss and autoprefixer
 - Development server on port 3000
-- Some chapter pages temporarily disabled due to CSS parsing issues
+- Build output to `dist/` directory
 
-**Deployment:**
-- Vercel platform with custom routing rules
-- Security headers configuration
-- API endpoints for AI tutoring functionality
-- Static asset optimization
+**Deployment (Vercel):**
+- Platform: Vercel serverless functions for API endpoints
+- Configuration: `vercel.json` includes rewrites and security headers
+- Security headers: X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy
+- Python runtime for serverless functions in `api/` directory
+- Static asset optimization via Vite build process
 
 ### Key Scripts & Automation
 The `scripts/` directory contains numerous Python utilities for:
@@ -99,9 +111,39 @@ The tutoring system is specifically designed for "Kristina" with:
 - Connection to specific CPCC course requirements
 - Executive function support features
 
+## Development Guidelines
+
+**Tech Stack Restrictions:**
+- Use vanilla HTML/CSS/JavaScript only - do NOT introduce heavy frameworks (React, Vue, etc.)
+- Styling must use Tailwind CSS v4 with the custom design system in `src/styles/` and `tokens.json`
+- Backend/API functions must be Python-based in the `api/` directory
+- Icons: Lucide only; Fonts: Vend Sans (Google Fonts)
+
+**Code Quality Standards:**
+- Write semantic HTML with proper heading hierarchy and ARIA labels
+- Design mobile-first and maintain WCAG 2.1 AA compliance
+- Break content into digestible sections for ADHD-friendly design
+- Keep design minimal - avoid unnecessary animations or visual clutter
+- Use consistent padding, spacing, and component styles from design system
+
+**Content Scope:**
+- Base all work on official MAT 143 and ENG 111 syllabi
+- Focus on academic success and executive function support features
+- Do NOT add features unrelated to academics (social sharing, gamification, etc.)
+- The `_archived/` directory contains outdated code - do not reference it
+
 ## Important Notes
 
-- The AI tutoring requires `ANTHROPIC_API_KEY` environment variable
-- Some chapter pages are temporarily disabled in the Vite config due to CSS issues
-- The system includes extensive fallback responses for when AI services are unavailable
-- Course content is specifically aligned with CPCC's MAT 143 and ENG 111 curricula
+**Environment & Configuration:**
+- AI tutoring requires `ANTHROPIC_API_KEY` environment variable
+- API uses Anthropic's Claude model (claude-3-sonnet-20240229 in api/tutor.py)
+- Fallback responses are implemented when API key is missing or services unavailable
+
+**Known Issues:**
+- Chapter pages 5, 10, 11 temporarily disabled in Vite config due to CSS parsing issues
+- Various `-broken`, `-old`, `-new` HTML files exist from design iterations
+
+**Course Alignment:**
+- Content specifically aligned with CPCC's MAT 143 and ENG 111 curricula
+- Semester dates: Aug 18 - Dec 12, 2025
+- Test schedule: Test 1 (Ch 1,13), Test 2 (Ch 4,5), Test 3 (Ch 6,7), Test 4 (Ch 10,11)
