@@ -3,418 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Tutor | MAT 143</title>
-    <meta name="description" content="AI-powered math tutor for MAT 143. Browse chapters, get instant help, and track your progress.">
+    <title>MAT 143 Math Tutor | Kristina's Academic Dashboard</title>
+    <meta name="description" content="AI-powered math tutor for MAT 143 Quantitative Literacy. Get help with chapters 6 & 7, practice problems, and test preparation.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
-    <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals-new.css">
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-primary">
-    <!-- Skip to main content -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Desktop Header -->
+    <!-- Header -->
     <header class="header">
-        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
-                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
-            </svg>
-        </a>
-        
-        <nav class="header-nav" aria-label="Main navigation">
-            <a href="index.html" class="nav-item-desktop">Home</a>
-            <a href="tutor.html" class="nav-item-desktop active">Courses</a>
-            <a href="calendar.html" class="nav-item-desktop">Calendar</a>
-            <a href="formula_lookup.html" class="nav-item-desktop">Resources</a>
-            <a href="#profile" class="nav-item-desktop">Profile</a>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link active">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
                 </nav>
-
-        <div class="header-actions">
-            <button class="btn-icon" aria-label="Filter chapters">
-                <i data-lucide="filter" class="icon-md"></i>
-            </button>
-            <button class="btn-icon has-notification" aria-label="Notifications">
-                <i data-lucide="bell" class="icon-md"></i>
-                </button>
-            <div class="avatar">
-                <div class="avatar-initials">KC</div>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-        <h1 class="h-df text-center">MAT 143 Chapters</h1>
     </header>
 
     <!-- Main Content -->
-    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
         
         <!-- Page Header -->
-        <div class="flex flex-col gap-xxs mb-db">
-            <h1 class="h-xxl text-primary">MAT 143: Quantitative Literacy</h1>
-            <p class="t-df text-secondary">Select a chapter to begin studying</p>
-                </div>
-
-        <!-- Chapter Grid -->
-        <div class="grid grid-cols-3 gap-df md:gap-xxl mb-db">
-            <!-- Chapter 1 -->
-            <a href="chapter-1.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-purple-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#BA68C8" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#BA68C8" font-size="32" font-weight="600">1</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Thinking Mathematically</h3>
-                        </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">3/3 sections | 100%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Chapter 4 -->
-            <a href="chapter-4.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-orange-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#FF9800" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#FF9800" font-size="32" font-weight="600">4</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Proportions & Percentages</h3>
-                        </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">3/3 sections | 100%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Chapter 5 -->
-            <a href="chapter-5.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-blue-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#2196F3" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#2196F3" font-size="32" font-weight="600">5</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Functions</h3>
-                        </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">2/3 sections | 67%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 67%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Chapter 6 -->
-            <a href="chapter-6.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-pink-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#E91E63" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#E91E63" font-size="32" font-weight="600">6</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Personal Finance</h3>
-                </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">1/4 sections | 25%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 25%"></div>
-            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-card-banner">
-                    <i data-lucide="bell" class="course-card-banner-icon"></i>
-                    <span class="course-card-banner-text">Test 3 includes this chapter</span>
-                </div>
-                </a>
-
-                <!-- Chapter 7 -->
-            <a href="chapter-7.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-lime-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#CDDC39" opacity="0.5" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#7D8400" font-size="32" font-weight="600">7</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Measurement & Conversions</h3>
-                            </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">2/3 sections | 67%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 67%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-card-banner">
-                    <i data-lucide="bell" class="course-card-banner-icon"></i>
-                    <span class="course-card-banner-text">Test 3 includes this chapter</span>
-                </div>
-                        </a>
-
-                <!-- Chapter 10 -->
-            <a href="chapter-10.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-purple-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#BA68C8" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#BA68C8" font-size="28" font-weight="600">10</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Probability</h3>
-                        </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">0/4 sections | 0%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 0%"></div>
-                </div>
-                        </div>
-                    </div>
-                </div>
-                </a>
-
-                <!-- Chapter 11 -->
-            <a href="chapter-11.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-orange-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#FF9800" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#FF9800" font-size="28" font-weight="600">11</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Statistics</h3>
-                            </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">0/4 sections | 0%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 0%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </a>
-
-                <!-- Chapter 13 -->
-            <a href="chapter-13.html" class="course-card hover-lift" style="text-decoration: none;">
-                <div class="course-card-content">
-                    <div class="course-card-cover bg-blue-light">
-                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                            <rect width="80" height="80" fill="#2196F3" opacity="0.3" rx="6"/>
-                            <text x="40" y="50" text-anchor="middle" fill="#2196F3" font-size="28" font-weight="600">13</text>
-                        </svg>
-                    </div>
-                    <div class="course-card-body">
-                        <div class="course-card-header">
-                            <h3 class="course-card-title">Voting & Apportionment</h3>
-                            </div>
-                        <div class="course-card-progress">
-                            <p class="course-card-progress-info">3/3 sections | 100%</p>
-                            <div class="progress-bar-container">
-                                <div class="progress-bar-fill" style="width: 100%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        <div class="mb-8">
+            <h1>MAT 143: Quantitative Literacy</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">AI-powered tutor • Chapter guides • Test preparation</p>
         </div>
 
-        <!-- AI Tutor Section -->
-        <section class="card-base mb-db">
-            <div class="flex items-center gap-xxs mb-df">
-                <i data-lucide="sparkles" class="icon-lg text-accent"></i>
-                <h2 class="h-xl text-primary">AI Math Tutor</h2>
-            </div>
-            
-            <p class="t-md text-secondary mb-xxl">Ask me anything about MAT 143 concepts, formulas, or practice problems.</p>
-            
-            <form id="tutor-form" class="flex flex-col gap-df">
-                <div>
-                    <label for="question-input" class="label">Your Question</label>
-                    <textarea 
-                        id="question-input" 
-                        rows="4" 
-                        class="input" 
-                        placeholder="Example: How do I calculate compound interest?"
-                        required></textarea>
-                </div>
-
-                <button type="submit" class="btn-fill btn-with-icon-before">
-                    <i data-lucide="send" class="icon-md"></i>
-                    Ask Tutor
-                </button>
-            </form>
-
-            <!-- Response Area -->
-            <div id="tutor-response" class="hidden mt-xxl">
-                <div class="divider mb-df"></div>
-                <div class="flex items-center gap-xxs mb-df">
-                    <i data-lucide="sparkles" class="icon-md text-accent"></i>
-                    <h3 class="h-df text-primary">AI Tutor Response</h3>
-                </div>
-                <div id="response-content" class="t-df-paragraph text-primary"></div>
-            </div>
-
-            <!-- Loading State -->
-            <div id="tutor-loading" class="hidden mt-df">
-                <div class="flex items-center gap-xxs p-df bg-accent-light rounded-lg">
-                    <div class="animate-spin">
-                        <i data-lucide="loader-2" class="icon-md text-accent"></i>
+        <!-- Test 3 Focus Alert -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="target" style="width: 20px; height: 20px; color: var(--white);"></i>
                     </div>
-                    <span class="t-md text-accent">Thinking...</span>
+                    <div>
+                        <h3 style="margin: 0; color: var(--danger-red);">Focus: Test 3 Preparation</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 covers Chapters 6 (Personal Finance) & 7 (Measurement & Conversions) • Nov 3-7, 2025</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Quick Formula Reference -->
-        <section class="card-base">
-            <div class="flex items-center justify-between mb-df">
-                <h2 class="h-xl text-primary">Quick Formulas</h2>
-                <a href="formula_lookup.html" class="btn-text">
-                    View all
-                    <i data-lucide="arrow-right" class="icon-sm"></i>
-                </a>
+        <!-- Chapter Grid -->
+        <div class="grid grid-cols-2 mb-8">
+            <!-- Chapter 6: Personal Finance -->
+            <div class="course-card">
+                <div class="course-header" style="background: linear-gradient(135deg, var(--success-green) 0%, #ecfdf5 100%);">
+                    <div class="course-icon" style="background-color: var(--success-green);">6</div>
+                    <div class="course-info">
+                        <h3>Chapter 6: Personal Finance</h3>
+                        <p>Interest, Saving, Borrowing</p>
+                    </div>
+                </div>
+                <div class="course-progress">
+                    <div class="progress-header">
+                        <span class="progress-text">Test 3 Material</span>
+                        <span class="progress-percentage">Critical</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%; background: linear-gradient(90deg, var(--success-green) 0%, #10b981 100%);"></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="flex justify-between items-center">
+                        <span class="badge badge-danger">Test 3</span>
+                        <a href="chapter-6.html" class="btn btn-primary">Study Chapter</a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="grid grid-cols-2 gap-xxs">
-                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
-                    <span class="t-sm text-semibold text-primary">Compound Interest</span>
-                    <code class="t-xs text-mono text-secondary">A = P(1 + r/n)^(nt)</code>
+
+            <!-- Chapter 7: Measurement & Conversions -->
+            <div class="course-card">
+                <div class="course-header" style="background: linear-gradient(135deg, var(--warning-orange) 0%, #fef3c7 100%);">
+                    <div class="course-icon" style="background-color: var(--warning-orange);">7</div>
+                    <div class="course-info">
+                        <h3>Chapter 7: Measurement & Conversions</h3>
+                        <p>Units, Ratios, Dimensional Analysis</p>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
-                    <span class="t-sm text-semibold text-primary">Simple Interest</span>
-                    <code class="t-xs text-mono text-secondary">I = Prt</code>
+                <div class="course-progress">
+                    <div class="progress-header">
+                        <span class="progress-text">Test 3 Material</span>
+                        <span class="progress-percentage">Critical</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%; background: linear-gradient(90deg, var(--warning-orange) 0%, #f59e0b 100%);"></div>
+                    </div>
                 </div>
-                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
-                    <span class="t-sm text-semibold text-primary">Distance Formula</span>
-                    <code class="t-xs text-mono text-secondary">d = rt</code>
-                </div>
-                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
-                    <span class="t-sm text-semibold text-primary">Percentage Change</span>
-                    <code class="t-xs text-mono text-secondary">% = (new-old)/old × 100</code>
+                <div class="card-footer">
+                    <div class="flex justify-between items-center">
+                        <span class="badge badge-danger">Test 3</span>
+                        <a href="chapter-7.html" class="btn btn-primary">Study Chapter</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Additional Chapters -->
+        <div class="grid grid-cols-3 mb-8">
+            <!-- Chapter 1 -->
+            <div class="course-card">
+                <div class="course-header" style="background: linear-gradient(135deg, var(--primary-blue-light) 0%, #f0f9ff 100%);">
+                    <div class="course-icon" style="background-color: var(--primary-blue);">1</div>
+                    <div class="course-info">
+                        <h3 style="font-size: var(--font-size-base);">Chapter 1</h3>
+                        <p style="font-size: var(--font-size-sm);">Thinking Mathematically</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="chapter-1.html" class="btn btn-secondary w-full">Review</a>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="course-card">
+                <div class="course-header" style="background: linear-gradient(135deg, var(--math-purple-light) 0%, #faf5ff 100%);">
+                    <div class="course-icon" style="background-color: var(--math-purple);">4</div>
+                    <div class="course-info">
+                        <h3 style="font-size: var(--font-size-base);">Chapter 4</h3>
+                        <p style="font-size: var(--font-size-sm);">Proportions & Percentages</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="chapter-4.html" class="btn btn-secondary w-full">Review</a>
+                </div>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="course-card">
+                <div class="course-header" style="background: linear-gradient(135deg, var(--english-blue-light) 0%, #eff6ff 100%);">
+                    <div class="course-icon" style="background-color: var(--english-blue);">5</div>
+                    <div class="course-info">
+                        <h3 style="font-size: var(--font-size-base);">Chapter 5</h3>
+                        <p style="font-size: var(--font-size-sm);">Linear & Exponential Functions</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="chapter-5.html" class="btn btn-secondary w-full">Review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Tutor Interface -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="bot" style="width: 20px; height: 20px; color: var(--white);"></i>
+                    </div>
+                    <div>
+                        <h2 style="margin: 0;">AI Math Tutor</h2>
+                        <p style="margin: 0; color: var(--neutral-gray-light); font-size: var(--font-size-sm);">Get personalized help with MAT 143 concepts</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div style="background-color: var(--neutral-gray-bg); border-radius: var(--radius-lg); padding: var(--space-6); margin-bottom: var(--space-6);">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div style="width: 32px; height: 32px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="message-circle" style="width: 16px; height: 16px; color: var(--white);"></i>
+                        </div>
+                        <span style="font-weight: 500;">Tutor Response</span>
+                    </div>
+                    <p style="margin: 0; color: var(--neutral-gray);">Hi Kristina! I'm here to help with MAT 143. Ask me about:</p>
+                    <ul style="margin: var(--space-3) 0 0 var(--space-6); color: var(--neutral-gray-light);">
+                        <li>Personal finance formulas (interest, loans, savings)</li>
+                        <li>Unit conversions and dimensional analysis</li>
+                        <li>Practice problems and step-by-step solutions</li>
+                        <li>Test 3 preparation strategies</li>
+                    </ul>
+                </div>
+                
+                <div class="flex gap-3">
+                    <input type="text" placeholder="Ask a math question..." style="flex: 1; padding: var(--space-3) var(--space-4); border: 1px solid #d1d5db; border-radius: var(--radius-md); font-size: var(--font-size-base);" />
+                    <button class="btn btn-primary">
+                        <i data-lucide="send"></i>
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Study Resources -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calculator" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Formula Sheet</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Quick reference for all MAT 143 formulas</p>
+                    <a href="formula_lookup.html" class="btn btn-primary w-full">View Formulas</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Hawkes Learning</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Access online homework platform</p>
+                    <a href="course_materials/instructions/Hawkes_Learning_Setup.html" class="btn btn-primary w-full">Setup Guide</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="target" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Test Prep</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Practice problems and study guides</p>
+                    <a href="calendar.html" class="btn btn-primary w-full">Study Schedule</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="bottom-nav" aria-label="Mobile navigation">
-        <a href="index.html" class="nav-item-mobile" data-page="home">
-            <i data-lucide="home" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Home</span>
-        </a>
-        <a href="tutor.html" class="nav-item-mobile active" data-page="courses">
-            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Courses</span>
-        </a>
-        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
-            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Calendar</span>
-        </a>
-        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
-            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Resources</span>
-        </a>
-        <a href="#profile" class="nav-item-mobile" data-page="profile">
-            <i data-lucide="user" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Profile</span>
-        </a>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item active">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
     </nav>
 
-    <!-- Scripts -->
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
-    </script>
-
-    <!-- ADHD Accessibility Features -->
-    <script src="src/js/focus-mode.js"></script>
-    <script src="src/js/reading-mode.js"></script>
-    <script src="src/js/bottom-nav.js"></script>
-
-    <!-- AI Tutor Functionality -->
-    <script>
-        document.getElementById('tutor-form').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const question = document.getElementById('question-input').value;
-            const responseDiv = document.getElementById('tutor-response');
-            const responseContent = document.getElementById('response-content');
-            const loadingDiv = document.getElementById('tutor-loading');
-            
-            // Show loading
-            responseDiv.classList.add('hidden');
-            loadingDiv.classList.remove('hidden');
-            
-            try {
-                const response = await fetch('/api/tutor', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question, chapter: null })
-                });
-                
-                const data = await response.json();
-                
-                // Show response
-                loadingDiv.classList.add('hidden');
-                responseContent.innerHTML = data.response || data.answer || 'Sorry, I could not process your question.';
-                responseDiv.classList.remove('hidden');
-                responseDiv.classList.add('fade-in');
-                
-            } catch (error) {
-                loadingDiv.classList.add('hidden');
-                responseContent.innerHTML = '<p class="text-accent">Connection error. Please try again or check the <a href="formula_lookup.html" class="text-accent">formula lookup</a> for quick reference.</p>';
-                responseDiv.classList.remove('hidden');
-            }
-        });
         
-        // Animate progress bars
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.progress-bar-fill').forEach(bar => {
-                bar.classList.add('animate');
-            });
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'tutor.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
         });
     </script>
 </body>

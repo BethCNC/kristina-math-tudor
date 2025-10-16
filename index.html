@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kristina's Academic Dashboard | MAT 143 & ENG 111</title>
-    <meta name="description" content="Academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.">
+    <meta name="description" content="Academic success dashboard for MAT 143 (Quantitative Literacy) and ENG 111 (Writing & Inquiry) at Central Piedmont Community College, Fall 2025.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
     
-    <!-- Design System - Single File -->
-    <link rel="stylesheet" href="src/styles/elearning-complete.css">
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -19,255 +19,258 @@
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Desktop Header -->
+    <!-- Header -->
     <header class="header">
-        <a href="index.html" class="header-logo" aria-label="Home">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 0C0.447715 0 0 0.447715 0 1V27C0 27.5523 0.447715 28 1 28H27.02C27.5723 28 28.02 27.5523 28.02 27V1C28.02 0.447716 27.5723 0 27.02 0H1Z" fill="#FE5A4A"/>
-                <path d="M14.01 5L3 12.5V24H8V15H20.02V24H25.02V12.5L14.01 5Z" fill="white"/>
-            </svg>
-        </a>
-        
-        <nav class="header-nav" aria-label="Main navigation">
-            <a href="index.html" class="nav-item-desktop active">Home</a>
-            <a href="tutor.html" class="nav-item-desktop">Courses</a>
-            <a href="calendar.html" class="nav-item-desktop">Calendar</a>
-            <a href="formula_lookup.html" class="nav-item-desktop">Resources</a>
-            <a href="#profile" class="nav-item-desktop">Profile</a>
-        </nav>
-        
-        <div class="header-actions">
-            <button class="btn-icon has-notification" aria-label="Notifications">
-                <i data-lucide="bell"></i>
-            </button>
-            <div class="avatar">
-                <div class="avatar-initials">KC</div>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link active">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
             </div>
-        </div>
+                        </div>
     </header>
 
     <!-- Main Content -->
-    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
         
-        <!-- Profile Hero -->
-        <div class="profile-hero mb-32">
-            <div class="profile-hero-avatar">
-                <div class="avatar-initials">KC</div>
-            </div>
-            <h1 class="profile-hero-name">Kristina</h1>
-            <p class="profile-hero-level">Intermediate level</p>
-            <div class="profile-hero-message">
-                <i data-lucide="trending-up"></i>
-                <span>Only 5 lessons to become Pro!</span>
-            </div>
+        <!-- Welcome Section -->
+        <div class="mb-8">
+            <h1 style="font-size: var(--font-size-3xl); margin-bottom: var(--space-2);">Welcome back, Kristina</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">Fall 2025 • CPCC • MAT 143 & ENG 111</p>
         </div>
 
-        <!-- Toggle -->
-        <div class="flex justify-center mb-24">
-            <div class="switch">
-                <button class="switch-item active" data-view="progress">Progress</button>
-                <button class="switch-item" data-view="calendar">Calendar</button>
-            </div>
-        </div>
-
-        <!-- Progress View -->
-        <div id="progress-view">
-            <!-- Course Cards -->
-            <div class="grid-cols-2 mb-32">
-                <div class="course-card">
-                    <div class="course-card-content">
-                        <div class="course-card-cover bg-purple-light">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <text x="40" y="55" text-anchor="middle" fill="#BA68C8" font-size="36" font-weight="600" font-family="Inter">1</text>
-                            </svg>
-                        </div>
-                        <div class="course-card-body">
-                            <div class="course-card-header">
-                                <h3 class="course-card-title">MAT 143: Quantitative Literacy</h3>
-                                <button class="btn-icon" aria-label="Menu" style="width: 24px; height: 24px; padding: 4px; font-size: 16px;">
-                                    <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
-                                </button>
-                            </div>
-                            <div>
-                                <p class="course-card-progress-info">5/8 chapters | 63%</p>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill" style="width: 63%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card">
-                    <div class="course-card-content">
-                        <div class="course-card-cover bg-blue-light">
-                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                <path d="M25 30H55M25 40H55M25 50H45" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <div class="course-card-body">
-                            <div class="course-card-header">
-                                <h3 class="course-card-title">ENG 111: Writing & Inquiry</h3>
-                                <button class="btn-icon" aria-label="Menu" style="width: 24px; height: 24px; padding: 4px;">
-                                    <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
-                                </button>
-                            </div>
-                            <div>
-                                <p class="course-card-progress-info">2/3 essays | 67%</p>
-                                <div class="progress-bar-container">
-                                    <div class="progress-bar-fill" style="width: 67%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="course-card-banner">
-                        <i data-lucide="bell"></i>
-                        <span class="course-card-banner-text">Essay 3 due next week</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats -->
-            <div class="grid-cols-3 mb-32">
-                <div class="progress-info-card">
-                    <div class="progress-info-number">10</div>
-                    <div class="progress-info-label">Courses completed</div>
-                </div>
-                <div class="progress-info-card">
-                    <div class="progress-info-number">8/10</div>
-                    <div class="progress-info-label">Average score</div>
-                </div>
-                <div class="progress-info-card">
-                    <div class="progress-info-number">3</div>
-                    <div class="progress-info-label">Certificates obtained</div>
-                </div>
-            </div>
-
-            <!-- Promo -->
-            <div class="promo-card">
-                <svg class="promo-card-illustration" viewBox="0 0 120 120" fill="none">
-                    <circle cx="60" cy="60" r="50" fill="#FE5A4A" opacity="0.2"/>
-                    <path d="M60 30L45 60H50L45 85L75 60H70L75 30H60Z" fill="#FE5A4A"/>
-                </svg>
-                <h2 class="promo-card-title">Looking for new skills?</h2>
-                <p class="promo-card-description">Explore the offering of advanced courses, designed to elevate your skills!</p>
-                <button class="btn-fill">View courses</button>
-            </div>
-        </div>
-
-        <!-- Calendar View (Hidden) -->
-        <div id="calendar-view" class="hidden">
-            <div class="calendar-header mb-16">
-                <button class="calendar-header-btn">
-                    <i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i>
-                </button>
-                <h2 class="calendar-header-title">October 2025</h2>
-                <button class="calendar-header-btn">
-                    <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
-                </button>
-            </div>
-
-            <div class="calendar-week mb-24">
-                <div class="calendar-day">
-                    <div class="calendar-day-number">14</div>
-                    <div class="calendar-day-label">mon</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="calendar-day-number">15</div>
-                    <div class="calendar-day-label">tue</div>
-                </div>
-                <div class="calendar-day active has-event">
-                    <div class="calendar-day-number">16</div>
-                    <div class="calendar-day-label">wed</div>
-                </div>
-                <div class="calendar-day has-event">
-                    <div class="calendar-day-number">17</div>
-                    <div class="calendar-day-label">thu</div>
-                </div>
-                <div class="calendar-day has-event">
-                    <div class="calendar-day-number">18</div>
-                    <div class="calendar-day-label">fri</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="calendar-day-number">19</div>
-                    <div class="calendar-day-label">sat</div>
-                </div>
-                <div class="calendar-day">
-                    <div class="calendar-day-number">20</div>
-                    <div class="calendar-day-label">sun</div>
-                </div>
-            </div>
-
-            <div class="flex flex-col gap-16">
-                <div class="calendar-event-card">
-                    <div class="calendar-event-time">
-                        <div class="flex items-center gap-8">
-                            <i data-lucide="clock" style="width: 12px; height: 12px; color: var(--orange);"></i>
-                            <span class="calendar-event-time-text">10:00 - 10:30</span>
-                        </div>
-                        <button class="btn-icon" style="width: 24px; height: 24px; padding: 4px;">
-                            <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
-                        </button>
+        <!-- Critical Deadlines Alert -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="alert-triangle" style="width: 20px; height: 20px; color: var(--white);"></i>
                     </div>
                     <div>
-                        <h3 class="calendar-event-title">Chapter 7 Review</h3>
-                        <p class="calendar-event-hint">MAT 143: Measurement & Conversions</p>
+                        <h3 style="margin: 0; color: var(--danger-red);">Upcoming Critical Deadlines</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 (Chapters 6 & 7) • Essay 3 • Final Exams</p>
+                    </div>
+                </div>
+            </div>
+                            </div>
+
+        <!-- Course Progress -->
+        <div class="grid grid-cols-2 mb-8">
+            <div class="course-card">
+                <div class="course-header">
+                    <div class="course-icon math">M</div>
+                    <div class="course-info">
+                        <h3>MAT 143: Quantitative Literacy</h3>
+                        <p>Chapters 6 & 7 • Test 3 Prep</p>
+                            </div>
+                        </div>
+                <div class="course-progress">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress: 5/8 chapters</span>
+                        <span class="progress-percentage">63%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 63%;"></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="flex justify-between items-center">
+                        <span class="badge badge-warning">Test 3: Nov 3-7</span>
+                        <a href="tutor.html" class="btn btn-primary">Study Now</a>
+                    </div>
+                            </div>
+                        </div>
+                        
+            <div class="course-card">
+                <div class="course-header">
+                    <div class="course-icon english">E</div>
+                    <div class="course-info">
+                        <h3>ENG 111: Writing & Inquiry</h3>
+                        <p>Analytical Essay • Research Paper</p>
+                                        </div>
+                                    </div>
+                <div class="course-progress">
+                    <div class="progress-header">
+                        <span class="progress-text">Progress: 2/4 essays</span>
+                        <span class="progress-percentage">67%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 67%;"></div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="flex justify-between items-center">
+                        <span class="badge badge-warning">Essay 3: Nov 15</span>
+                        <a href="english_materials.html" class="btn btn-primary">Write Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Deadlines -->
+        <div class="grid grid-cols-1 mb-8">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Upcoming Deadlines</h2>
+                                    </div>
+                <div class="card-body">
+                    <div class="grid grid-cols-1 gap-4">
+                        <!-- Test 3 -->
+                        <div class="deadline-card urgent">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">MAT 143 Test 3</h3>
+                                <span class="deadline-date">Nov 3-7</span>
+                        </div>
+                            <p class="deadline-description">Chapters 6 (Personal Finance) & 7 (Measurement & Conversions)</p>
+                    </div>
+                                
+                        <!-- Essay 3 -->
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">ENG 111 Essay 3: Analytical Essay</h3>
+                                <span class="deadline-date">Nov 15</span>
+                            </div>
+                            <p class="deadline-description">1000-1250 words • MLA format • Minimum 2 credible sources</p>
+                        </div>
+
+                        <!-- Test 4 -->
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">MAT 143 Test 4</h3>
+                                <span class="deadline-date">Dec 8-12</span>
+                            </div>
+                            <p class="deadline-description">Chapters 10 (Probability) & 11 (Statistics)</p>
+                    </div>
+                                
+                        <!-- Essay 4 -->
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">ENG 111 Essay 4: Research Paper</h3>
+                                <span class="deadline-date">Dec 8</span>
+                            </div>
+                            <p class="deadline-description">1500-2000 words • MLA format • Minimum 5 credible sources</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3 mb-8">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--math-purple);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Study Math</h3>
+                    <p style="margin-bottom: var(--space-4);">Access chapter guides, formulas, and AI tutor</p>
+                    <a href="tutor.html" class="btn btn-primary w-full">Start Studying</a>
+                        </div>
+                    </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--english-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="pen-tool" style="width: 24px; height: 24px; color: var(--english-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Write Essays</h3>
+                    <p style="margin-bottom: var(--space-4);">Essay guides, rubrics, and writing resources</p>
+                    <a href="english_materials.html" class="btn btn-primary w-full">Start Writing</a>
+                    </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calendar" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">View Schedule</h3>
+                    <p style="margin-bottom: var(--space-4);">16-week calendar with all deadlines</p>
+                    <a href="calendar.html" class="btn btn-primary w-full">View Calendar</a>
+                </div>
+                </div>
+            </div>
+
+        <!-- Progress Overview -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Academic Progress</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700; color: var(--primary-blue); margin-bottom: var(--space-2);">7</div>
+                        <div style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Chapters Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700; color: var(--success-green); margin-bottom: var(--space-2);">2</div>
+                        <div style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Essays Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div style="font-size: var(--font-size-3xl); font-weight: 700; color: var(--warning-orange); margin-bottom: var(--space-2);">4</div>
+                        <div style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Upcoming Deadlines</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Mobile Bottom Nav -->
-    <nav class="bottom-nav" aria-label="Mobile navigation">
-        <a href="index.html" class="nav-item-mobile active" data-page="home">
-            <i data-lucide="home"></i>
-            <span>Home</span>
-        </a>
-        <a href="tutor.html" class="nav-item-mobile" data-page="courses">
-            <i data-lucide="book-open"></i>
-            <span>Courses</span>
-        </a>
-        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
-            <i data-lucide="calendar"></i>
-            <span>Calendar</span>
-        </a>
-        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
-            <i data-lucide="book-marked"></i>
-            <span>Resources</span>
-        </a>
-        <a href="#profile" class="nav-item-mobile" data-page="profile">
-            <i data-lucide="user"></i>
-            <span>Profile</span>
-        </a>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item active">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
     </nav>
 
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
         
-        // View toggle
-        document.querySelectorAll('.switch-item').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.switch-item').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-                
-                const view = this.dataset.view;
-                if (view === 'progress') {
-                    document.getElementById('progress-view').classList.remove('hidden');
-                    document.getElementById('calendar-view').classList.add('hidden');
-                } else {
-                    document.getElementById('progress-view').classList.add('hidden');
-                    document.getElementById('calendar-view').classList.remove('hidden');
-                }
-            });
-        });
-        
-        // Bottom nav active state
+        // Set active nav item based on current page
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        document.querySelectorAll('.nav-item-mobile').forEach(item => {
-            const page = item.dataset.page;
-            if ((currentPage === 'index.html' || currentPage === '') && page === 'home') {
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === currentPage || 
+                (currentPage === 'index.html' && item.getAttribute('href') === 'index.html')) {
                 item.classList.add('active');
+            } else {
+                item.classList.remove('active');
             }
         });
     </script>
