@@ -4,164 +4,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>In-Text Citation Guide | ENG 111</title>
+    <meta name="description" content="Complete guide to MLA in-text citations for ENG 111 essays.">
     
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../public/favicons/favicon.ico">
-    <link rel="stylesheet" href="../src/styles/globals.css">
+    
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="../src/styles/professional-academic.css">
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
-    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="../english_materials.html" class="flex items-center space-x-2">
-                <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Back</span>
-            </a>
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-sapphire-500 rounded-lg flex items-center justify-center">
-                    <i data-lucide="link" class="w-5 h-5 text-white"></i>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="../index.html" class="nav-link">Dashboard</a>
+                    <a href="../tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="../english_materials.html" class="nav-link active">Writing Coach</a>
+                    <a href="../calendar.html" class="nav-link">Calendar</a>
+                    <a href="../formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
                 </div>
-                <h1 class="text-lg font-medium">In-Text Citations</h1>
             </div>
         </div>
     </header>
 
-    <main id="main-content" class="flex-1 container mx-auto px-4 py-8 max-w-4xl">
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="info" class="w-5 h-5 mr-2"></i>
-                What are In-Text Citations?
-            </h2>
-            <p class="mb-4">
-                In-text citations (also called parenthetical citations) are brief references in your paper that tell readers where information came from. They correspond to fuller entries on your Works Cited page.
-            </p>
-            <div class="bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 p-4 rounded-lg">
-                <strong>Basic Format:</strong> (Author Last Name Page Number)
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8); max-width: 900px;">
+        
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                <a href="../index.html" style="color: var(--primary-blue); text-decoration: none;">Dashboard</a> > 
+                <a href="../english_materials.html" style="color: var(--primary-blue); text-decoration: none;">Writing Coach</a> > 
+                <span style="color: var(--neutral-gray-light);">In-Text Citations</span>
+            </nav>
+        </div>
+
+        <!-- Page Header -->
+        <div class="card mb-8" style="background: linear-gradient(135deg, var(--english-blue-light) 0%, #f0f9ff 100%);">
+            <div class="card-body">
+                <h1 style="margin: 0; color: var(--english-blue);">MLA In-Text Citations</h1>
+                <p style="margin: var(--space-2) 0 0 0; color: var(--neutral-gray-light); font-size: var(--font-size-lg);">Quick reference guide for citing sources in your essays</p>
             </div>
-        </section>
+        </div>
 
-        <section class="card mb-8">
-            <h2 class="card-header">Basic In-Text Citation Examples</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="font-semibold mb-2">1. Author + Page Number</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm mb-2">(Smith 42).</code>
-                    <p class="text-sm text-smokey-quartz-600">Note: No comma between author and page number</p>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">2. Author Named in Sentence</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">According to Smith, "happiness is subjective" (42).</code>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">3. No Page Number (Web Sources)</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">(Smith).</code>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">4. Multiple Authors (2)</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">(Smith and Jones 45).</code>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">5. Multiple Authors (3+)</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">(Smith et al. 23).</code>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">6. No Author (Use Title)</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">("Impact of Social Media" 12).</code>
-                    <p class="text-sm text-smokey-quartz-600 mt-2">Use quotes for article titles, italics for book titles</p>
-                </div>
+        <!-- Basic Format -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Basic Format</h2>
             </div>
-        </section>
-
-        <section class="card mb-8">
-            <h2 class="card-header">Where Does the Citation Go?</h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold mb-2">End of Sentence (Most Common)</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Social media affects mental health (Smith 15).</code>
-                    <p class="text-xs mt-2 text-smokey-quartz-600">Citation comes BEFORE the period</p>
+            <div class="card-body">
+                <div style="background-color: var(--primary-blue-light); padding: var(--space-4); border-radius: var(--radius-md); border-left: 4px solid var(--primary-blue); margin-bottom: var(--space-4);">
+                    <p style="margin: 0; font-size: var(--font-size-lg); font-weight: 600; color: var(--primary-blue);">(Author Last Name Page Number)</p>
                 </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">After a Quotation</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Smith argues that "social media harms teens" (42).</code>
-                    <p class="text-xs mt-2 text-smokey-quartz-600">Citation after quote, before period</p>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold mb-2">Block Quote (4+ lines)</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm whitespace-pre">Smith explains:
-     Social media companies design their algorithms
-     to maximize engagement, which often means showing
-     users content that triggers strong emotions. (45)</code>
-                    <p class="text-xs mt-2 text-smokey-quartz-600">Citation comes AFTER the period in block quotes</p>
-                </div>
+                <p style="margin: 0;">In-text citations briefly identify sources within your paper and correspond to full entries on your Works Cited page.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="alert-circle" class="w-5 h-5 mr-2"></i>
-                Common Mistakes
-            </h2>
-            <div class="space-y-3">
-                <div class="p-3 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded">
-                    <strong class="text-ruby-700">❌ Wrong:</strong> <code>(Smith, 42)</code><br>
-                    <strong class="text-emerald-700">✅ Right:</strong> <code>(Smith 42)</code><br>
-                    <small>No comma between author and page</small>
-                </div>
-                <div class="p-3 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded">
-                    <strong class="text-ruby-700">❌ Wrong:</strong> <code>(page 42)</code><br>
-                    <strong class="text-emerald-700">✅ Right:</strong> <code>(Smith 42)</code><br>
-                    <small>Don't write "page" or "pg."</small>
-                </div>
-                <div class="p-3 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded">
-                    <strong class="text-ruby-700">❌ Wrong:</strong> <code>Smith says this (42).</code><br>
-                    <strong class="text-emerald-700">✅ Right:</strong> <code>Smith says "this" (42).</code><br>
-                    <small>Use quotation marks for exact words</small>
+        <!-- Common Examples -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Common Citation Examples</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Example 1 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">1. Author + Page Number</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">(Smith 42).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Note: No comma between author and page number</p>
+                    </div>
+
+                    <!-- Example 2 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">2. Author in Signal Phrase</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">Smith argues that "quotation here" (42).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">When you name the author in your sentence, only include page number</p>
+                    </div>
+
+                    <!-- Example 3 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">3. No Author (Use Title)</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">("Article Title" 15).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Use shortened title if no author is listed</p>
+                    </div>
+
+                    <!-- Example 4 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">4. Website (No Page Number)</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">(Jones).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Online sources without page numbers only need author name</p>
+                    </div>
+
+                    <!-- Example 5 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">5. Two Authors</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">(Smith and Jones 25).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Use "and" between two authors</p>
+                    </div>
+
+                    <!-- Example 6 -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0;">6. Three or More Authors</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md); margin-bottom: var(--space-2);">
+                            <code style="font-size: var(--font-size-base);">(Smith et al. 33).</code>
+                        </div>
+                        <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">Use first author's last name followed by "et al."</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="check-circle" class="w-5 h-5 mr-2"></i>
-                Quick Tips
-            </h2>
-            <ul class="space-y-2 text-sm">
-                <li>✅ <strong>Cite EVERY time</strong> you use someone else's ideas (quote or paraphrase)</li>
-                <li>✅ <strong>Match your in-text citation</strong> to your Works Cited entry</li>
-                <li>✅ <strong>Place citation</strong> as close as possible to the borrowed material</li>
-                <li>✅ <strong>When in doubt</strong>, cite it—better safe than plagiarizing</li>
-            </ul>
-        </section>
-
-        <section class="card mb-8">
-            <h2 class="card-header">Related Resources</h2>
-            <div class="grid sm:grid-cols-2 gap-4">
-                <a href="mla-basics.html" class="btn btn-secondary">
-                    <i data-lucide="book-open" class="w-4 h-4"></i>
-                    MLA Basics
-                </a>
-                <a href="works-cited.html" class="btn btn-secondary">
-                    <i data-lucide="list" class="w-4 h-4"></i>
-                    Works Cited Guide
-                </a>
+        <!-- Important Rules -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Important Rules</h2>
             </div>
-        </section>
+            <div class="card-body">
+                <ul style="margin: 0; padding-left: var(--space-6);">
+                    <li style="margin-bottom: var(--space-3);">Citation goes BEFORE the period at the end of the sentence</li>
+                    <li style="margin-bottom: var(--space-3);">No comma between author name and page number</li>
+                    <li style="margin-bottom: var(--space-3);">If quoting, the citation goes AFTER the closing quotation mark</li>
+                    <li style="margin-bottom: var(--space-3);">Every in-text citation must have a matching Works Cited entry</li>
+                    <li style="margin: 0;">Use the same name/title format as your Works Cited entry</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--english-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--english-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Works Cited</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Full citation format</p>
+                    <a href="works-cited.html" class="btn btn-primary w-full">View Guide</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="shield-check" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Avoid Plagiarism</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Proper citation rules</p>
+                    <a href="plagiarism.html" class="btn btn-primary w-full">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="arrow-left" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Writing Coach</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Back to essay guides</p>
+                    <a href="../english_materials.html" class="btn btn-primary w-full">Go Back</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t mt-auto py-6 text-center text-sm">
-        <a href="../english_materials.html" class="text-sapphire-600 hover:underline">Writing Coach</a>
-    </footer>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="../index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="../tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="../english_materials.html" class="mobile-nav-item active">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="../calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="../formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+    </nav>
 
-    <script>lucide.createIcons();</script>
-    <script src="../src/js/mobile-menu.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === '../english_materials.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
-

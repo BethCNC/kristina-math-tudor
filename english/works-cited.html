@@ -4,190 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works Cited Guide | ENG 111</title>
+    <meta name="description" content="Complete guide to creating Works Cited pages in MLA 9th edition for ENG 111 essays.">
     
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../public/favicons/favicon.ico">
-    <link rel="stylesheet" href="../src/styles/globals.css">
+    
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="../src/styles/professional-academic.css">
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
-    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="../english_materials.html" class="flex items-center space-x-2">
-                <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                <span>Back</span>
-            </a>
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 bg-sapphire-500 rounded-lg flex items-center justify-center">
-                    <i data-lucide="list" class="w-5 h-5 text-white"></i>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="../index.html" class="nav-link">Dashboard</a>
+                    <a href="../tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="../english_materials.html" class="nav-link active">Writing Coach</a>
+                    <a href="../calendar.html" class="nav-link">Calendar</a>
+                    <a href="../formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
                 </div>
-                <h1 class="text-lg font-medium">Works Cited Guide</h1>
             </div>
         </div>
     </header>
 
-    <main id="main-content" class="flex-1 container mx-auto px-4 py-8 max-w-4xl">
-        <!-- Page Setup -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="info" class="w-5 h-5 mr-2"></i>
-                Works Cited Page Setup
-            </h2>
-            <ul class="space-y-2 text-sm">
-                <li>• Start on a new page at the end of your paper</li>
-                <li>• Center the title "Works Cited" (not bolded or underlined)</li>
-                <li>• List all sources in alphabetical order by first word</li>
-                <li>• Use hanging indent (first line flush left, others indented 1/2 inch)</li>
-                <li>• Double-space everything (no extra spaces between entries)</li>
-                <li>• Continue page numbers from body of paper</li>
-            </ul>
-        </section>
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8); max-width: 900px;">
+        
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                <a href="../index.html" style="color: var(--primary-blue); text-decoration: none;">Dashboard</a> > 
+                <a href="../english_materials.html" style="color: var(--primary-blue); text-decoration: none;">Writing Coach</a> > 
+                <span style="color: var(--neutral-gray-light);">Works Cited</span>
+            </nav>
+        </div>
 
-        <!-- Book -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="book" class="w-5 h-5 mr-2"></i>
-                Book (Print)
-            </h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Format:</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">Author Last Name, First Name. <em>Book Title</em>. Publisher, Year.</code>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Example:</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Gladwell, Malcolm. <em>Outliers: The Story of Success</em>. Little, Brown and Company, 2008.</code>
+        <!-- Page Header -->
+        <div class="card mb-8" style="background: linear-gradient(135deg, var(--english-blue-light) 0%, #f0f9ff 100%);">
+            <div class="card-body">
+                <h1 style="margin: 0; color: var(--english-blue);">Works Cited Guide</h1>
+                <p style="margin: var(--space-2) 0 0 0; color: var(--neutral-gray-light); font-size: var(--font-size-lg);">MLA 9th Edition Works Cited examples and formatting</p>
+            </div>
+        </div>
+
+        <!-- Basic Format -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Works Cited Page Format</h2>
+            </div>
+            <div class="card-body">
+                <ul style="margin: 0; padding-left: var(--space-6);">
+                    <li style="margin-bottom: var(--space-3);">Start on a new page after your essay</li>
+                    <li style="margin-bottom: var(--space-3);">Center the title "Works Cited" at top (no bold, italics, or underline)</li>
+                    <li style="margin-bottom: var(--space-3);">Double-space all entries</li>
+                    <li style="margin-bottom: var(--space-3);">Use hanging indent (first line flush left, rest indented ½ inch)</li>
+                    <li style="margin: 0;">Alphabetize by author's last name (or by title if no author)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Common Citation Examples -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Common Citation Examples</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Book -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-2) 0;">Book (Print)</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md);">
+                            <code style="font-size: var(--font-size-sm);">Author Last, First. <em>Book Title</em>. Publisher, Year.</code>
+                        </div>
+                    </div>
+
+                    <!-- Website -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-2) 0;">Website</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md);">
+                            <code style="font-size: var(--font-size-sm);">Author Last, First. "Article Title." <em>Website Name</em>, Publisher, Date, URL.</code>
+                        </div>
+                    </div>
+
+                    <!-- Journal Article -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-2) 0;">Journal Article</h3>
+                        <div style="background-color: var(--neutral-gray-bg); padding: var(--space-3); border-radius: var(--radius-md);">
+                            <code style="font-size: var(--font-size-sm);">Author Last, First. "Article Title." <em>Journal Name</em>, vol. X, no. X, Year, pages.</code>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Article from Database -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="database" class="w-5 h-5 mr-2"></i>
-                Article from Database
-            </h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Format:</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">Author. "Article Title." <em>Journal Name</em>, vol. #, no. #, Year, pp. ##-##. <em>Database Name</em>, DOI or URL.</code>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Example:</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Smith, John. "The Impact of Social Media on Teens." <em>Journal of Adolescent Health</em>, vol. 45, no. 2, 2020, pp. 123-135. <em>EBSCO</em>, doi:10.1234/jah.2020.45.2.123.</code>
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--english-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="link" style="width: 24px; height: 24px; color: var(--english-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">In-Text Citations</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Parenthetical citation guide</p>
+                    <a href="citation-guide.html" class="btn btn-primary w-full">View Guide</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Website -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="globe" class="w-5 h-5 mr-2"></i>
-                Website
-            </h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Format:</h3>
-                    <code class="block p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded text-sm">Author. "Page Title." <em>Website Name</em>, Publisher/Sponsor, Date, URL. Accessed Date.</code>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Example:</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Grant, Adam. "Does Trying to Be Happy Make Us Unhappy?" <em>Psychology Today</em>, Sussex Publishers, 15 May 2020, www.psychologytoday.com/us/blog/give-and-take/202005/does-trying-be-happy-make-us-unhappy. Accessed 10 Oct. 2025.</code>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="shield-check" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Avoid Plagiarism</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Academic integrity guide</p>
+                    <a href="plagiarism.html" class="btn btn-primary w-full">Learn More</a>
                 </div>
             </div>
-        </section>
 
-        <!-- No Author -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="help-circle" class="w-5 h-5 mr-2"></i>
-                Source with No Author
-            </h2>
-            <div class="space-y-4">
-                <p class="text-sm">Start with the title, then continue with the rest of the citation:</p>
-                <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">"The Benefits of Exercise." <em>Health Magazine</em>, vol. 12, no. 3, 2021, pp. 45-50.</code>
-            </div>
-        </section>
-
-        <!-- Multiple Authors -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="users" class="w-5 h-5 mr-2"></i>
-                Multiple Authors
-            </h2>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Two Authors:</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Smith, John, and Jane Doe. <em>Title</em>. Publisher, Year.</code>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-sm mb-2">Three or More Authors:</h3>
-                    <code class="block p-3 bg-white dark:bg-smokey-quartz-900 rounded text-sm">Smith, John, et al. <em>Title</em>. Publisher, Year.</code>
-                    <p class="text-xs mt-2 text-smokey-quartz-600">Note: "et al." means "and others"</p>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="arrow-left" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Writing Coach</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Back to essay guides</p>
+                    <a href="../english_materials.html" class="btn btn-primary w-full">Go Back</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Common Mistakes -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="alert-triangle" class="w-5 h-5 mr-2"></i>
-                Common Mistakes to Avoid
-            </h2>
-            <div class="space-y-3">
-                <div class="p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg">
-                    <strong class="text-ruby-700 dark:text-ruby-300">❌ Forgetting hanging indent</strong>
-                    <p class="text-sm mt-1">Second and subsequent lines must be indented 1/2 inch</p>
-                </div>
-                <div class="p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg">
-                    <strong class="text-ruby-700 dark:text-ruby-300">❌ Not alphabetizing</strong>
-                    <p class="text-sm mt-1">Entries must be in alphabetical order by first word</p>
-                </div>
-                <div class="p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg">
-                    <strong class="text-ruby-700 dark:text-ruby-300">❌ Wrong punctuation</strong>
-                    <p class="text-sm mt-1">Use periods between major elements, commas within elements</p>
-                </div>
-                <div class="p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg">
-                    <strong class="text-ruby-700 dark:text-ruby-300">❌ Italics vs. quotes</strong>
-                    <p class="text-sm mt-1">Use italics for longer works (books, journals), quotes for shorter works (articles, chapters)</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tools -->
-        <section class="card mb-8">
-            <h2 class="card-header">
-                <i data-lucide="tool" class="w-5 h-5 mr-2"></i>
-                Citation Tools
-            </h2>
-            <div class="grid sm:grid-cols-2 gap-4">
-                <a href="https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_works_cited_page_basic_format.html" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100">
-                    <strong class="flex items-center justify-between mb-2">
-                        Purdue OWL
-                        <i data-lucide="external-link" class="w-4 h-4"></i>
-                    </strong>
-                    <p class="text-sm">Comprehensive MLA Works Cited examples</p>
-                </a>
-                <a href="https://researchguides.cpcc.edu/citing" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100">
-                    <strong class="flex items-center justify-between mb-2">
-                        CPCC Library
-                        <i data-lucide="external-link" class="w-4 h-4"></i>
-                    </strong>
-                    <p class="text-sm">Citation help from CPCC librarians</p>
-                </a>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t mt-auto py-6 text-center text-sm">
-        <a href="../english_materials.html" class="text-sapphire-600 hover:underline">Writing Coach</a>
-    </footer>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="../index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="../tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="../english_materials.html" class="mobile-nav-item active">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="../calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="../formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+    </nav>
 
-    <script>lucide.createIcons();</script>
-    <script src="../src/js/mobile-menu.js"></script>
-    <script src="../src/js/focus-mode.js"></script>
-    <script src="../src/js/reading-mode.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === '../english_materials.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
-

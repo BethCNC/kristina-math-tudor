@@ -4,316 +4,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 11: Statistics & Data Analysis - MAT 143</title>
-    <meta name="description" content="Learn statistics concepts including measures of center, normal distribution, z-scores, and expected value for MAT 143.">
+    <meta name="description" content="Learn statistics concepts including mean, median, mode, standard deviation, and normal distribution for MAT 143 Test 4.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
     
-    <!-- Enhanced Design System with Semantic Tokens -->
+    <!-- Professional Academic Design System -->
     <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen">
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Enhanced Responsive Header -->
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-smokey-quartz-900 dark:text-smokey-quartz-100 hover:text-emerald-600 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
-                        <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
-                        <span class="text-lg font-medium sm:hidden">Back</span>
-                    </a>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-sapphire-500 rounded-lg flex items-center justify-center">
-                        <i data-lucide="bar-chart-3" aria-hidden="true" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-lg sm:text-xl font-medium">Chapter 11</h1>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Statistics & Data Analysis</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl" role="main">
-        <!-- Chapter Overview -->
-        <section class="mb-8 card">
-            <h2 class="card-header">📊 Chapter Overview</h2>
-            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-4">
-                Learn to analyze and interpret data! This chapter covers measures of center, spread, normal distributions, z-scores, and how to draw meaningful conclusions from data.
-            </p>
-            <div class="alert alert-info">
-                <i data-lucide="info" class="w-5 h-5 flex-shrink-0"></i>
-                <div>
-                    <strong>Test 4 Coverage:</strong> This chapter will appear on Test 4 (Dec 8-12) along with Chapter 10. Focus on calculating mean, median, standard deviation, and z-scores!
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+        
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                <a href="index.html" style="color: var(--primary-blue); text-decoration: none;">Dashboard</a> > 
+                <a href="tutor.html" style="color: var(--primary-blue); text-decoration: none;">Math Tutor</a> > 
+                <span style="color: var(--neutral-gray-light);">Chapter 11: Statistics</span>
+            </nav>
+        </div>
+
+        <!-- Chapter Hero -->
+        <div class="card mb-8" style="background: linear-gradient(135deg, var(--primary-blue-light) 0%, #f0f9ff 100%); border-left: 4px solid var(--primary-blue);">
+            <div class="card-body">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 style="margin: 0 0 var(--space-2) 0; color: var(--primary-blue);">Chapter 11: Statistics & Data Analysis</h1>
+                        <p style="margin: 0; color: var(--neutral-gray-light); font-size: var(--font-size-lg);">Measures of Center, Spread, and Normal Distribution</p>
+                    </div>
+                    <div class="badge badge-info" style="font-size: var(--font-size-base); padding: var(--space-2) var(--space-4);">Test 4 Material</div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Key Formulas Section -->
-        <section class="mb-8" aria-labelledby="formulas-heading">
-            <h2 id="formulas-heading" class="text-2xl font-semibold mb-6">🔢 Key Formulas</h2>
-            
-            <!-- Mean -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Mean (Average)</h3>
-                <p class="formula">Mean = Σx / n</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The arithmetic average: add all values and divide by the count.
-                </p>
-                <ul class="text-sm space-y-1 mt-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li><strong>Σx</strong> = Sum of all data values</li>
-                    <li><strong>n</strong> = Number of data values</li>
-                </ul>
-                <div class="example">
-                    <strong>Example:</strong> Test scores: 85, 90, 78, 92, 88<br>
-                    Mean = (85 + 90 + 78 + 92 + 88) / 5 = 433 / 5 = 86.6
-                        </div>
+        <!-- Test 4 Focus Alert -->
+        <div class="card mb-8" style="border-left: 4px solid var(--warning-orange); background: linear-gradient(135deg, #fef3c7 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="target" style="width: 20px; height: 20px; color: var(--white);"></i>
                     </div>
-
-            <!-- Median -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Median (Middle Value)</h3>
-                <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The middle value when data is sorted. If there are two middle values, take their average.
-                </p>
-                <div class="example">
-                    <strong>Example 1 (odd count):</strong> 78, 85, 88, 90, 92<br>
-                    Median = 88 (middle value)<br>
-                    <br>
-                    <strong>Example 2 (even count):</strong> 78, 85, 88, 90<br>
-                    Median = (85 + 88) / 2 = 86.5
+                    <div>
+                        <h3 style="margin: 0; color: var(--warning-orange);">Test 4 Preparation</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 4 covers Chapters 10 & 11 • December 8-12, 2025</p>
+                    </div>
                 </div>
-                        </div>
+            </div>
+        </div>
 
-            <!-- Mode -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Mode (Most Common)</h3>
-                <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The value that appears most frequently. A dataset can have no mode, one mode, or multiple modes.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> 5, 7, 7, 9, 12, 7, 15<br>
-                    Mode = 7 (appears 3 times)
-                        </div>
+        <!-- Section Navigation -->
+        <div class="grid grid-cols-3 mb-8">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="bar-chart-2" style="width: 24px; height: 24px; color: var(--white);"></i>
                     </div>
-
-            <!-- Expected Value - MISSING FORMULA ADDED -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">Expected Value</h3>
-                <p class="formula">E(X) = Σ(x × P(x))</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The weighted average where each outcome is multiplied by its probability. Used to predict long-run average outcomes.
-                </p>
-                <ul class="text-sm space-y-1 mt-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li><strong>E(X)</strong> = Expected Value</li>
-                    <li><strong>x</strong> = Each possible outcome value</li>
-                    <li><strong>P(x)</strong> = Probability of that outcome</li>
-                    <li><strong>Σ</strong> = Sum over all possible outcomes</li>
-                </ul>
-                <div class="example">
-                    <strong>Example - Quality Control:</strong> A factory inspects products. Based on historical data:<br>
-                    • 90% of products pass (0 defects): profit = $50<br>
-                    • 8% have minor defects: profit = $20<br>
-                    • 2% have major defects: loss = -$30<br>
-                    <br>
-                    E(X) = 50×(0.90) + 20×(0.08) + (-30)×(0.02)<br>
-                    E(X) = 45 + 1.6 - 0.6 = $46<br>
-                    <br>
-                    <strong>Interpretation:</strong> Average profit per product is $46.
-                </div>
-                        </div>
-
-            <!-- Standard Deviation (Sample) -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Standard Deviation (Sample)</h3>
-                <p class="formula">s = √[Σ(x - x̄)² / (n - 1)]</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    Measures how spread out the data is from the mean. Larger standard deviation = more spread out.
-                </p>
-                <ul class="text-sm space-y-1 mt-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li><strong>s</strong> = Sample standard deviation</li>
-                    <li><strong>x̄</strong> = Sample mean</li>
-                    <li><strong>n</strong> = Sample size</li>
-                </ul>
-                <div class="mt-3 p-3 bg-moonstone-100 dark:bg-smokey-quartz-900 rounded text-sm">
-                    <strong>Steps to calculate:</strong><br>
-                    1. Find the mean (x̄)<br>
-                    2. Subtract mean from each value: (x - x̄)<br>
-                    3. Square each difference: (x - x̄)²<br>
-                    4. Sum all squared differences<br>
-                    5. Divide by (n - 1)<br>
-                    6. Take the square root
-                        </div>
-                    </div>
-
-            <!-- Z-Score -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Z-Score (Standard Score)</h3>
-                <p class="formula">z = (x - x̄) / s</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    Measures how many standard deviations a data point is from the mean. Positive z = above mean, negative z = below mean.
-                </p>
-                <ul class="text-sm space-y-1 mt-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li><strong>z</strong> = z-score</li>
-                    <li><strong>x</strong> = data value</li>
-                    <li><strong>x̄</strong> = mean</li>
-                    <li><strong>s</strong> = standard deviation</li>
-                </ul>
-                <div class="example">
-                    <strong>Example:</strong> Test scores have mean = 75, standard deviation = 10<br>
-                    Your score: 85<br>
-                    z = (85 - 75) / 10 = 1.0<br>
-                    <br>
-                    <strong>Interpretation:</strong> Your score is 1 standard deviation above the mean.
+                    <h3 style="margin-bottom: var(--space-2);">Measures of Center</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Mean, median, mode</p>
+                    <a href="#measures-center" class="btn btn-primary w-full">Study Section</a>
                 </div>
             </div>
 
-            <!-- Empirical Rule (68-95-99.7) -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Empirical Rule (68-95-99.7 Rule)</h3>
-                <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    For <strong>normal (bell-shaped) distributions</strong>:
-                </p>
-                <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li>• <strong>68%</strong> of data falls within <strong>1 standard deviation</strong> of the mean (x̄ ± 1s)</li>
-                    <li>• <strong>95%</strong> of data falls within <strong>2 standard deviations</strong> of the mean (x̄ ± 2s)</li>
-                    <li>• <strong>99.7%</strong> of data falls within <strong>3 standard deviations</strong> of the mean (x̄ ± 3s)</li>
-                </ul>
-                <div class="example mt-3">
-                    <strong>Example:</strong> SAT scores are normally distributed with mean = 1000, s = 100<br>
-                    • 68% of students score between 900 and 1100<br>
-                    • 95% of students score between 800 and 1200<br>
-                    • 99.7% of students score between 700 and 1300
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="activity" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Measures of Spread</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Range, standard deviation</p>
+                    <a href="#measures-spread" class="btn btn-primary w-full">Study Section</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Real-World Applications -->
-        <section class="mb-8" aria-labelledby="applications-heading">
-            <h2 id="applications-heading" class="text-2xl font-semibold mb-6">💡 Real-World Applications</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="graduation-cap" class="w-6 h-6 text-sapphire-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">Academic Performance</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Schools use mean scores and standard deviations to compare student performance and identify students who need extra help.
-                            </p>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="trending-up" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Normal Distribution</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Bell curve, z-scores</p>
+                    <a href="#normal-distribution" class="btn btn-primary w-full">Study Section</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Formulas -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Key Formulas for Test 4</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Mean Formula -->
+                    <div class="card" id="measures-center" style="border-left: 4px solid var(--primary-blue);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Mean (Average)</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-xl); font-weight: 600;">Mean = Σx / n</code>
+                                    </div>
+                                    <p style="margin: 0 0 var(--space-3) 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        Sum of all values divided by number of values
+                                    </p>
+                                    <div style="background-color: #f0f9ff; padding: var(--space-3); border-radius: var(--radius-md); border-left: 3px solid var(--primary-blue);">
+                                        <p style="margin: 0; font-size: var(--font-size-sm);"><strong>Example:</strong> Data set: 5, 8, 10, 12, 15 → Mean = 50/5 = 10</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('Mean = Σx / n')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="activity" class="w-6 h-6 text-ruby-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">Medical Research</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Doctors use statistics to determine normal ranges for blood pressure, cholesterol, and other health metrics.
-                            </p>
+                    <!-- Standard Deviation Formula -->
+                    <div class="card" id="measures-spread" style="border-left: 4px solid var(--math-purple);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Standard Deviation</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-xl); font-weight: 600;">σ = √[Σ(x - μ)² / n]</code>
+                                    </div>
+                                    <p style="margin: 0 0 var(--space-3) 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        Measures spread of data around the mean
+                                    </p>
+                                    <div style="background-color: #faf5ff; padding: var(--space-3); border-radius: var(--radius-md); border-left: 3px solid var(--math-purple);">
+                                        <p style="margin: 0; font-size: var(--font-size-sm);"><strong>Note:</strong> Larger standard deviation = more spread out data</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('σ = √[Σ(x - μ)² / n]')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="trending-up" class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">Business Analytics</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Companies analyze sales data, customer satisfaction scores, and market trends to make informed decisions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="cloud-rain" class="w-6 h-6 text-aquamarine-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">Weather Forecasting</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Meteorologists use statistical models to predict temperature, precipitation, and severe weather events.
-                            </p>
+                    <!-- Z-Score Formula -->
+                    <div class="card" id="normal-distribution" style="border-left: 4px solid var(--success-green);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Z-Score</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-xl); font-weight: 600;">z = (x - μ) / σ</code>
+                                    </div>
+                                    <p style="margin: 0 0 var(--space-3) 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        x = data value, μ = mean, σ = standard deviation
+                                    </p>
+                                    <div style="background-color: #ecfdf5; padding: var(--space-3); border-radius: var(--radius-md); border-left: 3px solid var(--success-green);">
+                                        <p style="margin: 0; font-size: var(--font-size-sm);"><strong>Example:</strong> If mean = 100, SD = 15, value = 115 → z = (115-100)/15 = 1.0</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('z = (x - μ) / σ')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Study Tips -->
-        <section class="mb-8 card">
-            <h2 class="card-header">📚 Study Tips for Chapter 11</h2>
-            <ul class="space-y-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Know measures of center:</strong> Practice finding mean, median, and mode for different datasets.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Master z-scores:</strong> Understand how to interpret positive/negative z-scores and use them to compare across different datasets.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Memorize the 68-95-99.7 rule:</strong> This is essential for working with normal distributions.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Use your calculator efficiently:</strong> Learn statistical functions for mean and standard deviation (usually under STAT menu).</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Practice Expected Value problems:</strong> Connect probability concepts from Chapter 10 to statistical applications.</span>
-                </li>
-            </ul>
-        </section>
+        <!-- Practice Problems -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Practice Problems for Test 4</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Problem 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem 1: Calculate Mean</h3>
+                            <p style="margin: 0 0 var(--space-4) 0;">Find the mean of this data set: 12, 15, 18, 20, 25</p>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                                <p style="margin: 0; font-weight: 600;">Solution:</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Mean = (12 + 15 + 18 + 20 + 25) / 5 = 90/5 = 18</p>
+                            </div>
+                            <button class="btn btn-primary">Show Solution</button>
+                        </div>
+                    </div>
 
-        <!-- Navigation -->
-        <nav class="flex items-center justify-between pt-8 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700" aria-label="Chapter navigation">
-            <a href="chapter-10.html" class="btn btn-outline">
-                <i data-lucide="chevron-left" class="w-4 h-4"></i>
-                Previous: Chapter 10
-            </a>
-            <a href="index.html" class="btn btn-ghost">
-                <i data-lucide="home" class="w-4 h-4"></i>
-                Dashboard
-            </a>
-            <a href="index.html" class="btn btn-outline">
-                <i data-lucide="check-circle" class="w-4 h-4"></i>
-                Complete Course!
-            </a>
-        </nav>
+                    <!-- Problem 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem 2: Find Median</h3>
+                            <p style="margin: 0 0 var(--space-4) 0;">Find the median of this data set: 3, 7, 9, 15, 21, 24, 30</p>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                                <p style="margin: 0; font-weight: 600;">Solution:</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Data already sorted. Middle value (4th of 7) = 15</p>
+                            </div>
+                            <button class="btn btn-primary">Show Solution</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calculator" style="width: 24px; height: 24px; color: var(--math-purple);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">More Practice</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Additional problems and solutions</p>
+                    <a href="formula_lookup.html" class="btn btn-primary w-full">View Resources</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Study Guide</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Comprehensive chapter review</p>
+                    <a href="course_materials/formula_sheets/Unit_4_Formula_Sheet.html" class="btn btn-primary w-full">View Guide</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="target" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Test Prep</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Focus on Test 4 material</p>
+                    <a href="chapter-13.html" class="btn btn-primary w-full">Next Chapter</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-12 py-6">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-            <p>&copy; 2025 Kristina's Academic Dashboard | MAT 143 Fall 2025</p>
-            <p class="mt-2">
-                <a href="calendar.html" class="hover:text-emerald-600 transition-colors">Course Calendar</a> •
-                <a href="tutor.html" class="hover:text-emerald-600 transition-colors">AI Tutor</a> •
-                <a href="formula_lookup.html" class="hover:text-emerald-600 transition-colors">Formula Lookup</a>
-            </p>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item active">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
         </div>
-    </footer>
+    </nav>
 
-    <!-- Initialize Lucide Icons -->
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'tutor.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show success feedback
+                const button = event.target.closest('button');
+                const originalIcon = button.innerHTML;
+                button.innerHTML = '<i data-lucide="check"></i>';
+                button.style.backgroundColor = 'var(--success-green)';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalIcon;
+                    button.style.backgroundColor = '';
+                }, 1000);
+            });
+        }
+
+        // Smooth scrolling for section links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>

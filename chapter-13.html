@@ -4,377 +4,257 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 13: Voting & Apportionment - MAT 143</title>
-    <meta name="description" content="Learn voting methods and apportionment systems including plurality, runoff, Borda count, and various apportionment methods for MAT 143.">
+    <meta name="description" content="Learn voting methods and apportionment techniques for MAT 143.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
     
-    <!-- Enhanced Design System with Semantic Tokens -->
+    <!-- Professional Academic Design System -->
     <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen">
-    <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Enhanced Responsive Header -->
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-smokey-quartz-900 dark:text-smokey-quartz-100 hover:text-emerald-600 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
-                        <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
-                        <span class="text-lg font-medium sm:hidden">Back</span>
-                    </a>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-sapphire-500 rounded-lg flex items-center justify-center">
-                        <i data-lucide="vote" aria-hidden="true" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-lg sm:text-xl font-medium">Chapter 13</h1>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Voting & Apportionment</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl" role="main">
-        <!-- Chapter Overview -->
-        <section class="mb-8 card">
-            <h2 class="card-header">🗳️ Chapter Overview</h2>
-            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-4">
-                Explore the mathematics of democracy! This chapter covers election methods, voting paradoxes, and fair ways to distribute seats in representative bodies.
-            </p>
-            <div class="alert alert-info">
-                <i data-lucide="info" class="w-5 h-5 flex-shrink-0"></i>
-                <div>
-                    <strong>Test 1 Coverage:</strong> This chapter will appear on Test 1 (Sept 8-12) along with Chapter 1. Review voting methods and apportionment calculations!
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+        
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                <a href="index.html" style="color: var(--primary-blue); text-decoration: none;">Dashboard</a> > 
+                <a href="tutor.html" style="color: var(--primary-blue); text-decoration: none;">Math Tutor</a> > 
+                <span style="color: var(--neutral-gray-light);">Chapter 13: Voting & Apportionment</span>
+            </nav>
+        </div>
+
+        <!-- Chapter Hero -->
+        <div class="card mb-8" style="background: linear-gradient(135deg, var(--math-purple-light) 0%, #faf5ff 100%); border-left: 4px solid var(--math-purple);">
+            <div class="card-body">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 style="margin: 0 0 var(--space-2) 0; color: var(--math-purple);">Chapter 13: Voting & Apportionment</h1>
+                        <p style="margin: 0; color: var(--neutral-gray-light); font-size: var(--font-size-lg);">Voting Methods, Fairness Criteria, and Apportionment</p>
+                    </div>
+                    <div class="badge badge-success" style="font-size: var(--font-size-base); padding: var(--space-2) var(--space-4);">Test 1 - Completed</div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Voting Methods Section -->
-        <section class="mb-8" aria-labelledby="voting-heading">
-            <h2 id="voting-heading" class="text-2xl font-semibold mb-6">🗳️ Voting Methods</h2>
-            
-            <!-- Plurality Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">1. Plurality Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    The candidate with the most <strong>first-place votes</strong> wins (even if less than 50%).
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> In an election with 100 voters:<br>
-                    • Candidate A: 45 first-place votes<br>
-                    • Candidate B: 35 first-place votes<br>
-                    • Candidate C: 20 first-place votes<br>
-                    <strong>Winner:</strong> Candidate A (plurality, but not majority)
-                </div>
-            </div>
-
-            <!-- Majority Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">2. Majority Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    A candidate must receive <strong>more than 50%</strong> of first-place votes to win. If no one has a majority, a <strong>runoff election</strong> occurs between top two candidates.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> 100 total votes, need 51+ to win<br>
-                    • Candidate A: 45 votes → No majority, runoff needed<br>
-                    • Candidate B: 35 votes<br>
-                    • Candidate C: 20 votes<br>
-                    <strong>Runoff:</strong> A vs B
+        <!-- Section Navigation -->
+        <div class="grid grid-cols-3 mb-8">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="vote" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Voting Methods</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Plurality, runoff, ranked choice</p>
+                    <a href="#voting-methods" class="btn btn-primary w-full">Review Section</a>
                 </div>
             </div>
 
-            <!-- Borda Count Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">3. Borda Count Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    Voters rank all candidates. Points are assigned based on rank position. Candidate with the most total points wins.
-                </p>
-                <div class="mt-3 p-3 bg-moonstone-100 dark:bg-smokey-quartz-900 rounded">
-                    <p class="text-sm font-medium mb-2">Point System (for n candidates):</p>
-                    <ul class="text-sm space-y-1 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>• 1st place: n - 1 points</li>
-                        <li>• 2nd place: n - 2 points</li>
-                        <li>• 3rd place: n - 3 points</li>
-                        <li>• Last place: 0 points</li>
-                    </ul>
-                </div>
-                <div class="example">
-                    <strong>Example:</strong> 3 candidates (A, B, C), 10 voters<br>
-                    Rankings: 5 voters rank A→B→C, 3 voters rank B→C→A, 2 voters rank C→B→A<br>
-                    <strong>Borda points:</strong><br>
-                    • A: 5(2pts) + 3(0pts) + 2(0pts) = 10 points<br>
-                    • B: 5(1pt) + 3(2pts) + 2(1pt) = 13 points<br>
-                    • C: 5(0pts) + 3(1pt) + 2(2pts) = 7 points<br>
-                    <strong>Winner:</strong> Candidate B
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="scale" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Fairness Criteria</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Majority, Condorcet, monotonicity</p>
+                    <a href="#fairness" class="btn btn-primary w-full">Review Section</a>
                 </div>
             </div>
 
-            <!-- Instant Runoff Voting -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">4. Instant Runoff Voting (IRV)</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    Voters rank candidates by preference. If no one has a majority of first-place votes, eliminate the candidate with fewest first-place votes and redistribute those ballots to next preferences. Repeat until someone has a majority.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> 100 voters, 3 candidates<br>
-                    <strong>Round 1:</strong> A: 40, B: 35, C: 25 → Eliminate C<br>
-                    <strong>Round 2:</strong> Redistribute C's votes by 2nd preferences<br>
-                    Final: A: 48, B: 52 → <strong>Winner: B</strong>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="users" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Apportionment</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Hamilton's, Jefferson's methods</p>
+                    <a href="#apportionment" class="btn btn-primary w-full">Review Section</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Pairwise Comparison -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">5. Pairwise Comparison (Condorcet Method)</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    Compare each candidate head-to-head with every other candidate. The candidate who wins the most one-on-one matchups wins overall.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> 3 candidates (A, B, C)<br>
-                    • A vs B: A wins (60-40)<br>
-                    • A vs C: A wins (55-45)<br>
-                    • B vs C: B wins (65-35)<br>
-                    <strong>Winner:</strong> Candidate A (2 wins)
-                </div>
+        <!-- Key Concepts -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Key Concepts</h2>
             </div>
-        </section>
-
-        <!-- Apportionment Methods Section -->
-        <section class="mb-8" aria-labelledby="apportionment-heading">
-            <h2 id="apportionment-heading" class="text-2xl font-semibold mb-6">📊 Apportionment Methods</h2>
-            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-6">
-                Apportionment determines how to fairly divide seats (e.g., in Congress) among states based on population.
-            </p>
-
-            <!-- Standard Divisor - MISSING FORMULA ADDED -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">Standard Divisor (SD)</h3>
-                <p class="formula">SD = Total Population / Total Seats</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The "ideal" number of people per representative. Used as a starting point for all apportionment methods.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> A state has 12,000,000 people and 50 seats in the legislature.<br>
-                    SD = 12,000,000 / 50 = 240,000 people per seat<br>
-                    <em>This means ideally, each representative should represent 240,000 people.</em>
-                </div>
-            </div>
-
-            <!-- Standard Quota - MISSING FORMULA ADDED -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">Standard Quota (SQ)</h3>
-                <p class="formula">SQ = Subgroup Population / Standard Divisor</p>
-                <p class="text-sm mt-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    The "fair share" of seats for each state or district based on its population. Usually not a whole number, so rounding methods are needed.
-                </p>
-                <div class="example">
-                    <strong>Example:</strong> District A has 720,000 people; SD = 240,000<br>
-                    SQ = 720,000 / 240,000 = 3.00 seats<br>
-                    <br>
-                    <strong>Example 2:</strong> District B has 550,000 people; SD = 240,000<br>
-                    SQ = 550,000 / 240,000 = 2.29 seats<br>
-                    <em>District B deserves about 2.29 seats, but we must round to give whole seats.</em>
-                </div>
-            </div>
-
-            <!-- Hamilton Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Hamilton Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    <strong>Steps:</strong>
-                </p>
-                <ol class="list-decimal list-inside space-y-2 text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <li>Calculate Standard Divisor (SD) and each state's Standard Quota (SQ)</li>
-                    <li>Give each state the <strong>integer part</strong> of its quota (round down initially)</li>
-                    <li>If seats remain, give them one-by-one to states with the <strong>largest fractional remainders</strong></li>
-                </ol>
-                <div class="example mt-3">
-                    <strong>Example:</strong> 100 seats, 3 states<br>
-                    • State A: SQ = 45.6 → Initial: 45, Remainder: 0.6<br>
-                    • State B: SQ = 32.9 → Initial: 32, Remainder: 0.9<br>
-                    • State C: SQ = 21.5 → Initial: 21, Remainder: 0.5<br>
-                    Total initial: 45 + 32 + 21 = 98 (2 seats left)<br>
-                    <strong>Extra seats go to:</strong> B (0.9) and A (0.6)<br>
-                    <strong>Final:</strong> A: 46, B: 33, C: 21
-                </div>
-            </div>
-
-            <!-- Jefferson Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Jefferson Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    Use a <strong>modified divisor</strong> (smaller than SD) and round all quotas <strong>down</strong>. Adjust divisor until the correct total number of seats is reached.
-                </p>
-                <div class="mt-3 p-3 bg-moonstone-100 dark:bg-smokey-quartz-900 rounded text-sm">
-                    <strong>Advantage:</strong> Favors larger states<br>
-                    <strong>Method:</strong> Trial and error to find the right modified divisor
-                </div>
-            </div>
-
-            <!-- Webster Method -->
-            <div class="formula-card">
-                <h3 class="text-xl font-semibold mb-3 text-sapphire-900 dark:text-sapphire-100">Webster Method</h3>
-                <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2">
-                    Use a <strong>modified divisor</strong> and round quotas to the <strong>nearest whole number</strong> (standard rounding: 0.5 rounds up). Adjust divisor until correct total is reached.
-                </p>
-                <div class="mt-3 p-3 bg-moonstone-100 dark:bg-smokey-quartz-900 rounded text-sm">
-                    <strong>Advantage:</strong> Generally considered the fairest method<br>
-                    <strong>Currently used:</strong> For U.S. House of Representatives
-                </div>
-            </div>
-        </section>
-
-        <!-- Voting Paradoxes -->
-        <section class="mb-8 card">
-            <h2 class="card-header">⚠️ Voting Paradoxes & Fairness Criteria</h2>
-            <div class="space-y-4">
-                <div class="p-4 bg-carnelian-50 dark:bg-carnelian-900 dark:bg-opacity-20 rounded-lg border-l-4 border-carnelian-500">
-                    <h3 class="font-semibold mb-2 text-carnelian-900 dark:text-carnelian-100">Arrow's Impossibility Theorem</h3>
-                    <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        No voting system can satisfy all fairness criteria simultaneously (majority, monotonicity, independence of irrelevant alternatives, etc.).
-                    </p>
-                </div>
-                <div class="p-4 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded-lg border-l-4 border-sapphire-500">
-                    <h3 class="font-semibold mb-2 text-sapphire-900 dark:text-sapphire-100">Alabama Paradox</h3>
-                    <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        In Hamilton's method, increasing the total number of seats can cause a state to <em>lose</em> a seat!
-                    </p>
-                </div>
-                <div class="p-4 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg border-l-4 border-emerald-500">
-                    <h3 class="font-semibold mb-2 text-emerald-900 dark:text-emerald-100">Quota Rule</h3>
-                    <p class="text-sm text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        A state's apportionment should be either the floor or ceiling of its standard quota. Hamilton satisfies this; Jefferson and Webster do not always.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Real-World Applications -->
-        <section class="mb-8" aria-labelledby="applications-heading">
-            <h2 id="applications-heading" class="text-2xl font-semibold mb-6">💡 Real-World Applications</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="landmark" class="w-6 h-6 text-sapphire-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">U.S. House of Representatives</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                435 seats apportioned among 50 states using the Webster method based on census data every 10 years.
-                            </p>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Voting Methods -->
+                    <div class="card" id="voting-methods" style="border-left: 4px solid var(--math-purple);">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Voting Methods</h3>
+                            <ul style="margin: 0; padding-left: var(--space-6);">
+                                <li style="margin-bottom: var(--space-2);"><strong>Plurality Method:</strong> Candidate with most first-place votes wins</li>
+                                <li style="margin-bottom: var(--space-2);"><strong>Borda Count:</strong> Points assigned based on ranking position</li>
+                                <li style="margin-bottom: var(--space-2);"><strong>Instant Runoff:</strong> Eliminate lowest vote-getter, redistribute votes</li>
+                                <li style="margin: 0;"><strong>Pairwise Comparison:</strong> Compare each pair of candidates head-to-head</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="users" class="w-6 h-6 text-emerald-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">City Council Elections</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Many cities use ranked-choice voting (IRV) to elect mayors and council members.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="trophy" class="w-6 h-6 text-citrine-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">Awards & Rankings</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                Borda count is used in sports rankings (e.g., Heisman Trophy) and academic awards.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="globe" class="w-6 h-6 text-sapphire-500 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <h3 class="font-semibold mb-2">International Bodies</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                                UN, EU Parliament, and other international organizations use apportionment to distribute seats fairly among member nations.
-                            </p>
+                    <!-- Apportionment -->
+                    <div class="card" id="apportionment" style="border-left: 4px solid var(--success-green);">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Apportionment Formulas</h3>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                <p style="margin: 0 0 var(--space-2) 0;"><strong>Standard Divisor:</strong> <code>SD = Total Population / Number of Seats</code></p>
+                                <p style="margin: 0;"><strong>Standard Quota:</strong> <code>SQ = State Population / SD</code></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Study Tips -->
-        <section class="mb-8 card">
-            <h2 class="card-header">📚 Study Tips for Chapter 13</h2>
-            <ul class="space-y-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Know the voting methods:</strong> Practice determining winners using plurality, majority, Borda, IRV, and pairwise comparison.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Master Standard Divisor & Quota:</strong> These are the foundation for all apportionment methods.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Practice Hamilton's method:</strong> Know how to allocate initial seats and distribute remainders based on fractional parts.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Understand the paradoxes:</strong> Be able to explain Arrow's theorem and the Alabama paradox with examples.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Show your work:</strong> On tests, always show calculations for SD, SQ, and step-by-step apportionment.</span>
-                </li>
-            </ul>
-        </section>
+        <!-- Practice Problems -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Practice Problems</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Problem 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem 1: Plurality Method</h3>
+                            <p style="margin: 0 0 var(--space-4) 0;">In an election with 3 candidates, A gets 45 votes, B gets 35 votes, C gets 20 votes. Who wins using plurality?</p>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                                <p style="margin: 0; font-weight: 600;">Solution:</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Candidate A wins with 45 votes (most first-place votes)</p>
+                            </div>
+                            <button class="btn btn-primary">Show Solution</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Navigation -->
-        <nav class="flex items-center justify-between pt-8 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700" aria-label="Chapter navigation">
-            <a href="chapter-1.html" class="btn btn-outline">
-                <i data-lucide="chevron-left" class="w-4 h-4"></i>
-                Previous: Chapter 1
-            </a>
-            <a href="index.html" class="btn btn-ghost">
-                <i data-lucide="home" class="w-4 h-4"></i>
-                Dashboard
-            </a>
-            <a href="chapter-4.html" class="btn btn-outline">
-                Next: Chapter 4
-                <i data-lucide="chevron-right" class="w-4 h-4"></i>
-            </a>
-        </nav>
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calculator" style="width: 24px; height: 24px; color: var(--math-purple);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">More Practice</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Additional problems and solutions</p>
+                    <a href="formula_lookup.html" class="btn btn-primary w-full">View Resources</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Study Guide</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Comprehensive chapter review</p>
+                    <a href="course_materials/formula_sheets/Unit_4_Formula_Sheet.html" class="btn btn-primary w-full">View Guide</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="arrow-left" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Back to Tutor</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">View all chapters</p>
+                    <a href="tutor.html" class="btn btn-primary w-full">Go Back</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-12 py-6">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-            <p>&copy; 2025 Kristina's Academic Dashboard | MAT 143 Fall 2025</p>
-            <p class="mt-2">
-                <a href="calendar.html" class="hover:text-emerald-600 transition-colors">Course Calendar</a> •
-                <a href="tutor.html" class="hover:text-emerald-600 transition-colors">AI Tutor</a> •
-                <a href="formula_lookup.html" class="hover:text-emerald-600 transition-colors">Formula Lookup</a>
-            </p>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item active">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
         </div>
-    </footer>
+    </nav>
 
-    <!-- Initialize Lucide Icons -->
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'tutor.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Smooth scrolling for section links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>

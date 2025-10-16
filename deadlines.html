@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Deadlines & Schedule | Fall 2025</title>
+    <meta name="description" content="Complete deadline tracker for MAT 143 and ENG 111 Fall 2025 semester.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
+    
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+        
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1>Fall 2025 Complete Deadline Tracker</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">All deadlines for MAT 143 & ENG 111 • August 18 - December 12, 2025</p>
+        </div>
+
+        <!-- URGENT: What's Due Now -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-header" style="background-color: var(--danger-red); color: var(--white);">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="alert-circle" style="width: 24px; height: 24px;"></i>
+                    <h2 style="margin: 0; color: var(--white);">🚨 URGENT: Due This Week</h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Test 3 -->
+                    <div class="deadline-card urgent">
+                        <div class="deadline-header">
+                            <h3 class="deadline-title">MAT 143: Test 3</h3>
+                            <span class="deadline-date">November 3-7, 2025</span>
+                        </div>
+                        <p class="deadline-description"><strong>Chapters 6 & 7:</strong> Personal Finance & Measurement</p>
+                        <a href="chapter-6.html" class="btn btn-primary" style="margin-top: var(--space-3);">Start Test Prep</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- UPCOMING: Next 2 Weeks -->
+        <div class="card mb-8" style="border-left: 4px solid var(--warning-orange);">
+            <div class="card-header" style="background-color: var(--warning-orange); color: var(--white);">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="clock" style="width: 24px; height: 24px;"></i>
+                    <h2 style="margin: 0; color: var(--white);">⏰ UPCOMING: Next 2 Weeks</h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Essay 3 -->
+                    <div class="deadline-card">
+                        <div class="deadline-header">
+                            <h3 class="deadline-title">ENG 111: Essay 3 - Analytical Essay</h3>
+                            <span class="deadline-date">November 15, 2025 (11:59 PM)</span>
+                        </div>
+                        <p class="deadline-description"><strong>Requirements:</strong> 1000-1250 words • MLA format • 2 sources minimum</p>
+                        <a href="english/essay-3-guide.html" class="btn btn-primary" style="margin-top: var(--space-3);">View Essay Guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FUTURE: Later This Semester -->
+        <div class="card mb-8" style="border-left: 4px solid var(--primary-blue);">
+            <div class="card-header" style="background-color: var(--primary-blue); color: var(--white);">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="calendar" style="width: 24px; height: 24px;"></i>
+                    <h2 style="margin: 0; color: var(--white);">📅 FUTURE: Later This Semester</h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Essay 4 -->
+                    <div class="deadline-card">
+                        <div class="deadline-header">
+                            <h3 class="deadline-title">ENG 111: Essay 4</h3>
+                            <span class="deadline-date">December 8, 2025</span>
+                        </div>
+                        <p class="deadline-description">Research Paper • 1500-2000 words • 5 sources</p>
+                        <a href="english/essay-4-guide.html" class="btn btn-secondary" style="margin-top: var(--space-3);">Preview Guide</a>
+                    </div>
+
+                    <!-- Test 4 -->
+                    <div class="deadline-card">
+                        <div class="deadline-header">
+                            <h3 class="deadline-title">MAT 143: Test 4</h3>
+                            <span class="deadline-date">December 8-12, 2025</span>
+                        </div>
+                        <p class="deadline-description">Chapters 10 & 11: Probability & Statistics</p>
+                        <a href="chapter-10.html" class="btn btn-secondary" style="margin-top: var(--space-3);">Preview Material</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPLETED -->
+        <div class="card mb-8">
+            <div class="card-header" style="background-color: var(--success-green); color: var(--white);">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="check-circle" style="width: 24px; height: 24px;"></i>
+                    <h2 style="margin: 0; color: var(--white);">✅ COMPLETED: Already Done</h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Test 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--success-green);"></i>
+                                <h3 style="margin: 0;">Test 1</h3>
+                            </div>
+                            <p style="margin: 0; font-size: var(--font-size-sm);">Sept 8-12 • Chapters 1 & 13</p>
+                        </div>
+                    </div>
+
+                    <!-- Test 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--success-green);"></i>
+                                <h3 style="margin: 0;">Test 2</h3>
+                            </div>
+                            <p style="margin: 0; font-size: var(--font-size-sm);">Sept 29-Oct 3 • Chapters 4 & 5</p>
+                        </div>
+                    </div>
+
+                    <!-- Essay 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--success-green);"></i>
+                                <h3 style="margin: 0;">Essay 1: Narrative</h3>
+                            </div>
+                            <p style="margin: 0; font-size: var(--font-size-sm);">Sept 20 • 750-1000 words</p>
+                        </div>
+                    </div>
+
+                    <!-- Essay 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--success-green);"></i>
+                                <h3 style="margin: 0;">Essay 2: Reflection</h3>
+                            </div>
+                            <p style="margin: 0; font-size: var(--font-size-sm);">Oct 18 • 850-1100 words</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Critical Semester Dates -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>⚠️ Critical Semester Dates</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div style="width: 32px; height: 32px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="calendar-check" style="width: 16px; height: 16px; color: var(--white);"></i>
+                            </div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">First Day of Class</p>
+                                <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">August 18, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div style="width: 32px; height: 32px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="shield-alert" style="width: 16px; height: 16px; color: var(--white);"></i>
+                            </div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">EVA Deadline</p>
+                                <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">August 29, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div style="width: 32px; height: 32px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="x-circle" style="width: 16px; height: 16px; color: var(--white);"></i>
+                            </div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">Last Day to Withdraw</p>
+                                <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">September 26, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div style="width: 32px; height: 32px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="flag" style="width: 16px; height: 16px; color: var(--white);"></i>
+                            </div>
+                            <div>
+                                <p style="margin: 0; font-weight: 600;">Last Day of Class</p>
+                                <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">December 12, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Semester Timeline -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Complete Semester Timeline</h2>
+            </div>
+            <div class="card-body">
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr style="background-color: var(--neutral-gray-bg);">
+                                <th style="padding: var(--space-3); text-align: left; border: 1px solid #e5e7eb;">Week</th>
+                                <th style="padding: var(--space-3); text-align: left; border: 1px solid #e5e7eb;">Dates</th>
+                                <th style="padding: var(--space-3); text-align: left; border: 1px solid #e5e7eb;">MAT 143</th>
+                                <th style="padding: var(--space-3); text-align: left; border: 1px solid #e5e7eb;">ENG 111</th>
+                                <th style="padding: var(--space-3); text-align: center; border: 1px solid #e5e7eb;">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Week 1 -->
+                            <tr>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">1</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Aug 18-24</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Classes Begin</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Classes Begin</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 2 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">2</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Aug 25-31</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);"><strong>EVA Deadline (Aug 29)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">EVA Deadline (Aug 29)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 3 -->
+                            <tr>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">3</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Sept 1-7</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Test 1 Prep (Ch 1, 13)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 1 Drafting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 4 - Test 1 -->
+                            <tr style="background-color: #fef2f2;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">4</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Sept 8-14</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);"><strong>🔴 TEST 1 (Sept 8-12)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 1 Revision</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 5 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">5</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Sept 15-21</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 4 Material</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);"><strong>📝 Essay 1 Due (Sept 20)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 6 -->
+                            <tr style="background-color: #fef2f2;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">6</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Sept 22-28</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Test 2 Prep (Ch 4, 5)<br><strong>⚠️ Withdrawal Deadline (Sept 26)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 2 Prewriting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 7 - Test 2 -->
+                            <tr style="background-color: #fef2f2;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">7</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Sept 29-Oct 5</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);"><strong>🔴 TEST 2 (Sept 29-Oct 3)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 2 Drafting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 8 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">8</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Oct 6-12</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 6 Material</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 2 Revision</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 9 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">9</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Oct 13-19</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 6 Continued</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);"><strong>📝 Essay 2 Due (Oct 18)</strong></td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 10 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">10</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Oct 20-26</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 7 Material</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 3 Prewriting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 11 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">11</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Oct 27-Nov 2</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Test 3 Prep (Ch 6, 7)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 3 Drafting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-success">Complete</span></td>
+                            </tr>
+
+                            <!-- Week 12 - TEST 3 WEEK -->
+                            <tr style="background-color: #fef2f2;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--danger-red);">12</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--danger-red);">Nov 3-9</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb); font-weight: 700; color: var(--danger-red);">🔴 TEST 3 (Nov 3-7)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 3 Revision</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-danger">URGENT</span></td>
+                            </tr>
+
+                            <!-- Week 13 - ESSAY 3 WEEK -->
+                            <tr style="background-color: #fef3c7;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--warning-orange);">13</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--warning-orange);">Nov 10-16</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 10 Material</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb); font-weight: 700; color: var(--warning-orange);">🟡 Essay 3 Due (Nov 15)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-warning">DUE SOON</span></td>
+                            </tr>
+
+                            <!-- Week 14 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">14</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Nov 17-23</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Chapter 11 Material</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 4 Research</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-info">Future</span></td>
+                            </tr>
+
+                            <!-- Week 15 -->
+                            <tr style="background-color: #f9fafb;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600;">15</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb;">Nov 24-30</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Test 4 Prep (Ch 10, 11)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb);">Essay 4 Drafting</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-info">Future</span></td>
+                            </tr>
+
+                            <!-- Week 16 - FINALS WEEK -->
+                            <tr style="background-color: #f0f9ff;">
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--primary-blue);">16</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; font-weight: 600; color: var(--primary-blue);">Dec 1-12</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb); font-weight: 700; color: var(--primary-blue);">🔵 TEST 4 (Dec 8-12)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb); font-weight: 700; color: var(--primary-blue);">🔵 Essay 4 Due (Dec 8)</td>
+                                <td style="padding: var(--space-3); border: 1px solid #e5e7eb; text-align: center;"><span class="badge badge-info">Future</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item active">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+    </nav>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'calendar.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
