@@ -8,356 +8,377 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
-    <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals-new.css">
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-primary">
-    <!-- Skip to main content -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Desktop Header -->
+    <!-- Header -->
     <header class="header">
-        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
-                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
-            </svg>
-        </a>
-        
-        <nav class="header-nav" aria-label="Main navigation">
-            <a href="index.html" class="nav-item-desktop">Home</a>
-            <a href="tutor.html" class="nav-item-desktop">Courses</a>
-            <a href="calendar.html" class="nav-item-desktop">Calendar</a>
-            <a href="formula_lookup.html" class="nav-item-desktop active">Resources</a>
-            <a href="#profile" class="nav-item-desktop">Profile</a>
-        </nav>
-        
-        <div class="header-actions">
-            <button class="btn-icon has-notification" aria-label="Notifications">
-                <i data-lucide="bell" class="icon-md"></i>
-            </button>
-            <div class="avatar">
-                <div class="avatar-initials">KC</div>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link active">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-        <h1 class="h-df text-center">Formula Lookup</h1>
-    </header>
-
     <!-- Main Content -->
-    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
         
-        <!-- Search Section -->
-        <section class="mb-xxl">
-            <div class="flex items-center gap-df mb-df">
-                <div class="flex-1">
-                    <input 
-                        type="search" 
-                        id="formula-search"
-                        class="input input-search" 
-                        placeholder="Search formulas..."
-                        aria-label="Search formulas">
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1>MAT 143 Formula Reference</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">Quick lookup for all formulas with examples</p>
+        </div>
+
+        <!-- Test 3 Focus Alert -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="target" style="width: 20px; height: 20px; color: var(--white);"></i>
                 </div>
-                <button class="btn-icon" aria-label="Filter options">
-                    <i data-lucide="sliders-horizontal" class="icon-md"></i>
-                </button>
+                <div>
+                        <h3 style="margin: 0; color: var(--danger-red);">Test 3 Focus: Chapters 6 & 7</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Personal Finance & Measurement formulas highlighted below</p>
+                </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Category Filter Badges -->
-        <section class="mb-xxl">
-            <div class="flex flex-wrap gap-xxs" id="category-filters">
-                <button class="badge badge-purple active" data-chapter="all">
-                    All Chapters
-                </button>
-                <button class="badge badge-purple" data-chapter="1">
-                    Chapter 1
-                </button>
-                <button class="badge badge-orange" data-chapter="4">
-                    Chapter 4
-                </button>
-                <button class="badge badge-blue" data-chapter="5">
-                    Chapter 5
-                </button>
-                <button class="badge badge-pink" data-chapter="6">
-                    Chapter 6
-                </button>
-                <button class="badge badge-lime" data-chapter="7">
-                    Chapter 7
-                </button>
-                <button class="badge badge-purple" data-chapter="10">
-                    Chapter 10
-                </button>
-                <button class="badge badge-orange" data-chapter="11">
-                    Chapter 11
-                </button>
-                <button class="badge badge-blue" data-chapter="13">
-                    Chapter 13
-                </button>
+        <!-- Search Interface -->
+        <div class="card mb-8">
+            <div class="card-body">
+                <div class="flex gap-4">
+                    <div style="flex: 1; position: relative;">
+                        <i data-lucide="search" style="position: absolute; left: var(--space-3); top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--neutral-gray-light);"></i>
+                        <input type="text" id="formula-search" placeholder="Search formulas..." style="width: 100%; padding: var(--space-3) var(--space-3) var(--space-3) 40px; border: 1px solid #d1d5db; border-radius: var(--radius-md); font-size: var(--font-size-base);" />
+                    </div>
+                    <button class="btn btn-primary">
+                        <i data-lucide="filter"></i>
+                        Filter
+                    </button>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Quick Access Formulas -->
-        <section class="mb-db">
-            <h2 class="h-xl text-primary mb-df">Most Used</h2>
-            
-            <div class="grid grid-cols-2 gap-df" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
-                <!-- Formula Card 1 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Compound Interest</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                                </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-pink">Chapter 6</div>
-                    </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">A = P(1 + r/n)<sup>nt</sup></code>
-                                </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Where:</strong></p>
-                        <ul style="margin-left: 16px; margin-top: 4px;">
-                            <li>A = Final amount</li>
-                            <li>P = Principal</li>
-                            <li>r = Annual interest rate</li>
-                            <li>n = Compounds per year</li>
-                            <li>t = Time in years</li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Chapter Filter -->
+        <div class="flex gap-2 mb-8" style="overflow-x: auto; padding-bottom: var(--space-2);">
+            <button class="badge badge-info chapter-filter" data-chapter="all">All Chapters</button>
+            <button class="badge chapter-filter" data-chapter="6">Chapter 6: Personal Finance</button>
+            <button class="badge chapter-filter" data-chapter="7">Chapter 7: Measurement</button>
+            <button class="badge chapter-filter" data-chapter="1">Chapter 1: Thinking</button>
+            <button class="badge chapter-filter" data-chapter="4">Chapter 4: Proportions</button>
+            <button class="badge chapter-filter" data-chapter="5">Chapter 5: Functions</button>
+            <button class="badge chapter-filter" data-chapter="10">Chapter 10: Probability</button>
+            <button class="badge chapter-filter" data-chapter="11">Chapter 11: Statistics</button>
+            <button class="badge chapter-filter" data-chapter="13">Chapter 13: Voting</button>
+        </div>
 
-                <!-- Formula Card 2 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Simple Interest</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                                </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-pink">Chapter 6</div>
-                            </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">I = Prt</code>
+        <!-- Chapter 6: Personal Finance (Test 3 Critical) -->
+        <div class="card mb-8 chapter-section" data-chapter="6">
+            <div class="card-header" style="background: linear-gradient(135deg, var(--danger-red) 0%, #fef2f2 100%);">
+                <div class="flex items-center gap-3">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <span style="color: var(--white); font-weight: 700; font-size: var(--font-size-lg);">6</span>
                     </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Where:</strong></p>
-                        <ul style="margin-left: 16px; margin-top: 4px;">
-                            <li>I = Interest earned</li>
-                            <li>P = Principal</li>
-                            <li>r = Interest rate</li>
-                            <li>t = Time in years</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Formula Card 3 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Percentage Change</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                    </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-orange">Chapter 4</div>
-                                </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">% change = ((new - old) / old) × 100</code>
-                            </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Example:</strong></p>
-                        <p style="margin-top: 4px;">Price increased from $50 to $65<br>
-                        % change = ((65 - 50) / 50) × 100 = 30%</p>
-                    </div>
-                </div>
-
-                <!-- Formula Card 4 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Distance Formula</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                                </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-lime">Chapter 7</div>
-                            </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">d = rt</code>
-                    </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Where:</strong></p>
-                        <ul style="margin-left: 16px; margin-top: 4px;">
-                            <li>d = Distance</li>
-                            <li>r = Rate (speed)</li>
-                            <li>t = Time</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Formula Card 5 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Unit Conversion</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                                </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-lime">Chapter 7</div>
-                            </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">new = old × (conversion factor)</code>
-                    </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Example:</strong></p>
-                        <p style="margin-top: 4px;">5 miles = 5 × 5280 = 26,400 feet</p>
-                    </div>
-                </div>
-
-                <!-- Formula Card 6 -->
-                <div class="card-base p-df">
-                    <div class="flex items-start justify-between mb-sm">
-                        <h3 class="h-lg text-primary">Mean (Average)</h3>
-                        <button class="btn-icon btn-sm" aria-label="Copy formula">
-                            <i data-lucide="copy" class="icon-sm"></i>
-                        </button>
-                            </div>
-                    <div class="flex flex-col gap-xxs mb-df">
-                        <div class="badge badge-orange">Chapter 11</div>
-                            </div>
-                    <div class="p-sm bg-secondary rounded-md mb-df">
-                        <code class="t-df text-mono text-primary">mean = Σx / n</code>
-                    </div>
-                    <div class="t-sm text-secondary">
-                        <p><strong>Where:</strong></p>
-                        <ul style="margin-left: 16px; margin-top: 4px;">
-                            <li>Σx = Sum of all values</li>
-                            <li>n = Number of values</li>
-                        </ul>
+                    <div>
+                        <h2 style="margin: 0; color: var(--danger-red);">Chapter 6: Personal Finance</h2>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 Material • Interest, Loans, Savings</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Simple Interest -->
+                    <div class="card" style="border-left: 4px solid var(--danger-red);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Simple Interest</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-lg); font-weight: 600;">I = P × r × t</code>
+                </div>
+                                    <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                    I = Interest, P = Principal, r = rate, t = time
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('I = P × r × t')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Compound Interest -->
+                    <div class="card" style="border-left: 4px solid var(--danger-red);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                    <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Compound Interest</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-lg); font-weight: 600;">A = P(1 + r/n)^(nt)</code>
+                                </div>
+                                    <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        A = Amount, P = Principal, r = rate, n = compounding periods per year, t = time
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('A = P(1 + r/n)^(nt)')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Monthly Payment -->
+                    <div class="card" style="border-left: 4px solid var(--danger-red);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                    <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Monthly Payment (Loan)</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-lg); font-weight: 600;">PMT = P × [r(1+r)^n] / [(1+r)^n - 1]</code>
+                                </div>
+                                    <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        PMT = Monthly payment, P = Principal, r = monthly rate, n = number of payments
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('PMT = P × [r(1+r)^n] / [(1+r)^n - 1]')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+                
+        <!-- Chapter 7: Measurement & Conversions (Test 3 Critical) -->
+        <div class="card mb-8 chapter-section" data-chapter="7">
+            <div class="card-header" style="background: linear-gradient(135deg, var(--warning-orange) 0%, #fef3c7 100%);">
+                <div class="flex items-center gap-3">
+                    <div style="width: 40px; height: 40px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <span style="color: var(--white); font-weight: 700; font-size: var(--font-size-lg);">7</span>
+                    </div>
+                    <div>
+                        <h2 style="margin: 0; color: var(--warning-orange);">Chapter 7: Measurement & Conversions</h2>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 Material • Units, Ratios, Dimensional Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Unit Conversion -->
+                    <div class="card" style="border-left: 4px solid var(--warning-orange);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                    <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Unit Conversion</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-lg); font-weight: 600;">New Value = Original Value × (Conversion Factor)</code>
+                                </div>
+                                    <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        Multiply by conversion factor to change units
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('New Value = Original Value × (Conversion Factor)')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Area of Rectangle -->
+                    <div class="card" style="border-left: 4px solid var(--warning-orange);">
+                        <div class="card-body">
+                            <div class="flex justify-between items-start">
+                    <div>
+                                    <h3 style="margin: 0 0 var(--space-2) 0;">Area of Rectangle</h3>
+                                    <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-3);">
+                                        <code style="font-size: var(--font-size-lg); font-weight: 600;">A = l × w</code>
+                                </div>
+                                    <p style="margin: 0; font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                                        A = Area, l = length, w = width
+                                    </p>
+                                </div>
+                                <button class="btn btn-secondary" onclick="copyToClipboard('A = l × w')">
+                                    <i data-lucide="copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Chapters -->
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Chapter 1 -->
+            <div class="card chapter-section" data-chapter="1">
+                <div class="card-header">
+                    <h2 style="margin: 0;">Chapter 1: Thinking Mathematically</h2>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--neutral-gray-light); margin: 0;">Problem solving techniques and mathematical reasoning</p>
+                    <a href="chapter-1.html" class="btn btn-primary" style="margin-top: var(--space-4);">View Chapter</a>
+                            </div>
+                            </div>
+                            
+            <!-- Chapter 4 -->
+            <div class="card chapter-section" data-chapter="4">
+                <div class="card-header">
+                    <h2 style="margin: 0;">Chapter 4: Proportions & Percentages</h2>
+                                </div>
+                <div class="card-body">
+                    <p style="color: var(--neutral-gray-light); margin: 0;">Ratios, proportions, and percentage calculations</p>
+                    <a href="chapter-4.html" class="btn btn-primary" style="margin-top: var(--space-4);">View Chapter</a>
+                        </div>
+                    </div>
+                    
+            <!-- Chapter 5 -->
+            <div class="card chapter-section" data-chapter="5">
+                <div class="card-header">
+                    <h2 style="margin: 0;">Chapter 5: Linear & Exponential Functions</h2>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--neutral-gray-light); margin: 0;">Linear equations and exponential growth/decay</p>
+                    <a href="chapter-5.html" class="btn btn-primary" style="margin-top: var(--space-4);">View Chapter</a>
+                                </div>
+                            </div>
+                            
+            <!-- Chapter 10 -->
+            <div class="card chapter-section" data-chapter="10">
+                <div class="card-header">
+                    <h2 style="margin: 0;">Chapter 10: Probability</h2>
+                                </div>
+                <div class="card-body">
+                    <p style="color: var(--neutral-gray-light); margin: 0;">Probability calculations and expected value</p>
+                    <a href="chapter-10.html" class="btn btn-primary" style="margin-top: var(--space-4);">View Chapter</a>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="bottom-nav" aria-label="Mobile navigation">
-        <a href="index.html" class="nav-item-mobile" data-page="home">
-            <i data-lucide="home" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Home</span>
-        </a>
-        <a href="tutor.html" class="nav-item-mobile" data-page="courses">
-            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Courses</span>
-        </a>
-        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
-            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Calendar</span>
-        </a>
-        <a href="formula_lookup.html" class="nav-item-mobile active" data-page="resources">
-            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Resources</span>
-        </a>
-        <a href="#profile" class="nav-item-mobile" data-page="profile">
-            <i data-lucide="user" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Profile</span>
-        </a>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item active">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
     </nav>
 
-    <!-- Scripts -->
     <script>
+        // Initialize Lucide icons
             lucide.createIcons();
-    </script>
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'formula_lookup.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
 
-    <!-- ADHD Accessibility Features -->
-    <script src="src/js/focus-mode.js"></script>
-    <script src="src/js/reading-mode.js"></script>
-    <script src="src/js/bottom-nav.js"></script>
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show success feedback
+                const button = event.target.closest('button');
+                const originalIcon = button.innerHTML;
+                button.innerHTML = '<i data-lucide="check"></i>';
+                button.style.backgroundColor = 'var(--success-green)';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalIcon;
+                    button.style.backgroundColor = '';
+                }, 1000);
+            });
+        }
 
-    <!-- Search and Filter Functionality -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.getElementById('formula-search');
-            const categoryButtons = document.querySelectorAll('#category-filters .badge');
-            const formulaCards = document.querySelectorAll('.card-base');
+        // Search functionality
+        document.getElementById('formula-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const sections = document.querySelectorAll('.chapter-section');
             
-            // Search functionality
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.toLowerCase();
-                formulaCards.forEach(card => {
-                    const title = card.querySelector('.h-lg').textContent.toLowerCase();
-                    const content = card.textContent.toLowerCase();
-                    
-                    if (title.includes(searchTerm) || content.includes(searchTerm)) {
-                        card.style.display = 'block';
-                        card.classList.add('fade-in');
+            sections.forEach(section => {
+                const text = section.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+
+        // Chapter filter functionality
+        document.querySelectorAll('.chapter-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active filter
+                document.querySelectorAll('.chapter-filter').forEach(btn => {
+                    btn.classList.remove('badge-info');
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                });
+                this.classList.add('badge-info');
+                this.style.backgroundColor = 'var(--primary-blue-light)';
+                this.style.color = 'var(--primary-blue)';
+
+                // Show/hide sections
+                const chapter = this.dataset.chapter;
+                const sections = document.querySelectorAll('.chapter-section');
+                
+                sections.forEach(section => {
+                    if (chapter === 'all' || section.dataset.chapter === chapter) {
+                        section.style.display = 'block';
                     } else {
-                        card.style.display = 'none';
+                        section.style.display = 'none';
                     }
                 });
-            });
-            
-            // Category filter
-            categoryButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Update active state
-                    categoryButtons.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    const chapter = this.dataset.chapter;
-                    
-                    formulaCards.forEach(card => {
-                        const cardChapter = card.querySelector('.badge')?.textContent;
-                        
-                        if (chapter === 'all' || cardChapter?.includes(chapter)) {
-                            card.style.display = 'block';
-                            card.classList.add('fade-in');
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            });
-            
-            // Copy to clipboard
-            document.querySelectorAll('[aria-label="Copy formula"]').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const card = this.closest('.card-base');
-                    const formula = card.querySelector('code').textContent;
-                    
-                    navigator.clipboard.writeText(formula).then(() => {
-                        // Show success feedback
-                        const icon = this.querySelector('i');
-                        icon.setAttribute('data-lucide', 'check');
-                        lucide.createIcons();
-                        
-                        setTimeout(() => {
-                            icon.setAttribute('data-lucide', 'copy');
-                            lucide.createIcons();
-                        }, 2000);
-                    });
-                });
-            });
-            
-            // Animate cards on load
-            formulaCards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 30}ms`;
-                card.classList.add('slide-up');
             });
         });
     </script>
