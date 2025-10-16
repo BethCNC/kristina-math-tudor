@@ -81,7 +81,8 @@
         <!-- Header -->
         <section class="mb-8">
             <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                🧮 AI Math Tutor
+                <i data-lucide="calculator" class="w-8 h-8 inline mr-2" aria-hidden="true"></i>
+                AI Math Tutor
             </h1>
             <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
                 Get instant help with MAT 143 concepts, formulas, and practice problems
@@ -90,7 +91,10 @@
 
         <!-- AI Tutor Interface -->
         <section class="mb-8 card">
-            <h2 class="card-header">💬 Ask the AI Tutor</h2>
+            <h2 class="card-header">
+                <i data-lucide="message-circle" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Ask the AI Tutor
+            </h2>
             <form id="tutor-form" class="space-y-4">
                 <!-- Chapter Selection -->
                 <div>
@@ -151,7 +155,10 @@
 
         <!-- Chapter Navigation -->
         <section class="mb-8" aria-labelledby="chapters-heading">
-            <h2 id="chapters-heading" class="text-2xl font-semibold mb-6">📚 Study by Chapter</h2>
+            <h2 id="chapters-heading" class="text-2xl font-semibold mb-6">
+                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Study by Chapter
+            </h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- Chapter 1 -->
                 <a href="chapter-1.html" class="card hover:shadow-lg transition-shadow">
@@ -285,7 +292,10 @@
 
         <!-- Quick Formula Reference -->
         <section class="mb-8 card">
-            <h2 class="card-header">🔍 Quick Formula Reference</h2>
+            <h2 class="card-header">
+                <i data-lucide="search" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Quick Formula Reference
+            </h2>
             <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
                 Looking for a specific formula? Try the complete formula lookup or ask the AI tutor above.
             </p>
@@ -297,7 +307,10 @@
 
         <!-- Study Resources -->
         <section class="mb-8 card">
-            <h2 class="card-header">📖 Additional Resources</h2>
+            <h2 class="card-header">
+                <i data-lucide="book" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Additional Resources
+            </h2>
             <div class="grid sm:grid-cols-2 gap-4">
                 <div class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg">
                     <h3 class="font-semibold mb-2 flex items-center">
@@ -368,15 +381,10 @@
     <!-- Scripts -->
     <script>
         lucide.createIcons();
-
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-            menu?.classList.toggle('hidden');
-        });
     </script>
+
+    <!-- Mobile Menu with Focus Trap -->
+    <script src="src/js/mobile-menu.js"></script>
     
     <!-- AI Tutor Integration -->
     <script src="src/js/tutor.js"></script>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLA Basics Guide | ENG 111</title>
+    
+    <link rel="icon" type="image/x-icon" href="../public/favicons/favicon.ico">
+    <link rel="stylesheet" href="../src/styles/globals.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
+
+    <header class="bg-white dark:bg-smokey-quartz-900 border-b shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="../english_materials.html" class="flex items-center space-x-2">
+                <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                <span>Back to Writing Coach</span>
+            </a>
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-sapphire-500 rounded-lg flex items-center justify-center">
+                    <i data-lucide="quote" class="w-5 h-5 text-white"></i>
+                </div>
+                <h1 class="text-lg font-medium">MLA Basics</h1>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content" class="flex-1 container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Page Setup -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="file-text" class="w-5 h-5 mr-2"></i>
+                MLA Page Setup
+            </h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-semibold mb-2">Margins & Spacing</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li>• <strong>1-inch margins</strong> on all sides (top, bottom, left, right)</li>
+                        <li>• <strong>Double-spaced</strong> throughout entire paper (no extra spaces)</li>
+                        <li>• <strong>12-point font</strong> in a readable typeface (Times New Roman, Arial, Calibri)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2">Header (Top Right Corner)</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm mt-2">
+                        <p class="mb-2">Your last name followed by page number (automatically generated):</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">Smith 1</code>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2">Heading (Top Left, First Page Only)</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm mt-2">
+                        <p class="mb-2">Four lines in this exact order:</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded whitespace-pre">Your Name
+Instructor Name
+ENG 111 N815
+16 October 2025</code>
+                        <p class="text-xs mt-2 text-smokey-quartz-600 dark:text-smokey-quartz-400">Note: Use day-month-year format</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2">Title</h3>
+                    <ul class="space-y-1 text-sm">
+                        <li>• <strong>Centered</strong> on the line after your heading</li>
+                        <li>• <strong>Same font size</strong> as body text (12 point)</li>
+                        <li>• <strong>Not bolded, underlined, or in ALL CAPS</strong></li>
+                        <li>• <strong>Capitalize major words</strong> (not articles, prepositions, conjunctions unless first/last word)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- In-Text Citations -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="link" class="w-5 h-5 mr-2"></i>
+                In-Text Citations (Parenthetical)
+            </h2>
+            <div class="space-y-4">
+                <p class="text-sm">MLA uses parenthetical citations with author's last name and page number.</p>
+                
+                <div>
+                    <h3 class="font-semibold mb-2">Basic Format</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">Author's last name + page number (no comma):</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">(Smith 42).</code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-2">Author Named in Sentence</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">If you mention the author in your sentence, only include page number:</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">According to Smith, "happiness is subjective" (42).</code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-2">No Page Number (Web Sources)</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">For websites without page numbers, use author name only:</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">(Grant).</code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-2">No Author</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">Use shortened title (in quotes for articles, italics for books):</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">("Impact of Social Media" 5).</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotations -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="message-square-quote" class="w-5 h-5 mr-2"></i>
+                Using Quotations
+            </h2>
+            <div class="space-y-4">
+                <div>
+                    <h3 class="font-semibold mb-2">Short Quotations (< 4 lines)</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">Integrate into your paragraph with quotation marks:</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded">Grant argues that "pursuing happiness directly often backfires" (12).</code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-2">Long Quotations (≥ 4 lines)</h3>
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg text-sm">
+                        <p class="mb-2">Block format: indent 1/2 inch, no quotation marks, citation after period:</p>
+                        <code class="block p-2 bg-white dark:bg-smokey-quartz-900 rounded whitespace-pre">Grant explains the paradox of happiness:
+     When people pursue happiness directly, they often
+     become more focused on whether they're happy,
+     which ironically makes them less happy. (12)</code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-2">Adding to or Omitting from Quotations</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>• <strong>Brackets [like this]:</strong> Add clarifying words</li>
+                        <li>• <strong>Ellipsis ...:</strong> Omit unnecessary words</li>
+                        <li>• Example: "The study [conducted in 2020] revealed..."</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Cited -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="list" class="w-5 h-5 mr-2"></i>
+                Works Cited Page Basics
+            </h2>
+            <div class="space-y-3">
+                <ul class="space-y-2 text-sm">
+                    <li>• <strong>New page</strong> at end of paper</li>
+                    <li>• <strong>Title "Works Cited"</strong> centered at top (not bolded)</li>
+                    <li>• <strong>Alphabetical order</strong> by first word (usually author's last name)</li>
+                    <li>• <strong>Hanging indent:</strong> First line flush left, subsequent lines indented 1/2 inch</li>
+                    <li>• <strong>Double-spaced</strong> throughout, no extra spaces between entries</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="works-cited.html" class="btn btn-primary w-full sm:w-auto">
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        See Detailed Works Cited Guide
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="bookmark" class="w-5 h-5 mr-2"></i>
+                Quick MLA Checklist
+            </h2>
+            <div class="space-y-2">
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">1-inch margins on all sides</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">Double-spaced throughout (including heading and Works Cited)</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">12-point readable font (Times New Roman, Arial, etc.)</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">Header with last name and page number (top right)</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">Heading with name, instructor, course, date (top left, first page)</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">Title centered (not bolded, underlined, or in ALL CAPS)</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">In-text citations for all quotes and paraphrases</span>
+                </label>
+                <label class="flex items-start space-x-3">
+                    <input type="checkbox" class="mt-1 w-5 h-5">
+                    <span class="text-sm">Works Cited page with all sources in alphabetical order</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- External Resources -->
+        <section class="card mb-8">
+            <h2 class="card-header">
+                <i data-lucide="external-link" class="w-5 h-5 mr-2"></i>
+                Additional MLA Resources
+            </h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <a href="https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_formatting_and_style_guide.html" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100 transition-colors">
+                    <strong class="flex items-center justify-between mb-2">
+                        Purdue OWL - MLA
+                        <i data-lucide="external-link" class="w-4 h-4 text-sapphire-500"></i>
+                    </strong>
+                    <p class="text-sm">Comprehensive MLA guide</p>
+                </a>
+                <a href="works-cited.html" class="p-4 bg-sapphire-100 dark:bg-sapphire-900 dark:bg-opacity-30 rounded-lg hover:bg-sapphire-200 transition-colors border-2 border-sapphire-500">
+                    <strong class="flex items-center justify-between mb-2">
+                        Works Cited Guide
+                        <i data-lucide="arrow-right" class="w-4 h-4 text-sapphire-600"></i>
+                    </strong>
+                    <p class="text-sm">How to format citations</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-smokey-quartz-900 border-t mt-auto py-6 text-center text-sm">
+        <a href="../english_materials.html" class="text-sapphire-600 hover:underline">Writing Coach</a> | 
+        <a href="../index.html" class="text-sapphire-600 hover:underline">Dashboard</a>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="../src/js/mobile-menu.js"></script>
+    <script src="../src/js/focus-mode.js"></script>
+    <script src="../src/js/reading-mode.js"></script>
+</body>
+</html>
+

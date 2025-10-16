@@ -100,7 +100,8 @@
         <!-- Header -->
         <section class="mb-8">
             <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                📅 Fall 2025 Semester Calendar
+                <i data-lucide="calendar" class="w-8 h-8 inline mr-2" aria-hidden="true"></i>
+                Fall 2025 Semester Calendar
             </h1>
             <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
                 August 18, 2025 - December 12, 2025 • 16 Weeks
@@ -132,7 +133,10 @@
 
         <!-- Critical Dates Alert -->
         <section class="mb-8" aria-labelledby="critical-dates">
-            <h2 id="critical-dates" class="text-2xl font-semibold mb-4">⚠️ Critical Dates</h2>
+            <h2 id="critical-dates" class="text-2xl font-semibold mb-4">
+                <i data-lucide="alert-triangle" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Critical Dates
+            </h2>
             <div class="grid md:grid-cols-3 gap-4">
                 <div class="card bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 border-ruby-300 dark:border-ruby-700">
                     <div class="flex items-start space-x-3">
@@ -171,7 +175,10 @@
 
         <!-- 16-Week Timeline -->
         <section aria-labelledby="timeline-heading">
-            <h2 id="timeline-heading" class="text-2xl font-semibold mb-6">📆 Semester Timeline</h2>
+            <h2 id="timeline-heading" class="text-2xl font-semibold mb-6">
+                <i data-lucide="calendar-range" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Semester Timeline
+            </h2>
             <div class="space-y-6">
                 <!-- Weeks 1-2 -->
                 <div class="card event-card" data-course="math" data-priority="completed">
@@ -333,7 +340,10 @@
 
         <!-- Legend -->
         <section class="mt-8 card">
-            <h3 class="font-semibold mb-4">📋 Legend</h3>
+            <h3 class="font-semibold mb-4">
+                <i data-lucide="list" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Legend
+            </h3>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div class="flex items-center space-x-2">
                     <span class="badge badge-danger">Urgent</span>
@@ -395,15 +405,13 @@
     <!-- Scripts -->
     <script>
         lucide.createIcons();
+    </script>
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-            menu?.classList.toggle('hidden');
-        });
+    <!-- Mobile Menu with Focus Trap -->
+    <script src="src/js/mobile-menu.js"></script>
 
+    <!-- Calendar Filters -->
+    <script>
         // Filter functionality
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
@@ -442,5 +450,12 @@
         document.querySelector('.filter-btn.active')?.classList.add('bg-emerald-500', 'text-white');
         document.querySelector('.priority-btn.active')?.classList.add('bg-emerald-500', 'text-white');
     </script>
+
+    <!-- Calendar Deadline Urgency System -->
+    <script src="src/js/calendar-urgency.js"></script>
+
+    <!-- ADHD Accessibility Features -->
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
 </body>
 </html>

@@ -9,367 +9,331 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Enhanced Design System with Semantic Tokens -->
+    <!-- Design System -->
     <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background-default)] text-[var(--color-text-primary)] font-['Host_Grotesk'] min-h-screen">
-    <!-- Enhanced Responsive Header -->
-    <header class="bg-[var(--color-background-default)] border-b border-[var(--color-border-secondary)] shadow-sm sticky top-0 z-50">
+<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-default)] focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
-                        <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
-                        <span class="text-lg font-medium sm:hidden">Back</span>
-                    </a>
-                </div>
+                <a href="index.html" class="flex items-center space-x-3 hover:text-emerald-600">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <span class="text-lg font-medium">Back to Dashboard</span>
+                </a>
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
-                        <i data-lucide="brain" aria-hidden="true" class="w-5 h-5 text-white"></i>
+                    <div class="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
+                        <i data-lucide="brain" class="w-5 h-5 text-white"></i>
                     </div>
                     <div>
-                        <h1 class="text-lg sm:text-xl font-medium text-[var(--color-text-primary)]">Chapter 1</h1>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Thinking Mathematically</p>
+                        <h1 class="text-lg sm:text-xl font-medium">Chapter 1</h1>
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Thinking Mathematically</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
-        <!-- Progress Tracker -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="progress-heading">
-            <h2 id="progress-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📊 Your Progress</h2>
-            <div class="adhd-card">
-                <div class="flex flex-col sm:flex-row items-center justify-between mb-4">
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Chapter 4 Progress</h3>
-                    <span class="text-sm text-[var(--color-text-secondary)]">Test 2 Preparation</span>
-                </div>
-                <div class="w-full bg-[var(--color-background-secondary)] rounded-full h-3 mb-4" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="Chapter 4 progress">
-                    <div class="bg-[var(--color-brand-default)] h-3 rounded-full" style="width: 25%;"></div>
-                </div>
-                <div class="flex flex-wrap items-center justify-between text-sm gap-2">
-                    <span class="text-[var(--color-text-positive-primary)]">✅ Section 4.1 Complete</span>
-                    <span class="text-[var(--color-text-warning-primary)]">⏳ Section 4.2 In Progress</span>
-                    <span class="text-[var(--color-text-secondary)]">⏳ Section 4.3 Not Started</span>
+    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
+        <!-- Chapter Overview -->
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="info" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Chapter Overview
+            </h2>
+            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-4">
+                Learn how to think like a mathematician! This chapter covers deductive and inductive reasoning, estimation strategies, and Polya's problem-solving process—essential skills for success in MAT 143.
+            </p>
+            <div class="alert alert-info">
+                <i data-lucide="calendar" class="w-5 h-5 flex-shrink-0"></i>
+                <div>
+                    <strong>Test 1 Coverage:</strong> This chapter will appear on Test 1 (Sept 8-12, 2025) along with Chapter 13.
                 </div>
             </div>
         </section>
 
-        <!-- Lesson Navigation -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="lessons-heading">
-            <h2 id="lessons-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📚 Lessons</h2>
-            <div class="responsive-grid">
-                <!-- Section 4.1 -->
-                <div class="adhd-card border-[var(--color-border-positive)]" role="article" aria-labelledby="section-4-1">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="check" class="w-6 h-6 text-white"></i>
+        <!-- Sections -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Chapter Sections
+            </h2>
+
+            <!-- Section 1.1 -->
+            <div class="card mb-6">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">1.1</span>
                         </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-1" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.1: Proportions</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Understanding and solving proportions</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-positive-default)] text-white px-2 py-1 rounded-full">COMPLETE</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">15 min</span>
-                            </div>
-                            <button class="adhd-button adhd-button-primary w-full" onclick="showLesson('4-1')" aria-label="Review Section 4.1">
-                                <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
-                                Review Lesson
-                            </button>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Thinking Mathematically</h3>
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Deductive vs. Inductive Reasoning</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="badge badge-info">15-20 min</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Section 4.2 -->
-                <div class="adhd-card border-[var(--color-border-warning)]" role="article" aria-labelledby="section-4-2">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="play" class="w-6 h-6 text-white"></i>
+                <div class="space-y-4">
+                    <div class="border-l-4 border-emerald-500 pl-4">
+                        <h4 class="font-semibold mb-2">Deductive Reasoning</h4>
+                        <p class="text-sm mb-2">Drawing conclusions from general principles. If the premises are true, the conclusion MUST be true.</p>
+                        <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-3 rounded-lg text-sm">
+                            <strong>Example:</strong><br>
+                            • All birds have feathers (general principle)<br>
+                            • A robin is a bird (specific case)<br>
+                            • <strong>Therefore:</strong> Robins have feathers (conclusion)
                         </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-2" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.2: Percentages</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Calculating percentages and percentage change</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-warning-default)] text-white px-2 py-1 rounded-full">IN PROGRESS</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">20 min</span>
                             </div>
-                            <button class="adhd-button adhd-button-primary w-full" onclick="showLesson('4-2')" aria-label="Continue Section 4.2">
-                                <i data-lucide="play" class="w-4 h-4" aria-hidden="true"></i>
-                                Continue Lesson
-                            </button>
+
+                    <div class="border-l-4 border-carnelian-500 pl-4">
+                        <h4 class="font-semibold mb-2">Inductive Reasoning</h4>
+                        <p class="text-sm mb-2">Making predictions based on patterns or observations. Conclusions are probable but not guaranteed.</p>
+                        <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-3 rounded-lg text-sm">
+                            <strong>Example:</strong><br>
+                            • I've seen 10 swans and they're all white (observation)<br>
+                            • <strong>Therefore:</strong> All swans are white (prediction)<br>
+                            • <em>Note: This is actually false—black swans exist!</em>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded-lg">
+                        <strong>Key Difference:</strong>
+                        <ul class="text-sm mt-2 space-y-1">
+                            <li>• <strong>Deductive:</strong> General → Specific (100% certain if premises are true)</li>
+                            <li>• <strong>Inductive:</strong> Specific → General (probable, not certain)</li>
+                        </ul>
+                    </div>
+                </div>
+                        </div>
+
+            <!-- Section 1.2 -->
+            <div class="card mb-6">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">1.2</span>
+                            </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Estimating and Evaluating</h3>
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Strategies for quick approximations and evaluating reasonableness</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="badge badge-info">15-20 min</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Section 4.3 -->
-                <div class="adhd-card" role="article" aria-labelledby="section-4-3">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="lock" class="w-6 h-6 text-white"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-3" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.3: Rates</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Unit rates and rates of change</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-neutral-default)] text-white px-2 py-1 rounded-full">LOCKED</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">25 min</span>
-                            </div>
-                            <button class="adhd-button adhd-button-secondary w-full" disabled aria-label="Section 4.3 locked">
-                                <i data-lucide="lock" class="w-4 h-4" aria-hidden="true"></i>
-                                Complete 4.2 First
-                            </button>
-                        </div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold mb-2">Estimation Strategies</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <strong>Rounding:</strong> Round numbers to make calculations easier</li>
+                            <li>• <strong>Benchmark numbers:</strong> Use 10, 100, 1000 for comparisons</li>
+                            <li>• <strong>Front-end estimation:</strong> Use leading digits only</li>
+                            <li>• <strong>Compatible numbers:</strong> Find numbers that work well together</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg">
+                        <strong class="block mb-2">Example:</strong>
+                        <p class="text-sm">Estimate: 487 × 23</p>
+                        <p class="text-sm mt-2">
+                            Round: 500 × 20 = 10,000<br>
+                            Actual: 11,201 ← Our estimate is reasonable!
+                        </p>
+            </div>
+
+                    <div>
+                        <h4 class="font-semibold mb-2 mt-4">Evaluating Reasonableness</h4>
+                        <p class="text-sm mb-2">Always ask: "Does my answer make sense?"</p>
+                        <ul class="text-sm space-y-1">
+                            <li>• Check units (miles? dollars? people?)</li>
+                            <li>• Check order of magnitude (thousands? millions?)</li>
+                            <li>• Compare to known values</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Current Lesson Content -->
-        <section id="lesson-content" class="mb-6 sm:mb-8" aria-labelledby="lesson-heading" style="display: none;">
-            <h2 id="lesson-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📖 Current Lesson</h2>
-            <div class="adhd-card">
-                <div id="lesson-body">
-                    <!-- Lesson content will be loaded here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Formulas -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="formulas-heading">
-            <h2 id="formulas-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🔢 Key Formulas</h2>
-            <div class="responsive-grid">
-                <div class="adhd-card" role="article" aria-labelledby="proportion-formula">
-                    <h3 id="proportion-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Proportions</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Cross Multiplication</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">a/b = c/d → a×d = b×c</p>
+            <!-- Section 1.3 -->
+            <div class="card mb-6">
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span class="text-white font-bold">1.3</span>
                         </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Solving for x</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">x = (b×c) / a</p>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold mb-2">Problem Solving: Processes and Techniques</h3>
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Polya's 4-step problem-solving method and strategies</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="badge badge-info">20-25 min</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="adhd-card" role="article" aria-labelledby="percentage-formula">
-                    <h3 id="percentage-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Percentages</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Percentage of a number</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">P% of N = (P/100) × N</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Percentage change</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">% Change = (New - Old) / Old × 100%</p>
-                        </div>
-                    </div>
+                <div class="space-y-4">
+                    <div class="p-4 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                        <h4 class="font-semibold mb-3 text-emerald-700 dark:text-emerald-300">Polya's 4-Step Problem-Solving Process</h4>
+                        <ol class="space-y-3 text-sm">
+                            <li>
+                                <strong>1. Understand the Problem</strong>
+                                <ul class="ml-4 mt-1 space-y-1">
+                                    <li>• What are you solving for?</li>
+                                    <li>• What information do you have?</li>
+                                    <li>• What do you need to find?</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>2. Devise a Plan</strong>
+                                <ul class="ml-4 mt-1 space-y-1">
+                                    <li>• What method will you use?</li>
+                                    <li>• Have you seen a similar problem?</li>
+                                    <li>• Can you draw a diagram or make a table?</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>3. Carry Out the Plan</strong>
+                                <ul class="ml-4 mt-1 space-y-1">
+                                    <li>• Execute your chosen strategy</li>
+                                    <li>• Show your work clearly</li>
+                                    <li>• Check each step as you go</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>4. Look Back and Check</strong>
+                                <ul class="ml-4 mt-1 space-y-1">
+                                    <li>• Does your answer make sense?</li>
+                                    <li>• Did you answer what was asked?</li>
+                                    <li>• Can you verify your solution?</li>
+                                </ul>
+                            </li>
+                        </ol>
                 </div>
 
-                <div class="adhd-card" role="article" aria-labelledby="rate-formula">
-                    <h3 id="rate-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Rates</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Unit rate</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">Rate = Amount / Time</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Distance formula</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">Distance = Rate × Time</p>
-                        </div>
+                    <div>
+                        <h4 class="font-semibold mb-2">Problem-Solving Strategies</h4>
+                        <ul class="space-y-2 text-sm">
+                            <li>• <strong>Work backwards:</strong> Start from the desired result and reverse the process</li>
+                            <li>• <strong>Make a table:</strong> Organize information systematically</li>
+                            <li>• <strong>Find a pattern:</strong> Look for recurring relationships</li>
+                            <li>• <strong>Draw a diagram:</strong> Visualize the problem</li>
+                            <li>• <strong>Guess and check:</strong> Try values and refine your approach</li>
+                            <li>• <strong>Break into smaller problems:</strong> Solve parts, then combine</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Practice Problems -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="practice-heading">
-            <h2 id="practice-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🎯 Practice Problems</h2>
-            <div class="responsive-grid">
-                <div class="adhd-card" role="article" aria-labelledby="problem-1">
-                    <h3 id="problem-1" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 1: Proportions</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">If 3 apples cost $2.40, how much do 7 apples cost?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('1')" aria-label="Show solution for problem 1">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-1" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Set up proportion: 3/2.40 = 7/x</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Cross multiply: 3x = 2.40 × 7</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Solve: x = 16.80/3 = $5.60</p>
-                        </div>
-                    </div>
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="pencil" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Practice Problems
+            </h2>
+            <div class="space-y-4">
+                <div>
+                    <p class="font-semibold mb-2">1. Identify the type of reasoning:</p>
+                    <p class="text-sm mb-2">"Taylor plays football and has caught 24 out of 56 targets so far this season. So, he is expected to catch 6 out of 14 targets in tonight's game."</p>
+                    <details class="text-sm">
+                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
+                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded"><strong>Inductive reasoning</strong> - making a prediction based on past performance</p>
+                    </details>
                 </div>
 
-                <div class="adhd-card" role="article" aria-labelledby="problem-2">
-                    <h3 id="problem-2" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 2: Percentages</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">A shirt originally costs $50. It's on sale for 20% off. What's the sale price?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('2')" aria-label="Show solution for problem 2">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-2" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Discount = 20% of $50 = 0.20 × $50 = $10</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Sale price = $50 - $10 = $40</p>
-                        </div>
-                    </div>
+                <div>
+                    <p class="font-semibold mb-2">2. Find the pattern and next two terms:</p>
+                    <p class="text-sm mb-2">288, 144, 72, 36, ...</p>
+                    <details class="text-sm">
+                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
+                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded">
+                            <strong>Pattern:</strong> Divide by 2 each time<br>
+                            <strong>Next terms:</strong> 18, 9<br>
+                            <strong>Type:</strong> Geometric sequence
+                        </p>
+                    </details>
                 </div>
 
-                <div class="adhd-card" role="article" aria-labelledby="problem-3">
-                    <h3 id="problem-3" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 3: Rates</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">If you drive 240 miles in 4 hours, what's your average speed?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('3')" aria-label="Show solution for problem 3">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-3" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Speed = Distance / Time</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Speed = 240 miles / 4 hours = 60 mph</p>
-                        </div>
-                    </div>
+                <div>
+                    <p class="font-semibold mb-2">3. Estimate: 487 × 23</p>
+                    <details class="text-sm">
+                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
+                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded">
+                            <strong>Estimation:</strong> 500 × 20 = 10,000<br>
+                            <strong>Actual:</strong> 11,201<br>
+                            Our estimate is close and reasonable!
+                        </p>
+                    </details>
                 </div>
             </div>
         </section>
 
-        <!-- Next Steps -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="next-steps-heading">
-            <h2 id="next-steps-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🎯 What's Next?</h2>
-            <div class="adhd-card border-[var(--color-border-brand)]">
-                <div class="flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                        <i data-lucide="target" class="w-6 h-6 text-white"></i>
+        <!-- Key Concepts Summary -->
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="lightbulb" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Key Takeaways
+            </h2>
+            <div class="space-y-3">
+                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                    <strong>✓ Deductive Reasoning:</strong> General principles → Specific conclusions (certain)
                     </div>
-                    <div class="flex-1">
-                        <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Your Next Steps</h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-[var(--color-positive-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Complete Section 4.2: Percentages</span>
+                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                    <strong>✓ Inductive Reasoning:</strong> Observations → General predictions (probable)
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="book-open" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Practice 5 more problems</span>
+                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                    <strong>✓ Estimation:</strong> Use rounding and benchmarks for quick approximations
                             </div>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="calendar" class="w-4 h-4 text-[var(--color-warning-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Test 2 in 7 days - focus on Ch. 4 & 5</span>
-                            </div>
-                        </div>
-                        <div class="mt-4 flex flex-col sm:flex-row gap-2">
-                            <button class="adhd-button adhd-button-primary" onclick="showLesson('4-2')" aria-label="Continue with Section 4.2">
-                                <i data-lucide="play" class="w-4 h-4" aria-hidden="true"></i>
-                                Continue Learning
-                            </button>
-                            <a href="tutor.html" class="adhd-button adhd-button-secondary" aria-label="Get help from AI tutor">
-                                <i data-lucide="brain-circuit" class="w-4 h-4" aria-hidden="true"></i>
-                                Ask AI Tutor
-                            </a>
-                        </div>
-                    </div>
+                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                    <strong>✓ Polya's Process:</strong> Understand → Plan → Execute → Check
                 </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="link" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Additional Resources
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                    Chapter 1 Google Drive
+                </a>
+                <a href="course_materials/sample_assignments/Week_1_Attendance_Sample.html" class="btn btn-secondary">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    Week 1 Sample Assignment
+                </a>
+                <a href="tutor.html" class="btn btn-secondary">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    AI Math Tutor
+                </a>
+                <a href="formula_lookup.html" class="btn btn-secondary">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    Formula Reference
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- Initialize Icons and JavaScript -->
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Lesson content
-        const lessons = {
-            '4-1': {
-                title: 'Section 4.1: Understanding Proportions',
-                content: `
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">What is a Proportion?</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">A proportion is an equation that states two ratios are equal.</p>
-                    
-                    <div class="p-4 bg-[var(--color-background-secondary)] rounded-lg mb-4">
-                        <p class="text-sm text-[var(--color-text-primary)] font-mono">a/b = c/d</p>
-                        <p class="text-xs text-[var(--color-text-secondary)] mt-2">This means "a is to b as c is to d"</p>
+    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto py-6">
+        <div class="container mx-auto px-4 text-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+            <a href="index.html" class="hover:text-emerald-600">Dashboard</a> |
+            <a href="calendar.html" class="hover:text-emerald-600">Calendar</a> |
+            <a href="formula_lookup.html" class="hover:text-emerald-600">Formulas</a>
                     </div>
-                    
-                    <h4 class="text-md font-medium text-[var(--color-text-primary)] mb-3">Step-by-Step Method:</h4>
-                    <ol class="text-sm text-[var(--color-text-secondary)] space-y-2 list-decimal list-inside">
-                        <li>Set up the proportion with the unknown (x)</li>
-                        <li>Cross multiply: a × d = b × c</li>
-                        <li>Solve for x</li>
-                        <li>Check your answer</li>
-                    </ol>
-                    
-                    <div class="mt-4 p-3 bg-[var(--color-background-warning)] rounded-lg">
-                        <p class="text-sm text-[var(--color-text-warning-primary)]"><strong>Example:</strong> If 2 pizzas cost $12, how much do 5 pizzas cost?</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Set up: 2/12 = 5/x</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Cross multiply: 2x = 12 × 5 = 60</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Solve: x = 60/2 = $30</p>
-                    </div>
-                `
-            },
-            '4-2': {
-                title: 'Section 4.2: Working with Percentages',
-                content: `
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Percentage Basics</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">Percent means "per hundred" - so 25% means 25 out of 100.</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)] font-medium">Finding Percentage of a Number</p>
-                            <p class="text-xs text-[var(--color-text-secondary)]">P% of N = (P/100) × N</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)] font-medium">Percentage Change</p>
-                            <p class="text-xs text-[var(--color-text-secondary)]">% Change = (New - Old) / Old × 100%</p>
-                        </div>
-                    </div>
-                    
-                    <h4 class="text-md font-medium text-[var(--color-text-primary)] mb-3">Common Percentage Problems:</h4>
-                    <ul class="text-sm text-[var(--color-text-secondary)] space-y-1 list-disc list-inside">
-                        <li>Finding discounts and sale prices</li>
-                        <li>Calculating tips and taxes</li>
-                        <li>Determining percentage increase/decrease</li>
-                        <li>Converting between fractions, decimals, and percentages</li>
-                    </ul>
-                `
-            }
-        };
+    </footer>
 
-        function showLesson(section) {
-            const lessonContent = document.getElementById('lesson-content');
-            const lessonBody = document.getElementById('lesson-body');
-            const lessonHeading = document.getElementById('lesson-heading');
-            
-            if (lessons[section]) {
-                lessonHeading.textContent = lessons[section].title;
-                lessonBody.innerHTML = lessons[section].content;
-                lessonContent.style.display = 'block';
-                lessonContent.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function showSolution(problemNum) {
-            const solution = document.getElementById(`solution-${problemNum}`);
-            if (solution.classList.contains('hidden')) {
-                solution.classList.remove('hidden');
-            } else {
-                solution.classList.add('hidden');
-            }
-        }
-
-        // Initialize with first lesson
-        showLesson('4-1');
-    </script>
+    <script>lucide.createIcons();</script>
+    <script src="src/js/mobile-menu.js"></script>
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
+    <script src="src/js/chapter-init.js"></script>
 </body>
 </html>

@@ -3,373 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 4: Proportions & Percentages - MAT 143</title>
-    <meta name="description" content="Learn proportions, percentages, and rates with step-by-step lessons, practice problems, and real-world examples for MAT 143.">
+    <title>Chapter 7: Voting Methods - MAT 143</title>
+    <meta name="description" content="Learn voting methods including plurality, Borda count, runoff, and pairwise comparison for MAT 143.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Enhanced Design System with Semantic Tokens -->
+    <!-- Design System -->
     <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background-default)] text-[var(--color-text-primary)] font-['Host_Grotesk'] min-h-screen">
-    <!-- Enhanced Responsive Header -->
-    <header class="bg-[var(--color-background-default)] border-b border-[var(--color-border-secondary)] shadow-sm sticky top-0 z-50">
+<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-default)] focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
-                        <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
-                        <span class="text-lg font-medium sm:hidden">Back</span>
-                    </a>
-                </div>
+                <a href="index.html" class="flex items-center space-x-3 hover:text-emerald-600">
+                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                    <span class="text-lg font-medium">Back to Dashboard</span>
+                </a>
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
-                        <i data-lucide="calculator" aria-hidden="true" class="w-5 h-5 text-white"></i>
+                    <div class="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
+                        <i data-lucide="vote" class="w-5 h-5 text-white"></i>
                     </div>
                     <div>
-                        <h1 class="text-lg sm:text-xl font-medium text-[var(--color-text-primary)]">Chapter 4</h1>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Proportions & Percentages</p>
+                        <h1 class="text-lg sm:text-xl font-medium">Chapter 7</h1>
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Voting Methods</p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
-        <!-- Progress Tracker -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="progress-heading">
-            <h2 id="progress-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📊 Your Progress</h2>
-            <div class="adhd-card">
-                <div class="flex flex-col sm:flex-row items-center justify-between mb-4">
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Chapter 4 Progress</h3>
-                    <span class="text-sm text-[var(--color-text-secondary)]">Test 2 Preparation</span>
-                </div>
-                <div class="w-full bg-[var(--color-background-secondary)] rounded-full h-3 mb-4" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" aria-label="Chapter 4 progress">
-                    <div class="bg-[var(--color-brand-default)] h-3 rounded-full" style="width: 25%;"></div>
-                </div>
-                <div class="flex flex-wrap items-center justify-between text-sm gap-2">
-                    <span class="text-[var(--color-text-positive-primary)]">✅ Section 4.1 Complete</span>
-                    <span class="text-[var(--color-text-warning-primary)]">⏳ Section 4.2 In Progress</span>
-                    <span class="text-[var(--color-text-secondary)]">⏳ Section 4.3 Not Started</span>
+    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
+        <!-- Chapter Overview -->
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="info" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Chapter Overview
+            </h2>
+            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-4">
+                Explore different methods of voting and election systems! This chapter examines how democratic decisions are made, comparing various voting methods and their strengths and weaknesses.
+            </p>
+            <div class="alert alert-warning">
+                <i data-lucide="calendar" class="w-5 h-5 flex-shrink-0"></i>
+                <div>
+                    <strong>Test 3 Coverage:</strong> This chapter will appear on Test 3 (Nov 3-7, 2025). Review all voting methods and practice problems!
                 </div>
             </div>
         </section>
 
-        <!-- Lesson Navigation -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="lessons-heading">
-            <h2 id="lessons-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📚 Lessons</h2>
-            <div class="responsive-grid">
-                <!-- Section 4.1 -->
-                <div class="adhd-card border-[var(--color-border-positive)]" role="article" aria-labelledby="section-4-1">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-positive-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="check" class="w-6 h-6 text-white"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-1" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.1: Proportions</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Understanding and solving proportions</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-positive-default)] text-white px-2 py-1 rounded-full">COMPLETE</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">15 min</span>
-                            </div>
-                            <button class="adhd-button adhd-button-primary w-full" onclick="showLesson('4-1')" aria-label="Review Section 4.1">
-                                <i data-lucide="book-open" class="w-4 h-4" aria-hidden="true"></i>
-                                Review Lesson
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <!-- Voting Methods -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="users" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Voting Methods
+            </h2>
 
-                <!-- Section 4.2 -->
-                <div class="adhd-card border-[var(--color-border-warning)]" role="article" aria-labelledby="section-4-2">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-warning-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="play" class="w-6 h-6 text-white"></i>
+            <!-- Plurality Method -->
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">
+                    1. Plurality Method (First-Past-The-Post)
+                </h3>
+                <p class="text-sm mb-4">
+                    The candidate with the most votes wins. This is the most common method used in U.S. elections.
+                </p>
+                <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg mb-4">
+                    <p class="font-semibold mb-2">How it works:</p>
+                    <ol class="list-decimal ml-6 space-y-1 text-sm">
+                        <li>Each voter selects ONE candidate</li>
+                        <li>Count the total votes for each candidate</li>
+                        <li>The candidate with the most votes wins</li>
+                    </ol>
                         </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-2" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.2: Percentages</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Calculating percentages and percentage change</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-warning-default)] text-white px-2 py-1 rounded-full">IN PROGRESS</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">20 min</span>
-                            </div>
-                            <button class="adhd-button adhd-button-primary w-full" onclick="showLesson('4-2')" aria-label="Continue Section 4.2">
-                                <i data-lucide="play" class="w-4 h-4" aria-hidden="true"></i>
-                                Continue Lesson
-                            </button>
+                <div class="p-4 bg-carnelian-50 dark:bg-carnelian-900 dark:bg-opacity-20 rounded-lg">
+                    <p class="font-semibold mb-2">Potential Issues:</p>
+                    <ul class="space-y-1 text-sm">
+                        <li>• Winner may not have majority support (>50%)</li>
+                        <li>• "Spoiler effect" - similar candidates can split votes</li>
+                        <li>• Doesn't consider voter preferences beyond first choice</li>
+                    </ul>
                         </div>
                     </div>
-                </div>
 
-                <!-- Section 4.3 -->
-                <div class="adhd-card" role="article" aria-labelledby="section-4-3">
-                    <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-[var(--color-neutral-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="lock" class="w-6 h-6 text-white"></i>
-                        </div>
-                        <div class="flex-1 min-w-0">
-                            <h3 id="section-4-3" class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Section 4.3: Rates</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-3">Unit rates and rates of change</p>
-                            <div class="flex flex-wrap items-center gap-2 mb-4">
-                                <span class="text-xs bg-[var(--color-neutral-default)] text-white px-2 py-1 rounded-full">LOCKED</span>
-                                <span class="text-xs bg-[var(--color-brand-default)] text-white px-2 py-1 rounded-full">25 min</span>
-                            </div>
-                            <button class="adhd-button adhd-button-secondary w-full" disabled aria-label="Section 4.3 locked">
-                                <i data-lucide="lock" class="w-4 h-4" aria-hidden="true"></i>
-                                Complete 4.2 First
-                            </button>
+            <!-- Borda Count Method -->
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">
+                    2. Borda Count Method
+                </h3>
+                <p class="text-sm mb-4">
+                    Voters rank all candidates. Points are awarded based on rank, and the candidate with the most points wins.
+                </p>
+                <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg mb-4">
+                    <p class="font-semibold mb-2">How it works:</p>
+                    <ol class="list-decimal ml-6 space-y-1 text-sm">
+                        <li>Voters rank ALL candidates (1st, 2nd, 3rd, etc.)</li>
+                        <li>Assign points: Last place gets 0 points, 2nd-to-last gets 1, etc.</li>
+                        <li>Sum all points for each candidate</li>
+                        <li>Highest total wins</li>
+                    </ol>
+                </div>
+                <div class="p-3 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded text-sm">
+                    <strong>Example:</strong> With 4 candidates (A, B, C, D):<br>
+                    • 1st place: 3 points<br>
+                    • 2nd place: 2 points<br>
+                    • 3rd place: 1 point<br>
+                    • 4th place: 0 points
                         </div>
                     </div>
+
+            <!-- Runoff Method -->
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">
+                    3. Runoff Method (Sequential Runoff / Instant Runoff)
+                </h3>
+                <p class="text-sm mb-4">
+                    If no candidate has a majority, eliminate the candidate with fewest votes and redistribute their votes based on voters' next preferences.
+                </p>
+                <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg mb-4">
+                    <p class="font-semibold mb-2">How it works:</p>
+                    <ol class="list-decimal ml-6 space-y-1 text-sm">
+                        <li>Voters rank candidates by preference</li>
+                        <li>Count first-choice votes</li>
+                        <li>If no candidate has >50%, eliminate candidate with fewest votes</li>
+                        <li>Redistribute eliminated candidate's votes to voters' next choices</li>
+                        <li>Repeat until someone has majority</li>
+                    </ol>
+                </div>
+                <div class="p-4 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
+                    <p class="font-semibold mb-2 text-emerald-700 dark:text-emerald-300">Advantage:</p>
+                    <p class="text-sm">Winner always has majority support (>50%)</p>
+                </div>
+            </div>
+
+            <!-- Pairwise Comparison Method -->
+            <div class="card mb-6">
+                <h3 class="text-xl font-semibold mb-3 text-emerald-900 dark:text-emerald-100">
+                    4. Pairwise Comparison (Copeland's Method)
+                </h3>
+                <p class="text-sm mb-4">
+                    Compare every candidate head-to-head. The candidate who wins the most one-on-one matchups wins.
+                </p>
+                <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg mb-4">
+                    <p class="font-semibold mb-2">How it works:</p>
+                    <ol class="list-decimal ml-6 space-y-1 text-sm">
+                        <li>Create all possible pairs of candidates (A vs B, A vs C, etc.)</li>
+                        <li>For each pair, count how many voters prefer one over the other</li>
+                        <li>Winner of each matchup gets 1 point</li>
+                        <li>Candidate with most matchup wins becomes overall winner</li>
+                    </ol>
+                </div>
+                <div class="p-3 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded text-sm">
+                    <strong>Note:</strong> With <em>n</em> candidates, you need <strong>n(n-1)/2</strong> pairwise comparisons.<br>
+                    Example: 4 candidates = 4(3)/2 = 6 pairs to compare
                 </div>
             </div>
         </section>
 
-        <!-- Current Lesson Content -->
-        <section id="lesson-content" class="mb-6 sm:mb-8" aria-labelledby="lesson-heading" style="display: none;">
-            <h2 id="lesson-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📖 Current Lesson</h2>
-            <div class="adhd-card">
-                <div id="lesson-body">
-                    <!-- Lesson content will be loaded here -->
+        <!-- Fairness Criteria -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="scale" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Fairness Criteria
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <!-- Majority Criterion -->
+                <div class="card">
+                    <h3 class="font-semibold mb-2">Majority Criterion</h3>
+                    <p class="text-sm">
+                        If a candidate receives >50% of first-place votes, they should win.
+                    </p>
+                        </div>
+
+                <!-- Condorcet Criterion -->
+                <div class="card">
+                    <h3 class="font-semibold mb-2">Condorcet Criterion</h3>
+                    <p class="text-sm">
+                        If a candidate would win every head-to-head matchup, they should win overall.
+                    </p>
+                </div>
+
+                <!-- Monotonicity Criterion -->
+                <div class="card">
+                    <h3 class="font-semibold mb-2">Monotonicity Criterion</h3>
+                    <p class="text-sm">
+                        If a candidate moves up in rankings, it shouldn't cause them to lose.
+                    </p>
+                </div>
+
+                <!-- Independence of Irrelevant Alternatives -->
+                <div class="card">
+                    <h3 class="font-semibold mb-2">Independence of Irrelevant Alternatives (IIA)</h3>
+                    <p class="text-sm">
+                        Adding or removing a non-winning candidate shouldn't change the winner.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Key Formulas -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="formulas-heading">
-            <h2 id="formulas-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🔢 Key Formulas</h2>
-            <div class="responsive-grid">
-                <div class="adhd-card" role="article" aria-labelledby="proportion-formula">
-                    <h3 id="proportion-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Proportions</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Cross Multiplication</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">a/b = c/d → a×d = b×c</p>
+        <!-- Arrow's Impossibility Theorem -->
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="alert-triangle" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Arrow's Impossibility Theorem
+            </h2>
+            <p class="mb-4">
+                <strong>Kenneth Arrow's theorem (1950s)</strong> proves that <strong>NO voting system</strong> can simultaneously satisfy all fairness criteria when there are 3+ candidates.
+            </p>
+            <div class="p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg">
+                <p class="font-semibold mb-2">Key Insight:</p>
+                <p class="text-sm">
+                    Every voting method has flaws. The "best" method depends on what criteria you prioritize.
+                </p>
                         </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Solving for x</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">x = (b×c) / a</p>
-                        </div>
-                    </div>
-                </div>
+        </section>
 
-                <div class="adhd-card" role="article" aria-labelledby="percentage-formula">
-                    <h3 id="percentage-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Percentages</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Percentage of a number</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">P% of N = (P/100) × N</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Percentage change</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">% Change = (New - Old) / Old × 100%</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="adhd-card" role="article" aria-labelledby="rate-formula">
-                    <h3 id="rate-formula" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Rates</h3>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Unit rate</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">Rate = Amount / Time</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-secondary)] mb-1">Distance formula</p>
-                            <p class="font-mono text-lg text-[var(--color-text-primary)]">Distance = Rate × Time</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Comparison Table -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="table" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Method Comparison
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b-2 border-smokey-quartz-300 dark:border-smokey-quartz-600">
+                            <th class="text-left p-3">Method</th>
+                            <th class="text-left p-3">Satisfies Majority?</th>
+                            <th class="text-left p-3">Satisfies Condorcet?</th>
+                            <th class="text-left p-3">Complexity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-3 font-medium">Plurality</td>
+                            <td class="p-3">✅ Yes</td>
+                            <td class="p-3">❌ No</td>
+                            <td class="p-3">Simple</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-3 font-medium">Borda Count</td>
+                            <td class="p-3">❌ No</td>
+                            <td class="p-3">❌ No</td>
+                            <td class="p-3">Moderate</td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-3 font-medium">Runoff</td>
+                            <td class="p-3">✅ Yes</td>
+                            <td class="p-3">❌ No</td>
+                            <td class="p-3">Moderate</td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-medium">Pairwise Comparison</td>
+                            <td class="p-3">✅ Yes</td>
+                            <td class="p-3">✅ Yes</td>
+                            <td class="p-3">Complex</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <!-- Practice Problems -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="practice-heading">
-            <h2 id="practice-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🎯 Practice Problems</h2>
-            <div class="responsive-grid">
-                <div class="adhd-card" role="article" aria-labelledby="problem-1">
-                    <h3 id="problem-1" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 1: Proportions</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">If 3 apples cost $2.40, how much do 7 apples cost?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('1')" aria-label="Show solution for problem 1">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-1" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Set up proportion: 3/2.40 = 7/x</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Cross multiply: 3x = 2.40 × 7</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Solve: x = 16.80/3 = $5.60</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="adhd-card" role="article" aria-labelledby="problem-2">
-                    <h3 id="problem-2" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 2: Percentages</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">A shirt originally costs $50. It's on sale for 20% off. What's the sale price?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('2')" aria-label="Show solution for problem 2">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-2" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Discount = 20% of $50 = 0.20 × $50 = $10</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Sale price = $50 - $10 = $40</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="adhd-card" role="article" aria-labelledby="problem-3">
-                    <h3 id="problem-3" class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Problem 3: Rates</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">If you drive 240 miles in 4 hours, what's your average speed?</p>
-                    <div class="space-y-2">
-                        <button class="adhd-button adhd-button-secondary w-full justify-start" onclick="showSolution('3')" aria-label="Show solution for problem 3">
-                            <i data-lucide="eye" class="w-4 h-4" aria-hidden="true"></i>
-                            Show Solution
-                        </button>
-                        <div id="solution-3" class="hidden p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)]"><strong>Solution:</strong></p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Speed = Distance / Time</p>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Speed = 240 miles / 4 hours = 60 mph</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="mb-8 card">
+            <h2 class="card-header">
+                <i data-lucide="pencil" class="w-5 h-5 mr-2" aria-hidden="true"></i>
+                Practice Problems
+            </h2>
+            <p class="mb-4">Work through these problems to master voting methods:</p>
+            <ol class="list-decimal ml-6 space-y-2 text-sm">
+                <li>Given voter preference ballots, determine the winner using plurality method</li>
+                <li>Calculate Borda Count points for each candidate and find the winner</li>
+                <li>Apply instant runoff voting, eliminating candidates until one has majority</li>
+                <li>Conduct pairwise comparisons and determine the Condorcet winner</li>
+                <li>Identify which fairness criteria are violated in a given scenario</li>
+            </ol>
         </section>
 
-        <!-- Next Steps -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="next-steps-heading">
-            <h2 id="next-steps-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🎯 What's Next?</h2>
-            <div class="adhd-card border-[var(--color-border-brand)]">
-                <div class="flex items-start space-x-4">
-                    <div class="w-12 h-12 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                        <i data-lucide="target" class="w-6 h-6 text-white"></i>
-                    </div>
-                    <div class="flex-1">
-                        <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-2">Your Next Steps</h3>
-                        <div class="space-y-2">
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="check-circle" class="w-4 h-4 text-[var(--color-positive-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Complete Section 4.2: Percentages</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="book-open" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Practice 5 more problems</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <i data-lucide="calendar" class="w-4 h-4 text-[var(--color-warning-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Test 2 in 7 days - focus on Ch. 4 & 5</span>
-                            </div>
-                        </div>
-                        <div class="mt-4 flex flex-col sm:flex-row gap-2">
-                            <button class="adhd-button adhd-button-primary" onclick="showLesson('4-2')" aria-label="Continue with Section 4.2">
-                                <i data-lucide="play" class="w-4 h-4" aria-hidden="true"></i>
-                                Continue Learning
-                            </button>
-                            <a href="tutor.html" class="adhd-button adhd-button-secondary" aria-label="Get help from AI tutor">
-                                <i data-lucide="brain-circuit" class="w-4 h-4" aria-hidden="true"></i>
-                                Ask AI Tutor
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Resources -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-6">
+                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Additional Resources
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="formula_lookup.html" class="btn btn-secondary">
+                    <i data-lucide="list" class="w-4 h-4"></i>
+                    Formula Reference
+                </a>
+                <a href="tutor.html" class="btn btn-secondary">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    AI Math Tutor
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- Initialize Icons and JavaScript -->
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-
-        // Lesson content
-        const lessons = {
-            '4-1': {
-                title: 'Section 4.1: Understanding Proportions',
-                content: `
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">What is a Proportion?</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">A proportion is an equation that states two ratios are equal.</p>
-                    
-                    <div class="p-4 bg-[var(--color-background-secondary)] rounded-lg mb-4">
-                        <p class="text-sm text-[var(--color-text-primary)] font-mono">a/b = c/d</p>
-                        <p class="text-xs text-[var(--color-text-secondary)] mt-2">This means "a is to b as c is to d"</p>
+    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto py-6">
+        <div class="container mx-auto px-4 text-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+            <a href="index.html" class="hover:text-emerald-600">Dashboard</a> |
+            <a href="calendar.html" class="hover:text-emerald-600">Calendar</a> |
+            <a href="formula_lookup.html" class="hover:text-emerald-600">Formulas</a>
                     </div>
-                    
-                    <h4 class="text-md font-medium text-[var(--color-text-primary)] mb-3">Step-by-Step Method:</h4>
-                    <ol class="text-sm text-[var(--color-text-secondary)] space-y-2 list-decimal list-inside">
-                        <li>Set up the proportion with the unknown (x)</li>
-                        <li>Cross multiply: a × d = b × c</li>
-                        <li>Solve for x</li>
-                        <li>Check your answer</li>
-                    </ol>
-                    
-                    <div class="mt-4 p-3 bg-[var(--color-background-warning)] rounded-lg">
-                        <p class="text-sm text-[var(--color-text-warning-primary)]"><strong>Example:</strong> If 2 pizzas cost $12, how much do 5 pizzas cost?</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Set up: 2/12 = 5/x</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Cross multiply: 2x = 12 × 5 = 60</p>
-                        <p class="text-sm text-[var(--color-text-secondary)]">Solve: x = 60/2 = $30</p>
-                    </div>
-                `
-            },
-            '4-2': {
-                title: 'Section 4.2: Working with Percentages',
-                content: `
-                    <h3 class="text-lg font-medium text-[var(--color-text-primary)] mb-4">Percentage Basics</h3>
-                    <p class="text-sm text-[var(--color-text-secondary)] mb-4">Percent means "per hundred" - so 25% means 25 out of 100.</p>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)] font-medium">Finding Percentage of a Number</p>
-                            <p class="text-xs text-[var(--color-text-secondary)]">P% of N = (P/100) × N</p>
-                        </div>
-                        <div class="p-3 bg-[var(--color-background-secondary)] rounded-lg">
-                            <p class="text-sm text-[var(--color-text-primary)] font-medium">Percentage Change</p>
-                            <p class="text-xs text-[var(--color-text-secondary)]">% Change = (New - Old) / Old × 100%</p>
-                        </div>
-                    </div>
-                    
-                    <h4 class="text-md font-medium text-[var(--color-text-primary)] mb-3">Common Percentage Problems:</h4>
-                    <ul class="text-sm text-[var(--color-text-secondary)] space-y-1 list-disc list-inside">
-                        <li>Finding discounts and sale prices</li>
-                        <li>Calculating tips and taxes</li>
-                        <li>Determining percentage increase/decrease</li>
-                        <li>Converting between fractions, decimals, and percentages</li>
-                    </ul>
-                `
-            }
-        };
+    </footer>
 
-        function showLesson(section) {
-            const lessonContent = document.getElementById('lesson-content');
-            const lessonBody = document.getElementById('lesson-body');
-            const lessonHeading = document.getElementById('lesson-heading');
-            
-            if (lessons[section]) {
-                lessonHeading.textContent = lessons[section].title;
-                lessonBody.innerHTML = lessons[section].content;
-                lessonContent.style.display = 'block';
-                lessonContent.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function showSolution(problemNum) {
-            const solution = document.getElementById(`solution-${problemNum}`);
-            if (solution.classList.contains('hidden')) {
-                solution.classList.remove('hidden');
-            } else {
-                solution.classList.add('hidden');
-            }
-        }
-
-        // Initialize with first lesson
-        showLesson('4-1');
-    </script>
+    <script>lucide.createIcons();</script>
+    <script src="src/js/mobile-menu.js"></script>
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
+    <script src="src/js/chapter-init.js"></script>
 </body>
 </html>

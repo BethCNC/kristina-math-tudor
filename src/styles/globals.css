@@ -990,3 +990,1076 @@ h3 {
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================
+   Standardized Component Classes
+   ============================================ */
+
+/* Card Components */
+.card {
+  background: var(--color-background-default);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Button Components */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:focus {
+  outline: 2px solid var(--color-brand-default);
+  outline-offset: 2px;
+}
+
+.btn-primary {
+  background: var(--color-brand-default);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-brand-hover);
+}
+
+.btn-secondary {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--color-background-tertiary);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border-secondary);
+}
+
+.btn-outline:hover {
+  background: var(--color-background-secondary);
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+/* Input Components */
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border-secondary);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  background: var(--color-background-default);
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  outline: 2px solid var(--color-brand-default);
+  outline-offset: 0;
+  border-color: var(--color-brand-default);
+}
+
+.label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.label-required::after {
+  content: ' *';
+  color: var(--color-danger-default);
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 8px;
+  background: var(--color-background-secondary);
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--color-brand-default);
+  transition: width 0.3s ease;
+  border-radius: 9999px;
+}
+
+.progress-bar-success {
+  background: var(--color-positive-default);
+}
+
+.progress-bar-info {
+  background: var(--color-brand-default);
+}
+
+.progress-bar-warning {
+  background: var(--color-warning-default);
+}
+
+/* Alert Component */
+.alert {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+}
+
+.alert-warning {
+  background: var(--color-warning-tertiary);
+  border-left-color: var(--color-warning-default);
+  color: var(--color-text-primary);
+}
+
+.alert-danger {
+  background: var(--color-danger-tertiary);
+  border-left-color: var(--color-danger-default);
+  color: var(--color-text-primary);
+}
+
+.alert-success {
+  background: var(--color-positive-tertiary);
+  border-left-color: var(--color-positive-default);
+  color: var(--color-text-primary);
+}
+
+.alert-info {
+  background: var(--color-brand-tertiary);
+  border-left-color: var(--color-brand-default);
+  color: var(--color-text-primary);
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only.focus:not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ============================================
+   ADHD Accessibility: Deadline Urgency Indicators
+   ============================================ */
+
+/* Base deadline card styling */
+.deadline-critical {
+  border-left: 4px solid var(--color-ruby-500);
+  background: linear-gradient(to right, var(--color-ruby-50), transparent);
+}
+
+.dark .deadline-critical {
+  background: linear-gradient(to right, rgba(253, 84, 65, 0.1), transparent);
+}
+
+.deadline-soon {
+  border-left: 4px solid var(--color-carnelian-500);
+  background: linear-gradient(to right, var(--color-carnelian-50), transparent);
+}
+
+.dark .deadline-soon {
+  background: linear-gradient(to right, rgba(253, 150, 65, 0.1), transparent);
+}
+
+.deadline-upcoming {
+  border-left: 4px solid var(--color-emerald-500);
+  background: linear-gradient(to right, var(--color-emerald-50), transparent);
+}
+
+.dark .deadline-upcoming {
+  background: linear-gradient(to right, rgba(57, 157, 60, 0.1), transparent);
+}
+
+.deadline-future {
+  border-left: 4px solid var(--color-neutral-tertiary);
+}
+
+.deadline-overdue {
+  border-left: 4px solid var(--color-ruby-600);
+  background: linear-gradient(to right, var(--color-ruby-100), transparent);
+  animation: pulse-overdue 2s infinite;
+}
+
+.dark .deadline-overdue {
+  background: linear-gradient(to right, rgba(253, 84, 65, 0.2), transparent);
+}
+
+/* Deadline countdown indicator */
+.deadline-countdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background: var(--color-ruby-50);
+  color: var(--color-ruby-700);
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.dark .deadline-countdown {
+  background: var(--color-ruby-900);
+  color: var(--color-ruby-200);
+  background-opacity: 0.3;
+}
+
+/* Pulse animation for urgent deadlines */
+@keyframes pulse-urgent {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse-overdue {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(253, 84, 65, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(253, 84, 65, 0);
+  }
+}
+
+.pulse-urgent {
+  animation: pulse-urgent 2s ease-in-out infinite;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .deadline-countdown {
+    font-size: 0.625rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ============================================
+   ADHD Accessibility: Reading Mode Controls
+   ============================================ */
+
+.reading-mode-controls {
+  position: fixed;
+  top: 80px;
+  left: 24px;
+  z-index: 1000;
+}
+
+.reading-control-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--color-background-default);
+  border: 2px solid var(--color-border-secondary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  color: var(--color-text-primary);
+}
+
+.reading-control-toggle:hover {
+  background: var(--color-background-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reading-controls-panel {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background: var(--color-background-default);
+  border: 2px solid var(--color-border-secondary);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  min-width: 240px;
+}
+
+.reading-controls-panel.hidden {
+  display: none;
+}
+
+.reading-control-group {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border-tertiary);
+}
+
+.reading-control-group:last-of-type {
+  border-bottom: none;
+}
+
+.reading-control-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.reading-control-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.reading-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.5rem;
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--color-text-primary);
+}
+
+.reading-control-btn:hover {
+  background: var(--color-background-tertiary);
+  border-color: var(--color-border-secondary);
+}
+
+.reading-control-btn:active {
+  transform: scale(0.95);
+}
+
+.reading-control-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  min-width: 48px;
+  text-align: center;
+}
+
+.reading-control-btn-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-border-tertiary);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.reading-control-btn-full:hover {
+  background: var(--color-background-tertiary);
+}
+
+.reading-control-btn-full[aria-pressed="true"] {
+  background: var(--color-brand-default);
+  color: white;
+  border-color: var(--color-brand-default);
+}
+
+.reading-control-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.reading-control-reset:hover {
+  color: var(--color-text-primary);
+  background: var(--color-background-secondary);
+  border-radius: 0.375rem;
+}
+
+/* High Contrast Mode */
+body.high-contrast-mode {
+  --color-text-primary: #000000;
+  --color-background-default: #ffffff;
+  --color-border-secondary: #000000;
+}
+
+body.dark.high-contrast-mode {
+  --color-text-primary: #ffffff;
+  --color-background-default: #000000;
+  --color-border-secondary: #ffffff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .reading-mode-controls {
+    top: auto;
+    bottom: 140px;
+    left: 16px;
+  }
+  
+  .reading-controls-panel {
+    min-width: 200px;
+  }
+}
+
+/* ============================================
+   ADHD Accessibility: Focus Mode
+   ============================================ */
+
+.focus-mode-toggle {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-brand-default);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.focus-mode-toggle:hover {
+  background: var(--color-brand-hover);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.focus-mode-toggle:active {
+  transform: translateY(0);
+}
+
+.focus-mode-toggle[aria-pressed="true"] {
+  background: var(--color-danger-default);
+}
+
+.focus-mode-toggle[aria-pressed="true"]:hover {
+  background: var(--color-danger-hover);
+}
+
+/* Hide elements when focus mode is active */
+body.focus-mode-active header,
+body.focus-mode-active footer,
+body.focus-mode-active .adhd-break-section,
+body.focus-mode-active aside,
+body.focus-mode-active [aria-label="Quick Access"],
+body.focus-mode-active [aria-label="Additional Resources"],
+body.focus-mode-active nav {
+  display: none;
+}
+
+/* Expand main content in focus mode */
+body.focus-mode-active main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* Keep only essential interactive elements visible */
+body.focus-mode-active .focus-mode-toggle,
+body.focus-mode-active .save-indicator,
+body.focus-mode-active .achievement-toast-container {
+  display: flex;
+}
+
+/* Adjust focus mode toggle position when active */
+body.focus-mode-active .focus-mode-toggle {
+  top: 24px;
+  bottom: auto;
+  left: 24px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .focus-mode-toggle {
+    bottom: 80px;
+    left: 16px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  body.focus-mode-active .focus-mode-toggle {
+    top: 16px;
+    bottom: auto;
+  }
+}
+
+/* ============================================
+   ADHD Accessibility: Visual Break System
+   ============================================ */
+
+.adhd-break-section {
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.adhd-break-card {
+  background: linear-gradient(135deg, var(--color-brand-tertiary) 0%, var(--color-positive-tertiary) 100%);
+  border: 2px solid var(--color-brand-default);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dark .adhd-break-card {
+  background: linear-gradient(135deg, var(--color-smokey-quartz-800) 0%, var(--color-smokey-quartz-700) 100%);
+  border-color: var(--color-brand-tertiary);
+}
+
+.adhd-break-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  color: var(--color-brand-default);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .adhd-break-icon {
+  background: var(--color-smokey-quartz-900);
+  color: var(--color-brand-tertiary);
+}
+
+.adhd-break-content {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.adhd-break-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.adhd-break-message {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.adhd-break-suggestions {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 400px;
+}
+
+.dark .adhd-break-suggestions {
+  background: var(--color-smokey-quartz-900);
+}
+
+.adhd-break-suggestions ul {
+  color: var(--color-text-secondary);
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
+.adhd-break-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .adhd-break-actions {
+    flex-direction: row;
+  }
+}
+
+.break-timer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-brand-default);
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.dark .break-timer {
+  background: var(--color-smokey-quartz-900);
+  color: var(--color-brand-tertiary);
+}
+
+.adhd-break-complete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: var(--color-positive-tertiary);
+  color: var(--color-positive-default);
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* ============================================
+   ADHD Accessibility: Achievement Toast Notifications
+   ============================================ */
+
+.achievement-toast-container {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 1000;
+  max-width: 400px;
+}
+
+.achievement-toast {
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid var(--color-brand-default);
+  animation: slideInRight 0.3s ease-out;
+  min-height: 44px;
+}
+
+.dark .achievement-toast {
+  background: var(--color-smokey-quartz-800);
+}
+
+.achievement-toast.hiding {
+  animation: slideOutRight 0.3s ease-in;
+}
+
+.achievement-toast-success {
+  border-left-color: var(--color-positive-default);
+}
+
+.achievement-toast-info {
+  border-left-color: var(--color-brand-default);
+}
+
+.achievement-toast-warning {
+  border-left-color: var(--color-warning-default);
+}
+
+.achievement-toast-danger {
+  border-left-color: var(--color-danger-default);
+}
+
+.achievement-toast-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: var(--color-positive-tertiary);
+  color: var(--color-positive-default);
+}
+
+.achievement-toast-success .achievement-toast-icon {
+  background: var(--color-positive-tertiary);
+  color: var(--color-positive-default);
+}
+
+.achievement-toast-info .achievement-toast-icon {
+  background: var(--color-brand-tertiary);
+  color: var(--color-brand-default);
+}
+
+.achievement-toast-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.achievement-toast-title {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.achievement-toast-message {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
+.achievement-toast-close {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.achievement-toast-close:hover {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Mobile adjustments for toasts */
+@media (max-width: 640px) {
+  .achievement-toast-container {
+    top: 72px;
+    right: 16px;
+    left: 16px;
+    max-width: none;
+  }
+  
+  .achievement-toast {
+    padding: 0.75rem;
+  }
+}
+
+/* ============================================
+   ADHD Accessibility: Save Progress Indicator
+   ============================================ */
+
+.save-indicator {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--color-positive-default);
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.save-indicator.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .save-indicator {
+    bottom: 16px;
+    right: 16px;
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* ============================================
+   ADHD Accessibility: Formula Scroll Containers
+   ============================================ */
+
+/* Scrollable formula containers with visual indicators */
+.formula-scroll-container {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 0.75rem;
+  margin: 0 -0.75rem;
+}
+
+/* Gradient indicators for scrollable content */
+.formula-scroll-container::before,
+.formula-scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.formula-scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-background-default), transparent);
+}
+
+.formula-scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-background-default), transparent);
+}
+
+/* Hide indicators when content doesn't overflow */
+.formula-scroll-container:not(.has-overflow)::before,
+.formula-scroll-container:not(.has-overflow)::after {
+  display: none;
+}
+
+/* Formula container styling */
+.formula-container {
+  display: inline-block;
+  min-width: 100%;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}
+
+/* ============================================
+   ADHD Accessibility: Mobile Menu Overlay
+   ============================================ */
+
+/* Prevent body scroll when mobile menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Add semi-transparent overlay behind mobile menu */
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 40;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ensure mobile menu appears above overlay */
+#mobile-menu {
+  position: relative;
+  z-index: 50;
+}
+
+/* ============================================
+   ADHD Accessibility: Touch Target Sizes
+   ============================================ */
+
+/* Ensure minimum 44x44px touch targets for WCAG 2.1 Level AAA */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.badge-success {
+  background-color: var(--color-positive-tertiary);
+  color: var(--color-text-positive-primary);
+  border: 1px solid var(--color-positive-default);
+}
+
+.badge-danger {
+  background-color: var(--color-danger-tertiary);
+  color: var(--color-text-danger-primary);
+  border: 1px solid var(--color-danger-default);
+}
+
+.badge-warning {
+  background-color: var(--color-warning-tertiary);
+  color: var(--color-text-warning-primary);
+  border: 1px solid var(--color-warning-default);
+}
+
+.badge-info {
+  background-color: var(--color-brand-tertiary);
+  color: var(--color-text-brand-primary);
+  border: 1px solid var(--color-brand-default);
+}
+
+.badge-neutral {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border-secondary);
+}
+
+/* Filter buttons - ensure adequate touch targets */
+.filter-btn,
+.priority-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: var(--color-background-default);
+  color: var(--color-text-primary);
+}
+
+.filter-btn:hover,
+.priority-btn:hover {
+  background-color: var(--color-background-secondary);
+}
+
+.filter-btn.active,
+.priority-btn.active {
+  background-color: var(--color-brand-default);
+  color: white;
+}
+
+/* ============================================
+   ADHD Accessibility: Reduced Motion Support
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  /* Disable hover transforms for motion-sensitive users */
+  button:hover,
+  a:hover,
+  [role="button"]:hover,
+  .adhd-button:hover,
+  .adhd-card:hover {
+    transform: none !important;
+  }
+  
+  /* Keep shadows but remove transform animations */
+  button:active,
+  a:active,
+  [role="button"]:active,
+  .adhd-button:active {
+    transform: none !important;
+  }
+}

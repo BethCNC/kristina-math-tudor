@@ -105,7 +105,7 @@
         <!-- Welcome Header -->
         <section class="mb-8">
             <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                Welcome Back, Kristina! 👋
+                Welcome Back, Kristina! <span aria-hidden="true">👋</span>
                     </h1>
             <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
                 Fall 2025 Semester • Week 10 of 16
@@ -129,7 +129,10 @@
 
         <!-- Course Progress Overview -->
         <section class="mb-8" aria-labelledby="progress-heading">
-            <h2 id="progress-heading" class="text-2xl font-semibold mb-6">📊 Course Progress</h2>
+            <h2 id="progress-heading" class="text-2xl font-semibold mb-6">
+                <i data-lucide="bar-chart-2" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Course Progress
+            </h2>
             <div class="grid md:grid-cols-2 gap-6">
                 <!-- MAT 143 Progress Card -->
                 <div class="card">
@@ -223,7 +226,10 @@
 
         <!-- This Week Section -->
         <section class="mb-8" aria-labelledby="thisweek-heading">
-            <h2 id="thisweek-heading" class="text-2xl font-semibold mb-6">📅 This Week</h2>
+            <h2 id="thisweek-heading" class="text-2xl font-semibold mb-6">
+                <i data-lucide="calendar-days" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                This Week
+            </h2>
             <div class="card">
                 <div class="space-y-4">
                     <!-- Upcoming Deadline Item -->
@@ -280,7 +286,10 @@
 
         <!-- Quick Access Resources -->
         <section class="mb-8" aria-labelledby="resources-heading">
-            <h2 id="resources-heading" class="text-2xl font-semibold mb-6">🎯 Quick Access</h2>
+            <h2 id="resources-heading" class="text-2xl font-semibold mb-6">
+                <i data-lucide="zap" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Quick Access
+            </h2>
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <!-- Math Chapters -->
                 <a href="tutor.html" class="card hover:shadow-lg transition-shadow">
@@ -330,7 +339,10 @@
 
         <!-- Study Tips -->
         <section class="mb-8 card">
-            <h2 class="card-header">💡 Study Tips for Success</h2>
+            <h2 class="card-header">
+                <i data-lucide="lightbulb" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
+                Study Tips for Success
+            </h2>
             <ul class="space-y-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
                 <li class="flex items-start space-x-2">
                     <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
@@ -441,18 +453,53 @@
         lucide.createIcons();
     </script>
 
-    <!-- Mobile Menu Toggle Script -->
+    <!-- Mobile Menu with Focus Trap -->
+    <script src="src/js/mobile-menu.js"></script>
+
+    <!-- ADHD Accessibility Features -->
+    <script src="src/js/progress-tracker.js"></script>
+    <script src="src/js/achievements.js"></script>
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
+
+    <!-- Dashboard Progress Integration -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
-                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.classList.toggle('hidden');
-        });
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for last accessed chapter
+            const lastChapter = progressTracker.getLastAccessedChapter();
+            
+            if (lastChapter) {
+                // Create "Resume" card if user has progress
+                const resumeCard = document.createElement('section');
+                resumeCard.className = 'mb-8';
+                resumeCard.innerHTML = `
+                    <div class="card border-2 border-brand-default bg-brand-tertiary">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-brand-default rounded-lg flex items-center justify-center">
+                                    <i data-lucide="play-circle" class="w-6 h-6 text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold">Continue Learning</h3>
+                                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                                        Resume ${lastChapter.replace('-', ' ').replace('chapter', 'Chapter')}
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="${lastChapter}.html" class="btn btn-primary">
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                `;
+                
+                // Insert after welcome section
+                const welcomeSection = document.querySelector('main section.mb-8');
+                if (welcomeSection) {
+                    welcomeSection.insertAdjacentElement('afterend', resumeCard);
+                    lucide.createIcons();
+                }
             }
         });
     </script>
