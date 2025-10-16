@@ -4,320 +4,289 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapter 1: Thinking Mathematically - MAT 143</title>
-    <meta name="description" content="Learn mathematical thinking, estimation, and problem-solving with step-by-step lessons for MAT 143.">
+    <meta name="description" content="Learn mathematical thinking, estimation, and problem-solving techniques for MAT 143.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
     
-    <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals-new.css">
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-primary">
-    <!-- Skip to main content -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Desktop Header -->
+    <!-- Header -->
     <header class="header">
-        <a href="tutor.html" class="nav-back">
-            <i data-lucide="arrow-left"></i>
-            <span>Back to Courses</span>
-        </a>
-        
-        <div class="flex items-center gap-xxs flex-1 justify-center">
-            <div class="flex items-center gap-xxs p-xxs bg-purple-light rounded-lg">
-                <div class="w-10 h-10 bg-purple rounded-md flex items-center justify-center text-white h-df">
-                    1
-                </div>
-                <div>
-                    <h1 class="h-df text-primary">Thinking Mathematically</h1>
-                    <p class="t-sm text-secondary">Chapter 1</p>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="header-actions">
-            <button class="btn-icon" aria-label="Bookmark chapter">
-                <i data-lucide="bookmark" class="icon-md"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-        <a href="tutor.html" style="position: absolute; left: 16px;">
-            <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
-        </a>
-        <h1 class="h-df text-center">Chapter 1</h1>
     </header>
 
     <!-- Main Content -->
-    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
         
-        <!-- Chapter Cover Header -->
-        <div class="card-base mb-db p-xxl" style="background: linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-bg-primary) 100%);">
-            <div class="flex items-start justify-between mb-df">
-                <div class="badge badge-purple">
-                    <i data-lucide="clock" class="badge-icon"></i>
-                    45-60 min
-                </div>
-                <div class="badge badge-light">
-                    Test 1: Sept 8-12
-                </div>
-            </div>
-            
-            <h1 class="h-db text-primary mb-xxs">Thinking Mathematically</h1>
-            <p class="t-df text-secondary mb-xxl">Learn deductive and inductive reasoning, estimation strategies, and Polya's problem-solving process—essential skills for success in MAT 143.</p>
-            
-            <!-- Progress Bar -->
-            <div class="progress-bar-wrapper">
-                <div class="progress-bar-label">
-                    <span class="t-sm text-secondary">Your Progress</span>
-                    <span class="t-sm text-semibold text-primary">3/3 sections</span>
-                </div>
-                <div class="progress-bar-container">
-                    <div class="progress-bar-fill" style="width: 100%"></div>
+        <!-- Breadcrumb -->
+        <div class="mb-6">
+            <nav style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);">
+                <a href="index.html" style="color: var(--primary-blue); text-decoration: none;">Dashboard</a> > 
+                <a href="tutor.html" style="color: var(--primary-blue); text-decoration: none;">Math Tutor</a> > 
+                <span style="color: var(--neutral-gray-light);">Chapter 1: Thinking Mathematically</span>
+            </nav>
+        </div>
+
+        <!-- Chapter Hero -->
+        <div class="card mb-8" style="background: linear-gradient(135deg, var(--primary-blue-light) 0%, #f0f9ff 100%); border-left: 4px solid var(--primary-blue);">
+            <div class="card-body">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 style="margin: 0 0 var(--space-2) 0; color: var(--primary-blue);">Chapter 1: Thinking Mathematically</h1>
+                        <p style="margin: 0; color: var(--neutral-gray-light); font-size: var(--font-size-lg);">Mathematical Reasoning, Estimation, and Problem Solving</p>
+                    </div>
+                    <div class="badge badge-success" style="font-size: var(--font-size-base); padding: var(--space-2) var(--space-4);">Completed</div>
                 </div>
             </div>
         </div>
 
-        <!-- Section Cards -->
-        <section class="mb-db">
-            <h2 class="h-xl text-primary mb-xxl">Chapter Sections</h2>
-            
-            <div class="flex flex-col gap-df">
-                <!-- Section 1.1 -->
-                <details class="card-base" open>
-                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
-                        <div class="badge badge-purple">1.1</div>
-                        <div class="flex-1">
-                            <h3 class="h-lg text-primary mb-uxs">Deductive vs. Inductive Reasoning</h3>
-                            <p class="t-md text-secondary">Learn the difference between deductive and inductive reasoning</p>
-                        </div>
-                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
-                    </summary>
-                    
-                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
-                        <div class="flex flex-col gap-df">
-                            <!-- Deductive Reasoning -->
-                            <div>
-                                <h4 class="h-md text-primary mb-xxs">Deductive Reasoning</h4>
-                                <p class="t-md-paragraph text-secondary mb-df">Drawing conclusions from general principles. If the premises are true, the conclusion MUST be true.</p>
-                                
-                                <div class="p-df bg-purple-light rounded-lg">
-                                    <p class="t-md text-semibold text-primary mb-xxs">Example:</p>
-                                    <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
-                                        <li>All birds have feathers (general principle)</li>
-                                        <li>A robin is a bird (specific case)</li>
-                                        <li><strong>Therefore:</strong> Robins have feathers (conclusion)</li>
-                                    </ul>
-                                </div>
-                            </div>
+        <!-- Section Navigation -->
+        <div class="grid grid-cols-3 mb-8">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="brain" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Mathematical Thinking</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Logical reasoning and patterns</p>
+                    <a href="#mathematical-thinking" class="btn btn-primary w-full">Review Section</a>
+                </div>
+            </div>
 
-                            <!-- Inductive Reasoning -->
-                            <div>
-                                <h4 class="h-md text-primary mb-xxs">Inductive Reasoning</h4>
-                                <p class="t-md-paragraph text-secondary mb-df">Making predictions based on patterns or observations. Conclusions are probable but not guaranteed.</p>
-                                
-                                <div class="p-df bg-orange-light rounded-lg">
-                                    <p class="t-md text-semibold text-primary mb-xxs">Example:</p>
-                                    <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
-                                        <li>I've seen 10 swans and they're all white (observation)</li>
-                                        <li><strong>Therefore:</strong> All swans are white (prediction)</li>
-                                        <li><em>Note: This is actually false—black swans exist!</em></li>
-                                    </ul>
-                                </div>
-                            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calculator" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Estimation</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Approximate calculations</p>
+                    <a href="#estimation" class="btn btn-primary w-full">Review Section</a>
+                </div>
+            </div>
 
-                            <!-- Key Difference -->
-                            <div class="p-df bg-accent-light rounded-lg">
-                                <p class="t-md text-semibold text-accent mb-xxs">Key Difference:</p>
-                                <ul class="t-md text-primary" style="margin-left: 16px;">
-                                    <li><strong>Deductive:</strong> General → Specific (100% certain if premises are true)</li>
-                                    <li><strong>Inductive:</strong> Specific → General (probable, not certain)</li>
-                                </ul>
-                            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="lightbulb" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Problem Solving</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Step-by-step approaches</p>
+                    <a href="#problem-solving" class="btn btn-primary w-full">Review Section</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Concepts -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Key Concepts</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Mathematical Thinking -->
+                    <div class="card" id="mathematical-thinking" style="border-left: 4px solid var(--primary-blue);">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Mathematical Thinking</h3>
+                            <p style="margin: 0 0 var(--space-3) 0;">The foundation of quantitative literacy involves:</p>
+                            <ul style="margin: 0; padding-left: var(--space-6);">
+                                <li style="margin-bottom: var(--space-2);">Recognizing patterns and relationships</li>
+                                <li style="margin-bottom: var(--space-2);">Making logical connections</li>
+                                <li style="margin-bottom: var(--space-2);">Using mathematical reasoning</li>
+                                <li style="margin-bottom: var(--space-2);">Applying quantitative methods to real-world problems</li>
+                            </ul>
                         </div>
                     </div>
-                </details>
 
-                <!-- Section 1.2 -->
-                <details class="card-base">
-                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
-                        <div class="badge badge-purple">1.2</div>
-                        <div class="flex-1">
-                            <h3 class="h-lg text-primary mb-uxs">Estimating and Evaluating</h3>
-                            <p class="t-md text-secondary">Strategies for quick approximations and evaluating reasonableness</p>
-                        </div>
-                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
-                    </summary>
-                    
-                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
-                        <div class="flex flex-col gap-df">
-                            <div>
-                                <h4 class="h-md text-primary mb-xxs">Estimation Strategies</h4>
-                                <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
-                                    <li><strong>Rounding:</strong> Round numbers to make calculations easier</li>
-                                    <li><strong>Benchmark numbers:</strong> Use 10, 100, 1000 for comparisons</li>
-                                    <li><strong>Front-end estimation:</strong> Use leading digits only</li>
-                                    <li><strong>Compatible numbers:</strong> Find numbers that work well together</li>
-                                </ul>
-                            </div>
-
-                            <div class="p-df bg-blue-light rounded-lg">
-                                <p class="t-md text-semibold text-blue mb-xxs">Example: Estimate 487 × 23</p>
-                                <p class="t-md text-primary">Round: 500 × 20 = 10,000</p>
-                                <p class="t-md text-primary">Actual: 11,201</p>
-                                <p class="t-sm text-secondary mt-xxs">Our estimate is reasonable!</p>
-                            </div>
+                    <!-- Estimation -->
+                    <div class="card" id="estimation" style="border-left: 4px solid var(--math-purple);">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Estimation Techniques</h3>
+                            <p style="margin: 0 0 var(--space-3) 0;">Useful for quick approximations:</p>
+                            <ul style="margin: 0; padding-left: var(--space-6);">
+                                <li style="margin-bottom: var(--space-2);">Rounding to nearest convenient number</li>
+                                <li style="margin-bottom: var(--space-2);">Using benchmark values (10, 100, 1000)</li>
+                                <li style="margin-bottom: var(--space-2);">Front-end estimation (using leading digits)</li>
+                                <li style="margin-bottom: var(--space-2);">Compatible numbers (easy to calculate)</li>
+                            </ul>
                         </div>
                     </div>
-                </details>
 
-                <!-- Section 1.3 -->
-                <details class="card-base">
-                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
-                        <div class="badge badge-purple">1.3</div>
-                        <div class="flex-1">
-                            <h3 class="h-lg text-primary mb-uxs">Problem Solving: Polya's Method</h3>
-                            <p class="t-md text-secondary">4-step problem-solving process and strategies</p>
-                        </div>
-                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
-                    </summary>
-                    
-                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
-                        <div class="p-df bg-lime-light rounded-lg">
-                            <h4 class="h-md text-primary mb-df">Polya's 4-Step Process</h4>
-                            <ol class="t-md text-primary" style="margin-left: 20px; line-height: 1.8;">
-                                <li><strong>Understand the Problem</strong> - What are you solving for?</li>
-                                <li><strong>Devise a Plan</strong> - What method will you use?</li>
-                                <li><strong>Carry Out the Plan</strong> - Execute your strategy</li>
-                                <li><strong>Look Back and Check</strong> - Does your answer make sense?</li>
+                    <!-- Problem Solving -->
+                    <div class="card" id="problem-solving" style="border-left: 4px solid var(--success-green);">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem-Solving Process</h3>
+                            <p style="margin: 0 0 var(--space-3) 0;">Systematic approach to mathematical problems:</p>
+                            <ol style="margin: 0; padding-left: var(--space-6);">
+                                <li style="margin-bottom: var(--space-2);"><strong>Understand:</strong> Read and identify what's given and what's needed</li>
+                                <li style="margin-bottom: var(--space-2);"><strong>Plan:</strong> Choose appropriate strategy and method</li>
+                                <li style="margin-bottom: var(--space-2);"><strong>Solve:</strong> Execute the plan step by step</li>
+                                <li style="margin-bottom: var(--space-2);"><strong>Check:</strong> Verify the answer makes sense</li>
                             </ol>
                         </div>
                     </div>
-                </details>
+                </div>
             </div>
-        </section>
+        </div>
 
         <!-- Practice Problems -->
-        <section class="card-base mb-db">
-            <h2 class="h-xl text-primary mb-df">Practice Problems</h2>
-            
-            <div class="flex flex-col gap-df">
-                <!-- Problem 1 -->
-                <div>
-                    <p class="t-df text-primary mb-xxs"><strong>1.</strong> Identify the type of reasoning:</p>
-                    <p class="t-md text-secondary mb-df">"Taylor plays football and has caught 24 out of 56 targets so far this season. So, he is expected to catch 6 out of 14 targets in tonight's game."</p>
-                    <details class="mt-xxs">
-                        <summary class="text-accent cursor-pointer t-md">Show Answer</summary>
-                        <div class="mt-df p-df bg-lime-light rounded-lg">
-                            <p class="t-md text-primary"><strong>Inductive reasoning</strong> - making a prediction based on past performance</p>
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Practice Problems</h2>
+            </div>
+            <div class="card-body">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Problem 1 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem 1: Estimation</h3>
+                            <p style="margin: 0 0 var(--space-4) 0;">Estimate the total cost of 3 items priced at $12.99, $8.47, and $15.23.</p>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                                <p style="margin: 0; font-weight: 600;">Solution:</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Round to nearest dollar: $13 + $8 + $15 = $36</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Actual total: $36.69 (very close!)</p>
+                            </div>
+                            <button class="btn btn-primary">Show Solution</button>
                         </div>
-                    </details>
-                </div>
+                    </div>
 
-                <div class="divider"></div>
-
-                <!-- Problem 2 -->
-                <div>
-                    <p class="t-df text-primary mb-xxs"><strong>2.</strong> Find the pattern and next two terms:</p>
-                    <p class="t-md text-mono text-secondary mb-df">288, 144, 72, 36, ...</p>
-                    <details class="mt-xxs">
-                        <summary class="text-accent cursor-pointer t-md">Show Answer</summary>
-                        <div class="mt-df p-df bg-lime-light rounded-lg">
-                            <p class="t-md text-primary mb-xxs"><strong>Pattern:</strong> Divide by 2 each time</p>
-                            <p class="t-md text-primary mb-xxs"><strong>Next terms:</strong> 18, 9</p>
-                            <p class="t-sm text-secondary"><strong>Type:</strong> Geometric sequence</p>
+                    <!-- Problem 2 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 style="margin: 0 0 var(--space-3) 0;">Problem 2: Problem Solving</h3>
+                            <p style="margin: 0 0 var(--space-4) 0;">A rectangular garden is 12 feet long and 8 feet wide. What is its area in square yards?</p>
+                            <div style="background-color: var(--neutral-gray-bg); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                                <p style="margin: 0; font-weight: 600;">Solution:</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Area = 12 × 8 = 96 square feet</p>
+                                <p style="margin: var(--space-2) 0 0 0;">Convert: 96 ÷ 9 = 10.67 square yards</p>
+                            </div>
+                            <button class="btn btn-primary">Show Solution</button>
                         </div>
-                    </details>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Navigation -->
-        <div class="flex justify-between items-center">
-            <button class="btn-outline" disabled style="opacity: 0.5; cursor: not-allowed;">
-                <i data-lucide="chevron-left" class="icon-md"></i>
-                Previous
-            </button>
-            <div class="flex items-center gap-uxs">
-                <div class="badge badge-light">1 of 8</div>
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="calculator" style="width: 24px; height: 24px; color: var(--math-purple);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">More Practice</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Additional problems and solutions</p>
+                    <a href="formula_lookup.html" class="btn btn-primary w-full">View Resources</a>
+                </div>
             </div>
-            <a href="chapter-4.html" class="btn-fill">
-                Next
-                <i data-lucide="chevron-right" class="icon-md"></i>
-            </a>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--success-green); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--white);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Study Guide</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Comprehensive chapter review</p>
+                    <a href="course_materials/formula_sheets/Unit_1_Formula_Sheet.html" class="btn btn-primary w-full">View Guide</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="arrow-right" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Next Chapter</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Continue learning</p>
+                    <a href="chapter-4.html" class="btn btn-primary w-full">Chapter 4</a>
+                </div>
+            </div>
         </div>
     </main>
 
-    <!-- Mobile Bottom Navigation -->
-    <nav class="bottom-nav" aria-label="Mobile navigation">
-        <a href="index.html" class="nav-item-mobile" data-page="home">
-            <i data-lucide="home" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Home</span>
-        </a>
-        <a href="tutor.html" class="nav-item-mobile active" data-page="courses">
-            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Courses</span>
-        </a>
-        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
-            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Calendar</span>
-        </a>
-        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
-            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Resources</span>
-        </a>
-        <a href="#profile" class="nav-item-mobile" data-page="profile">
-            <i data-lucide="user" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Profile</span>
-        </a>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item active">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
     </nav>
 
-    <!-- Scripts -->
     <script>
+        // Initialize Lucide icons
         lucide.createIcons();
-    </script>
-
-    <!-- ADHD Accessibility Features -->
-    <script src="src/js/focus-mode.js"></script>
-    <script src="src/js/reading-mode.js"></script>
-    <script src="src/js/bottom-nav.js"></script>
-    <script src="src/js/chapter-init.js"></script>
-
-    <!-- Chapter Interactions -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Track section expand/collapse
-            const details = document.querySelectorAll('details');
-            details.forEach(detail => {
-                detail.addEventListener('toggle', function() {
-                    const icon = this.querySelector('summary i[data-lucide="chevron-down"]');
-                    if (this.open) {
-                        icon.style.transform = 'rotate(180deg)';
-                    } else {
-                        icon.style.transform = 'rotate(0deg)';
-                    }
-                });
-            });
-            
-            // Animate cards
-            const cards = document.querySelectorAll('.card-base');
-            cards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 50}ms`;
-                card.classList.add('slide-up');
-            });
-            
-            // Track progress
-            if (typeof progressTracker !== 'undefined') {
-                progressTracker.trackChapterAccess('chapter-1');
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'tutor.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
             }
+        });
+
+        // Smooth scrolling for section links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     </script>
 </body>
