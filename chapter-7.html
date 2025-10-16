@@ -80,11 +80,39 @@
                     <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
                         <i data-lucide="target" style="width: 20px; height: 20px; color: var(--white);"></i>
                     </div>
-                <div>
+                    <div>
                         <h3 style="margin: 0; color: var(--danger-red);">Critical for Test 3</h3>
                         <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 covers Chapters 6 & 7 • November 3-7, 2025</p>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- HAWKES LEARNING URGENT - 20% OF GRADE! -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4 mb-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="alert-circle" style="width: 20px; height: 20px; color: var(--white);"></i>
+                    </div>
+                    <div>
+                        <h3 style="margin: 0; color: var(--danger-red);">🚨 HAWKES DUE: November 3, 2025</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light); font-weight: 600;">20% of your final grade - MUST complete before Test 3!</p>
+                    </div>
+                </div>
+                <div style="background-color: var(--white); padding: var(--space-4); border-radius: var(--radius-md); margin-bottom: var(--space-4);">
+                    <h4 style="margin: 0 0 var(--space-2) 0; font-weight: 600;">Requirements:</h4>
+                    <ul style="margin: 0; padding-left: var(--space-6);">
+                        <li style="margin-bottom: var(--space-2);">Complete ALL Chapter 7 Hawkes assignments</li>
+                        <li style="margin-bottom: var(--space-2);">Must achieve "mastery" (see congratulations message)</li>
+                        <li style="margin-bottom: var(--space-2);">Due BEFORE Test 3 starts (Nov 3)</li>
+                        <li style="margin: 0;">Worth 20% of your MAT 143 final grade</li>
+                    </ul>
+                </div>
+                <a href="https://learn.hawkeslearning.com" class="btn btn-primary w-full" target="_blank" rel="noopener">
+                    <i data-lucide="external-link"></i>
+                    Go to Hawkes Learning
+                </a>
             </div>
         </div>
 
@@ -356,6 +384,9 @@
             </a>
                     </div>
     </nav>
+
+    <!-- Next Due Widget Script (ADHD Support) -->
+    <script src="src/js/next-due-widget.js"></script>
 
     <script>
         // Initialize Lucide icons
