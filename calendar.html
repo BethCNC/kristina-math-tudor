@@ -12,450 +12,264 @@
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="src/styles/globals-new.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+<body class="bg-primary">
     <!-- Skip to main content -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+    <a href="#main-content" class="skip-link">
         Skip to main content
     </a>
 
-    <!-- Navigation Header -->
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
-                        <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
-                        </div>
-                        <span class="text-lg font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-50 hidden sm:inline">Academic Dashboard</span>
-                    </a>
-                </div>
-
-                <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
-                    <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="home" class="w-4 h-4 inline mr-1"></i>
-                        Dashboard
-                    </a>
-                    <a href="calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
-                        <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i>
-                        Calendar
-                    </a>
-                    <a href="tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="calculator" class="w-4 h-4 inline mr-1"></i>
-                        Math Tutor
-                    </a>
-                    <a href="english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1"></i>
-                        Writing Coach
-                    </a>
-                    <a href="formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="book-open" class="w-4 h-4 inline mr-1"></i>
-                        Resources
-                    </a>
+    <!-- Desktop Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
+                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
+            </svg>
+        </a>
+        
+        <nav class="header-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-item-desktop">Home</a>
+            <a href="tutor.html" class="nav-item-desktop">Courses</a>
+            <a href="calendar.html" class="nav-item-desktop active">Calendar</a>
+            <a href="formula_lookup.html" class="nav-item-desktop">Resources</a>
+            <a href="#profile" class="nav-item-desktop">Profile</a>
                 </nav>
 
-                <button 
-                    id="mobile-menu-button" 
-                    class="md:hidden p-2 rounded-lg text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                    aria-label="Toggle mobile menu"
-                    aria-expanded="false">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+        <div class="header-actions">
+            <button class="btn-icon has-notification" aria-label="Notifications">
+                <i data-lucide="bell" class="icon-md"></i>
                 </button>
+            <div class="avatar">
+                <div class="avatar-initials">KC</div>
             </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-            <nav class="px-4 py-3 space-y-1">
-                <a href="index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <i data-lucide="home" class="w-4 h-4 mr-2"></i>
-                    Dashboard
-                </a>
-                <a href="calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
-                    <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
-                    Calendar
-                </a>
-                <a href="tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <i data-lucide="calculator" class="w-4 h-4 mr-2"></i>
-                    Math Tutor
-                </a>
-                <a href="english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>
-                    Writing Coach
-                </a>
-                <a href="formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                    <i data-lucide="book-open" class="w-4 h-4 mr-2"></i>
-                    Resources
-                </a>
-            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
-        <!-- Header -->
-        <section class="mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                <i data-lucide="calendar" class="w-8 h-8 inline mr-2" aria-hidden="true"></i>
-                Fall 2025 Semester Calendar
-            </h1>
-            <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                August 18, 2025 - December 12, 2025 • 16 Weeks
-            </p>
-        </section>
+    <!-- Mobile Header -->
+    <header class="header-mobile">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
+            <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
+        </svg>
+    </header>
 
-        <!-- Filters -->
-        <section class="mb-8 card">
-            <div class="flex flex-wrap items-center gap-4">
-                <div>
-                    <label class="text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 mr-2">Filter by Course:</label>
-                    <div class="inline-flex rounded-lg border border-smokey-quartz-300 dark:border-smokey-quartz-600">
-                        <button class="filter-btn active px-4 py-2 text-sm font-medium rounded-l-lg" data-filter="all">All</button>
-                        <button class="filter-btn px-4 py-2 text-sm font-medium border-l border-smokey-quartz-300 dark:border-smokey-quartz-600" data-filter="math">MAT 143</button>
-                        <button class="filter-btn px-4 py-2 text-sm font-medium border-l border-smokey-quartz-300 dark:border-smokey-quartz-600 rounded-r-lg" data-filter="english">ENG 111</button>
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+        
+        <!-- View Toggle -->
+        <div class="flex justify-center mb-xxl">
+            <div class="switch">
+                <button class="switch-item" data-view="progress" aria-pressed="false">
+                    Progress
+                </button>
+                <button class="switch-item active" data-view="calendar" aria-pressed="true">
+                    Calendar
+                </button>
                     </div>
                 </div>
                 
-                <div>
-                    <label class="text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 mr-2">Priority:</label>
-                    <div class="inline-flex rounded-lg border border-smokey-quartz-300 dark:border-smokey-quartz-600">
-                        <button class="priority-btn active px-4 py-2 text-sm font-medium rounded-l-lg" data-priority="all">All</button>
-                        <button class="priority-btn px-4 py-2 text-sm font-medium border-l border-smokey-quartz-300 dark:border-smokey-quartz-600" data-priority="urgent">Urgent</button>
-                        <button class="priority-btn px-4 py-2 text-sm font-medium border-l border-smokey-quartz-300 dark:border-smokey-quartz-600 rounded-r-lg" data-priority="upcoming">Upcoming</button>
+        <!-- Calendar Header -->
+        <div class="calendar-header mb-df">
+            <button class="calendar-header-btn" aria-label="Previous month" id="prev-month">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <h1 class="calendar-header-title" id="calendar-title">October 2025</h1>
+            <button class="calendar-header-btn" aria-label="Next month" id="next-month">
+                <i data-lucide="chevron-right"></i>
+            </button>
                     </div>
+
+        <!-- Calendar Week View -->
+        <div class="calendar-week mb-xxl" id="calendar-week">
+            <div class="calendar-day">
+                <div class="calendar-day-number">14</div>
+                <div class="calendar-day-label">mon</div>
+                </div>
+            <div class="calendar-day">
+                <div class="calendar-day-number">15</div>
+                <div class="calendar-day-label">tue</div>
+            </div>
+            <div class="calendar-day active has-event">
+                <div class="calendar-day-number">16</div>
+                <div class="calendar-day-label">wed</div>
+                        </div>
+            <div class="calendar-day has-event">
+                <div class="calendar-day-number">17</div>
+                <div class="calendar-day-label">thu</div>
+                    </div>
+            <div class="calendar-day has-event">
+                <div class="calendar-day-number">18</div>
+                <div class="calendar-day-label">fri</div>
+            </div>
+            <div class="calendar-day">
+                <div class="calendar-day-number">19</div>
+                <div class="calendar-day-label">sat</div>
+            </div>
+            <div class="calendar-day">
+                <div class="calendar-day-number">20</div>
+                <div class="calendar-day-label">sun</div>
+                                </div>
+                </div>
+
+        <!-- Event List -->
+        <div class="flex flex-col gap-df" id="event-list">
+            <!-- Event 1 -->
+            <div class="calendar-event-card deadline-soon">
+                <div class="calendar-event-time flex items-center justify-between">
+                    <div class="flex items-center gap-uxs">
+                        <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                        <span class="calendar-event-time-text">10:00 - 10:30</span>
+                    </div>
+                    <button class="btn-icon btn-sm" aria-label="Event menu">
+                        <i data-lucide="more-horizontal" class="icon-sm"></i>
+                    </button>
+                            </div>
+                <div class="calendar-event-body">
+                    <h3 class="calendar-event-title">Chapter 7 Hawkes Learning</h3>
+                    <p class="calendar-event-hint">MAT 143: Complete to achieve mastery status</p>
                 </div>
             </div>
-        </section>
 
-        <!-- Critical Dates Alert -->
-        <section class="mb-8" aria-labelledby="critical-dates">
-            <h2 id="critical-dates" class="text-2xl font-semibold mb-4">
-                <i data-lucide="alert-triangle" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Critical Dates
-            </h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <div class="card bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 border-ruby-300 dark:border-ruby-700">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="alert-triangle" class="w-5 h-5 text-ruby-600 dark:text-ruby-400 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <p class="font-semibold text-ruby-900 dark:text-ruby-100">EVA Deadline</p>
-                            <p class="text-sm text-ruby-700 dark:text-ruby-300">Friday, August 29, 2025</p>
-                            <p class="text-xs text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">Complete attendance verification</p>
-                        </div>
+            <!-- Event 2 - Live Test -->
+            <div class="calendar-event-card deadline-critical">
+                <div class="calendar-event-time flex items-center justify-between">
+                    <div class="flex items-center gap-uxs">
+                        <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                        <span class="calendar-event-time-text">Nov 3-7</span>
                     </div>
-                            </div>
-
-                <div class="card bg-carnelian-50 dark:bg-carnelian-900 dark:bg-opacity-20 border-carnelian-300 dark:border-carnelian-700">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="calendar-x" class="w-5 h-5 text-carnelian-600 dark:text-carnelian-400 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <p class="font-semibold text-carnelian-900 dark:text-carnelian-100">Withdrawal Deadline</p>
-                            <p class="text-sm text-carnelian-700 dark:text-carnelian-300">Friday, September 26, 2025</p>
-                            <p class="text-xs text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">Last day to withdraw</p>
-                        </div>
-                    </div>
+                    <button class="btn-icon btn-sm" aria-label="Event menu">
+                        <i data-lucide="more-horizontal" class="icon-sm"></i>
+                    </button>
                 </div>
-
-                <div class="card bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 border-sapphire-300 dark:border-sapphire-700">
-                    <div class="flex items-start space-x-3">
-                        <i data-lucide="award" class="w-5 h-5 text-sapphire-600 dark:text-sapphire-400 flex-shrink-0 mt-1"></i>
-                        <div>
-                            <p class="font-semibold text-sapphire-900 dark:text-sapphire-100">Signature Assignment</p>
-                            <p class="text-sm text-sapphire-700 dark:text-sapphire-300">Weeks 12-15</p>
-                            <p class="text-xs text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">5% of final grade</p>
-                        </div>
+                <div class="calendar-event-body with-badge">
+                    <div class="live-badge" style="background-color: var(--color-accent);">
+                        <i data-lucide="alert-circle" class="live-badge-icon"></i>
+                        <span class="live-badge-text">Test</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 16-Week Timeline -->
-        <section aria-labelledby="timeline-heading">
-            <h2 id="timeline-heading" class="text-2xl font-semibold mb-6">
-                <i data-lucide="calendar-range" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Semester Timeline
-            </h2>
-            <div class="space-y-6">
-                <!-- Weeks 1-2 -->
-                <div class="card event-card" data-course="math" data-priority="completed">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Weeks 1-2: Aug 18 - Aug 29</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Orientation & Chapter 1 + 13</p>
-            </div>
-                        <span class="badge badge-success">Completed</span>
-                            </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="book" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143:</strong> Chapter 1 (Thinking Mathematically) & Chapter 13 (Voting & Apportionment)</span>
-                                </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="alert-circle" class="w-4 h-4 text-ruby-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>EVA Due:</strong> Friday, Aug 29 (Attendance Verification)</span>
-                                    </div>
-                                </div>
-                </div>
-
-                <!-- Week 4 -->
-                <div class="card event-card" data-course="math" data-priority="completed">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Week 4: Sept 8-12</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Test 1</p>
-                        </div>
-                        <span class="badge badge-success">Completed</span>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-ruby-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143 Test 1:</strong> Chapters 1 & 13 (Use Respondus Lockdown Browser)</span>
-                            </div>
-                        </div>
-                    </div>
-
-                <!-- Weeks 5-6 -->
-                <div class="card event-card" data-course="math" data-priority="completed">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Weeks 5-6: Sept 15 - Sept 26</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Chapters 4 & 5</p>
-                        </div>
-                        <span class="badge badge-success">Completed</span>
-                            </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="book" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143:</strong> Chapter 4 (Proportions) & Chapter 5 (Functions)</span>
-                                </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="alert-triangle" class="w-4 h-4 text-carnelian-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>Withdrawal Deadline:</strong> Friday, Sept 26</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                <!-- Week 7 -->
-                <div class="card event-card" data-course="math" data-priority="completed">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Week 7: Sept 29 - Oct 3</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Test 2</p>
-                        </div>
-                        <span class="badge badge-success">Completed</span>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-ruby-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143 Test 2:</strong> Chapters 4 & 5 (Use Respondus Lockdown Browser)</span>
+                    <div class="flex-1">
+                        <h3 class="calendar-event-title">Test 3 (Chapters 6 & 7)</h3>
+                        <p class="calendar-event-hint">MAT 143: Use Respondus Lockdown Browser</p>
                     </div>
                 </div>
             </div>
 
-                <!-- Weeks 8-10 -->
-                <div class="card event-card" data-course="math" data-priority="urgent">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Weeks 8-10: Oct 6 - Oct 24</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Chapters 7 & 6</p>
-                                </div>
-                        <span class="badge badge-warning">In Progress</span>
+            <!-- Event 3 -->
+            <div class="calendar-event-card">
+                <div class="calendar-event-time flex items-center justify-between">
+                    <div class="flex items-center gap-uxs">
+                        <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                        <span class="calendar-event-time-text">15:00 - 16:45</span>
+                    </div>
+                    <button class="btn-icon btn-sm" aria-label="Event menu">
+                        <i data-lucide="more-horizontal" class="icon-sm"></i>
+                    </button>
                             </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="book" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143:</strong> Chapter 7 (Conversions) & Chapter 6 (Personal Finance)</span>
-                                </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="check-square" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>Hawkes Learning:</strong> Complete practice problems to achieve mastery</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Week 11 -->
-                <div class="card event-card" data-course="math" data-priority="urgent">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Week 11: Nov 3-7</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Test 3</p>
-                                </div>
-                        <span class="badge badge-danger">Upcoming</span>
-                            </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-ruby-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143 Test 3:</strong> Chapters 6 & 7 (Use Respondus Lockdown Browser)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Weeks 12-15 -->
-                <div class="card event-card" data-course="math" data-priority="upcoming">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Weeks 12-15: Nov 10 - Dec 5</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Chapters 10 & 11 + Signature Assignment</p>
-                        </div>
-                        <span class="badge badge-neutral">Upcoming</span>
-            </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="book" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143:</strong> Chapter 10 (Probability) & Chapter 11 (Statistics)</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="award" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>Signature Assignment:</strong> 5% of final grade</span>
-                    </div>
+                <div class="calendar-event-body">
+                    <h3 class="calendar-event-title">Essay 3 Review</h3>
+                    <p class="calendar-event-hint">ENG 111: Analytical essay peer review session</p>
                 </div>
             </div>
 
-                <!-- Week 16 -->
-                <div class="card event-card" data-course="math" data-priority="upcoming">
-                    <div class="flex items-start justify-between mb-3">
-                        <div>
-                            <h3 class="text-lg font-semibold">Week 16: Dec 8-12</h3>
-                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Final Exam Week</p>
-                        </div>
-                        <span class="badge badge-neutral">Upcoming</span>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-ruby-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>MAT 143 Test 4:</strong> Chapters 10 & 11 (Use Respondus Lockdown Browser)</span>
-                            </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="calendar-check" class="w-4 h-4 text-emerald-500 mt-0.5"></i>
-                            <span class="text-sm"><strong>Semester Ends:</strong> Friday, December 12, 2025</span>
-                        </div>
-                    </div>
+            <!-- Event 4 -->
+            <div class="calendar-event-card deadline-upcoming">
+                <div class="calendar-event-time flex items-center justify-between">
+                    <div class="flex items-center gap-uxs">
+                        <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                        <span class="calendar-event-time-text">17:00 - 17:30</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Legend -->
-        <section class="mt-8 card">
-            <h3 class="font-semibold mb-4">
-                <i data-lucide="list" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Legend
-            </h3>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="flex items-center space-x-2">
-                    <span class="badge badge-danger">Urgent</span>
-                    <span class="text-sm">Due this week or next</span>
+                    <button class="btn-icon btn-sm" aria-label="Event menu">
+                        <i data-lucide="more-horizontal" class="icon-sm"></i>
+                    </button>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <span class="badge badge-warning">Upcoming</span>
-                    <span class="text-sm">Due within 2-3 weeks</span>
+                <div class="calendar-event-body">
+                    <h3 class="calendar-event-title">Weekly Attendance</h3>
+                    <p class="calendar-event-hint">Complete weekly check-in assignment</p>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <span class="badge badge-success">Completed</span>
-                    <span class="text-sm">Already finished</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <span class="badge badge-neutral">Future</span>
-                    <span class="text-sm">More than 3 weeks away</span>
             </div>
         </div>
-        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-6">
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">About</h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Your personalized academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">Quick Links</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
-                        <li><a href="tutor.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">AI Math Tutor</a></li>
-                        <li><a href="english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Writing Resources</a></li>
-                        <li><a href="formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">External Resources</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Hawkes Learning <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                        <li><a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Brightspace (D2L) <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                        <li><a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Purdue OWL <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pt-6 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                    <p>&copy; 2025 Kristina's Academic Dashboard</p>
-                    <p class="mt-2 sm:mt-0"><span class="font-medium">Fall 2025 Semester</span> • Aug 18 - Dec 12, 2025</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="nav-item-mobile" data-page="home">
+            <i data-lucide="home" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Home</span>
+        </a>
+        <a href="tutor.html" class="nav-item-mobile" data-page="courses">
+            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Courses</span>
+        </a>
+        <a href="calendar.html" class="nav-item-mobile active" data-page="calendar">
+            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Calendar</span>
+        </a>
+        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
+            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Resources</span>
+        </a>
+        <a href="#profile" class="nav-item-mobile" data-page="profile">
+            <i data-lucide="user" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Profile</span>
+        </a>
+    </nav>
 
     <!-- Scripts -->
     <script>
         lucide.createIcons();
     </script>
 
-    <!-- Mobile Menu with Focus Trap -->
-    <script src="src/js/mobile-menu.js"></script>
-
-    <!-- Calendar Filters -->
-    <script>
-        // Filter functionality
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active', 'bg-emerald-500', 'text-white'));
-                this.classList.add('active', 'bg-emerald-500', 'text-white');
-                
-                const filter = this.dataset.filter;
-                document.querySelectorAll('.event-card').forEach(card => {
-                    if (filter === 'all' || card.dataset.course === filter) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Priority filter
-        document.querySelectorAll('.priority-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.priority-btn').forEach(b => b.classList.remove('active', 'bg-emerald-500', 'text-white'));
-                this.classList.add('active', 'bg-emerald-500', 'text-white');
-                
-                const priority = this.dataset.priority;
-                document.querySelectorAll('.event-card').forEach(card => {
-                    if (priority === 'all' || card.dataset.priority === priority) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Initialize active filter styling
-        document.querySelector('.filter-btn.active')?.classList.add('bg-emerald-500', 'text-white');
-        document.querySelector('.priority-btn.active')?.classList.add('bg-emerald-500', 'text-white');
-    </script>
-
-    <!-- Calendar Deadline Urgency System -->
-    <script src="src/js/calendar-urgency.js"></script>
-
     <!-- ADHD Accessibility Features -->
     <script src="src/js/focus-mode.js"></script>
     <script src="src/js/reading-mode.js"></script>
+
+    <!-- New UI Features -->
+    <script src="src/js/view-toggle.js"></script>
+    <script src="src/js/bottom-nav.js"></script>
+
+    <!-- Calendar Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Calendar day selection
+            const calendarDays = document.querySelectorAll('.calendar-day');
+            calendarDays.forEach(day => {
+                day.addEventListener('click', function() {
+                    calendarDays.forEach(d => d.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter events for selected day (placeholder functionality)
+                    console.log('Selected day:', this.querySelector('.calendar-day-number').textContent);
+                });
+            });
+            
+            // Month navigation
+            const prevBtn = document.getElementById('prev-month');
+            const nextBtn = document.getElementById('next-month');
+            const titleEl = document.getElementById('calendar-title');
+            
+            if (prevBtn && nextBtn && titleEl) {
+                prevBtn.addEventListener('click', () => {
+                    // Placeholder: Would update calendar data
+                    console.log('Previous month');
+                });
+                
+                nextBtn.addEventListener('click', () => {
+                    // Placeholder: Would update calendar data
+                    console.log('Next month');
+                });
+            }
+            
+            // Animate event cards
+            const eventCards = document.querySelectorAll('.calendar-event-card');
+            eventCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 50}ms`;
+                card.classList.add('slide-up');
+            });
+        });
+    </script>
 </body>
 </html>

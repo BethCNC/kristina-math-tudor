@@ -1,0 +1,157 @@
+/*
+ * E-Learning Dashboard - Color System
+ * Generated from tokens.json
+ * Implements light/dark theme with semantic color tokens
+ */
+
+@theme {
+  /* ============================================
+     Light Theme - Primary Colors
+     ============================================ */
+  
+  /* Base Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Greyscale */
+  --color-grey: #222222;
+  --color-grey-2: #717171;
+  --color-grey-3: #bdbdbd;
+  --color-grey-4: #e0e0e0;
+  --color-grey-5: #eeeeee;
+  --color-grey-6: #f5f5f5;
+  
+  /* Accent Colors */
+  --color-accent: #fe5a4a;
+  --color-accent-light: rgba(254, 90, 74, 0.1);
+  --color-accent-dark: #ff5032;
+  
+  /* Category Colors */
+  --color-purple: #ba68c8;
+  --color-purple-light: #f3e5f5;
+  --color-orange: #ff9800;
+  --color-orange-light: #fff3e0;
+  --color-blue: #2196f3;
+  --color-blue-light: #e3f2fd;
+  --color-pink: #e91e63;
+  --color-pink-light: #fce4ec;
+  --color-lime: #cddc39;
+  --color-lime-light: #f9fbe7;
+  
+  /* ============================================
+     Semantic Tokens - Light Theme
+     ============================================ */
+  
+  /* Text Colors */
+  --color-text-primary: var(--color-grey);
+  --color-text-secondary: var(--color-grey-2);
+  --color-text-tertiary: var(--color-grey-3);
+  --color-text-inverse: var(--color-white);
+  --color-text-inverse-light: rgba(255, 255, 255, 0.75);
+  --color-text-accent: var(--color-accent);
+  --color-text-hover: var(--color-black);
+  
+  /* Background Colors */
+  --color-bg-primary: var(--color-white);
+  --color-bg-secondary: var(--color-grey-6);
+  --color-bg-tertiary: var(--color-grey-5);
+  --color-bg-body: var(--color-white);
+  
+  /* Border Colors */
+  --color-border-primary: var(--color-grey-4);
+  --color-border-secondary: var(--color-grey-5);
+  --color-border-tertiary: var(--color-grey-3);
+  
+  /* Button Colors */
+  --color-btn-primary-bg: var(--color-accent);
+  --color-btn-primary-text: var(--color-white);
+  --color-btn-primary-hover: var(--color-black);
+  --color-btn-outline-border: var(--color-grey);
+  --color-btn-outline-text: var(--color-grey);
+  --color-btn-text: var(--color-grey);
+}
+
+/* ============================================
+   Dark Theme Overrides
+   ============================================ */
+.dark {
+  /* Base Colors - Dark */
+  --color-grey: var(--color-white);
+  --color-grey-2: rgba(255, 255, 255, 0.75);
+  --color-grey-3: #6e6e6e;
+  --color-grey-4: #555555;
+  --color-grey-5: #3c3c3c;
+  --color-grey-6: #333333;
+  
+  /* Background - Dark */
+  --color-bg-body: #2a2a2a;
+  --color-bg-primary: #2a2a2a;
+  --color-bg-secondary: #333333;
+  --color-bg-tertiary: #3c3c3c;
+  
+  /* Text Colors - Dark */
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: rgba(255, 255, 255, 0.75);
+  --color-text-tertiary: #6e6e6e;
+  --color-text-inverse: #222222;
+  --color-text-inverse-light: #717171;
+  --color-text-hover: var(--color-white);
+  
+  /* Border Colors - Dark */
+  --color-border-primary: #555555;
+  --color-border-secondary: #3c3c3c;
+  --color-border-tertiary: #6e6e6e;
+  
+  /* Button Colors - Dark */
+  --color-btn-primary-hover: var(--color-white);
+  --color-btn-outline-border: var(--color-white);
+  --color-btn-outline-text: var(--color-white);
+  --color-btn-text: var(--color-white);
+  
+  /* Category Light Colors - Dark Theme Adjustments */
+  --color-orange-light: rgba(255, 152, 0, 0.35);
+  --color-blue-light: rgba(33, 150, 243, 0.35);
+  --color-pink-light: rgba(233, 30, 99, 0.35);
+  --color-lime-light: rgba(205, 220, 57, 0.35);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+/* Background Utilities */
+.bg-primary { background-color: var(--color-bg-primary); }
+.bg-secondary { background-color: var(--color-bg-secondary); }
+.bg-tertiary { background-color: var(--color-bg-tertiary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-accent-light { background-color: var(--color-accent-light); }
+
+.bg-purple { background-color: var(--color-purple); }
+.bg-purple-light { background-color: var(--color-purple-light); }
+.bg-orange { background-color: var(--color-orange); }
+.bg-orange-light { background-color: var(--color-orange-light); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-blue-light { background-color: var(--color-blue-light); }
+.bg-pink { background-color: var(--color-pink); }
+.bg-pink-light { background-color: var(--color-pink-light); }
+.bg-lime { background-color: var(--color-lime); }
+.bg-lime-light { background-color: var(--color-lime-light); }
+
+/* Text Color Utilities */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); }
+.text-inverse { color: var(--color-text-inverse); }
+.text-accent { color: var(--color-text-accent); }
+
+.text-purple { color: var(--color-purple); }
+.text-orange { color: var(--color-orange); }
+.text-blue { color: var(--color-blue); }
+.text-pink { color: var(--color-pink); }
+.text-lime { color: var(--color-lime); }
+
+/* Border Utilities */
+.border-primary { border-color: var(--color-border-primary); }
+.border-secondary { border-color: var(--color-border-secondary); }
+.border-accent { border-color: var(--color-accent); }
+

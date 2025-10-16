@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Test | E-Learning Dashboard</title>
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals-new.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        .viewport-indicator {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 8px 16px;
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            font-size: 12px;
+            font-weight: 600;
+            z-index: 9999;
+            border-bottom-left-radius: 8px;
+        }
+        
+        .component-showcase {
+            margin-bottom: var(--space-db);
+            padding: var(--space-xxl);
+            background-color: var(--color-bg-secondary);
+            border-radius: var(--radius-xl);
+        }
+        
+        .component-title {
+            margin-bottom: var(--space-df);
+            padding-bottom: var(--space-xxs);
+            border-bottom: 2px solid var(--color-border-primary);
+        }
+    </style>
+</head>
+<body class="bg-primary">
+    <!-- Viewport Indicator -->
+    <div class="viewport-indicator" id="viewport-indicator">
+        Desktop: 1280px+
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
+            </svg>
+        </a>
+        
+        <nav class="header-nav">
+            <a href="#" class="nav-item-desktop active">Home</a>
+            <a href="#" class="nav-item-desktop">Courses</a>
+            <a href="#" class="nav-item-desktop">Calendar</a>
+            <a href="#" class="nav-item-desktop">Resources</a>
+            <a href="#" class="nav-item-desktop">Profile</a>
+        </nav>
+        
+        <div class="header-actions">
+            <button class="btn-icon has-notification">
+                <i data-lucide="bell" class="icon-md"></i>
+            </button>
+            <div class="avatar">
+                <div class="avatar-initials">KC</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 24px; padding-bottom: 100px;">
+        <h1 class="h-db text-primary mb-db">Responsive Design Test</h1>
+
+        <!-- Buttons -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Buttons</h2>
+            <div class="flex flex-wrap gap-df items-center">
+                <button class="btn-fill">Primary Button</button>
+                <button class="btn-outline">Outline Button</button>
+                <button class="btn-text">Text Button</button>
+                <button class="btn-icon"><i data-lucide="more-horizontal"></i></button>
+                <button class="btn-icon-fill"><i data-lucide="heart"></i></button>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Typography</h2>
+            <div class="flex flex-col gap-df">
+                <h1 class="h-db text-primary">h-db (32px) - Display Heading</h1>
+                <h2 class="h-xxl text-primary">h-xxl (24px) - Section Heading</h2>
+                <h3 class="h-xl text-primary">h-xl (20px) - Subsection Heading</h3>
+                <h4 class="h-lg text-primary">h-lg (18px) - Card Heading</h4>
+                <h5 class="h-df text-primary">h-df (16px) - Default Heading</h5>
+                <h6 class="h-md text-primary">h-md (14px) - Small Heading</h6>
+                <p class="t-df-paragraph text-secondary">t-df-paragraph (16px/24px) - This is regular paragraph text with comfortable line height for reading.</p>
+                <p class="t-md text-secondary">t-md (14px) - Medium body text for compact areas</p>
+                <p class="t-sm text-secondary">t-sm (12px) - Small text for labels and hints</p>
+            </div>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Course Cards (Responsive Grid)</h2>
+            <div class="grid grid-cols-3 gap-df">
+                <div class="course-card">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-purple-light"></div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Chapter 1</h3>
+                            </div>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">3/3 sections | 100%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-orange-light"></div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Chapter 4</h3>
+                            </div>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">2/3 sections | 67%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 67%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-blue-light"></div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Chapter 5</h3>
+                            </div>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">1/3 sections | 33%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 33%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="t-sm text-secondary mt-df">
+                <strong>Mobile (0-640px):</strong> 1 column<br>
+                <strong>Tablet (641-1024px):</strong> 2 columns<br>
+                <strong>Desktop (1025px+):</strong> 3 columns
+            </p>
+        </div>
+
+        <!-- Calendar Components -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Calendar Week</h2>
+            <div class="calendar-week mb-df">
+                <div class="calendar-day">
+                    <div class="calendar-day-number">14</div>
+                    <div class="calendar-day-label">mon</div>
+                </div>
+                <div class="calendar-day has-event">
+                    <div class="calendar-day-number">15</div>
+                    <div class="calendar-day-label">tue</div>
+                </div>
+                <div class="calendar-day active has-event">
+                    <div class="calendar-day-number">16</div>
+                    <div class="calendar-day-label">wed</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-day-number">17</div>
+                    <div class="calendar-day-label">thu</div>
+                </div>
+                <div class="calendar-day has-event">
+                    <div class="calendar-day-number">18</div>
+                    <div class="calendar-day-label">fri</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-day-number">19</div>
+                    <div class="calendar-day-label">sat</div>
+                </div>
+                <div class="calendar-day">
+                    <div class="calendar-day-number">20</div>
+                    <div class="calendar-day-label">sun</div>
+                </div>
+            </div>
+            
+            <div class="calendar-event-card">
+                <div class="calendar-event-time flex items-center justify-between">
+                    <div class="flex items-center gap-uxs">
+                        <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                        <span class="calendar-event-time-text">10:00 - 10:30</span>
+                    </div>
+                    <button class="btn-icon btn-sm">
+                        <i data-lucide="more-horizontal" class="icon-sm"></i>
+                    </button>
+                </div>
+                <div class="calendar-event-body">
+                    <h4 class="calendar-event-title">Event Title</h4>
+                    <p class="calendar-event-hint">Event description goes here</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Switch Toggle -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Switch Toggle</h2>
+            <div class="flex justify-center">
+                <div class="switch">
+                    <button class="switch-item active">Progress</button>
+                    <button class="switch-item">Calendar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Info Cards -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Progress Info Cards</h2>
+            <div class="grid grid-cols-3 gap-df">
+                <div class="progress-info-card">
+                    <div class="progress-info-number">10</div>
+                    <div class="progress-info-label">Courses completed</div>
+                </div>
+                <div class="progress-info-card">
+                    <div class="progress-info-number">8/10</div>
+                    <div class="progress-info-label">Average score</div>
+                </div>
+                <div class="progress-info-card">
+                    <div class="progress-info-number">3</div>
+                    <div class="progress-info-label">Certificates obtained</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Badges -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Badges</h2>
+            <div class="flex flex-wrap gap-xxs">
+                <div class="badge">Default Badge</div>
+                <div class="badge badge-purple">Purple</div>
+                <div class="badge badge-orange">Orange</div>
+                <div class="badge badge-blue">Blue</div>
+                <div class="badge badge-pink">Pink</div>
+                <div class="badge badge-lime">Lime</div>
+                <div class="badge badge-light">Light</div>
+            </div>
+        </div>
+
+        <!-- Form Elements -->
+        <div class="component-showcase">
+            <h2 class="h-xl text-primary component-title">Form Elements</h2>
+            <div class="flex flex-col gap-df" style="max-width: 500px;">
+                <div>
+                    <label class="label">Text Input</label>
+                    <input type="text" class="input" placeholder="Enter text...">
+                </div>
+                <div>
+                    <label class="label">Search Input</label>
+                    <input type="search" class="input input-search" placeholder="Search...">
+                </div>
+                <div>
+                    <label class="label">Select Dropdown</label>
+                    <select class="input">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item-mobile active" data-page="home">
+            <i data-lucide="home" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Home</span>
+        </a>
+        <a href="#" class="nav-item-mobile" data-page="courses">
+            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Courses</span>
+        </a>
+        <a href="#" class="nav-item-mobile" data-page="calendar">
+            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Calendar</span>
+        </a>
+        <a href="#" class="nav-item-mobile" data-page="resources">
+            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Resources</span>
+        </a>
+        <a href="#" class="nav-item-mobile" data-page="profile">
+            <i data-lucide="user" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Profile</span>
+        </a>
+    </nav>
+
+    <script>
+        lucide.createIcons();
+        
+        // Update viewport indicator
+        function updateViewportIndicator() {
+            const width = window.innerWidth;
+            const indicator = document.getElementById('viewport-indicator');
+            
+            let label = '';
+            let color = '';
+            
+            if (width <= 640) {
+                label = `Mobile: ${width}px`;
+                color = '#E91E63'; // Pink
+            } else if (width <= 1024) {
+                label = `Tablet: ${width}px`;
+                color = '#FF9800'; // Orange
+            } else {
+                label = `Desktop: ${width}px`;
+                color = '#00C951'; // Lime
+            }
+            
+            indicator.textContent = label;
+            indicator.style.backgroundColor = color;
+        }
+        
+        updateViewportIndicator();
+        window.addEventListener('resize', updateViewportIndicator);
+    </script>
+</body>
+</html>
+

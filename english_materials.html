@@ -12,513 +12,250 @@
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="src/styles/globals-new.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+<body class="bg-primary">
     <!-- Skip to main content -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-sapphire-500 text-white px-4 py-2 rounded-lg z-50">
+    <a href="#main-content" class="skip-link">
         Skip to main content
     </a>
 
-    <!-- Navigation Header -->
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
-                        <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
-                        </div>
-                        <span class="text-lg font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-50 hidden sm:inline">Academic Dashboard</span>
-                    </a>
-                </div>
-
-                <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
-                    <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="home" class="w-4 h-4 inline mr-1"></i>
-                        Dashboard
-                    </a>
-                    <a href="calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i>
-                        Calendar
-                    </a>
-                    <a href="tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="calculator" class="w-4 h-4 inline mr-1"></i>
-                        Math Tutor
-                    </a>
-                    <a href="english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 text-sapphire-700 dark:text-sapphire-300">
-                        <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1"></i>
-                        Writing Coach
-                    </a>
-                    <a href="formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="book-open" class="w-4 h-4 inline mr-1"></i>
-                        Resources
-                    </a>
+    <!-- Desktop Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
+                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
+            </svg>
+        </a>
+        
+        <nav class="header-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-item-desktop">Home</a>
+            <a href="tutor.html" class="nav-item-desktop">Courses</a>
+            <a href="calendar.html" class="nav-item-desktop">Calendar</a>
+            <a href="formula_lookup.html" class="nav-item-desktop active">Resources</a>
+            <a href="#profile" class="nav-item-desktop">Profile</a>
                 </nav>
 
-                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="Toggle mobile menu" aria-expanded="false">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+        <div class="header-actions">
+            <button class="btn-icon has-notification" aria-label="Notifications">
+                <i data-lucide="bell" class="icon-md"></i>
                 </button>
+            <div class="avatar">
+                <div class="avatar-initials">KC</div>
             </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-            <nav class="px-4 py-3 space-y-1">
-                <a href="index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="home" class="w-4 h-4 mr-2"></i>Dashboard</a>
-                <a href="calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i>Calendar</a>
-                <a href="tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Math Tutor</a>
-                <a href="english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 text-sapphire-700 dark:text-sapphire-300"><i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>Writing Coach</a>
-                <a href="formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="book-open" class="w-4 h-4 mr-2"></i>Resources</a>
-            </nav>
         </div>
     </header>
 
+    <!-- Mobile Header -->
+    <header class="header-mobile">
+        <h1 class="h-df text-center">ENG 111: Writing Coach</h1>
+    </header>
+
     <!-- Main Content -->
-    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
-        <!-- Header -->
-        <section class="mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                <i data-lucide="pen-tool" class="w-8 h-8 inline mr-2" aria-hidden="true"></i>
-                Writing Coach
-            </h1>
-            <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                Essay guides, rubrics, and writing resources for ENG 111
-            </p>
+    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+        
+        <!-- Page Header -->
+        <div class="flex flex-col gap-xxs mb-db">
+            <h1 class="h-xxl text-primary">ENG 111: Writing & Inquiry</h1>
+            <p class="t-df text-secondary">Essay guides, rubrics, and writing resources</p>
+                    </div>
+                    
+        <!-- Writing Progress Stats -->
+        <section class="mb-db">
+            <div class="grid grid-cols-3 gap-df">
+                <div class="progress-info-card hover-lift-sm">
+                    <div class="progress-info-number">2/3</div>
+                    <div class="progress-info-label">Essays completed</div>
+                        </div>
+                <div class="progress-info-card hover-lift-sm">
+                    <div class="progress-info-number">85%</div>
+                    <div class="progress-info-label">Average score</div>
+                        </div>
+                <div class="progress-info-card hover-lift-sm">
+                    <div class="progress-info-number">12</div>
+                    <div class="progress-info-label">Resources viewed</div>
+                </div>
+            </div>
         </section>
 
-        <!-- Essay Assignments -->
-        <section class="mb-8" aria-labelledby="essays-heading">
-            <h2 id="essays-heading" class="text-2xl font-semibold mb-6">
-                <i data-lucide="file-text" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Essay Assignments
-            </h2>
-            <div class="space-y-6">
-                <!-- Essay 1: Narrative -->
-                <div class="card">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-12 h-12 bg-sapphire-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="font-bold text-white text-lg">1</span>
+        <!-- Essay Cards -->
+        <section class="mb-db">
+            <h2 class="h-xl text-primary mb-xxl">Essay Assignments</h2>
+            
+            <div class="grid grid-cols-3 gap-df md:gap-xxl">
+                <!-- Essay 1 - Narrative -->
+                <div class="course-card hover-lift">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-purple-light">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect width="80" height="80" fill="#BA68C8" opacity="0.3" rx="6"/>
+                                <path d="M30 25H50M30 35H55M30 45H50M30 55H45" stroke="#BA68C8" stroke-width="2.5" stroke-linecap="round"/>
+                                <text x="65" y="70" fill="#BA68C8" font-size="24" font-weight="600">1</text>
+                            </svg>
+                        </div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Narrative Essay</h3>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold">Essay 1: Narrative Essay</h3>
-                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Personal experience, descriptive storytelling</p>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">Completed | 88%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 100%"></div>
+                                </div>
                             </div>
                         </div>
-                        <span class="badge badge-success">Completed</span>
-                    </div>
-                    
-                    <div class="space-y-3 text-sm">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span><strong>Requirements:</strong> 750-1000 words, MLA format, personal narrative with descriptive details</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="target" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span><strong>Grading:</strong> Focus (25%), Organization (25%), Development (25%), Style (15%), Mechanics (10%)</span>
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <a href="english/essay-1-guide.html" class="btn btn-secondary btn-sm">
-                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
-                            View Guide
-                        </a>
                     </div>
                 </div>
 
-                <!-- Essay 2: Compare/Contrast -->
-                <div class="card">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-12 h-12 bg-sapphire-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="font-bold text-white text-lg">2</span>
+                <!-- Essay 2 - Compare/Contrast -->
+                <div class="course-card hover-lift">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-orange-light">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect width="80" height="80" fill="#FF9800" opacity="0.3" rx="6"/>
+                                <path d="M25 30H35M45 30H55M25 40H35M45 40H55M25 50H35M45 50H55" stroke="#FF9800" stroke-width="2.5" stroke-linecap="round"/>
+                                <text x="65" y="70" fill="#FF9800" font-size="24" font-weight="600">2</text>
+                            </svg>
+                        </div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Compare/Contrast</h3>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold">Essay 2: Compare/Contrast Essay</h3>
-                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Analyzing similarities and differences</p>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">Completed | 90%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 100%"></div>
+                                </div>
                             </div>
                         </div>
-                        <span class="badge badge-success">Completed</span>
-                    </div>
-                    
-                    <div class="space-y-3 text-sm">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span><strong>Requirements:</strong> 1000-1250 words, MLA format, clear thesis statement</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="layout" class="w-4 h-4 text-sapphire-500 mt-0.5"></i>
-                            <span><strong>Structure:</strong> Point-by-point OR block method organization</span>
-                        </div>
-                    </div>
-
-                    <div class="mt-4">
-                        <a href="english/essay-2-guide.html" class="btn btn-secondary btn-sm">
-                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
-                            View Guide
-                        </a>
                     </div>
                 </div>
 
-                <!-- Essay 3: Analytical -->
-                <div class="card">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-12 h-12 bg-carnelian-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="font-bold text-white text-lg">3</span>
+                <!-- Essay 3 - Analytical -->
+                <div class="course-card hover-lift">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-blue-light">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <rect width="80" height="80" fill="#2196F3" opacity="0.3" rx="6"/>
+                                <circle cx="40" cy="35" r="12" stroke="#2196F3" stroke-width="2.5" fill="none"/>
+                                <path d="M40 45L40 55M35 52L40 55L45 52" stroke="#2196F3" stroke-width="2.5" stroke-linecap="round"/>
+                                <text x="65" y="70" fill="#2196F3" font-size="24" font-weight="600">3</text>
+                            </svg>
+                        </div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">Analytical Essay</h3>
                             </div>
-                            <div>
-                                <h3 class="text-xl font-semibold">Essay 3: Analytical Essay</h3>
-                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Critical analysis of a text or concept</p>
-                            </div>
-                        </div>
-                        <span class="badge badge-warning">In Progress</span>
-                    </div>
-                    
-                    <div class="space-y-3 text-sm">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-carnelian-500 mt-0.5"></i>
-                            <span><strong>Requirements:</strong> 1000-1250 words, MLA format, analytical thesis with textual evidence</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="quote" class="w-4 h-4 text-carnelian-500 mt-0.5"></i>
-                            <span><strong>Citation:</strong> Minimum 2 sources, proper MLA in-text citations and Works Cited page</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="calendar" class="w-4 h-4 text-carnelian-500 mt-0.5"></i>
-                            <span><strong>Due Date:</strong> November 15, 2025</span>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex gap-2">
-                        <a href="english/essay-3-guide.html" class="btn btn-secondary btn-sm">
-                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
-                            View Guide
-                        </a>
-                        <a href="english/essay-3-rubric.html" class="btn btn-outline btn-sm">
-                            <i data-lucide="clipboard-check" class="w-4 h-4 mr-1"></i>
-                            Rubric
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Essay 4: Research Paper -->
-                <div class="card">
-                    <div class="flex items-start justify-between mb-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="w-12 h-12 bg-smokey-quartz-400 rounded-lg flex items-center justify-center flex-shrink-0">
-                                <span class="font-bold text-white text-lg">4</span>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold">Essay 4: Research Paper</h3>
-                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Academic research with multiple sources</p>
+                            <div class="course-card-progress">
+                                <p class="course-card-progress-info">In Progress | 40%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 40%"></div>
+                                </div>
                             </div>
                         </div>
-                        <span class="badge badge-neutral">Upcoming</span>
                     </div>
-                    
-                    <div class="space-y-3 text-sm">
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="file-text" class="w-4 h-4 text-smokey-quartz-500 mt-0.5"></i>
-                            <span><strong>Requirements:</strong> 1500-2000 words, MLA format, argumentative thesis</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="search" class="w-4 h-4 text-smokey-quartz-500 mt-0.5"></i>
-                            <span><strong>Research:</strong> Minimum 5 credible sources (academic journals, books, reputable websites)</span>
-                        </div>
-                        <div class="flex items-start space-x-2">
-                            <i data-lucide="calendar" class="w-4 h-4 text-smokey-quartz-500 mt-0.5"></i>
-                            <span><strong>Due Date:</strong> December 8, 2025</span>
-                        </div>
-                    </div>
-
-                    <div class="mt-4 flex gap-2">
-                        <a href="english/essay-4-guide.html" class="btn btn-secondary btn-sm">
-                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
-                            View Guide
-                        </a>
-                        <a href="english/essay-4-rubric.html" class="btn btn-outline btn-sm">
-                            <i data-lucide="clipboard-check" class="w-4 h-4 mr-1"></i>
-                            Rubric
-                        </a>
+                    <div class="course-card-banner">
+                        <i data-lucide="bell" class="course-card-banner-icon"></i>
+                        <span class="course-card-banner-text">Due next Wednesday</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Writing Process Guide -->
-        <section class="mb-8" aria-labelledby="process-heading">
-            <h2 id="process-heading" class="text-2xl font-semibold mb-6">
-                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                The Writing Process
-            </h2>
-            <div class="grid md:grid-cols-3 gap-4">
-                <!-- Pre-Writing -->
-                <div class="card">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-sapphire-100 dark:bg-sapphire-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                            <i data-lucide="lightbulb" class="w-5 h-5 text-sapphire-600 dark:text-sapphire-400"></i>
-                        </div>
-                        <h3 class="font-semibold">1. Pre-Writing</h3>
-                    </div>
-                    <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>• Brainstorm ideas</li>
-                        <li>• Research topic</li>
-                        <li>• Create outline</li>
-                        <li>• Develop thesis statement</li>
-                    </ul>
-                </div>
-
-                <!-- Drafting -->
-                <div class="card">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                            <i data-lucide="edit-3" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
-                        </div>
-                        <h3 class="font-semibold">2. Drafting</h3>
-                    </div>
-                    <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>• Write introduction with thesis</li>
-                        <li>• Develop body paragraphs</li>
-                        <li>• Add supporting evidence</li>
-                        <li>• Write conclusion</li>
-                    </ul>
-                </div>
-
-                <!-- Revising & Editing -->
-                <div class="card">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <div class="w-10 h-10 bg-carnelian-100 dark:bg-carnelian-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                            <i data-lucide="refresh-cw" class="w-5 h-5 text-carnelian-600 dark:text-carnelian-400"></i>
-                        </div>
-                        <h3 class="font-semibold">3. Revising & Editing</h3>
-                    </div>
-                    <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>• Check organization & flow</li>
-                        <li>• Strengthen arguments</li>
-                        <li>• Fix grammar & mechanics</li>
-                        <li>• Verify MLA citations</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Writing Resources -->
-        <section class="mb-8" aria-labelledby="resources-heading">
-            <h2 id="resources-heading" class="text-2xl font-semibold mb-6">
-                <i data-lucide="library" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Writing Resources
-            </h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- MLA Citation Guide -->
-                <div class="card">
-                    <h3 class="font-semibold mb-3 flex items-center">
-                        <i data-lucide="quote" class="w-5 h-5 mr-2 text-sapphire-500"></i>
-                        MLA Citation Guide
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
-                        Learn proper MLA format for in-text citations and Works Cited pages.
-                    </p>
-                    <div class="space-y-2 text-sm">
-                        <a href="english/mla-basics.html" class="flex items-center text-sapphire-600 dark:text-sapphire-400 hover:text-sapphire-700">
-                            → MLA Basics <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                        </a>
-                        <a href="english/citation-guide.html" class="flex items-center text-sapphire-600 dark:text-sapphire-400 hover:text-sapphire-700">
-                            → In-Text Citations <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                        </a>
-                        <a href="english/works-cited.html" class="flex items-center text-sapphire-600 dark:text-sapphire-400 hover:text-sapphire-700">
-                            → Works Cited Page <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Critical Reading -->
-                <div class="card">
-                    <h3 class="font-semibold mb-3 flex items-center">
-                        <i data-lucide="book-open" class="w-5 h-5 mr-2 text-emerald-500"></i>
-                        Critical Reading Strategies
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
-                        Improve comprehension and analytical skills for college-level texts.
-                    </p>
-                    <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>• Annotate while reading</li>
-                        <li>• Identify main arguments</li>
-                        <li>• Question assumptions</li>
-                        <li>• Summarize key points</li>
-                    </ul>
-                </div>
-
-                <!-- Avoiding Plagiarism -->
-                <div class="card">
-                    <h3 class="font-semibold mb-3 flex items-center">
-                        <i data-lucide="shield-alert" class="w-5 h-5 mr-2 text-ruby-500"></i>
-                        Avoiding Plagiarism
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
-                        Understand what counts as plagiarism and how to properly credit sources.
-                    </p>
-                    <div class="space-y-2 text-sm">
-                        <a href="english/plagiarism.html" class="flex items-center text-ruby-600 dark:text-ruby-400 hover:text-ruby-700">
-                            → What is Plagiarism? <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                        </a>
-                        <a href="english/citation-guide.html" class="flex items-center text-ruby-600 dark:text-ruby-400 hover:text-ruby-700">
-                            → How to Cite Properly <i data-lucide="arrow-right" class="w-3 h-3 ml-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Revision Checklist -->
-                <div class="card">
-                    <h3 class="font-semibold mb-3 flex items-center">
-                        <i data-lucide="check-square" class="w-5 h-5 mr-2 text-emerald-500"></i>
-                        Revision Checklist
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
-                        Use this checklist before submitting any essay.
-                    </p>
-                    <ul class="text-sm space-y-2 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                        <li>✓ Clear thesis statement?</li>
-                        <li>✓ Topic sentences in each paragraph?</li>
-                        <li>✓ Strong supporting evidence?</li>
-                        <li>✓ Proper MLA citations?</li>
-                        <li>✓ Grammar & spelling checked?</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- External Writing Resources -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="link" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                External Writing Resources
-            </h2>
-            <div class="grid sm:grid-cols-2 gap-4">
-                <a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100 dark:hover:bg-smokey-quartz-700 transition-colors">
-                    <div class="flex items-start justify-between mb-2">
-                        <h3 class="font-semibold">Purdue OWL</h3>
-                        <i data-lucide="external-link" class="w-4 h-4 text-sapphire-500"></i>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Comprehensive writing lab with MLA guides, grammar tips, and writing strategies
-                    </p>
+        <!-- Writing Resources Grid -->
+        <section class="mb-db">
+            <h2 class="h-xl text-primary mb-xxl">Writing Resources</h2>
+            
+            <div class="grid grid-cols-4 gap-df">
+                <a href="english/mla-citation-guide.html" class="btn-outline btn-with-icon-before">
+                    <i data-lucide="book-marked" class="icon-md"></i>
+                    MLA Citation
                 </a>
-
-                <a href="https://cpcc.edu/tutoring" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100 dark:hover:bg-smokey-quartz-700 transition-colors">
-                    <div class="flex items-start justify-between mb-2">
-                        <h3 class="font-semibold">CPCC Tutoring Center</h3>
-                        <i data-lucide="external-link" class="w-4 h-4 text-sapphire-500"></i>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Schedule appointments for one-on-one writing help
-                    </p>
+                <a href="english/grammar-guide.html" class="btn-outline btn-with-icon-before">
+                    <i data-lucide="check-circle" class="icon-md"></i>
+                    Grammar Guide
                 </a>
-
-                <a href="https://researchguides.cpcc.edu/" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100 dark:hover:bg-smokey-quartz-700 transition-colors">
-                    <div class="flex items-start justify-between mb-2">
-                        <h3 class="font-semibold">CPCC Library</h3>
-                        <i data-lucide="external-link" class="w-4 h-4 text-sapphire-500"></i>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Research guides, database access, and citation tools
-                    </p>
+                <a href="english/revision-checklist.html" class="btn-outline btn-with-icon-before">
+                    <i data-lucide="list-checks" class="icon-md"></i>
+                    Revision Tips
                 </a>
-
-                <a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg hover:bg-moonstone-100 dark:hover:bg-smokey-quartz-700 transition-colors">
-                    <div class="flex items-start justify-between mb-2">
-                        <h3 class="font-semibold">Brightspace (D2L)</h3>
-                        <i data-lucide="external-link" class="w-4 h-4 text-sapphire-500"></i>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Submit essays, view grades, and access course announcements
-                    </p>
-                </div>
+                <a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="btn-outline btn-with-icon-before">
+                    <i data-lucide="external-link" class="icon-md"></i>
+                    Purdue OWL
+                </a>
             </div>
         </section>
 
-        <!-- Writing Tips -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="lightbulb" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Writing Tips for Success
-            </h2>
-            <ul class="space-y-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Start early:</strong> Begin working on essays at least one week before the due date to allow time for revision.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Thesis first:</strong> Craft a clear, specific thesis statement before writing your first draft.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Cite as you go:</strong> Add citations while drafting to avoid losing track of sources.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Read aloud:</strong> Reading your essay out loud helps catch awkward phrasing and errors.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Peer review:</strong> Have someone else read your draft and provide feedback.</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-sapphire-500 flex-shrink-0 mt-0.5"></i>
-                    <span><strong>Revision vs. editing:</strong> Revise for content and structure first, then edit for grammar and mechanics.</span>
-                </li>
-            </ul>
+        <!-- Writing Tips Promo Card -->
+        <section>
+            <div class="promo-card">
+                <svg class="promo-card-illustration" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="50" fill="#2196F3" opacity="0.1"/>
+                    <path d="M40 35H80M40 50H75M40 65H70" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="30" y="30" width="60" height="50" stroke="#2196F3" stroke-width="2" fill="none" rx="4"/>
+                </svg>
+                <div class="promo-card-content">
+                    <h2 class="promo-card-title">Improve your writing skills</h2>
+                    <p class="promo-card-description">Access our comprehensive writing guides, citation tools, and revision strategies!</p>
+                    </div>
+                <a href="english/writing-process.html" class="btn-fill promo-card-cta">
+                    View writing guides
+                </a>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-6">
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">About</h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Your personalized academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">Quick Links</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
-                        <li><a href="calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Course Calendar</a></li>
-                        <li><a href="tutor.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">AI Math Tutor</a></li>
-                        <li><a href="formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">External Resources</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Purdue OWL <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                        <li><a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Brightspace (D2L) <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                        <li><a href="https://researchguides.cpcc.edu/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">CPCC Library <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pt-6 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                    <p>&copy; 2025 Kristina's Academic Dashboard</p>
-                    <p class="mt-2 sm:mt-0"><span class="font-medium">Fall 2025 Semester</span> • Aug 18 - Dec 12, 2025</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="nav-item-mobile" data-page="home">
+            <i data-lucide="home" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Home</span>
+        </a>
+        <a href="tutor.html" class="nav-item-mobile" data-page="courses">
+            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Courses</span>
+        </a>
+        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
+            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Calendar</span>
+        </a>
+        <a href="formula_lookup.html" class="nav-item-mobile active" data-page="resources">
+            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Resources</span>
+        </a>
+        <a href="#profile" class="nav-item-mobile" data-page="profile">
+            <i data-lucide="user" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Profile</span>
+        </a>
+    </nav>
 
     <!-- Scripts -->
     <script>
         lucide.createIcons();
     </script>
 
-    <!-- Mobile Menu with Focus Trap -->
-    <script src="src/js/mobile-menu.js"></script>
+    <!-- ADHD Accessibility Features -->
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
+    <script src="src/js/bottom-nav.js"></script>
+
+    <script>
+        // Animate progress bars and cards
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.progress-bar-fill').forEach(bar => {
+                bar.classList.add('animate');
+            });
+            
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 50}ms`;
+                card.classList.add('slide-up');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,241 @@
+/*
+ * E-Learning Dashboard - Navigation Components
+ * Header, bottom nav, and nav items based on Figma specifications
+ */
+
+/* ============================================
+   Desktop Header
+   ============================================ */
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  padding: 0 var(--space-db);
+  height: 56px;
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  text-decoration: none;
+}
+
+.header-logo img,
+.header-logo svg {
+  width: 28px;
+  height: 28px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxl);
+  flex: 1;
+  padding: 0 var(--space-df);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xxs);
+}
+
+/* ============================================
+   Desktop Nav Items
+   ============================================ */
+.nav-item-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-xxs);
+  height: 56px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-primary);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-5);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-normal) var(--transition-ease);
+}
+
+.nav-item-desktop:hover {
+  color: var(--color-text-hover);
+}
+
+.nav-item-desktop.active {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+  border-bottom-color: var(--color-accent);
+}
+
+/* ============================================
+   Mobile Bottom Navigation
+   ============================================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  padding: 0 var(--space-xxl);
+  height: 64px;
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-bg-secondary);
+  z-index: 100;
+  box-shadow: var(--shadow-dp8);
+}
+
+/* Hide on desktop */
+@media (min-width: 768px) {
+  .bottom-nav {
+    display: none;
+  }
+}
+
+/* ============================================
+   Mobile Nav Items
+   ============================================ */
+.nav-item-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 0 4px;
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--transition-normal) var(--transition-ease);
+}
+
+.nav-item-mobile-icon {
+  width: 20px;
+  height: 20px;
+  color: inherit;
+}
+
+.nav-item-mobile-label {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-13);
+  text-align: center;
+}
+
+.nav-item-mobile.active {
+  color: var(--color-accent);
+}
+
+.nav-item-mobile.active .nav-item-mobile-label {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ============================================
+   Mobile Header (Minimal)
+   ============================================ */
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-df);
+  height: 56px;
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border-primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+  
+  .header {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+  
+  .header-mobile {
+    display: flex;
+  }
+  
+  /* Add bottom padding to main content to account for bottom nav */
+  main {
+    padding-bottom: 80px;
+  }
+}
+
+/* ============================================
+   Breadcrumb / Back Navigation
+   ============================================ */
+.nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xxs);
+  padding: var(--space-xxs);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-normal) var(--transition-ease);
+}
+
+.nav-back:hover {
+  color: var(--color-accent);
+}
+
+.nav-back svg,
+.nav-back i {
+  width: 20px;
+  height: 20px;
+}
+
+/* ============================================
+   Navigation Accessibility
+   ============================================ */
+.nav-item-desktop:focus-visible,
+.nav-item-mobile:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-df);
+  padding: var(--space-sm) var(--space-df);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  z-index: 200;
+  transition: top var(--transition-fast) var(--transition-ease);
+}
+
+.skip-link:focus {
+  top: var(--space-df);
+}
+

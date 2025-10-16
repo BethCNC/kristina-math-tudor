@@ -11,329 +11,314 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="src/styles/globals-new.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+<body class="bg-primary">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">
         Skip to main content
     </a>
 
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <a href="index.html" class="flex items-center space-x-3 hover:text-emerald-600">
-                    <i data-lucide="arrow-left" class="w-5 h-5"></i>
-                    <span class="text-lg font-medium">Back to Dashboard</span>
-                </a>
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
-                        <i data-lucide="brain" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-lg sm:text-xl font-medium">Chapter 1</h1>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Thinking Mathematically</p>
-                    </div>
+    <!-- Desktop Header -->
+    <header class="header">
+        <a href="tutor.html" class="nav-back">
+            <i data-lucide="arrow-left"></i>
+            <span>Back to Courses</span>
+        </a>
+        
+        <div class="flex items-center gap-xxs flex-1 justify-center">
+            <div class="flex items-center gap-xxs p-xxs bg-purple-light rounded-lg">
+                <div class="w-10 h-10 bg-purple rounded-md flex items-center justify-center text-white h-df">
+                    1
+                </div>
+                <div>
+                    <h1 class="h-df text-primary">Thinking Mathematically</h1>
+                    <p class="t-sm text-secondary">Chapter 1</p>
                 </div>
             </div>
         </div>
+        
+        <div class="header-actions">
+            <button class="btn-icon" aria-label="Bookmark chapter">
+                <i data-lucide="bookmark" class="icon-md"></i>
+            </button>
+        </div>
     </header>
 
-    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
-        <!-- Chapter Overview -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="info" class="w-5 h-5 mr-2" aria-hidden="true"></i>
-                Chapter Overview
-            </h2>
-            <p class="text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-4">
-                Learn how to think like a mathematician! This chapter covers deductive and inductive reasoning, estimation strategies, and Polya's problem-solving process—essential skills for success in MAT 143.
-            </p>
-            <div class="alert alert-info">
-                <i data-lucide="calendar" class="w-5 h-5 flex-shrink-0"></i>
-                <div>
-                    <strong>Test 1 Coverage:</strong> This chapter will appear on Test 1 (Sept 8-12, 2025) along with Chapter 13.
+    <!-- Mobile Header -->
+    <header class="header-mobile">
+        <a href="tutor.html" style="position: absolute; left: 16px;">
+            <i data-lucide="arrow-left" style="width: 20px; height: 20px;"></i>
+        </a>
+        <h1 class="h-df text-center">Chapter 1</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+        
+        <!-- Chapter Cover Header -->
+        <div class="card-base mb-db p-xxl" style="background: linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-bg-primary) 100%);">
+            <div class="flex items-start justify-between mb-df">
+                <div class="badge badge-purple">
+                    <i data-lucide="clock" class="badge-icon"></i>
+                    45-60 min
+                </div>
+                <div class="badge badge-light">
+                    Test 1: Sept 8-12
                 </div>
             </div>
-        </section>
-
-        <!-- Sections -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-6">
-                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Chapter Sections
-            </h2>
-
-            <!-- Section 1.1 -->
-            <div class="card mb-6">
-                <div class="flex items-start space-x-4 mb-4">
-                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span class="text-white font-bold">1.1</span>
-                        </div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold mb-2">Thinking Mathematically</h3>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Deductive vs. Inductive Reasoning</p>
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="badge badge-info">15-20 min</span>
-                        </div>
-                    </div>
+            
+            <h1 class="h-db text-primary mb-xxs">Thinking Mathematically</h1>
+            <p class="t-df text-secondary mb-xxl">Learn deductive and inductive reasoning, estimation strategies, and Polya's problem-solving process—essential skills for success in MAT 143.</p>
+            
+            <!-- Progress Bar -->
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar-label">
+                    <span class="t-sm text-secondary">Your Progress</span>
+                    <span class="t-sm text-semibold text-primary">3/3 sections</span>
                 </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
 
-                <div class="space-y-4">
-                    <div class="border-l-4 border-emerald-500 pl-4">
-                        <h4 class="font-semibold mb-2">Deductive Reasoning</h4>
-                        <p class="text-sm mb-2">Drawing conclusions from general principles. If the premises are true, the conclusion MUST be true.</p>
-                        <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-3 rounded-lg text-sm">
-                            <strong>Example:</strong><br>
-                            • All birds have feathers (general principle)<br>
-                            • A robin is a bird (specific case)<br>
-                            • <strong>Therefore:</strong> Robins have feathers (conclusion)
+        <!-- Section Cards -->
+        <section class="mb-db">
+            <h2 class="h-xl text-primary mb-xxl">Chapter Sections</h2>
+            
+            <div class="flex flex-col gap-df">
+                <!-- Section 1.1 -->
+                <details class="card-base" open>
+                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
+                        <div class="badge badge-purple">1.1</div>
+                        <div class="flex-1">
+                            <h3 class="h-lg text-primary mb-uxs">Deductive vs. Inductive Reasoning</h3>
+                            <p class="t-md text-secondary">Learn the difference between deductive and inductive reasoning</p>
                         </div>
+                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
+                    </summary>
+                    
+                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
+                        <div class="flex flex-col gap-df">
+                            <!-- Deductive Reasoning -->
+                            <div>
+                                <h4 class="h-md text-primary mb-xxs">Deductive Reasoning</h4>
+                                <p class="t-md-paragraph text-secondary mb-df">Drawing conclusions from general principles. If the premises are true, the conclusion MUST be true.</p>
+                                
+                                <div class="p-df bg-purple-light rounded-lg">
+                                    <p class="t-md text-semibold text-primary mb-xxs">Example:</p>
+                                    <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
+                                        <li>All birds have feathers (general principle)</li>
+                                        <li>A robin is a bird (specific case)</li>
+                                        <li><strong>Therefore:</strong> Robins have feathers (conclusion)</li>
+                                    </ul>
+                                </div>
                             </div>
 
-                    <div class="border-l-4 border-carnelian-500 pl-4">
-                        <h4 class="font-semibold mb-2">Inductive Reasoning</h4>
-                        <p class="text-sm mb-2">Making predictions based on patterns or observations. Conclusions are probable but not guaranteed.</p>
-                        <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-3 rounded-lg text-sm">
-                            <strong>Example:</strong><br>
-                            • I've seen 10 swans and they're all white (observation)<br>
-                            • <strong>Therefore:</strong> All swans are white (prediction)<br>
-                            • <em>Note: This is actually false—black swans exist!</em>
-                        </div>
-                    </div>
-
-                    <div class="p-4 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded-lg">
-                        <strong>Key Difference:</strong>
-                        <ul class="text-sm mt-2 space-y-1">
-                            <li>• <strong>Deductive:</strong> General → Specific (100% certain if premises are true)</li>
-                            <li>• <strong>Inductive:</strong> Specific → General (probable, not certain)</li>
-                        </ul>
-                    </div>
-                </div>
-                        </div>
-
-            <!-- Section 1.2 -->
-            <div class="card mb-6">
-                <div class="flex items-start space-x-4 mb-4">
-                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span class="text-white font-bold">1.2</span>
+                            <!-- Inductive Reasoning -->
+                            <div>
+                                <h4 class="h-md text-primary mb-xxs">Inductive Reasoning</h4>
+                                <p class="t-md-paragraph text-secondary mb-df">Making predictions based on patterns or observations. Conclusions are probable but not guaranteed.</p>
+                                
+                                <div class="p-df bg-orange-light rounded-lg">
+                                    <p class="t-md text-semibold text-primary mb-xxs">Example:</p>
+                                    <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
+                                        <li>I've seen 10 swans and they're all white (observation)</li>
+                                        <li><strong>Therefore:</strong> All swans are white (prediction)</li>
+                                        <li><em>Note: This is actually false—black swans exist!</em></li>
+                                    </ul>
+                                </div>
                             </div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold mb-2">Estimating and Evaluating</h3>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Strategies for quick approximations and evaluating reasonableness</p>
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="badge badge-info">15-20 min</span>
+
+                            <!-- Key Difference -->
+                            <div class="p-df bg-accent-light rounded-lg">
+                                <p class="t-md text-semibold text-accent mb-xxs">Key Difference:</p>
+                                <ul class="t-md text-primary" style="margin-left: 16px;">
+                                    <li><strong>Deductive:</strong> General → Specific (100% certain if premises are true)</li>
+                                    <li><strong>Inductive:</strong> Specific → General (probable, not certain)</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="space-y-4">
-                    <div>
-                        <h4 class="font-semibold mb-2">Estimation Strategies</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li>• <strong>Rounding:</strong> Round numbers to make calculations easier</li>
-                            <li>• <strong>Benchmark numbers:</strong> Use 10, 100, 1000 for comparisons</li>
-                            <li>• <strong>Front-end estimation:</strong> Use leading digits only</li>
-                            <li>• <strong>Compatible numbers:</strong> Find numbers that work well together</li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-moonstone-50 dark:bg-smokey-quartz-800 p-4 rounded-lg">
-                        <strong class="block mb-2">Example:</strong>
-                        <p class="text-sm">Estimate: 487 × 23</p>
-                        <p class="text-sm mt-2">
-                            Round: 500 × 20 = 10,000<br>
-                            Actual: 11,201 ← Our estimate is reasonable!
-                        </p>
-            </div>
-
-                    <div>
-                        <h4 class="font-semibold mb-2 mt-4">Evaluating Reasonableness</h4>
-                        <p class="text-sm mb-2">Always ask: "Does my answer make sense?"</p>
-                        <ul class="text-sm space-y-1">
-                            <li>• Check units (miles? dollars? people?)</li>
-                            <li>• Check order of magnitude (thousands? millions?)</li>
-                            <li>• Compare to known values</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 1.3 -->
-            <div class="card mb-6">
-                <div class="flex items-start space-x-4 mb-4">
-                    <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span class="text-white font-bold">1.3</span>
+                <!-- Section 1.2 -->
+                <details class="card-base">
+                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
+                        <div class="badge badge-purple">1.2</div>
+                        <div class="flex-1">
+                            <h3 class="h-lg text-primary mb-uxs">Estimating and Evaluating</h3>
+                            <p class="t-md text-secondary">Strategies for quick approximations and evaluating reasonableness</p>
                         </div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold mb-2">Problem Solving: Processes and Techniques</h3>
-                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">Polya's 4-step problem-solving method and strategies</p>
-                        <div class="flex items-center gap-2 mb-4">
-                            <span class="badge badge-info">20-25 min</span>
+                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
+                    </summary>
+                    
+                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
+                        <div class="flex flex-col gap-df">
+                            <div>
+                                <h4 class="h-md text-primary mb-xxs">Estimation Strategies</h4>
+                                <ul class="t-md text-secondary" style="margin-left: 16px; line-height: 1.6;">
+                                    <li><strong>Rounding:</strong> Round numbers to make calculations easier</li>
+                                    <li><strong>Benchmark numbers:</strong> Use 10, 100, 1000 for comparisons</li>
+                                    <li><strong>Front-end estimation:</strong> Use leading digits only</li>
+                                    <li><strong>Compatible numbers:</strong> Find numbers that work well together</li>
+                                </ul>
+                            </div>
+
+                            <div class="p-df bg-blue-light rounded-lg">
+                                <p class="t-md text-semibold text-blue mb-xxs">Example: Estimate 487 × 23</p>
+                                <p class="t-md text-primary">Round: 500 × 20 = 10,000</p>
+                                <p class="t-md text-primary">Actual: 11,201</p>
+                                <p class="t-sm text-secondary mt-xxs">Our estimate is reasonable!</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </details>
 
-                <div class="space-y-4">
-                    <div class="p-4 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
-                        <h4 class="font-semibold mb-3 text-emerald-700 dark:text-emerald-300">Polya's 4-Step Problem-Solving Process</h4>
-                        <ol class="space-y-3 text-sm">
-                            <li>
-                                <strong>1. Understand the Problem</strong>
-                                <ul class="ml-4 mt-1 space-y-1">
-                                    <li>• What are you solving for?</li>
-                                    <li>• What information do you have?</li>
-                                    <li>• What do you need to find?</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>2. Devise a Plan</strong>
-                                <ul class="ml-4 mt-1 space-y-1">
-                                    <li>• What method will you use?</li>
-                                    <li>• Have you seen a similar problem?</li>
-                                    <li>• Can you draw a diagram or make a table?</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>3. Carry Out the Plan</strong>
-                                <ul class="ml-4 mt-1 space-y-1">
-                                    <li>• Execute your chosen strategy</li>
-                                    <li>• Show your work clearly</li>
-                                    <li>• Check each step as you go</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <strong>4. Look Back and Check</strong>
-                                <ul class="ml-4 mt-1 space-y-1">
-                                    <li>• Does your answer make sense?</li>
-                                    <li>• Did you answer what was asked?</li>
-                                    <li>• Can you verify your solution?</li>
-                                </ul>
-                            </li>
-                        </ol>
-                </div>
-
-                    <div>
-                        <h4 class="font-semibold mb-2">Problem-Solving Strategies</h4>
-                        <ul class="space-y-2 text-sm">
-                            <li>• <strong>Work backwards:</strong> Start from the desired result and reverse the process</li>
-                            <li>• <strong>Make a table:</strong> Organize information systematically</li>
-                            <li>• <strong>Find a pattern:</strong> Look for recurring relationships</li>
-                            <li>• <strong>Draw a diagram:</strong> Visualize the problem</li>
-                            <li>• <strong>Guess and check:</strong> Try values and refine your approach</li>
-                            <li>• <strong>Break into smaller problems:</strong> Solve parts, then combine</li>
-                        </ul>
+                <!-- Section 1.3 -->
+                <details class="card-base">
+                    <summary class="flex items-start gap-df cursor-pointer" style="list-style: none;">
+                        <div class="badge badge-purple">1.3</div>
+                        <div class="flex-1">
+                            <h3 class="h-lg text-primary mb-uxs">Problem Solving: Polya's Method</h3>
+                            <p class="t-md text-secondary">4-step problem-solving process and strategies</p>
+                        </div>
+                        <i data-lucide="chevron-down" class="icon-md text-secondary transition-transform"></i>
+                    </summary>
+                    
+                    <div class="mt-df pt-df" style="border-top: 1px solid var(--color-border-secondary);">
+                        <div class="p-df bg-lime-light rounded-lg">
+                            <h4 class="h-md text-primary mb-df">Polya's 4-Step Process</h4>
+                            <ol class="t-md text-primary" style="margin-left: 20px; line-height: 1.8;">
+                                <li><strong>Understand the Problem</strong> - What are you solving for?</li>
+                                <li><strong>Devise a Plan</strong> - What method will you use?</li>
+                                <li><strong>Carry Out the Plan</strong> - Execute your strategy</li>
+                                <li><strong>Look Back and Check</strong> - Does your answer make sense?</li>
+                            </ol>
+                        </div>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
 
         <!-- Practice Problems -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="pencil" class="w-5 h-5 mr-2" aria-hidden="true"></i>
-                Practice Problems
-            </h2>
-            <div class="space-y-4">
+        <section class="card-base mb-db">
+            <h2 class="h-xl text-primary mb-df">Practice Problems</h2>
+            
+            <div class="flex flex-col gap-df">
+                <!-- Problem 1 -->
                 <div>
-                    <p class="font-semibold mb-2">1. Identify the type of reasoning:</p>
-                    <p class="text-sm mb-2">"Taylor plays football and has caught 24 out of 56 targets so far this season. So, he is expected to catch 6 out of 14 targets in tonight's game."</p>
-                    <details class="text-sm">
-                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
-                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded"><strong>Inductive reasoning</strong> - making a prediction based on past performance</p>
+                    <p class="t-df text-primary mb-xxs"><strong>1.</strong> Identify the type of reasoning:</p>
+                    <p class="t-md text-secondary mb-df">"Taylor plays football and has caught 24 out of 56 targets so far this season. So, he is expected to catch 6 out of 14 targets in tonight's game."</p>
+                    <details class="mt-xxs">
+                        <summary class="text-accent cursor-pointer t-md">Show Answer</summary>
+                        <div class="mt-df p-df bg-lime-light rounded-lg">
+                            <p class="t-md text-primary"><strong>Inductive reasoning</strong> - making a prediction based on past performance</p>
+                        </div>
                     </details>
                 </div>
 
-                <div>
-                    <p class="font-semibold mb-2">2. Find the pattern and next two terms:</p>
-                    <p class="text-sm mb-2">288, 144, 72, 36, ...</p>
-                    <details class="text-sm">
-                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
-                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded">
-                            <strong>Pattern:</strong> Divide by 2 each time<br>
-                            <strong>Next terms:</strong> 18, 9<br>
-                            <strong>Type:</strong> Geometric sequence
-                        </p>
-                    </details>
-                </div>
+                <div class="divider"></div>
 
+                <!-- Problem 2 -->
                 <div>
-                    <p class="font-semibold mb-2">3. Estimate: 487 × 23</p>
-                    <details class="text-sm">
-                        <summary class="cursor-pointer text-sapphire-600 dark:text-sapphire-400 hover:underline">Show Answer</summary>
-                        <p class="mt-2 p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded">
-                            <strong>Estimation:</strong> 500 × 20 = 10,000<br>
-                            <strong>Actual:</strong> 11,201<br>
-                            Our estimate is close and reasonable!
-                        </p>
+                    <p class="t-df text-primary mb-xxs"><strong>2.</strong> Find the pattern and next two terms:</p>
+                    <p class="t-md text-mono text-secondary mb-df">288, 144, 72, 36, ...</p>
+                    <details class="mt-xxs">
+                        <summary class="text-accent cursor-pointer t-md">Show Answer</summary>
+                        <div class="mt-df p-df bg-lime-light rounded-lg">
+                            <p class="t-md text-primary mb-xxs"><strong>Pattern:</strong> Divide by 2 each time</p>
+                            <p class="t-md text-primary mb-xxs"><strong>Next terms:</strong> 18, 9</p>
+                            <p class="t-sm text-secondary"><strong>Type:</strong> Geometric sequence</p>
+                        </div>
                     </details>
                 </div>
             </div>
         </section>
 
-        <!-- Key Concepts Summary -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="lightbulb" class="w-5 h-5 mr-2" aria-hidden="true"></i>
-                Key Takeaways
-            </h2>
-            <div class="space-y-3">
-                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
-                    <strong>✓ Deductive Reasoning:</strong> General principles → Specific conclusions (certain)
-                    </div>
-                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
-                    <strong>✓ Inductive Reasoning:</strong> Observations → General predictions (probable)
-                            </div>
-                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
-                    <strong>✓ Estimation:</strong> Use rounding and benchmarks for quick approximations
-                            </div>
-                <div class="p-3 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg">
-                    <strong>✓ Polya's Process:</strong> Understand → Plan → Execute → Check
-                </div>
+        <!-- Navigation -->
+        <div class="flex justify-between items-center">
+            <button class="btn-outline" disabled style="opacity: 0.5; cursor: not-allowed;">
+                <i data-lucide="chevron-left" class="icon-md"></i>
+                Previous
+            </button>
+            <div class="flex items-center gap-uxs">
+                <div class="badge badge-light">1 of 8</div>
             </div>
-        </section>
-
-        <!-- Resources -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-6">
-                <i data-lucide="link" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Additional Resources
-            </h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <a href="https://drive.google.com/drive/folders/1yEsb6TUSC72mb6PU8P3Oy2eztxYo-eqb" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                    <i data-lucide="external-link" class="w-4 h-4"></i>
-                    Chapter 1 Google Drive
-                </a>
-                <a href="course_materials/sample_assignments/Week_1_Attendance_Sample.html" class="btn btn-secondary">
-                    <i data-lucide="file-text" class="w-4 h-4"></i>
-                    Week 1 Sample Assignment
-                </a>
-                <a href="tutor.html" class="btn btn-secondary">
-                    <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    AI Math Tutor
-                </a>
-                <a href="formula_lookup.html" class="btn btn-secondary">
-                    <i data-lucide="calculator" class="w-4 h-4"></i>
-                    Formula Reference
-                </a>
-            </div>
-        </section>
+            <a href="chapter-4.html" class="btn-fill">
+                Next
+                <i data-lucide="chevron-right" class="icon-md"></i>
+            </a>
+        </div>
     </main>
 
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto py-6">
-        <div class="container mx-auto px-4 text-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-            <a href="index.html" class="hover:text-emerald-600">Dashboard</a> |
-            <a href="calendar.html" class="hover:text-emerald-600">Calendar</a> |
-            <a href="formula_lookup.html" class="hover:text-emerald-600">Formulas</a>
-                    </div>
-    </footer>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="nav-item-mobile" data-page="home">
+            <i data-lucide="home" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Home</span>
+        </a>
+        <a href="tutor.html" class="nav-item-mobile active" data-page="courses">
+            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Courses</span>
+        </a>
+        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
+            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Calendar</span>
+        </a>
+        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
+            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Resources</span>
+        </a>
+        <a href="#profile" class="nav-item-mobile" data-page="profile">
+            <i data-lucide="user" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Profile</span>
+        </a>
+    </nav>
 
-    <script>lucide.createIcons();</script>
-    <script src="src/js/mobile-menu.js"></script>
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- ADHD Accessibility Features -->
     <script src="src/js/focus-mode.js"></script>
     <script src="src/js/reading-mode.js"></script>
+    <script src="src/js/bottom-nav.js"></script>
     <script src="src/js/chapter-init.js"></script>
+
+    <!-- Chapter Interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Track section expand/collapse
+            const details = document.querySelectorAll('details');
+            details.forEach(detail => {
+                detail.addEventListener('toggle', function() {
+                    const icon = this.querySelector('summary i[data-lucide="chevron-down"]');
+                    if (this.open) {
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+            
+            // Animate cards
+            const cards = document.querySelectorAll('.card-base');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 50}ms`;
+                card.classList.add('slide-up');
+            });
+            
+            // Track progress
+            if (typeof progressTracker !== 'undefined') {
+                progressTracker.trackChapterAccess('chapter-1');
+            }
+        });
+    </script>
 </body>
 </html>

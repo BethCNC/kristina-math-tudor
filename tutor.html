@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Math Tutor | MAT 143</title>
-    <meta name="description" content="AI-powered math tutor for MAT 143. Get instant help with formulas, practice problems, and chapter concepts.">
+    <title>Math Tutor | MAT 143</title>
+    <meta name="description" content="AI-powered math tutor for MAT 143. Browse chapters, get instant help, and track your progress.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
@@ -12,381 +12,410 @@
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
     <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals.css">
+    <link rel="stylesheet" href="src/styles/globals-new.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+<body class="bg-primary">
     <!-- Skip to main content -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+    <a href="#main-content" class="skip-link">
         Skip to main content
     </a>
 
-    <!-- Navigation Header -->
-    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
-                        <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
-                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
-                        </div>
-                        <span class="text-lg font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-50 hidden sm:inline">Academic Dashboard</span>
-                    </a>
-                </div>
-
-                <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
-                    <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="home" class="w-4 h-4 inline mr-1"></i>
-                        Dashboard
-                    </a>
-                    <a href="calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i>
-                        Calendar
-                    </a>
-                    <a href="tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
-                        <i data-lucide="calculator" class="w-4 h-4 inline mr-1"></i>
-                        Math Tutor
-                    </a>
-                    <a href="english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1"></i>
-                        Writing Coach
-                    </a>
-                    <a href="formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
-                        <i data-lucide="book-open" class="w-4 h-4 inline mr-1"></i>
-                        Resources
-                    </a>
+    <!-- Desktop Header -->
+    <header class="header">
+        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
+                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
+            </svg>
+        </a>
+        
+        <nav class="header-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-item-desktop">Home</a>
+            <a href="tutor.html" class="nav-item-desktop active">Courses</a>
+            <a href="calendar.html" class="nav-item-desktop">Calendar</a>
+            <a href="formula_lookup.html" class="nav-item-desktop">Resources</a>
+            <a href="#profile" class="nav-item-desktop">Profile</a>
                 </nav>
 
-                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="Toggle mobile menu" aria-expanded="false">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+        <div class="header-actions">
+            <button class="btn-icon" aria-label="Filter chapters">
+                <i data-lucide="filter" class="icon-md"></i>
+            </button>
+            <button class="btn-icon has-notification" aria-label="Notifications">
+                <i data-lucide="bell" class="icon-md"></i>
                 </button>
+            <div class="avatar">
+                <div class="avatar-initials">KC</div>
             </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-            <nav class="px-4 py-3 space-y-1">
-                <a href="index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="home" class="w-4 h-4 mr-2"></i>Dashboard</a>
-                <a href="calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i>Calendar</a>
-                <a href="tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300"><i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Math Tutor</a>
-                <a href="english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>Writing Coach</a>
-                <a href="formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="book-open" class="w-4 h-4 mr-2"></i>Resources</a>
-            </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
-        <!-- Header -->
-        <section class="mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
-                <i data-lucide="calculator" class="w-8 h-8 inline mr-2" aria-hidden="true"></i>
-                AI Math Tutor
-            </h1>
-            <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                Get instant help with MAT 143 concepts, formulas, and practice problems
-            </p>
-        </section>
+    <!-- Mobile Header -->
+    <header class="header-mobile">
+        <h1 class="h-df text-center">MAT 143 Chapters</h1>
+    </header>
 
-        <!-- AI Tutor Interface -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="message-circle" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Ask the AI Tutor
-            </h2>
-            <form id="tutor-form" class="space-y-4">
-                <!-- Chapter Selection -->
-                <div>
-                    <label for="chapter-select" class="label">Select Chapter (Optional)</label>
-                    <select id="chapter-select" class="input">
-                        <option value="">All Chapters</option>
-                        <option value="1">Chapter 1: Thinking Mathematically</option>
-                        <option value="4">Chapter 4: Proportions & Percentages</option>
-                        <option value="5">Chapter 5: Linear & Exponential Functions</option>
-                        <option value="6">Chapter 6: Personal Finance</option>
-                        <option value="7">Chapter 7: Measurement & Conversions</option>
-                        <option value="10">Chapter 10: Probability</option>
-                        <option value="11">Chapter 11: Statistics & Data Analysis</option>
-                        <option value="13">Chapter 13: Voting & Apportionment</option>
-                    </select>
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
+        
+        <!-- Page Header -->
+        <div class="flex flex-col gap-xxs mb-db">
+            <h1 class="h-xxl text-primary">MAT 143: Quantitative Literacy</h1>
+            <p class="t-df text-secondary">Select a chapter to begin studying</p>
                 </div>
 
-                <!-- Question Input -->
+        <!-- Chapter Grid -->
+        <div class="grid grid-cols-3 gap-df md:gap-xxl mb-db">
+            <!-- Chapter 1 -->
+            <a href="chapter-1.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-purple-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#BA68C8" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#BA68C8" font-size="32" font-weight="600">1</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Thinking Mathematically</h3>
+                        </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">3/3 sections | 100%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Chapter 4 -->
+            <a href="chapter-4.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-orange-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#FF9800" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#FF9800" font-size="32" font-weight="600">4</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Proportions & Percentages</h3>
+                        </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">3/3 sections | 100%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Chapter 5 -->
+            <a href="chapter-5.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-blue-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#2196F3" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#2196F3" font-size="32" font-weight="600">5</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Functions</h3>
+                        </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">2/3 sections | 67%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 67%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Chapter 6 -->
+            <a href="chapter-6.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-pink-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#E91E63" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#E91E63" font-size="32" font-weight="600">6</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Personal Finance</h3>
+                </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">1/4 sections | 25%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 25%"></div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-banner">
+                    <i data-lucide="bell" class="course-card-banner-icon"></i>
+                    <span class="course-card-banner-text">Test 3 includes this chapter</span>
+                </div>
+                </a>
+
+                <!-- Chapter 7 -->
+            <a href="chapter-7.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-lime-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#CDDC39" opacity="0.5" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#7D8400" font-size="32" font-weight="600">7</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Measurement & Conversions</h3>
+                            </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">2/3 sections | 67%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 67%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card-banner">
+                    <i data-lucide="bell" class="course-card-banner-icon"></i>
+                    <span class="course-card-banner-text">Test 3 includes this chapter</span>
+                </div>
+                        </a>
+
+                <!-- Chapter 10 -->
+            <a href="chapter-10.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-purple-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#BA68C8" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#BA68C8" font-size="28" font-weight="600">10</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Probability</h3>
+                        </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">0/4 sections | 0%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%"></div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+                </a>
+
+                <!-- Chapter 11 -->
+            <a href="chapter-11.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-orange-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#FF9800" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#FF9800" font-size="28" font-weight="600">11</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Statistics</h3>
+                            </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">0/4 sections | 0%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </a>
+
+                <!-- Chapter 13 -->
+            <a href="chapter-13.html" class="course-card hover-lift" style="text-decoration: none;">
+                <div class="course-card-content">
+                    <div class="course-card-cover bg-blue-light">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <rect width="80" height="80" fill="#2196F3" opacity="0.3" rx="6"/>
+                            <text x="40" y="50" text-anchor="middle" fill="#2196F3" font-size="28" font-weight="600">13</text>
+                        </svg>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-card-header">
+                            <h3 class="course-card-title">Voting & Apportionment</h3>
+                            </div>
+                        <div class="course-card-progress">
+                            <p class="course-card-progress-info">3/3 sections | 100%</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- AI Tutor Section -->
+        <section class="card-base mb-db">
+            <div class="flex items-center gap-xxs mb-df">
+                <i data-lucide="sparkles" class="icon-lg text-accent"></i>
+                <h2 class="h-xl text-primary">AI Math Tutor</h2>
+            </div>
+            
+            <p class="t-md text-secondary mb-xxl">Ask me anything about MAT 143 concepts, formulas, or practice problems.</p>
+            
+            <form id="tutor-form" class="flex flex-col gap-df">
                 <div>
-                    <label for="question-input" class="label label-required">Your Question</label>
+                    <label for="question-input" class="label">Your Question</label>
                     <textarea 
                         id="question-input" 
                         rows="4" 
-                        class="input resize-none" 
-                        placeholder="Example: How do I calculate compound interest? Or: Can you explain the difference between mean and median?"
-                        required
-                        aria-required="true"></textarea>
+                        class="input" 
+                        placeholder="Example: How do I calculate compound interest?"
+                        required></textarea>
                 </div>
 
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary w-full sm:w-auto">
-                    <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+                <button type="submit" class="btn-fill btn-with-icon-before">
+                    <i data-lucide="send" class="icon-md"></i>
                     Ask Tutor
                 </button>
             </form>
 
             <!-- Response Area -->
-            <div id="tutor-response" class="mt-6 hidden">
-                <div class="border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 pt-6">
-                    <h3 class="text-lg font-semibold mb-4 flex items-center">
-                        <i data-lucide="sparkles" class="w-5 h-5 mr-2 text-emerald-500"></i>
-                        AI Tutor Response
-                    </h3>
-                    <div id="response-content" class="prose prose-sm max-w-none dark:prose-invert"></div>
+            <div id="tutor-response" class="hidden mt-xxl">
+                <div class="divider mb-df"></div>
+                <div class="flex items-center gap-xxs mb-df">
+                    <i data-lucide="sparkles" class="icon-md text-accent"></i>
+                    <h3 class="h-df text-primary">AI Tutor Response</h3>
                 </div>
+                <div id="response-content" class="t-df-paragraph text-primary"></div>
             </div>
 
             <!-- Loading State -->
-            <div id="tutor-loading" class="mt-6 hidden">
-                <div class="flex items-center space-x-3 p-4 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded-lg">
+            <div id="tutor-loading" class="hidden mt-df">
+                <div class="flex items-center gap-xxs p-df bg-accent-light rounded-lg">
                     <div class="animate-spin">
-                        <i data-lucide="loader-2" class="w-5 h-5 text-sapphire-500"></i>
+                        <i data-lucide="loader-2" class="icon-md text-accent"></i>
                     </div>
-                    <span class="text-sm text-sapphire-700 dark:text-sapphire-300">Thinking...</span>
+                    <span class="t-md text-accent">Thinking...</span>
                 </div>
-            </div>
-        </section>
-
-        <!-- Chapter Navigation -->
-        <section class="mb-8" aria-labelledby="chapters-heading">
-            <h2 id="chapters-heading" class="text-2xl font-semibold mb-6">
-                <i data-lucide="book-open" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Study by Chapter
-            </h2>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Chapter 1 -->
-                <a href="chapter-1.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                    <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">1</span>
-                        </div>
-                        <div>
-                                <h3 class="font-semibold">Thinking Mathematically</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-success">Test 1</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Problem solving, patterns, reasoning</p>
-                </a>
-
-                <!-- Chapter 4 -->
-                <a href="chapter-4.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                    <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">4</span>
-                        </div>
-                        <div>
-                                <h3 class="font-semibold">Proportions</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-info">Test 2</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Ratios, percentages, rates</p>
-                </a>
-
-                <!-- Chapter 5 -->
-                <a href="chapter-5.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">5</span>
-                        </div>
-                        <div>
-                                <h3 class="font-semibold">Functions</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-info">Test 2</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Linear, exponential, growth patterns</p>
-                </a>
-
-                <!-- Chapter 6 -->
-                <a href="chapter-6.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">6</span>
-                </div>
-                            <div>
-                                <h3 class="font-semibold">Personal Finance</h3>
-            </div>
-                        </div>
-                        <span class="badge badge-warning">Test 3</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Interest, loans, investments, APY</p>
-                </a>
-
-                <!-- Chapter 7 -->
-                <a href="chapter-7.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">7</span>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Measurement</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-warning">Test 3</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Unit conversions, metric system</p>
-                        </a>
-
-                <!-- Chapter 10 -->
-                <a href="chapter-10.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">10</span>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Probability</h3>
-                </div>
-                        </div>
-                        <span class="badge badge-neutral">Test 4</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Outcomes, expected value, odds</p>
-                </a>
-
-                <!-- Chapter 11 -->
-                <a href="chapter-11.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">11</span>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Statistics</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-neutral">Test 4</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Mean, median, z-scores, normal distribution</p>
-                        </a>
-
-                <!-- Chapter 13 -->
-                <a href="chapter-13.html" class="card hover:shadow-lg transition-shadow">
-                    <div class="flex items-center justify-between mb-3">
-                            <div class="flex items-center space-x-3">
-                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
-                                <span class="font-bold text-emerald-600 dark:text-emerald-400">13</span>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold">Voting & Apportionment</h3>
-                            </div>
-                        </div>
-                        <span class="badge badge-success">Test 1</span>
-                    </div>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Election methods, fair division</p>
-                </a>
             </div>
         </section>
 
         <!-- Quick Formula Reference -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="search" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Quick Formula Reference
-            </h2>
-            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
-                Looking for a specific formula? Try the complete formula lookup or ask the AI tutor above.
-            </p>
-            <a href="formula_lookup.html" class="btn btn-secondary">
-                <i data-lucide="search" class="w-4 h-4 mr-2"></i>
-                Open Formula Lookup
-            </a>
-        </section>
-
-        <!-- Study Resources -->
-        <section class="mb-8 card">
-            <h2 class="card-header">
-                <i data-lucide="book" class="w-5 h-5 inline mr-2" aria-hidden="true"></i>
-                Additional Resources
-            </h2>
-            <div class="grid sm:grid-cols-2 gap-4">
-                <div class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg">
-                    <h3 class="font-semibold mb-2 flex items-center">
-                        <i data-lucide="external-link" class="w-4 h-4 mr-2 text-emerald-500"></i>
-                        Hawkes Learning
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">
-                        Complete interactive homework assignments and practice problems.
-                    </p>
-                    <a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                        Open Hawkes
-                        <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
-                    </a>
+        <section class="card-base">
+            <div class="flex items-center justify-between mb-df">
+                <h2 class="h-xl text-primary">Quick Formulas</h2>
+                <a href="formula_lookup.html" class="btn-text">
+                    View all
+                    <i data-lucide="arrow-right" class="icon-sm"></i>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-xxs">
+                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
+                    <span class="t-sm text-semibold text-primary">Compound Interest</span>
+                    <code class="t-xs text-mono text-secondary">A = P(1 + r/n)^(nt)</code>
                 </div>
-
-                <div class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg">
-                    <h3 class="font-semibold mb-2 flex items-center">
-                        <i data-lucide="book-open" class="w-4 h-4 mr-2 text-sapphire-500"></i>
-                        Course Materials
-                    </h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">
-                        Access syllabus, pacing guides, and formula sheets.
-                    </p>
-                    <a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="btn btn-outline btn-sm">
-                        View Materials
-                    </a>
+                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
+                    <span class="t-sm text-semibold text-primary">Simple Interest</span>
+                    <code class="t-xs text-mono text-secondary">I = Prt</code>
+                </div>
+                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
+                    <span class="t-sm text-semibold text-primary">Distance Formula</span>
+                    <code class="t-xs text-mono text-secondary">d = rt</code>
+                </div>
+                <div class="flex flex-col gap-uxs p-sm bg-secondary rounded-md">
+                    <span class="t-sm text-semibold text-primary">Percentage Change</span>
+                    <code class="t-xs text-mono text-secondary">% = (new-old)/old × 100</code>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-6">
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">About</h3>
-                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                        Your personalized academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">Quick Links</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
-                        <li><a href="calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Course Calendar</a></li>
-                        <li><a href="english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Writing Resources</a></li>
-                        <li><a href="formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">External Resources</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Hawkes Learning <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                        <li><a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Brightspace (D2L) <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="pt-6 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
-                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
-                    <p>&copy; 2025 Kristina's Academic Dashboard</p>
-                    <p class="mt-2 sm:mt-0"><span class="font-medium">Fall 2025 Semester</span> • Aug 18 - Dec 12, 2025</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="bottom-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="nav-item-mobile" data-page="home">
+            <i data-lucide="home" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Home</span>
+        </a>
+        <a href="tutor.html" class="nav-item-mobile active" data-page="courses">
+            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Courses</span>
+        </a>
+        <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
+            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Calendar</span>
+        </a>
+        <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
+            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Resources</span>
+        </a>
+        <a href="#profile" class="nav-item-mobile" data-page="profile">
+            <i data-lucide="user" class="nav-item-mobile-icon"></i>
+            <span class="nav-item-mobile-label">Profile</span>
+        </a>
+    </nav>
 
     <!-- Scripts -->
     <script>
         lucide.createIcons();
     </script>
 
-    <!-- Mobile Menu with Focus Trap -->
-    <script src="src/js/mobile-menu.js"></script>
-    
-    <!-- AI Tutor Integration -->
-    <script src="src/js/tutor.js"></script>
+    <!-- ADHD Accessibility Features -->
+    <script src="src/js/focus-mode.js"></script>
+    <script src="src/js/reading-mode.js"></script>
+    <script src="src/js/bottom-nav.js"></script>
+
+    <!-- AI Tutor Functionality -->
+    <script>
+        document.getElementById('tutor-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const question = document.getElementById('question-input').value;
+            const responseDiv = document.getElementById('tutor-response');
+            const responseContent = document.getElementById('response-content');
+            const loadingDiv = document.getElementById('tutor-loading');
+            
+            // Show loading
+            responseDiv.classList.add('hidden');
+            loadingDiv.classList.remove('hidden');
+            
+            try {
+                const response = await fetch('/api/tutor', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ question, chapter: null })
+                });
+                
+                const data = await response.json();
+                
+                // Show response
+                loadingDiv.classList.add('hidden');
+                responseContent.innerHTML = data.response || data.answer || 'Sorry, I could not process your question.';
+                responseDiv.classList.remove('hidden');
+                responseDiv.classList.add('fade-in');
+                
+            } catch (error) {
+                loadingDiv.classList.add('hidden');
+                responseContent.innerHTML = '<p class="text-accent">Connection error. Please try again or check the <a href="formula_lookup.html" class="text-accent">formula lookup</a> for quick reference.</p>';
+                responseDiv.classList.remove('hidden');
+            }
+        });
+        
+        // Animate progress bars
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.progress-bar-fill').forEach(bar => {
+                bar.classList.add('animate');
+            });
+        });
+    </script>
 </body>
 </html>
