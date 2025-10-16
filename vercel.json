@@ -1,4 +1,10 @@
 {
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": "pip install -r requirements.txt",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
