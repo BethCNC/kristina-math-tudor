@@ -512,6 +512,105 @@ p {
   color: var(--primary-blue);
 }
 
+/* ==================== NEXT DUE WIDGET (ADHD Support) ==================== */
+
+.next-due-widget {
+  position: fixed;
+  top: 80px;
+  right: var(--space-4);
+  width: 280px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 40;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.next-due-widget.collapsed .next-due-content {
+  display: none;
+}
+
+.next-due-header {
+  padding: var(--space-3);
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+  color: var(--white);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next-due-header .btn-icon {
+  background: transparent;
+  color: var(--white);
+  border: none;
+  padding: var(--space-1);
+}
+
+.next-due-content {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.deadline-item {
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border-left: 3px solid;
+}
+
+.deadline-item.critical {
+  border-left-color: var(--danger-red);
+  background-color: #fef2f2;
+}
+
+.deadline-item.high {
+  border-left-color: var(--warning-orange);
+  background-color: #fef3c7;
+}
+
+.deadline-item.medium {
+  border-left-color: var(--primary-blue);
+  background-color: #f0f9ff;
+}
+
+.deadline-item.low {
+  border-left-color: var(--neutral-gray-light);
+  background-color: #f9fafb;
+}
+
+.days-badge {
+  font-size: var(--font-size-xs);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.next-due-footer {
+  padding: var(--space-3);
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Mobile: Position at bottom instead of fixed sidebar */
+@media (max-width: 768px) {
+  .next-due-widget {
+    position: static;
+    width: 100%;
+    margin: var(--space-4);
+    max-height: none;
+  }
+}
+
+/* Hide on very small screens if mobile nav is present */
+@media (max-width: 480px) {
+  .next-due-widget {
+    display: none;
+  }
+}
+
 /* ==================== MOBILE NAVIGATION ==================== */
 
 .mobile-nav {
