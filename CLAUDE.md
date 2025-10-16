@@ -4,15 +4,28 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Build & Development Commands
 
-**Development Server:**
+**Local Development:**
 ```bash
-npm run dev        # Start Vite dev server on port 3000
+python3 -m http.server 8000     # Start local server at http://localhost:8000
+# No build step required - all pages work immediately
 ```
 
-**Build & Deploy:**
+**CSS Compilation (if modifying styles):**
 ```bash
-npm run build      # Build for production using Vite
-npm run preview    # Preview production build locally
+npm run build:css   # Compile Tailwind CSS to dist/output.css (minified)
+npm run dev         # Watch and auto-compile CSS changes
+```
+
+**Production Build (Vite):**
+```bash
+npx vite build      # Build multi-page site to dist/ directory
+npx vite preview    # Preview production build locally
+```
+
+**Python Environment Setup:**
+```bash
+pip install -r requirements.txt  # Install Python dependencies for API functions
+# Required for API endpoints: anthropic>=0.7.0, python-dotenv>=1.0.0
 ```
 
 **Common Python Scripts:**
@@ -39,9 +52,10 @@ This is an academic success dashboard for MAT 143 (Quantitative Literacy) and EN
 The project includes a sophisticated AI tutoring system with multiple components:
 
 **Backend API (Python/Vercel):**
-- `api/tutor.py` - Main Vercel serverless function for math tutoring
+- `api/tutor.py` - Main Vercel serverless function for math tutoring (uses claude-3-sonnet-20240229)
 - `api/english_tutor.py` - English writing assistance API
 - `tutor_system/mat143_tutor.py` - Comprehensive local tutoring system
+- `tutor_system/enhanced_tutor.py` - Enhanced tutor with additional features
 
 **Course Structure Integration:**
 - Covers MAT 143 chapters: 1, 4, 5, 6, 7, 10, 11, 13
@@ -61,9 +75,9 @@ The project includes a sophisticated AI tutoring system with multiple components
 
 ### Frontend Architecture
 **Technology Stack:**
-- Vanilla HTML/CSS/JavaScript with Tailwind CSS v4
+- Vanilla HTML/CSS/JavaScript with Tailwind CSS v3.4.1
 - Radix UI components for enhanced UX (dialog, select, tabs, slot)
-- Lucide React icons (imported via npm)
+- Lucide icons (CDN)
 - Custom retro design system with Vend Sans typography (via Google Fonts)
 
 **Source Organization:**
@@ -82,19 +96,22 @@ The project includes a sophisticated AI tutoring system with multiple components
 
 ### Build Configuration
 **Vite Setup (vite.config.js):**
-- Multi-entry point configuration for HTML pages
+- Multi-entry point configuration for HTML pages in root directory
 - Active entry points: index, calendar, tutor, formulaLookup, englishMaterials, chapter-1, chapter-4, chapter-6, chapter-7, chapter-13
-- Temporarily disabled: chapter-5, chapter-10, chapter-11 (CSS parsing issues)
-- PostCSS integration with @tailwindcss/postcss and autoprefixer
-- Development server on port 3000
+- Temporarily disabled: chapter-5, chapter-10, chapter-11 (CSS parsing issues - need investigation)
+- PostCSS integration with @tailwindcss/postcss and autoprefixer via postcss.config.js
+- Development server configured for port 3000 (run with `npx vite`)
 - Build output to `dist/` directory
+- Note: npm scripts only handle Tailwind CSS compilation, not Vite server
 
 **Deployment (Vercel):**
 - Platform: Vercel serverless functions for API endpoints
-- Configuration: `vercel.json` includes rewrites and security headers
+- Configuration: `vercel.json` includes security headers (no buildCommand/devCommand needed)
 - Security headers: X-Content-Type-Options, X-Frame-Options, X-XSS-Protection, Referrer-Policy
 - Python runtime for serverless functions in `api/` directory
-- Static asset optimization via Vite build process
+- API endpoints auto-deployed from `api/*.py` files (e.g., `/api/tutor`, `/api/english_tutor`)
+- Static HTML/CSS/JS files served directly from root (no build output needed for deployment)
+- `requirements.txt` installed automatically via `installCommand` in vercel.json
 
 ### Key Scripts & Automation
 The `scripts/` directory contains numerous Python utilities for:
@@ -115,9 +132,9 @@ The tutoring system is specifically designed for "Kristina" with:
 
 **Tech Stack Restrictions:**
 - Use vanilla HTML/CSS/JavaScript only - do NOT introduce heavy frameworks (React, Vue, etc.)
-- Styling must use Tailwind CSS v4 with the custom design system in `src/styles/` and `tokens.json`
-- Backend/API functions must be Python-based in the `api/` directory
-- Icons: Lucide only; Fonts: Vend Sans (Google Fonts)
+- Styling must use Tailwind CSS v3.4.1 with the custom design system in `src/styles/` and `tokens.json`
+- Backend/API functions must be Python-based in the `api/` directory for Vercel serverless deployment
+- Icons: Lucide (CDN); Fonts: Vend Sans (Google Fonts)
 
 **Code Quality Standards:**
 - Write semantic HTML with proper heading hierarchy and ARIA labels
@@ -131,13 +148,16 @@ The tutoring system is specifically designed for "Kristina" with:
 - Focus on academic success and executive function support features
 - Do NOT add features unrelated to academics (social sharing, gamification, etc.)
 - The `_archived/` directory contains outdated code - do not reference it
+- Core sections: Dashboard (progress tracking), Calendar (16-week timeline), Math Tutor (chapter pages), Writing Coach (essay guides), Resource Center (formula lookup)
 
 ## Important Notes
 
 **Environment & Configuration:**
-- AI tutoring requires `ANTHROPIC_API_KEY` environment variable
+- AI tutoring requires `ANTHROPIC_API_KEY` environment variable (set in Vercel project settings)
 - API uses Anthropic's Claude model (claude-3-sonnet-20240229 in api/tutor.py)
-- Fallback responses are implemented when API key is missing or services unavailable
+- Fallback responses are implemented when API key is missing or services unavailable - gracefully degrades with helpful resource links
+- API functions handle CORS for cross-origin requests from the frontend
+- For local API testing, use Vercel CLI: `vercel dev` (requires Vercel account and project link)
 
 **Known Issues:**
 - Chapter pages 5, 10, 11 temporarily disabled in Vite config due to CSS parsing issues
