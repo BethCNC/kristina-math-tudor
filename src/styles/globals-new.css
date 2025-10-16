@@ -1,371 +1,140 @@
 /*
  * E-Learning Dashboard - Master Stylesheet
- * New design system implementation
- * Imports all design system modules in correct order
+ * Compatible with current build system
  */
 
 /* ============================================
-   Core Design System
+   Font Imports
    ============================================ */
-@import "./design-system-elearning.css";
-@import "./colors-elearning.css";
-@import "./typography-inter.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap');
 
 /* ============================================
-   Component Libraries
+   Tailwind Base
    ============================================ */
-@import "./components-buttons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS Custom Properties (Design Tokens)
+   ============================================ */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey: #222222;
+  --color-grey-2: #717171;
+  --color-grey-3: #bdbdbd;
+  --color-grey-4: #e0e0e0;
+  --color-grey-5: #eeeeee;
+  --color-grey-6: #f5f5f5;
+  
+  --color-accent: #fe5a4a;
+  --color-accent-light: rgba(254, 90, 74, 0.1);
+  --color-accent-dark: #ff5032;
+  
+  --color-purple: #ba68c8;
+  --color-purple-light: #f3e5f5;
+  --color-orange: #ff9800;
+  --color-orange-light: #fff3e0;
+  --color-blue: #2196f3;
+  --color-blue-light: #e3f2fd;
+  --color-pink: #e91e63;
+  --color-pink-light: #fce4ec;
+  --color-lime: #cddc39;
+  --color-lime-light: #f9fbe7;
+  
+  /* Semantic Colors */
+  --color-text-primary: var(--color-grey);
+  --color-text-secondary: var(--color-grey-2);
+  --color-text-tertiary: var(--color-grey-3);
+  --color-text-inverse: var(--color-white);
+  --color-text-accent: var(--color-accent);
+  
+  --color-bg-primary: var(--color-white);
+  --color-bg-secondary: var(--color-grey-6);
+  --color-bg-tertiary: var(--color-grey-5);
+  
+  --color-border-primary: var(--color-grey-4);
+  --color-border-secondary: var(--color-grey-5);
+  
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  
+  /* Shadows */
+  --shadow-sm: 0 0.3px 0.9px rgba(0,0,0,0.1), 0 1.6px 3.6px rgba(0,0,0,0.13);
+  --shadow-md: 0 0.6px 1.8px rgba(0,0,0,0.1), 0 3.2px 7.2px rgba(0,0,0,0.13);
+  --shadow-lg: 0 1.2px 3.6px rgba(0,0,0,0.1), 0 6.4px 14.4px rgba(0,0,0,0.13);
+  --shadow-xl: 0 4.8px 14.4px rgba(0,0,0,0.18), 0 25.6px 57.6px rgba(0,0,0,0.22);
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-pill: 48px;
+  --radius-full: 9999px;
+  
+  /* Typography */
+  --font-primary: 'Inter', 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  
+  /* Transitions */
+  --transition-fast: 100ms;
+  --transition-normal: 200ms;
+  --transition-slow: 300ms;
+}
+
+/* Dark mode */
+.dark {
+  --color-grey: var(--color-white);
+  --color-grey-2: rgba(255, 255, 255, 0.75);
+  --color-grey-3: #6e6e6e;
+  --color-grey-4: #555555;
+  --color-grey-5: #3c3c3c;
+  --color-grey-6: #333333;
+  
+  --color-bg-primary: #2a2a2a;
+  --color-bg-secondary: #333333;
+  --color-bg-tertiary: #3c3c3c;
+  
+  --color-text-primary: var(--color-white);
+  --color-text-secondary: rgba(255, 255, 255, 0.75);
+  --color-text-inverse: #222222;
+  
+  --color-border-primary: #555555;
+  --color-border-secondary: #3c3c3c;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Import component styles */
 @import "./components-navigation.css";
-@import "./components-forms.css";
+@import "./components-buttons.css";
 @import "./components-cards.css";
+@import "./components-forms.css";
 @import "./animations.css";
-
-/* ============================================
-   Preserve ADHD Accessibility Features
-   ============================================ */
-
-/* Focus Mode Toggle */
-.focus-mode-toggle {
-  position: fixed;
-  bottom: var(--space-xxl);
-  left: var(--space-xxl);
-  display: flex;
-  align-items: center;
-  gap: var(--space-xxs);
-  padding: 12px 16px;
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  border: none;
-  border-radius: var(--radius-pill);
-  box-shadow: var(--shadow-dp16);
-  font-size: var(--font-size-3);
-  font-weight: var(--font-weight-semibold);
-  cursor: pointer;
-  z-index: 1000;
-  transition: all var(--transition-normal) var(--transition-ease);
-  min-height: 44px;
-  min-width: 44px;
-}
-
-.focus-mode-toggle:hover {
-  background-color: var(--color-black);
-  box-shadow: var(--shadow-dp64);
-  transform: translateY(-2px);
-}
-
-.focus-mode-toggle[aria-pressed="true"] {
-  background-color: var(--color-grey);
-}
-
-/* Hide elements in focus mode */
-body.focus-mode-active .header,
-body.focus-mode-active .header-mobile,
-body.focus-mode-active .bottom-nav,
-body.focus-mode-active footer,
-body.focus-mode-active aside,
-body.focus-mode-active .promo-card {
-  display: none;
-}
-
-body.focus-mode-active main {
-  max-width: 900px;
-  margin: var(--space-db) auto;
-  padding: var(--space-db);
-}
-
-body.focus-mode-active .focus-mode-toggle {
-  top: var(--space-xxl);
-  bottom: auto;
-}
-
-/* Reading Mode Controls */
-.reading-mode-controls {
-  position: fixed;
-  top: 80px;
-  left: var(--space-xxl);
-  z-index: 1000;
-}
-
-.reading-control-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  background-color: var(--color-bg-primary);
-  border: 2px solid var(--color-border-primary);
-  border-radius: var(--radius-lg);
-  cursor: pointer;
-  box-shadow: var(--shadow-dp8);
-  transition: all var(--transition-normal) var(--transition-ease);
-  color: var(--color-text-primary);
-}
-
-.reading-control-toggle:hover {
-  background-color: var(--color-bg-secondary);
-  box-shadow: var(--shadow-dp16);
-}
-
-.reading-controls-panel {
-  margin-top: var(--space-xxs);
-  padding: var(--space-df);
-  background-color: var(--color-bg-primary);
-  border: 2px solid var(--color-border-primary);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-dp16);
-  min-width: 240px;
-}
-
-.reading-controls-panel.hidden {
-  display: none;
-}
-
-/* Achievement Toast Container */
-.achievement-toast-container {
-  position: fixed;
-  top: 80px;
-  right: var(--space-xxl);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  z-index: 1000;
-  max-width: 400px;
-}
-
-.achievement-toast {
-  display: flex;
-  align-items: start;
-  gap: var(--space-sm);
-  padding: var(--space-df);
-  background-color: var(--color-bg-primary);
-  border-radius: var(--space-sm);
-  box-shadow: var(--shadow-dp16);
-  border-left: 4px solid var(--color-accent);
-  animation: slideInRight var(--transition-slow) ease-out;
-  min-height: 44px;
-}
-
-.achievement-toast.hiding {
-  animation: slideOutRight var(--transition-slow) ease-in;
-}
-
-.achievement-toast-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-lg);
-  background-color: var(--color-accent-light);
-  color: var(--color-accent);
-  flex-shrink: 0;
-}
-
-.achievement-toast-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.achievement-toast-title {
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-3);
-  color: var(--color-text-primary);
-  margin-bottom: 4px;
-}
-
-.achievement-toast-message {
-  font-size: var(--font-size-2);
-  color: var(--color-text-secondary);
-}
-
-/* Save Indicator */
-.save-indicator {
-  position: fixed;
-  bottom: var(--space-xxl);
-  right: var(--space-xxl);
-  display: flex;
-  align-items: center;
-  gap: var(--space-xxs);
-  padding: 12px 16px;
-  background-color: var(--color-lime);
-  color: var(--color-grey);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-dp16);
-  font-size: var(--font-size-3);
-  font-weight: var(--font-weight-medium);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all var(--transition-slow) var(--transition-ease);
-  z-index: 1000;
-  pointer-events: none;
-}
-
-.save-indicator.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ============================================
-   Deadline Urgency Indicators (ADHD Feature)
-   ============================================ */
-.deadline-critical {
-  border-left: 4px solid var(--color-accent);
-  background: linear-gradient(to right, var(--color-accent-light), transparent);
-}
-
-.deadline-soon {
-  border-left: 4px solid var(--color-orange);
-  background: linear-gradient(to right, var(--color-orange-light), transparent);
-}
-
-.deadline-upcoming {
-  border-left: 4px solid var(--color-lime);
-  background: linear-gradient(to right, var(--color-lime-light), transparent);
-}
-
-.deadline-future {
-  border-left: 4px solid var(--color-grey-3);
-}
-
-@keyframes pulseDeadline {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(254, 90, 74, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 8px rgba(254, 90, 74, 0);
-  }
-}
-
-.deadline-critical.pulse {
-  animation: pulseDeadline 2s ease-in-out infinite;
-}
-
-/* ============================================
-   Mobile Adjustments for ADHD Features
-   ============================================ */
-@media (max-width: 640px) {
-  .focus-mode-toggle {
-    bottom: 80px;
-    left: var(--space-df);
-    padding: 8px 12px;
-    font-size: var(--font-size-2);
-  }
-  
-  body.focus-mode-active .focus-mode-toggle {
-    top: var(--space-df);
-    bottom: auto;
-  }
-  
-  .reading-mode-controls {
-    top: auto;
-    bottom: 140px;
-    left: var(--space-df);
-  }
-  
-  .reading-controls-panel {
-    min-width: 200px;
-  }
-  
-  .achievement-toast-container {
-    top: 72px;
-    right: var(--space-df);
-    left: var(--space-df);
-    max-width: none;
-  }
-  
-  .achievement-toast {
-    padding: var(--space-sm);
-  }
-  
-  .save-indicator {
-    bottom: var(--space-df);
-    right: var(--space-df);
-    font-size: var(--font-size-2);
-    padding: 8px 12px;
-  }
-}
-
-/* ============================================
-   High Contrast Mode (ADHD Feature)
-   ============================================ */
-body.high-contrast-mode {
-  --color-text-primary: #000000;
-  --color-bg-primary: #ffffff;
-  --color-border-primary: #000000;
-}
-
-body.dark.high-contrast-mode {
-  --color-text-primary: #ffffff;
-  --color-bg-primary: #000000;
-  --color-border-primary: #ffffff;
-}
-
-/* ============================================
-   Utility Classes
-   ============================================ */
-
-/* Layout */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.flex-row { flex-direction: row; }
-.items-center { align-items: center; }
-.items-start { align-items: flex-start; }
-.items-end { align-items: flex-end; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.justify-end { justify-content: flex-end; }
-
-/* Flex utilities */
-.flex-1 { flex: 1; }
-.flex-shrink-0 { flex-shrink: 0; }
-.flex-wrap { flex-wrap: wrap; }
-
-/* Spacing */
-.w-full { width: 100%; }
-.h-full { height: 100%; }
-.min-h-screen { min-height: 100vh; }
-
-/* Text alignment */
-.text-left { text-align: left; }
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-
-/* Overflow */
-.overflow-hidden { overflow: hidden; }
-.overflow-x-auto { overflow-x: auto; }
-.overflow-y-auto { overflow-y: auto; }
-
-/* Position */
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed; }
-.sticky { position: sticky; }
-
-/* Display */
-.hidden { display: none; }
-.block { display: block; }
-.inline-block { display: inline-block; }
-.inline-flex { display: inline-flex; }
-
-/* Grid */
-.grid { display: grid; }
-.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
-.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
-
-@media (max-width: 640px) {
-  .grid-cols-2,
-  .grid-cols-3,
-  .grid-cols-4 {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .grid-cols-3,
-  .grid-cols-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-

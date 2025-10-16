@@ -8,27 +8,23 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/favicons/favicon-16x16.png">
     
-    <!-- Design System -->
-    <link rel="stylesheet" href="src/styles/globals-new.css">
+    <!-- Design System - Single File -->
+    <link rel="stylesheet" href="src/styles/elearning-complete.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-primary">
-    <!-- Skip to main content -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Desktop Header -->
     <header class="header">
-        <a href="index.html" class="header-logo" aria-label="Academic Dashboard Home">
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
-                <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
+        <a href="index.html" class="header-logo" aria-label="Home">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 0C0.447715 0 0 0.447715 0 1V27C0 27.5523 0.447715 28 1 28H27.02C27.5723 28 28.02 27.5523 28.02 27V1C28.02 0.447716 27.5723 0 27.02 0H1Z" fill="#FE5A4A"/>
+                <path d="M14.01 5L3 12.5V24H8V15H20.02V24H25.02V12.5L14.01 5Z" fill="white"/>
             </svg>
         </a>
         
@@ -38,327 +34,241 @@
             <a href="calendar.html" class="nav-item-desktop">Calendar</a>
             <a href="formula_lookup.html" class="nav-item-desktop">Resources</a>
             <a href="#profile" class="nav-item-desktop">Profile</a>
-                </nav>
-                
+        </nav>
+        
         <div class="header-actions">
             <button class="btn-icon has-notification" aria-label="Notifications">
-                <i data-lucide="bell" class="icon-md"></i>
-                </button>
+                <i data-lucide="bell"></i>
+            </button>
             <div class="avatar">
-                <img src="public/avatar-placeholder.png" alt="Kristina" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <div class="avatar-initials" style="display:none;">KC</div>
+                <div class="avatar-initials">KC</div>
             </div>
         </div>
-    </header>
-
-    <!-- Mobile Header -->
-    <header class="header-mobile">
-        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="6" fill="#FE5A4A"/>
-            <path d="M16 8L8 14V24H12V18H20V24H24V14L16 8Z" fill="white"/>
-        </svg>
     </header>
 
     <!-- Main Content -->
     <main id="main-content" class="container" style="padding-top: 24px; padding-bottom: 32px;">
         
-        <!-- Profile Hero Section -->
-        <section class="profile-hero mb-db">
-            <div class="profile-hero-avatar-wrapper">
-                <!-- SVG Progress Ring -->
-                <svg class="profile-hero-progress" viewBox="0 0 96 96">
-                    <circle class="progress-bg" cx="48" cy="48" r="42" />
-                    <circle class="progress-fill" cx="48" cy="48" r="42" 
-                            stroke-dasharray="264" 
-                            stroke-dashoffset="79.2" />
-                </svg>
-                <div class="profile-hero-avatar">
-                    <img src="public/avatar-placeholder.png" alt="Kristina" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'avatar-initials h-big\' style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#FE5A4A;color:white;\'>KC</div>';">
-                </div>
+        <!-- Profile Hero -->
+        <div class="profile-hero mb-32">
+            <div class="profile-hero-avatar">
+                <div class="avatar-initials">KC</div>
             </div>
-            
-            <div class="profile-hero-info">
-                <h1 class="profile-hero-name">Kristina</h1>
-                <p class="profile-hero-level">Intermediate level</p>
-            </div>
-            
+            <h1 class="profile-hero-name">Kristina</h1>
+            <p class="profile-hero-level">Intermediate level</p>
             <div class="profile-hero-message">
-                <i data-lucide="trending-up" class="profile-hero-message-icon"></i>
-                <span class="profile-hero-message-text">Only 5 lessons to become Pro!</span>
+                <i data-lucide="trending-up"></i>
+                <span>Only 5 lessons to become Pro!</span>
             </div>
-        </section>
+        </div>
 
-        <!-- View Toggle -->
-        <div class="flex justify-center mb-xxl">
+        <!-- Toggle -->
+        <div class="flex justify-center mb-24">
             <div class="switch">
-                <button class="switch-item active" data-view="progress" aria-pressed="true">
-                    Progress
-                </button>
-                <button class="switch-item" data-view="calendar" aria-pressed="false">
-                    Calendar
-                </button>
+                <button class="switch-item active" data-view="progress">Progress</button>
+                <button class="switch-item" data-view="calendar">Calendar</button>
             </div>
         </div>
 
-        <!-- Progress View (Default) -->
+        <!-- Progress View -->
         <div id="progress-view">
-            <!-- Course Progress Cards -->
-            <section class="mb-db">
-                <div class="grid grid-cols-2 gap-df md:gap-xxl">
-                    <!-- MAT 143 Course Card -->
-                    <div class="course-card hover-lift">
-                        <div class="course-card-content">
-                            <div class="course-card-cover bg-purple-light">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" fill="#BA68C8" opacity="0.2" rx="6"/>
-                                    <path d="M40 20L30 35H35V60H45V35H50L40 20Z" fill="#BA68C8"/>
-                                </svg>
-                            </div>
-                            <div class="course-card-body">
-                                <div class="course-card-header">
-                                    <h3 class="course-card-title">MAT 143: Quantitative Literacy</h3>
-                                    <button class="btn-icon btn-sm" aria-label="Course menu">
-                                        <i data-lucide="more-horizontal" class="icon-sm"></i>
-                                    </button>
-                                </div>
-                                <div class="course-card-progress">
-                                    <p class="course-card-progress-info">5/8 chapters | 63%</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar-fill" style="width: 63%"></div>
-                                    </div>
-                                </div>
-                            </div>
+            <!-- Course Cards -->
+            <div class="grid-cols-2 mb-32">
+                <div class="course-card">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-purple-light">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <text x="40" y="55" text-anchor="middle" fill="#BA68C8" font-size="36" font-weight="600" font-family="Inter">1</text>
+                            </svg>
                         </div>
-                    </div>
-                    
-                    <!-- ENG 111 Course Card -->
-                    <div class="course-card hover-lift">
-                        <div class="course-card-content">
-                            <div class="course-card-cover bg-blue-light">
-                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                                    <rect width="80" height="80" fill="#2196F3" opacity="0.2" rx="6"/>
-                                    <path d="M25 30H55M25 40H55M25 50H45" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
-                                </svg>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">MAT 143: Quantitative Literacy</h3>
+                                <button class="btn-icon" aria-label="Menu" style="width: 24px; height: 24px; padding: 4px; font-size: 16px;">
+                                    <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
+                                </button>
                             </div>
-                            <div class="course-card-body">
-                                <div class="course-card-header">
-                                    <h3 class="course-card-title">ENG 111: Writing & Inquiry</h3>
-                                    <button class="btn-icon btn-sm" aria-label="Course menu">
-                                        <i data-lucide="more-horizontal" class="icon-sm"></i>
-                                    </button>
-                        </div>
-                                <div class="course-card-progress">
-                                    <p class="course-card-progress-info">2/3 essays | 67%</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar-fill" style="width: 67%"></div>
-                                    </div>
+                            <div>
+                                <p class="course-card-progress-info">5/8 chapters | 63%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 63%"></div>
                                 </div>
                             </div>
-                                </div>
-                        <div class="course-card-banner">
-                            <i data-lucide="bell" class="course-card-banner-icon"></i>
-                            <span class="course-card-banner-text">Essay 3 due next week</span>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <!-- Progress Stats -->
-            <section class="mb-db">
-                <div class="grid grid-cols-3 gap-df">
-                    <div class="progress-info-card hover-lift-sm">
-                        <div class="progress-info-number">10</div>
-                        <div class="progress-info-label">Courses completed</div>
+                <div class="course-card">
+                    <div class="course-card-content">
+                        <div class="course-card-cover bg-blue-light">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                                <path d="M25 30H55M25 40H55M25 50H45" stroke="#2196F3" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="course-card-body">
+                            <div class="course-card-header">
+                                <h3 class="course-card-title">ENG 111: Writing & Inquiry</h3>
+                                <button class="btn-icon" aria-label="Menu" style="width: 24px; height: 24px; padding: 4px;">
+                                    <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <p class="course-card-progress-info">2/3 essays | 67%</p>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar-fill" style="width: 67%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="progress-info-card hover-lift-sm">
-                        <div class="progress-info-number">8/10</div>
-                        <div class="progress-info-label">Average score</div>
-                    </div>
-                    <div class="progress-info-card hover-lift-sm">
-                        <div class="progress-info-number">3</div>
-                        <div class="progress-info-label">Certificates obtained</div>
+                    <div class="course-card-banner">
+                        <i data-lucide="bell"></i>
+                        <span class="course-card-banner-text">Essay 3 due next week</span>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Promotional Banner -->
-            <section class="mb-db">
-                <div class="promo-card">
-                    <svg class="promo-card-illustration" viewBox="0 0 120 120" fill="none">
-                        <circle cx="60" cy="60" r="50" fill="#FE5A4A" opacity="0.1"/>
-                        <path d="M60 30L50 50H55L50 75L70 55H65L70 30H60Z" fill="#FE5A4A"/>
-                    </svg>
-                    <div class="promo-card-content">
-                        <h2 class="promo-card-title">Looking for new skills?</h2>
-                        <p class="promo-card-description">Explore the offering of advanced courses, designed to elevate your skills!</p>
-                    </div>
-                    <button class="btn-fill promo-card-cta">
-                        View courses
-                    </button>
+            <!-- Stats -->
+            <div class="grid-cols-3 mb-32">
+                <div class="progress-info-card">
+                    <div class="progress-info-number">10</div>
+                    <div class="progress-info-label">Courses completed</div>
                 </div>
-            </section>
+                <div class="progress-info-card">
+                    <div class="progress-info-number">8/10</div>
+                    <div class="progress-info-label">Average score</div>
+                </div>
+                <div class="progress-info-card">
+                    <div class="progress-info-number">3</div>
+                    <div class="progress-info-label">Certificates obtained</div>
+                </div>
+            </div>
+
+            <!-- Promo -->
+            <div class="promo-card">
+                <svg class="promo-card-illustration" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="50" fill="#FE5A4A" opacity="0.2"/>
+                    <path d="M60 30L45 60H50L45 85L75 60H70L75 30H60Z" fill="#FE5A4A"/>
+                </svg>
+                <h2 class="promo-card-title">Looking for new skills?</h2>
+                <p class="promo-card-description">Explore the offering of advanced courses, designed to elevate your skills!</p>
+                <button class="btn-fill">View courses</button>
+            </div>
         </div>
 
-        <!-- Calendar View (Hidden by default) -->
+        <!-- Calendar View (Hidden) -->
         <div id="calendar-view" class="hidden">
-            <!-- Calendar Header -->
-            <div class="calendar-header mb-df">
-                <button class="calendar-header-btn" aria-label="Previous month">
-                    <i data-lucide="chevron-left"></i>
+            <div class="calendar-header mb-16">
+                <button class="calendar-header-btn">
+                    <i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i>
                 </button>
                 <h2 class="calendar-header-title">October 2025</h2>
-                <button class="calendar-header-btn" aria-label="Next month">
-                    <i data-lucide="chevron-right"></i>
+                <button class="calendar-header-btn">
+                    <i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i>
                 </button>
             </div>
 
-            <!-- Calendar Week -->
-            <div class="calendar-week mb-xxl">
+            <div class="calendar-week mb-24">
                 <div class="calendar-day">
                     <div class="calendar-day-number">14</div>
                     <div class="calendar-day-label">mon</div>
-                                    </div>
+                </div>
                 <div class="calendar-day">
                     <div class="calendar-day-number">15</div>
                     <div class="calendar-day-label">tue</div>
-                        </div>
+                </div>
                 <div class="calendar-day active has-event">
                     <div class="calendar-day-number">16</div>
                     <div class="calendar-day-label">wed</div>
-                        </div>
+                </div>
                 <div class="calendar-day has-event">
                     <div class="calendar-day-number">17</div>
                     <div class="calendar-day-label">thu</div>
-                    </div>
+                </div>
                 <div class="calendar-day has-event">
                     <div class="calendar-day-number">18</div>
                     <div class="calendar-day-label">fri</div>
-                            </div>
+                </div>
                 <div class="calendar-day">
                     <div class="calendar-day-number">19</div>
                     <div class="calendar-day-label">sat</div>
-                        </div>
+                </div>
                 <div class="calendar-day">
                     <div class="calendar-day-number">20</div>
                     <div class="calendar-day-label">sun</div>
-                        </div>
-                    </div>
-                                
-            <!-- Event List -->
-            <div class="flex flex-col gap-df">
-                <!-- Event 1 -->
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-16">
                 <div class="calendar-event-card">
-                    <div class="calendar-event-time flex items-center justify-between">
-                        <div class="flex items-center gap-uxs">
-                            <i data-lucide="clock" class="calendar-event-time-icon"></i>
+                    <div class="calendar-event-time">
+                        <div class="flex items-center gap-8">
+                            <i data-lucide="clock" style="width: 12px; height: 12px; color: var(--orange);"></i>
                             <span class="calendar-event-time-text">10:00 - 10:30</span>
                         </div>
-                        <button class="btn-icon btn-sm" aria-label="Event menu">
-                            <i data-lucide="more-horizontal" class="icon-sm"></i>
-                        </button>
-                        </div>
-                    <div class="calendar-event-body">
-                        <h4 class="calendar-event-title">Chapter 7 Review</h4>
-                        <p class="calendar-event-hint">MAT 143: Measurement & Conversions practice</p>
-                    </div>
-                </div>
-
-                <!-- Event 2 - Live Session -->
-                <div class="calendar-event-card has-live">
-                    <div class="calendar-event-time flex items-center justify-between">
-                        <div class="flex items-center gap-uxs">
-                            <i data-lucide="clock" class="calendar-event-time-icon"></i>
-                            <span class="calendar-event-time-text">11:00 - 12:30</span>
-                        </div>
-                        <button class="btn-icon btn-sm" aria-label="Event menu">
-                            <i data-lucide="more-horizontal" class="icon-sm"></i>
+                        <button class="btn-icon" style="width: 24px; height: 24px; padding: 4px;">
+                            <i data-lucide="more-horizontal" style="width: 16px; height: 16px;"></i>
                         </button>
                     </div>
-                    <div class="calendar-event-body with-badge">
-                        <div class="live-badge">
-                            <i data-lucide="radio" class="live-badge-icon"></i>
-                            <span class="live-badge-text">Live</span>
-                        </div>
-                        <div class="flex-1">
-                            <h4 class="calendar-event-title">Office Hours</h4>
-                            <p class="calendar-event-hint">Get help with Test 3 preparation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Event 3 -->
-                <div class="calendar-event-card">
-                    <div class="calendar-event-time flex items-center justify-between">
-                        <div class="flex items-center gap-uxs">
-                            <i data-lucide="clock" class="calendar-event-time-icon"></i>
-                            <span class="calendar-event-time-text">15:00 - 16:45</span>
-                        </div>
-                        <button class="btn-icon btn-sm" aria-label="Event menu">
-                            <i data-lucide="more-horizontal" class="icon-sm"></i>
-                        </button>
-                    </div>
-                    <div class="calendar-event-body">
-                        <h4 class="calendar-event-title">Essay 3 Workshop</h4>
-                        <p class="calendar-event-hint">ENG 111: Analytical essay writing techniques</p>
+                    <div>
+                        <h3 class="calendar-event-title">Chapter 7 Review</h3>
+                        <p class="calendar-event-hint">MAT 143: Measurement & Conversions</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Mobile Bottom Navigation -->
+    <!-- Mobile Bottom Nav -->
     <nav class="bottom-nav" aria-label="Mobile navigation">
         <a href="index.html" class="nav-item-mobile active" data-page="home">
-            <i data-lucide="home" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Home</span>
+            <i data-lucide="home"></i>
+            <span>Home</span>
         </a>
         <a href="tutor.html" class="nav-item-mobile" data-page="courses">
-            <i data-lucide="book-open" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Courses</span>
+            <i data-lucide="book-open"></i>
+            <span>Courses</span>
         </a>
         <a href="calendar.html" class="nav-item-mobile" data-page="calendar">
-            <i data-lucide="calendar" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Calendar</span>
+            <i data-lucide="calendar"></i>
+            <span>Calendar</span>
         </a>
         <a href="formula_lookup.html" class="nav-item-mobile" data-page="resources">
-            <i data-lucide="book-marked" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Resources</span>
+            <i data-lucide="book-marked"></i>
+            <span>Resources</span>
         </a>
         <a href="#profile" class="nav-item-mobile" data-page="profile">
-            <i data-lucide="user" class="nav-item-mobile-icon"></i>
-            <span class="nav-item-mobile-label">Profile</span>
+            <i data-lucide="user"></i>
+            <span>Profile</span>
         </a>
     </nav>
 
-    <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
-    </script>
-
-    <!-- ADHD Accessibility Features (Preserved) -->
-    <script src="src/js/progress-tracker.js"></script>
-    <script src="src/js/achievements.js"></script>
-    <script src="src/js/focus-mode.js"></script>
-    <script src="src/js/reading-mode.js"></script>
-
-    <!-- New UI Features -->
-    <script src="src/js/view-toggle.js"></script>
-    <script src="src/js/bottom-nav.js"></script>
-
-    <!-- Animate progress bars on load -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const progressBars = document.querySelectorAll('.progress-bar-fill');
-            progressBars.forEach(bar => {
-                bar.classList.add('animate');
+        
+        // View toggle
+        document.querySelectorAll('.switch-item').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.switch-item').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const view = this.dataset.view;
+                if (view === 'progress') {
+                    document.getElementById('progress-view').classList.remove('hidden');
+                    document.getElementById('calendar-view').classList.add('hidden');
+                } else {
+                    document.getElementById('progress-view').classList.add('hidden');
+                    document.getElementById('calendar-view').classList.remove('hidden');
+                }
             });
-            
-            // Stagger course cards
-            const courseCards = document.querySelectorAll('.course-card');
-            courseCards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 50}ms`;
-                card.classList.add('slide-up');
-            });
+        });
+        
+        // Bottom nav active state
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-item-mobile').forEach(item => {
+            const page = item.dataset.page;
+            if ((currentPage === 'index.html' || currentPage === '') && page === 'home') {
+                item.classList.add('active');
+            }
         });
     </script>
 </body>
