@@ -499,3 +499,200 @@ body {
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* ========================================
+   Reusable Component Classes
+   Using Tailwind @apply for maintainability
+   ======================================== */
+
+@layer components {
+  /* Card Components */
+  .card {
+    @apply bg-white dark:bg-smokey-quartz-900 rounded-lg border border-smokey-quartz-300 dark:border-smokey-quartz-700 p-6 shadow-sm;
+  }
+
+  .card-header {
+    @apply text-xl font-semibold mb-4 text-smokey-quartz-950 dark:text-smokey-quartz-50;
+  }
+
+  .card-body {
+    @apply space-y-4;
+  }
+
+  .card-footer {
+    @apply mt-6 pt-4 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700;
+  }
+
+  /* Button Primitives */
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply bg-emerald-500 text-white hover:bg-emerald-600 focus:ring-emerald-500 active:bg-emerald-700;
+  }
+
+  .btn-secondary {
+    @apply bg-sapphire-500 text-white hover:bg-sapphire-600 focus:ring-sapphire-500 active:bg-sapphire-700;
+  }
+
+  .btn-danger {
+    @apply bg-ruby-500 text-white hover:bg-ruby-600 focus:ring-ruby-500 active:bg-ruby-700;
+  }
+
+  .btn-warning {
+    @apply bg-carnelian-500 text-white hover:bg-carnelian-600 focus:ring-carnelian-500 active:bg-carnelian-700;
+  }
+
+  .btn-outline {
+    @apply border-2 border-smokey-quartz-300 text-smokey-quartz-900 hover:bg-smokey-quartz-50 dark:border-smokey-quartz-600 dark:text-smokey-quartz-100 dark:hover:bg-smokey-quartz-800;
+  }
+
+  .btn-ghost {
+    @apply text-smokey-quartz-700 hover:bg-smokey-quartz-100 dark:text-smokey-quartz-300 dark:hover:bg-smokey-quartz-800;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-lg;
+  }
+
+  /* Alert/Badge Components */
+  .alert {
+    @apply p-4 rounded-lg border flex items-start gap-3;
+  }
+
+  .alert-success {
+    @apply bg-emerald-50 border-emerald-500 text-emerald-900 dark:bg-emerald-900 dark:bg-opacity-20 dark:border-emerald-600 dark:text-emerald-100;
+  }
+
+  .alert-warning {
+    @apply bg-carnelian-50 border-carnelian-500 text-carnelian-900 dark:bg-carnelian-900 dark:bg-opacity-20 dark:border-carnelian-600 dark:text-carnelian-100;
+  }
+
+  .alert-danger {
+    @apply bg-ruby-50 border-ruby-500 text-ruby-900 dark:bg-ruby-900 dark:bg-opacity-20 dark:border-ruby-600 dark:text-ruby-100;
+  }
+
+  .alert-info {
+    @apply bg-sapphire-50 border-sapphire-500 text-sapphire-900 dark:bg-sapphire-900 dark:bg-opacity-20 dark:border-sapphire-600 dark:text-sapphire-100;
+  }
+
+  /* Badge Components */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-100;
+  }
+
+  .badge-warning {
+    @apply bg-carnelian-100 text-carnelian-800 dark:bg-carnelian-900 dark:text-carnelian-100;
+  }
+
+  .badge-danger {
+    @apply bg-ruby-100 text-ruby-800 dark:bg-ruby-900 dark:text-ruby-100;
+  }
+
+  .badge-info {
+    @apply bg-sapphire-100 text-sapphire-800 dark:bg-sapphire-900 dark:text-sapphire-100;
+  }
+
+  .badge-neutral {
+    @apply bg-smokey-quartz-200 text-smokey-quartz-800 dark:bg-smokey-quartz-700 dark:text-smokey-quartz-200;
+  }
+
+  /* Progress Bar */
+  .progress {
+    @apply h-2 w-full rounded-full bg-smokey-quartz-200 dark:bg-smokey-quartz-700 overflow-hidden;
+  }
+
+  .progress-bar {
+    @apply h-full rounded-full transition-all duration-300 ease-in-out;
+  }
+
+  .progress-bar-success {
+    @apply bg-emerald-500;
+  }
+
+  .progress-bar-warning {
+    @apply bg-carnelian-500;
+  }
+
+  .progress-bar-danger {
+    @apply bg-ruby-500;
+  }
+
+  .progress-bar-info {
+    @apply bg-sapphire-500;
+  }
+
+  /* Input/Form Components */
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-smokey-quartz-300 bg-white focus:outline-none focus:ring-2 focus:ring-sapphire-500 focus:border-transparent dark:bg-smokey-quartz-800 dark:border-smokey-quartz-600 dark:text-smokey-quartz-50;
+  }
+
+  .input-error {
+    @apply border-ruby-500 focus:ring-ruby-500;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 mb-2;
+  }
+
+  .label-required::after {
+    content: "*";
+    @apply text-ruby-500 ml-1;
+  }
+
+  /* Formula Card - Math-specific component */
+  .formula-card {
+    @apply bg-moonstone-50 dark:bg-smokey-quartz-800 border border-emerald-300 dark:border-emerald-700 rounded-lg p-4 my-4;
+  }
+
+  .formula {
+    @apply font-mono text-lg font-semibold text-emerald-900 dark:text-emerald-100 bg-white dark:bg-smokey-quartz-900 px-3 py-2 rounded my-2 inline-block;
+  }
+
+  .formula-card .example {
+    @apply mt-3 p-3 bg-white dark:bg-smokey-quartz-900 rounded border-l-4 border-sapphire-500;
+  }
+
+  /* Tab Components */
+  .tabs {
+    @apply flex border-b border-smokey-quartz-300 dark:border-smokey-quartz-700;
+  }
+
+  .tab {
+    @apply px-4 py-2 -mb-px border-b-2 border-transparent text-smokey-quartz-600 hover:text-smokey-quartz-900 hover:border-smokey-quartz-300 transition-colors dark:text-smokey-quartz-400 dark:hover:text-smokey-quartz-100;
+  }
+
+  .tab-active {
+    @apply border-sapphire-500 text-sapphire-600 dark:text-sapphire-400;
+  }
+
+  /* Table Components */
+  .table {
+    @apply w-full border-collapse;
+  }
+
+  .table thead {
+    @apply bg-smokey-quartz-50 dark:bg-smokey-quartz-800;
+  }
+
+  .table th {
+    @apply px-4 py-3 text-left text-xs font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 uppercase tracking-wider border-b border-smokey-quartz-300 dark:border-smokey-quartz-700;
+  }
+
+  .table td {
+    @apply px-4 py-3 text-sm text-smokey-quartz-900 dark:text-smokey-quartz-100 border-b border-smokey-quartz-200 dark:border-smokey-quartz-800;
+  }
+
+  .table tbody tr:hover {
+    @apply bg-smokey-quartz-50 dark:bg-smokey-quartz-800 transition-colors;
+  }
+}

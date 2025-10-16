@@ -3,387 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Math & Writing Tutor - Kristina's Academic Success</title>
-    <meta name="description" content="AI-powered tutoring for MAT 143 and ENG 111 - get instant help with math problems, writing assignments, and study strategies.">
+    <title>AI Math Tutor | MAT 143</title>
+    <meta name="description" content="AI-powered math tutor for MAT 143. Get instant help with formulas, practice problems, and chapter concepts.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Award-Winning Design System -->
-    <link rel="stylesheet" href="src/styles/award-winning-design.css">
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
-<body class="bg-[var(--color-background-default)] text-[var(--color-text-primary)] font-['Host_Grotesk'] min-h-screen">
-    <!-- Enhanced Responsive Header -->
-    <header class="bg-[var(--color-background-default)] border-b border-[var(--color-border-secondary)] shadow-sm sticky top-0 z-50">
+<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <!-- Navigation Header -->
+    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-3 text-[var(--color-text-primary)] hover:text-[var(--color-text-brand-primary)] transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-default)] focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Back to Dashboard">
-                        <i data-lucide="arrow-left" aria-hidden="true" class="w-5 h-5"></i>
-                        <span class="text-lg font-medium hidden sm:inline">Back to Dashboard</span>
-                        <span class="text-lg font-medium sm:hidden">Back</span>
+                    <a href="/index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1">
+                        <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-lg font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-50 hidden sm:inline">Academic Dashboard</span>
                     </a>
                 </div>
-                <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center">
-                        <i data-lucide="brain-circuit" aria-hidden="true" class="w-5 h-5 text-white"></i>
-                    </div>
-                    <div>
-                        <h1 class="text-lg sm:text-xl font-medium text-[var(--color-text-primary)]">AI Tutor</h1>
-                        <p class="text-sm text-[var(--color-text-secondary)]">MAT 143 & ENG 111 Helper</p>
-                    </div>
-                </div>
+
+                <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
+                    <a href="/index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                        <i data-lucide="home" class="w-4 h-4 inline mr-1"></i>
+                        Dashboard
+                    </a>
+                    <a href="/calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                        <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i>
+                        Calendar
+                    </a>
+                    <a href="/tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
+                        <i data-lucide="calculator" class="w-4 h-4 inline mr-1"></i>
+                        Math Tutor
+                    </a>
+                    <a href="/english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                        <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1"></i>
+                        Writing Coach
+                    </a>
+                    <a href="/formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800">
+                        <i data-lucide="book-open" class="w-4 h-4 inline mr-1"></i>
+                        Resources
+                    </a>
+                </nav>
+
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 focus:outline-none focus:ring-2 focus:ring-emerald-500" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
             </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
+            <nav class="px-4 py-3 space-y-1">
+                <a href="/index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="home" class="w-4 h-4 mr-2"></i>Dashboard</a>
+                <a href="/calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="calendar" class="w-4 h-4 mr-2"></i>Calendar</a>
+                <a href="/tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300"><i data-lucide="calculator" class="w-4 h-4 mr-2"></i>Math Tutor</a>
+                <a href="/english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="pen-tool" class="w-4 h-4 mr-2"></i>Writing Coach</a>
+                <a href="/formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300"><i data-lucide="book-open" class="w-4 h-4 mr-2"></i>Resources</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-6xl">
-        <!-- Subject Selection -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="subject-heading">
-            <h2 id="subject-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">Choose Your Subject</h2>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <button id="math-btn" class="adhd-button adhd-button-primary flex-1" aria-pressed="true" aria-label="Select Math tutoring">
-                    <i data-lucide="calculator" class="w-5 h-5" aria-hidden="true"></i>
-                    <span>Math (MAT 143)</span>
+    <!-- Main Content -->
+    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
+        <!-- Header -->
+        <section class="mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
+                🧮 AI Math Tutor
+            </h1>
+            <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                Get instant help with MAT 143 concepts, formulas, and practice problems
+            </p>
+        </section>
+
+        <!-- AI Tutor Interface -->
+        <section class="mb-8 card">
+            <h2 class="card-header">💬 Ask the AI Tutor</h2>
+            <form id="tutor-form" class="space-y-4">
+                <!-- Chapter Selection -->
+                <div>
+                    <label for="chapter-select" class="label">Select Chapter (Optional)</label>
+                    <select id="chapter-select" class="input">
+                        <option value="">All Chapters</option>
+                        <option value="1">Chapter 1: Thinking Mathematically</option>
+                        <option value="4">Chapter 4: Proportions & Percentages</option>
+                        <option value="5">Chapter 5: Linear & Exponential Functions</option>
+                        <option value="6">Chapter 6: Personal Finance</option>
+                        <option value="7">Chapter 7: Measurement & Conversions</option>
+                        <option value="10">Chapter 10: Probability</option>
+                        <option value="11">Chapter 11: Statistics & Data Analysis</option>
+                        <option value="13">Chapter 13: Voting & Apportionment</option>
+                    </select>
+                </div>
+
+                <!-- Question Input -->
+                <div>
+                    <label for="question-input" class="label label-required">Your Question</label>
+                    <textarea 
+                        id="question-input" 
+                        rows="4" 
+                        class="input resize-none" 
+                        placeholder="Example: How do I calculate compound interest? Or: Can you explain the difference between mean and median?"
+                        required
+                        aria-required="true"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-full sm:w-auto">
+                    <i data-lucide="send" class="w-4 h-4 mr-2"></i>
+                    Ask Tutor
                 </button>
-                <button id="english-btn" class="adhd-button adhd-button-secondary flex-1" aria-pressed="false" aria-label="Select English tutoring">
-                    <i data-lucide="pen-tool" class="w-5 h-5" aria-hidden="true"></i>
-                    <span>English (ENG 111)</span>
-                </button>
+            </form>
+
+            <!-- Response Area -->
+            <div id="tutor-response" class="mt-6 hidden">
+                <div class="border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 pt-6">
+                    <h3 class="text-lg font-semibold mb-4 flex items-center">
+                        <i data-lucide="sparkles" class="w-5 h-5 mr-2 text-emerald-500"></i>
+                        AI Tutor Response
+                    </h3>
+                    <div id="response-content" class="prose prose-sm max-w-none dark:prose-invert"></div>
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div id="tutor-loading" class="mt-6 hidden">
+                <div class="flex items-center space-x-3 p-4 bg-sapphire-50 dark:bg-sapphire-900 dark:bg-opacity-20 rounded-lg">
+                    <div class="animate-spin">
+                        <i data-lucide="loader-2" class="w-5 h-5 text-sapphire-500"></i>
+                    </div>
+                    <span class="text-sm text-sapphire-700 dark:text-sapphire-300">Thinking...</span>
+                </div>
             </div>
         </section>
 
-        <!-- Quick Actions -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="quick-actions-heading">
-            <h2 id="quick-actions-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">🚀 Quick Help</h2>
-            <div class="responsive-grid">
-                <button class="adhd-card quick-action cursor-pointer" data-prompt="Show me the most important formulas for my next test" aria-label="Get test formulas">
+        <!-- Chapter Navigation -->
+        <section class="mb-8" aria-labelledby="chapters-heading">
+            <h2 id="chapters-heading" class="text-2xl font-semibold mb-6">📚 Study by Chapter</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Chapter 1 -->
+                <a href="/chapter-1.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
                     <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
-                            <i data-lucide="clipboard-check" class="w-4 h-4 text-white"></i>
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">1</span>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Test Formulas</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Get key formulas for your next test</p>
+                                <h3 class="font-semibold">Thinking Mathematically</h3>
+                            </div>
                         </div>
+                        <span class="badge badge-success">Test 1</span>
                     </div>
-                </button>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Problem solving, patterns, reasoning</p>
+                </a>
 
-                <button class="adhd-card quick-action cursor-pointer" data-prompt="Help me review the key concepts from this chapter" aria-label="Review chapter concepts">
+                <!-- Chapter 4 -->
+                <a href="/chapter-4.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
                     <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
-                            <i data-lucide="book-open" class="w-4 h-4 text-white"></i>
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">4</span>
                         </div>
                         <div>
-                            <h3 class="text-lg font-medium text-[var(--color-text-primary)]">Chapter Review</h3>
-                            <p class="text-sm text-[var(--color-text-secondary)]">Review key concepts and topics</p>
+                                <h3 class="font-semibold">Proportions</h3>
+                            </div>
                         </div>
+                        <span class="badge badge-info">Test 2</span>
                     </div>
-                </button>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Ratios, percentages, rates</p>
+                </a>
 
-                <button class="adhd-button adhd-button-secondary quick-action cursor-pointer" data-prompt="Help me improve my essay writing skills" aria-label="Get writing help">
-                    <i data-lucide="edit" class="w-4 h-4" aria-hidden="true"></i>
-                    <span>Writing Help</span>
-                </button>
+                <!-- Chapter 5 -->
+                <a href="/chapter-5.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">5</span>
+                        </div>
+                        <div>
+                                <h3 class="font-semibold">Functions</h3>
+                            </div>
+                        </div>
+                        <span class="badge badge-info">Test 2</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Linear, exponential, growth patterns</p>
+                </a>
+
+                <!-- Chapter 6 -->
+                <a href="/chapter-6.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">6</span>
+                </div>
+                            <div>
+                                <h3 class="font-semibold">Personal Finance</h3>
+            </div>
+                        </div>
+                        <span class="badge badge-warning">Test 3</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Interest, loans, investments, APY</p>
+                </a>
+
+                <!-- Chapter 7 -->
+                <a href="/chapter-7.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">7</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Measurement</h3>
+                            </div>
+                        </div>
+                        <span class="badge badge-warning">Test 3</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Unit conversions, metric system</p>
+                        </a>
+
+                <!-- Chapter 10 -->
+                <a href="/chapter-10.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">10</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Probability</h3>
+                </div>
+                        </div>
+                        <span class="badge badge-neutral">Test 4</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Outcomes, expected value, odds</p>
+                </a>
+
+                <!-- Chapter 11 -->
+                <a href="/chapter-11.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">11</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Statistics</h3>
+                            </div>
+                        </div>
+                        <span class="badge badge-neutral">Test 4</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Mean, median, z-scores, normal distribution</p>
+                        </a>
+
+                <!-- Chapter 13 -->
+                <a href="/chapter-13.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                                <span class="font-bold text-emerald-600 dark:text-emerald-400">13</span>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Voting & Apportionment</h3>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">Test 1</span>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Election methods, fair division</p>
+                </a>
             </div>
         </section>
 
-        <!-- Chat Interface -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="chat-heading">
-            <h2 id="chat-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">💬 Ask Your Tutor</h2>
-            <div class="adhd-card">
-                <!-- Chat Messages -->
-                <div id="chat-messages" class="h-96 overflow-y-auto mb-4 p-4 bg-[var(--color-background-secondary)] rounded-lg" role="log" aria-live="polite" aria-label="Chat conversation">
-                    <div class="flex items-start space-x-3 mb-4">
-                        <div class="w-8 h-8 rounded-full bg-[var(--color-brand-default)] flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                            <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
-                        </div>
-                        <div>
-                            <p class="text-[var(--color-text-primary)]">Hi Kristina! I'm your AI tutor. I can help you with:</p>
-                            <ul class="text-sm text-[var(--color-text-secondary)] mt-2 space-y-1">
-                                <li>• Math problems and formulas</li>
-                                <li>• Essay writing and organization</li>
-                                <li>• Study strategies and test prep</li>
-                                <li>• Homework help and explanations</li>
-                            </ul>
-                            <p class="text-sm text-[var(--color-text-secondary)] mt-2">What would you like help with today?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Input Area -->
-                <div class="flex space-x-3">
-                    <input 
-                        type="text" 
-                        id="user-input" 
-                        placeholder="Ask me anything about math or writing..."
-                        class="flex-1 px-4 py-3 border border-[var(--color-border-secondary)] rounded-lg bg-[var(--color-background-default)] text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-default)] focus:ring-offset-2"
-                        aria-label="Type your question here"
-                    >
-                    <button 
-                        id="send-btn" 
-                        class="adhd-button adhd-button-primary"
-                        aria-label="Send message"
-                    >
-                        <i data-lucide="send" class="w-4 h-4" aria-hidden="true"></i>
-                        <span class="hidden sm:inline">Send</span>
-                    </button>
-                </div>
-            </div>
+        <!-- Quick Formula Reference -->
+        <section class="mb-8 card">
+            <h2 class="card-header">🔍 Quick Formula Reference</h2>
+            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-4">
+                Looking for a specific formula? Try the complete formula lookup or ask the AI tutor above.
+            </p>
+            <a href="/formula_lookup.html" class="btn btn-secondary">
+                <i data-lucide="search" class="w-4 h-4 mr-2"></i>
+                Open Formula Lookup
+            </a>
         </section>
 
-        <!-- Course Materials Quick Access -->
-        <section class="mb-6 sm:mb-8" aria-labelledby="materials-heading">
-            <h2 id="materials-heading" class="text-xl sm:text-2xl font-medium text-[var(--color-text-primary)] mb-6">📚 Course Materials</h2>
-            <div class="responsive-grid">
-                <!-- Math Materials -->
-                <div class="adhd-card" role="article" aria-labelledby="math-materials">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
-                            <i data-lucide="calculator" class="w-4 h-4 text-white"></i>
-                        </div>
-                        <h3 id="math-materials" class="text-lg font-medium text-[var(--color-text-primary)]">Math Resources</h3>
-                    </div>
-                    <div class="space-y-2">
-                        <a href="formula_lookup.html" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View formula lookup">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="search" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Formula Lookup</span>
-                            </div>
-                        </a>
-                        <a href="chapter-1.html" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View Chapter 1">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="book" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Chapter 1: Thinking Mathematically</span>
-                            </div>
-                        </a>
-                        <a href="chapter-4.html" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View Chapter 4">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="book" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Chapter 4: Proportions & Percentages</span>
-                            </div>
-                        </a>
-                    </div>
+        <!-- Study Resources -->
+        <section class="mb-8 card">
+            <h2 class="card-header">📖 Additional Resources</h2>
+            <div class="grid sm:grid-cols-2 gap-4">
+                <div class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg">
+                    <h3 class="font-semibold mb-2 flex items-center">
+                        <i data-lucide="external-link" class="w-4 h-4 mr-2 text-emerald-500"></i>
+                        Hawkes Learning
+                    </h3>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">
+                        Complete interactive homework assignments and practice problems.
+                    </p>
+                    <a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                        Open Hawkes
+                        <i data-lucide="external-link" class="w-3 h-3 ml-1"></i>
+                    </a>
                 </div>
 
-                <!-- English Materials -->
-                <div class="adhd-card" role="article" aria-labelledby="english-materials">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-8 h-8 bg-[var(--color-brand-default)] rounded-lg flex items-center justify-center" aria-hidden="true">
-                            <i data-lucide="pen-tool" class="w-4 h-4 text-white"></i>
-                        </div>
-                        <h3 id="english-materials" class="text-lg font-medium text-[var(--color-text-primary)]">Writing Resources</h3>
-                    </div>
-                    <div class="space-y-2">
-                        <a href="english_materials.html" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View English materials">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="file-text" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Essay Writing Guides</span>
-                            </div>
-                        </a>
-                        <a href="english_materials.html#organization" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View essay organization">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="layout" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Essay Organization</span>
-                            </div>
-                        </a>
-                        <a href="english_materials.html#topics" class="block p-3 bg-[var(--color-background-secondary)] rounded-lg hover:bg-[var(--color-background-tertiary)] transition-colors" aria-label="View essay topics">
-                            <div class="flex items-center space-x-3">
-                                <i data-lucide="lightbulb" class="w-4 h-4 text-[var(--color-brand-default)]" aria-hidden="true"></i>
-                                <span class="text-sm text-[var(--color-text-secondary)]">Essay Topics</span>
-                            </div>
-                        </a>
-                    </div>
+                <div class="p-4 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg">
+                    <h3 class="font-semibold mb-2 flex items-center">
+                        <i data-lucide="book-open" class="w-4 h-4 mr-2 text-sapphire-500"></i>
+                        Course Materials
+                    </h3>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-3">
+                        Access syllabus, pacing guides, and formula sheets.
+                    </p>
+                    <a href="/course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="btn btn-outline btn-sm">
+                        View Materials
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Initialize Icons and JavaScript -->
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">About</h3>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                        Your personalized academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/index.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Dashboard</a></li>
+                        <li><a href="/calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Course Calendar</a></li>
+                        <li><a href="/english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Writing Resources</a></li>
+                        <li><a href="/formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600">Formula Lookup</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">External Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Hawkes Learning <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
+                        <li><a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 flex items-center">Brightspace (D2L) <i data-lucide="external-link" class="w-3 h-3 ml-1"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-6 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
+                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                    <p>&copy; 2025 Kristina's Academic Dashboard</p>
+                    <p class="mt-2 sm:mt-0"><span class="font-medium">Fall 2025 Semester</span> • Aug 18 - Dec 12, 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
 
-        // DOM elements
-        const mathBtn = document.getElementById('math-btn');
-        const englishBtn = document.getElementById('english-btn');
-        const userInput = document.getElementById('user-input');
-        const sendBtn = document.getElementById('send-btn');
-        const chatMessages = document.getElementById('chat-messages');
-        const quickActions = document.querySelectorAll('.quick-action');
-
-        let currentSubject = 'math';
-
-        // Subject switching
-        mathBtn.addEventListener('click', () => {
-            currentSubject = 'math';
-            mathBtn.classList.remove('adhd-button-secondary');
-            mathBtn.classList.add('adhd-button-primary');
-            mathBtn.setAttribute('aria-pressed', 'true');
-            englishBtn.classList.remove('adhd-button-primary');
-            englishBtn.classList.add('adhd-button-secondary');
-            englishBtn.setAttribute('aria-pressed', 'false');
-            showSubjectWelcome('math');
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            menu?.classList.toggle('hidden');
         });
-
-        englishBtn.addEventListener('click', () => {
-            currentSubject = 'english';
-            englishBtn.classList.remove('adhd-button-secondary');
-            englishBtn.classList.add('adhd-button-primary');
-            englishBtn.setAttribute('aria-pressed', 'true');
-            mathBtn.classList.remove('adhd-button-primary');
-            mathBtn.classList.add('adhd-button-secondary');
-            mathBtn.setAttribute('aria-pressed', 'false');
-            showSubjectWelcome('english');
-        });
-
-        function showSubjectWelcome(subject) {
-            const welcomeMessages = {
-                math: {
-                    title: "Math Tutor Ready! 📊",
-                    content: "I'm here to help with MAT 143! I can assist with:",
-                    topics: [
-                        "• Problem solving and estimation",
-                        "• Proportions and percentages", 
-                        "• Linear and exponential functions",
-                        "• Personal finance calculations",
-                        "• Probability and statistics",
-                        "• Measurement and conversions"
-                    ]
-                },
-                english: {
-                    title: "Writing Coach Ready! ✍️",
-                    content: "I'm here to help with ENG 111! I can assist with:",
-                    topics: [
-                        "• Essay organization and structure",
-                        "• Thesis development and arguments",
-                        "• Citation and research methods",
-                        "• Grammar and style improvements",
-                        "• Compare/contrast essays",
-                        "• Cause/effect analysis"
-                    ]
-                }
-            };
-
-            const welcome = welcomeMessages[subject];
-            addMessage('ai', `${welcome.title}<br><br>${welcome.content}<br><ul class="mt-2 space-y-1">${welcome.topics.join('')}</ul>`);
-        }
-
-        function addMessage(sender, content) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `flex items-start space-x-3 mb-4 ${sender === 'user' ? 'flex-row-reverse' : ''}`;
-            
-            if (sender === 'user') {
-                messageDiv.innerHTML = `
-                    <div class="w-8 h-8 rounded-full bg-[var(--color-brand-default)] flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                        <i data-lucide="user" class="w-4 h-4 text-white"></i>
-                    </div>
-                    <div class="bg-[var(--color-brand-default)] rounded-lg p-4 max-w-xs">
-                        <p class="text-white">${content}</p>
-                    </div>
-                `;
-            } else {
-                messageDiv.innerHTML = `
-                    <div class="w-8 h-8 rounded-full bg-[var(--color-brand-default)] flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                        <i data-lucide="brain-circuit" class="w-4 h-4 text-white"></i>
-                    </div>
-                    <div class="bg-[var(--color-background-default)] border border-[var(--color-border-secondary)] rounded-lg p-4 max-w-2xl">
-                        <div class="text-[var(--color-text-primary)]">${content}</div>
-                    </div>
-                `;
-            }
-            
-            chatMessages.appendChild(messageDiv);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-            lucide.createIcons();
-        }
-
-        async function sendMessage() {
-            const message = userInput.value.trim();
-            if (!message) return;
-
-            addMessage('user', message);
-            userInput.value = '';
-            
-            sendBtn.disabled = true;
-            sendBtn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>';
-            lucide.createIcons();
-
-            try {
-                // Simulate AI response with course-specific help
-                const response = await getTutorResponse(message, currentSubject);
-                addMessage('ai', response);
-                
-            } catch (error) {
-                console.error('Error:', error);
-                addMessage('ai', 'Sorry, I\'m having trouble connecting right now. Please try again in a moment.');
-            } finally {
-                sendBtn.disabled = false;
-                sendBtn.innerHTML = '<i data-lucide="send" class="w-4 h-4"></i><span class="hidden sm:inline">Send</span>';
-                lucide.createIcons();
-            }
-        }
-
-        async function getTutorResponse(question, subject) {
-            // Simulate AI response based on course materials
-            const responses = {
-                math: {
-                    formulas: "Here are the key formulas for MAT 143:<br><br><strong>Simple Interest:</strong> I = Prt<br><strong>Compound Interest:</strong> A = P(1 + r/n)^(nt)<br><strong>Linear Functions:</strong> y = mx + b<br><strong>Exponential Functions:</strong> y = a(b)ˣ<br><br>Which specific formula would you like me to explain?",
-                    test: "For your next test, focus on these key areas:<br><br>• <strong>Chapter 4:</strong> Proportions, percentages, and rates<br>• <strong>Chapter 5:</strong> Linear and exponential functions<br>• <strong>Practice problems:</strong> Work through sample problems in each section<br>• <strong>Formulas:</strong> Memorize the key formulas and when to use them<br><br>Would you like me to help you practice specific problems?",
-                    homework: "I can help you with your homework! Please share the specific problem or concept you're working on, and I'll walk you through it step by step.",
-                    default: "I'm here to help with MAT 143! I can assist with formulas, problem-solving, test prep, and homework. What specific topic or problem are you working on?"
-                },
-                english: {
-                    essay: "Here's how to structure your essay:<br><br><strong>Introduction:</strong> Hook, background, thesis statement<br><strong>Body Paragraphs:</strong> Topic sentence, evidence, analysis<br><strong>Conclusion:</strong> Restate thesis, summarize main points<br><br>What type of essay are you writing? Compare/contrast, cause/effect, or argument?",
-                    writing: "To improve your writing:<br><br>• <strong>Start with an outline</strong> - organize your ideas first<br>• <strong>Use specific examples</strong> - support your arguments with evidence<br>• <strong>Write in short bursts</strong> - 15-25 minute sessions work best<br>• <strong>Revise separately</strong> - don't edit while you write<br><br>What specific writing challenge are you facing?",
-                    default: "I'm here to help with ENG 111! I can assist with essay structure, thesis development, citations, and writing techniques. What would you like help with?"
-                }
-            };
-
-            const subjectResponses = responses[subject];
-            const lowerQuestion = question.toLowerCase();
-            
-            if (lowerQuestion.includes('formula') || lowerQuestion.includes('calculate')) {
-                return subjectResponses.formulas;
-            } else if (lowerQuestion.includes('test') || lowerQuestion.includes('exam')) {
-                return subjectResponses.test;
-            } else if (lowerQuestion.includes('homework') || lowerQuestion.includes('problem')) {
-                return subjectResponses.homework;
-            } else if (lowerQuestion.includes('essay') || lowerQuestion.includes('write')) {
-                return subjectResponses.essay;
-            } else if (lowerQuestion.includes('writing') || lowerQuestion.includes('improve')) {
-                return subjectResponses.writing;
-            } else {
-                return subjectResponses.default;
-            }
-        }
-
-        // Event listeners
-        sendBtn.addEventListener('click', sendMessage);
-        userInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-
-        // Quick action handlers
-        quickActions.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const prompt = btn.getAttribute('data-prompt');
-                if (prompt) {
-                    userInput.value = prompt;
-                    sendMessage();
-                }
-            });
-        });
-
-        // Initialize with math welcome
-        showSubjectWelcome('math');
     </script>
+    
+    <!-- AI Tutor Integration -->
+    <script src="/src/js/tutor.js"></script>
 </body>
 </html>

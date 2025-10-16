@@ -35,6 +35,22 @@ def handler(request, context):
             api_key = os.getenv('ANTHROPIC_API_KEY')
             if not api_key:
                 # Return a helpful fallback response instead of error
+                chapter_info = ""
+                if chapter:
+                    chapter_topics = {
+                        "1": "problem solving, patterns, deductive & inductive reasoning",
+                        "4": "proportions, cross-multiplication, percentages, unit rates",
+                        "5": "linear functions (y=mx+b), exponential functions (y=ab^x)",
+                        "6": "simple interest (I=Prt), compound interest, APY, loans, present value",
+                        "7": "metric conversions, temperature formulas, dimensional analysis",
+                        "10": "probability calculations, expected value E(X), odds, independent events",
+                        "11": "mean, median, mode, standard deviation, z-scores, normal distribution",
+                        "13": "voting methods (plurality, Borda, IRV), apportionment (standard divisor & quota)"
+                    }
+                    topic_hint = chapter_topics.get(chapter, "")
+                    if topic_hint:
+                        chapter_info = f"<br><br><strong>Chapter {chapter} covers:</strong> {topic_hint}"
+                
                 return {
                     'statusCode': 200,
                     'headers': {
@@ -44,26 +60,28 @@ def handler(request, context):
                     'body': json.dumps({
                         "error": False,
                         "response": f"""
-                        <strong>I'd love to help you with: "{query}"</strong><br><br>
+                        <strong>Question: "{query}"</strong>{chapter_info}<br><br>
                         
-                        <em>💡 Since I'm not fully connected right now, here are some great resources:</em><br><br>
+                        <div style="background-color: #fff6d8; border-left: 4px solid #fed23b; padding: 12px; border-radius: 4px;">
+                        <strong>💡 AI Tutor Setup Needed</strong><br>
+                        The AI tutor endpoint needs an ANTHROPIC_API_KEY environment variable to be configured.
+                        </div><br>
                         
-                        <strong>📚 Quick Help:</strong><br>
-                        • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
-                        • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br>
-                        • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br><br>
+                        <strong>📚 In the meantime, try these resources:</strong><br>
+                        • <a href="/formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
+                        • <a href="/chapter-{chapter}.html" style="color: #399d3c; font-weight: 500;">Chapter {chapter} Page</a> - Detailed explanations & examples<br>
+                        • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice problems<br><br>
                         
-                        <strong>🎯 Try asking about:</strong><br>
-                        • "Chapter 1: Thinking Mathematically"<br>
-                        • "How do I calculate compound interest?"<br>
-                        • "Help me understand proportions"<br>
-                        • "What formulas do I need for Test 3?"<br><br>
-                        
-                        <em>💡 Tip: Be specific about what you're working on for better help!</em>
+                        <strong>🎯 Study Tips:</strong><br>
+                        • Review the chapter page for step-by-step examples<br>
+                        • Practice similar problems in Hawkes Learning<br>
+                        • Check the formula sheet for quick reference<br>
+                        • Reach out to your instructor during office hours
                         """,
                         "timestamp": datetime.now().isoformat(),
                         "chapter": chapter,
-                        "topic": topic
+                        "topic": topic,
+                        "fallback": True
                     })
                 }
             
@@ -90,26 +108,28 @@ def handler(request, context):
                 'body': json.dumps({
                     "error": False,
                     "response": f"""
-                    <strong>I'd love to help you with: "{query}"</strong><br><br>
+                    <strong>Question: "{query}"</strong><br><br>
                     
-                    <em>💡 Since I'm having a technical moment, here are some great resources:</em><br><br>
+                    <div style="background-color: #fec6c0; border-left: 4px solid #fd5441; padding: 12px; border-radius: 4px;">
+                    <strong>⚠️ Temporary Service Issue</strong><br>
+                    The AI tutor is experiencing a temporary issue. Don't worry - here are alternative resources!
+                    </div><br>
                     
-                    <strong>📚 Quick Help:</strong><br>
-                    • <a href="reference.html" style="color: var(--color-primary-600);">Formula Reference Guide</a><br>
-                    • <a href="web_study_helper.html" style="color: var(--color-primary-600);">Study Helper</a><br>
-                    • <a href="calendar.html" style="color: var(--color-primary-600);">Study Calendar</a><br><br>
+                    <strong>📚 Alternative Resources:</strong><br>
+                    • <a href="/formula_lookup.html" style="color: #399d3c; font-weight: 500;">Formula Lookup</a> - Quick reference for all formulas<br>
+                    • <a href="/tutor.html" style="color: #399d3c; font-weight: 500;">Chapter Pages</a> - Detailed explanations & examples<br>
+                    • <a href="https://learn.hawkeslearning.com/" target="_blank" style="color: #399d3c; font-weight: 500;">Hawkes Learning</a> - Interactive practice & video tutorials<br><br>
                     
-                    <strong>🎯 Try asking about:</strong><br>
-                    • "Chapter 1: Thinking Mathematically"<br>
-                    • "How do I calculate compound interest?"<br>
-                    • "Help me understand proportions"<br>
-                    • "What formulas do I need for Test 3?"<br><br>
-                    
-                    <em>💡 Tip: Be specific about what you're working on for better help!</em>
+                    <strong>🎯 Study Strategy:</strong><br>
+                    1. Review the relevant chapter page for formulas and examples<br>
+                    2. Try practice problems in Hawkes Learning<br>
+                    3. Use the formula lookup for quick reference<br>
+                    4. If still stuck, reach out during office hours
                     """,
                     "timestamp": datetime.now().isoformat(),
                     "chapter": chapter,
-                    "topic": topic
+                    "topic": topic,
+                    "fallback": True
                 })
             }
     

@@ -3,505 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kristina's Academic Success Dashboard</title>
-    <meta name="description" content="Award-winning academic dashboard for MAT 143 and ENG 111 - professional, accessible, and designed for neurodivergent learners.">
+    <title>Kristina's Academic Dashboard | MAT 143 & ENG 111</title>
+    <meta name="description" content="Academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/public/favicons/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
     
-    <!-- Award-Winning Design System -->
-    <link rel="stylesheet" href="src/styles/award-winning-design.css">
+    <!-- Design System -->
+    <link rel="stylesheet" href="src/styles/globals.css">
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <style>
-        /* Custom Award-Winning Styles */
-        .hero-gradient {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-        }
-        
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .floating-animation {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .card-hover-lift {
-            transition: all var(--transition-normal);
-        }
-        
-        .card-hover-lift:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-        }
-        
-        .pulse-glow {
-            animation: pulse-glow 2s infinite;
-        }
-        
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4); }
-            50% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
-        }
-    </style>
 </head>
-<body class="bg-primary">
-    <!-- Award-Winning Navigation -->
-    <nav class="sticky top-0 z-50 bg-elevated border-b border-light shadow-sm">
+<body class="bg-[var(--color-background)] text-[var(--color-text-primary)] font-sans min-h-screen flex flex-col">
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-500 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+    </a>
+
+    <!-- Navigation Header -->
+    <header class="bg-white dark:bg-smokey-quartz-900 border-b border-smokey-quartz-200 dark:border-smokey-quartz-700 shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <!-- Logo and Brand -->
+                <!-- Logo/Brand -->
                 <div class="flex items-center space-x-4">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i>
+                    <a href="/index.html" class="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded-lg px-2 py-1" aria-label="Kristina's Academic Dashboard Home">
+                        <div class="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 text-white" aria-hidden="true"></i>
         </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-primary">Kristina's Dashboard</h1>
-                        <p class="text-sm text-secondary">Academic Success Platform</p>
-        </div>
+                        <span class="text-lg font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-50 hidden sm:inline">Academic Dashboard</span>
+                    </a>
                 </div>
                 
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex nav">
-                    <a href="index.html" class="nav-link active" aria-label="Dashboard">
-                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                <nav class="hidden md:flex items-center space-x-1" aria-label="Main navigation">
+                    <a href="/index.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
+                        <i data-lucide="home" class="w-4 h-4 inline mr-1" aria-hidden="true"></i>
                         Dashboard
                     </a>
-                    <a href="calendar.html" class="nav-link" aria-label="Calendar">
-                        <i data-lucide="calendar-days" class="w-4 h-4"></i>
+                    <a href="/calendar.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <i data-lucide="calendar" class="w-4 h-4 inline mr-1" aria-hidden="true"></i>
                         Calendar
                     </a>
-                    <a href="tutor.html" class="nav-link" aria-label="AI Tutor">
-                        <i data-lucide="brain-circuit" class="w-4 h-4"></i>
-                        AI Tutor
+                    <a href="/tutor.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <i data-lucide="calculator" class="w-4 h-4 inline mr-1" aria-hidden="true"></i>
+                        Math Tutor
                     </a>
-                    <a href="notes.html" class="nav-link" aria-label="Study Notes">
-                        <i data-lucide="notebook" class="w-4 h-4"></i>
-                        Notes
+                    <a href="/english_materials.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <i data-lucide="pen-tool" class="w-4 h-4 inline mr-1" aria-hidden="true"></i>
+                        Writing Coach
                     </a>
-                    <a href="english_materials.html" class="nav-link" aria-label="English Materials">
-                        <i data-lucide="book-open" class="w-4 h-4"></i>
-                        English
+                    <a href="/formula_lookup.html" class="px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                        <i data-lucide="book-open" class="w-4 h-4 inline mr-1" aria-hidden="true"></i>
+                        Resources
                     </a>
-                </div>
+                </nav>
                 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden btn btn-secondary btn-sm" aria-label="Open menu">
-                    <i data-lucide="menu" class="w-4 h-4"></i>
+                <button 
+                    id="mobile-menu-button" 
+                    class="md:hidden p-2 rounded-lg text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    aria-label="Toggle mobile menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <i data-lucide="menu" class="w-6 h-6" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden bg-elevated border-t border-light">
-            <div class="container mx-auto px-4 py-4">
-                <div class="flex flex-col space-y-2">
-                    <a href="index.html" class="nav-link active">
-                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
+            <nav class="px-4 py-3 space-y-1" aria-label="Mobile navigation">
+                <a href="/index.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 text-emerald-700 dark:text-emerald-300">
+                    <i data-lucide="home" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                         Dashboard
                     </a>
-                    <a href="calendar.html" class="nav-link">
-                        <i data-lucide="calendar-days" class="w-4 h-4"></i>
+                <a href="/calendar.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors">
+                    <i data-lucide="calendar" class="w-4 h-4 mr-2" aria-hidden="true"></i>
                         Calendar
                     </a>
-                    <a href="tutor.html" class="nav-link">
-                        <i data-lucide="brain-circuit" class="w-4 h-4"></i>
-                        AI Tutor
-                    </a>
-                    <a href="notes.html" class="nav-link">
-                        <i data-lucide="notebook" class="w-4 h-4"></i>
-                        Notes
-                    </a>
-                    <a href="english_materials.html" class="nav-link">
-                        <i data-lucide="book-open" class="w-4 h-4"></i>
-                        English
-                    </a>
-                </div>
-                        </div>
-                            </div>
+                <a href="/tutor.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors">
+                    <i data-lucide="calculator" class="w-4 h-4 mr-2" aria-hidden="true"></i>
+                    Math Tutor
+                </a>
+                <a href="/english_materials.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors">
+                    <i data-lucide="pen-tool" class="w-4 h-4 mr-2" aria-hidden="true"></i>
+                    Writing Coach
+                </a>
+                <a href="/formula_lookup.html" class="flex items-center px-3 py-2 rounded-lg text-sm font-medium text-smokey-quartz-700 dark:text-smokey-quartz-300 hover:bg-smokey-quartz-100 dark:hover:bg-smokey-quartz-800 hover:text-smokey-quartz-900 dark:hover:text-smokey-quartz-100 transition-colors">
+                    <i data-lucide="book-open" class="w-4 h-4 mr-2" aria-hidden="true"></i>
+                    Resources
+                </a>
     </nav>
+                        </div>
+    </header>
 
-    <main class="min-h-screen">
-        <!-- Hero Section - Award-Winning Design -->
-        <section class="hero-gradient text-white py-20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto text-center">
-                    <div class="floating-animation mb-8">
-                        <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto">
-                            <i data-lucide="sparkles" class="w-10 h-10 text-white"></i>
-                        </div>
-                    </div>
-                    
-                    <h1 class="text-5xl md:text-6xl font-black mb-6">
-                        Welcome Back, <span class="gradient-text">Kristina</span>
+    <!-- Main Content -->
+    <main id="main-content" class="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 max-w-7xl">
+        <!-- Welcome Header -->
+        <section class="mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-smokey-quartz-950 dark:text-smokey-quartz-50 mb-2">
+                Welcome Back, Kristina! 👋
                     </h1>
-                    
-                    <p class="text-xl md:text-2xl text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-                        Your personalized academic success platform designed for neurodivergent learners
-                    </p>
-                    
-                    <!-- Quick Stats -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="text-3xl font-bold mb-2">Week 8</div>
-                            <div class="text-sm opacity-90">Current Progress</div>
-                        </div>
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="text-3xl font-bold mb-2">3</div>
-                            <div class="text-sm opacity-90">Days Until Test</div>
-                            </div>
-                        <div class="glass-effect rounded-xl p-6">
-                            <div class="text-3xl font-bold mb-2">85%</div>
-                            <div class="text-sm opacity-90">Overall Grade</div>
-                        </div>
+            <p class="text-lg text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                Fall 2025 Semester • Week 10 of 16
+            </p>
+        </section>
+
+        <!-- Important Alerts -->
+        <section class="mb-8" aria-labelledby="alerts-heading">
+            <h2 id="alerts-heading" class="sr-only">Important Alerts</h2>
+            <div class="space-y-4">
+                <!-- Test 3 Reminder -->
+                <div class="alert alert-warning" role="alert">
+                    <i data-lucide="alert-triangle" class="w-5 h-5 flex-shrink-0"></i>
+                    <div>
+                        <strong>Test 3 Coming Up!</strong>
+                        <p class="text-sm mt-1">MAT 143 Test 3 (Chapters 6 & 7) is scheduled for Nov 3-7. Remember to use Respondus Lockdown Browser.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Urgent Actions - High Priority Design -->
-        <section class="py-16 bg-secondary">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
-                            <i data-lucide="alert-triangle" class="w-8 h-8 inline mr-3 text-warning"></i>
-                            Urgent Actions Required
-                        </h2>
-                        <p class="text-lg text-secondary">Items that need your immediate attention</p>
+        <!-- Course Progress Overview -->
+        <section class="mb-8" aria-labelledby="progress-heading">
+            <h2 id="progress-heading" class="text-2xl font-semibold mb-6">📊 Course Progress</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- MAT 143 Progress Card -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-emerald-500 rounded-lg flex items-center justify-center">
+                                <i data-lucide="calculator" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold">MAT 143</h3>
+                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Quantitative Literacy</p>
+                            </div>
+                        </div>
+                        <span class="badge badge-success">On Track</span>
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Math Urgent Task -->
-                        <div class="card card-elevated card-hover-lift">
-                            <div class="p-8">
-                                <div class="flex items-start justify-between mb-6">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="w-12 h-12 bg-success rounded-xl flex items-center justify-center">
-                                            <i data-lucide="calculator" class="w-6 h-6 text-white"></i>
+                    <!-- Progress Bar -->
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between text-sm mb-2">
+                            <span class="text-smokey-quartz-600 dark:text-smokey-quartz-400">Overall Progress</span>
+                            <span class="font-medium">63%</span>
                         </div>
-                                        <div>
-                                            <div class="status status-warning mb-2">MATH</div>
-                                            <h3 class="text-xl font-bold text-primary">MAT 143 - Hawkes Learning</h3>
-                    </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" style="width: 63%" role="progressbar" aria-valuenow="63" aria-valuemin="0" aria-valuemax="100" aria-label="MAT 143 progress: 63%"></div>
                         </div>
-                                    <div class="status status-danger">3 days</div>
                     </div>
                                 
-                                <p class="text-secondary mb-6">
-                                    Complete Week 8 Hawkes Learning assignments for Chapter 7 (Conversions)
-                                </p>
-                                
-                                <div class="flex flex-col sm:flex-row gap-3">
-                                    <a href="chapter-7.html" class="btn btn-primary flex-1">
-                                        <i data-lucide="play" class="w-4 h-4"></i>
-                                        Start Working
-                                    </a>
-                                    <a href="tutor.html" class="btn btn-secondary flex-1">
-                                        <i data-lucide="help-circle" class="w-4 h-4"></i>
-                                        Get Help
-                </a>
-            </div>
+                    <!-- Current Chapter -->
+                    <div class="p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg mb-4">
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-1">Currently Studying:</p>
+                        <p class="font-medium">Chapter 7: Measurement & Conversions</p>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="flex gap-2">
+                        <a href="/tutor.html" class="btn btn-primary flex-1">
+                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
+                            Study Now
+                        </a>
+                        <a href="/calendar.html" class="btn btn-outline">
+                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                        </a>
                             </div>
                         </div>
                         
-                        <!-- English Urgent Task -->
-                        <div class="card card-elevated card-hover-lift">
-                            <div class="p-8">
-                                <div class="flex items-start justify-between mb-6">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center">
+                <!-- ENG 111 Progress Card -->
+                <div class="card">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-sapphire-500 rounded-lg flex items-center justify-center">
                                             <i data-lucide="pen-tool" class="w-6 h-6 text-white"></i>
                             </div>
                             <div>
-                                            <div class="status status-warning mb-2">WRITING</div>
-                                            <h3 class="text-xl font-bold text-primary">ENG 111 - Argument Essay</h3>
+                                <h3 class="text-lg font-semibold">ENG 111</h3>
+                                <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Writing & Inquiry</p>
                                         </div>
                                     </div>
-                                    <div class="status status-danger">5 days</div>
+                        <span class="badge badge-success">On Track</span>
                                 </div>
                                 
-                                <p class="text-secondary mb-6">
-                                    Final draft of Argument Essay due October 10th - Final assignment!
-                                </p>
-                                
-                                <div class="flex flex-col sm:flex-row gap-3">
-                                    <a href="english_materials.html" class="btn btn-primary flex-1">
-                                        <i data-lucide="edit" class="w-4 h-4"></i>
-                                        Continue Writing
-                                    </a>
-                                    <a href="tutor.html" class="btn btn-secondary flex-1">
-                                        <i data-lucide="help-circle" class="w-4 h-4"></i>
-                                        Writing Help
-                                    </a>
+                    <!-- Progress Bar -->
+                    <div class="mb-4">
+                        <div class="flex items-center justify-between text-sm mb-2">
+                            <span class="text-smokey-quartz-600 dark:text-smokey-quartz-400">Overall Progress</span>
+                            <span class="font-medium">58%</span>
                                 </div>
-                            </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" style="width: 58%" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" aria-label="ENG 111 progress: 58%"></div>
                         </div>
+                    </div>
+
+                    <!-- Current Assignment -->
+                    <div class="p-3 bg-moonstone-50 dark:bg-smokey-quartz-800 rounded-lg mb-4">
+                        <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mb-1">Currently Working On:</p>
+                        <p class="font-medium">Essay 3: Analytical Essay</p>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="flex gap-2">
+                        <a href="/english_materials.html" class="btn btn-secondary flex-1">
+                            <i data-lucide="book-open" class="w-4 h-4 mr-1"></i>
+                            Study Now
+                        </a>
+                        <a href="/calendar.html" class="btn btn-outline">
+                            <i data-lucide="calendar" class="w-4 h-4"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Course Progress - Beautiful Progress Tracking -->
-        <section class="py-16 bg-primary">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                            <i data-lucide="trending-up" class="w-8 h-8 inline mr-3"></i>
-                            Course Progress
-                        </h2>
-                        <p class="text-xl text-white text-opacity-90">Track your academic journey</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        <!-- Math Progress -->
-                        <div class="card card-elevated">
-                            <div class="p-8">
-                                <div class="flex items-center space-x-4 mb-6">
-                                    <div class="w-16 h-16 bg-success rounded-2xl flex items-center justify-center">
-                                        <i data-lucide="calculator" class="w-8 h-8 text-white"></i>
+        <!-- This Week Section -->
+        <section class="mb-8" aria-labelledby="thisweek-heading">
+            <h2 id="thisweek-heading" class="text-2xl font-semibold mb-6">📅 This Week</h2>
+            <div class="card">
+                <div class="space-y-4">
+                    <!-- Upcoming Deadline Item -->
+                    <div class="flex items-start space-x-4 p-4 bg-carnelian-50 dark:bg-carnelian-900 dark:bg-opacity-20 rounded-lg border-l-4 border-carnelian-500">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-carnelian-500 rounded-lg flex items-center justify-center">
+                                <i data-lucide="alert-circle" class="w-5 h-5 text-white"></i>
                                     </div>
-                                    <div>
-                                        <h3 class="text-2xl font-bold text-primary">MAT 143</h3>
-                                        <p class="text-secondary">Quantitative Literacy</p>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm text-carnelian-700 dark:text-carnelian-300 font-medium">Due Wednesday, Nov 6</p>
+                            <p class="font-semibold text-carnelian-900 dark:text-carnelian-100">MAT 143: Chapter 7 Hawkes Learning</p>
+                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">Must achieve "mastery" status</p>
                         </div>
                     </div>
                                 
-                                <div class="mb-6">
-                                    <div class="flex justify-between text-sm mb-2">
-                                        <span class="text-secondary">Progress</span>
-                                        <span class="font-semibold text-primary">50%</span>
-                                    </div>
-                                    <div class="progress progress-success">
-                                        <div class="progress-bar" style="width: 50%"></div>
-                        </div>
-                                    <p class="text-sm text-secondary mt-2">
-                                        Next: Test 3 (Nov 3-7) - Chapters 6 & 7
-                                    </p>
-                    </div>
-                                
-                                <a href="chapter-7.html" class="btn btn-success w-full">
-                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                                    Continue Chapter 7
-                                </a>
+                    <!-- Upcoming Test Item -->
+                    <div class="flex items-start space-x-4 p-4 bg-ruby-50 dark:bg-ruby-900 dark:bg-opacity-20 rounded-lg border-l-4 border-ruby-500">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-ruby-500 rounded-lg flex items-center justify-center">
+                                <i data-lucide="file-text" class="w-5 h-5 text-white"></i>
                             </div>
                         </div>
-                        
-                        <!-- English Progress -->
-                        <div class="card card-elevated">
-                            <div class="p-8">
-                                <div class="flex items-center space-x-4 mb-6">
-                                    <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center">
-                                        <i data-lucide="pen-tool" class="w-8 h-8 text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-2xl font-bold text-primary">ENG 111</h3>
-                                        <p class="text-secondary">Writing & Inquiry</p>
-                                    </div>
-                    </div>
-                                
-                                <div class="mb-6">
-                                    <div class="flex justify-between text-sm mb-2">
-                                        <span class="text-secondary">Progress</span>
-                                        <span class="font-semibold text-primary">100%</span>
-                                    </div>
-                                    <div class="progress progress-success">
-                                        <div class="progress-bar" style="width: 100%"></div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm text-ruby-700 dark:text-ruby-300 font-medium">Test Week: Nov 3-7</p>
+                            <p class="font-semibold text-ruby-900 dark:text-ruby-100">MAT 143: Test 3 (Chapters 6 & 7)</p>
+                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">Use Respondus Lockdown Browser</p>
                         </div>
-                                    <p class="text-sm text-secondary mt-2">
-                                        Final Week - Argument Essay due Oct 10
-                                    </p>
                     </div>
                                 
-                                <a href="english_materials.html" class="btn btn-secondary w-full">
-                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                                    Final Assignment
-                                </a>
+                    <!-- Completed Item -->
+                    <div class="flex items-start space-x-4 p-4 bg-emerald-50 dark:bg-emerald-900 dark:bg-opacity-20 rounded-lg border-l-4 border-emerald-500">
+                        <div class="flex-shrink-0">
+                            <div class="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center">
+                                <i data-lucide="check-circle" class="w-5 h-5 text-white"></i>
                             </div>
                         </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm text-emerald-700 dark:text-emerald-300 font-medium">Completed Monday</p>
+                            <p class="font-semibold text-emerald-900 dark:text-emerald-100">Weekly Attendance Assignment</p>
+                            <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400 mt-1">5% course credit earned</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
+                    <a href="/calendar.html" class="btn btn-outline w-full">
+                        <i data-lucide="calendar" class="w-4 h-4 mr-2"></i>
+                        View Full Calendar
+                    </a>
                 </div>
                         </div>
         </section>
 
-        <!-- Quick Actions - Intuitive Task Management -->
-        <section class="py-16 bg-tertiary">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-6xl mx-auto">
-                    <div class="text-center mb-12">
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
-                            <i data-lucide="rocket" class="w-8 h-8 inline mr-3"></i>
-                            Quick Actions
-                        </h2>
-                        <p class="text-lg text-secondary">Everything you need in one place</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Math Resources -->
-                        <div class="card card-hover-lift text-center">
-                            <div class="p-8">
-                                <div class="w-16 h-16 bg-success rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                    <i data-lucide="calculator" class="w-8 h-8 text-white"></i>
+        <!-- Quick Access Resources -->
+        <section class="mb-8" aria-labelledby="resources-heading">
+            <h2 id="resources-heading" class="text-2xl font-semibold mb-6">🎯 Quick Access</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Math Chapters -->
+                <a href="/tutor.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                            <i data-lucide="calculator" class="w-5 h-5 text-emerald-600 dark:text-emerald-400"></i>
                         </div>
-                                <h3 class="text-xl font-bold text-primary mb-4">Math Resources</h3>
-                                <div class="space-y-3">
-                                    <a href="chapter-7.html" class="btn btn-secondary w-full btn-sm">
-                                        Chapter 7: Conversions
-                                    </a>
-                                    <a href="tutor.html" class="btn btn-secondary w-full btn-sm">
-                                        AI Math Tutor
-                                    </a>
-                                    <a href="formula_lookup.html" class="btn btn-secondary w-full btn-sm">
-                                        Formula Lookup
+                        <h3 class="font-semibold">Math Chapters</h3>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Study guides, formulas, & AI tutor</p>
+                </a>
+
+                <!-- Writing Resources -->
+                <a href="/english_materials.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 bg-sapphire-100 dark:bg-sapphire-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                            <i data-lucide="pen-tool" class="w-5 h-5 text-sapphire-600 dark:text-sapphire-400"></i>
+                        </div>
+                        <h3 class="font-semibold">Writing Resources</h3>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Essays, rubrics, & citation guides</p>
+                </a>
+
+                <!-- Formula Lookup -->
+                <a href="/formula_lookup.html" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 bg-amethyst-100 dark:bg-amethyst-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                            <i data-lucide="search" class="w-5 h-5 text-amethyst-600 dark:text-amethyst-400"></i>
+                        </div>
+                        <h3 class="font-semibold">Formula Lookup</h3>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Quick reference for all formulas</p>
+                </a>
+
+                <!-- External Links -->
+                <a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="card hover:shadow-lg transition-shadow">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-10 h-10 bg-carnelian-100 dark:bg-carnelian-900 dark:bg-opacity-30 rounded-lg flex items-center justify-center">
+                            <i data-lucide="external-link" class="w-5 h-5 text-carnelian-600 dark:text-carnelian-400"></i>
+                        </div>
+                        <h3 class="font-semibold">Hawkes Learning</h3>
+                    </div>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">Complete homework assignments</p>
                 </a>
             </div>
-        </div>
-                        </div>
-                        
-                        <!-- English Resources -->
-                        <div class="card card-hover-lift text-center">
-                            <div class="p-8">
-                                <div class="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                    <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
-                    </div>
-                                <h3 class="text-xl font-bold text-primary mb-4">English Resources</h3>
-                                <div class="space-y-3">
-                                    <a href="english_materials.html" class="btn btn-secondary w-full btn-sm">
-                                        Current Assignment
-                                    </a>
-                                    <a href="tutor.html" class="btn btn-secondary w-full btn-sm">
-                                        Writing Help
-                                    </a>
-                                    <a href="notes.html" class="btn btn-secondary w-full btn-sm">
-                                        My Notes
-                                    </a>
-                        </div>
-                    </div>
-                        </div>
-                        
-                        <!-- Study Tools -->
-                        <div class="card card-hover-lift text-center">
-                            <div class="p-8">
-                                <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                    <i data-lucide="notebook" class="w-8 h-8 text-white"></i>
-                    </div>
-                                <h3 class="text-xl font-bold text-primary mb-4">Study Tools</h3>
-                                <div class="space-y-3">
-                                    <a href="notes.html" class="btn btn-secondary w-full btn-sm">
-                                        Study Notes
-                                    </a>
-                                    <a href="calendar.html" class="btn btn-secondary w-full btn-sm">
-                                        Course Calendar
-                                    </a>
-                                    <a href="tutor.html" class="btn btn-secondary w-full btn-sm">
-                                        AI Assistant
-                </a>
-            </div>
-        </div>
-                        </div>
-                        
-                        <!-- Course Info -->
-                        <div class="card card-hover-lift text-center">
-                            <div class="p-8">
-                                <div class="w-16 h-16 bg-warning rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                    <i data-lucide="info" class="w-8 h-8 text-white"></i>
-                    </div>
-                                <h3 class="text-xl font-bold text-primary mb-4">Course Info</h3>
-                                <div class="space-y-3">
-                                    <a href="course_materials/syllabus_and_schedule/Course_Schedule_Fall_2025.html" class="btn btn-secondary w-full btn-sm">
-                                        View Syllabus
-                                    </a>
-                                    <a href="course_materials/instructions/Hawkes_Learning_Setup.html" class="btn btn-secondary w-full btn-sm">
-                                        Hawkes Setup
-                                    </a>
-                                    <a href="course_materials/resources/Chapter_Resources.html" class="btn btn-secondary w-full btn-sm">
-                                        Resources
-                                    </a>
-                        </div>
-                    </div>
-                        </div>
-                    </div>
-                </div>
-                        </div>
+        </section>
+
+        <!-- Study Tips -->
+        <section class="mb-8 card">
+            <h2 class="card-header">💡 Study Tips for Success</h2>
+            <ul class="space-y-3 text-smokey-quartz-700 dark:text-smokey-quartz-300">
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Daily review:</strong> Spend 15-20 minutes reviewing notes from the current chapter</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Practice problems:</strong> Complete Hawkes Learning assignments daily for spaced repetition</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Test preparation:</strong> Review 3-5 days before tests, not just the night before</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+                    <span><strong>Ask for help:</strong> Use the AI tutor or office hours when you're stuck on a concept</span>
+                </li>
+            </ul>
         </section>
     </main>
 
-    <!-- Award-Winning Footer -->
-    <footer class="bg-primary text-white py-12">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="flex items-center justify-center space-x-3 mb-6">
-                    <div class="w-8 h-8 bg-white bg-opacity-20 rounded-lg flex items-center justify-center">
-                        <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                    </div>
-                    <span class="text-xl font-bold">Kristina's Academic Success Dashboard</span>
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-smokey-quartz-900 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700 mt-auto">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Footer Content Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-6">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">
+                        About
+                    </h3>
+                    <p class="text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                        Your personalized academic success dashboard for MAT 143 and ENG 111 at Central Piedmont Community College, Fall 2025.
+                    </p>
                 </div>
-                <p class="text-white text-opacity-80 mb-4">
-                    Designed for MAT 143 & ENG 111 Students • Neurodivergent-Friendly • Award-Winning UX
-                </p>
-                <p class="text-sm text-white text-opacity-60">
-                    © 2025 All rights reserved • Built with accessibility and excellence in mind
-                </p>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">
+                        Quick Links
+                    </h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="/calendar.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                Course Calendar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tutor.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                AI Math Tutor
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/english_materials.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                Writing Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/formula_lookup.html" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">
+                                Formula Lookup
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+
+                <!-- External Resources Section -->
+                <div>
+                    <h3 class="text-sm font-semibold text-smokey-quartz-900 dark:text-smokey-quartz-100 uppercase tracking-wider mb-3">
+                        External Resources
+                    </h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>
+                            <a href="https://learn.hawkeslearning.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center">
+                                Hawkes Learning
+                                <i data-lucide="external-link" class="w-3 h-3 ml-1" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cpcc.brightspace.com/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center">
+                                Brightspace (D2L)
+                                <i data-lucide="external-link" class="w-3 h-3 ml-1" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://owl.purdue.edu/" target="_blank" rel="noopener noreferrer" class="text-smokey-quartz-600 dark:text-smokey-quartz-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors flex items-center">
+                                Purdue OWL
+                                <i data-lucide="external-link" class="w-3 h-3 ml-1" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright & Semester Info -->
+            <div class="pt-6 border-t border-smokey-quartz-200 dark:border-smokey-quartz-700">
+                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-smokey-quartz-600 dark:text-smokey-quartz-400">
+                    <p>&copy; 2025 Kristina's Academic Dashboard</p>
+                    <p class="mt-2 sm:mt-0">
+                        <span class="font-medium">Fall 2025 Semester</span> • Aug 18 - Dec 12, 2025
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Initialize Lucide Icons -->
     <script>
-        // Initialize Lucide icons
         lucide.createIcons();
+    </script>
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
         
-        mobileMenuBtn.addEventListener('click', () => {
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
             mobileMenu.classList.toggle('hidden');
         });
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Add loading states to buttons
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                if (this.href && !this.href.includes('#')) {
-                    this.classList.add('animate-pulse');
-                    setTimeout(() => {
-                        this.classList.remove('animate-pulse');
-                    }, 1000);
-                }
-            });
+            }
         });
     </script>
 </body>
