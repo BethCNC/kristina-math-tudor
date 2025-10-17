@@ -231,6 +231,37 @@
                     </div>
                 </div>
 
+        <!-- Test 3 Prep Checklist -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <h2>Test 3 Prep Checklist</h2>
+            </div>
+            <div class="card-body">
+                <p style="margin: 0 0 var(--space-4) 0; font-weight: 600;">Track your progress preparing for Test 3:</p>
+                <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                        <input type="checkbox" id="test3-hawkes-ch6" onchange="updateTest3Progress()" style="width: 18px; height: 18px;">
+                        <span>Complete Hawkes Chapter 6 (achieve mastery)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                        <input type="checkbox" id="test3-formulas-ch6" onchange="updateTest3Progress()" style="width: 18px; height: 18px;">
+                        <span>Review all Chapter 6 formulas</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                        <input type="checkbox" id="test3-practice-ch6" onchange="updateTest3Progress()" style="width: 18px; height: 18px;">
+                        <span>Complete all practice problems below</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                        <input type="checkbox" id="test3-review-ch7" onchange="updateTest3Progress()" style="width: 18px; height: 18px;">
+                        <span>Review Chapter 7 material</span>
+                    </label>
+                </div>
+                <div id="test3-progress-message" style="margin-top: var(--space-4); padding: var(--space-3); background-color: var(--primary-blue-light); border-radius: var(--radius-md); display: none;">
+                    <p style="margin: 0; color: var(--primary-blue); font-weight: 600;"></p>
+                </div>
+            </div>
+        </div>
+
         <!-- Practice Problems -->
         <div class="card mb-8">
             <div class="card-header">
@@ -362,6 +393,56 @@
             } else {
                 item.classList.remove('active');
             }
+        });
+
+        // Test 3 Prep Checklist Tracking
+        function updateTest3Progress() {
+            const checkboxes = ['test3-hawkes-ch6', 'test3-formulas-ch6', 'test3-practice-ch6', 'test3-review-ch7'];
+            let completed = 0;
+            
+            checkboxes.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox && checkbox.checked) {
+                    completed++;
+                    localStorage.setItem(id, 'true');
+                } else if (checkbox) {
+                    localStorage.removeItem(id);
+                }
+            });
+            
+            const percentage = Math.round((completed / checkboxes.length) * 100);
+            const message = document.getElementById('test3-progress-message');
+            const messageText = message ? message.querySelector('p') : null;
+            
+            if (completed > 0 && message && messageText) {
+                message.style.display = 'block';
+                if (percentage === 100) {
+                    message.style.backgroundColor = '#ecfdf5';
+                    messageText.style.color = 'var(--success-green)';
+                    messageText.textContent = `🎉 Test 3 Prep Complete! You're ready to ace this test!`;
+                    if (typeof showAchievement === 'function') {
+                        showAchievement('test-prep-complete', { testNum: 3 });
+                    }
+                } else {
+                    message.style.backgroundColor = 'var(--primary-blue-light)';
+                    messageText.style.color = 'var(--primary-blue)';
+                    messageText.textContent = `${percentage}% complete - keep going, you're doing great!`;
+                }
+            } else if (message) {
+                message.style.display = 'none';
+            }
+        }
+        
+        // Load saved checklist state on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = ['test3-hawkes-ch6', 'test3-formulas-ch6', 'test3-practice-ch6', 'test3-review-ch7'];
+            checkboxes.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox && localStorage.getItem(id) === 'true') {
+                    checkbox.checked = true;
+                }
+            });
+            updateTest3Progress();
         });
 
         // Copy to clipboard function

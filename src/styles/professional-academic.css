@@ -492,14 +492,41 @@ p {
   border-radius: var(--radius-full);
 }
 
-.badge-success {
-  background-color: #dcfce7;
-  color: var(--success-green);
+/* Semantic Badge Colors for Deadline Urgency */
+.badge-urgent {
+  background-color: var(--danger-red);
+  color: var(--white);
+  font-weight: 600;
 }
 
 .badge-warning {
-  background-color: #fef3c7;
-  color: var(--warning-orange);
+  background-color: var(--warning-orange);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.badge-upcoming {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.badge-completed {
+  background-color: var(--success-green);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.badge-future {
+  background-color: var(--neutral-gray-light);
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* Legacy Badge Classes (backwards compatibility) */
+.badge-success {
+  background-color: #dcfce7;
+  color: var(--success-green);
 }
 
 .badge-danger {
@@ -510,6 +537,46 @@ p {
 .badge-info {
   background-color: var(--primary-blue-light);
   color: var(--primary-blue);
+}
+
+/* ==================== DEADLINE URGENCY CARDS (Semantic System) ==================== */
+
+.deadline-urgent {
+  border-left: 4px solid var(--danger-red);
+  background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);
+}
+
+.deadline-warning {
+  border-left: 4px solid var(--warning-orange);
+  background: linear-gradient(135deg, #fff7ed 0%, var(--white) 100%);
+}
+
+.deadline-upcoming {
+  border-left: 4px solid var(--primary-blue);
+  background: linear-gradient(135deg, #f0f9ff 0%, var(--white) 100%);
+}
+
+.deadline-completed {
+  border-left: 4px solid var(--success-green);
+  background: linear-gradient(135deg, #ecfdf5 0%, var(--white) 100%);
+  opacity: 0.7;
+}
+
+.deadline-future {
+  border-left: 4px solid var(--neutral-gray-light);
+  background: var(--white);
+}
+
+/* Deadline Card - general styling */
+.deadline-card {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.deadline-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 /* ==================== NEXT DUE WIDGET (ADHD Support) ==================== */

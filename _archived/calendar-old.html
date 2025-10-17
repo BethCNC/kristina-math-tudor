@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar | MAT 143 & ENG 111</title>
+    <meta name="description" content="16-week course calendar for MAT 143 and ENG 111, Fall 2025 semester at CPCC with test dates and deadlines.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
+    
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link active">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+        
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1>Fall 2025 Academic Calendar</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">MAT 143 & ENG 111 • August 18 - December 12, 2025</p>
+        </div>
+
+        <!-- Critical Deadlines Alert -->
+        <div class="card mb-8" style="border-left: 4px solid var(--danger-red); background: linear-gradient(135deg, #fef2f2 0%, var(--white) 100%);">
+            <div class="card-body">
+                <div class="flex items-center gap-4">
+                    <div style="width: 40px; height: 40px; background-color: var(--danger-red); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                        <i data-lucide="alert-triangle" style="width: 20px; height: 20px; color: var(--white);"></i>
+                    </div>
+                <div>
+                        <h3 style="margin: 0; color: var(--danger-red);">Critical Deadlines This Week</h3>
+                        <p style="margin: 0; color: var(--neutral-gray-light);">Test 3 (Nov 3-7) • Essay 3 (Nov 15) • Final Exams (Dec 8-12)</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+        <!-- Calendar Navigation -->
+        <div class="card mb-8">
+            <div class="card-header">
+                <div class="flex items-center justify-between">
+                    <h2 style="margin: 0;">November 2025</h2>
+                    <div class="flex gap-2">
+                        <button class="btn btn-secondary">
+                            <i data-lucide="chevron-left"></i>
+                            October
+                        </button>
+                        <button class="btn btn-secondary">
+                            December
+                            <i data-lucide="chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Week View -->
+            <div class="card-body">
+                <div class="grid grid-cols-7 gap-2 mb-6">
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Mon</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Tue</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Wed</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Thu</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Fri</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Sat</div>
+                    <div class="text-center" style="padding: var(--space-3); font-size: var(--font-size-sm); font-weight: 600; color: var(--neutral-gray-light);">Sun</div>
+                </div>
+
+                <!-- Week of Nov 3-9 (Test 3 Week) -->
+                <div class="grid grid-cols-7 gap-2 mb-4">
+                    <div class="deadline-card urgent" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">3</div>
+                            <div class="badge badge-danger" style="font-size: var(--font-size-xs);">Test 3 Start</div>
+                        </div>
+                    </div>
+                    <div class="deadline-card urgent" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">4</div>
+                            <div class="badge badge-danger" style="font-size: var(--font-size-xs);">Test 3</div>
+                    </div>
+                            </div>
+                    <div class="deadline-card urgent" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">5</div>
+                            <div class="badge badge-danger" style="font-size: var(--font-size-xs);">Test 3</div>
+                        </div>
+                    </div>
+                    <div class="deadline-card urgent" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">6</div>
+                            <div class="badge badge-danger" style="font-size: var(--font-size-xs);">Test 3</div>
+                        </div>
+                    </div>
+                    <div class="deadline-card urgent" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">7</div>
+                            <div class="badge badge-danger" style="font-size: var(--font-size-xs);">Test 3 End</div>
+                </div>
+            </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">8</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Weekend</div>
+            </div>
+                            </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">9</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Weekend</div>
+                                    </div>
+                                </div>
+                </div>
+
+                <!-- Week of Nov 10-16 (Essay 3 Week) -->
+                <div class="grid grid-cols-7 gap-2 mb-4">
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">10</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Regular</div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">11</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Regular</div>
+                        </div>
+                            </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">12</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Regular</div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">13</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Regular</div>
+                        </div>
+                            </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">14</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Regular</div>
+                                    </div>
+                                </div>
+                    <div class="deadline-card" style="padding: var(--space-4); min-height: 80px; border-left-color: var(--warning-orange);">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">15</div>
+                            <div class="badge badge-warning" style="font-size: var(--font-size-xs);">Essay 3 Due</div>
+                        </div>
+                    </div>
+                    <div class="card" style="padding: var(--space-4); min-height: 80px;">
+                        <div class="text-center">
+                            <div style="font-size: var(--font-size-lg); font-weight: 600; margin-bottom: var(--space-2);">16</div>
+                            <div style="font-size: var(--font-size-xs); color: var(--neutral-gray-light);">Weekend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                </div>
+
+        <!-- Upcoming Deadlines -->
+        <div class="grid grid-cols-2 mb-8">
+            <div class="card">
+                <div class="card-header">
+                    <div class="flex items-center gap-3">
+                        <div style="width: 32px; height: 32px; background-color: var(--math-purple); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="calculator" style="width: 16px; height: 16px; color: var(--white);"></i>
+                        </div>
+                        <h2 style="margin: 0;">MAT 143 Deadlines</h2>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="flex flex-col gap-4">
+                        <div class="deadline-card urgent">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">Test 3</h3>
+                                <span class="deadline-date">Nov 3-7</span>
+                            </div>
+                            <p class="deadline-description">Chapters 6 (Personal Finance) & 7 (Measurement)</p>
+                                </div>
+
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">Test 4</h3>
+                                <span class="deadline-date">Dec 8-12</span>
+                            </div>
+                            <p class="deadline-description">Chapters 10 (Probability) & 11 (Statistics)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="flex items-center gap-3">
+                        <div style="width: 32px; height: 32px; background-color: var(--english-blue); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
+                            <i data-lucide="pen-tool" style="width: 16px; height: 16px; color: var(--white);"></i>
+                        </div>
+                        <h2 style="margin: 0;">ENG 111 Deadlines</h2>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="flex flex-col gap-4">
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">Essay 3: Analytical</h3>
+                                <span class="deadline-date">Nov 15</span>
+            </div>
+                            <p class="deadline-description">1000-1250 words • MLA format • 2 sources</p>
+                        </div>
+
+                        <div class="deadline-card">
+                            <div class="deadline-header">
+                                <h3 class="deadline-title">Essay 4: Research Paper</h3>
+                                <span class="deadline-date">Dec 8</span>
+                            </div>
+                            <p class="deadline-description">1500-2000 words • MLA format • 5 sources</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+
+        <!-- Quick Actions -->
+        <div class="grid grid-cols-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--math-purple-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="book-open" style="width: 24px; height: 24px; color: var(--math-purple);"></i>
+                </div>
+                    <h3 style="margin-bottom: var(--space-2);">Study for Test 3</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Focus on Chapters 6 & 7</p>
+                    <a href="tutor.html" class="btn btn-primary w-full">Start Studying</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--english-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="pen-tool" style="width: 24px; height: 24px; color: var(--english-blue);"></i>
+                </div>
+                    <h3 style="margin-bottom: var(--space-2);">Work on Essay 3</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Analytical essay due Nov 15</p>
+                    <a href="english_materials.html" class="btn btn-primary w-full">Start Writing</a>
+                </div>
+            </div>
+
+            <div class="card text-center">
+                <div class="card-body">
+                    <div style="width: 48px; height: 48px; background-color: var(--primary-blue-light); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4);">
+                        <i data-lucide="target" style="width: 24px; height: 24px; color: var(--primary-blue);"></i>
+                    </div>
+                    <h3 style="margin-bottom: var(--space-2);">Test Preparation</h3>
+                    <p style="margin-bottom: var(--space-4); font-size: var(--font-size-sm);">Practice problems and study guides</p>
+                    <a href="formula_lookup.html" class="btn btn-primary w-full">View Resources</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-content">
+            <a href="index.html" class="mobile-nav-item">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="tutor.html" class="mobile-nav-item">
+                <i data-lucide="calculator"></i>
+                <span>Math</span>
+            </a>
+            <a href="english_materials.html" class="mobile-nav-item">
+                <i data-lucide="pen-tool"></i>
+                <span>Writing</span>
+            </a>
+            <a href="calendar.html" class="mobile-nav-item active">
+                <i data-lucide="calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="formula_lookup.html" class="mobile-nav-item">
+                <i data-lucide="book-marked"></i>
+                <span>Resources</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ADHD Support Scripts (Navigation Page) -->
+    <script src="src/js/next-due-widget.js"></script>
+    <script src="src/js/hawkes-reminder.js"></script>
+    <script src="src/js/session-continuity.js"></script>
+    <script src="src/js/achievements.js"></script>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'calendar.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
