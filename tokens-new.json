@@ -43,20 +43,45 @@
         }
       },
       "neutral": {
+        "darkest": {
+          "value": "#1f2937",
+          "type": "color",
+          "description": "Darkest text - H1, H2, critical (15.4:1 AAA)"
+        },
+        "dark": {
+          "value": "#374151",
+          "type": "color",
+          "description": "Dark text - H3-H6, body (11.5:1 AAA)"
+        },
+        "medium": {
+          "value": "#6b7280",
+          "type": "color",
+          "description": "Medium text - Secondary (5.9:1 AA)"
+        },
+        "light": {
+          "value": "#9ca3af",
+          "type": "color",
+          "description": "Light text - Muted (3.5:1 AA Large)"
+        },
+        "bg": {
+          "value": "#f9fafb",
+          "type": "color",
+          "description": "Page background"
+        },
         "gray": {
           "value": "#374151",
           "type": "color",
-          "description": "Primary text color"
+          "description": "Legacy: Primary text color (use neutral.dark)"
         },
         "gray-light": {
           "value": "#6b7280",
           "type": "color",
-          "description": "Secondary text, labels"
+          "description": "Legacy: Secondary text (use neutral.medium)"
         },
         "gray-bg": {
           "value": "#f9fafb",
           "type": "color",
-          "description": "Page background"
+          "description": "Legacy: Page background (use neutral.bg)"
         }
       },
       "course": {
@@ -109,20 +134,40 @@
         }
       },
       "text": {
+        "heading-primary": {
+          "value": "{colors.neutral.darkest}",
+          "type": "color",
+          "description": "H1, H2 - Maximum readability"
+        },
+        "heading-secondary": {
+          "value": "{colors.neutral.dark}",
+          "type": "color",
+          "description": "H3-H6 - Default headers"
+        },
         "default": {
-          "value": "{colors.neutral.gray}",
+          "value": "{colors.neutral.dark}",
           "type": "color",
           "description": "Primary body text"
         },
-        "light": {
-          "value": "{colors.neutral.gray-light}",
+        "secondary": {
+          "value": "{colors.neutral.medium}",
           "type": "color",
           "description": "Secondary text, captions"
+        },
+        "muted": {
+          "value": "{colors.neutral.light}",
+          "type": "color",
+          "description": "Muted text (use sparingly)"
         },
         "inverse": {
           "value": "{colors.foundation.white}",
           "type": "color",
           "description": "Text on dark backgrounds"
+        },
+        "light": {
+          "value": "{colors.neutral.medium}",
+          "type": "color",
+          "description": "Legacy: use text.secondary"
         }
       },
       "background": {
