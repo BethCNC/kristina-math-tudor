@@ -1,0 +1,568 @@
+{
+  "Professional Academic Dashboard": {
+    "colors": {
+      "foundation": {
+        "white": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Pure white for backgrounds"
+        },
+        "black": {
+          "value": "#000000",
+          "type": "color",
+          "description": "Pure black for high contrast"
+        }
+      },
+      "primary": {
+        "blue": {
+          "value": "#1e40af",
+          "type": "color",
+          "description": "Primary blue for trust, stability, main CTAs"
+        },
+        "blue-light": {
+          "value": "#dbeafe",
+          "type": "color",
+          "description": "Light blue for backgrounds and cards"
+        }
+      },
+      "semantic": {
+        "success-green": {
+          "value": "#059669",
+          "type": "color",
+          "description": "Success, completed tasks, positive feedback"
+        },
+        "warning-orange": {
+          "value": "#d97706",
+          "type": "color",
+          "description": "Warning, upcoming deadlines (4-7 days)"
+        },
+        "danger-red": {
+          "value": "#dc2626",
+          "type": "color",
+          "description": "Urgent, critical deadlines (0-3 days)"
+        }
+      },
+      "neutral": {
+        "gray": {
+          "value": "#374151",
+          "type": "color",
+          "description": "Primary text color"
+        },
+        "gray-light": {
+          "value": "#6b7280",
+          "type": "color",
+          "description": "Secondary text, labels"
+        },
+        "gray-bg": {
+          "value": "#f9fafb",
+          "type": "color",
+          "description": "Page background"
+        }
+      },
+      "course": {
+        "math-purple": {
+          "value": "#7c3aed",
+          "type": "color",
+          "description": "MAT 143 course color"
+        },
+        "math-purple-light": {
+          "value": "#ede9fe",
+          "type": "color",
+          "description": "MAT 143 light background"
+        },
+        "english-blue": {
+          "value": "#2563eb",
+          "type": "color",
+          "description": "ENG 111 course color"
+        },
+        "english-blue-light": {
+          "value": "#dbeafe",
+          "type": "color",
+          "description": "ENG 111 light background"
+        }
+      },
+      "deadline-urgency": {
+        "urgent": {
+          "value": "#dc2626",
+          "type": "color",
+          "description": "0-3 days - immediate action required"
+        },
+        "warning": {
+          "value": "#d97706",
+          "type": "color",
+          "description": "4-7 days - this week"
+        },
+        "upcoming": {
+          "value": "#1e40af",
+          "type": "color",
+          "description": "8-14 days - next 2 weeks"
+        },
+        "completed": {
+          "value": "#059669",
+          "type": "color",
+          "description": "Past deadlines - done!"
+        },
+        "future": {
+          "value": "#6b7280",
+          "type": "color",
+          "description": "14+ days - awareness only"
+        }
+      },
+      "text": {
+        "default": {
+          "value": "{colors.neutral.gray}",
+          "type": "color",
+          "description": "Primary body text"
+        },
+        "light": {
+          "value": "{colors.neutral.gray-light}",
+          "type": "color",
+          "description": "Secondary text, captions"
+        },
+        "inverse": {
+          "value": "{colors.foundation.white}",
+          "type": "color",
+          "description": "Text on dark backgrounds"
+        }
+      },
+      "background": {
+        "page": {
+          "value": "{colors.neutral.gray-bg}",
+          "type": "color",
+          "description": "Main page background"
+        },
+        "card": {
+          "value": "{colors.foundation.white}",
+          "type": "color",
+          "description": "Card and component backgrounds"
+        }
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": {
+          "value": "Inter",
+          "type": "fontFamilies",
+          "description": "Primary font for UI and body text"
+        },
+        "system": {
+          "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+          "type": "fontFamilies",
+          "description": "System font fallbacks"
+        }
+      },
+      "fontSizes": {
+        "xs": {
+          "value": "0.75rem",
+          "type": "fontSizes",
+          "description": "12px - Labels, helper text"
+        },
+        "sm": {
+          "value": "0.875rem",
+          "type": "fontSizes",
+          "description": "14px - Secondary text"
+        },
+        "base": {
+          "value": "1rem",
+          "type": "fontSizes",
+          "description": "16px - Body text (base)"
+        },
+        "lg": {
+          "value": "1.125rem",
+          "type": "fontSizes",
+          "description": "18px - Large body"
+        },
+        "xl": {
+          "value": "1.25rem",
+          "type": "fontSizes",
+          "description": "20px - H4 headings"
+        },
+        "2xl": {
+          "value": "1.5rem",
+          "type": "fontSizes",
+          "description": "24px - H3 headings"
+        },
+        "3xl": {
+          "value": "1.875rem",
+          "type": "fontSizes",
+          "description": "30px - H2 headings"
+        }
+      },
+      "fontWeights": {
+        "regular": {
+          "value": "400",
+          "type": "fontWeights",
+          "description": "Regular weight for body text"
+        },
+        "medium": {
+          "value": "500",
+          "type": "fontWeights",
+          "description": "Medium weight for emphasis"
+        },
+        "semibold": {
+          "value": "600",
+          "type": "fontWeights",
+          "description": "Semi-bold for headings"
+        },
+        "bold": {
+          "value": "700",
+          "type": "fontWeights",
+          "description": "Bold for strong emphasis"
+        }
+      },
+      "lineHeights": {
+        "tight": {
+          "value": "1.2",
+          "type": "lineHeights",
+          "description": "Tight line height for headings"
+        },
+        "normal": {
+          "value": "1.5",
+          "type": "lineHeights",
+          "description": "Normal line height for body"
+        },
+        "relaxed": {
+          "value": "1.6",
+          "type": "lineHeights",
+          "description": "Relaxed line height for comfortable reading"
+        }
+      }
+    },
+    "spacing": {
+      "1": {
+        "value": "0.25rem",
+        "type": "spacing",
+        "description": "4px - Micro spacing"
+      },
+      "2": {
+        "value": "0.5rem",
+        "type": "spacing",
+        "description": "8px - Tight spacing"
+      },
+      "3": {
+        "value": "0.75rem",
+        "type": "spacing",
+        "description": "12px - Compact padding"
+      },
+      "4": {
+        "value": "1rem",
+        "type": "spacing",
+        "description": "16px - Default spacing (base)"
+      },
+      "5": {
+        "value": "1.25rem",
+        "type": "spacing",
+        "description": "20px - Comfortable spacing"
+      },
+      "6": {
+        "value": "1.5rem",
+        "type": "spacing",
+        "description": "24px - Section spacing"
+      },
+      "8": {
+        "value": "2rem",
+        "type": "spacing",
+        "description": "32px - Component spacing"
+      },
+      "10": {
+        "value": "2.5rem",
+        "type": "spacing",
+        "description": "40px - Large margins"
+      },
+      "12": {
+        "value": "3rem",
+        "type": "spacing",
+        "description": "48px - Section breaks"
+      },
+      "16": {
+        "value": "4rem",
+        "type": "spacing",
+        "description": "64px - Major sections"
+      }
+    },
+    "shadows": {
+      "sm": {
+        "value": [
+          {
+            "color": "rgba(0, 0, 0, 0.05)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 1,
+            "blur": 2,
+            "spread": 0
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Small shadow for subtle elevation"
+      },
+      "md": {
+        "value": [
+          {
+            "color": "rgba(0, 0, 0, 0.1)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 6,
+            "spread": -1
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.06)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 2,
+            "blur": 4,
+            "spread": -1
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Medium shadow for cards"
+      },
+      "lg": {
+        "value": [
+          {
+            "color": "rgba(0, 0, 0, 0.1)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 10,
+            "blur": 15,
+            "spread": -3
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.05)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 6,
+            "spread": -2
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Large shadow for modals"
+      },
+      "xl": {
+        "value": [
+          {
+            "color": "rgba(0, 0, 0, 0.1)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 20,
+            "blur": 25,
+            "spread": -5
+          },
+          {
+            "color": "rgba(0, 0, 0, 0.04)",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 10,
+            "blur": 10,
+            "spread": -5
+          }
+        ],
+        "type": "boxShadow",
+        "description": "Extra large shadow for overlays"
+      }
+    },
+    "borderRadius": {
+      "sm": {
+        "value": "0.375rem",
+        "type": "borderRadius",
+        "description": "6px - Small radius"
+      },
+      "md": {
+        "value": "0.5rem",
+        "type": "borderRadius",
+        "description": "8px - Medium radius (default)"
+      },
+      "lg": {
+        "value": "0.75rem",
+        "type": "borderRadius",
+        "description": "12px - Large radius"
+      },
+      "xl": {
+        "value": "1rem",
+        "type": "borderRadius",
+        "description": "16px - Extra large radius"
+      },
+      "full": {
+        "value": "9999px",
+        "type": "borderRadius",
+        "description": "Fully rounded (pill shape)"
+      }
+    },
+    "components": {
+      "button": {
+        "primary": {
+          "background": {
+            "value": "{colors.primary.blue}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          },
+          "padding-x": {
+            "value": "{spacing.6}",
+            "type": "spacing"
+          },
+          "padding-y": {
+            "value": "{spacing.3}",
+            "type": "spacing"
+          },
+          "border-radius": {
+            "value": "{borderRadius.md}",
+            "type": "borderRadius"
+          },
+          "font-size": {
+            "value": "{typography.fontSizes.base}",
+            "type": "fontSizes"
+          },
+          "font-weight": {
+            "value": "{typography.fontWeights.medium}",
+            "type": "fontWeights"
+          }
+        },
+        "secondary": {
+          "background": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.neutral.gray}",
+            "type": "color"
+          },
+          "border": {
+            "value": "{colors.neutral.gray-light}",
+            "type": "color"
+          }
+        }
+      },
+      "card": {
+        "background": {
+          "value": "{colors.background.card}",
+          "type": "color"
+        },
+        "padding": {
+          "value": "{spacing.6}",
+          "type": "spacing"
+        },
+        "border-radius": {
+          "value": "{borderRadius.lg}",
+          "type": "borderRadius"
+        },
+        "shadow": {
+          "value": "{shadows.sm}",
+          "type": "boxShadow"
+        }
+      },
+      "badge": {
+        "urgent": {
+          "background": {
+            "value": "{colors.deadline-urgency.urgent}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "background": {
+            "value": "{colors.deadline-urgency.warning}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          }
+        },
+        "upcoming": {
+          "background": {
+            "value": "{colors.deadline-urgency.upcoming}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          }
+        },
+        "completed": {
+          "background": {
+            "value": "{colors.deadline-urgency.completed}",
+            "type": "color"
+          },
+          "text": {
+            "value": "{colors.foundation.white}",
+            "type": "color"
+          }
+        }
+      }
+    },
+    "breakpoints": {
+      "mobile": {
+        "value": "375px",
+        "type": "dimension",
+        "description": "Mobile devices"
+      },
+      "tablet": {
+        "value": "768px",
+        "type": "dimension",
+        "description": "Tablets and small laptops"
+      },
+      "desktop": {
+        "value": "1280px",
+        "type": "dimension",
+        "description": "Desktop screens"
+      }
+    },
+    "accessibility": {
+      "minTouchTarget": {
+        "value": "44px",
+        "type": "dimension",
+        "description": "Minimum touch target size for ADHD/mobile users"
+      },
+      "focusRingWidth": {
+        "value": "2px",
+        "type": "dimension",
+        "description": "Focus ring width for keyboard navigation"
+      },
+      "focusRingColor": {
+        "value": "{colors.primary.blue}",
+        "type": "color",
+        "description": "Focus ring color for accessibility"
+      }
+    },
+    "animation": {
+      "duration": {
+        "fast": {
+          "value": "150ms",
+          "type": "duration",
+          "description": "Fast transitions"
+        },
+        "normal": {
+          "value": "250ms",
+          "type": "duration",
+          "description": "Normal transitions"
+        },
+        "slow": {
+          "value": "350ms",
+          "type": "duration",
+          "description": "Slow, gentle transitions"
+        }
+      },
+      "easing": {
+        "default": {
+          "value": "ease",
+          "type": "cubicBezier",
+          "description": "Default easing function"
+        }
+      }
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "Professional Academic Dashboard"
+    ]
+  }
+}
+
