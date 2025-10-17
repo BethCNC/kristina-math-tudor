@@ -283,17 +283,20 @@
         </div>
     </nav>
 
-    <!-- Next Due Widget Script (ADHD Support) -->
+    <!-- ADHD Support Scripts - CRITICAL FOR SUCCESS -->
     <script src="src/js/next-due-widget.js"></script>
+    <script src="src/js/hawkes-reminder.js"></script>
+    <script src="src/js/session-continuity.js"></script>
+    <script src="src/js/achievements.js"></script>
 
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-        
+
         // Set active nav item based on current page
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
-            if (item.getAttribute('href') === currentPage || 
+            if (item.getAttribute('href') === currentPage ||
                 (currentPage === 'index.html' && item.getAttribute('href') === 'index.html')) {
                 item.classList.add('active');
             } else {
