@@ -193,18 +193,44 @@
                 </div>
                         </div>
 
-        <!-- Weekly Attendance Reminder - 5% of Grade -->
+        <!-- Weekly Attendance Tracker - 5% of Grade -->
         <div class="card mb-8" style="border-left: 4px solid var(--warning-orange); background: linear-gradient(135deg, #fef3c7 0%, var(--white) 100%);">
             <div class="card-body">
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-4">
+                <div style="margin-bottom: var(--space-4);">
+                    <div class="flex items-center gap-4 mb-4">
                         <div style="width: 40px; height: 40px; background-color: var(--warning-orange); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center;">
                             <i data-lucide="check-circle" style="width: 20px; height: 20px; color: var(--white);"></i>
                         </div>
                         <div>
-                            <h3 style="margin: 0; color: var(--warning-orange);">📋 Week 12 Attendance Due</h3>
-                            <p style="margin: 0; color: var(--neutral-gray-light);">Submit by end of week (Nov 9) • Worth 5% of MAT 143 grade</p>
+                            <h3 style="margin: 0; color: var(--warning-orange);">Weekly Attendance Tracker</h3>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">Worth 5% of MAT 143 grade • Must submit each week</p>
                         </div>
+                    </div>
+                </div>
+                
+                <!-- Attendance Checklist -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); margin-bottom: var(--space-4);">
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; padding: var(--space-2); background: var(--white); border-radius: var(--radius-md);">
+                        <input type="checkbox" id="attendance-week-12" onchange="updateAttendanceProgress()" style="width: 18px; height: 18px;">
+                        <span style="font-size: var(--font-size-sm);">Week 12 (Nov 4-8)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; padding: var(--space-2); background: var(--white); border-radius: var(--radius-md);">
+                        <input type="checkbox" id="attendance-week-13" onchange="updateAttendanceProgress()" style="width: 18px; height: 18px;">
+                        <span style="font-size: var(--font-size-sm);">Week 13 (Nov 18-22)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; padding: var(--space-2); background: var(--white); border-radius: var(--radius-md);">
+                        <input type="checkbox" id="attendance-week-14" onchange="updateAttendanceProgress()" style="width: 18px; height: 18px;">
+                        <span style="font-size: var(--font-size-sm);">Week 14 (Nov 25-29)</span>
+                    </label>
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; padding: var(--space-2); background: var(--white); border-radius: var(--radius-md);">
+                        <input type="checkbox" id="attendance-week-15" onchange="updateAttendanceProgress()" style="width: 18px; height: 18px;">
+                        <span style="font-size: var(--font-size-sm);">Week 15 (Dec 2-6)</span>
+                    </label>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                    <div id="attendance-progress-message" style="flex: 1;">
+                        <p style="margin: 0; font-weight: 600; color: var(--neutral-gray);"></p>
                     </div>
                     <a href="https://brightspace.cpcc.edu" class="btn btn-primary" target="_blank" rel="noopener">
                         <i data-lucide="external-link"></i>
@@ -307,6 +333,60 @@
     <script src="src/js/achievements.js"></script>
 
     <script>
+        // Attendance Progress Tracking
+        function updateAttendanceProgress() {
+            const checkboxes = ['attendance-week-12', 'attendance-week-13', 'attendance-week-14', 'attendance-week-15'];
+            let completed = 0;
+            
+            checkboxes.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox && checkbox.checked) {
+                    completed++;
+                    localStorage.setItem(id, 'true');
+                    // Trigger achievement on first submission
+                    if (typeof showAchievement === 'function' && localStorage.getItem(`${id}_celebrated`) !== 'true') {
+                        showAchievement('attendance-submitted');
+                        localStorage.setItem(`${id}_celebrated`, 'true');
+                    }
+                } else if (checkbox) {
+                    localStorage.removeItem(id);
+                }
+            });
+            
+            const totalWeeks = checkboxes.length;
+            const percentage = Math.round((completed / totalWeeks) * 100);
+            const message = document.getElementById('attendance-progress-message');
+            const messageText = message ? message.querySelector('p') : null;
+            
+            if (messageText) {
+                if (completed === 0) {
+                    messageText.textContent = 'Check off each week as you submit attendance';
+                    messageText.style.color = 'var(--neutral-gray-light)';
+                } else if (percentage === 100) {
+                    messageText.textContent = '🎉 All attendance submitted! You\'ve protected 5% of your grade!';
+                    messageText.style.color = 'var(--success-green)';
+                    if (typeof showAchievement === 'function') {
+                        showAchievement('attendance-perfect');
+                    }
+                } else {
+                    messageText.textContent = `${completed}/${totalWeeks} weeks submitted • ${percentage}% complete`;
+                    messageText.style.color = 'var(--warning-orange)';
+                }
+            }
+        }
+        
+        // Load saved attendance state on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = ['attendance-week-12', 'attendance-week-13', 'attendance-week-14', 'attendance-week-15'];
+            checkboxes.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox && localStorage.getItem(id) === 'true') {
+                    checkbox.checked = true;
+                }
+            });
+            updateAttendanceProgress();
+        });
+
         // Initialize Lucide icons
         lucide.createIcons();
 

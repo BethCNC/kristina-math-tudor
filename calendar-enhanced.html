@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Week Academic Calendar | MAT 143 & ENG 111</title>
+    <meta name="description" content="Complete 16-week course calendar for MAT 143 and ENG 111, Fall 2025 semester at CPCC with all tests, essays, and deadlines.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicons/favicon.ico">
+    
+    <!-- Professional Academic Design System -->
+    <link rel="stylesheet" href="src/styles/professional-academic.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">K</div>
+                    <span>Academic Dashboard</span>
+                </a>
+                
+                <nav class="header-nav">
+                    <a href="index.html" class="nav-link">Dashboard</a>
+                    <a href="tutor.html" class="nav-link">Math Tutor</a>
+                    <a href="english_materials.html" class="nav-link">Writing Coach</a>
+                    <a href="calendar.html" class="nav-link active">Calendar</a>
+                    <a href="formula_lookup.html" class="nav-link">Resources</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="btn btn-secondary" aria-label="Notifications">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <div class="avatar">
+                        <div class="avatar-initials">KC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-16);">
+        
+        <!-- Page Header -->
+        <div class="mb-8">
+            <h1>Fall 2025 Academic Calendar</h1>
+            <p style="font-size: var(--font-size-lg); color: var(--neutral-gray-light); margin: 0;">16-Week Schedule • August 18 - December 12, 2025</p>
+        </div>
+
+        <!-- Legend & Filters -->
+        <div class="card mb-8">
+            <div class="card-body">
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-6); justify-content: space-between; align-items: center;">
+                    <!-- Legend -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0; font-size: var(--font-size-base);">Deadline Urgency</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: var(--space-4);">
+                            <div style="display: flex; align-items: center; gap: var(--space-2);">
+                                <div style="width: 16px; height: 16px; background: var(--danger-red); border-radius: 50%;"></div>
+                                <span style="font-size: var(--font-size-sm);">Urgent (0-3 days)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--space-2);">
+                                <div style="width: 16px; height: 16px; background: var(--warning-orange); border-radius: 50%;"></div>
+                                <span style="font-size: var(--font-size-sm);">This Week (4-7 days)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--space-2);">
+                                <div style="width: 16px; height: 16px; background: var(--primary-blue); border-radius: 50%;"></div>
+                                <span style="font-size: var(--font-size-sm);">Upcoming (8-14 days)</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: var(--space-2);">
+                                <div style="width: 16px; height: 16px; background: var(--success-green); border-radius: 50%;"></div>
+                                <span style="font-size: var(--font-size-sm);">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Filters -->
+                    <div>
+                        <h3 style="margin: 0 0 var(--space-3) 0; font-size: var(--font-size-base);">Filter By</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: var(--space-2);">
+                            <button class="btn btn-secondary btn-sm filter-btn active" data-filter="all">All</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="math">MAT 143</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="english">ENG 111</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="tests">Tests</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="essays">Essays</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="hawkes">Hawkes</button>
+                            <button class="btn btn-secondary btn-sm filter-btn" data-filter="attendance">Attendance</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline View (16 Weeks) -->
+        <div id="calendar-timeline">
+            <!-- Week 1: Aug 18-22 -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-08-22" data-category="attendance">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 1</span>
+                                <h3 style="margin: 0;">August 18-22, 2025</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">First Week of Classes • Attendance Required</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-info" data-category="attendance">Attendance</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>15 weeks ago</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid #e5e7eb;">
+                        <ul style="margin: 0; padding-left: var(--space-6); color: var(--neutral-gray-light);">
+                            <li data-category="attendance">Weekly attendance submission due</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2-4: Sept 9-13 (Test 1) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-09-13" data-category="math tests">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 4</span>
+                                <h3 style="margin: 0;">Test 1 - MAT 143</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">September 9-13, 2025 • Chapters 1-4</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-info" data-category="math tests">Math Test</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>12 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 5: Sept 22 (Essay 1) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-09-22" data-category="english essays">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 5</span>
+                                <h3 style="margin: 0;">Essay 1 Due - ENG 111</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">September 22, 2025 • Narrative Essay</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-info" data-category="english essays">English Essay</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>11 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 7: Oct 6-10 (Test 2) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-10-10" data-category="math tests">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 7</span>
+                                <h3 style="margin: 0;">Test 2 - MAT 143</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">October 6-10, 2025 • Chapters 5 & 13</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-info" data-category="math tests">Math Test</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>9 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 8: Oct 13 (Essay 2) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-10-13" data-category="english essays">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 8</span>
+                                <h3 style="margin: 0;">Essay 2 Due - ENG 111</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">October 13, 2025 • Informative Essay</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-info" data-category="english essays">English Essay</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>8 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 10: Nov 3 (Hawkes Due + Test 3 Start) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-11-03" data-category="math tests hawkes">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-upcoming">Week 10</span>
+                                <h3 style="margin: 0;">Hawkes Learning Due + Test 3 Starts</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">November 3, 2025 • 20% of Final Grade!</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-urgent" data-category="hawkes">Hawkes</span>
+                            <span class="badge badge-urgent" data-category="math tests">Test 3</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>2 days</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid #e5e7eb;">
+                        <ul style="margin: 0; padding-left: var(--space-6); color: var(--neutral-gray-light);">
+                            <li data-category="hawkes">Hawkes Learning ALL chapters must achieve mastery by 11:59 PM</li>
+                            <li data-category="math tests">Test 3 available Nov 3-7 (Chapters 6 & 7)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 11: Nov 15 (Essay 3) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-11-15" data-category="english essays">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-warning">Week 11</span>
+                                <h3 style="margin: 0;">Essay 3 Due - ENG 111</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">November 15, 2025 • Argument Essay</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-warning" data-category="english essays">English Essay</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>1 week</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 13: Nov 18-22 (Attendance) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-11-22" data-category="attendance">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-upcoming">Week 13</span>
+                                <h3 style="margin: 0;">Weekly Attendance Due</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">November 18-22, 2025</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-upcoming" data-category="attendance">Attendance</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 14: Nov 25-29 (Attendance) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-11-29" data-category="attendance">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-upcoming">Week 14</span>
+                                <h3 style="margin: 0;">Weekly Attendance Due</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">November 25-29, 2025</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-upcoming" data-category="attendance">Attendance</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until">3 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 15: Dec 6 (Essay 4) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-12-06" data-category="english essays">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 15</span>
+                                <h3 style="margin: 0;">Essay 4 Due - ENG 111</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">December 6, 2025 • Reflective Essay</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-future" data-category="english essays">English Essay</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>4 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 16: Dec 8-12 (Finals + Signature Assignment) -->
+            <div class="card mb-6 deadline-card" data-deadline="2025-12-12" data-category="math english tests">
+                <div class="card-body">
+                    <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-4);">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2);">
+                                <span class="badge badge-future">Week 16</span>
+                                <h3 style="margin: 0;">Final Exams + Signature Assignment</h3>
+                            </div>
+                            <p style="margin: 0; color: var(--neutral-gray-light);">December 8-12, 2025 • End of Semester</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; align-items: end; gap: var(--space-2);">
+                            <span class="badge badge-future" data-category="math">MAT 143</span>
+                            <span class="badge badge-future" data-category="english">ENG 111</span>
+                            <span style="font-size: var(--font-size-sm); color: var(--neutral-gray-light);" data-days-until>5 weeks</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: var(--space-4); padding-top: var(--space-4); border-top: 1px solid #e5e7eb;">
+                        <ul style="margin: 0; padding-left: var(--space-6); color: var(--neutral-gray-light);">
+                            <li data-category="math tests">MAT 143 Final Exam</li>
+                            <li data-category="english">ENG 111 Final Exam</li>
+                            <li data-category="english">Signature Assignment Due Dec 8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="card">
+            <div class="card-body">
+                <h3 style="margin: 0 0 var(--space-4) 0;">Quick Actions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="deadlines.html" class="btn btn-primary w-full">
+                        <i data-lucide="list"></i>
+                        All Deadlines
+                    </a>
+                    <a href="https://learn.hawkeslearning.com" class="btn btn-secondary w-full" target="_blank" rel="noopener">
+                        <i data-lucide="external-link"></i>
+                        Hawkes Learning
+                    </a>
+                    <a href="tutor.html" class="btn btn-secondary w-full">
+                        <i data-lucide="book-open"></i>
+                        Study Materials
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <i data-lucide="home"></i>
+            <span>Home</span>
+        </a>
+        <a href="tutor.html" class="mobile-nav-item">
+            <i data-lucide="book-open"></i>
+            <span>Math</span>
+        </a>
+        <a href="calendar.html" class="mobile-nav-item active">
+            <i data-lucide="calendar"></i>
+            <span>Calendar</span>
+        </a>
+        <a href="english_materials.html" class="mobile-nav-item">
+            <i data-lucide="pen-tool"></i>
+            <span>Writing</span>
+        </a>
+        <a href="formula_lookup.html" class="mobile-nav-item">
+            <i data-lucide="search"></i>
+            <span>Resources</span>
+        </a>
+    </nav>
+
+    <!-- ADHD Support Scripts -->
+    <script src="src/js/next-due-widget.js"></script>
+    <script src="src/js/hawkes-reminder.js"></script>
+    <script src="src/js/session-continuity.js"></script>
+    <script src="src/js/achievements.js"></script>
+    <script src="src/js/deadline-urgency.js"></script>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Set active nav item
+        document.querySelectorAll('.nav-link, .mobile-nav-item').forEach(item => {
+            if (item.getAttribute('href') === 'calendar.html') {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        // Calendar Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const deadlineCards = document.querySelectorAll('#calendar-timeline .deadline-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                // Filter cards
+                deadlineCards.forEach(card => {
+                    const categories = card.getAttribute('data-category') || '';
+                    
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else if (categories.includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
